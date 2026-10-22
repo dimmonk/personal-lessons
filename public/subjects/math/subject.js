@@ -1,9 +1,10 @@
 // Basic Math: subject record (lesson standard 3.2), written to docs/subjects/math/plan.md: fifteen parts in five units and a last part that puts
-// them together. Every part has its lesson (`complete: true`).
+// them together, then a sixth unit of refreshers (parts 16 to 19): reminders of school facts for hands-on work, not the main method, and not in the
+// real-world test. Every part has its lesson (`complete: true`).
 FC.subject('math', {
   name: "Basic Math",
   field: "numbers",
-  rev: 9,
+  rev: 10,
   complete: true,
   standard: 2,
   history: [
@@ -23,7 +24,9 @@ FC.subject('math', {
     { rev: 8, date: "2026-10-22",
       change: "Rewritten to the plan of 2026-10-22 (docs/subjects/math/plan.md, from docs/research/math.md): the end result in the plan's words; fifteen parts in five units and a last part; the lists, slips, kinds and topics of lessons 1 to 8, which are built; a bill's subtotal is now checked against its lines, with the sales tax after it." },
     { rev: 9, date: "2026-10-22",
-      change: "Lessons 9 to 15 added, so every part has its lesson: ladders and sizes, growth year by year, what a loan costs, packs and leftovers, counting ways and chances, a missing number, and two-step problems with the final test. Their lists, slips, kinds and topics are added." }
+      change: "Lessons 9 to 15 added, so every part has its lesson: ladders and sizes, growth year by year, what a loan costs, packs and leftovers, counting ways and chances, a missing number, and two-step problems with the final test. Their lists, slips, kinds and topics are added." },
+    { rev: 10, date: "2026-10-22",
+      change: "A sixth unit, Refreshers (parts 16 to 19), from the plan's change of 2026-10-22 and research M25 to M33: reminders, not the main method, of the school facts a hands-on person still uses. Fifteen short cards in four lessons (circles and right triangles; scale, slope and round volumes; powers, roots and log scales; primes and counting formulas), each card a topic of its own in the review. The calculator gains sin, cos and tan for them." }
   ],
   endResult: "Work out the number a situation needs (a total, a price per one, a scaled amount, a percent or the price before one, how much paint or soil to buy, how high a ladder reaches, what savings grow to or a loan costs) and tell whether it is sensible, when a receipt, a recipe, a sale tag, a room or an offer hands you some numbers and a question and nobody names the method.",
   parts: [
@@ -41,7 +44,11 @@ FC.subject('math', {
     { id: "12", title: "Packs, leftovers and lining up" },
     { id: "13", title: "Counting ways and chances" },
     { id: "14", title: "A missing number" },
-    { id: "15", title: "Two steps, mixed, and the test" }
+    { id: "15", title: "Two steps, mixed, and the test" },
+    { id: "16", title: "Refresher: circles and right triangles" },
+    { id: "17", title: "Refresher: scale, slope and round volumes" },
+    { id: "18", title: "Refresher: powers, roots and log scales" },
+    { id: "19", title: "Refresher: primes and counting formulas" }
   ],
   units: [
     { id: "rough", title: "A rough answer, and checking one", parts: ["1", "2"] },
@@ -49,12 +56,16 @@ FC.subject('math', {
     { id: "space", title: "Space and how much to buy", parts: ["7", "8", "9"] },
     { id: "time", title: "Money over time", parts: ["10", "11"] },
     { id: "school", title: "School topics put to use", parts: ["12", "13", "14"] },
-    { id: "together", title: "Putting it together", parts: ["15"] }
+    { id: "together", title: "Putting it together", parts: ["15"] },
+    { id: "refresh", title: "Refreshers: school math for hands-on work", parts: ["16", "17", "18", "19"] }
   ],
   lists: {
     verdict: [{ id: "right", text: "It adds up" }, { id: "wrong", text: "It does not add up" }],
     growth: [{ id: "adds", text: "It adds the same amount each year" }, { id: "multiplies", text: "It multiplies by the same number each year" }],
     "plan-cost": [{ id: "each", text: "Paying each time costs less" }, { id: "pass", text: "The pass costs less" }],
+    corner: [{ id: "square", text: "The corner is square" }, { id: "not-square", text: "The corner is not square" }],
+    prime: [{ id: "prime", text: "It is prime" }, { id: "composite", text: "It is not prime" }],
+    order: [{ id: "matters", text: "The order matters" }, { id: "free", text: "The order does not matter" }],
     scale: [{ id: "scales", text: "It scales: twice as much, twice the number" }, { id: "fixed", text: "It does not scale: part of it stays the same" }],
     slip: [
       { id: "missed-line", text: "left a line out of the total" },
@@ -110,6 +121,36 @@ FC.subject('math', {
       { id: "forgot-tax", text: "left out the sales tax" },
       { id: "one-way", text: "worked one way, not there and back" },
       { id: "missed-step", text: "left out one of the steps" },
+      { id: "radius-for-across", text: "used the radius where the distance across was needed" },
+      { id: "times-for-divide", text: "multiplied by π instead of dividing" },
+      { id: "full-turn", text: "took the angles from 360° instead of 180°" },
+      { id: "added-angles", text: "gave the two angles added, not what is left of 180°" },
+      { id: "right-for-straight", text: "took the angle from 90° instead of 180°" },
+      { id: "sin-for-tan", text: "used sin where tan was needed" },
+      { id: "cos-for-tan", text: "used cos where tan was needed" },
+      { id: "cos-for-sin", text: "used cos where sin was needed" },
+      { id: "tan-for-sin", text: "used tan where sin was needed" },
+      { id: "wrong-row", text: "used the fall for the other size of pipe" },
+      { id: "cone-as-cylinder", text: "left out the third for a cone" },
+      { id: "converted-backward", text: "converted the wrong way" },
+      { id: "unit-left-out", text: "stopped before changing to the unit asked" },
+      { id: "left-to-right", text: "worked left to right instead of times before plus" },
+      { id: "squared-whole", text: "squared more than the number with the power" },
+      { id: "doubled-not-squared", text: "doubled instead of squaring" },
+      { id: "one-place-off", text: "moved the decimal point one place too few or too many" },
+      { id: "added-powers", text: "added the powers of ten where dividing takes them away" },
+      { id: "quarter-for-root", text: "divided the area by 4 instead of taking the square root" },
+      { id: "half-for-root", text: "halved the area instead of taking the square root" },
+      { id: "rounded-root", text: "used a rounded √2 that is too short" },
+      { id: "straight-scale", text: "treated a log scale as if each step added the same" },
+      { id: "gave-difference", text: "gave the difference on the scale, not how many times" },
+      { id: "gave-one", text: "gave 1, which divides every number" },
+      { id: "halved-once", text: "halved once and stopped before the top was odd" },
+      { id: "order-missed", text: "treated an order as a group where the order matters" },
+      { id: "order-counted", text: "counted every order where the order does not matter" },
+      { id: "repeats-allowed", text: "let one choice be used twice" },
+      { id: "divided-orders", text: "divided out the orders where the order matters" },
+      { id: "times-chosen", text: "multiplied how many there are by how many are chosen" },
       { id: "wild", text: "gave an answer more than double or less than half the right one" }
     ]
   },
@@ -161,7 +202,36 @@ FC.subject('math', {
       { id: "rearrange", text: "a formula worked backward" },
       { id: "break-even", text: "when two plans cost the same" },
       { id: "complete-square", text: "a square from its area" },
-      { id: "two-step", text: "two steps" }
+      { id: "two-step", text: "two steps" },
+      { id: "around-from-across", text: "around a circle from across" },
+      { id: "across-from-around", text: "across a circle from around" },
+      { id: "diagonal", text: "a rectangle's diagonal" },
+      { id: "three-four-five", text: "a square corner by 3-4-5" },
+      { id: "third-angle", text: "a triangle's third angle" },
+      { id: "straight-line", text: "angles on a straight line" },
+      { id: "trig-rise", text: "a rise from an angle (tan)" },
+      { id: "trig-height", text: "a height from an angle (sin)" },
+      { id: "shadow", text: "a height by its shadow" },
+      { id: "plan-scale", text: "a length from a scale plan" },
+      { id: "grade", text: "a grade as a percent" },
+      { id: "drain-drop", text: "a drain's drop" },
+      { id: "post-cylinder", text: "a round hole's volume" },
+      { id: "cone", text: "a cone's volume" },
+      { id: "inch-cm", text: "inches to centimeters" },
+      { id: "cubic-gallons", text: "cubic feet to gallons" },
+      { id: "order-times-first", text: "times before plus" },
+      { id: "order-power-first", text: "powers before times" },
+      { id: "sci-read", text: "a power of ten written out" },
+      { id: "sci-divide", text: "powers of ten divided" },
+      { id: "square-root", text: "a side from a square's area" },
+      { id: "root-two", text: "a square's diagonal (√2)" },
+      { id: "decibels", text: "decibels" },
+      { id: "magnitude", text: "earthquake magnitudes" },
+      { id: "prime-check", text: "a prime check" },
+      { id: "lowest-terms", text: "an inch fraction in lowest terms" },
+      { id: "all-orders", text: "every order (n!)" },
+      { id: "first-places", text: "the first few places in order" },
+      { id: "choose-group", text: "a group where order does not matter" }
     ] }
   },
   mix: [{ facet: "kind", value: "wrong-total", max: 0.5 }],
@@ -182,7 +252,22 @@ FC.subject('math', {
     { id: "packs", title: "Packs, leftovers and lining up" },
     { id: "chance", title: "Counting ways and chances" },
     { id: "unknown", title: "A missing number" },
-    { id: "two-step", title: "Two steps" }
+    { id: "two-step", title: "Two steps" },
+    { id: "circle-around", title: "A circle: around and across" },
+    { id: "square-check", title: "A right triangle and a square corner" },
+    { id: "angle-sum", title: "Angles that make 180°" },
+    { id: "trig", title: "A length from an angle" },
+    { id: "scale", title: "Similar triangles and scale" },
+    { id: "slope", title: "Slope and grade" },
+    { id: "round-volume", title: "Cylinders and cones" },
+    { id: "convert", title: "Changing units" },
+    { id: "order-ops", title: "The order of operations" },
+    { id: "powers-ten", title: "Powers of ten" },
+    { id: "roots", title: "Square roots and irrational numbers" },
+    { id: "log-scale", title: "Log scales" },
+    { id: "primes", title: "Primes and factors" },
+    { id: "orders", title: "Counting orders" },
+    { id: "choices", title: "Counting groups" }
   ],
   readingShare: 0.25
 });

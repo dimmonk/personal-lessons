@@ -54,6 +54,23 @@ const MATH = (() => {
     return { id: spec.id, strand: spec.strand, facets: { kind: spec.kind }, params: spec.params, make: spec.make, blocks: spec.blocks, asks, steps,
       reason: spec.reason, ...(spec.deciding ? { deciding: spec.deciding } : {}), ...(spec.figure ? { figure: spec.figure } : {}) };
   }
+  // A refresher question (Unit 6, plan.md; research M32): a school fact brought back, not the whole way of working. Its steps: say what is asked
+  // and what is given; bring back the fact; a choice where choosing is the fact (is it prime, does the order matter); the calculator and a look-back
+  // (M6). One typed exact answer, with `wild`, and no rough answer: the learner has met the fact before (M32), and the look-back holds the check.
+  // spec: { id, strand, kind, params, make, blocks, given, fact, asks0?: [choose], decide?: { does, working }, exact: { working, prompt, frame?,
+  //         places?, unit?, tol, traps?, calc?, does? }, then?: [{ id, does, working, ask }], reason, figure? }
+  const FACT = 'Bring back the fact.';
+  function reminder(spec){
+    const steps = [
+      { id: 'given', does: STEP.given, working: spec.given },
+      { id: 'fact', does: FACT, working: spec.fact },
+      ...(spec.decide ? [{ id: 'decide', does: spec.decide.does, working: spec.decide.working, ask: spec.asks0[0].id }] : []),
+      { id: 'exact', does: spec.exact.does || STEP.exact, working: spec.exact.working, ask: 'exact' },
+      ...(spec.then || []).map(t => ({ id: t.id, does: t.does, working: t.working, ask: t.ask.id }))];
+    const asks = [...(spec.asks0 || []), exactAsk({ frame: '__', ...spec.exact }), ...(spec.then || []).map(t => t.ask)];
+    return { id: spec.id, strand: spec.strand, facets: { kind: spec.kind }, params: spec.params, make: spec.make, blocks: spec.blocks, asks, steps,
+      reason: spec.reason, ...(spec.figure ? { figure: spec.figure } : {}) };
+  }
   // The same problem with the rough answer alone, for a check of rough answers: the steps after it say what the calculator gives.
   // Its question is asked plainly (`prompt`): a check never names the move to use (research M1, M4: choosing the move is the skill).
   function roughOnly(def, id, check, prompt){
@@ -82,9 +99,9 @@ const MATH = (() => {
   }
 
   // The buttons to press on the calculator, in order, as the working prints them: numbers as typed, then the faces of the buttons
-  // ('*' ×, '/' ÷, '-' −, 'pow' xʸ, 'sqrt' √, 'M+', 'MR', '='). The calculator works left to right with no brackets; a generator returns the
+  // ('*' ×, '/' ÷, '-' −, 'pow' xʸ, 'sqrt' √, 'sin', 'cos', 'tan', 'M+', 'MR', '='). The calculator works left to right with no brackets; a generator returns the
   // printed buttons as a value named `keys…` beside what they give (`keys…Gives`), and tests/number-pure.mjs presses them to check it.
-  const FACE = { '*': '×', '/': '÷', '-': '−', '+': '+', pow: 'xʸ', sqrt: '√' };
+  const FACE = { '*': '×', '/': '÷', '-': '−', '+': '+', pow: 'xʸ', sqrt: '√' };   // sin, cos and tan print as themselves
   const keys = list => list.map(k => typeof k === 'number' ? String(k) : FACE[k] || k).join(' ');
-  return Object.freeze({ money, usd, dollars, num, cents, sum, pickNames, NAME_PARAMS, STEP, problem, roughOnly, worked, keys });
+  return Object.freeze({ money, usd, dollars, num, cents, sum, pickNames, NAME_PARAMS, STEP, problem, reminder, roughOnly, worked, keys });
 })();

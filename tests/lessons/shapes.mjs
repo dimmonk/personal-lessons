@@ -118,7 +118,7 @@ export const SPOKEN = obj({ kind: en('spoken'), text: str }, { show: bool });
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);
 const VALUES = either(VALUE, arr(VALUE));
-// `calc` adds keys to its calculator: the power key, the square root, the memory (CALC_EXTRAS in number.js names them; numberProblems reads it)
+// `calc` adds keys to its calculator: the power key, the square root, the memory, the angle keys (CALC_EXTRAS in number.js names them; numberProblems reads it)
 export const NUMBER = obj({ id: str, kind: en('number'), prompt: text, answer: VALUES },
   { frame: str, unit: str, places: int, estimate: bool, tol: obj({}, { abs: num, rel: num, round: num, band: arr(num) }),
     traps: arr(obj({ slip: str, value: VALUES }, { then: text })), calc: arr(str), wild: str, when: obj({ ask: str, is: arr(str) }) });

@@ -18,8 +18,8 @@
       "fp": "sha256:8f331b9c467abf83fb8297c7bf030dec568a1e9a15c891ab7c66a29f67a5f0e8"
     },
     "math": {
-      "rev": 9,
-      "fp": "sha256:f423445f17aa338a9af7178de30df0a4ef5b1da3ecb09716a8e77b81135471dc"
+      "rev": 10,
+      "fp": "sha256:cc8f572ea9462f8063a3a1c59c94b68a9a6d3ac67cbdaf827eb66aa649723978"
     },
     "psychology": {
       "rev": 10,
@@ -418,6 +418,22 @@
     "math/l15": {
       "rev": 1,
       "fp": "sha256:427ddb04cf9354ac44b0cd02b71fb4595851b27bbd8583930f742133a6a55121"
+    },
+    "math/l16": {
+      "rev": 1,
+      "fp": "sha256:effd6e043799feacadad8518d5a4fd1c2dfe5fa33f4a3a21c454d7a217c908a7"
+    },
+    "math/l17": {
+      "rev": 1,
+      "fp": "sha256:1bdf89474b342bc6e470fee5ed0ed98e0de12c01177025d6d40118c1701c4698"
+    },
+    "math/l18": {
+      "rev": 1,
+      "fp": "sha256:94f260e1e35d9a776cdaf2a4f89e378a5f6233983095cbfe5633b03df21b7ae9"
+    },
+    "math/l19": {
+      "rev": 1,
+      "fp": "sha256:48855ed8ce6dc0e233b07a77c5ec199426f3e5cbb5b17dac82a3c6cd7c93c9ed"
     },
     "math/l2": {
       "rev": 1,

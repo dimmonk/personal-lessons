@@ -36,9 +36,12 @@ export async function X25(env) {
   await env.openSubject(page, 'math');
   const subject = await env.screenText(page);
   const titles = ['Ballpark and check', 'Friendly numbers for times and divide', 'Rates and scaling', 'Proportional or not?', 'Percents forward', 'Percents backward and stacked', 'Areas and how much to buy', 'Circles, boxes and volume',
-    'Ladders, scale and size', 'Growth year by year', 'What a loan costs', 'Packs, leftovers and lining up', 'Counting ways and chances', 'A missing number', 'Two steps, mixed, and the test'];
-  c.check(titles.every(t => subject.includes(t)) && !/Not built yet/.test(subject), 'the subject screen does not list all fifteen lessons, with none not built yet');
-  c.check(!subject.includes('Draft: not tried yet'), 'the lessons, passed by their reviews and live, still carry the draft line');
+    'Ladders, scale and size', 'Growth year by year', 'What a loan costs', 'Packs, leftovers and lining up', 'Counting ways and chances', 'A missing number', 'Two steps, mixed, and the test',
+    'Circles and right triangles, a refresher', 'Scale, slope and round volumes, a refresher', 'Powers, roots and log scales, a refresher', 'Primes and counting formulas, a refresher'];
+  c.check(titles.every(t => subject.includes(t)) && !/Not built yet/.test(subject), 'the subject screen does not list all nineteen lessons, with none not built yet');
+  // every lesson, the four refreshers included, passed its reviews and is live: no draft line
+  const drafts = await page.evaluate(() => Object.values(FC.get('math').lessons).filter(l => l.status === 'draft').map(l => l.id));
+  c.check(drafts.length === 0 && !subject.includes('Draft: not tried yet'), `the lessons, passed by their reviews and live, still carry the draft line (${drafts.join(', ')})`);
   await env.inspect(c, page, 'the Math subject screen');
   await env.clickVisible(page, '#screen [data-l="l1"]');
 
@@ -180,7 +183,7 @@ export async function X25(env) {
   /* the subject, and the record */
   await env.clickVisible(page, '[data-v="subject"]');
   text = await env.screenText(page);
-  c.check(/Check passed, 8 of 9/.test(text) && /1 of 15 lessons/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
+  c.check(/Check passed, 8 of 9/.test(text) && /1 of 19 lessons/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
   const stored = await env.storage(page), items = JSON.parse(stored['pl:math:items'] || '{}'), seen = JSON.parse(stored['pl:math:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   const inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');

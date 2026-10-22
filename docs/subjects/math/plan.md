@@ -1,7 +1,13 @@
 # Basic Math: the plan (build-subject step 4)
 
-Written 2026-10-22 from `docs/research/math.md` (M1–M24) and `docs/learning-science.md` (P ids). Replaces the gate 2–5
+Written 2026-10-22 from `docs/research/math.md` (M1–M33) and `docs/learning-science.md` (P ids). Replaces the gate 2–5
 sections of `design.md` as the design; the pilot, lesson 1, is kept and revised.
+
+**Change, 2026-10-22 (later the same day).** The owner: math should reach past everyday use into "basic high school knowledge
+which someone more technical and hands on would use at some point", "more so a reminder then a full on lessons". Added Unit 6,
+*Refreshers* (lessons 16 to 19), from research M25 to M33. It settles the four "owner to decide" asks below: prime check,
+irrational numbers, trigonometry, log scales and the permutation and combination formulas are each a refresher card. The
+refreshers are reminders, not the main method: they are not in the real-world test.
 
 ## What you'll be able to do, and when
 
@@ -34,13 +40,14 @@ targets the errors that cost money (a slipped decimal, a ratio upside down, grow
 | Ask | Where | What the evidence did to it |
 |---|---|---|
 | Before you do the math, check what the problem is about | Every lesson's first step; L1, L2 | Kept as "what is asked, what is given" (M6), inside solving, not as sorting (M1) |
-| Six kinds of whole-number problem | L12 (remainders, equal groups, packs that line up, primes as building blocks); prime check and irrational numbers as one screen each | Taught through packs and schedules (M8); **prime check and irrational numbers have no everyday use: owner to decide** |
+| Six kinds of whole-number problem | L12 (remainders, equal groups, packs that line up, primes as building blocks); prime check and irrational numbers as one screen each | Taught through packs and schedules (M8); prime check and irrational numbers are refresher cards in L19 and L18 (M25) |
 | Primes and common factors | L12 | As above |
 | Find the missing number | L3 (proportion), L6 (price before), L14 (rearranging, two unknowns as two price plans, a squared unknown by completing the square drawn as a square) | Proportion and "price before" are core (M7, M8); the rest kept, taught by an everyday case (M24) |
-| Amounts that change over time | L10, L11 | Straight-line against compound, the multiplier, doubling by 72 as a check, "how long" by trying years; **log scales: owner to decide** (no adult use found, M8) |
-| Counting ways, and how likely it is | L13 | Multiplying the choices, "at least one" by the opposite, chances as counts out of 1,000 (M10); **permutation and combination formulas: owner to decide** |
-| Four types about lengths, areas and volumes | L7, L8, L9 | Areas and how much to buy, volumes, shapes at two sizes (area ×4 when length ×2, M7); **trigonometry (a length from an angle): owner to decide** |
+| Amounts that change over time | L10, L11 | Straight-line against compound, the multiplier, doubling by 72 as a check, "how long" by trying years; log scales a refresher card in L18 (decibels, magnitudes, pH; M28) |
+| Counting ways, and how likely it is | L13 | Multiplying the choices, "at least one" by the opposite, chances as counts out of 1,000 (M10); permutation and combination formulas refresher cards in L19 (M25) |
+| Four types about lengths, areas and volumes | L7, L8, L9 | Areas and how much to buy, volumes, shapes at two sizes (area ×4 when length ×2, M7); trigonometry (a length from an angle) a refresher card in L16 (M25, M26) |
 | Right triangles: the ladder against a wall | L9 | The trade's 1-in-4 rule first, the square rule to find height or length (M12) |
+| School facts a hands-on person uses, as a reminder (2026-10-22): circumference against diameter, and the five above | L16–L19 | Fifteen refresher cards (M25–M33) |
 
 Percentages and fractions (named in the brief) are lessons 5 and 6 and run through 2 and 3 (benchmarks, recipe
 fractions, M3); completing the square is in lesson 14.
@@ -103,6 +110,42 @@ the exact one, `steps`, and `traps` with named slips (M18, M19). Strands return 
 
 **L15 Two steps, mixed, and the test.** One worked two-step (paint: area, cans, cost); three two-step problems with the
 first step done; 8 mixed problems of every kind; then the real-world test as the check, `retest: 14`. Why: M17, M1.
+
+**Unit 6. Refreshers: school math for hands-on work** (added 2026-10-22; reminders, not the main method)
+
+What it is for: after it, the learner can bring back a school fact when a job needs it (a trim length around a round table, a
+square corner, a rafter's rise from its angle, a drain's drop, concrete for a post hole, a decibel reading) and get the number
+right. Not in the real-world test (the test is the main method's, L15).
+
+*The card* (one teaching screen each; M32: the learner has met these before, so one short worked example, not a worked problem
+with faded steps): the fact in plain words with its picture where it has one (M15); when a hands-on person reaches for it (M26,
+M27, M28); one worked example ending in a look-back; the common wrong version named where there is one (P29). Then two quick
+questions from memory, each a generator with fresh numbers (M31), typed as one exact number on the calculator with its power,
+square-root, memory or angle buttons as the fact needs; the working shows the fact, then the buttons, then the look-back (M6:
+the look-back stays; the rough answer, the kind and the drawing of the main lessons do not, M32). A choice comes first only
+where choosing is the fact (is it prime; does the order matter). Every exact answer names the `wild` slip and the slips of the
+known wrong versions (M19). The lesson ends with its cards mixed, unlabeled, with earlier refreshers mixed in from L17 on
+(M17, P22), then a check of fresh questions, one per card plus one, pass all but one and none wild. Each card is a topic of its
+own in the weekly review (M31, P24). Every lesson is recorded as a reminder in its subject record and history.
+
+- **L16 Circles and right triangles.** Cards: distance around = π × distance across (and area π × r × r; the tree trunk and
+  the round table); the right triangle and 3-4-5 (equal diagonals, a deck's diagonal); a triangle's angles make 180°, a straight
+  line 180°; a length from an angle (SOH-CAH-TOA: rise = run × tan, height = length × sin). Why: M25, M26, M27. Needs the
+  angle buttons (G3).
+- **L17 Scale, slope and round volumes.** Cards: similar triangles and scale (a tree by its shadow, a plan at 1/4 inch to the
+  foot); slope and grade (grade = rise ÷ run × 100; a drain's 1/4 inch per foot); a cylinder and a cone (a post hole's
+  concrete, a gravel pile, a third of the cylinder); unit changes (2.54 cm an inch exactly, 7.48 gallons a cubic foot). Why:
+  M25, M27, M29.
+- **L18 Powers, roots and log scales.** Cards: order of operations, and the calculator that works left to right (M33);
+  powers of ten and scientific notation (4.7 × 10³ ohms; dividing big numbers); square roots and irrational numbers (a square
+  patio's side, a square frame's brace = side × √2, never exact); logs and log scales (a log counts the tens; 10 dB is 10 times
+  the sound energy, a magnitude step 10 times the shaking, a pH step 10 times as acid). Why: M25, M26, M28, M33.
+- **L19 Primes and counting formulas.** Cards: primes and factors (a prime check: try the primes up to the square root;
+  reducing an inch fraction); orders, n! and n × (n − 1) × … for the first few places (permutations); choices where the order
+  does not matter, the same divided by the orders of the chosen (combinations). Whether the order matters is decided by one test, does swapping two of the ones picked change the result, on stories that come in both forms (one bidder for each of 3 jobs, or 3 bidders on one job), so no title gives it away (review of 2026-10-22). Why: M25 (HSS-CP.B.9), the owner's asks.
+
+**G3 Angle buttons.** The calculator gets an extra, `calc: ['trig']`: sin, cos and tan of the number shown, in degrees, held
+like √ (35 tan × 12 =). The same machine and one list as G1 (`CALC_EXTRA` in `number.js`).
 
 ## Engine gaps (smallest real designs)
 

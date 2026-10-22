@@ -74,7 +74,7 @@ const SAY = {
   calculator: 'Calculator',
   calcUse: 'Put it in the box',
   calcName: { C: 'Clear', B: 'Delete the last digit', '/': 'Divide', '*': 'Multiply', '-': 'Subtract', '+': 'Add', '=': 'Equals', '.': 'Decimal point',
-    pow: 'To the power of', sqrt: 'Square root', 'M+': 'Add to memory', MR: 'Show the memory', MC: 'Clear the memory' },
+    pow: 'To the power of', sqrt: 'Square root', sin: 'Sine, in degrees', cos: 'Cosine, in degrees', tan: 'Tangent, in degrees', 'M+': 'Add to memory', MR: 'Show the memory', MC: 'Clear the memory' },
   calcMemory: 'A number is in the memory',
   estimateDisagree: (guess, typed) => `Your answer (${typed}) and your estimate (${guess}) disagree. Look again, then tap Answer.`,
   yourEstimate: text => `Your estimate was ${text}.`,

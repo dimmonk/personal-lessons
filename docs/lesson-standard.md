@@ -278,7 +278,7 @@ wild" counts every wild answer; the feedback still prints that trap's line, foun
   the box" copies the display to the first empty box. What is typed survives a repaint. An ask's `calc` adds buttons in a row above
   the four, any of `'pow'` (xʸ, a power done like the other operations, one at a time: 1.05 xʸ 10 × 1000), `'sqrt'` (√ of the number
   shown, which then counts as a typed number: 9 + 16 √ = 13) and `'mem'` (M+ finishes the sum and adds it to the memory, MR shows the
-  memory, MC empties it; an M on the display while it holds a number; C keeps it; it lasts for the question). `CALC_EXTRAS` and
+  memory, MC empties it; an M on the display while it holds a number; C keeps it; it lasts for the question) and `'trig'` (sin, cos and tan of the number shown, in degrees, held like √: 35 tan × 12 = is 12 × tan 35°; tan of 90° is an error). `CALC_EXTRAS` and
   `calcPress` in `number.js` are the one list and the one machine; V70 refuses another name, one named twice, and `calc` on an estimate.
 
 **`form`** `{ id, kind: 'form', prompt, fields, when? }`. A field is the shape of a `number` or `choose` ask without
@@ -1117,6 +1117,8 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **2026-10-22, new numbers are new** (Math's reviews of lessons 9 to 15: a check repeated a practice question's numbers, so its answer had
   been seen): fresh seeds skip a question with the numbers of one already tried of that generator or already drawn for the same list
   (4.5). Pure tests in `tests/number-pure.mjs`, with a seeded fault (fresh seeds that ignore the numbers met) run there.
+- **2026-10-22, angle buttons** (Math's plan, gap G3, the refresher unit): `calc: ['trig']` adds sin, cos and tan to the calculator, of the
+  number shown in degrees, held like √; tan of 90° is an error (`CALC_TRIG` in `number.js`). Pure tests in `tests/number-pure.mjs`.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

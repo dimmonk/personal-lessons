@@ -2,7 +2,7 @@
 // Lesson standard 3 (the `number` ask), 4 (the estimate, and "your answer and your estimate disagree"). Pure: no page and no
 // storage, so the player, the validator and the tests all score a typed number the same way.
 //   ask   { id, kind: 'number', prompt, frame?: 'from __ in 1,000 to __ in 1,000', unit?, places?, answer: value | [value, ...],
-//           tol: { abs?, rel? } | { round } | { band: [least, most] }, estimate?: true, traps?: [{ slip, value, then? }], calc?: ['pow' | 'sqrt' | 'mem'], wild?: slipId, when? }
+//           tol: { abs?, rel? } | { round } | { band: [least, most] }, estimate?: true, traps?: [{ slip, value, then? }], calc?: ['pow' | 'sqrt' | 'mem' | 'trig'], wild?: slipId, when? }
 //   A value is a number, or the name of a number the question makes (a generator's `make`). One value per blank of the frame.
 //   An answer is stored as the list of numbers typed, one per blank. The result is 'ok', the id of the slip it matches, or 'no'.
 //   An estimate is its own ask, placed before the exact one: it has no calculator and, with no `tol`, is right within half to double.
@@ -103,14 +103,26 @@ function estimateOff(typed, exact){
 //   { shown: '0', acc: null, op: null, fresh: true, held: false, error: false, mem: 0 }
 // `fresh`: the next digit starts a new number. `held`: the display is a number to use (a square root, a recalled memory) even though the next
 // digit replaces it. `mem` is the memory of M+ and MR; it lasts for the question (the queue starts each question at CALC_START).
-// An ask may add keys to the four (`calc`, lesson standard 3.7): 'pow' the power key (x to the y), 'sqrt' the square root, 'mem' M+, MR and MC.
+// An ask may add keys to the four (`calc`, lesson standard 3.7): 'pow' the power key (x to the y), 'sqrt' the square root, 'mem' M+, MR and MC,
+// 'trig' sin, cos and tan of the number shown, in degrees.
 const CALC_START = { shown: '0', acc: null, op: null, fresh: true, held: false, error: false, mem: 0 };
 const CALC_OPS = ['+', '-', '*', '/', 'pow'];
-const CALC_EXTRA = { pow: ['pow'], sqrt: ['sqrt'], mem: ['MC', 'MR', 'M+'] };   // the keys each extra of an ask adds, in the order drawn
+const CALC_EXTRA = { pow: ['pow'], sqrt: ['sqrt'], mem: ['MC', 'MR', 'M+'], trig: ['sin', 'cos', 'tan'] };   // the keys each extra of an ask adds, in the order drawn
 const CALC_EXTRAS = Object.keys(CALC_EXTRA);
 const CALC_MAX_DIGITS = 12;
 const calcClean = value => String(Number(value.toPrecision(12)));
 const calcError = mem => ({ ...CALC_START, shown: 'Error', error: true, mem });
+// sin, cos and tan of an angle in degrees, as a phone's calculator in degrees gives them; tan of a right angle (90°, 270° …) has no value.
+// The angle is reduced to a whole turn first, so the exact angles give exact values (sin 30 is 0.5, cos 90 is 0).
+const CALC_TRIG = {
+  sin: d => Math.sin(d * Math.PI / 180),
+  cos: d => Math.cos(d * Math.PI / 180),
+  tan: d => (((d % 180) + 180) % 180) === 90 ? NaN : Math.tan(d * Math.PI / 180)
+};
+const calcTrig = (key, degrees) => {
+  const turn = ((degrees % 360) + 360) % 360, out = CALC_TRIG[key](turn);
+  return Number.isFinite(out) ? calcClean(Math.abs(out) < 1e-12 ? 0 : out) : null;
+};
 function calcApply(acc, op, value){
   const out = op === '+' ? acc + value : op === '-' ? acc - value : op === '*' ? acc * value : op === 'pow' ? Math.pow(acc, value) : value === 0 ? NaN : acc / value;
   return Number.isFinite(out) ? { shown: calcClean(out), error: false } : { shown: 'Error', error: true };
@@ -151,6 +163,10 @@ function calcPress(st, key){
   if(key === 'sqrt'){
     const value = Number(base.shown);
     return value < 0 ? calcError(base.mem) : { ...base, shown: calcClean(Math.sqrt(value)), fresh: true, held: true };
+  }
+  if(Object.hasOwn(CALC_TRIG, key)){
+    const shown = calcTrig(key, Number(base.shown));
+    return shown === null ? calcError(base.mem) : { ...base, shown, fresh: true, held: true };
   }
   if(key === 'M+'){
     const done = calcFinish(base);

@@ -132,6 +132,18 @@ check(withinTol(0, 0, { rel: 0.2 }) && !withinTol(0.1, 0, { rel: 0.2 }), 'zero i
   same(run('4 M+ 6 M+ MR + 1 =').shown, '11', 'a recalled number is a number for a sum');
   same(run('3 M+ 1 / 0 = MR').shown, '3', 'an error keeps the memory');
   same(run('5 M+').mem, 5, 'the memory is a number');
+  // the angle keys (calc: ['trig']): sin, cos and tan of the number shown, in degrees, held like a square root
+  same(run('3 0 sin').shown, '0.5', 'sin 30° is a half');
+  same(run('6 0 cos').shown, '0.5', 'cos 60° is a half');
+  same(run('9 0 cos').shown, '0', 'cos 90° is nothing, not a tiny leftover');
+  same(run('4 5 tan').shown, '1', 'tan 45° is 1');
+  same(run('3 5 tan * 1 2 =').shown, String(Number((Math.tan(35 * Math.PI / 180) * 12).toPrecision(12))), 'an angle key gives a number for the sum: 12 × tan 35°');
+  same(run('1 2 * 3 5 tan =').shown, String(Number((12 * Math.tan(35 * Math.PI / 180)).toPrecision(12))), 'the angle key works on the number shown, after an operation too');
+  same(run('9 0 tan').shown, 'Error', 'tan 90° has no value');
+  same(run('2 7 0 tan').shown, 'Error', 'nor tan 270°');
+  same(run('3 9 0 sin').shown, '0.5', 'a whole turn more is the same angle');
+  same(run('3 0 sin 5').shown, '5', 'a digit after an angle key starts a new number');
+  same(app.calcExtraKeys({ calc: ['trig', 'sqrt'] }), ['sqrt', 'sin', 'cos', 'tan'], 'the angle keys come after the others');
   same(app.calcExtraKeys({ calc: ['mem', 'pow'] }), ['pow', 'MC', 'MR', 'M+'], 'the extra keys, in their one order');
   same(app.calcExtraKeys({}), [], 'an ask with no extra keys has the four');
 }
