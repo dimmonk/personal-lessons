@@ -15,7 +15,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'seededRandom', 'hashSeed', 'shuffled', 'isRangeParam', 'drawParam', 'genValues', 'itemFromGen', 'slotsIn', 'fillSlots', 'instanceOf',
   'definitionOf', 'addDays', 'weekEnd', 'dayOf', 'itemsOf', 'recordTry', 'firstTries', 'checkRuns', 'completeRuns', 'lessonDone', 'lastCheck',
   'lessonsInOrder', 'usedIds', 'strandDefs', 'checkStrands', 'lessonsCovering', 'strandSchedules', 'dueStrands', 'retestDays', 'retestsDue',
-  'strandInstance', 'retestInstances', 'drawInstances', 'buildSet', 'freshSeed', 'blockHtml', 'segmentsOf', 'itemHtml', 'feedbackHtml',
+  'strandInstance', 'retestInstances', 'drawInstances', 'buildSet', 'freshSeed', 'refInstances', 'blockHtml', 'segmentsOf', 'itemHtml', 'feedbackHtml',
   'paras', 'lessonFail', 'storeApply', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'rightWord',
   // sound and singing
   'noteToMidi', 'midiToNote', 'hzToMidi', 'noteToHz', 'centsBetween', 'foldCents', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE', 'SING_PARAMS',
@@ -25,8 +25,8 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml',
   // typed numbers, documents and figures
   'parseTyped', 'fmtNumber', 'typedText', 'frameParts', 'slotCount', 'numberValue', 'numberAnswers', 'frameFilled', 'isEstimateAsk', 'tolOf', 'withinTol',
-  'numbersMatch', 'scoreNumber', 'estimateTyped', 'estimatesDisagree', 'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'NUMBER_BAND', 'numberHtml',
-  'numberMarkHtml', 'numberMissHtml', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine',
+  'numbersMatch', 'scoreNumber', 'estimateTyped', 'estimatesDisagree', 'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'CALC_EXTRAS', 'calcExtraKeys', 'NUMBER_BAND', 'numberHtml',
+  'numberMarkHtml', 'numberMissHtml', 'numberTrapOf', 'ESTIMATE_TRAP_GAP', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine',
   // forms, papers, values looked up, the learner's own data
   'formFieldAsk', 'formFieldResults', 'scoreForm', 'formDraftReady', 'formAnswerFrom', 'formFieldText', 'formFieldRight', 'formHtml', 'formMarksHtml', 'formMissHtml',
   // articles, charts, the tap and the 1,000 people

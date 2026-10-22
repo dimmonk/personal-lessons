@@ -185,7 +185,7 @@ function paintCheckIntro(){
 function checkInstances(run){
   const { data, subj, lesson } = LESSON, check = lesson.check;
   if(checkIsDrawn(check)) return drawInstances(data, subj.id, check.items.draw, run, flowSetIds(lesson), lesson.id);
-  const list = flatRefs(check.items).flatMap((ref, k) => refInstances(data, subj.id, ref, run, k));
+  const taken = new Map(), list = flatRefs(check.items).flatMap((ref, k) => refInstances(data, subj.id, ref, run, k, taken));
   return check.order === 'shuffle' ? shuffled(list, hashSeed(`${run}|check`)) : list;   // a check in mixed order gives no hint from the place of a question
 }
 const flowSetIds = lesson => flowSets(lesson).flatMap(set => flatRefs(set.items).map(refId));

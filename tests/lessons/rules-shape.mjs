@@ -28,7 +28,8 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
     const shape = show(checkShape(block, FIGURE, where));
     if (shape.length) return shape;
     const data = show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
-    return data.length || block.type !== 'people' ? data : peopleProblems(block.data, where);
+    if (data.length) return data;
+    return block.type === 'people' ? peopleProblems(block.data, where) : block.type === 'plan' ? planProblems(block.data, where) : [];
   }
   if (block.kind === 'article') return articleProblems(block, where);
   if (block.kind === 'panel') {
@@ -73,7 +74,17 @@ function messageProblems(block, where, engine) {
 
 // The 1,000 people: every row is a count of the 1,000, a whole number from 0 to 1,000.
 function peopleProblems(data, where) {
-  return data.rows.filter(r => r.count < 0 || r.count > 1000).map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not between 0 and 1,000`);
+  const slot = v => typeof v === 'string' && v.includes('{');   // a generator's slot is read on the questions it makes
+  return data.rows.filter(r => !slot(r.count) && !(Number.isInteger(Number(r.count)) && Number(r.count) >= 0 && Number(r.count) <= 1000))
+    .map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not a whole number between 0 and 1,000`);
+}
+// A plan is drawn to one scale: every size of a part is a number above zero and every corner at zero or more (a generator's slot, "{w}", is read
+// on the questions it makes). A triangle is right-angled, so its two sides and the slant are its own; a circle has one size, its radius.
+function planProblems(data, where) {
+  const sized = p => p.shape === 'circle' ? ['r'] : ['w', 'h'], slot = v => typeof v === 'string' && v.includes('{');
+  return data.parts.flatMap((p, i) => [
+    ...sized(p).filter(k => !slot(p[k]) && !(Number(p[k]) > 0)).map(k => `${where}: part ${i + 1} has a size ${k} of "${p[k]}", which is not a number above zero`),
+    ...['x', 'y'].filter(k => !slot(p[k]) && !(Number(p[k]) >= 0)).map(k => `${where}: part ${i + 1} has a corner ${k} of "${p[k]}", which is not a number of zero or more`)]);
 }
 // An article: a headline for the forms that have one (a post has none), a label only on a post, lines whose ids are all different from the
 // answer "none", at least one line that is not small print.
@@ -92,7 +103,7 @@ function articleProblems(block, where) {
 // A typed number: its frame has one blank for each value of the answer, each trap's value has as many, and the tolerance is one of the
 // kinds number.js knows (an estimate may leave it out: it is then right from half to double).
 const TOL_KEYS = ['abs', 'rel', 'round', 'band'];
-function numberProblems(ask, where) {
+function numberProblems(ask, where, engine) {
   const problems = show(checkShape(ask, NUMBER, where));
   if (problems.length) return problems;
   const blanks = (ask.frame || '__').split('__').length - 1, count = v => Array.isArray(v) ? v.length : 1;
@@ -108,6 +119,9 @@ function numberProblems(ask, where) {
     if (keys.includes('band') && (keys.length > 1 || tol.band.length !== 2 || !(tol.band[0] > 0 && tol.band[0] < tol.band[1]))) problems.push(`${where}: a band is two numbers, the least above 0 and the most above it, and stands alone`);
     if (keys.some(k => typeof tol[k] === 'number' && !(tol[k] > 0))) problems.push(`${where}: a tolerance is above 0`);
   }
+  (ask.calc || []).filter(x => !engine.CALC_EXTRAS.includes(x)).forEach(x => problems.push(`${where}: "${x}" is not a key the calculator can add (${engine.CALC_EXTRAS.join(', ')})`));
+  if (ask.calc && ask.estimate) problems.push(`${where}: an estimate is typed from the head and has no calculator, so no keys to add (calc)`);
+  duplicatesOf(ask.calc || []).forEach(x => problems.push(`${where}: the calculator key "${x}" is named twice`));
   return problems;
 }
 
@@ -207,7 +221,7 @@ function askProblems(ask, where, kinds, listIds, engine, meta = null) {
   if (ask.kind === 'exchange') return exchangeProblems(ask, where, engine);
   if (ask.kind === 'order') return orderShapeProblems(ask, where, engine);
   if (ask.kind === 'place') return placeShapeProblems(ask, where, engine);
-  if (ask.kind === 'number') return numberProblems(ask, where);
+  if (ask.kind === 'number') return numberProblems(ask, where, engine);
   if (ask.kind === 'form') return formProblems(ask, where, kinds, listIds);
   const problems = show(checkShape(ask, CHOOSE, where));
   if (('options' in ask) === ('from' in ask)) problems.push(`${where} must have exactly one of options and from`);

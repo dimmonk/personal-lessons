@@ -15,7 +15,7 @@
       { id: 'r1', cells: ['Coffee beans', '{pa}'] }, { id: 'r2', cells: ['Oat milk', '{pb}'] }, { id: 'r3', cells: ['Roast chicken', '{pc}'] }], notes: ['Paid by card'] }],
     asks: [
       { id: 'est', kind: 'number', prompt: 'About how much does the cart come to? Round each price in your head.', frame: '$__', estimate: true, answer: 'total', places: 2, tol: { rel: 0.2 } },
-      { id: 'exact', kind: 'number', prompt: 'What is the exact total, to the cent?', frame: '$__', places: 2, answer: 'total', tol: { round: 0.01 },
+      { id: 'exact', kind: 'number', prompt: 'What is the exact total, to the cent?', frame: '$__', places: 2, answer: 'total', tol: { round: 0.01 }, calc: ['pow', 'sqrt', 'mem'], wild: 'wild',
         traps: [{ slip: 'left-out', value: 'noRoast', then: 'That is the answer you get when the roast chicken is left out.' }, { slip: 'point', value: 'tenfold' }] }],
     steps: [{ id: 'round', does: 'Round each price to the nearest dollar.', working: '{ra} + {rb} + {rc} is about ${rough}.', ask: 'est' },
       { id: 'add', does: 'Add the exact prices on a calculator.', working: '{pa} + {pb} + {pc} = {totalText}.', ask: 'exact' }],

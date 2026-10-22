@@ -106,7 +106,7 @@ function answerAsk(askId, answer){
 // a place of a place group as itself (the miss is that place, and the seed is what makes it the same sitting's question)
 function redoOf(inst){
   if(inst.seed === undefined || (inst.ref && isPlaceGen(Q.data.gens[inst.ref.gen]))) return { ...inst, redo: true };
-  const seed = freshSeed(Q.subj.id, inst.key, Q.run, Q.list.length + 1000);
+  const seed = freshSeed(Q.subj.id, inst.key, Q.run, Q.list.length + 1000, inst.ref && inst.ref.with ? null : Q.data);
   return { ...instanceOf(Q.data, inst.ref, seed), redo: true };
 }
 function finishItem(){

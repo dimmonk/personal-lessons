@@ -59,9 +59,15 @@ const RATE_ROW = obj({ label: str, cells: arr(str) });
 export const FIGURE_DATA = {
   'rate-table': obj({ top: RATE_ROW, bottom: RATE_ROW }),
   bar: obj({ whole: str, parts: arr(obj({ label: str, pct: quantity })) }),
-  plan: obj({ unit: str, parts: arr(obj({ x: quantity, y: quantity, w: quantity, h: quantity }, { label: str, cut: bool })) }),
+  // a part of a plan is a rectangle (x, y, w, h), a circle (`shape: 'circle'`, its box's corner x, y and its radius r; `across` writes the
+  // distance across instead of the radius) or a right triangle (`shape: 'triangle'`, the right angle at the bottom left of its box x, y, w, h:
+  // an upright side h and a flat side w, and the slant between their ends); `say` writes words in place of a side's number ("?", "13 ft ladder")
+  plan: obj({ unit: str, parts: arr(either(
+    obj({ x: quantity, y: quantity, w: quantity, h: quantity }, { label: str, cut: bool, say: obj({}, { w: str, h: str }) }),
+    obj({ shape: en('circle'), x: quantity, y: quantity, r: quantity }, { label: str, cut: bool, across: bool, say: obj({}, { r: str }) }),
+    obj({ shape: en('triangle'), x: quantity, y: quantity, w: quantity, h: quantity }, { label: str, cut: bool, say: obj({}, { w: str, h: str, slant: str }) }))) }),
   years: obj({ columns: arr(str), rows: arr(arr(str)) }),
-  people: obj({ caption: str, rows: arr(obj({ label: str, count: int })) })
+  people: obj({ caption: str, rows: arr(obj({ label: str, count: either(int, str) })) })   // a count may be a generator's slot, "{tp}"
 };
 // a news story, a post, an ad, a report (article-view.js): where it comes from, a headline for the forms that have one, and its lines
 export const ARTICLE_FORMS = ['news', 'post', 'ad', 'report'];
@@ -112,9 +118,10 @@ export const SPOKEN = obj({ kind: en('spoken'), text: str }, { show: bool });
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);
 const VALUES = either(VALUE, arr(VALUE));
+// `calc` adds keys to its calculator: the power key, the square root, the memory (CALC_EXTRAS in number.js names them; numberProblems reads it)
 export const NUMBER = obj({ id: str, kind: en('number'), prompt: text, answer: VALUES },
   { frame: str, unit: str, places: int, estimate: bool, tol: obj({}, { abs: num, rel: num, round: num, band: arr(num) }),
-    traps: arr(obj({ slip: str, value: VALUES }, { then: text })), when: obj({ ask: str, is: arr(str) }) });
+    traps: arr(obj({ slip: str, value: VALUES }, { then: text })), calc: arr(str), wild: str, when: obj({ ask: str, is: arr(str) }) });
 
 // a form ask (form.js): a prompt and fields, each a number or a choice; a field is the shape of the ask of its own kind without id, kind and prompt
 const FORM_NUMBER_FIELD = obj({ id: str, label: str, type: en('number'), answer: VALUES }, { frame: str, unit: str, places: int, tol: obj({}, { abs: num, rel: num, round: num, band: arr(num) }),

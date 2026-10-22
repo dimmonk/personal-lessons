@@ -18,8 +18,8 @@
       "fp": "sha256:8f331b9c467abf83fb8297c7bf030dec568a1e9a15c891ab7c66a29f67a5f0e8"
     },
     "math": {
-      "rev": 7,
-      "fp": "sha256:7d2b13fb4b233856abdec46c87a889e19435383c91556ca42d6d84785252f6ee"
+      "rev": 9,
+      "fp": "sha256:f423445f17aa338a9af7178de30df0a4ef5b1da3ecb09716a8e77b81135471dc"
     },
     "psychology": {
       "rev": 10,
@@ -333,7 +333,63 @@
     },
     "math/l1": {
       "rev": 1,
-      "fp": "sha256:6a99a59719ea06509038046667cec53f94dcc8603e4863847f65a2bb8b2ede14"
+      "fp": "sha256:d48adb6274b1d2ee0706897d34c10c65a9e42f77759941a4de68decdb9dbe601"
+    },
+    "math/l10": {
+      "rev": 1,
+      "fp": "sha256:456fa2e18177fa9f75a3140d3b7de7290f8da12a8c11a71c54a529f3fb4a825b"
+    },
+    "math/l11": {
+      "rev": 1,
+      "fp": "sha256:b4cb218f8050d8736d8a8ad03e59ad0ccea2f5ab0b0063cfb746516e2f70feec"
+    },
+    "math/l12": {
+      "rev": 1,
+      "fp": "sha256:a845efb35e627ea185024e692b20ad011de51d1947385e6aec878e217573b10e"
+    },
+    "math/l13": {
+      "rev": 1,
+      "fp": "sha256:14ce144bee3a559af5f36d8c04df98928be9f551d3f464f550fe8ee14dc20d38"
+    },
+    "math/l14": {
+      "rev": 1,
+      "fp": "sha256:14b674a918bafd53ab87549280275f9726edeab8d1803acc39b03b2b3f239585"
+    },
+    "math/l15": {
+      "rev": 1,
+      "fp": "sha256:427ddb04cf9354ac44b0cd02b71fb4595851b27bbd8583930f742133a6a55121"
+    },
+    "math/l2": {
+      "rev": 1,
+      "fp": "sha256:958f362977ecabc2a2d0cf334dc21d4747a7d5184ed334c9bac9fa9ce04c71b3"
+    },
+    "math/l3": {
+      "rev": 1,
+      "fp": "sha256:081c10d60b57102aaa3883227da3a53344fa10f3e98fcad90b95600e05d70de5"
+    },
+    "math/l4": {
+      "rev": 1,
+      "fp": "sha256:5df3e97306920bc9761885a4234d118c5662334afebb8986ca97229747dc0e3b"
+    },
+    "math/l5": {
+      "rev": 1,
+      "fp": "sha256:6b89273c8c0a6611bc26ece8692f60a3c522250d7c3a7d9687d158109571103f"
+    },
+    "math/l6": {
+      "rev": 1,
+      "fp": "sha256:c1dcf971260c2f3111e8b9a48bde8e7342e8e1e4c6fe1fdcd6d2d264109d9917"
+    },
+    "math/l7": {
+      "rev": 1,
+      "fp": "sha256:c66b0131b36d5997076ccf810a55351ca1ceda7d126cd9e06aa89c3d9d3dd05f"
+    },
+    "math/l8": {
+      "rev": 1,
+      "fp": "sha256:8b30dfc81e184ebe9054a6910a19f76946124001cdbac10d9fc491e931949afa"
+    },
+    "math/l9": {
+      "rev": 1,
+      "fp": "sha256:7905e663b3f7c38e2ba65908305fcadb2f354c83fb747fbf6e8d77390a95d5aa"
     },
     "psychology/l1": {
       "rev": 2,

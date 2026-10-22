@@ -4,11 +4,13 @@
 // generated ones made with fresh numbers. The same run gives the same group.
 
 // One reference as the instances the learner meets: a fixed item is one, a generator makes `n` with fresh seeds.
-function refInstances(data, subjectId, ref, run, k){
+// `taken` (a Map of generator id to the numbers already drawn for this list) keeps two questions of one list from having the same numbers.
+function refInstances(data, subjectId, ref, run, k, taken = new Map()){
   if(typeof ref === 'string') return [instanceOf(data, ref)];
   const gen = data.gens[ref.gen];
   if(isPlaceGen(gen)) return placeSetInstances(data, subjectId, gen, ref, run, k);
-  return Array.from({ length: ref.n }, (_, j) => instanceOf(data, ref, freshSeed(subjectId, ref.gen, run, k * 100 + j)));
+  if(!taken.has(ref.gen)) taken.set(ref.gen, new Set());
+  return Array.from({ length: ref.n }, (_, j) => instanceOf(data, ref, freshSeed(subjectId, ref.gen, run, k * 100 + j, ref.with ? null : data, taken.get(ref.gen))));
 }
 // "Practice again": an item that was seen gives way to one of its strand the learner has not seen, when the strand holds one
 function unseenInPlace(data, subjectId, ref, taken){
@@ -31,9 +33,9 @@ function buildSet(data, subjectId, lesson, set, run, { again = false } = {}){
     if(typeof chosen === 'string') taken.push(chosen);
     return chosen;
   }));
-  const seed = hashSeed(`${run}|${lesson.id}|${JSON.stringify(set.items).length}`);
+  const seed = hashSeed(`${run}|${lesson.id}|${JSON.stringify(set.items).length}`), drawn = new Map();   // the numbers already drawn for this group
   const groups = refs.map((pair, k) => {
-    const made = pair.flatMap((ref, j) => refInstances(data, subjectId, ref, run, k * 10 + j));
+    const made = pair.flatMap((ref, j) => refInstances(data, subjectId, ref, run, k * 10 + j, drawn));
     return pair.length > 1 ? shuffled(made, seed + k) : made;   // an inner pair is asked one after the other, its order random
   });
   const ordered = set.order === 'shuffle' ? shuffled(groups, seed) : groups;
@@ -43,7 +45,7 @@ function buildSet(data, subjectId, lesson, set, run, { again = false } = {}){
   const extra = Math.max(1, Math.round(own.length * set.mix.share / (1 - set.mix.share)));
   const pool = mixPool(data, subjectId, set.mix.from);
   if(!pool.length) return own;
-  const mixed = Array.from({ length: extra }, (_, j) => refInstances(data, subjectId, pool[j % pool.length], run, 900 + j)[0]);
+  const mixed = Array.from({ length: extra }, (_, j) => refInstances(data, subjectId, pool[j % pool.length], run, 900 + j, drawn)[0]);
   const slots = shuffled(Array.from({ length: own.length + extra }, (_, i) => i), seed + 7).slice(0, extra);
   let ownAt = 0, mixedAt = 0;
   return Array.from({ length: own.length + extra }, (_, i) => slots.includes(i) ? mixed[mixedAt++] : own[ownAt++]);

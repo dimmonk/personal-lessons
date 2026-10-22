@@ -261,19 +261,25 @@ what follows a pick on the option; an ask drawing on a list says it with `then` 
 `then` is the consequence of the right action, shown in the feedback. `shuffle: true` orders the options by the item's
 seed (the same each time it is shown, never stored), so a template's right option is not always in one place.
 
-**`number`** `{ id, kind, prompt, frame?, unit?, places?, answer, tol, estimate?, traps?, when? }`. `frame` has a blank
+**`number`** `{ id, kind, prompt, frame?, unit?, places?, answer, tol, estimate?, traps?, calc?, wild?, when? }`. `frame` has a blank
 (`__`) for each value of `answer` (a number, a value the generator makes, or a list of them); `places` fixes the
 decimals printed. "$1,234.50", "40%" and " 7 " read as numbers; anything else keeps Answer shut. The answer is stored as
 the list of numbers typed. `tol` is one of four: `{ round: step }` (the same when both are rounded to the step),
 `{ band: [least, most] }` (from least to most times the answer), or `{ abs }` and/or `{ rel }` (either is enough); `round`
-and `band` stand alone. The result is `ok`, the slip of the first trap whose value matches (by the same `tol`), or `no`.
+and `band` stand alone. The result is `ok`, the slip of the first trap whose value matches (by the same `tol`), the
+slip named by `wild` when the number is more than double or less than half the answer, whatever trap it also matches (so a check's "none
+wild" counts every wild answer; the feedback still prints that trap's line, found from the numbers typed), or `no`.
 `traps: [{ slip, value, then? }]` names the numbers a learner gets by each slip; with no `then` the slip's name is printed.
 - **The estimate is an ask of its own**, `estimate: true`, placed before the exact one (V74), with no calculator. It has
   its own result, so a pass rule can count it and the feedback puts it beside the exact answer ("You said $68.00. The
   exact answer is $72.40, so you were 6% under."). With no `tol` it is right from half to double (`band: [0.5, 2]`). A
   wild estimate makes the item a miss.
 - **The calculator** does four operations, one at a time, opens under the boxes (never on an estimate), and "Put it in
-  the box" copies the display to the first empty box. What is typed survives a repaint.
+  the box" copies the display to the first empty box. What is typed survives a repaint. An ask's `calc` adds buttons in a row above
+  the four, any of `'pow'` (xʸ, a power done like the other operations, one at a time: 1.05 xʸ 10 × 1000), `'sqrt'` (√ of the number
+  shown, which then counts as a typed number: 9 + 16 √ = 13) and `'mem'` (M+ finishes the sum and adds it to the memory, MR shows the
+  memory, MC empties it; an M on the display while it holds a number; C keeps it; it lasts for the question). `CALC_EXTRAS` and
+  `calcPress` in `number.js` are the one list and the one machine; V70 refuses another name, one named twice, and `calc` on an estimate.
 
 **`form`** `{ id, kind: 'form', prompt, fields, when? }`. A field is the shape of a `number` or `choose` ask without
 `id`, `kind` and `prompt`, plus `id`, `label`, `type: 'number' | 'choose'`. **A form ask is only the scored form on a
@@ -422,7 +428,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `article` | `news`, `post`, `ad`, `report`: where it comes from, a headline (every form but a post), the lines, small print last | `id?`, `form`, `source`, `headline?: Segment`, `lines`, `label?: { text, by, side }` (a post only) |
 | `chart` | bars or a line drawn as SVG from its data; an axis may start above zero, and then the start is written on it | `type`, `title`, `x`, `y: { from, to, step, unit? }`, `series: [{ name?, values }]`, `source`, `labels?` |
 | `document` | `receipt`, `recipe`, `tag`, `offer`, `statement`, `fees`, `paystub`, `matchrule`, `beneficiary`, `foreign`, `table`; adjacent documents with a `tab` are one group of tabs | `form`, `title`, `rows: [{ id, cells, strong? }]`, `notes?`, `head?`, `tab?` |
-| `figure` | `rate-table`, `bar` (the 100% bar), `plan` (a room plan to scale), `years`, `people` (1,000 dots a row, the first `count` marked) | `type`, `data` (shapes in `tests/lessons/shapes.mjs`) |
+| `figure` | `rate-table`, `bar` (the 100% bar), `plan` (a plan to scale: rectangles, circles with `shape: 'circle'` and a radius `r` (`across` writes the distance across), right triangles with `shape: 'triangle'`, the right angle at the bottom left; `say` writes words for a side of any shape, "?" or "10 ft ladder"; a tall plan fits 300 units), `years`, `people` (1,000 dots a row, the first `count` marked; a count may be a generator's slot) | `type`, `data` (shapes in `tests/lessons/shapes.mjs`) |
 | `ref` | a value looked up: its text, the value, "Looked up <day>", "Source: …", a line to check the source, and after a year a line to look it up again | `ref` (an id of `subject.refs`) |
 | `panel` | what a label or word requires, printed from `subject.rules`, beside the item while the help lasts | `rules` |
 | `spoken` | a question read aloud by an on-device voice; its words shown, or held behind "Show the words" | `text`, `show?` |
@@ -646,6 +652,9 @@ opens on a banner and asks only a choice (V83).
 4. A missed item comes back after three other items (or at the end of the set when fewer remain) until right; a made or
    sung item comes back with a new seed. Checks, retests and baselines never repeat an item: a miss there makes its
    strand due.
+   New numbers are new: a made question in a group, a check, a retest or the review never has the same numbers as one the learner
+   already tried of that generator, nor as another made in the same list (`freshSeed` skips such seeds in order, so a run still draws
+   the same; with no new one in 64 seeds it takes any unused seed). A place group is left as it is.
 5. Every set and check holds the subject's `mix` (V76; for a check drawn from a place group, the mix of its split): an entry's number below 1 is a share of the items, 1 or more a
    count; `{ facet, equal: true }` needs every value in equal number among the items that carry the facet. V76 reads
    the items a set names (a made one n times); a drawn check is not read.
@@ -1017,8 +1026,10 @@ Each subject has its pilot built, as `status: 'draft'`; every other lesson waits
 subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Singing**: lesson 2, "Match a note" (opens with the range). Its record has no strands, lists or facets: the sung
   review is not built. The tasks `hold`, `slide`, `interval`, `melody` and `light` are tested on `chorus` only.
-- **Math**: lesson 1 (rough totals, estimate first, and printed totals checked); two strands with generators (prices
-  in cents ending in 9). The 14-day retest belongs to lesson 7.
+- **Math**: rebuilt 2026-10-22 (plan: `docs/subjects/math/plan.md`): fifteen parts in six units; lessons 1 to 8 built, every problem a
+  generator in the way of thinking's steps (`MATH.problem`, `subjects/math/kit.js`: what is asked and given, a rough answer typed first,
+  the kind and its picture, the exact answer and a look back), faded by `leave`. Not built: lessons 9 to 15; the 14-day retest belongs to
+  lesson 15.
 - **Wealth**: rebuilt 2026-10-22 to its plan (`docs/subjects/wealth/plan.md`): twelve parts in four units; lessons 1 to 6 built (the list
   and what protects it, money needed soon, what it costs (the pilot, now part 3), the match and the order of saving, taxes, one big bet),
   each ending on its own work on the learner's sheet; refs for 2026 (FDIC, SIPC, the 401(k), IRA and HSA limits, the loss limit, the FBAR
@@ -1091,6 +1102,20 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   (3.9% for 2026) in place of the sheet's 4% limit; a work may say it is not settled (`open`); an own step may carry `repeat: 'year'` (V70 refuses
   any other beat, or one off the sheet, with a seeded fault), and its changes repeat in the calendar. `tests/own-later-pure.mjs` holds each worked
   household typed in against its work and each made question against its rule.
+- **2026-10-22, calculator buttons and shapes in a plan** (Math's plan, gaps G1 and G2): a `number` ask may add buttons to its calculator
+  (`calc: ['pow' | 'sqrt' | 'mem']`, 3.7): the power, the square root, and M+, MR and MC, so a sum of products is added line by line (the
+  pilot's review, its blocker); a `plan` figure draws circles and right triangles beside its rectangles, to one scale, with words for a side
+  (3.9), and fits a tall plan to 300 units. V70 reads both (six seeded faults), X13 presses the new buttons and X20 measures the shapes (one
+  seeded fault each more); `tests/number-pure.mjs` holds the calculator and the drawing. `FC.ENGINE` is 17 (the buttons' names).
+  After Math's reviews: a `number` ask's `wild` names the slip of an answer outside half to double (3.7), decided before the traps, so a
+  check's "none wild" counts every wild answer, a misplaced decimal point too; the feedback still prints the matching trap's line (a pure
+  test, a seeded fault on X13, and V74's fault for an unknown slip).
+  With Math's lessons 9 to 15: a rectangle in a `plan` may write words for its sides too (`say: { w, h }`, 3.9: a bed whose side is the
+  question), and a `people` row's count may be a generator's slot ("{tp}"), drawn as the number it is filled with (V70 reads it on the made
+  questions; two seeded faults).
+- **2026-10-22, new numbers are new** (Math's reviews of lessons 9 to 15: a check repeated a practice question's numbers, so its answer had
+  been seen): fresh seeds skip a question with the numbers of one already tried of that generator or already drawn for the same list
+  (4.5). Pure tests in `tests/number-pure.mjs`, with a seeded fault (fresh seeds that ignore the numbers met) run there.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

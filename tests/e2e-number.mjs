@@ -45,6 +45,15 @@ async function cartSlip(env, c, page) {
   c.check(await D.calcDisplay(page) === '25', `the calculator shows ${await D.calcDisplay(page)} for 12.5 × 2`);
   await page.locator('[data-calc-use]').click();
   c.check(await D.boxes(page, 'exact').first().inputValue() === '25', 'the calculator did not put its number in the box');
+  // the keys this ask adds: a sum of products line by line into the memory, the power key, the square root
+  c.check(await page.locator('.calc-more [data-calc-key]').count() === 5, 'the keys the question adds are not drawn above the four');
+  c.check(await page.locator('[data-calc-mem]').isHidden(), 'the memory mark shows with nothing in the memory');
+  await D.pressKeys(page, ['C', '5', '*', '2', 'M+', '3', '*', '4', 'M+', 'MR']);
+  c.check(await D.calcDisplay(page) === '22' && await page.locator('[data-calc-mem]').isVisible(), `the memory shows ${await D.calcDisplay(page)} for 5 × 2 then 3 × 4 added in, or no mark that it holds a number`);
+  await D.pressKeys(page, ['C', '2', 'pow', '1', '0', '=']);
+  c.check(await D.calcDisplay(page) === '1024', `the power key shows ${await D.calcDisplay(page)} for 2 to the power 10`);
+  await D.pressKeys(page, ['C', '1', '4', '4', 'sqrt']);
+  c.check(await D.calcDisplay(page) === '12', `the square root key shows ${await D.calcDisplay(page)} for 144`);
   await env.inspect(c, page, '360px the calculator open');
   // the slip: the total without the roast
   const slip = now.values.noRoast;
@@ -147,8 +156,10 @@ export async function X13(env) {
   // the record: numbers typed, and results that are ok, no or a slip
   const items = JSON.parse((await env.storage(page))['pl:till:items'] || '{}'), tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   c.check(tries.length >= 10 && tries.every(t => Object.values(t.a).every(v => Array.isArray(v) && v.every(x => typeof x === 'number'))), 'a typed answer is not stored as the list of numbers typed');
-  c.check(tries.every(t => Object.values(t.r).every(r => ['ok', 'no', 'left-out', 'point'].includes(r))), 'a result is not ok, no or the id of a slip');
-  c.check(tries.some(t => t.r.exact === 'left-out') && tries.some(t => t.r.est === 'no') && tries.filter(t => t.key === 't-cart').every(t => typeof t.seed === 'number'), 'the slip, the missed estimate and the seed of each made question are not in the record');
+  c.check(tries.every(t => Object.values(t.r).every(r => ['ok', 'no', 'left-out', 'point', 'wild'].includes(r))), 'a result is not ok, no or the id of a slip');
+  const fourfold = tries.filter(t => t.context === 'check' && t.key === 't-cart');
+  c.check(fourfold.length >= 1 && fourfold.every(t => t.r.exact === 'wild'), 'an exact total four times too big is not counted as wild');
+  c.check(tries.some(t => ['left-out', 'wild'].includes(t.r.exact)) && tries.some(t => t.r.est === 'no') && tries.filter(t => t.key === 't-cart').every(t => typeof t.seed === 'number'), 'the slip, the missed estimate and the seed of each made question are not in the record');
   await context.close();
   return c;
 }
@@ -192,15 +203,26 @@ export async function X20(env) {
   c.check((await block('bar').textContent()).includes('You pay: 75%') && (await block('bar').textContent()).includes('0%') && (await block('bar').textContent()).includes('100%'), 'the bar does not say what each part is, or its ends');
   // the plan: one scale for every side, and the measurements written
   const plan = figs.find(f => f.type === 'plan').data;
-  const rooms = await block('plan').locator('rect').evaluateAll(rects => rects.map(r => ({ width: r.getBoundingClientRect().width, height: r.getBoundingClientRect().height, cut: r.classList.contains('cut') })));
+  const rooms = await block('plan').first().locator('rect').evaluateAll(rects => rects.map(r => ({ width: r.getBoundingClientRect().width, height: r.getBoundingClientRect().height, cut: r.classList.contains('cut') })));
   c.check(rooms.length === plan.parts.length, 'the plan is not drawn in as many shapes as the data has');
   plan.parts.forEach((p, i) => {
     const r = rooms[i] || { width: 0, height: 0 };
     c.check(near(r.width / rooms[0].width, p.w / plan.parts[0].w, 0.02) && near(r.height / rooms[0].height, p.h / plan.parts[0].h, 0.02) && near(r.width / r.height, p.w / p.h, 0.02), `shape ${i + 1} of the plan is not to the scale of the first`);
     c.check(r.cut === !!p.cut, `shape ${i + 1} of the plan is ${r.cut ? 'drawn cut out' : 'not drawn cut out'}, the data says ${p.cut ? 'cut out' : 'not'}`);
   });
-  const written = await block('plan').textContent();
+  const written = await block('plan').first().textContent();
   plan.parts.forEach(p => c.check(written.includes(`${p.w} ${plan.unit}`) && written.includes(`${p.h} ${plan.unit}`), `the plan does not write ${p.w} ${plan.unit} by ${p.h} ${plan.unit}`));
+  // circles and a right triangle beside a rectangle: each to the rectangle's scale, the radius or the distance across and the words written
+  const shapes = figs.filter(f => f.type === 'plan')[1].data, [patio, rug, ladder, pot] = shapes.parts;
+  const drawnShapes = await block('plan').nth(1).locator('svg').evaluate(svg => ({
+    rect: svg.querySelector('rect').getBoundingClientRect().width,
+    circles: [...svg.querySelectorAll('circle')].map(e => e.getBoundingClientRect().width),
+    tri: (b => ({ w: b.width, h: b.height }))(svg.querySelector('polygon').getBoundingClientRect()), text: svg.textContent }));
+  const per = drawnShapes.rect / patio.w;
+  c.check(drawnShapes.circles.length === 2 && near(drawnShapes.circles[0] / per, 2 * rug.r, 0.05) && near(drawnShapes.circles[1] / per, 2 * pot.r, 0.05), `the circles are drawn ${drawnShapes.circles.map(w => (w / per).toFixed(2)).join(' and ')} ${shapes.unit} across, not ${2 * rug.r} and ${2 * pot.r}`);
+  c.check(near(drawnShapes.tri.w / per, ladder.w, 0.05) && near(drawnShapes.tri.h / per, ladder.h, 0.05), `the triangle is drawn ${(drawnShapes.tri.w / per).toFixed(2)} by ${(drawnShapes.tri.h / per).toFixed(2)}, not ${ladder.w} by ${ladder.h}`);
+  c.check([`${rug.r} ${shapes.unit}`, `${2 * pot.r} ${shapes.unit}`, ladder.say.w, ladder.say.slant, `${ladder.h} ${shapes.unit}`].every(w => drawnShapes.text.includes(w)) && !drawnShapes.text.includes(`${ladder.w} ${shapes.unit}`),
+    `the circle's radius, the distance across, the triangle's sides and the words in place of a number are not what is written (${drawnShapes.text})`);
   // the year table: its header and a row for each year, as given
   const years = figs.find(f => f.type === 'years').data;
   const table = await block('years').locator('tr').evaluateAll(rows => rows.map(r => [...r.children].map(x => x.textContent)));

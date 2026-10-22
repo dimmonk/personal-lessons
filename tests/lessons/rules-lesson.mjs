@@ -116,6 +116,8 @@ function numberExplainProblems(s, item, ask, where, ids) {
     try { e.numberAnswers(item, { answer: t.value }); } catch (error) { problems.push(`${where}: the trap "${t.slip}": ${error.message}`); }
     if (!ids.includes(t.slip)) problems.push(`${where}: the slip "${t.slip}" is not in the subject's list of slips`);
   });
+  if (ask.wild !== undefined && !ids.includes(ask.wild)) problems.push(`${where}: the slip "${ask.wild}" for a wild answer is not in the subject's list of slips`);
+  if (ask.wild !== undefined && ask.estimate) problems.push(`${where}: an estimate is already a miss when it is wild; "wild" names the slip of a wild exact answer`);
   const before = item.asks.slice(0, item.asks.indexOf(ask));
   if (ask.estimate && before.some(a => a.kind === 'number' && !a.estimate)) problems.push(`${where}: the estimate comes after an exact answer; it is typed first`);
   return problems;
@@ -249,7 +251,9 @@ function generatorProblems(s, gen) {
         if (e.numbersMatch(wanted, wanted, tol) !== true) problems.add(`ask ${ask.id}: the answer is not within its own tolerance`);
         (ask.traps || []).forEach(t => {
           const slipValues = e.numberAnswers(a, { answer: t.value });
-          if (e.numbersMatch(slipValues, wanted, tol)) problems.add(`the slip "${t.slip}" gives the answer ${wanted.join(', ')}, or lands within its tolerance`);
+          // a rough answer's band may hold a slip (the nearer one decides, number.js), so long as the two can be told apart by a rough answer
+          const clash = ask.estimate ? e.numbersMatch(slipValues, wanted, { rel: e.ESTIMATE_TRAP_GAP }) : e.numbersMatch(slipValues, wanted, tol);
+          if (clash) problems.add(`the slip "${t.slip}" gives the answer ${wanted.join(', ')}, or lands within its tolerance${ask.estimate ? ' (a rough answer: within 4%)' : ''}`);
         });
       });
       flatAsks(s, a).filter(ask => ask.kind === 'choose').forEach(ask => {

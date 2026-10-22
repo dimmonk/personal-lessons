@@ -174,7 +174,7 @@ function missLine(data, ask, answer, result, item){
   if(ask.kind === 'sing') return singMissHtml(ask, answer);
   if(ask.kind === 'exchange') return '';
   if(ask.kind === 'order') return orderMissHtml(ask, answer);
-  if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result);
+  if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result, item);
   if(ask.kind === 'form') return formMissHtml(data, ask, answer, item);
   if(ask.kind === 'tap') return tapMissHtml(data, ask, answer, item);
   if(ask.kind === 'place') return placeMissHtml(data, ask, answer, result);

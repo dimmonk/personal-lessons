@@ -4,15 +4,17 @@
 //   st: { answer?: [numbers], marks, typed?: { [askId]: [text] }, looked?: { [askId]: true }, calc?: { open, st } }
 //   ctx: { item, support, answers }
 
-// four columns; the zero is two wide
+// four columns; the zero is two wide. The keys an ask adds (calcExtraKeys, number.js) stand in a row above them, sharing its width.
 const CALC_LAYOUT = ['C', 'B', '/', '*', '7', '8', '9', '-', '4', '5', '6', '+', '1', '2', '3', '=', '0', '.'];
-const CALC_FACE = { C: 'C', B: '⌫', '/': '÷', '*': '×', '-': '−' };
+const CALC_FACE = { C: 'C', B: '⌫', '/': '÷', '*': '×', '-': '−', pow: 'xʸ', sqrt: '√' };
 const calcFace = key => CALC_FACE[key] || key;
+const calcKeyHtml = k => `<button type="button" class="calc-key ${/^\d$/.test(k) ? 'num' : 'op'} ${k === '0' ? 'wide' : ''}" data-calc-key="${esc(k)}" aria-label="${esc(SAY.calcName[k] || k)}">${esc(calcFace(k))}</button>`;
 
-function calcHtml(calc){
-  const keys = CALC_LAYOUT.map(k => `<button type="button" class="calc-key ${/\d/.test(k) ? 'num' : 'op'} ${k === '0' ? 'wide' : ''}" data-calc-key="${esc(k)}" aria-label="${esc(SAY.calcName[k] || k)}">${esc(calcFace(k))}</button>`).join('');
-  return `<div class="calc" data-calc ${calc.open ? '' : 'hidden'}><output class="calc-display" data-calc-display aria-live="polite">${esc(calc.st.shown)}</output>
-    <div class="calc-grid">${keys}</div><button type="button" class="btn ghost sm" data-calc-use>${esc(SAY.calcUse)}</button></div>`;
+function calcHtml(calc, ask){
+  const extra = calcExtraKeys(ask), mem = calc.st.mem ? '' : 'hidden';
+  const more = extra.length ? `<div class="calc-grid calc-more">${extra.map(calcKeyHtml).join('')}</div>` : '';
+  return `<div class="calc" data-calc ${calc.open ? '' : 'hidden'}><div class="calc-screen"><span class="calc-mem" data-calc-mem aria-label="${esc(SAY.calcMemory)}" ${mem}>M</span><output class="calc-display" data-calc-display aria-live="polite">${esc(calc.st.shown)}</output></div>
+    ${more}<div class="calc-grid">${CALC_LAYOUT.map(calcKeyHtml).join('')}</div><button type="button" class="btn ghost sm" data-calc-use>${esc(SAY.calcUse)}</button></div>`;
 }
 
 // the boxes and the words around them, from the frame: "$__ each" is "$", a box, " each"
@@ -40,7 +42,7 @@ function numberHtml(data, ask, st, ctx){
     <button type="button" class="btn sm" data-num-answer="${esc(ask.id)}" ${ready ? '' : 'disabled'}>${esc(SAY.answerBtn)}</button></div>`;
   return `<div class="stepopen prompt numask" data-ask="${esc(ask.id)}" ${estimate ? 'data-estimate' : ''}><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>
     ${locked ? '' : `<span class="forline">${esc(estimate ? SAY.numberEstimateHint : SAY.numberHint)}</span>`}
-    <div class="numframe">${frameHtml(ask, values, locked)}</div>${locked || estimate ? '' : calcHtml(calc)}${disagree}${tools}</div>`;
+    <div class="numframe">${frameHtml(ask, values, locked)}</div>${locked || estimate ? '' : calcHtml(calc, ask)}${disagree}${tools}</div>`;
 }
 
 /* ---------- what it leaves in the feedback ---------- */
@@ -58,10 +60,11 @@ function numberMarkHtml(ask, answer, result, item, answers){
   return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(text)}</span></div>`;
 }
 // "You typed $5.20. That is the answer you get when ...": the named slip's own line, else the slip's name from the subject's list
-function numberMissHtml(data, ask, answer, result){
-  if(isEstimateAsk(ask)) return '';
-  const trap = (ask.traps || []).find(t => t.slip === result);
-  const line = result === 'no' ? '' : trap && trap.then ? paras(trap.then).join(' ') : SAY.slipLine(slipText(data, result));
+// A wild answer that is also a named slip is told by the slip's own line (the item is needed to find it from the numbers typed).
+function numberMissHtml(data, ask, answer, result, item){
+  if(isEstimateAsk(ask) && !(ask.traps || []).some(t => t.slip === result)) return '';   // a rough answer says more only when a named slip decided it
+  const trap = (ask.traps || []).find(t => t.slip === result) || (item && result === ask.wild ? numberTrapOf(ask, answer, item) : undefined);
+  const line = result === 'no' ? '' : trap && trap.then ? paras(trap.then).join(' ') : SAY.slipLine(slipText(data, trap ? trap.slip : result));
   return `<div class="vblock"><p><b>${esc(SAY.youTyped(typedFrame(ask, asList(answer))))}</b> ${esc(line)}</p></div>`;
 }
 // the right answer, as the worked example and the mark print it

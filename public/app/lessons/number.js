@@ -2,7 +2,7 @@
 // Lesson standard 3 (the `number` ask), 4 (the estimate, and "your answer and your estimate disagree"). Pure: no page and no
 // storage, so the player, the validator and the tests all score a typed number the same way.
 //   ask   { id, kind: 'number', prompt, frame?: 'from __ in 1,000 to __ in 1,000', unit?, places?, answer: value | [value, ...],
-//           tol: { abs?, rel? } | { round } | { band: [least, most] }, estimate?: true, traps?: [{ slip, value, then? }], when? }
+//           tol: { abs?, rel? } | { round } | { band: [least, most] }, estimate?: true, traps?: [{ slip, value, then? }], calc?: ['pow' | 'sqrt' | 'mem'], wild?: slipId, when? }
 //   A value is a number, or the name of a number the question makes (a generator's `make`). One value per blank of the frame.
 //   An answer is stored as the list of numbers typed, one per blank. The result is 'ok', the id of the slip it matches, or 'no'.
 //   An estimate is its own ask, placed before the exact one: it has no calculator and, with no `tol`, is right within half to double.
@@ -47,16 +47,34 @@ const tolOf = ask => ask.tol || (ask.estimate ? { band: NUMBER_BAND } : lessonFa
 // answer. `abs` and `rel` are distances; a number within either is right.
 function withinTol(typed, answer, tol){
   const distance = Math.abs(typed - answer);
-  if('round' in tol) return Math.round(typed / tol.round + NUMBER_EPS) === Math.round(answer / tol.round + NUMBER_EPS);
+  if('round' in tol){
+    // an answer exactly half way between two steps ($20.225 to the cent) is right rounded either way: both are a fair "nearest cent"
+    const steps = answer / tol.round, half = Math.abs(steps - Math.floor(steps) - 0.5) < 1e-6;
+    const typedSteps = Math.round(typed / tol.round + NUMBER_EPS);
+    return half ? typedSteps === Math.floor(steps) || typedSteps === Math.ceil(steps) : typedSteps === Math.round(steps + NUMBER_EPS);
+  }
   if('band' in tol) return typed >= tol.band[0] * answer - NUMBER_EPS && typed <= tol.band[1] * answer + NUMBER_EPS;
   return ('abs' in tol && distance <= tol.abs + NUMBER_EPS) || ('rel' in tol && distance <= tol.rel * Math.abs(answer) + NUMBER_EPS);
 }
 const numbersMatch = (typed, want, tol) => typed.length === want.length && want.every((v, i) => typeof typed[i] === 'number' && withinTol(typed[i], v, tol));
-// 'ok', the id of the slip whose value the answer matches, or 'no'
+// the trap whose value the typed numbers match, or undefined
+const numberTrapOf = (ask, typed, item) => (ask.traps || []).find(t => numbersMatch(asList(typed), numberAnswers(item, { answer: t.value }), tolOf(ask)));
+// 'ok', the ask's `wild` slip, the id of the slip whose value the answer matches, or 'no'. A miss that is wild, more than double or less than
+// half the answer, is the `wild` slip whatever trap it also matches, so a check's "none wild" counts every one (lesson standard 3.7); the
+// feedback still names the trap (numberMissHtml finds it from the typed numbers).
+// A rough answer (an estimate) is scored by a band, which may hold a named slip's value too (a tip on the total sits a few percent from the
+// tip on the subtotal): then the nearer of the two decides, so a rough answer made the wrong way is named, not passed.
+const ESTIMATE_TRAP_GAP = 0.04;   // a trap closer than this share to the answer cannot be told from it by a rough answer, and is never asked of one
+const nearerTrap = (ask, typed, item) => (ask.traps || []).find(t => {
+  const trap = numberAnswers(item, { answer: t.value }), want = numberAnswers(item, ask);
+  return trap.length === typed.length && trap.every((v, i) => Math.abs(typed[i] - v) < Math.abs(typed[i] - want[i])) && numbersMatch(typed, trap, tolOf(ask));
+});
 function scoreNumber(data, ask, answer, item){
   const typed = asList(answer), tol = tolOf(ask);
+  if(isEstimateAsk(ask)){ const near = nearerTrap(ask, typed, item); if(near) return near.slip; }
   if(numbersMatch(typed, numberAnswers(item, ask), tol)) return 'ok';
-  const slip = (ask.traps || []).find(t => numbersMatch(typed, numberAnswers(item, { answer: t.value }), tol));
+  if(ask.wild && !numbersMatch(typed, numberAnswers(item, ask), { band: NUMBER_BAND })) return ask.wild;
+  const slip = numberTrapOf(ask, typed, item);
   return slip ? slip.slip : 'no';
 }
 
@@ -81,43 +99,68 @@ function estimateOff(typed, exact){
 }
 
 /* ---------- the calculator ---------- */
-// A plain four-function calculator, one operation at a time, as on a phone. State is replaced at every press, never changed.
-//   { shown: '0', acc: null, op: null, fresh: true, error: false }
-const CALC_START = { shown: '0', acc: null, op: null, fresh: true, error: false };
-const CALC_OPS = ['+', '-', '*', '/'];
+// A plain calculator, one operation at a time, as on a phone. State is replaced at every press, never changed.
+//   { shown: '0', acc: null, op: null, fresh: true, held: false, error: false, mem: 0 }
+// `fresh`: the next digit starts a new number. `held`: the display is a number to use (a square root, a recalled memory) even though the next
+// digit replaces it. `mem` is the memory of M+ and MR; it lasts for the question (the queue starts each question at CALC_START).
+// An ask may add keys to the four (`calc`, lesson standard 3.7): 'pow' the power key (x to the y), 'sqrt' the square root, 'mem' M+, MR and MC.
+const CALC_START = { shown: '0', acc: null, op: null, fresh: true, held: false, error: false, mem: 0 };
+const CALC_OPS = ['+', '-', '*', '/', 'pow'];
+const CALC_EXTRA = { pow: ['pow'], sqrt: ['sqrt'], mem: ['MC', 'MR', 'M+'] };   // the keys each extra of an ask adds, in the order drawn
+const CALC_EXTRAS = Object.keys(CALC_EXTRA);
 const CALC_MAX_DIGITS = 12;
 const calcClean = value => String(Number(value.toPrecision(12)));
+const calcError = mem => ({ ...CALC_START, shown: 'Error', error: true, mem });
 function calcApply(acc, op, value){
-  const out = op === '+' ? acc + value : op === '-' ? acc - value : op === '*' ? acc * value : value === 0 ? NaN : acc / value;
+  const out = op === '+' ? acc + value : op === '-' ? acc - value : op === '*' ? acc * value : op === 'pow' ? Math.pow(acc, value) : value === 0 ? NaN : acc / value;
   return Number.isFinite(out) ? { shown: calcClean(out), error: false } : { shown: 'Error', error: true };
 }
+// the display has a number for the pending operation: typed digits, or a held result
+const calcHasOperand = st => !st.fresh || st.held;
+// finish the pending operation, as = does: the state with the result shown, or an error
+function calcFinish(base){
+  if(!base.op || !calcHasOperand(base)) return { ...base, acc: null, op: null, fresh: true, held: false };
+  const done = calcApply(base.acc, base.op, Number(base.shown));
+  return done.error ? calcError(base.mem) : { ...base, shown: done.shown, acc: null, op: null, fresh: true, held: false };
+}
 function calcPress(st, key){
-  const base = st.error ? CALC_START : st;
-  if(key === 'C') return CALC_START;
+  const base = st.error ? { ...CALC_START, mem: st.mem || 0 } : st;
+  if(key === 'C') return { ...CALC_START, mem: base.mem };
   if(key === 'B'){
     if(base.fresh) return base;
     const next = base.shown.slice(0, -1);
     return { ...base, shown: next === '' || next === '-' ? '0' : next };
   }
   if(/^\d$/.test(key)){
-    if(base.fresh) return { ...base, shown: key, fresh: false };
+    if(base.fresh) return { ...base, shown: key, fresh: false, held: false };
     if(base.shown.replace(/[-.]/g, '').length >= CALC_MAX_DIGITS) return base;
     return { ...base, shown: base.shown === '0' ? key : base.shown + key };
   }
   if(key === '.'){
-    if(base.fresh) return { ...base, shown: '0.', fresh: false };
+    if(base.fresh) return { ...base, shown: '0.', fresh: false, held: false };
     return base.shown.includes('.') ? base : { ...base, shown: base.shown + '.' };
   }
   if(CALC_OPS.includes(key)){
-    const chained = base.op && !base.fresh ? calcApply(base.acc, base.op, Number(base.shown)) : { shown: base.shown, error: false };
-    return chained.error ? { ...CALC_START, shown: 'Error', error: true } : { shown: chained.shown, acc: Number(chained.shown), op: key, fresh: true, error: false };
+    const chained = base.op && calcHasOperand(base) ? calcApply(base.acc, base.op, Number(base.shown)) : { shown: base.shown, error: false };
+    return chained.error ? calcError(base.mem) : { ...base, shown: chained.shown, acc: Number(chained.shown), op: key, fresh: true, held: false, error: false };
   }
   if(key === '='){
-    if(!base.op || base.fresh) return base;
-    const done = calcApply(base.acc, base.op, Number(base.shown));
-    return done.error ? { ...CALC_START, shown: 'Error', error: true } : { shown: done.shown, acc: null, op: null, fresh: true, error: false };
+    if(!base.op || !calcHasOperand(base)) return base;
+    return calcFinish(base);
   }
+  if(key === 'sqrt'){
+    const value = Number(base.shown);
+    return value < 0 ? calcError(base.mem) : { ...base, shown: calcClean(Math.sqrt(value)), fresh: true, held: true };
+  }
+  if(key === 'M+'){
+    const done = calcFinish(base);
+    return done.error ? done : { ...done, mem: Number(calcClean(done.mem + Number(done.shown))), held: true };
+  }
+  if(key === 'MR') return { ...base, shown: calcClean(base.mem), fresh: true, held: true };
+  if(key === 'MC') return { ...base, mem: 0 };
   return base;
 }
+// The keys an ask's calculator has beyond the four: [key], in the order of CALC_EXTRA
+const calcExtraKeys = ask => CALC_EXTRAS.filter(x => (ask.calc || []).includes(x)).flatMap(x => CALC_EXTRA[x]);
 // the number on the display, or null (an error)
 const calcValue = st => st.error ? null : Number(st.shown);

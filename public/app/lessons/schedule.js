@@ -90,17 +90,30 @@ const retestsDue = (data, subjectId, through) => retestDays(data, subjectId).fil
 
 /* ---------- fresh instances ---------- */
 const lastTryRun = (subjectId, key) => { const t = triesOf(subjectId, key); return t.length ? t[t.length - 1].run : ''; };
-// a seed no earlier try of this generator used
-function freshSeed(subjectId, genId, run, k){
-  const used = new Set(triesOf(subjectId, genId).map(t => t.seed));
-  let seed = hashSeed(`${run}|${genId}|${k}`);
-  while(used.has(seed)) seed = (seed + 1) >>> 0;
-  return seed;
+// A seed no earlier try of this generator used. Given the subject's data, it also skips a seed whose question has the same numbers as one the
+// learner already met (an earlier try of this generator, whose answer they saw) or as one already drawn for the same list (`taken`, a Set
+// of keys the caller keeps and this adds to): a check or a retest is never a question already answered in practice. It tries the
+// seeds after the first one in order, so the same run still gives the same question; with none new in SEED_TRIES, the first unused seed.
+const SEED_TRIES = 64;
+const valuesKey = (gen, seed) => JSON.stringify(genValues(gen, seed));
+function freshSeed(subjectId, genId, run, k, data = null, taken = null){
+  const tries = triesOf(subjectId, genId), used = new Set(tries.map(t => t.seed)), start = hashSeed(`${run}|${genId}|${k}`);
+  const gen = data && data.gens && data.gens[genId];
+  const firstUnused = () => { let seed = start; while(used.has(seed)) seed = (seed + 1) >>> 0; return seed; };
+  if(!gen || isPlaceGen(gen) || !gen.params) return firstUnused();
+  const met = new Set([...tries.map(t => valuesKey(gen, t.seed)), ...(taken || [])]);
+  let seed = start;
+  for(let i = 0; i < SEED_TRIES; i++, seed = (seed + 1) >>> 0){
+    if(used.has(seed)) continue;
+    const key = valuesKey(gen, seed);
+    if(!met.has(key)){ if(taken) taken.add(key); return seed; }
+  }
+  return firstUnused();
 }
 const genRef = (gen, extra = {}) => ({ gen: gen.id, n: 1, ...extra });
-function freshInstance(data, subjectId, def, run, k){
+function freshInstance(data, subjectId, def, run, k, taken = null){
   if(isPlaceGen(def)) return placeReviewInstance(data, subjectId, def, run, k);
-  return isMade(def) ? instanceOf(data, genRef(def), freshSeed(subjectId, def.id, run, k)) : instanceOf(data, def.id);
+  return isMade(def) ? instanceOf(data, genRef(def), freshSeed(subjectId, def.id, run, k, data, taken)) : instanceOf(data, def.id);
 }
 // Definitions in the order they should come back: never seen first, then the least recently seen. Ties keep their listed order.
 function leastSeen(subjectId, defs){
@@ -108,14 +121,14 @@ function leastSeen(subjectId, defs){
 }
 // One instance of a strand that the learner has not seen: fresh numbers if the strand has a generator, else an item held in reserve
 // that was never tried. When none is left, the least recently seen item comes back and `repeat` says so (E9's rule, kept).
-function strandInstance(data, subjectId, strandId, run, k, taken, facets){
+function strandInstance(data, subjectId, strandId, run, k, taken, facets, drawn = null){
   const defs = strandDefs(data, strandId).filter(d => !taken.includes(d.id) || isMade(d));
   const gens = defs.filter(isMade);
   // a strand with several generators (Math's printed totals: right ones and wrong ones) draws among them, by the run, among those that
   // match the facets asked for (a retest); taking them in turn would always hand the first kind to a one-question review
   if(gens.length){
     const alike = facets ? gens.filter(g => whereMatches(facets, g.facets)) : gens, pool = alike.length ? alike : gens;
-    return { inst: freshInstance(data, subjectId, pool[hashSeed(`${run}|${strandId}|${k}`) % pool.length], run, k), repeat: false };
+    return { inst: freshInstance(data, subjectId, pool[hashSeed(`${run}|${strandId}|${k}`) % pool.length], run, k, drawn), repeat: false };
   }
   const used = usedIds(data), fixed = defs.filter(d => !isMade(d));
   const near = list => facets ? [...list.filter(d => Object.entries(facets).every(([f, v]) => (d.facets || {})[f] === v)), ...list] : list;
@@ -141,11 +154,11 @@ function drawInstances(data, subjectId, draw, run, taken, lessonId){
 // A check's items on new questions: one new instance of the strand (and the facets) of each original, or a new draw.
 function retestInstances(data, subjectId, lesson, run){
   if(checkIsDrawn(lesson.check)) return drawInstances(data, subjectId, lesson.check.items.draw, run, [], lesson.id);
-  const taken = [], out = [];
+  const taken = [], out = [], drawn = new Set();   // drawn: the numbers of the made questions already in this retest
   flatRefs(lesson.check.items).forEach(ref => {
     const original = definitionOf(data, refId(ref));
     for(let k = 0; k < refCount(ref); k++){
-      const pick = strandInstance(data, subjectId, original.strand, run, out.length, taken, original.facets);
+      const pick = strandInstance(data, subjectId, original.strand, run, out.length, taken, original.facets, drawn);
       if(pick){ out.push(pick.inst); if(pick.inst.seed === undefined) taken.push(pick.inst.key); }
     }
   });

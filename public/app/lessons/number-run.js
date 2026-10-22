@@ -60,6 +60,8 @@ function pressCalc(key){
   const st = calcPress(Q.cur.calc.st, key);
   setCalc({ st });
   document.querySelector('[data-calc-display]').textContent = st.shown;
+  const mem = document.querySelector('[data-calc-mem]');
+  if(mem) mem.hidden = !st.mem;
 }
 // the display goes into the first empty box of the open ask, else the last one
 function useCalc(button){

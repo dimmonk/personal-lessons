@@ -11,7 +11,7 @@ FC.subject('till', {
   parts: [{ id: '1', title: 'Count the cart' }],
   complete: true,
   lists: {
-    slip: [{ id: 'left-out', text: 'left a line out of the total' }, { id: 'point', text: 'put the decimal point in the wrong place' }]
+    slip: [{ id: 'left-out', text: 'left a line out of the total' }, { id: 'point', text: 'put the decimal point in the wrong place' }, { id: 'wild', text: 'gave an answer more than double or less than half the right one' }]
   },
   facets: { kind: { name: 'Kind', values: [{ id: 'sum', text: 'sums' }, { id: 'scale', text: 'recipes' }] } },
   mix: [],

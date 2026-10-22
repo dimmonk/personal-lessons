@@ -345,6 +345,10 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .calc-display{display:block;min-height:46px;padding:8px 10px;background:var(--bg);border:1px solid var(--rule);text-align:right;
   font-family:var(--mono);font-size:24px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .calc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.calc-more{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+.calc-screen{position:relative}
+.calc-mem{position:absolute;top:6px;left:10px;font-family:var(--mono);font-size:13px;color:var(--accent)}
+.calc-mem[hidden]{display:none}
 .calc-key{height:46px;min-width:0;background:var(--raised);border:1px solid var(--border);color:var(--body);font-family:var(--mono);font-size:17px}
 .calc-key.op{color:var(--accent)}
 .calc-key.wide{grid-column:span 2}
@@ -378,6 +382,7 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .fig-room.cut{fill:none;stroke-dasharray:5 4}
 .fig-label{fill:var(--dim);font-family:var(--mono);font-size:11px}
 .fig-label.in{fill:var(--text)}
+.fig-line{fill:none;stroke:var(--dim);stroke-width:1.5}
 
 /* ---------- a household's papers, a value looked up, a form, and the learner's own data ---------- */
 .doc-rows th{padding:0 0 6px;text-align:left;font-family:var(--mono);font-size:9.5px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--label);border-bottom:1px solid var(--rule)}

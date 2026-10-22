@@ -17,10 +17,16 @@ let GENS = {};
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
+// a part of a plan in words: a rectangle, a circle with its radius or the distance across, a right triangle with its sides; words written in place of a number are quoted
+// (a side with words is never written as its number, as on the screen; a blank is "nothing written")
+const said = (p, side, value, unit) => p.say && side in p.say ? (p.say[side].trim() ? `"${p.say[side].trim()}"` : 'nothing written') : `${Math.round(Number(value) * 100) / 100} ${unit}`;
+const planPartWords = (p, unit) => p.shape === 'circle' ? `a circle, ${p.across ? 'the distance across' : 'the radius'} written ${said(p, 'r', p.across ? 2 * Number(p.r) : p.r, unit)}`
+  : p.shape === 'triangle' ? `a right triangle, the right angle at the bottom left: flat side ${said(p, 'w', p.w, unit)}, upright side ${said(p, 'h', p.h, unit)}${p.say && p.say.slant ? `, the slant "${p.say.slant}"` : ', the slant not written'}`
+  : `${said(p, 'w', p.w, unit)} by ${said(p, 'h', p.h, unit)}`;
 const FIGURE_WORDS = {
   'rate-table': d => [`A table with two rows: ${[d.top, d.bottom].map(r => `${r.label}: ${r.cells.join(', ')}`).join(' / ')}.`],
   bar: d => [`A bar for the whole, "${d.whole}", cut into parts as wide as their percents: ${d.parts.map(p => `${p.label} ${p.pct}%`).join(', ')}.`],
-  plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${p.w} by ${p.h}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
+  plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${planPartWords(p, d.unit)}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
   years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`],
   people: d => [`${d.caption}: a row of 1,000 dots for each count, the first ones marked and read left to right, top to bottom: ${d.rows.map(r => `${r.label}, ${r.count} in 1,000`).join('; ')}.`]
 };
@@ -112,12 +118,12 @@ const TOL_WORDS = tol => 'round' in tol ? `to the nearest ${tol.round}` : 'band'
 function numberAskLines(e, ask, item, marks) {
   const estimate = e.isEstimateAsk(ask), blanks = (ask.frame || '__').replace(/__/g, '[ ]'), tol = e.tolOf(ask);
   const lines = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
-    `- The learner types ${estimate ? 'a rough answer from their head, with no calculator' : 'a number, with the calculator within reach'}: ${blanks}${ask.unit ? ` ${ask.unit}` : ''}.`];
+    `- The learner types ${estimate ? 'a rough answer from their head, with no calculator' : `a number, with the calculator within reach${ask.calc ? ` (with the extra keys ${e.calcExtraKeys(ask).map(k => e.SAY.calcName[k]).join(', ')})` : ''}`}: ${blanks}${ask.unit ? ` ${ask.unit}` : ''}.`];
   if (!marks) return lines;
   const want = e.numberAnswers(item, ask);
   lines.push(`- Right (${TOL_WORDS(tol)}${estimate && !ask.tol ? ': an estimate with no tolerance of its own is right from half to double' : ''}): ${e.frameFilled(ask, want)}`);
   (ask.traps || []).forEach(t => lines.push(`- If typed ${e.frameFilled(ask, e.numberAnswers(item, { answer: t.value }))}: ${t.then ? paras(t.then).join(' ') : `a slip: ${t.slip}`}`));
-  if (estimate) lines.push(`- Shown after: how far off it was, for example "${e.SAY.estimateLine('$' + (want[0] * 1.1).toFixed(2), e.frameFilled(ask, want), { pct: 10, dir: 'over' })}"`);
+  if (estimate) lines.push(`- Shown after: how far off it was, for example "${e.SAY.estimateLine(e.frameFilled({ ...ask, unit: undefined, places: undefined }, [want[0] * 1.1]), e.frameFilled(ask, want), { pct: 10, dir: 'over' })}"`);
   return lines;
 }
 // a form: one box for each number and one set of options for each choice, answered whole; each field is described as the ask of its own kind

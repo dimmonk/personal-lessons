@@ -21,7 +21,7 @@ export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseO
   'itemFromGen', 'slotsIn', 'segmentsOf', 'definitionOf', 'seededRandom', 'asList', 'checkIsSung', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE',
   'SING_RANGE_MIN_SPAN', 'singTaskProblems', 'singPlan', 'singKey', 'isSingKey', 'noteToMidi', 'singItem', 'rightWord', 'SING_LOUD_LIMIT', 'SING_MELODY_HOLD_MS', 'SAY',
   'parseTyped', 'fmtNumber', 'frameParts', 'slotCount', 'numberAnswers', 'numbersMatch', 'scoreNumber', 'tolOf', 'withinTol', 'isEstimateAsk', 'frameFilled',
-  'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'NUMBER_BAND', 'formFieldAsk', 'formFieldText', 'formFieldRight', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownValidDay', 'OWN_WORKS', 'OWN_ACCOUNT', 'OWN_KIND',
+  'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'CALC_EXTRAS', 'calcExtraKeys', 'ESTIMATE_TRAP_GAP', 'NUMBER_BAND', 'formFieldAsk', 'formFieldText', 'formFieldRight', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownValidDay', 'OWN_WORKS', 'OWN_ACCOUNT', 'OWN_KIND',
   'tapPick', 'tapRightIds', 'tapSegments', 'scoreTap', 'tapRightText', 'TAP_NONE', 'chartProblems', 'chartFromZero', 'chartTicks',
   'LABEL_SIDES', 'panelBlocksOf', 'itemRuleIds', 'ruleNeeds', 'labelledPostsOf', 'hasLines', 'facetSplits',
   'askIsScored', 'MESSAGE_FORMS', 'MESSAGE_LINK_FORMS', 'MESSAGE_YOURS', 'TEXT_MAX', 'writtenWords', 'textReady',
