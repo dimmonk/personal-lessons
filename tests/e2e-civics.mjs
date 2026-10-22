@@ -1,6 +1,5 @@
 // X45: Civics' pilot lesson, "Who does what", end to end on a phone (375 px). Not one of the checks the standard lists in 9: it was added with step 9
-// (3 to 9), the way step 8 ran Scams' pilot (X41). The test plays a learner who types every answer: the subject screen (the pilot and the thirteen parts
-// not built yet), the why and the map of the three branches, four groups of questions (the three branches with two misses, Congress, the
+// (3 to 9), the way step 8 ran Scams' pilot (X41). The test plays a learner who types every answer: the subject screen (lesson 1 and the parts not built yet), the why and the map of the three branches, four groups of questions (the three branches with two misses, Congress, the
 // president with one miss, the courts), each read aloud when the learner taps and answered from memory, the check (the same 17 again, in a new order,
 // 16 to pass), the record, the results, the review two days later (each question comes back as itself) and the form for the learner's own answers.
 // It asserts what this walk shows, and leaves to X14 (how an answer is matched, the box, a claim), X19 (when and how a question is read aloud), X43 and
@@ -14,7 +13,7 @@ const plainWords = async (c, page, env, label) => {   // the words of a screen, 
   c.check(jargon.length === 0 && british.length === 0, `${label}: shows ${[...jargon, ...british].map(w => `"${w}"`).join(', ')}`);
 };
 const ONLY_A_PHONE_VOICE = [VOICES.both[1]];
-const OFFICIAL = {   // the questions as the list words them (tests/fixtures/uscis-m1778-lesson1.json holds the whole list)
+const OFFICIAL = {   // the questions as the list words them (tests/fixtures/uscis-m1778.json holds the whole list)
   q16: 'Name the three branches of government.', q15: 'There are three branches of government. Why?', q17: 'The President of the United States is in charge of which branch of government?',
   q52: 'What is the highest court in the United States?'
 };
@@ -24,8 +23,9 @@ const ALL = GROUPS.flat();
 async function theSubject(env, c, page) {
   await env.openSubject(page, 'civics');
   const text = await screenText(page);
-  c.check(/Who does what/.test(text) && (text.match(/Not built yet/g) || []).length === 13, 'the subject screen does not list the pilot and the thirteen parts not built yet');
-  c.check(text.includes('Draft: not tried yet'), 'the pilot does not carry the draft line');
+  const { parts, built } = await page.evaluate(() => ({ parts: FC.get('civics').meta.parts.length, built: Object.keys(FC.get('civics').lessons).length }));   // the plan's parts and the lessons built so far, never numbers written here
+  c.check(/Who does what/.test(text) && (text.match(/Not built yet/g) || []).length === parts - built, `the subject screen does not list lesson 1 and the ${parts - built} parts not built yet`);
+  c.check(!text.includes('Draft: not tried yet'), 'a lesson that passed its reviews still carries the draft line');
   c.check(/Your answers and interview date/.test(text) && (text.match(/Not entered yet/g) || []).length === 9 && /Enter my answers/.test(text), 'the subject screen does not show the eight answers and the interview date as not entered');
   await env.inspect(c, page, 'the Civics subject screen');
 }
@@ -127,7 +127,8 @@ async function theCheck(env, c, page) {
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await screenText(page);
-  c.check(/Check passed, 16 of 17/.test(text) && /1 of 14 lessons/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 220)})`);
+  const parts = await page.evaluate(() => FC.get('civics').meta.parts.length);
+  c.check(/Check passed, 16 of 17/.test(text) && new RegExp(`1 of ${parts} lessons`).test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 220)})`);
   await env.inspect(c, page, 'the Civics subject screen after the lesson');
   const items = await storedItems(page, 'civics'), seen = await page.evaluate(() => seenOf('civics'));
   const engine = await page.evaluate(() => FC.ENGINE);   // the engine of the app as it runs, never a number written here

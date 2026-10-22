@@ -395,7 +395,7 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .doctab:hover{color:var(--text)}
 .doctab.on{background:var(--raised);border-bottom-color:var(--raised);color:var(--text)}
 .block-ref{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--raised);border:1px solid var(--border)}
-.block-ref p{margin:0}
+.block-ref p{margin:0;overflow-wrap:anywhere}
 .ref-text{font-size:15px;line-height:1.4;color:var(--bodydim)}
 .ref-value{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--text)}
 .doc-note.old{color:var(--accent)}

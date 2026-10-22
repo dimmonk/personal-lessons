@@ -92,6 +92,7 @@ const SAY = {
   ruleNotMet: 'not met',
   checkEveryAnswer: 'Every answer, misses first',
   nextLesson: 'On to the next lesson',
+  homeLesson: title => `To go over it again, open “${title}”.`,
   toSubject: 'Back to the subject',
   again: 'Try the check again',
   // the subject screen

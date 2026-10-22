@@ -18,11 +18,14 @@ mixed federal, state and local, each with the four questions; **5 of 6 fully rig
 2. **On what power?** Congress: its listed powers. States: what was not given to the federal government (10th Amendment).
    Local: what the state hands down. Clash: federal law wins (C6). The president or an agency: *what did Congress say?* A
    law that allows it is the strongest ground, silence is uncertain, acting against a law is the weakest (Jackson's three
-   zones, still the Court's test, C7). "In court" only when the story says so.
-3. **Who can stop it?** Veto and override, the courts, Congress changing the law, federal law over a state, the voters,
-   an amendment (C5, C6).
+   zones, still the Court's test, C7), asked when an order reaches outside the executive branch; the president's own powers and
+   the branch's own offices are theirs; a power of the states cannot be ordered, though Congress can attach conditions to money it gives (C6a, C7a). "Not settled" only for the federal executive (C7a).
+   "In court" only when a court has the lawsuit now.
+3. **Who can stop it?** Veto and override, the courts, lawmakers changing the law, a higher level's law (federal over state
+   and local, state over local), the voters, an amendment (C5, C6): the one the story shows at work, under way or set to happen.
 4. **Who is telling me?** Judge a source by leaving it and seeing what others say about it, not by its look, its .org or its
-   About page (fact checkers, C15, C18).
+   About page (fact checkers, C15, C18). Take a story as it stands only when the source is already checked (or is the original
+   record) and the claim is ordinary (**judgement call**, see the note's last section).
 5. **History in its time**: each event placed in time and in its chain of cause and effect; a historical claim in the news
    asked where it comes from and from when (sourcing, contextualization, corroboration, C11, C12).
 Knowing the facts comes before using them (C12, C13), and the interview facts are recalled, not recognised (C19).
@@ -51,21 +54,21 @@ slips name the novice errors (`president-default`, `look-not-source`). Facet `le
 | 3 | Federal, state, local, and your answers | The two-axes map; Q58-60; own `answers` form (Q23, 29, 30, 38, 39, 57, 61, 62) | Recall incl. own answers, 9 in 10 | C5, C6, C1 (names entered, never stored) |
 | | **B. Reading a government story** | | | |
 | 4 | Who acted, and at which level | Axis 1; wrong idea "the president decided it" named; federal/local pairs on one topic | 5 new stories: level + actor, 4 of 5 | C5, C8, P29, P12; worked story first, P10 |
-| 5 | Theirs to do? | Listed and reserved powers, federal law wins, the three zones as "what did Congress say?" | 5 new stories: verdict + deciding line, 4 of 5 | C6, C7, C9 |
-| 6 | Who can stop it | The six checks | 5 new stories: `stop`, 4 of 5 | C5, C6 |
-| 7 | Who is telling you | Leave the page; who is behind it; trusted work; find the original. A results page as a `document` (source, snippet) with a `tap` on what to open first; `choose`: take it as is or check first | 5 new items, 4 of 5 | C15, C18 (see gap 1) |
+| 5 | Theirs to do? | Listed and reserved powers, federal law wins, the three zones as "what did Congress say?" | 6 new stories (one not settled, one in court): verdict + deciding line, 5 of 6 | C6, C7, C9 |
+| 6 | Who can stop it | The six checks, the one at work | 6 new stories: `stop`, 5 of 6 | C5, C6 |
+| 7 | Who is telling you | Leave the page; who is behind it; trusted work; find the original. A results page (source, snippet) with a `tap` on what to open first, its lures official-looking (C15); `choose`: take it as is or check first, both halves of the rule put against each other | 5 new items, 4 of 5 | C15, C18 (see gap 1) |
 | 8 | Whole stories | All four questions, mixed with earlier lessons (`mix`) | **The news test** | C22, P22, P25 |
 | | **C. Principles and rights** | | | |
-| 9 | Principles and founding documents | Q1-14 as the reasons for the structure in A | Recall, 9 in 10 | C2, C21 |
-| 10 | Rights and responsibilities | Q63-72; the four voting amendments in date order | Recall + one `order` item | C2, C11 |
+| 9 | Principles and founding documents | Q1-14 as the reasons for the structure in A | Recall, 13 of 14 | C2, C21 |
+| 10 | Rights and responsibilities | Q63-72; the four voting amendments in date order | Recall + one `order` item, 10 of 11 |  C2, C11 |
 | | **D. History in its time** | | | |
-| 11 | Colonies and independence | Q73-89; causes before the Declaration | Recall + `order` timeline | C11, C12 (background, then use) |
-| 12 | The 1800s to 1877 | Q90-98 except 1898, Q99; expansion, slavery, war, the three amendments | Recall + `order` | C11, C3 |
-| 13 | 1877 to 1900 | Poll taxes, literacy tests and *Plessy*; Chinese Exclusion and *Wong Kim Ark*; Q91's 1898 war, Q99, Q118, Q120; then the 2026 birthright story read the historian's way (what earlier law, from when?) | Recall + 1 story (`tap` the old ruling it rests on) | C3, C16, C17, C11 |
-| 14 | The 1900s to now | Q100-118, each "why we entered" as its reason | Recall + `order` | C2, C21 |
-| 15 | Symbols and holidays | Q119-128 | Recall, 9 in 10 | C2 |
+| 11 | Colonies and independence | Q73-89; causes before the Declaration | Recall + `order` timeline, 16 of 18 | C11, C12 (background, then use) |
+| 12 | The 1800s to 1877 | Q90-98 except 1898, Q99; expansion, slavery, war, the three amendments | Recall + `order`, 10 of 11 | C11, C3, C24 |
+| 13 | 1877 to 1900 | Poll taxes, literacy tests and *Plessy*; Chinese Exclusion and *Wong Kim Ark*; Q91's 1898 war, Q99, Q118, Q120; then the 2026 birthright story read the historian's way (what earlier law, from when?) | 5 new stories, decisions of today resting on 1877-1900: `tap` what it rests on, `choose` what led to it; 4 of 5 (Q91, Q99, Q118, Q120 are recalled in lessons 12, 14, 15) | C3, C16, C17, C11 |
+| 14 | The 1900s to now | Q100-118, each "why we entered" as its reason | Recall + `order`, 18 of 20 | C2, C21 |
+| 15 | Symbols and holidays | Q119-128 | Recall, 9 of 10 | C2 |
 | | **E. The interview** | | | |
-| 16 | The interview | Check own answers against uscis.gov/citizenship/testupdates; drawn check of 20, `spoken`, feedback at end | **The interview test**, `retest: 7` | C1, C4 |
+| 16 | The interview | Check the changing answers against uscis.gov/citizenship/testupdates; drawn check of 20, `spoken`, feedback at end, each miss naming its lesson | **The interview test**, `retest: 7` | C1, C4 |
 
 Every lesson opens with the way of thinking it uses before any case (C12: named and modeled), runs one worked case, then
 practice with an explanation after each answer (P10, P19). Missed recall items return in the session and in the review

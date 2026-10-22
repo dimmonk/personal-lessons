@@ -2,8 +2,8 @@
   "standard": 2,
   "subjects": {
     "civics": {
-      "rev": 7,
-      "fp": "sha256:70b7bd730685ae5f0f9fd0ad26859aa84e06d23cf1467a9afed12d4c771543a7"
+      "rev": 9,
+      "fp": "sha256:7b689b0b3d67d664f8c417d1d7f41e5140e90e9280c87a48865671c57ee1c0bf"
     },
     "debating": {
       "rev": 4,
@@ -45,7 +45,67 @@
   "lessons": {
     "civics/l1": {
       "rev": 1,
-      "fp": "sha256:580b2b867594d1ed2b21e3663fc368ca71eeff943af93d20a47e859c7af4946e"
+      "fp": "sha256:7d1089e3f87db6786930a5fe7dead2da153aebb7958157262e3c5483ca59f0d6"
+    },
+    "civics/l10": {
+      "rev": 2,
+      "fp": "sha256:51a7762812eb8856640843469c619000370adef4bcfa1e3c67be6fc978e07ef5"
+    },
+    "civics/l11": {
+      "rev": 1,
+      "fp": "sha256:2fb685c742e01779694f535eccacc8f222869388b70bc337c0a42fb705743b2c"
+    },
+    "civics/l12": {
+      "rev": 1,
+      "fp": "sha256:41d916c242a0b612a9306cc1a3c4e06602e595e2eb5a712a146985268d9d83b6"
+    },
+    "civics/l13": {
+      "rev": 1,
+      "fp": "sha256:6b6840b594fce0c72eb99673415fe51363fd65a6ca4f7681a492b22609da1658"
+    },
+    "civics/l14": {
+      "rev": 1,
+      "fp": "sha256:b156a58348148bb4aac2ba7b77144d06a3e8d5fb9e337664c8e9ebf9d523c174"
+    },
+    "civics/l15": {
+      "rev": 1,
+      "fp": "sha256:c6a0fbe2c47c5d2c67c321c77fc6dc76257c6d9b5a2c5a718d2032be34475258"
+    },
+    "civics/l16": {
+      "rev": 1,
+      "fp": "sha256:29588094298c92e03de16667e1b2ea51a8fbc2b652b7d7e7fe5513906b6c2ee1"
+    },
+    "civics/l2": {
+      "rev": 1,
+      "fp": "sha256:b65d2f9f5b0e1fa192109a92cb957cbab5699fec8286a5782ef3ea6081cdc5c0"
+    },
+    "civics/l3": {
+      "rev": 1,
+      "fp": "sha256:6b02929c602cff041488d9d15f66afb9844238b27c7d6d6e39c93e7db82dddd3"
+    },
+    "civics/l4": {
+      "rev": 1,
+      "fp": "sha256:44866e0fcc0a5a37122fa1bf6b1d6e6d7066d9b1339f726d4dd7d3972ac2e066"
+    },
+    "civics/l5": {
+      "rev": 1,
+      "fp": "sha256:68f7fbb7e3e00977a23064efe55a5036b3147142ea85efddd01db6efa8e6348f"
+    },
+    "civics/l6": {
+      "rev": 1,
+      "fp": "sha256:0c1edc4c001a90011a79e0627bad77185d0e57209aab8d9d2a1f129a107eb1f1"
+    },
+    "civics/l7": {
+      "rev": 1,
+      "fp": "sha256:7b8b3499a38203081531f1d61218c7c9cf5a2a9b8105309ad6ef24f2390fa49e"
+    },
+    "civics/l8": {
+      "rev": 1,
+      "fp": "sha256:44c320165afe56f8a774180c1e13a13b1c89523bc66013a483a36cc4f49337ef"
+    },
+    "civics/l9": {
+      "rev": 1,
+      "fp": "sha256:8431b61701d35bbd09b7bdd6fb17d681999aec0da72928a95ee201b078cce4ad"
     },
     "debating/l1": {
       "rev": 1,

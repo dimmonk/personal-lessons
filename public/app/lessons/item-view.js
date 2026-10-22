@@ -18,9 +18,14 @@ function segmentHtml(seg, ctx){
   const extra = (tapped + fine).trim();
   return marked ? `<mark class="cue${extra ? ' ' + extra : ''}" data-seg="${esc(seg.id)}">${esc(seg.text)}</mark>` : `<span ${extra ? `class="${extra}" ` : ''}data-seg="${esc(seg.id)}">${esc(seg.text)}</span>`;
 }
-// the text of a prose block as paragraphs: plain text, or lines that can be marked
+// lines grouped into paragraphs: a line with `para` starts a new one (a prose block's lines and an article's)
+function segmentGroups(lines){
+  return lines.reduce((out, seg, i) => i === 0 || seg.para ? [...out, [seg]] : [...out.slice(0, -1), [...out[out.length - 1], seg]], []);
+}
+// the text of a prose block as paragraphs: plain text, or lines that can be marked (with no `para`, the lines are one paragraph)
 function proseParas(block, ctx){
-  return block.lines ? [`<p>${block.lines.map(seg => segmentHtml(seg, ctx)).join(' ')}</p>`] : paras(block.text).map(p => `<p>${esc(p)}</p>`);
+  if(!block.lines) return paras(block.text).map(p => `<p>${esc(p)}</p>`);
+  return segmentGroups(block.lines).map(g => `<p>${g.map(seg => segmentHtml(seg, ctx)).join(' ')}</p>`);
 }
 function proseHtml(block, ctx){
   if(block.tone !== 'wrong') return `<div class="block-prose lesson">${proseParas(block, ctx).join('')}</div>`;

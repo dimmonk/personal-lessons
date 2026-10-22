@@ -236,7 +236,7 @@ function questionLines(e, data, inst, support, label) {
   if (support && support.panel && e.panelBlocksOf(item).length) { const own = e.itemRuleIds(item).map(id => data.subjects.__current.meta.rules[id]).filter(r => r.heading); lines.push(`Help on screen: ${own.length === 1 && e.itemRuleIds(item).length === 1 ? e.SAY.helpPanelNamed(own[0].heading) : e.SAY.helpPanel}`, ''); }
   if (support && support.shown) lines.push('Help on screen: the words that decide it are marked.', '');
   const shown = e.shownStepIds(item, support);
-  if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does} ${s.working}`), '');
+  if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does}: ${s.working}`), '');
   e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
   lines.push(`After the answer: ${(item.deciding || []).length ? 'the deciding words are marked. ' : ''}Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
@@ -244,7 +244,7 @@ function questionLines(e, data, inst, support, label) {
   if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
   if (item.figure) lines.push('A picture is added to the feedback:', ...blockLines(item.figure));
   if (item.redraw) lines.push(`A chart is added to the feedback, "${SAYWORDS.redraw}": the chart above drawn again with the scale starting at zero.`);
-  if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does} ${s.working}`));
+  if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does}: ${s.working}`));
   return [...lines, ''];
 }
 
@@ -368,7 +368,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
         ...item.asks.filter(a => a.kind === 'place').map(a => `\nAbove the map: **${paras(a.prompt).join(' ')}**\nThe map of ${MAPS[a.map].name} with ${e.placeRightText(a)} lit${a.mode === 'neighbor-water' ? '' : ' and the tap shown on it'}.`));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
       const right = a => a.kind === 'place' ? e.placeRightText(a) : a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : a.kind === 'order' ? a.right.map(id => a.steps.find(x => x.id === id).text).join(', then ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
-      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
+      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `1. ${s.does}: ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
         ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');
     } else {
@@ -422,7 +422,10 @@ export function renderLesson(loaded, subjectId, lessonId) {
   }
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));
   else e.flatRefs(check.items).forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`)); });
-  const compared = Object.values(subject.meta.facets).filter(f => f.compare);
+  // a compared facet is shown only when the check's questions carry two or more of its values (panel.js facetSplits): a check of questions with no level shows none
+  const checkDefs = e.checkIsDrawn(check) ? ('strands' in check.items.draw ? Object.values(subject.items).filter(i => check.items.draw.strands.includes(i.strand)) : [])
+    : e.flatRefs(check.items).map(r => subject.items[e.refId(r)]).filter(Boolean);
+  const compared = Object.entries(subject.meta.facets).filter(([id, f]) => f.compare && new Set(checkDefs.map(d => (d.facets || {})[id]).filter(Boolean)).size > 1).map(([, f]) => f);
   if (baseline) {
     const d = subject.meta.danger, text = (facet, v) => subject.meta.facets[facet].values.find(x => x.id === v).text, slip = subject.meta.lists.slip.find(x => x.id === d.slip).text;
     out.push('## The result', '', `One screen headed "${e.SAY.baselineDone}" with the one line the baseline ends on, for example "${e.SAY.baselineLine(text(d.facet, d.risky), 6, slip, 1, text(d.facet, d.real), 4, 4)}", then "${e.SAY.baselineNote}" and the way on to the next lesson. No pass, no rule, no answer. The subject's results screen shows the same line, on the day it was taken, under "${e.SAY.baselineRow('Oct 11')}".`, '');

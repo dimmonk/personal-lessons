@@ -6,7 +6,7 @@
 //          { text: 'Legislative, executive, and judicial', parts: ['Legislative', 'executive', 'judicial'] }
 //                                                               one accepted answer made of parts, said in any order; `text` is printed
 // What counts as the same, after both are cleaned: capital letters, punctuation, "a", "an", "the" and "and" do not matter; a number written as
-// words is the number ("twenty-seven" is 27, "twenty second" is 22nd); brackets are optional; and one small misspelling in the whole answer is
+// words is the number ("twenty-seven" is 27, "twenty second" is 22nd); brackets are optional; two names joined by a slash ("Antietam/Sharpsburg") are either name; and one small misspelling in the whole answer is
 // forgiven (one word that is one letter off, in words of four letters or more, never in a number). Anything else is a miss: a word left out, a
 // word added, the other branch of government. `count: n` needs n different accepted answers, said once each; more are fine, a repeat is not
 // counted twice. A learner whose answer says the same in other words says so (a claim, queue.js); the app never decides that for them.
@@ -74,7 +74,10 @@ function recallVariants(text){
   segments.push({ t: text.slice(last) });
   const optional = segments.filter(s => s.optional);
   if(optional.length > RECALL_OPTIONAL_MAX) lessonFail(`"${text}" has ${optional.length} brackets; at most ${RECALL_OPTIONAL_MAX}`);
-  const choices = segments.map(s => s.optional ? ['', s.t, ...(/\sor\s/.test(s.t) ? s.t.split(/\s+or\s+/) : [])] : [s.t]);
+  // two names of one thing joined by a slash, "Antietam/Sharpsburg", may be said as either name or as both; only words of letters, so a number
+  // such as 1/2 or 24/7 is never split
+  const slashed = segments.flatMap(s => s.optional ? [s] : s.t.split(/(\p{L}+\/\p{L}+)/u).map(t => /^\p{L}+\/\p{L}+$/u.test(t) ? { t, either: t.split('/') } : { t }));
+  const choices = slashed.map(s => s.optional ? ['', s.t, ...(/\sor\s/.test(s.t) ? s.t.split(/\s+or\s+/) : [])] : s.either ? [...s.either, s.either.join(' ')] : [s.t]);
   const seen = new Set(), out = [];
   const walk = (at, said) => {
     if(at === choices.length){

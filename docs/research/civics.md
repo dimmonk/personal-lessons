@@ -38,6 +38,12 @@ makes everyone born here a citizen) was settled for the children of immigrants i
 Q97 to Q99, Q118, Q120.* **Design:** the years 1877-1900 get their own short lesson (see C16 to C18 for the rest of the
 evidence).
 
+**C1b. Where the changing answers are looked up.** USCIS's "Check for Test Updates" page names the current President, Vice
+President, Speaker and Chief Justice, and for the rest sends the reader elsewhere: "Visit senate.gov to find your state's U.S.
+Senators", "Visit house.gov to find your U.S. Representative", "Visit usa.gov/states-and-territories to find the Governor of your
+state"; it does not name state capitals. *Read: the page, through a fetch tool, 2026-10-22 (quoted phrases checked in its output).*
+**Design:** lesson 3 names these lookups before the learner enters the eight answers.
+
 **C4. How the officer speaks** (carried from the old note, its C3, not re-read today): for the English part officers "repeat
 and rephrase"; civics questions are asked orally. *Read: as the old note says, the Scoring Guidelines in full, 2026-10-12.*
 **Design:** the question is heard as well as read (`spoken`); rephrasings are not practised.
@@ -64,6 +70,16 @@ Powers".* Strength: textbook consensus; matches M-1778 Q58 to Q60. **Design:** "
 table first: is this on the level's list (federal: the listed powers; state: what is not given away; local: what the state
 hands down)? And "who can stop it?" includes federal law over a state.
 
+**C6a. Money with conditions, and no orders to the states.** "Incident to the spending power, Congress may attach conditions on the
+receipt of federal funds" (*South Dakota v. Dole*, 483 U.S. 203 (1987), syllabus; the Court upheld withholding part of a state's
+highway money unless it set a drinking age of 21, a rule Congress could not set directly). But "The Federal Government may not
+compel the States to enact or administer a federal regulatory program" (*New York v. United States* (1992), as quoted in *Printz v.
+United States*, 521 U.S. 898 (1997)), and "may neither issue directives requiring the States to address particular problems, nor
+command the States' officers, or those of their political subdivisions, to administer or enforce a federal regulatory program"
+(*Printz*, part V). *Read: LII texts of both, through a fetch tool, 2026-10-22 (quoted phrases checked in its output).* Strength:
+primary law. **Design:** lesson 5 says a power of the states (schools) cannot be ordered from Washington, with or without Congress;
+Congress can attach conditions to money it gives, and an agency enforcing them acts on a law that allows it (`l5-meals`, a pair).
+
 **C7. How courts judge a president's power: three zones.** Justice Jackson: presidential powers "are not fixed but
 fluctuate, depending upon their disjunction or conjunction with those of Congress." (1) Acting "pursuant to an express or
 implied authorization of Congress, his authority is at its maximum"; (2) "in absence of either a congressional grant or
@@ -75,6 +91,17 @@ text, read in that part). The majority in *Youngstown*: "the President's power t
 executed refutes the idea that he is to be a lawmaker." Strength: primary law, the governing test. **Design:** for an
 order by the president or an agency, the deciding question is "what did Congress say?": a law that allows it, silence, or
 a law against it. This is the expert's first question, so it is taught as the question, not as a case name.
+
+**C7a. The president's own branch and own powers.** "The executive Power shall be vested in a President of the United States"
+(Art. II, §1); the president "shall be Commander in Chief", may "require the Opinion, in writing, of the principal Officer in each of
+the executive Departments", makes treaties with two-thirds of the Senate and appoints judges (Art. II, §2), and "shall take Care that
+the Laws be faithfully executed" (Art. II, §3). *Read: the Constitution's text as the National Archives transcribes it; quoted from
+the text, not re-fetched today.* Strength: primary. With C7: Jackson's zones sort a president's reach into what Congress governs; the
+Constitution's own grants, and running the executive branch's own offices, do not wait on a statute (the research review of
+2026-10-22 made this point, citing Art. II's vesting and take-care clauses). **Design:** the president's own powers and the
+branch's own offices are "theirs"; "what did Congress say?" is asked when an order reaches outside the branch (companies, people,
+states); a power of the states is never the president's. "Not settled" (zone 2) is used only for the federal executive: the note
+has no source carrying the zones to governors, and a state legislature holds every power not given away (C6).
 
 **C8. Novice error: blaming the wrong level.** Voters "punish the president's party for tax increases enacted via direct
 democracy" in local property-tax referendums, which presidents do not control (Sances 2017, *Journal of Politics* 79(4),
@@ -196,8 +223,84 @@ verbal categories; P25: transfer only to cases of the same kind). Strengths as s
   reading taught in an offline app; the Jackson zones simplified for a beginner are a **judgement call** (the Court's
   test is the three zones, the plain wording is ours); the timeline (`order`) item for contextualization is a **judgement
   call** drawn from C11's "placing the document in a temporal and spatial context".
+- **Judgement calls added 2026-10-22**: *when to take a story as it stands* (a source already checked, or the original record reached
+  yourself, and an ordinary claim; otherwise check). C15's click restraint is about choosing which result to open, not about
+  skipping the check, so this rule has no passage of its own; it is ours, drawn from C15 and C18's "investigate the source" and
+  "find the original". *State over local among the checks*: from C6 (local power is what the state hands down; a clash goes to the
+  higher law), not from a separate source.
 - **Not used**: Seixas's six historical thinking concepts (not read); the Historical Thinking Chart's question wording
   (seen only in third-party copies).
+
+## F. Dates and causes for the history lessons (added while building lessons 10 to 14, 2026-10-22)
+
+**C23. The dates the timelines and history stories rest on**, each read today on the page named (primary or the government's own
+historians), quoted closely:
+- Amendments (National Archives, "The Constitution: Amendments 11-27"): 13th ratified December 6, 1865; 14th ratified July 9, 1868
+  ("All persons born or naturalized in the United States..."); 15th ratified February 3, 1870 (the vote "shall not be denied or abridged"
+  by race); 19th ratified August 18, 1920; 24th ratified January 23, 1964 (no poll tax "or other tax" in a primary or other election for
+  President, Vice President, electors, Senator or Representative); 26th ratified July 1, 1971 (citizens "eighteen years of age or older").
+- Before independence (Office of the Historian, "Parliamentary Taxation of Colonies"): after the Seven Years' War Britain was "burdened by
+  heavy debts"; in October 1765 delegates of 9 colonies petitioned "denying Parliament's authority to tax the colonies"; "renewed resistance
+  to new taxes instituted in 1767 under the Townshend Acts"; "On December 16, 1773, American colonists disguised as Indians boarded East
+  India Company ships"; Parliament "passed several pieces of legislation in 1774", in the colonies "referred to as the Intolerable Acts".
+- The Revolution (Office of the Historian, "French Alliance"): the British surrender at Saratoga, news of which reached France "in December
+  1777"; "the British surrender at Yorktown in 1781".
+- The 1800s: "On May 13, 1846, the United States declared war on Mexico"; the war ended in 1848 (Office of the Historian, "Texas
+  Annexation"). "Confederate forces fired the first shots of the Civil War upon Federal troops at Fort Sumter at 4:30 a.m. on April 12, 1861"
+  (National Park Service, Fort Sumter). "President Abraham Lincoln issued the Emancipation Proclamation on January 1, 1863"; "It applied
+  only to states that had seceded from the Union, leaving slavery untouched in the loyal border states" (National Archives, Milestone
+  Documents). The fighting at Appomattox ended "that morning of April 9, 1865" (National Park Service, Appomattox).
+- The 1900s: on April 2, 1917 Wilson asked Congress to declare war, citing "Germany's violation of its pledge to suspend unrestricted
+  submarine warfare"; the Senate voted on April 4, the House two days later (Office of the Historian, "American Entry into World War I").
+  "Japanese planes bombed the U.S. fleet at Pearl Harbor on December 7, 1941. The following day, the United States declared war on Japan"
+  (Office of the Historian, "Pearl Harbor"). North Korea's army "attacked the South in June 1950"; the United States led "a United
+  Nations-authorized force" against it (Office of the Historian, "The Korean War, 1950-1953").
+- The Voting Rights Act "was signed into law on August 6, 1965" (National Archives, as in C17).
+*Read: the pages through a fetch tool, 2026-10-22, the quoted sentences checked in its output.* Strength: primary or official history.
+**Design:** every date in a timeline (`order`) or a history story comes from M-1778 itself or from this list; a cause is given only where a
+source above or C16, C17 names what came before and what it answered (taxes and the Declaration; the Civil War and the Emancipation
+Proclamation; poll taxes and literacy tests and the 24th Amendment and the Voting Rights Act; the 1890 Louisiana law and *Plessy*; the
+Chinese Exclusion Acts and *Wong Kim Ark*; the Tea Party and the 1774 laws). That the lesson's cause question names "what led to it" is a
+**judgement call** drawn from C11's contextualization.
+- Sources: [Amendments 11-27](https://www.archives.gov/founding-docs/amendments-11-27); [Parliamentary Taxation](https://history.state.gov/milestones/1750-1775/parliamentary-taxation); [French Alliance](https://history.state.gov/milestones/1776-1783/french-alliance); [Texas Annexation](https://history.state.gov/milestones/1830-1860/texas-annexation); [Fort Sumter](https://www.nps.gov/fosu/learn/historyculture/index.htm); [Emancipation Proclamation](https://www.archives.gov/milestone-documents/emancipation-proclamation); [Appomattox](https://www.nps.gov/apco/learn/historyculture/index.htm); [WWI](https://history.state.gov/milestones/1914-1920/wwi); [Pearl Harbor](https://history.state.gov/milestones/1937-1945/pearl-harbor); [Korean War](https://history.state.gov/milestones/1945-1952/korean-war)
+
+**C24. Causes and dates added after the research review of lessons 9 to 16 (2026-10-22)**, read today on the page named:
+- The Civil War's causes (American Battlefield Trust, "Civil War Facts", quoting James McPherson): the war "started because of uncompromising
+  differences between the free and slave states over the power of the national government to prohibit slavery in the territories that had not
+  yet become states"; "When Abraham Lincoln won election in 1860 as the first Republican president", on a platform against letting slavery expand
+  into the territories, "seven slave states in the deep South seceded and formed a new nation, the Confederate States of America." The page notes
+  that historians still debate the deeper causes. After the war with Mexico, "Mexico ceded to the United States approximately 525,000 square miles"
+  (Office of the Historian, "Texas Annexation").
+- The Chinese Exclusion Act (National Archives, Milestone Documents): "approved on May 6, 1882"; it "provided an absolute 10-year ban on Chinese
+  laborers immigrating to the United States" and barred courts from granting Chinese residents citizenship; its stated reason, that "the coming of
+  Chinese laborers to this country endangers the good order of certain localities."
+- *Plessy* (National Archives, Milestone Documents): the 1890 Louisiana law required railroads to "provide equal but separate accommodations for
+  the white, and colored races"; the Court upheld it in 1896; "It was not until the Supreme Court's decision in Brown v. Board of Education and
+  congressional civil rights acts of the 1950s and 1960s that systematic segregation under state law was ended."
+- Poll taxes: the 24th Amendment (C23) ended them in federal elections in 1964; in *Harper v. Virginia State Board of Elections*, 383 U.S. 663
+  (March 24, 1966), "a State violates the Equal Protection Clause of the Fourteenth Amendment whenever it makes the affluence of the voter or
+  payment of any fee an electoral standard" (LII text). The Voting Rights Act outlawed literacy tests (C17); it did not itself end poll taxes.
+- The Spanish-American War (Office of the Historian): "The war that erupted in 1898 between the United States and Spain was preceded by three
+  years of fighting" by Cubans against Spanish rule; "After the U.S. battleship Maine exploded and sank in Havana harbor under mysterious
+  circumstances on February 15, 1898", U.S. intervention became likely; the war "ended Spain's colonial empire in the Western Hemisphere."
+- The Statue of Liberty (National Park Service): dedicated in 1886 ("Opening Day", October 28, 1886); proposed by Edouard de Laboulaye as "a
+  great monument as a gift from France to the United States", to honor the Union's victory and the end of slavery; the park's address is in
+  Jersey City, New Jersey.
+- Vietnam (Office of the Historian, "Gulf of Tonkin"): Congress passed the Gulf of Tonkin Resolution on August 7, 1964; in 1965 Johnson
+  "authorized the first of many deployments of regular ground combat troops"; the United States "was dedicated to containing the spread of
+  communist regimes." The Gulf War (Office of the Historian): in August 1990 Iraqi troops "invaded Kuwait"; "a U.S.-led coalition air and ground
+  war ... began on January 16, 1991", ending with Iraq's retreat from Kuwait on February 28, 1991. Afghanistan (Council on Foreign Relations
+  timeline): on October 7, 2001 "The U.S. military, with British support, begins a bombing campaign against Taliban forces." No source read today
+  gives the reason for the war in Iraq, so the lessons give none.
+- What led to the Chinese Exclusion Act (Office of the Historian, "Chinese Immigration and the Chinese Exclusion Acts"): "many of the non-Chinese
+  workers in the United States came to resent the Chinese laborers", who might squeeze them out of their jobs; as their numbers grew, "so did the
+  strength of anti-Chinese sentiment among other workers"; "Democrats, led by supporters in the West, advocated for all-out exclusion"; a vetoed
+  1879 bill to limit Chinese arrivals "to fifteen per ship or vessel"; then the Angell Treaty, which "permitted the United States to restrict, but
+  not completely prohibit, Chinese immigration." The law's own preamble (above) is its account of itself, not taken as its cause.
+- Lucy Stone died in 1893, so of C3's three names only Anthony and Stanton are said to have worked "through the 1890s".
+*Read: the pages through a fetch tool, 2026-10-22.* Strength: primary or official history, and one historian quoted by a preservation group
+(the Civil War causes, with its own caveat).
+- Sources: [Civil War Facts](https://www.battlefields.org/learn/articles/civil-war-facts); [Chinese Exclusion Act](https://www.archives.gov/milestone-documents/chinese-exclusion-act); [Plessy](https://www.archives.gov/milestone-documents/plessy-v-ferguson); [Harper](https://www.law.cornell.edu/supremecourt/text/383/663); [Spanish-American War](https://history.state.gov/milestones/1866-1898/spanish-american-war); [Statue of Liberty](https://www.nps.gov/stli/learn/historyculture/abolition.htm); [Gulf of Tonkin](https://history.state.gov/milestones/1961-1968/gulf-of-tonkin); [Gulf War](https://history.state.gov/milestones/1989-1992/gulf-war); [Afghanistan timeline](https://www.cfr.org/timeline/us-war-afghanistan)
 
 ## Sources
 - [USCIS, Study for the Test](https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test); [M-1778 (09/25)](https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf)

@@ -1,6 +1,6 @@
 # US Civics & History: Who does what
 
-Revision 1, draft (the screen carries the draft line). Part: Who does what. Where the subject ends up: Read a news story about the US government and know who made the final call and whether they were allowed to; answer the citizenship interview questions.
+Revision 1, live. Part: Who does what. Where the subject ends up: Answer the citizenship interview’s civics questions aloud from memory, and, reading a news story about a US law, order or ruling, say who acted, whether it was theirs to do, who can stop it, and whether to take the story as it stands or check who is behind it first.
 
 ## The why
 
@@ -12,17 +12,19 @@ Here you hear or read each question, say your answer out loud, and type it. Then
 A plain table, "Who does what in the federal government":
 
 > Branch  |  Who  |  What it does  (the column heads)
-> Legislative  |  Congress  |  Writes laws
-> Executive  |  The president  |  Signs or vetoes bills and carries out the laws
-> Judicial  |  The courts  |  Explain the laws and settle disagreements about them
+> Legislative  |  Congress: the Senate and the House  |  Writes laws, declares war, makes the federal budget
+> Executive  |  The president, the Cabinet (it advises the president), and federal departments and agencies  |  Signs or vetoes bills and carries out the laws
+> Judicial  |  The courts: the Supreme Court and the federal courts  |  Explain the laws and settle disagreements about them
 
-You will meet these words in the questions. Look at the table once, then try them. If you are not sure, tap Not yet to see the answers.
+The president is also Commander in Chief of the military and the chief diplomat, and appoints federal judges. If the president can no longer serve, the vice president becomes president.
+Why three branches? So one part does not become too powerful. The list also accepts two names for this idea: checks and balances, and separation of powers.
+The questions use these words. Look at the table once, then try them. If you are not sure, tap Not yet to see the answers.
 
 ## Step 2: Questions
 
 3 questions, listed. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1
+#### Item 1
 
 A question the phone reads aloud, never by itself: a button "Hear the question" (then "Hear it again") reads it with a voice on the phone when the learner taps, and once they have tapped the next question in the run is read when they tap Next. A phone with no voice of its own shows the words and says so. Its words: **Name the three branches of government.**
 
@@ -34,9 +36,9 @@ A question the phone reads aloud, never by itself: a button "Hear the question" 
   - Legislative, executive, and judicial (said in parts, any order: Legislative / executive / judicial)
   - Congress, president, and the courts (said in parts, any order: Congress / president / the courts)
 
-After the answer: the deciding words are marked (none named). Reason: Congress makes the laws. The president carries them out. The courts decide what the laws mean.
+After the answer: Reason: Congress makes the laws. The president carries them out. The courts decide what the laws mean.
 
-#### Question 2
+#### Item 2
 
 The question, read aloud as above: **There are three branches of government. Why?**
 
@@ -47,9 +49,9 @@ The question, read aloud as above: **There are three branches of government. Why
   - Checks and balances
   - Separation of powers
 
-After the answer: the deciding words are marked (none named). Reason: Each branch has its own job and can stop the others, so no one part can take over.
+After the answer: Reason: Each branch has its own job and can stop the others, so no one part can take over.
 
-#### Question 3
+#### Item 3
 
 The question, read aloud as above: **The President of the United States is in charge of which branch of government?**
 
@@ -58,7 +60,7 @@ The question, read aloud as above: **The President of the United States is in ch
 - The accepted answers shown after (Accepted answers):
   - Executive branch
 
-After the answer: the deciding words are marked (none named). Reason: The president leads the executive branch, the part that carries out the laws.
+After the answer: Reason: The president leads the executive branch, the part that carries out the laws.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -66,7 +68,7 @@ Then a screen: you can stop here, your place is kept.
 
 3 questions, listed. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 4
+#### Item 4
 
 The question, read aloud as above: **What part of the federal government writes laws?**
 
@@ -77,9 +79,9 @@ The question, read aloud as above: **What part of the federal government writes 
   - (U.S. or national) legislature
   - Legislative branch
 
-After the answer: the deciding words are marked (none named). Reason: Congress writes the laws. It is also called the legislative branch.
+After the answer: Reason: Congress writes the laws. It is also called the legislative branch.
 
-#### Question 5
+#### Item 5
 
 The question, read aloud as above: **What are the two parts of the U.S. Congress?**
 
@@ -88,9 +90,9 @@ The question, read aloud as above: **What are the two parts of the U.S. Congress
 - The accepted answers shown after (Accepted answers):
   - Senate and House (of Representatives) (said in parts, any order: Senate / House (of Representatives))
 
-After the answer: the deciding words are marked (none named). Reason: Congress has two houses. Both have to pass a bill before it can become a law.
+After the answer: Reason: Congress has two houses. Both have to pass a bill before it can become a law.
 
-#### Question 6
+#### Item 6
 
 The question, read aloud as above: **Name one power of the U.S. Congress.**
 
@@ -101,7 +103,7 @@ The question, read aloud as above: **Name one power of the U.S. Congress.**
   - Declares war
   - Makes the federal budget
 
-After the answer: the deciding words are marked (none named). Reason: Congress can write laws, declare war, and make the federal budget.
+After the answer: Reason: Congress can write laws, declare war, and make the federal budget.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -109,7 +111,7 @@ Then a screen: you can stop here, your place is kept.
 
 8 questions, listed. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 7
+#### Item 7
 
 The question, read aloud as above: **Name one power of the president.**
 
@@ -123,9 +125,9 @@ The question, read aloud as above: **Name one power of the president.**
   - Chief diplomat
   - Appoints federal judges
 
-After the answer: the deciding words are marked (none named). Reason: The president signs or vetoes bills, carries out the laws, leads the military, deals with other countries, and chooses federal judges.
+After the answer: Reason: The president signs or vetoes bills, carries out the laws, leads the military, deals with other countries, and chooses federal judges.
 
-#### Question 8
+#### Item 8
 
 The question, read aloud as above: **Who is Commander in Chief of the U.S. military?**
 
@@ -134,9 +136,9 @@ The question, read aloud as above: **Who is Commander in Chief of the U.S. milit
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The president leads the military, so the president is its commander in chief.
+After the answer: Reason: The president leads the military, so the president is its commander in chief.
 
-#### Question 9
+#### Item 9
 
 The question, read aloud as above: **Who signs bills to become laws?**
 
@@ -145,9 +147,9 @@ The question, read aloud as above: **Who signs bills to become laws?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: Congress passes a bill. It becomes a law when the president signs it.
+After the answer: Reason: Congress passes a bill. It becomes a law when the president signs it.
 
-#### Question 10
+#### Item 10
 
 The question, read aloud as above: **Who vetoes bills?**
 
@@ -156,9 +158,9 @@ The question, read aloud as above: **Who vetoes bills?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: A veto is the president refusing to sign a bill that Congress passed.
+After the answer: Reason: A veto is the president refusing to sign a bill that Congress passed.
 
-#### Question 11
+#### Item 11
 
 The question, read aloud as above: **Who appoints federal judges?**
 
@@ -167,9 +169,9 @@ The question, read aloud as above: **Who appoints federal judges?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The president chooses federal judges. The Senate has to approve them.
+After the answer: Reason: The president chooses federal judges. The Senate has to approve them.
 
-#### Question 12
+#### Item 12
 
 The question, read aloud as above: **If the president can no longer serve, who becomes president?**
 
@@ -178,9 +180,9 @@ The question, read aloud as above: **If the president can no longer serve, who b
 - The accepted answers shown after (Accepted answers):
   - The Vice President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The vice president takes over if the president can no longer serve.
+After the answer: Reason: The vice president takes over if the president can no longer serve.
 
-#### Question 13
+#### Item 13
 
 The question, read aloud as above: **The executive branch has many parts. Name one.**
 
@@ -191,9 +193,9 @@ The question, read aloud as above: **The executive branch has many parts. Name o
   - Cabinet
   - Federal departments and agencies
 
-After the answer: the deciding words are marked (none named). Reason: The executive branch is the president, the Cabinet, and the federal departments and agencies that carry out the laws.
+After the answer: Reason: The executive branch is the president, the Cabinet, and the federal departments and agencies that carry out the laws.
 
-#### Question 14
+#### Item 14
 
 The question, read aloud as above: **What does the President’s Cabinet do?**
 
@@ -202,7 +204,7 @@ The question, read aloud as above: **What does the President’s Cabinet do?**
 - The accepted answers shown after (Accepted answers):
   - Advises the President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The Cabinet is the heads of the federal departments and a few other top officials. They advise the president.
+After the answer: Reason: The Cabinet is the heads of the federal departments and a few other top officials. They advise the president.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -210,7 +212,7 @@ Then a screen: you can stop here, your place is kept.
 
 3 questions, listed. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 15
+#### Item 15
 
 The question, read aloud as above: **What is one part of the judicial branch?**
 
@@ -220,9 +222,9 @@ The question, read aloud as above: **What is one part of the judicial branch?**
   - Supreme Court
   - Federal Courts
 
-After the answer: the deciding words are marked (none named). Reason: The judicial branch is the Supreme Court and the other federal courts.
+After the answer: Reason: The judicial branch is the Supreme Court and the other federal courts.
 
-#### Question 16
+#### Item 16
 
 The question, read aloud as above: **What does the judicial branch do?**
 
@@ -234,9 +236,9 @@ The question, read aloud as above: **What does the judicial branch do?**
   - Resolves disputes (disagreements) about the law
   - Decides if a law goes against the (U.S.) Constitution
 
-After the answer: the deciding words are marked (none named). Reason: The courts explain what laws mean, settle disagreements about the law, and decide whether a law goes against the Constitution.
+After the answer: Reason: The courts explain what laws mean, settle disagreements about the law, and decide whether a law goes against the Constitution.
 
-#### Question 17
+#### Item 17
 
 The question, read aloud as above: **What is the highest court in the United States?**
 
@@ -245,7 +247,7 @@ The question, read aloud as above: **What is the highest court in the United Sta
 - The accepted answers shown after (Accepted answers):
   - Supreme Court
 
-After the answer: the deciding words are marked (none named). Reason: The Supreme Court is the highest court. What it decides about a law is the last word.
+After the answer: Reason: The Supreme Court is the highest court. What it decides about a law is the last word.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -267,7 +269,7 @@ The question, read aloud as above: **There are three branches of government. Why
   - Checks and balances
   - Separation of powers
 
-After the answer: the deciding words are marked (none named). Reason: Each branch has its own job and can stop the others, so no one part can take over.
+After the answer: Reason: Each branch has its own job and can stop the others, so no one part can take over.
 
 #### Check question 19
 
@@ -279,7 +281,7 @@ The question, read aloud as above: **Name the three branches of government.**
   - Legislative, executive, and judicial (said in parts, any order: Legislative / executive / judicial)
   - Congress, president, and the courts (said in parts, any order: Congress / president / the courts)
 
-After the answer: the deciding words are marked (none named). Reason: Congress makes the laws. The president carries them out. The courts decide what the laws mean.
+After the answer: Reason: Congress makes the laws. The president carries them out. The courts decide what the laws mean.
 
 #### Check question 20
 
@@ -290,7 +292,7 @@ The question, read aloud as above: **The President of the United States is in ch
 - The accepted answers shown after (Accepted answers):
   - Executive branch
 
-After the answer: the deciding words are marked (none named). Reason: The president leads the executive branch, the part that carries out the laws.
+After the answer: Reason: The president leads the executive branch, the part that carries out the laws.
 
 #### Check question 21
 
@@ -303,7 +305,7 @@ The question, read aloud as above: **What part of the federal government writes 
   - (U.S. or national) legislature
   - Legislative branch
 
-After the answer: the deciding words are marked (none named). Reason: Congress writes the laws. It is also called the legislative branch.
+After the answer: Reason: Congress writes the laws. It is also called the legislative branch.
 
 #### Check question 22
 
@@ -314,7 +316,7 @@ The question, read aloud as above: **What are the two parts of the U.S. Congress
 - The accepted answers shown after (Accepted answers):
   - Senate and House (of Representatives) (said in parts, any order: Senate / House (of Representatives))
 
-After the answer: the deciding words are marked (none named). Reason: Congress has two houses. Both have to pass a bill before it can become a law.
+After the answer: Reason: Congress has two houses. Both have to pass a bill before it can become a law.
 
 #### Check question 23
 
@@ -327,7 +329,7 @@ The question, read aloud as above: **Name one power of the U.S. Congress.**
   - Declares war
   - Makes the federal budget
 
-After the answer: the deciding words are marked (none named). Reason: Congress can write laws, declare war, and make the federal budget.
+After the answer: Reason: Congress can write laws, declare war, and make the federal budget.
 
 #### Check question 24
 
@@ -338,7 +340,7 @@ The question, read aloud as above: **If the president can no longer serve, who b
 - The accepted answers shown after (Accepted answers):
   - The Vice President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The vice president takes over if the president can no longer serve.
+After the answer: Reason: The vice president takes over if the president can no longer serve.
 
 #### Check question 25
 
@@ -354,7 +356,7 @@ The question, read aloud as above: **Name one power of the president.**
   - Chief diplomat
   - Appoints federal judges
 
-After the answer: the deciding words are marked (none named). Reason: The president signs or vetoes bills, carries out the laws, leads the military, deals with other countries, and chooses federal judges.
+After the answer: Reason: The president signs or vetoes bills, carries out the laws, leads the military, deals with other countries, and chooses federal judges.
 
 #### Check question 26
 
@@ -365,7 +367,7 @@ The question, read aloud as above: **Who is Commander in Chief of the U.S. milit
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The president leads the military, so the president is its commander in chief.
+After the answer: Reason: The president leads the military, so the president is its commander in chief.
 
 #### Check question 27
 
@@ -376,7 +378,7 @@ The question, read aloud as above: **Who signs bills to become laws?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: Congress passes a bill. It becomes a law when the president signs it.
+After the answer: Reason: Congress passes a bill. It becomes a law when the president signs it.
 
 #### Check question 28
 
@@ -387,7 +389,7 @@ The question, read aloud as above: **Who vetoes bills?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: A veto is the president refusing to sign a bill that Congress passed.
+After the answer: Reason: A veto is the president refusing to sign a bill that Congress passed.
 
 #### Check question 29
 
@@ -398,7 +400,7 @@ The question, read aloud as above: **Who appoints federal judges?**
 - The accepted answers shown after (Accepted answers):
   - The President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The president chooses federal judges. The Senate has to approve them.
+After the answer: Reason: The president chooses federal judges. The Senate has to approve them.
 
 #### Check question 30
 
@@ -411,7 +413,7 @@ The question, read aloud as above: **The executive branch has many parts. Name o
   - Cabinet
   - Federal departments and agencies
 
-After the answer: the deciding words are marked (none named). Reason: The executive branch is the president, the Cabinet, and the federal departments and agencies that carry out the laws.
+After the answer: Reason: The executive branch is the president, the Cabinet, and the federal departments and agencies that carry out the laws.
 
 #### Check question 31
 
@@ -422,7 +424,7 @@ The question, read aloud as above: **What does the President’s Cabinet do?**
 - The accepted answers shown after (Accepted answers):
   - Advises the President (of the United States)
 
-After the answer: the deciding words are marked (none named). Reason: The Cabinet is the heads of the federal departments and a few other top officials. They advise the president.
+After the answer: Reason: The Cabinet is the heads of the federal departments and a few other top officials. They advise the president.
 
 #### Check question 32
 
@@ -434,7 +436,7 @@ The question, read aloud as above: **What is one part of the judicial branch?**
   - Supreme Court
   - Federal Courts
 
-After the answer: the deciding words are marked (none named). Reason: The judicial branch is the Supreme Court and the other federal courts.
+After the answer: Reason: The judicial branch is the Supreme Court and the other federal courts.
 
 #### Check question 33
 
@@ -448,7 +450,7 @@ The question, read aloud as above: **What does the judicial branch do?**
   - Resolves disputes (disagreements) about the law
   - Decides if a law goes against the (U.S.) Constitution
 
-After the answer: the deciding words are marked (none named). Reason: The courts explain what laws mean, settle disagreements about the law, and decide whether a law goes against the Constitution.
+After the answer: Reason: The courts explain what laws mean, settle disagreements about the law, and decide whether a law goes against the Constitution.
 
 #### Check question 34
 
@@ -459,7 +461,7 @@ The question, read aloud as above: **What is the highest court in the United Sta
 - The accepted answers shown after (Accepted answers):
   - Supreme Court
 
-After the answer: the deciding words are marked (none named). Reason: The Supreme Court is the highest court. What it decides about a law is the last word.
+After the answer: Reason: The Supreme Court is the highest court. What it decides about a law is the last word.
 
 ## The result
 

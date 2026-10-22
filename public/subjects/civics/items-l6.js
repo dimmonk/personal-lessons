@@ -1,0 +1,111 @@
+// Civics, lesson 6: Who can stop it (part 6). Sixteen invented news stories (a made-up town, paper and group; no real event), each asked which of the six
+// checks on a government act the story shows at work: a veto (and a vote to override it), a court, lawmakers passing a new law, a higher level's law
+// (federal over state and local, state over local), the voters, an amendment. Exactly one is at work (under way or set to happen). Most stories also name a
+// check that is only talk or far off, as real stories do ("some said they might sue", "the next election is in 2029"), placed before or after the live one;
+// and the live one is said with "not" or "cannot" as often as the talk is, so neither a check's word, nor where it stands, nor a "no" tells which is at
+// work: only reading whether it is under way does. Headlines tell the act, never the check. One is worked, six are practice (two groups of three, one
+// story from each level), six are the check (two from each level), and three are kept for the review. items-shape.js turns each into a question;
+// civicsPress hands out the papers. tests/civics-cues.mjs scripts the shortcuts.
+(() => {
+  const PAPERS = ["The Metro Post", "The Lakeview Times", "The Capital Sun", "The Harbor Gazette", "The Valley Courier"];
+  const ONLY_TALK = "Saying they might sue is only talk: no lawsuit has been filed.";
+  const stories = [
+    // worked
+    { id: "l6-pay", worked: true, lvl: "federal", br: "writes", head: "Congress passes pay raise for federal workers",
+      lines: ["Congress passed a bill on Tuesday that raises the pay of federal workers by 4 percent.", "The president said she will veto it when it reaches her desk.",
+        "Supporters said they do not have enough votes to pass it over a veto."],
+      who: "Congress", did: "passed a bill that raises the pay of federal workers", stop: "veto", skey: 2,
+      swhy: "A president can refuse to sign a bill. Congress can pass it anyway only if two-thirds of the House and two-thirds of the Senate vote for it again." },
+    // practice, group 1
+    { id: "l6-farmers", lvl: "federal", br: "carries", head: "Agency bans common pesticide",
+      lines: ["A federal agency announced on Monday that it will no longer allow a common pesticide to be sold.", "Some farm-state lawmakers said they would like a new law someday.",
+        "A group of farmers filed a lawsuit on Tuesday asking a federal judge to block the ban.", "The judge will hear both sides in March."],
+      who: "a federal agency", did: "stopped allowing a common pesticide to be sold", stop: "courts", skey: 3,
+      swhy: "The farmers have a lawsuit before a judge, and a court can block a ban that breaks the law. A new law is only a wish for someday.",
+      sthen: { change: "Lawmakers only said they would like a new law someday; no vote is planned." } },
+    { id: "l6-gas", lvl: "state", br: "writes", head: "Legislature raises gas tax 5 cents",
+      lines: ["The state legislature raised the gas tax by 5 cents on Monday.", "Drivers will not forget, they say: every seat in the legislature is up for election in November.",
+        "The legislature does not meet again until after the election, so no new law can come first.", "Some drivers said they might sue."],
+      who: "the state legislature", did: "raised the gas tax by 5 cents", stop: "voters", skey: 2,
+      swhy: "Voters choose the lawmakers, and every seat is up in November. No new law can come before then, because the legislature does not meet.",
+      sthen: { change: "The legislature does not meet again until after the election, so no new law can come first.", courts: ONLY_TALK } },
+    { id: "l6-vendors", lvl: "local", br: "writes", head: "Council bans street vendors downtown",
+      lines: ["The Ridgefield City Council passed a ban on street vendors downtown on Tuesday.", "Some vendors said they might take the city to court.",
+        "The mayor said she will veto the ban, and council members said they have the votes to pass it again over her veto.", "Some shoppers said they might ask the voters to weigh in someday."],
+      who: "the Ridgefield City Council", did: "passed a ban on street vendors downtown", stop: "veto", skey: 3,
+      swhy: "A mayor’s veto can stop a city rule, and the council can pass it again over the veto if enough members vote for it.",
+      sthen: { voters: "Asking the voters is only an idea for someday; no election on it is coming.", courts: ONLY_TALK } },
+    // practice, group 2
+    { id: "l6-fee", lvl: "federal", br: "writes", head: "Airline ticket fee draws complaints",
+      lines: ["Congress put a fee on airline tickets last year.", "Lawmakers from both parties say the fee cannot stay: they will pass a new law that ends it, and a vote is set for next month.",
+        "The president has said she will sign it.", "Some airlines had talked about going to court over the fee."],
+      who: "Congress", did: "put a fee on airline tickets", stop: "change", skey: 2,
+      swhy: "Congress made the fee by law, so Congress can end it with a new law, and the vote is planned.",
+      sthen: { courts: "The airlines only talked about court; no lawsuit has been filed.", veto: "The president has said she will sign the new law, so no veto is coming." } },
+    { id: "l6-banks", lvl: "state", br: "writes", head: "State law tells banks to skip mortgage paperwork rule",
+      lines: ["The state legislature passed a law saying banks in the state do not have to follow a federal rule on mortgage papers.", "Some bankers said they might sue the state.",
+        "Federal officials said the federal rule wins over the state law, and banks must follow it.", "Some lawmakers said they would like a new law someday."],
+      who: "the state legislature", did: "passed a law saying banks do not have to follow a federal rule on mortgage papers", stop: "higher", skey: 3,
+      swhy: "When a state law clashes with a federal law, the federal law wins.", sthen: { change: "Lawmakers only said they would like a new law someday; no vote is planned.", courts: ONLY_TALK } },
+    { id: "l6-sheds", lvl: "local", br: "writes", head: "County adds $50 fee for backyard sheds",
+      lines: ["The Lakeview County board added a $50 fee for every backyard shed.", "Neighbors did not wait for the next election: they filed a lawsuit on Monday asking a judge to cancel the fee.",
+        "The board’s next election is in 2029."],
+      who: "the Lakeview County board", did: "added a $50 fee for every backyard shed", stop: "courts", skey: 2,
+      swhy: "The neighbors have a lawsuit before a judge, and a court can cancel a fee that is against the law. The next election is years away.",
+      sthen: { voters: "The board’s next election is in 2029, years away." } },
+    // check
+    { id: "l6-spending", lvl: "federal", br: "writes", head: "House and Senate pass spending bill",
+      lines: ["The House and the Senate passed a spending bill on Thursday.", "One senator mused about an amendment on a talk show.",
+        "The president has not signed the bill and says she will veto it because it cuts money for roads.", "Some road groups said they might sue once it becomes law."],
+      who: "Congress", did: "passed a spending bill", stop: "veto", skey: 3,
+      swhy: "The bill is on its way to the president, who has said she will refuse to sign it.",
+      sthen: { amend: "One senator only mused about an amendment on a talk show; no one is working on one." } },
+    { id: "l6-bikes", courtNamed: true, lvl: "federal", br: "judges", head: "Supreme Court rules on bicycle speed law",
+      lines: ["The Supreme Court ruled on Monday that a federal law setting a national speed limit for bicycles breaks the Constitution.",
+        "Senators from both parties said they will not give up: they will start work on an amendment to the Constitution that would allow the law.",
+        "Some lawmakers first wanted a new law, but a new law cannot fix what the Constitution does not allow.",
+        "It needs two-thirds of both houses of Congress and three-fourths of the states."],
+      who: "the Supreme Court", did: "ruled that a federal law on bicycle speed breaks the Constitution", stop: "amend", skey: 2,
+      swhy: "The highest court said the law breaks the Constitution. No court sits above it, and only an amendment can change the Constitution itself.",
+      sthen: { courts: "The Supreme Court has already ruled, and no court sits above it.", change: "A new law cannot fix it: the Court said the Constitution itself does not allow such a law." } },
+    { id: "l6-diapers", lvl: "state", br: "writes", head: "Parents push back on diaper tax",
+      lines: ["The state legislature put a sales tax on diapers last year.", "Parents say the tax costs them about $100 a year, and some say they might sue.",
+        "Lawmakers now say they will pass a new law that ends the tax, and a vote is set for next week.", "One lawmaker mused about asking the voters in 2028."],
+      who: "the state legislature", did: "put a sales tax on diapers", stop: "change", skey: 3,
+      swhy: "The legislature made the tax by law, so it can end it with a new law, and the vote is next week.", sthen: { voters: "Asking the voters is only an idea for 2028.", courts: ONLY_TALK } },
+    { id: "l6-lines", lvl: "state", br: "writes", head: "State draws new school district lines",
+      lines: ["The state drew new school district lines on Monday.", "The governor, who signed off on the plan, is up for election in 2028.",
+        "A group of parents filed a lawsuit in state court asking a judge to throw out the new lines.", "The state’s lawyers said the lines are fair."],
+      who: "the state", did: "drew new school district lines", stop: "courts", skey: 3,
+      swhy: "The parents have a lawsuit before a judge, and a court can throw out a plan that breaks the rules. The governor’s election is years away.",
+      sthen: { voters: "The governor’s election is in 2028, years away." } },
+    { id: "l6-pool", lvl: "local", br: "writes", head: "County board votes to close pool",
+      lines: ["The Lakeview County board voted 3 to 2 on Wednesday to close the county pool.", "All five board seats are on the ballot in November, and challengers say they will reopen it.",
+        "Swimmers said they might also take the county to court."],
+      who: "the Lakeview County board", did: "voted to close the county pool", stop: "voters", skey: 2,
+      swhy: "Voters elect the board, and every seat is up in November, so voters can choose members who will reopen the pool.", sthen: { courts: ONLY_TALK } },
+    { id: "l6-blowers", lvl: "local", br: "writes", head: "City bans gas leaf blowers",
+      lines: ["The Ridgefield City Council banned gas leaf blowers on Tuesday.", "The state attorney general said the city cannot make this rule: a state law already sets the rules for yard tools, and the state law wins.",
+        "Some council members said they would like to ask voters about it in 2029."],
+      who: "the Ridgefield City Council", did: "banned gas leaf blowers", stop: "higher", skey: 2,
+      swhy: "A city has only what its state hands down, and when a city rule clashes with a state law, the state law wins.",
+      sthen: { voters: "Asking the voters is only an idea for 2029." } },
+    // kept for the review
+    { id: "l6-tax", lvl: "federal", br: "writes", head: "Congress passes new tax law",
+      lines: ["Congress passed a new tax law in March, and many voters are angry about it.", "Some business groups said they might sue.",
+        "All 435 seats in the House are up for election in November, and candidates are making the law the main issue.", "Some members mused about an amendment."],
+      who: "Congress", did: "passed a new tax law", stop: "voters", skey: 3,
+      swhy: "Voters elect the House, and every seat is up in November, so voters can choose members who will change course.", sthen: { amend: "Musing about an amendment is only talk; no one is working on one.", courts: ONLY_TALK } },
+    { id: "l6-airlines", lvl: "state", br: "writes", head: "State passes law on airline safety rules",
+      lines: ["The state legislature passed a law saying airlines landing in the state do not have to follow federal safety rules.", "The federal government said its safety rules win over the state law, and airlines must follow them.",
+        "Some lawmakers said they might call for an amendment."],
+      who: "the state legislature", did: "passed a law saying airlines do not have to follow federal safety rules", stop: "higher", skey: 2,
+      swhy: "A state law that clashes with a federal law loses, because the federal law wins.", sthen: { amend: "Calling for an amendment is only talk so far." } },
+    { id: "l6-planes", lvl: "local", br: "writes", head: "City votes to stop night flights",
+      lines: ["The Brookside City Council passed a rule saying planes cannot fly over the city after 10 p.m.", "Neighbors who want quiet nights said they might sue the airlines.",
+        "The federal government said it alone controls the nation’s airspace, and federal law wins over the city’s rule.", "Some neighbors said they might ask the voters to replace the council someday."],
+      who: "the Brookside City Council", did: "passed a rule that planes cannot fly over the city after 10 p.m.", stop: "higher", skey: 3,
+      swhy: "A federal law wins over a local rule, and the federal government controls the nation’s airspace.", sthen: { voters: "Asking the voters is only an idea for someday; no election on it is coming.", courts: ONLY_TALK } }
+  ];
+  FC.items("civics", civicsPress(stories, PAPERS).map(s => civicsStory(s, "stop")));
+})();

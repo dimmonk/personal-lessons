@@ -36,7 +36,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'askIsScored', 'MESSAGE_FORMS', 'TEXT_MAX', 'writtenWords', 'textReady', 'messageHtml', 'messageLineHtml', 'writeHtml', 'writeMarkHtml', 'panelHint',
   'EXCHANGE_FORMS', 'exchangeWalk', 'scoreExchange', 'exchangePaths', 'exchangeReach', 'exchangeLoops', 'exchangeReview', 'exchangeHtml', 'exchangeReviewHtml', 'exchangeMarkHtml',
   'scoreOrder', 'orderShown', 'orderReady', 'orderOpen', 'orderProblems', 'orderRightText', 'orderHtml', 'TIMER_SECONDS', 'TIMER_REVIEW_SECONDS', 'timerAfter', 'timerShown', 'timerShare', 'timerHtml',
-  'BUSY_THINGS', 'BUSY_BINS', 'BUSY_TAPS_BEFORE', 'busyThing', 'busyHtml', 'planFromDraft', 'planSentence', 'setupMarked', 'setupCleared', 'setupDone', 'planSectionHtml', 'baselineLine',
+  'BUSY_THINGS', 'BUSY_BINS', 'BUSY_TAPS_BEFORE', 'busyThing', 'busyHtml', 'planFromDraft', 'planSentence', 'setupMarked', 'setupCleared', 'setupDone', 'planSectionHtml', 'baselineLine', 'homeLessonOf',
   'MESSAGE_LINK_FORMS', 'MESSAGE_YOURS', 'checkContext',
   'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
   'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',

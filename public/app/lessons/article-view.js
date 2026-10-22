@@ -13,8 +13,7 @@
 // the lines as paragraphs: a line with `para` starts a new one; the small print is gathered into one paragraph of its own, last
 function articleParagraphs(lines){
   const body = lines.filter(l => !l.fine);
-  const groups = body.reduce((out, seg, i) => i === 0 || seg.para ? [...out, [seg]] : [...out.slice(0, -1), [...out[out.length - 1], seg]], []);
-  return { groups, fine: lines.filter(l => l.fine) };
+  return { groups: segmentGroups(body), fine: lines.filter(l => l.fine) };
 }
 
 // a label pinned on words: the commenter and their words over the words they pinned the label on

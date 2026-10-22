@@ -23,7 +23,7 @@ async function fresh() {
   return { ...app, on };
 }
 const app = await fresh();
-const { FC, scoreItem, recallMatch, recallTokens, recallVariants, recallWithOwn, recallOwnEntries, recallDefReady, recallProblems, speechPick, spokenHtml, feedbackHtml, itemHtml,
+const { FC, scoreItem, recallMatch, recallTokens, recallVariants, recallWithOwn, recallOwnEntries, recallDefReady, recallProblems, speechPick, spokenHtml, feedbackHtml, itemHtml, blockHtml,
   recordTry, claimTry, claimedResults, resultOk, strandSchedules, dueStrands, drawInstances, checkResult, instanceOf, SAY, saveNote, notesOf, isRecallAsk } = app;
 const civics = FC.get('civics'), interview = FC.get('interview');
 const typed = (data, id, text) => scoreItem(data, data.items[id], null, { say: text }).r.say;
@@ -275,35 +275,183 @@ const attempt = (run, context, ok, extra = {}) => ({ run, lesson: 'l1', rev: 1, 
   check(asked.includes('data-spoken') && asked.includes('data-recall="say"') && asked.includes('value="abc"') && asked.includes('data-recall-skip="say"') && /data-recall-answer="say"\s*>/.test(asked) && /data-recall-answer="say"\s+disabled/.test(itemHtml(civics, inst, { a: {}, many: {}, marks: false, support: null, typed: {}, speech: null })), 'the question shows its spoken block and a box that keeps what was typed, with Not yet, and Answer only once something is typed');
 }
 
-/* ---------- Civics' pilot is the official list ---------- */
+/* ---------- Civics' questions are the official list ---------- */
 {
-  const list = JSON.parse(await readFile(new URL('./fixtures/uscis-m1778-lesson1.json', import.meta.url), 'utf8'));
+  const list = JSON.parse(await readFile(new URL('./fixtures/uscis-m1778.json', import.meta.url), 'utf8'));
   check(list.form === 'M-1778 (09/25)' && /^https:\/\/www\.uscis\.gov\//.test(list.source) && /^\d{4}-\d\d-\d\d$/.test(list.lookedUp), 'the official list is named, with where it is and the day it was looked up');
-  same(list.questions.map(q => q.n), [15, 16, 17, 18, 19, 20, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52], 'the list holds the 17 questions of part 1 of the design (Q15 to 20, 40 to 47, 50 to 52)');
-  list.questions.forEach(q => {
-    const item = civics.items[`q${q.n}`];
-    check(!!item, `Q${q.n} is an item`);
-    if (!item) return;
-    same(item.blocks.map(b => [b.kind, b.text]), [['spoken', q.question]], `Q${q.n}: the question is the official wording, read aloud`);
+  same(list.questions.map(q => q.n), Array.from({ length: 128 }, (_, i) => i + 1), 'the list holds the 128 questions, numbered 1 to 128');
+  const OWN = [23, 29, 30, 38, 39, 57, 61, 62];   // the eight answers the list says will vary
+  // every question item of the app (named q<n>) is the official question, word for word, with the official accepted answers, in order
+  const questionItems = Object.values(civics.items).filter(i => /^q\d+$/.test(i.id));
+  check(questionItems.length >= 17 + 20 + 11, `the built lessons hold at least the 48 questions of lessons 1 to 3 (${questionItems.length})`);
+  questionItems.forEach(item => {
+    const n = Number(item.id.slice(1)), q = list.questions.find(x => x.n === n);
+    check(!!q, `${item.id} is a question of the list`);
+    if (!q) return;
+    same(item.blocks.map(b => [b.kind, b.text]), [['spoken', q.question]], `Q${n}: the question is the official wording, read aloud`);
     const ask = item.asks[0];
-    same(ask.accept.map(e => typeof e === 'string' ? e : e.text), q.answers, `Q${q.n}: the accepted answers are the official ones, in order`);
-    check(item.strand === `q${q.n}` && civics.meta.strands.some(s => s.id === item.strand) && item.asks.length === 1 && ask.kind === 'text' && !ask.count, `Q${q.n}: one question, its own topic, one answer wanted`);
-    ask.accept.filter(e => typeof e !== 'string').forEach(e => check(e.parts.every(p => e.text.toLowerCase().includes(p.toLowerCase())), `Q${q.n}: "${e.text}" is said in the parts it lists`));
-    q.answers.forEach((answer, i) => check(recallMatch(ask, answer.replace(/\s*\([^)]*\)/g, '')) !== null && recallMatch(ask, answer) !== null, `Q${q.n}: the official answer "${answer}" is accepted as printed and without its brackets`));
+    check(item.strand === `q${n}` && civics.meta.strands.some(s => s.id === item.strand) && item.asks.length === 1 && ask.kind === 'text', `Q${n}: one question, its own topic, one answer wanted`);
+    if (OWN.includes(n)) { same(ask.accept, { own: `answers.q${n}` }, `Q${n}: the answer is the learner's own, entered in the form`); return; }
+    const official = [...q.answers, ...(q.alsoAcceptable || [])];   // Q120's bracket "also acceptable are ..." is accepted too
+    same(ask.accept.map(e => typeof e === 'string' ? e : e.text), official, `Q${n}: the accepted answers are the official ones, in order`);
+    ask.accept.filter(e => typeof e !== 'string').forEach(e => check(e.parts.every(p => e.text.toLowerCase().includes(p.toLowerCase())), `Q${n}: "${e.text}" is said in the parts it lists`));
+    if (ask.count) {   // "name two", "name three", "name five": that many official answers in a row, as printed
+      q.answers.slice(0, q.answers.length - ask.count + 1).forEach((answer, i) => check(recallMatch(ask, q.answers.slice(i, i + ask.count).join(', ')) !== null, `Q${n}: ${ask.count} official answers together are accepted (from ${answer})`));
+      check(recallMatch(ask, q.answers.slice(0, ask.count - 1).join(', ')) === null, `Q${n}: one answer short of ${ask.count} is not enough`);
+      return;
+    }
+    official.forEach(answer => check(recallMatch(ask, answer.replace(/\s*\([^)]*\)/g, '')) !== null && recallMatch(ask, answer) !== null, `Q${n}: the official answer "${answer}" is accepted as printed and without its brackets`));
   });
-  const l1 = civics.lessons.l1, sets = l1.flow.filter(s => s.set).map(s => s.set.items), inSets = sets.flat();
-  same([...inSets].sort(), list.questions.map(q => `q${q.n}`).sort(), 'the groups ask the 17 questions, each once');
-  same([...l1.check.items].sort(), [...inSets].sort(), 'the check asks the same 17 again');
-  check(l1.check.recall === true && l1.check.order === 'shuffle' && l1.check.feedback === 'at-end' && l1.check.pass.length === 1 && l1.check.pass[0].right.min === 16, 'the check is mixed, shows nothing until the end, and wants 16 of 17 (9 in 10)');
-  check(l1.part === '1' && civics.meta.parts[0].title === 'Who does what' && l1.status === 'draft', 'the pilot is the lesson of part 1, still a draft');
-  check(Object.keys(civics.lessons).join() === 'l1', 'only the pilot is built');
+  // the questions that take more than one answer
+  same(civics.items.q48.asks[0].count, 2, 'Q48 wants two Cabinet-level positions');
+  check(recallMatch(civics.items.q48.asks[0], 'Attorney General, Secretary of State') !== null && recallMatch(civics.items.q48.asks[0], 'Attorney General') === null, 'Q48 takes two different positions, and one is not enough');
+  // a topic for each of the 128 questions, and the topics of the news questions
+  same(civics.meta.strands.filter(s => /^q\d+$/.test(s.id)).map(s => s.id), list.questions.map(q => `q${q.n}`), 'a topic for each of the 128 questions, in the list\'s order');
+  same(civics.meta.strands.filter(s => !/^q\d+$/.test(s.id)).map(s => s.id), ['level', 'theirs', 'stop', 'source', 'whole', 't-votes', 't-colonies', 't-1800s', 't-1900s', 'past'], 'and one for each kind of news question, each timeline, and stories that lean on the past');
+  check(civics.meta.strands.every(s => s.title.length > 3 && !/question/i.test(s.title)), 'every topic has a plain title');
+  // the lessons built so far
+  const lessons = Object.values(civics.lessons);
+  same(Object.keys(civics.lessons).join(), Array.from({ length: 16 }, (_, i) => `l${i + 1}`).join(), 'lessons 1 to 16 are built');
+  check(civics.meta.complete === true, 'the subject is complete: every part has its lesson');
+  check(lessons.every(l => l.status === 'live' && l.rev >= 1 && l.history.length === l.rev), 'every lesson is live, its two reviews passed, with a history line for each revision');
+  same(civics.meta.parts.map(p => p.id), Array.from({ length: 16 }, (_, i) => String(i + 1)), 'the plan has sixteen parts');
+  same(civics.meta.units.map(u => u.parts.join('')).join('|'), '123|45678|9,10'.replace('9,10', '910') + '|1112131415|16', 'five units hold the sixteen parts in order');
   const refs = civics.meta.refs;
   check(refs.some(r => r.source === list.source && r.asOf === list.lookedUp && /M-1778/.test(r.value)), 'the record names the list, its link and the day it was looked up');
-  check(civics.meta.strands.length === 17 && civics.meta.own.answers.fields.filter(f => f.type === 'text').map(f => f.id).join() === 'q23,q29,q30,q38,q39,q57,q61,q62'
+  check(civics.meta.own.answers.fields.filter(f => f.type === 'text').map(f => f.id).join() === 'q23,q29,q30,q38,q39,q57,q61,q62'
     && civics.meta.own.answers.fields.find(f => f.id === 'interviewDate').type === 'date', 'the record asks for the eight answers that vary, and the interview date');
+  // lesson 1: Q15 to 20, 40 to 47, 50 to 52, each once in a group and once in the check, 16 of 17
+  const l1 = civics.lessons.l1, sets1 = l1.flow.filter(s => s.set).map(s => s.set.items).flat();
+  same([...sets1].sort(), [15, 16, 17, 18, 19, 20, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52].map(n => `q${n}`).sort(), 'lesson 1: the groups ask the 17 questions, each once');
+  same([...l1.check.items].sort(), [...sets1].sort(), 'lesson 1: the check asks the same 17 again');
+  check(l1.check.recall === true && l1.check.order === 'shuffle' && l1.check.feedback === 'at-end' && l1.check.pass.length === 1 && l1.check.pass[0].right.min === 16, 'lesson 1: the check is mixed, shows nothing until the end, and wants 16 of 17 (9 in 10)');
+  // lessons 2 and 3: their questions, each once in a group and once in the check, at least 9 in 10
+  // lessons 2, 3, 9, 10, 11, 12, 14 and 15: their questions (and a lesson's timeline), each once in a group and once in the check, at least 9 in 10
+  const recallLesson = (id, nums, min, extra = []) => {
+    const l = civics.lessons[id], inSets = l.flow.filter(s => s.set).map(s => s.set.items).flat(), all = [...nums.map(n => `q${n}`), ...extra];
+    same([...inSets].sort(), [...all].sort(), `lesson ${id.slice(1)}: the groups ask its ${all.length} questions, each once`);
+    same([...l.check.items].sort(), [...inSets].sort(), `lesson ${id.slice(1)}: the check asks the same ${all.length} again`);
+    check(l.check.recall === true && l.check.order === 'shuffle' && l.check.feedback === 'at-end' && l.check.pass.length === 1 && l.check.pass[0].right.min === min && min / all.length >= 0.88, `lesson ${id.slice(1)}: the check is mixed, shows nothing until the end, and wants ${min} of ${all.length} (about 9 in 10)`);
+  };
+  recallLesson('l2', [21, 22, 24, 25, 26, 27, 28, 31, 32, 33, 34, 35, 36, 37, 48, 49, 53, 54, 55, 56], 18);
+  recallLesson('l3', [23, 29, 30, 38, 39, 57, 58, 59, 60, 61, 62], 10);
+  const range = (from, to) => Array.from({ length: to - from + 1 }, (_, i) => from + i);
+  recallLesson('l9', range(1, 14), 13);
+  recallLesson('l10', range(63, 72), 10, ['t-votes']);
+  recallLesson('l11', range(73, 89), 16, ['t-colonies']);
+  recallLesson('l12', range(90, 99), 10, ['t-1800s']);
+  recallLesson('l14', range(100, 118), 18, ['t-1900s']);
+  recallLesson('l15', range(119, 128), 9);
+  // every question of the list is asked in exactly one lesson's check, and the mock interview draws from all 128
+  const inChecks = Object.values(civics.lessons).filter(l => Array.isArray(l.check.items)).flatMap(l => l.check.items).filter(id => /^q\d+$/.test(id));
+  same([...inChecks].sort(), list.questions.map(q => `q${q.n}`).sort(), 'each of the 128 questions is in the check of one lesson, once');
+  // the timelines: each step once, the right order the order of the dates its feedback gives
+  ['t-votes', 't-colonies', 't-1800s', 't-1900s'].forEach(id => {
+    const ask = civics.items[id].asks[0], years = (ask.then.match(/\b1[789]\d\d\b/g) || []).map(Number);
+    check(ask.kind === 'order' && ask.scored === 'whole' && ask.right.length === ask.steps.length && years.length === ask.right.length && years.every((y, i) => i === 0 || y > years[i - 1]),
+      `${id}: every step is placed, and the years in its feedback rise in the right order (${years})`);
+  });
+  // lesson 13: stories that lean on the past; the check holds new ones, and three are kept for the review
+  {
+    const l13 = civics.lessons.l13, past = Object.values(civics.items).filter(i => i.strand === 'past');
+    const shown = new Set([...l13.flow.filter(s => s.worked).map(s => s.worked), ...l13.flow.filter(s => s.set).flatMap(s => s.set.items)]);
+    check(l13.check.items.length === 5 && l13.check.items.every(id => !shown.has(id)) && !l13.check.recall && l13.check.pass[0].right.min === 4, 'lesson 13: the check is five new stories, 4 to pass');
+    check(l13.check.items.every(id => /18(7[7-9]|8\d|9\d)|after the Civil War/.test(civics.items[id].reason)), 'lesson 13: every check story rests on a law, ruling or event of 1877 to 1900, or on what came after the Civil War');
+    check(past.filter(i => !shown.has(i.id) && !l13.check.items.includes(i.id)).length >= 3, 'lesson 13: three stories are kept for the review');
+    past.forEach(i => {
+      const tap = i.asks.find(a => a.kind === 'tap'), cause = i.asks.find(a => a.id === 'cause');
+      check(tap.right.length === 1 && i.deciding.join() === tap.right.join() && cause.options.filter(o => o.ok).length === 1 && cause.options.filter(o => !o.ok).every(o => o.then), `${i.id}: one line names the past, one cause is right, and each wrong cause is explained`);
+    });
+    same(scoreItem(civics, civics.items['past-course'], null, { line: ['l3'], cause: 'brown' }).r, { line: 'no', cause: 'out-of-time' }, 'a line with another date is a miss, and naming a later event as the cause is named');
+    same(scoreItem(civics, civics.items['past-citizens'], null, { line: ['l3'], cause: 'exclusion' }).r, { line: 'ok', cause: 'ok' }, 'the worked story: the 1898 case and the acts it answered');
+  }
+  // lesson 16: the mock interview, drawn from all 128, read aloud, 16 of 20, again a week later; the answers that change are checked first
+  {
+    const l16 = civics.lessons.l16, draw = l16.check.items.draw;
+    same([...draw.strands].sort(), list.questions.map(q => `q${q.n}`).sort(), 'lesson 16 draws from every question of the list');
+    check(draw.n === 20 && l16.check.spoken === true && l16.check.retest === 7 && l16.check.feedback === 'at-end' && l16.check.pass[0].right.min === 16, 'lesson 16: 20 questions read aloud, 16 to pass, a second mock a week later');
+    check(!l16.flow.some(s => s.own) && l16.flow.some(s => s.show && s.show.some(b => b.kind === 'ref' && b.ref === 'updates')), 'lesson 16: the answers that change are checked on the page that posts them, and nothing holds the learner back from the mock');
+    check(app.homeLessonOf(civics, 'q93').id === 'l12' && app.homeLessonOf(civics, 'q1').id === 'l9' && app.homeLessonOf(civics, 'q128').id === 'l15', 'a question missed in the mock names the lesson whose check holds it');
+  }
+  // two names of one thing joined by a slash are either name
+  right(civics, 'q93', 'Antietam', 'one of two names joined by a slash');
+  right(civics, 'q93', 'Battle of Sharpsburg', 'the other name');
+  right(civics, 'q93', 'Antietam/Sharpsburg', 'both, as printed');
+  check(recallVariants('Open 24/7').length === 1 && recallVariants('Antietam/Sharpsburg').length === 3, 'a slash between numbers is never split; one between words of letters is');
+  right(civics, 'q120', 'Liberty Island');
+  right(civics, 'q120', 'on the Hudson', 'what the list also accepts');
+  right(civics, 'q117', 'Tuscarora', 'the last tribe of the list, without the pointer printed beside it');
+  wrong(civics, 'q81', 'New York, New Jersey, Georgia, Virginia', 'four states for five');
+  right(civics, 'q81', 'New York, New Jersey, Georgia, Virginia, Delaware');
+  check(civics.lessons.l3.flow.findIndex(s => s.own === 'answers') < civics.lessons.l3.flow.findIndex(s => s.set && s.set.items.includes('q23')) && civics.lessons.l3.flow.findIndex(s => s.own === 'answers') > 0, 'lesson 3: the answers are entered before the questions that read them');
   // a typed answer of every kind of the pilot's, run through a whole group as the app does
-  const q = list.questions.find(x => x.n === 16);
-  check(checkResult(civics, [{ right: { min: 16 } }], Array.from({ length: 17 }, (_, i) => ({ facets: {}, r: { say: i < 16 ? 'ok' : 'no' }, ok: i < 16 }))).passed && !checkResult(civics, [{ right: { min: 16 } }], Array.from({ length: 17 }, (_, i) => ({ facets: {}, r: { say: i < 15 ? 'ok' : 'no' }, ok: i < 15 }))).passed, `16 of 17 passes and 15 does not (${q.n})`);
+  check(checkResult(civics, [{ right: { min: 16 } }], Array.from({ length: 17 }, (_, i) => ({ facets: {}, r: { say: i < 16 ? 'ok' : 'no' }, ok: i < 16 }))).passed && !checkResult(civics, [{ right: { min: 16 } }], Array.from({ length: 17 }, (_, i) => ({ facets: {}, r: { say: i < 15 ? 'ok' : 'no' }, ok: i < 15 }))).passed, '16 of 17 passes and 15 does not');
+}
+
+/* ---------- Civics' news stories ---------- */
+{
+  const stories = Object.values(civics.items).filter(i => /^l[4-8]-/.test(i.id));
+  const kind = i => i.id.match(/^l(\d)-/)[1];
+  const used = new Map();
+  Object.entries(civics.lessons).forEach(([lid, l]) => {
+    const ids = [...l.flow.filter(s => s.worked).map(s => s.worked), ...l.flow.filter(s => s.set).flatMap(s => s.set.items), ...(Array.isArray(l.check.items) ? l.check.items : [])];
+    ids.filter(id => /^l\d-/.test(id)).forEach(id => { used.set(id, [...(used.get(id) || []), lid]); });
+  });
+  const reserve = stories.filter(i => !used.has(i.id));
+  same(stories.length, 16 + 19 + 16 + 16 + 17, 'the news lessons hold 84 stories, pages and posts');
+  // lesson 5's check and its review, and lesson 8's review, hold the verdicts that are hardest to tell: not settled, and in court
+  const l5check = civics.lessons.l5.check.items.map(id => civics.items[id].asks[0].right);
+  check(l5check.includes('unsettled') && l5check.includes('court'), 'lesson 5: the check holds a story that is not settled and one in court');
+  const shownIn = l => new Set([...civics.lessons[l].flow.filter(s => s.worked).map(s => s.worked), ...civics.lessons[l].flow.filter(s => s.set).flatMap(s => s.set.items), ...civics.lessons[l].check.items]);
+  const reserveOf = (l, strand) => stories.filter(i => i.strand === strand && i.id.startsWith(l + '-') && !shownIn(l).has(i.id));
+  check(reserveOf('l5', 'theirs').some(i => i.asks[0].right === 'unsettled'), 'lesson 5: a story kept for the review is not settled');
+  check(reserveOf('l8', 'whole').some(i => i.asks.find(a => a.id === 'verdict').right === 'unsettled'), 'lesson 8: a story kept for the review is not settled');
+  check([...used.values()].every(v => v.length === 1), 'every story is used in one place only, so a check never asks a story the lessons showed');
+  const checkOf = id => civics.lessons[id].check.items.map(i => civics.items[i]);
+  ['l4', 'l5', 'l6', 'l8'].forEach(id => {
+    const items = checkOf(id), count = lvl => items.filter(i => i.facets.level === lvl).length;
+    check(items.length === 6 && count('federal') === 2 && count('state') === 2 && count('local') === 2 && civics.lessons[id].check.pass[0].right.min === 5, `lesson ${id.slice(1)}: the check is six stories, two from each level, 5 to pass`);
+  });
+  check(checkOf('l7').length === 5 && civics.lessons.l7.check.pass[0].right.min === 4, 'lesson 7: the check is five pages and posts, 4 to pass');
+  ['level', 'theirs', 'stop', 'source', 'whole'].forEach(strand => check(reserve.filter(i => i.strand === strand).length >= 3, `three stories of "${strand}" are kept for its returns in the review`));
+  // every story is built the way it says: the level asked is the level of the story, the tapped line decides, the lines named exist
+  stories.filter(i => i.facets.level).forEach(i => {
+    const level = i.asks.find(a => a.id === 'level'), lines = i.blocks[0].lines.map(l => l.id);
+    if (level) same(level.right, i.facets.level, `${i.id}: the level asked is the level of the story`);
+    i.deciding.forEach(id => check(lines.includes(id), `${i.id}: the deciding line ${id} is a line of the story`));
+    const verdict = i.asks.find(a => a.id === 'verdict'), stop = i.asks.find(a => a.id === 'stop');
+    // a court is the way to stop it only where the story has a lawsuit before a court, and a lawsuit before a court makes the verdict "in court"
+    if (verdict && stop && (kind(i) === '8')) check((verdict.right === 'court') === (stop.right === 'courts'), `${i.id}: "in court" and "a court" go together`);
+    if (verdict && verdict.right === 'unsettled') check(/no law/i.test(i.blocks[0].lines.map(l => l.text).join(' ')), `${i.id}: a story that is not settled says no law is for or against`);
+    const tap = i.asks.find(a => a.kind === 'tap');
+    if (tap) check(tap.in === 'story' && i.blocks[0].id === 'story' && tap.right.length === 1, `${i.id}: one line is tapped, in the story`);
+  });
+  const whole = stories.filter(i => kind(i) === '8');
+  check(whole.every(i => i.asks.map(a => a.id).join() === 'level,branch,verdict,stop,source' && i.steps.length === 6), 'a whole story puts the five questions in order, with a step of working for each');
+  check(whole.every(i => i.blocks[1].kind === 'prose' && /(looked up|looked into|checked|never|do not know|not looked)/.test(i.blocks[1].text)), 'a whole story says where it reached you');
+  // one rule for each question (items-shape.js), the same in every lesson: "not settled" only for the federal executive, "in court" only with a lawsuit
+  // before a court now, a higher level's law among the checks, and the rule for taking a story as it stands printed word for word in lessons 7 and 8
+  const verdictOf = i => (i.asks.find(a => a.id === 'verdict') || {}).right, storyText = i => i.blocks[0].lines.map(l => l.text).join(' ');
+  check(stories.filter(i => verdictOf(i) === 'unsettled').every(i => i.facets.level === 'federal' && /Congress/.test(storyText(i))), '"not settled" is only for the president or an agency, where Congress has said nothing');
+  check(stories.filter(i => verdictOf(i) === 'court').every(i => /(judge|court) (is hearing|will rule)|hearing the case now/i.test(storyText(i))), '"in court" only where a court has the lawsuit now');
+  same(civics.meta.lists.stop.map(o => o.id), ['veto', 'courts', 'change', 'higher', 'voters', 'amend'], 'the six checks include a higher level’s law, state over local too');
+  const ruleIn = id => vm.runInContext('CIVICS_SOURCE_RULE', app.context).every(line => JSON.stringify(civics.lessons[id].flow).includes(JSON.stringify(line).slice(1, -1)));
+  check(ruleIn('l7') && ruleIn('l8'), 'lessons 7 and 8 state the same rule for taking a story as it stands');
+  check(['unsettled', 'court', 'theirs', 'not'].every(v => stories.some(i => verdictOf(i) === v && civics.lessons.l5.flow.some(s => s.set && s.set.items.includes(i.id) || s.worked === i.id))), 'lesson 5 practises each of the four verdicts before its check');
+  // the known mistakes are named: a federal pick for a state or local story is the president default
+  const lvlAsk = civics.items['l4-bell'].asks[0];
+  check(lvlAsk.slips.federal === 'president-default' && !civics.items['l4-lunch'].asks[0].slips, 'picking federal for a local story is named "president default", and not for a federal one');
+  check(civics.items['l5-prices'].asks[0].right === 'unsettled' && civics.items['l5-cars'].asks[0].right === 'theirs' && civics.items['l5-factory'].asks[0].right === 'not' && civics.items['l5-oil'].asks[0].right === 'theirs' && civics.items['l5-rent'].asks[0].right === 'court', 'the four verdicts are all taught: theirs (and the president running the branch is theirs), not theirs, not settled, in court');
+  check(['l5-water', 'l5-dollars', 'l5-licenses', 'l5-zone'].every(id => civics.items[id].fact), 'a story that rests on a power of the list prints the interview question it rests on');
+  const picked = (id, text) => scoreItem(civics, civics.items[id], null, text);
+  same(picked('l5-nine', { verdict: 'theirs', line: ['l3'] }).r, { verdict: 'no-power-check', line: 'no' }, 'taking an order with no power behind it for theirs is named, and a wrong line is a miss');
+  same(picked('l5-nine', { verdict: 'not', line: ['l1'] }).r, { verdict: 'ok', line: 'ok' }, 'the right verdict and the right line are both right');
+  same(picked('l4-bell', { level: 'federal', branch: 'writes' }).r, { level: 'president-default', branch: 'ok' }, 'the president default is named');
+  same(picked('l6-pay', { stop: 'courts' }).r, { stop: 'court-default' }, 'a court where the story has no lawsuit is named');
+  same(picked('l7-safe', { open: ['r1'] }).r, { open: 'own-word' }, 'opening the source\'s own page first is named');
+  const results = civics.items['l7-safe'].blocks[1], html = blockHtml(results, {});
+  check((html.match(/<p>/g) || []).length === 4 && civics.items['l7-safe'].blocks[1].lines.every(l => l.para), 'a page of search results shows each result as a paragraph of its own');
+  check((blockHtml({ kind: 'prose', lines: [{ id: 'a', text: 'One.' }, { id: 'b', text: 'Two.' }] }, {}).match(/<p>/g) || []).length === 1 && (blockHtml({ kind: 'prose', lines: [{ id: 'a', text: 'One.' }, { id: 'b', text: 'Two.', para: true }] }, {}).match(/<p>/g) || []).length === 2, 'the lines of a prose block are one paragraph, and a line with para starts a new one');
 }
 
 /* ---------- the learner view prints what a learner meets ---------- */

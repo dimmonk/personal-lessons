@@ -306,7 +306,7 @@ chosen and nothing is marked until the end.
   every answer with every accepted answer. The app accepts only what the list prints.
 - *What counts as the same* (`recall.js`): capital letters, accents, punctuation, "a", "an", "the" and "and" do not
   matter; "U.S." is "us" and "state's" is "states"; a number in words is the number, and two number words that do not
-  join are two numbers ("two three" is 2 3); words in brackets are in or out; one small misspelling in the whole answer
+  join are two numbers ("two three" is 2 3); words in brackets are in or out; two names of letters joined by a slash ("Antietam/Sharpsburg", never a number such as 1/2) are either name or both; one small misspelling in the whole answer
   is forgiven (one letter off, in a word of four letters or more, never a number). Every word typed must belong to some
   accepted answer: a word left out or added, another answer's words, or two misspellings is a miss. With `count`, the
   same answer twice counts once. X14 asserts each of these.
@@ -625,7 +625,8 @@ Support is help during the attempt, and it fades. Feedback after the answer does
 ### 4.3 Checks and the baseline
 
 Checks give feedback `at-end` by default: one result screen, then every item's feedback, misses first; nothing between
-items (X23). Sung checks are `after-each`. A baseline and a spoken mock interview show nothing per item. A check's
+items (X23). Under each question missed in a drawn check (a mock interview), the lesson whose own check holds its topic is named
+("To go over it again, open …", `homeLessonOf` in player.js; `FC.ENGINE` 16, 2026-10-22). Sung checks are `after-each`. A baseline and a spoken mock interview show nothing per item. A check's
 result is computed from first tries of its run.
 
 ### 4.4 Timed sets and the busy task
@@ -1052,9 +1053,9 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Scams**: lesson 0, the baseline (eight messages on 20 seconds, one call, one order), and lesson 3, act, check or
   leave (three pairs, then eight timed). Not built: lessons 1, 2, 4 to 6, the banner and busy task in a lesson, the plan
   and setup in a lesson, the four-week retest, the caller's voice.
-- **Civics**: lesson 1, the three branches, 17 questions answered from memory in four groups, then a recall check of
-  all 17, 16 to pass. Not built: the other 111 questions, the news stories, the answers lesson (4), the mock interview as a lesson (14)
-  and its retest, and the news story per due news strand in the review.
+- **Civics**: rebuilt 2026-10-22 to `docs/subjects/civics/plan.md`: all sixteen lessons built and live after their reviews (`complete: true`): the 128 questions answered
+  from memory, the news stories (lessons 4 to 8), four history lessons with a timeline each (`order`) and stories that lean on the past (lesson 13),
+  and the mock interview drawn from all 128 with its retest (lesson 16).
 - **Geography**: parts 1 to 7b and 16 to 16b built (2026-10-17): the world, the United States region by region and mixed,
   western Europe and its flags. Every lesson opens with the way of thinking (the area, what touches it, the water), shows its
   names before any case, works a case in those steps and gives feedback in them (`area`, `cue`, place-gen.js). Not built:

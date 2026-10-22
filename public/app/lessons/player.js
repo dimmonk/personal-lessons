@@ -238,8 +238,17 @@ function paintBaselineResult(log){
 // every question of a finished check with its feedback; the missed ones first
 function checkAnswersHtml(data, log){
   const ordered = [...log.map((e, at) => ({ e, at })).filter(x => !x.e.ok), ...log.map((e, at) => ({ e, at })).filter(x => x.e.ok)];
+  const drawn = LESSON && LESSON.lesson && checkIsDrawn(LESSON.lesson.check);
   return ordered.map(({ e, at }) => `<div class="resitem">${itemHtml(data, e.inst, { a: e.a, many: {}, marks: true, support: null,
-    feedback: feedbackHtml(data, e.inst, null, e.a, { r: e.r, ok: e.ok }, { claim: true, at }) })}</div>`).join('');
+    feedback: feedbackHtml(data, e.inst, null, e.a, { r: e.r, ok: e.ok }, { claim: true, at }) })}${drawn && !e.ok ? homeLessonHtml(data, e.inst.item.strand) : ''}</div>`).join('');
+}
+// The lesson whose own check holds a topic (not a drawn check): where a question missed in a drawn check, such as a mock interview, is taught
+function homeLessonOf(data, strand){
+  return Object.values(data.lessons).find(l => Array.isArray(l.check.items) && flatRefs(l.check.items).some(r => (data.items[refId(r)] || {}).strand === strand)) || null;
+}
+function homeLessonHtml(data, strand){
+  const home = homeLessonOf(data, strand);
+  return home ? `<p class="doc-note" data-home-lesson="${esc(home.id)}">${esc(SAY.homeLesson(home.title))}</p>` : '';
 }
 // the answers counted on the learner's word in a finished run, listed under its result
 function claimedListHtml(data, log){
