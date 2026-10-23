@@ -147,6 +147,15 @@ percent and 300 percent of total profits", and practitioner pages citing the sam
 Limited to moderate. Teaching consequence for lesson 5 (judgement call on the denominator, now sourced): a line's share is
 counted of the total profit of all the lines, losses included, so the share can pass 100% and shows what the losing lines
 cost; the same share is shown in the learner's own work. Porter's box (ST4) gives the questions; this gives the arithmetic.
+- Added 2026-10-23 (reviews of all fourteen lessons, what to do with a losing line): Kaplan, R. S. (2005), "A Balanced Scorecard
+  Approach To Measure Customer Profitability", *HBS Working Knowledge*, 8 August 2005. **Read** (the page). The order is: first
+  "improve its internal processes to lower the cost-to-serve", since "we can't expect customers to pay for our inefficiencies";
+  then reprice ("Customized pricing policies should be at the heart of any strategy to manage customer profitability"); the
+  insurer in his example "was prepared to drop the accounts" only if those failed. Moderate (the author's own practitioner
+  summary of the same work). A practitioner list (Cokins, G. (2015), "Measuring and Managing Customer Profitability",
+  CustomerThink, 11 February 2015, read) gives the same options: lower each customer's costs to serve, reprice or surcharge
+  costly activities, and abandon unprofitable customers. Teaching consequence for lesson 5: a losing line is first asked
+  whether a price or cost-to-serve change could make it pay; only if not is it judged by its tie to the core.
 
 **ST9. An advantage lasts only if the thing behind it is valuable, rare, hard to copy and has no ready substitute.**
 Barney, J. (1991), "Firm Resources and Sustained Competitive Advantage", *Journal of Management* 17(1), 99-120.

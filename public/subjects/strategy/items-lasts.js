@@ -1,9 +1,12 @@
 // Strategy, lesson 8 "Will it last?": the worked notes, the questions of the groups, the check and three held back for the review.
 // The one rule (research ST9, with ST3): an advantage lasts only if it has both a benefit and a barrier. The benefit: does the difference let the
 // business charge more than rivals for the same work, or cost it less than rivals to make it? If neither, there is nothing to keep. The
-// barrier: what stops a rival getting the same? Only this business has it and a rival cannot get or make one (rare and hard to copy); or it rests
-// on many activities that fit together, so a rival would have to copy them all (fit); or nothing does, because a rival can buy it, copy it, or
-// get the same result another way. Being first, or proud of it, is not a barrier. The barrier question opens only once a benefit is named.
+// barrier: what stops a rival getting the same? The common answers (not the whole list): only this business has it and a rival cannot get or
+// make one (rare and hard to copy); it rests on many activities that fit together, so a rival that runs another way would have to copy them all
+// (fit; a rival that already runs that way is not stopped); customers would lose by leaving, their setup and records or trust built over years
+// (switching costs and a reputation, ST9); or nothing does, because a rival can buy it, copy it, wait for it or get the same result another way.
+// Being first, or proud of it, is not a barrier. The barrier question opens only once a benefit is named. A line that a rival "can buy" a piece
+// does not settle it alone: what customers would lose by leaving can still stop a copy.
 (() => {
   const BENEFIT_THEN = {
     price: { cost: "The notes show customers paying more than at rivals, not a cost below theirs.", none: "Customers pay more here than at rivals for the same work: that is a benefit." },
@@ -11,11 +14,12 @@
     none: { price: "Customers pay the same as at rivals, so the difference earns no higher price.", cost: "The costs did not change, so the difference saves nothing." }
   };
   const BARRIER_THEN = {
-    "only-us": { fit: "It is one thing only this business has, not many activities working together.", nothing: "A rival cannot get or make one: the notes say why." },
-    fit: { "only-us": "Any one piece could be had by a rival; what stops a copy is that it would need all of them.", nothing: "A rival would have to copy every piece at once, and give up how it runs now." },
-    nothing: { "only-us": "A rival can buy it, copy it or get the same result another way, so it is not only this business’s.", fit: "It is one piece a rival can buy or copy on its own; nothing else has to come with it." }
+    "only-us": { fit: "It is one thing only this business has, not many activities working together.", switching: "Customers stay because a rival cannot get the thing at all, not because leaving would cost them.", nothing: "A rival cannot get or make one: the notes say why." },
+    fit: { "only-us": "Any one piece could be had by a rival; what stops a copy is that it would need all of them.", switching: "Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.", nothing: "A rival would have to copy every piece at once, and give up how it runs now." },
+    switching: { "only-us": "A rival can get the same tools; what holds the customers is what they would lose by leaving.", fit: "It is not a set of activities a rival must copy; it is what customers would lose by leaving.", nothing: "A rival can offer the same, but customers would lose their setup or a record of trust by leaving, and a newcomer cannot buy that." },
+    nothing: { "only-us": "A rival can buy it, copy it or get the same result another way, so it is not only this business’s.", fit: "Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.", switching: "Customers could move to a rival tomorrow and lose nothing." }
   };
-  const BARRIER_SLIP = { "only-us": "copyable-as-lasting", fit: "copyable-as-lasting" };
+  const BARRIER_SLIP = { "only-us": "copyable-as-lasting", fit: "copyable-as-lasting", switching: "copyable-as-lasting" };
   // notes: whose, lines ([id, text]), the benefit, the barrier, the lines marked after the answer
   function lasts({ id, from, detail, lines, benefit, barrier, deciding, reason, scale = "owner", steps }) {
     return {
@@ -36,7 +40,7 @@
   FC.items("strategy", [
     // ----- the worked notes -----
     lasts({
-      id: "w8-kennel", from: "Eve’s notes on her dog daycare", detail: "Written in March",
+      id: "w8-kennel", from: "Eve’s page on her dog daycare and its rivals", detail: "Written in March",
       lines: [
         ["c1", "We are the only dog daycare in town with a fenced acre of grass; the others are indoor rooms."],
         ["c2", "Owners pay us $45 a day; the indoor places charge $30."],
@@ -53,7 +57,7 @@
     // ----- the first group (the deciding lines marked) -----
     // two differences that nothing protects, on different surfaces, back to back
     lasts({
-      id: "p8-oven", from: "Dana’s notes on her bakery", detail: "Written in May",
+      id: "p8-oven", from: "Dana’s page on her bakery", detail: "Written in May",
       lines: [
         ["c1", "Our new oven bakes with half the gas, so each cake costs us $2 less to make."],
         ["c2", "We were the first bakery in the county to get one."],
@@ -62,7 +66,7 @@
       reason: "The oven lowers the cost of each cake, but any bakery can buy the same one; being first does not stop them. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "p8-menu", from: "Sam’s notes on his diner", detail: "Written in June",
+      id: "p8-menu", from: "Sam’s page on his diner", detail: "Written in June",
       lines: [
         ["c1", "Our new brunch dishes let us charge $4 more a plate than the diner across the street."],
         ["c2", "The dishes need no special cook, kitchen or supplier."],
@@ -72,7 +76,7 @@
     }),
     // a look-alike on one grooming van: the same higher price, one with a barrier and one without
     lasts({
-      id: "p8-calm", from: "Rosa’s notes on her grooming van", detail: "Written in July",
+      id: "p8-calm", from: "Rosa’s page on her grooming van", detail: "Written in July",
       lines: [
         ["c1", "Owners of nervous dogs pay us $20 more a groom than the grooming shops charge."],
         ["c2", "They pay for a calm groom at home, by the same groomer, paid by the day, four dogs a day."],
@@ -81,7 +85,7 @@
       reason: "Owners pay $20 more, and the calm groom rests on home visits, the same groomer, pay by the day and four dogs a day. A shop would have to change all of it at once: a benefit and a barrier, so it lasts."
     }),
     lasts({
-      id: "p8-shampoo", from: "Rosa’s notes on her grooming van", detail: "Written in August",
+      id: "p8-shampoo", from: "Rosa’s page on her grooming van", detail: "Written in August",
       lines: [
         ["c1", "Owners pay us $10 more a groom for our blueberry shampoo treatment."],
         ["c2", "We found the shampoo first, at a trade show."],
@@ -99,9 +103,19 @@
       reason: "Vanguard’s low cost comes from many activities that fit together, and a rival would have to change all of them at once. A benefit and a barrier, so it lasts."
     }),
 
+    lasts({
+      id: "p8-records", from: "Lou’s page on his bookkeeping firm", detail: "Written in September",
+      lines: [
+        ["c1", "Small businesses pay us $50 a month more than the online bookkeeping apps cost."],
+        ["c2", "The apps are sold to anyone, and they do much of what we do."],
+        ["c3", "Our clients’ ten years of records, payroll and tax setup live in our system; moving would mean a season of redoing it, and the risk of a mistake with the tax office."]],
+      benefit: "price", barrier: "switching", deciding: ["c1", "c3"],
+      reason: "Clients pay $50 a month more, and though the apps do much the same, a client would lose a season and risk a tax mistake by leaving. A benefit and a barrier: what customers would lose by switching."
+    }),
+
     // ----- the second group (nothing marked) -----
     lasts({
-      id: "q8-fittings", from: "Tom’s notes on his hardware store", detail: "Written in January",
+      id: "q8-fittings", from: "Tom’s page on his hardware store", detail: "Written in January",
       lines: [
         ["c1", "The pipe fittings most builders here use are sold through one store per county, and the maker has signed with us for ten years."],
         ["c2", "We charge 10% more for them than stores two counties away do."],
@@ -110,7 +124,7 @@
       reason: "Tom gets 10% more for the fittings, and no other store in the county can sell them for ten years. A benefit and a barrier, so it lasts as long as the deal does."
     }),
     lasts({
-      id: "q8-software", from: "Ray’s notes on his plumbing business", detail: "Written in April",
+      id: "q8-software", from: "Ray’s page on his plumbing business", detail: "Written in April",
       lines: [
         ["c1", "Our new scheduling software cut our driving by a fifth, so each call costs us $15 less."],
         ["c2", "No other plumber in town uses it yet."],
@@ -119,7 +133,7 @@
       reason: "The software lowers the cost of each call, but any plumber can buy it for $50 a month. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "q8-color", from: "Grace’s notes on her salon", detail: "Written in September",
+      id: "q8-color", from: "Grace’s page on her salon", detail: "Written in September",
       lines: [
         ["c1", "We repainted the salon in a color no other salon in town uses, with a new logo to match."],
         ["c2", "Clients still pay what they pay at the other salons."],
@@ -128,7 +142,7 @@
       reason: "The new color is different, but clients pay no more and nothing costs less. With no benefit, there is nothing to keep."
     }),
     lasts({
-      id: "q8-exams", from: "Kim’s notes on her tutoring business", detail: "Written in October",
+      id: "q8-exams", from: "Kim’s page on her tutoring business", detail: "Written in October",
       lines: [
         ["c1", "Parents pay us $20 an hour more than other tutors charge."],
         ["c2", "They pay for tutors who have graded the state exams, ten years of past papers with our notes, a report each week and a practice exam."],
@@ -137,7 +151,7 @@
       reason: "Parents pay $20 an hour more, and that rests on several pieces that fit; a rival could hire one tutor but would need all of them. A benefit and a barrier, so it lasts."
     }),
     lasts({
-      id: "q8-tortillas", from: "Carlos’s notes on his taco truck", detail: "Written in May",
+      id: "q8-tortillas", from: "Carlos’s page on his taco truck", detail: "Written in May",
       lines: [
         ["c1", "We now buy tortillas together with two other trucks, so they cost us 10% less."],
         ["c2", "We sell our tacos at the same $3 as the other trucks."],
@@ -146,9 +160,19 @@
       reason: "Buying together lowers the cost of tortillas, but any truck can do the same, and several have. A benefit with no barrier, so it will not last."
     }),
 
+    lasts({
+      id: "q8-espresso", from: "Priya’s page on her cafe", detail: "Written in June",
+      lines: [
+        ["c1", "Our new espresso machine has a two-year waiting list, and we got one of the first."],
+        ["c2", "Customers pay $1 more a cup than at the other cafes on the street."],
+        ["c3", "Two of those cafes have ordered the same machine, and the maker builds more each year."]],
+      benefit: "price", barrier: "nothing", deciding: ["c2", "c3"],
+      reason: "The machine earns $1 more a cup, but the other cafes will have one once the wait is over. Hard to get is not the same as only ours: a benefit with no lasting barrier."
+    }),
+
     // ----- the check -----
     lasts({
-      id: "k8-wifi", from: "Priya’s notes on her cafe", detail: "Written in February",
+      id: "k8-wifi", from: "Priya’s page on her cafe", detail: "Written in February",
       lines: [
         ["c1", "We put in the fastest internet on the street, and people pay $2 more for our day pass than at cafes with slow Wi-Fi."],
         ["c2", "It took us months to choose it."],
@@ -157,7 +181,7 @@
       reason: "The fast internet earns $2 more a pass, but any cafe can order the same line; months of choosing are not a barrier. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "k8-dock", from: "Notes on Joe’s boat repair shop", detail: "Written in June",
+      id: "k8-dock", from: "Joe’s page on his boat repair shop", detail: "Written in June",
       lines: [
         ["c1", "Ours is the only dock on the lake where a boat can be lifted out of the water."],
         ["c2", "Boat owners pay us 30% more than shops that must take the boat away on a trailer."],
@@ -166,7 +190,7 @@
       reason: "Owners pay 30% more to have the boat lifted at the lake, and no rival can build a dock. A benefit and a barrier, so it lasts."
     }),
     lasts({
-      id: "k8-robots", from: "Notes on our office-cleaning business", detail: "Written in August",
+      id: "r8-robots", from: "Lin’s page on her office-cleaning business", detail: "Written in August",
       lines: [
         ["c1", "Robot vacuums now do our floors at night, so each office costs us $8 less a week to clean."],
         ["c2", "We charge offices what the other cleaning firms charge."],
@@ -175,7 +199,7 @@
       reason: "The robots lower the cost of each office, but any firm can buy them online. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "k8-shifts", from: "Jill’s notes on her daycare", detail: "Written in November",
+      id: "k8-shifts", from: "Jill’s page on her daycare", detail: "Written in November",
       lines: [
         ["c1", "Parents on hospital shifts pay us $50 a week more than other daycares charge."],
         ["c2", "They pay for care from 5 a.m. to 9 p.m., two staff shifts, meals, days that follow the hospital roster, and a place two blocks from the hospital."],
@@ -184,7 +208,7 @@
       reason: "Parents pay $50 a week more, and the long day rests on pieces that fit; a rival would have to change all of them at once. A benefit and a barrier, so it lasts."
     }),
     lasts({
-      id: "k8-sign", from: "Ben’s notes on his repair shop", detail: "Written in March",
+      id: "k8-sign", from: "Ben’s page on his repair shop", detail: "Written in March",
       lines: [
         ["c1", "We put up the biggest sign on the road and painted the shop bright blue."],
         ["c2", "Customers pay what they pay at the other repair shops."],
@@ -193,7 +217,7 @@
       reason: "The sign and the paint make the shop stand out, but customers pay no more and nothing costs less. With no benefit, there is nothing to keep."
     }),
     lasts({
-      id: "k8-wheat", from: "Dana’s notes on her bakery", detail: "Written in October",
+      id: "r8-wheat", from: "Dana’s page on her bakery", detail: "Written in October",
       lines: [
         ["c1", "Customers pay $3 a loaf more for our old-variety wheat bread than for the bread at other bakeries."],
         ["c2", "Only one mill in the state grows that wheat."],
@@ -202,9 +226,28 @@
       reason: "Customers pay $3 a loaf more, and for ten years no other bakery can get the wheat. A benefit and a barrier, so it lasts as long as the deal does."
     }),
 
+    lasts({
+      id: "k8-vans", from: "Rosa’s page on her grooming van", detail: "Written in November",
+      lines: [
+        ["c1", "Owners of nervous dogs pay us $20 more a groom than the grooming shops charge."],
+        ["c2", "They pay for a calm groom at home, by the same groomer, paid by the day, four dogs a day; a shop would have to change all of that to match us."],
+        ["c3", "A groomer from the next town runs her vans exactly our way, and she is moving into our area next spring."]],
+      benefit: "price", barrier: "nothing", deciding: ["c1", "c3"],
+      reason: "Owners pay $20 more, and a shop would have to change everything to match it, but the groomer coming next spring already runs the same way: she has nothing to change. A benefit with nothing to stop that copy."
+    }),
+    lasts({
+      id: "k8-pianos", from: "Hal’s page on his moving company", detail: "Written in April",
+      lines: [
+        ["c1", "A new mover in town bought the same ramps and padded dollies we use."],
+        ["c2", "Piano owners still pay us double the house-move rate."],
+        ["c3", "We have moved pianos for 25 years without one damaged, and the piano stores send their buyers only to us."]],
+      benefit: "price", barrier: "switching", deciding: ["c2", "c3"],
+      reason: "Owners pay double, and the gear can be bought, but 25 years with no damage, and the stores’ trust that comes with it, cannot. A benefit and a barrier: trust a newcomer cannot buy."
+    }),
+
     // ----- held back for the review -----
     lasts({
-      id: "r8-lift", from: "Ben’s notes on his repair shop", detail: "Written in July",
+      id: "r8-lift", from: "Ben’s page on his repair shop", detail: "Written in July",
       lines: [
         ["c1", "A second lift lets one mechanic do twice the brake jobs, so each costs us $20 less."],
         ["c2", "Lifts like it are sold to any shop."]],
@@ -212,7 +255,7 @@
       reason: "The lift lowers the cost of each brake job, but any shop can buy one. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "r8-lobby", from: "Priya’s notes on her second cafe", detail: "Written in December",
+      id: "r8-lobby", from: "Priya’s page on her second cafe", detail: "Written in December",
       lines: [
         ["c1", "Our second cafe is the only one in the lobby of the city’s biggest office tower, and the lease runs ten years with no other cafe allowed."],
         ["c2", "We charge 50 cents more a coffee than the cafes down the street."]],
@@ -220,7 +263,7 @@
       reason: "The lobby cafe charges more, and for ten years no other cafe may open there. A benefit and a barrier, so it lasts as long as the lease does."
     }),
     lasts({
-      id: "r8-coaches", from: "Mark’s notes on his gym", detail: "Written in May",
+      id: "r8-coaches", from: "Mark’s page on his gym", detail: "Written in May",
       lines: [
         ["c1", "Lifters pay us $60 a month, double what the other gyms charge."],
         ["c2", "They pay for coaches on the floor all day, racks with room to use them and monthly checks; a budget gym would have to rebuild how it runs to match all of that."]],

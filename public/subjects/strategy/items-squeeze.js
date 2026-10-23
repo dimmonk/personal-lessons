@@ -8,7 +8,8 @@
 // settle. Trade reports on invented towns; the truck report is the known case of Paccar, with the facts research ST6 gives.
 (() => {
   const FORCES = ["buyers", "suppliers", "entrants", "substitutes", "rivals"];
-  const NONE = "The report gives no sign that this force takes much of the money here.";
+  const WHO = { buyers: "buyers", suppliers: "suppliers", entrants: "newcomers", substitutes: "a substitute", rivals: "rivals" };
+  const none = (f, right) => `No line shows ${WHO[f]} taking money here. The settling line shows ${WHO[right]} taking it.`;
   const GROWTH = "That is growth. It says nothing yet about who takes the profit.";
   // who the growth goes to: newcomers when starting up is easy, the businesses already there when it is hard
   const GOES = {
@@ -28,7 +29,7 @@
       asks: [
         { id: "line", kind: "tap", prompt: tapPrompt || "Tap the line that shows who takes the money.", in: "report", right: [settles] },
         { id: "force", kind: "choose", prompt: forcePrompt || "Which force squeezes the profit most?", from: "force", right,
-          then: Object.fromEntries(FORCES.filter(f => f !== right).map(f => [f, said[f] || NONE])) },
+          then: Object.fromEntries(FORCES.filter(f => f !== right).map(f => [f, said[f] || none(f, right)])) },
         ...(claim ? [{ id: "claim", kind: "choose", prompt: `${claim} Who will the growth go to?`, shuffle: true, options: ["entrants", "stays"].map(o =>
           o === growthTo ? { id: o, text: GOES[o].text, ok: true } : { id: o, text: GOES[o].text, then: GOES[o].then, ...(GOES[o].slip ? { slip: GOES[o].slip } : {}) }) }] : [])
       ],
@@ -45,13 +46,13 @@
       lines: [
         ["c1", "There are four pharmacies in town, and none has opened or closed in ten years.", "rivals", "The four have been there ten years and nobody new arrives, so rivals and newcomers are calm."],
         ["c2", "Drug wholesalers are many, and a pharmacy can switch from one to another within a week.", "suppliers", "Wholesalers are many and easy to switch, so suppliers have little hold."],
-        ["c3", "Most prescriptions are paid for by three big insurance plans, which decide what they pay per prescription; a pharmacy that refuses their rate loses those customers.", "buyers"],
+        ["c3", "Most prescriptions are paid for by three drug-benefit companies acting for the insurance plans, and they decide what they pay; a pharmacy that refuses their rate loses those customers.", "buyers"],
         ["c4", "Mail-order pharmacies fill a small share, mostly drugs taken for years.", "substitutes", "Mail order takes only a small share, so it caps little."]],
       settles: "c3", right: "buyers",
       steps: [
-        { id: "line", does: "Find the line that shows who takes the money, and why.", working: "The third line: three insurance plans pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.", ask: "line" },
-        { id: "force", does: "Check the other forces are weak, then name the one that takes the money.", working: "No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three plans, take the money.", ask: "force" }],
-      reason: "Three insurance plans pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into."
+        { id: "line", does: "Find the line that shows who takes the money, and why.", working: "The third line: three drug-benefit companies pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.", ask: "line" },
+        { id: "force", does: "Check the other forces are weak, then name the one that takes the money.", working: "No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three drug-benefit companies, take the money.", ask: "force" }],
+      reason: "Three drug-benefit companies pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into."
     }),
 
 
@@ -75,7 +76,7 @@
         ["c4", "The three firms in the city are booked months ahead, and none cuts its price.", "rivals", "Three busy firms that do not cut prices: rivals are calm."]],
       settles: "c3", right: "suppliers", growthTo: "stays",
       claim: "Ben says: “Elevator repair grew 25% last year, so it is a great business to be in.”",
-      reason: "Each brand’s parts come only from its builder, which decides the price: the suppliers take the most. But starting up takes years of licensed training, so the growth stays with the three firms already there."
+      reason: "Each brand’s parts come only from its builder, which decides the price: the suppliers take the most. Starting up takes years of licensed training, so the growth stays with the three firms already there, less what the parts makers take of each job: a trade is only as good as what its strongest force leaves."
     }),
     squeeze({
       id: "p-trucks", scale: "known", source: "Trade report", headline: "Heavy trucks: who makes the money",
@@ -91,16 +92,16 @@
     squeeze({
       id: "p-pool", source: "Tri-County Business News · Trade report", headline: "Pool services and the price of chlorine",
       lines: [
-        ["c2", "Only one wholesaler in the county sells pool chlorine in bulk, and it raised its price 30% this year.", "suppliers"],
-        ["c1", "Homeowners sign up for the whole summer and rarely switch; the pool service has a key to the yard.", "buyers", "Homeowners rarely switch, so buyers have little pull here."],
+        ["c2", "One wholesaler sells all the bulk chlorine, and named its price.", "suppliers"],
+        ["c1", "Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service keeps a key to the yard.", "buyers", "Homeowners rarely switch, so buyers have little pull here."],
         ["c3", "Opening a pool service takes a state license and a truck of gear, and few new ones start.", "entrants", "Few new services start, so newcomers are not what takes the money."]],
       settles: "c2", right: "suppliers",
-      reason: "The only bulk chlorine seller in the county raised its price 30%, and a pool service has nowhere else to buy: the supplier takes the money. The other forces are weak here."
+      reason: "The only bulk chlorine seller names its price, and a pool service has nowhere else to buy: the supplier takes the money. The other forces are weak here."
     }),
     squeeze({
       id: "p-prints", source: "Lakeview Business Review · Trade report", headline: "Photo printing shops: fewer orders every year",
       lines: [
-        ["c1", "There are only two photo printing shops left in the city.", "rivals", "Only two shops are left, so rivals are not the problem."],
+        ["c1", "Of the 14 photo printing shops the city had in 2005, only two are left, and neither has changed its prices in four years.", "rivals", "Only two shops are left, and they do not cut prices, so rivals are not the problem."],
         ["c3", "Paper and ink are cheap and easy to buy.", "suppliers", "Paper and ink are easy to buy, so suppliers have little hold."],
         ["c2", "People now look at their photos on their phones and print almost none.", "substitutes"]],
       settles: "c2", right: "substitutes",
@@ -131,7 +132,7 @@
       id: "q-laundry", source: "Westfield Business Report · Trade report", headline: "Coin laundries: steady decline",
       lines: [
         ["c2", "Most new apartments now come with their own washer and dryer.", "substitutes"],
-        ["c1", "There are three coin laundries in town, and their prices have not changed in years.", "rivals", "Three laundries hold steady prices, so rivals are calm."],
+        ["c1", "There are three coin laundries in town, charging $3.50 a wash and $2 a dry, the same prices as in 2019, and none plans a cut.", "rivals", "Three laundries hold steady prices, so rivals are calm."],
         ["c3", "Any of several dealers will sell a laundry its machines and soap.", "suppliers", "Several dealers compete to sell supplies, so suppliers have little hold."]],
       settles: "c2", right: "substitutes",
       reason: "A washer in the apartment meets the same need without the laundry: that substitute takes the customers. The other forces are weak here."
@@ -147,13 +148,22 @@
       reason: "Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them, and it goes to them."
     }),
     squeeze({
+      id: "q-linens", source: "Harbor Business News · Trade report", headline: "Hotel laundries: a quote every week",
+      lines: [
+        ["c1", "The two laundries in town that take hotel work have charged about the same for years, and neither cuts on its own.", "rivals", "Two laundries that do not start price cuts: rivals are calm."],
+        ["c2", "Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week, and switching costs a hotel nothing.", "buyers"],
+        ["c3", "Soap, water and machines cost what they did last year.", "suppliers", "Supplies cost the same, so suppliers have little hold."]],
+      settles: "c2", right: "buyers",
+      reason: "Four big hotels move their sheets every week to the lowest quote, at no cost to switch: the buyers push the price down and take the money."
+    }),
+    squeeze({
       id: "q-butter", source: "Mountain Business Journal · Trade report", headline: "Pastry shops squeezed on butter",
       lines: [
-        ["c1", "Customers come back for the pastries and pay what the shops charge.", "buyers", "Customers pay what is asked, so buyers have little hold."],
+        ["c1", "Customers come back two or three times a week for the pastries, and most pay the $4.50 a croissant the shops charge without a word.", "buyers", "Customers pay what is asked, so buyers have little hold."],
         ["c3", "There are two pastry shops in the valley, and neither cuts prices.", "rivals", "Two shops that do not cut prices: rivals are calm."],
-        ["c2", "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year.", "suppliers"]],
+        ["c2", "Only one dairy delivers butter up here.", "suppliers"]],
       settles: "c2", right: "suppliers",
-      reason: "The only dairy that delivers up there raised butter 40%, and the shops cannot buy elsewhere: the supplier takes the money."
+      reason: "Only one dairy delivers butter up the mountain, so the shops cannot buy elsewhere and pay what it asks: the supplier takes the money."
     }),
     squeeze({
       id: "q-nails", source: "Midtown Business Weekly · Trade report", headline: "Nail salons: price war on Second Avenue",
@@ -170,7 +180,7 @@
       id: "k-buses", source: "County Business Journal · Trade report", headline: "School bus companies bid again",
       lines: [
         ["c2", "One school district buys all the bus service in the county; every three years it takes bids and picks the lowest.", "buyers"],
-        ["c1", "Buses and drivers are easy to find in the county.", "suppliers", "Buses and drivers are easy to find, so suppliers have little hold."],
+        ["c1", "A bus costs about $90,000 and can be bought or leased from any of four dealers, and drivers with the right license answer every ad.", "suppliers", "Buses and drivers are easy to find, so suppliers have little hold."],
         ["c3", "No new bus company has started here in years.", "entrants", "No newcomers start, so they are not the problem."]],
       settles: "c2", right: "buyers",
       reason: "One district buys all the service and takes the lowest bid: the buyer takes the money. The other forces are weak here."
@@ -195,13 +205,13 @@
       reason: "Booking online meets the same need without an agent: the substitute takes the customers. The other forces are weak here."
     }),
     squeeze({
-      id: "k-dealers", source: "State Business Journal · Trade report", headline: "Car dealers and the maker",
+      id: "k-sandwich", source: "State Business Journal · Trade report", headline: "Sandwich franchises and their supplier",
       lines: [
-        ["c2", "Buyers shop around, but each dealer is the only one for its brand in its town.", "buyers", "Each dealer is the only one for its brand nearby, so buyers have limited hold."],
-        ["c3", "A new dealer needs the maker’s say-so, and none has opened in years.", "entrants", "No newcomers open, so they are not the problem."],
-        ["c1", "A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them.", "suppliers"]],
+        ["c2", "Lunch customers come back most weekdays and pay the menu price without haggling.", "buyers", "Customers pay the menu price and keep coming, so buyers have little hold."],
+        ["c3", "A new shop under the franchise needs the franchise owner’s say-so, and none has opened in town in four years.", "entrants", "No newcomers open, so they are not the problem."],
+        ["c1", "Each shop’s contract makes it buy its bread, meat and paper goods from the franchise owner, which sets the prices and raised them 15% this year.", "suppliers"]],
       settles: "c1", right: "suppliers",
-      reason: "The maker decides how many cars a dealer gets and what it pays, and the dealer can sell no other brand: the supplier takes the money."
+      reason: "Each shop must buy its supplies from the franchise owner at the prices it sets, and it raised them 15%: the supplier takes the money."
     }),
     squeeze({
       id: "k-coffee", source: "Elm Street Business Weekly · Trade report", headline: "Cafes on Elm Street: a year of cheaper lattes",
@@ -216,10 +226,10 @@
       id: "k-boxes", source: "River Valley Business Journal · Trade report", headline: "Box makers and the supermarket chain",
       lines: [
         ["c1", "Cardboard from the mills rose 2% this year.", "suppliers", "Cardboard rose 2%, small beside the 8% the chain took off the price."],
-        ["c2", "No box maker has opened in the valley in years: the machines cost millions.", "entrants", "No newcomers open, so they are not the problem."],
-        ["c3", "One supermarket chain buys about 80% of the valley’s boxes, and this year it pushed the price down 8%, as it does every year.", "buyers"]],
+        ["c2", "No box maker has opened in the valley since 2011: the machines cost about $4 million, and the three makers already here run them day and night.", "entrants", "No newcomers open, so they are not the problem."],
+        ["c3", "One supermarket chain buys most of the boxes, and pushed the price down 8%.", "buyers"]],
       settles: "c3", right: "buyers",
-      reason: "One chain buys 80% of the boxes and pushed the price down 8%, while cardboard rose only 2%: the buyer takes far more than the suppliers."
+      reason: "One chain buys most of the boxes and pushed the price down 8%, while cardboard rose only 2%: the buyer takes far more than the suppliers."
     }),
 
     // ----- held back for the review -----

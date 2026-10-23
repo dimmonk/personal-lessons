@@ -89,9 +89,11 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
   weighed (what customers would pay more against what the move adds to the work), so its verdict is grows, shrinks or only
   moves (ST7: value created is WTP less WTS, and a move's own cost raises WTS).
 - **Lesson 5's share** is of the total profit of the lines of one kind, losses taken off (ST19); its core is the line that
-  is distinctive and earns the most (ST4, ST8). Its rule for a losing line (keep and fix it when the core's customers buy
-  it with the core, else let it go) is ours: no source in the note gives it; it follows from judging a line by what would
-  stop if it stopped.
+  is distinctive and earns the most (ST4, ST8). Its rule for a losing line, revised 2026-10-23 after the reviews of all
+  fourteen lessons: first ask whether a change of price or of what it costs to serve could make it pay, and if so fix it
+  (ST19: the customer-profitability literature makes losing customers pay before dropping them); if not, keep it and cut
+  its loss when the core's customers buy it with the core or find the business through it; else let it go. The second
+  test is ours (judgement call): it follows from judging a line by what would stop if it stopped.
 
 ## Engine gaps (both optional; no lesson is blocked)
 

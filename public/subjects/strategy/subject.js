@@ -102,7 +102,7 @@ FC.subject('strategy', {
       { id: "goal-as-strategy", text: "took a goal or a wish for a strategy" },
       { id: "list-not-choice", text: "took a list of things to do for a strategy" },
       { id: "missed-strategy", text: "missed a real strategy: a challenge, one approach, and actions that fit it" },
-      { id: "better-not-different", text: "took running the business better for a strategy" },
+      { id: "better-not-different", text: "thought running the business better would fix what needs a different position" },
       { id: "running-as-strategy", text: "took a gap in running the business for a strategy problem" },
       { id: "price-as-value", text: "took the price for the value created" },
       { id: "share-swapped", text: "mixed up whose share is whose" },

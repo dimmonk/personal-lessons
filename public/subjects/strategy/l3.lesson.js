@@ -7,10 +7,10 @@
 // sums are single subtractions of whole dollars, where a rough answer adds nothing (judgement call).
 FC.lesson("strategy", {
   id: "l3", part: "3", title: "Value created, and who keeps it", rev: 1, status: "draft",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the four numbers of a sale and the three shares on the value stick, and a move that grows the value told apart from one that only moves it. After two reviews: a move judged by what it adds to the work as well as what customers would pay, so a move can shrink the value; the cost told apart from the least staff would take; the moves judged without a tap." }],
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the four numbers of a sale and the three shares on the value stick, and a move that grows the value told apart from one that only moves it. After two reviews: a move judged by what it adds to the work as well as what customers would pay, so a move can shrink the value; the cost told apart from the least staff would take; the moves judged without a tap. After the reviews of all fourteen: the Harvard line made exact, where an owner gets the two ends in real life, a supplier pushed told apart from one whose least fell, and the pay cut and half-price day worded so one reading holds." }],
   why: [
     "Every sale creates some value: the gap between what the thing is worth to the customer and what it takes to make it. Price only decides who keeps which part.",
-    "Harvard Business School’s strategy course is built on this picture. Here you learn to work out the value of a sale and each side’s share, and to tell a move that makes more value from one that only takes it from someone else, or costs more than it is worth."
+    "A Harvard strategy professor built his course on this picture. Here you learn to work out the value of a sale and each side’s share, and to tell a move that makes more value from one that only takes it from someone else, or costs more than it is worth."
   ],
   flow: [
     { title: "Four numbers for one sale",
@@ -19,6 +19,7 @@ FC.lesson("strategy", {
           "Line up four numbers for one sale, from the top down.",
           "The most a customer would pay: what it is worth to them. The price: what they do pay. The cost: what you pay your suppliers and staff to make it. The least your suppliers and staff would take: below that, they would not sell to you or work for you.",
           "The cost and the least they would take are not the same: a cleaner paid $20 an hour who would have worked for $17 keeps $3 an hour more than she needed.",
+          "In real life you estimate the two ends. For the most a customer would pay, ask customers, watch what they pay a rival for something like it, or try a higher price on a few. For the least staff would take, look at what the same work pays nearby; for a supplier, at what its other buyers pay.",
           "The value created is the most a customer would pay less the least suppliers and staff would take. It is split three ways. The customer keeps the most they would pay less the price. The business keeps the price less the cost. Suppliers and staff keep the cost less the least they would take.",
           "Why it matters: a business that only fights over the split takes from its customers or its suppliers, and they notice. A business that makes the whole stick longer has more to share, and more to keep."] },
         { kind: "figure", type: "stick", data: { caption: "A birthday cake, one sale", wtp: 30, price: 24, cost: 14, wts: 10 } },
@@ -34,7 +35,8 @@ FC.lesson("strategy", {
           "To judge a move, see which ends of the stick it moves, and by how much. The customers’ end is the most a customer would pay. The suppliers’ end is the least suppliers and staff would take, and it includes whatever the move adds to the work: more materials, more staff time.",
           "It grows the value when it raises what customers would pay by more than it adds to the work, or when it lowers what suppliers and staff would take.",
           "It shrinks the value when it adds more to the work than customers would pay for it.",
-          "If it changes only the price or the cost paid, and both ends stay where they were, it only moves value from one side to another."] },
+          "If it changes only the price or the cost paid, and both ends stay where they were, it only moves value from one side to another.",
+          "A supplier paid less is the place to look twice. If you pushed it to take less, it would still have taken the old amount: its end of the stick did not move, and the value only moved. If something changed for it (a steady order saves it costs, a schedule staff like), so that it is now as well off with less, its end moved down, and the value grew."] },
         { kind: "pair",
           a: { kind: "prose", text: "Raise the price of the cake $5. Parents would pay at most what they always would." },
           b: { kind: "prose", text: "Print the child’s photo on the cake. Parents would now pay up to $15 more, and the ink and ten minutes of work add $3." },

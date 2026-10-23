@@ -40,6 +40,7 @@
   const WISH = "That is a wish. It says nothing about what stands in the way.";
   const STEP = "That is a step to take, not what is in the way.";
   const FELL = "That is a number that fell. It does not say what made it fall.";
+  const BACKGROUND = "That is background about the business. It says nothing is in the way.";
   const NOWHERE = "That sounds like an approach, but no line says what is in the way, so it answers nothing.";
 
   FC.items("strategy", [
@@ -64,13 +65,13 @@
       id: "p-landscape", from: "Luis’s plan for his landscaping crew", detail: "Written in the fall",
       lines: [
         ["c1", "Next year: sales of $600,000.", TARGET],
-        ["c2", "Every winter our crews sit idle from December to March, and we lose our best workers to jobs that pay all year.", ],
+        ["c2", "Our crews sit idle all winter."],
         ["c3", "So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer.", "That is the approach to the challenge."],
         ["c4", "Buy two plows for the trucks we already have.", STEP],
         ["c5", "Sell one contract that covers mowing in summer and snow in winter.", STEP],
-        ["c6", "Pay the crew a wage all year round.", STEP]],
+        ["c6", "Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again.", STEP]],
       challenge: "c2", verdict: "strategy", deciding: ["c2", "c3"],
-      reason: "The second line says what is in the way: idle winters that cost the best workers. Snow removal for the same customers is one way past it, and the plows, the year-round contract and the year-round wage all follow from it, so it is a strategy; the sales target on top does not change that."
+      reason: "The short second line says what is in the way: crews idle all winter. Snow removal for the same customers is one way past it, and the plows, the year-round contract and the year-round wage all follow from it, so it is a strategy; the sales target on top does not change that."
     }),
     kernel({
       id: "p-cafe", from: "Priya’s plan for her cafe", detail: "Written in March",
@@ -86,12 +87,13 @@
     kernel({
       id: "p-gym", from: "Mark’s plan for his gym", detail: "Written in December",
       lines: [
+        ["c5", "We opened in 2019 in the old furniture store on Elm Street, and we now have 520 members and six trainers.", BACKGROUND],
         ["c1", "Be the number one gym in town.", WISH],
         ["c2", "Grow to 800 members by next December.", TARGET],
         ["c3", "Give every member a great experience.", WISH],
         ["c4", "Everyone works hard and smart.", WISH]],
       challenge: null, verdict: "goal", deciding: ["c1", "c2"],
-      reason: "No line says what is in the way of 800 members; it is a target and three wishes. With nothing to get past and no steps, it is a goal."
+      reason: "No line says what is in the way of 800 members; it is a target, three wishes and a line about how the gym began. With nothing to get past and no steps, it is a goal."
     }),
     kernel({
       id: "p-shop", from: "Ann’s plan for her gift shop", detail: "Written in January",
@@ -113,7 +115,7 @@
         ["c2", "We lose about one job in four because we cannot reach emergency calls the same day."],
         ["c3", "Start selling water heaters online.", STEP],
         ["c4", "Sponsor the high school football team.", STEP],
-        ["c5", "Raise prices 5%.", STEP]],
+        ["c5", "Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022.", STEP]],
       challenge: "c2", verdict: "todo-scattered", deciding: ["c2", "c1", "c3"],
       reason: "The second line names a real challenge: same-day emergency calls are lost. But none of the steps reaches those calls faster, so with no approach tying them to it, it is a to-do list."
     }),
@@ -138,18 +140,18 @@
         ["c4", "Have one person check every file before it prints, so tricky jobs come out right.", STEP],
         ["c5", "Drop our cut-price business card deal.", STEP]],
       challenge: "c1", verdict: "strategy", deciding: ["c1", "c2"],
-      reason: "The first line says what is in the way, in six words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy."
+      reason: "The first line says what is in the way, in a few words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy."
     }),
     kernel({
       id: "q-truck", from: "Sam’s plan for his food truck", detail: "Written in May",
       lines: [
         ["c1", "Add a breakfast menu.", STEP],
         ["c2", "Repaint the truck.", STEP],
-        ["c3", "On weekdays we sell out by 1 p.m., and the line is so long that about a third of the people in it give up and leave."],
+        ["c3", "A third of our weekday line gives up and leaves."],
         ["c4", "Start a loyalty card.", STEP],
-        ["c5", "Go to the Saturday farmers market.", STEP]],
+        ["c5", "Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had.", STEP]],
       challenge: "c3", verdict: "todo-scattered", deciding: ["c3", "c1", "c4"],
-      reason: "The line about selling out names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list."
+      reason: "The line about people leaving the line names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list."
     }),
     kernel({
       id: "q-daycare", from: "Ruth’s plan for her day care", detail: "Written in August",
@@ -187,30 +189,32 @@
     kernel({
       id: "k-kitchens", from: "Lena’s plan for her kitchen remodeling firm", detail: "Written in December",
       lines: [
+        ["c4", "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.", BACKGROUND],
         ["c1", "This year we break $1 million in sales.", TARGET],
+        ["c5", "Most of our work comes from people who saw a kitchen we built for a friend or a neighbor.", BACKGROUND],
         ["c2", "Be the first name people think of for kitchens in the county.", WISH],
         ["c3", "Every job done on time, every time.", WISH]],
       challenge: null, verdict: "goal", deciding: ["c1", "c2"],
-      reason: "A target and two wishes, and no line says what is in the way of them. It is a goal."
+      reason: "A target, two wishes and two lines of background about the firm, and no line says what is in the way of the target. It is a goal."
     }),
     kernel({
       id: "k-dentist", from: "Dr. Patel’s plan for her dental office", detail: "Written in June",
       lines: [
-        ["c5", "This year we focus on families with young children.", NOWHERE],
+        ["c5", "This year we grow on every front at once.", NOWHERE],
         ["c1", "Get more five-star reviews online.", STEP],
         ["c2", "Buy a new X-ray machine.", STEP],
         ["c3", "Offer teeth whitening.", STEP],
         ["c4", "Send every patient a birthday card.", STEP]],
       challenge: null, verdict: "todo", deciding: ["c1", "c3"],
-      reason: "Four steps, and no line says what problem they are meant to solve; the focus on families answers nothing named. It is a to-do list."
+      reason: "Four steps, and no line says what problem they are meant to solve; growing on every front answers nothing named. It is a to-do list."
     }),
     kernel({
       id: "k-carwash", from: "Mike’s plan for his car wash", detail: "Written in April",
       lines: [
         ["c1", "Add a coffee stand by the exit.", STEP],
-        ["c2", "Buy new brushes.", STEP],
+        ["c2", "Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain.", STEP],
         ["c3", "Start a TikTok page.", STEP],
-        ["c4", "In rainy weeks we wash almost no cars, and we still pay the full staff."]],
+        ["c4", "Rainy weeks bring no cars, but full wages."]],
       challenge: "c4", verdict: "todo-scattered", deciding: ["c4", "c1"],
       reason: "The last line names a real challenge: rainy weeks bring no cars while the wages stay the same. Coffee, brushes and a TikTok page do nothing about rainy weeks, so it is a to-do list."
     }),
@@ -257,9 +261,9 @@
     kernel({
       id: "r-garage", from: "Ed’s plan for his auto repair shop", detail: "Written in March",
       lines: [
-        ["c1", "Customers wait three weeks for a booking, and some go to the dealer instead."],
+        ["c1", "A three-week wait sends customers to the dealer."],
         ["c2", "Buy a new sign.", STEP],
-        ["c3", "Sell tires online.", STEP],
+        ["c3", "Sell tires online, because the tire shop on Route 9 closed and its old customers now order from far away.", STEP],
         ["c4", "Start a customer newsletter.", STEP]],
       challenge: "c1", verdict: "todo-scattered", deciding: ["c1", "c2"],
       reason: "The first line names a real challenge: a three-week wait sends customers to the dealer. A sign, online tires and a newsletter do not shorten the wait, so it is a to-do list."

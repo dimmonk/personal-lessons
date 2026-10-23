@@ -3,10 +3,11 @@
 // biggest seller is our most important line") refuted (P29); one worked set of books (P10); a first group with the deciding rows marked in two pairs
 // (P12: the biggest seller beside the core on two surfaces; a distinctive top earner beside a plain line that earns more), a second
 // with nothing marked and lessons 1 to 4 mixed in (P22); the same work on the learner's own business, with a change and its day (P25, D6; the
-// plan's engine gap 1, the work core); the check: four new sets of books, 3 of 4, and no line judged by its sales.
+// plan's engine gap 1, the work core); a losing line fixed first if a price or cost change could make it pay (ST19), kept if it brings or
+// comes with the core's customers, else let go; the check: four new sets of books, 3 of 4, and no line judged by its sales.
 FC.lesson("strategy", {
   id: "l5", part: "5", title: "Find the core", rev: 1, status: "draft",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each line judged by what it earns after its direct cost, the core found and its share worked out, a line that loses money fixed or let go, and the same work on the learner's own business. After two reviews: the core is the line that is distinctive and earns the most, a direct cost one that stops with the line, every table one kind of line, the share counted of all the lines' earnings with losses taken off, pairs of tables, and the own work names the top line and asks of each losing line whether it comes with the core." }],
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each line judged by what it earns after its direct cost, the core found and its share worked out, a line that loses money fixed or let go, and the same work on the learner's own business. After two reviews: the core is the line that is distinctive and earns the most, a direct cost one that stops with the line, every table one kind of line, the share counted of all the lines' earnings with losses taken off, pairs of tables, and the own work names the top line and asks of each losing line whether it comes with the core. After the reviews of all fourteen: a losing line is first asked whether a price or cost change could make it pay, then whether it brings the core’s customers or comes with the core, and only then let go; a table where the core’s share passes 100%; plainer table titles." }],
   why: [
     "Before growing a business, find out which of its lines really pay. In many businesses a few products, customers or ways of selling earn most of the profit, and a busy line can earn little or lose money.",
     "Strategists read the owner’s own books for this first. Here you learn to find the core in a table of lines, then do it on your own business."
@@ -21,7 +22,8 @@ FC.lesson("strategy", {
           "The core is the line that is both distinctive, what customers come to you for rather than to a rival, and earns the most. Usually that is the line that earns the most of all. But a line every rival sells the same way can earn well this year and still be competed away, as copied gains are: it is not the core. Then the core is the distinctive line that earns the most.",
           "Its share is what it earns divided by what all the lines of that kind earn together, the losses of losing lines taken off. With a losing line, the share can pass 100%: the part above 100% is what the losing lines cost the rest.",
           "Keep and grow the core before growing anything else; if it cannot grow, protect it.",
-          "A line that loses money: if the core’s customers buy it along with the core, keep it, but fix its price or its cost. If nothing ties it to the core, let it go.",
+          "A line that loses money: first ask whether a change of price or of what it costs to serve could make it pay (charge what rivals charge, a smallest order, a delivery fee). If it could, keep it and fix it.",
+          "If no change would make it pay, ask what ties it to the core. Do the core’s customers buy it along with the core, or find you through it (a free class that brings the families who later book the paid sessions)? Then dropping it costs the core too: keep it and cut its loss as far as you can. If neither, let it go.",
           "Why it matters: growth spent on a line that earns little, or loses, takes time and money from the line that pays for everything. Rent and shared costs are paid from what the lines earn together, so a business can earn on most lines and still lose money overall; this step finds which lines pay, not whether the whole business does."] },
         { kind: "prose", tone: "wrong", text: [
           "“Bread is our biggest seller, so bread is our most important line.”",
@@ -29,7 +31,7 @@ FC.lesson("strategy", {
       ] },
     { worked: "w-books" },
     { set: { items: [["p-crews", "p-printers"], ["p-tutors", "p-lube"]], order: "listed", support: { shown: true } } },
-    { set: { items: ["q-stylists", "q-moves", "q-trays"], order: "shuffle", mix: { from: ["l1", "l2", "l3", "l4"], share: 0.25 } } },
+    { set: { items: ["q-stylists", "q-moves", "q-courier", "q-trays"], order: "shuffle", mix: { from: ["l1", "l2", "l3", "l4"], share: 0.25 } } },
     { own: "business", model: "w-books", work: "core" }
   ],
   check: {

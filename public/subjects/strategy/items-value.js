@@ -116,9 +116,10 @@
       id: "q-tuesday", from: "Notes on Leo’s bike shop", detail: "Written in April",
       lines: [
         ["c1", "We started Half-Price Tuesdays: the same repairs, at half the price."],
-        ["c2", "Same mechanics, same parts, same work; a repair is worth to customers just what it was."]],
-      verdict: "moves", deciding: ["c2"],
-      reason: "What customers would pay and what the work takes are the same. Half the price moves value from the shop to the customer on Tuesdays."
+        ["c2", "Same mechanics, same parts, same work; a repair is worth to customers just what it was."],
+        ["c3", "The same customers come on Tuesdays as before; no new ones."]],
+      verdict: "moves", deciding: ["c2", "c3"],
+      reason: "What customers would pay and what the work takes are the same, and no new customers come. Half the price moves value from the shop to the customer on Tuesdays."
     }),
     move({
       id: "q-guarantee", from: "Notes on Leo’s bike shop", detail: "Written in August",
@@ -143,9 +144,9 @@
       id: "q-wage", from: "Notes on our cleaning business", detail: "Written in February",
       lines: [
         ["c1", "We cut the cleaners’ pay by $1 an hour."],
-        ["c2", "The work and the hours are the same, and all of the cleaners stayed."]],
+        ["c2", "The work and the hours are the same, and the other cleaning jobs nearby pay what they did, so nothing changed what the cleaners would accept."]],
       verdict: "moves", deciding: ["c2"],
-      reason: "The work is the same, so the least the cleaners would take did not fall; their pay was cut. The $1 an hour moved from the staff to the business."
+      reason: "Nothing changed what the cleaners would accept; only their pay was cut, so $1 an hour moved from the staff to the business."
     }),
 
     // ----- the check -----
