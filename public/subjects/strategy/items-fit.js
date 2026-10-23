@@ -43,7 +43,7 @@
         ["a4", "Every job is insured for the piano’s full value."],
         ["a5", "Each crew does one job a day, so nobody rushes."]],
       misfit: "a3",
-      fix: { right: "Get jobs through piano teachers and piano stores, whose customers care most about the piano",
+      fix: { right: "Get jobs through piano teachers and piano stores, whose buyers care",
         others: [["Fill the crews’ spare hours with ordinary house moves", "serve-everyone", OTHER],
           ["Quote as low as the cheapest mover, but move faster", "better-not-different", "Speed and a low price serve owners who want it cheap and quick; these owners pay double for care."]] },
       steps: [
@@ -76,7 +76,7 @@
         ["a3", "A dog meets its groomer once before the first groom."],
         ["a4", "The same groomer sees the same dog every visit."]],
       misfit: "a2",
-      fix: { right: "Pay each groomer by the day, so the same groomer can take as long as each dog needs",
+      fix: { right: "Pay each groomer by the day",
         others: [["Add a second van for quick wash-and-go jobs", "serve-everyone", OTHER],
           ["Keep pay by the dog, and set up a quiet room at a shop for the most nervous dogs", null, "A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too."]] },
       reason: "Calm grooming needs time, and the home visits, the first meeting and the same groomer all serve it. Pay by the dog pushes groomers to hurry; pay by the day fits."
@@ -115,7 +115,7 @@
         ["a3", "Most of the floor goes to last year’s bikes, which sell steadily."],
         ["a4", "Repairs done the same day before a race weekend."]],
       misfit: "a3",
-      fix: { right: "Use the floor for the parts and wheels racers want, fitted by the mechanics",
+      fix: { right: "Stock the parts and wheels racers want, fitted by the mechanics",
         others: [["Use the floor for kids’ bikes, which sell all year", "serve-everyone", OTHER],
           ["Use the floor for a cafe where racers wait for their bikes", null, "Racers might like it, but it does nothing for the fitting and tuning they pay for; parts and wheels the mechanics fit help both."]] },
       reason: "Racers pay for fitting and tuning, and the fitting room, the racing mechanics and the race-weekend repairs serve them. A floor of last year’s bikes serves shoppers after a bargain; parts and wheels racers want fit."
@@ -151,7 +151,7 @@
         ["a3", "Each restaurant gets one phone number that is always answered."],
         ["a4", "Plumbers learn each kitchen’s pipes on a visit before anything breaks."]],
       misfit: "a2",
-      fix: { right: "Keep plumbers on call in shifts, each covering the kitchens he has visited",
+      fix: { right: "Keep plumbers on call in shifts, each for his own kitchens",
         others: [["Use the quiet evenings for bathroom remodels", "serve-everyone", OTHER],
           ["Keep plumbers on call in shifts, and send whichever one is nearest", null, "Any hour fits, but sending any plumber wastes the visits that taught each one a kitchen’s pipes; covering his own kitchens helps both."]] },
       reason: "Restaurants need a fix at any hour, and the stocked vans, the phone line and the visits serve that. Office hours leave the kitchen shut at night and on weekends; plumbers on call for the kitchens they know fit, and help the visits pay off."
@@ -202,7 +202,7 @@
         ["a3", "Workers can order by text on the way out of the building."],
         ["a4", "Exact-change prices: $3 a taco."]],
       misfit: "a2",
-      fix: { right: "Fill tacos from five fillings made ahead, so each order takes two minutes",
+      fix: { right: "Make five fillings ahead, so tacos are filled in seconds",
         others: [["Add salads and wraps for the office workers nearby", "serve-everyone", OTHER],
           ["Keep twelve toppings, and have workers text the order ahead", null, "Text orders help, but twelve toppings made to order still slow the noon line; five fillings made ahead help the text orders and the exact prices too."]] },
       reason: "Workers have a short break, and parking at the factory, the text orders and the exact-change prices all save time. Twelve toppings made to order slow every taco; five fillings made ahead fit."
@@ -215,7 +215,7 @@
         ["a3", "Ben tells owners plainly when a repair is worth it on an old car."],
         ["a4", "Old shop manuals for each make are kept on a shelf."]],
       misfit: "a2",
-      fix: { right: "Keep parts for older models, from salvage yards and old stock",
+      fix: { right: "Keep parts for older models, from salvage yards and old dealer stock",
         others: [["Stock this year’s parts and add an oil-change lane for new cars", "serve-everyone", OTHER],
           ["Stock this year’s parts, and order them faster than the dealers", "better-not-different", COPY]] },
       reason: "Owners of older cars need parts and know-how for them, and the trained mechanics, the plain advice and the old manuals serve that. Parts for this year’s models do not; parts for older models fit."
@@ -239,7 +239,7 @@
         ["a3", "An attendant on duty all day, who folds clothes for free."],
         ["a4", "Large machines, so a family’s wash fits in one load."]],
       misfit: "a3",
-      fix: { right: "No attendant: a card reader at each machine and a phone number for breakdowns",
+      fix: { right: "No attendant; a phone number for breakdowns",
         others: [["Keep the attendant, and charge for folding", "serve-everyone", "Folding serves people who pay to have it done, another kind of customer; the cheap wash needs no staff at all."],
           ["Keep the attendant, and have her sell soap and snacks too", null, "She earns a little more, but every staffed hour still pushes up the price per load."]] },
       reason: "Renters come for the cheapest wash, and the used machines, the card readers and the large loads all keep the cost down. A free attendant all day costs more than anything else here; card readers and a phone number fit, and keep the long hours cheap."
@@ -253,7 +253,7 @@
         ["a2", "Cakes are made in big batches each morning to cut cost."],
         ["a3", "Photos of past cakes in the window and on the website."]],
       misfit: "a2",
-      fix: { right: "Make each cake for its order, a day or two before the party",
+      fix: { right: "Make each cake for its own order",
         others: [["Sell the batch cakes to walk-in shoppers too", "serve-everyone", OTHER],
           ["Make bigger batches than the supermarket bakery does", "better-not-different", COPY]] },
       reason: "Customers pay for a cake made for their party, and the talk and the photos serve that. Morning batches make every cake alike; making each cake for its order fits."
