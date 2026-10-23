@@ -655,6 +655,10 @@
       "rev": 1,
       "fp": "sha256:f12f51b0059739c04b694a9dd6ced1625addc82ddef13a88f0357de604c4be47"
     },
+    "strategy/l3": {
+      "rev": 1,
+      "fp": "sha256:7920e7b13ab24175e2bb7521d61821cd08b6fcd3df70f25408343bf6fa108270"
+    },
     "wealth/l1": {
       "rev": 1,
       "fp": "sha256:31d4a81d28d397c2638fa0db3170bcc979891214a6b24f0c1235b301d6510ca8"
