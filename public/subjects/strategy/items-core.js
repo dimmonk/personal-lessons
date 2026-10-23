@@ -75,7 +75,7 @@
     // ----- the first group (the deciding rows marked): the biggest seller beside the core twice, then the core that earns less than a plain line -----
     core({ id: "p-crews", who: "Luis’s landscaping crew", kind: "product", lines: [["b4", "Tree trimming and stump removal", 25000, 31000], ["b1", "Lawn mowing", 90000, 78000], ["b2", "Garden design", 40000, 14000], ["b3", "Snow plowing for homes and offices", 30000, 26000]],
       loser: "b4", tied: false, canFix: false, fixable: "Every tree job needs a rented crane, and the tree firms in town already charge less than we do.",
-      distinct: "Clients ask for our garden designer by name; our designs win the county’s prize most years.",
+      distinct: "Clients want our garden designer by name; our designs win the county’s prize most years.",
       fact: "Tree trimming comes mostly from one-off calls by people who are not our garden design clients." }),
     core({ id: "p-printers", who: "Omar’s print shop", kind: "customer", lines: [["b1", "Walk-in customers", 70000, 62000], ["b3", "The school district", 35000, 21000], ["b4", "Six restaurants", 18000, 22000], ["b2", "Three law firms", 50000, 22000]],
       loser: "b4", tied: false, canFix: true, fixable: "We charge the restaurants less than half what other shops charge for menus, and they say they would pay the going rate.",

@@ -1,6 +1,6 @@
 # Strategy: Who squeezes the profit
 
-Revision 1, draft (the screen carries the draft line). Part: Who squeezes the profit. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
+Revision 1, live. Part: Who squeezes the profit. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
 
 ## The why
 
@@ -139,14 +139,14 @@ A report summary, from "Tri-County Business News · Trade report" (marked "Repor
 
 > # Pool services and the price of chlorine
 >
-> **One wholesaler sells all the bulk chlorine, and named its price.** Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service keeps a key to the yard. Opening a pool service takes a state license and a truck of gear, and few new ones start.
+> **One wholesaler sells all the bulk chlorine, and named its price.** Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service can let itself into the yard. Opening a pool service takes a state license and a truck of gear, and few new ones start.
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "One wholesaler sells all the bulk chlorine, and named its price." (right)
-- "Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service keeps a key to the yard." — if tapped: note: Homeowners rarely switch, so buyers have little pull here.
+- "Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service can let itself into the yard." — if tapped: note: Homeowners rarely switch, so buyers have little pull here.
 - "Opening a pool service takes a state license and a truck of gear, and few new ones start." — if tapped: note: Few new services start, so newcomers are not what takes the money.
 
 **Which force squeezes the profit most?**

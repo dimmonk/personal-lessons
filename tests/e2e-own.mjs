@@ -185,7 +185,7 @@ async function business(env, c, page) {
   const text = await env.screenText(page);
   if (!await page.locator('#own-what').count()) { c.check(false, `saving the lines does not open the work and the change (${JSON.stringify(await O.errorsShown(page))} ${text.slice(0, 300)})`); return; }
   c.check(/The core of your business/.test(text) && /Wedding cakes\s*\$30,000\s*85\.7%/.test(text) && /Catering\s*−\$3,000\s*Loses money/.test(text), `the work is not the app's arithmetic on the lines typed (${text.slice(0, 400)})`);
-  c.check(/Wedding cakes earns the most of these lines: 85\.7%/.test(text) && /buy it along with the core/.test(text) && /Catering loses \$3,000 a year/.test(text) && /it is not advice/.test(text), 'the core is not named, the losing line not flagged, or the line that it is not advice is missing');
+  c.check(/Wedding cakes earns the most of these lines: 85\.7%/.test(text) && /buy it with the core/.test(text) && /Catering loses \$3,000 a year/.test(text) && /it is not advice/.test(text), 'the core is not named, the losing line not flagged, or the line that it is not advice is missing');
   c.check(await page.locator('.block-doc mark.cue').count() >= 1, 'the sample lines to find are not marked beside the work');
   const stored = ((await O.storedNotes(page, 'strategy')) || {}).business;
   c.check(!!stored && JSON.stringify(stored.lines) === JSON.stringify([{ name: 'Wedding cakes', kind: 'product', revenue: 48000, cost: 18000 }, { name: 'Bread', kind: 'product', revenue: 60000, cost: 52000 }, { name: 'Catering', kind: 'product', revenue: 20000, cost: 23000 }]),

@@ -1,6 +1,6 @@
 # Strategy: Do the pieces fit?
 
-Revision 1, draft (the screen carries the draft line). Part: Do the pieces fit?. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
+Revision 1, live. Part: Do the pieces fit?. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
 
 ## The why
 
@@ -339,14 +339,14 @@ A written note: "How Ana’s flower shop runs it: the list of what we do", This 
 > Ana takes two weddings a weekend.
 > Each couple gets three planning meetings and a sample table.
 > Flowers are ordered from growers for each wedding, not kept in stock.
-> Ana sets up the flowers herself on the day.
+> Ana arranges the flowers herself on the day.
 
 **Tap the activity that does not fit the position.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Ana takes two weddings a weekend." — if tapped: note: That turns work away, but it keeps time for each couple’s planning.
 - "Each couple gets three planning meetings and a sample table." — if tapped: note: That one serves the position and helps the others.
 - "Flowers are ordered from growers for each wedding, not kept in stock." — if tapped: note: That one serves the position and helps the others.
-- "Ana sets up the flowers herself on the day." — if tapped: note: That one serves the position and helps the others.
+- "Ana arranges the flowers herself on the day." — if tapped: note: That one serves the position and helps the others.
 - A button: "Every activity fits" (right)
 
 After the answer: Reason: Every activity serves weddings planned for each couple: the limit of two, the meetings, the flowers ordered for each wedding and Ana on the day all make the planning work.

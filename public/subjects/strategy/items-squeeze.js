@@ -93,7 +93,7 @@
       id: "p-pool", source: "Tri-County Business News · Trade report", headline: "Pool services and the price of chlorine",
       lines: [
         ["c2", "One wholesaler sells all the bulk chlorine, and named its price.", "suppliers"],
-        ["c1", "Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service keeps a key to the yard.", "buyers", "Homeowners rarely switch, so buyers have little pull here."],
+        ["c1", "Homeowners sign up for the whole summer at about $150 a month, 9 in 10 sign up again each spring, and the pool service can let itself into the yard.", "buyers", "Homeowners rarely switch, so buyers have little pull here."],
         ["c3", "Opening a pool service takes a state license and a truck of gear, and few new ones start.", "entrants", "Few new services start, so newcomers are not what takes the money."]],
       settles: "c2", right: "suppliers",
       reason: "The only bulk chlorine seller names its price, and a pool service has nowhere else to buy: the supplier takes the money. The other forces are weak here."

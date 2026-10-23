@@ -1,6 +1,6 @@
 # Strategy: Find the core
 
-Revision 1, draft (the screen carries the draft line). Part: Find the core. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
+Revision 1, live. Part: Find the core. Where the subject ends up: After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.
 
 ## The why
 
@@ -63,7 +63,7 @@ A plain table, "Luis’s landscaping crew: last year, by product":
 > Lawn mowing  |  $90,000  |  $78,000
 > Garden design  |  $40,000  |  $14,000  <- marked after the answer
 > Snow plowing for homes and offices  |  $30,000  |  $26,000
-> (Clients ask for our garden designer by name; our designs win the county’s prize most years.)
+> (Clients want our garden designer by name; our designs win the county’s prize most years.)
 > (Every tree job needs a rented crane, and the tree firms in town already charge less than we do.)
 > (Tree trimming comes mostly from one-off calls by people who are not our garden design clients.)
 

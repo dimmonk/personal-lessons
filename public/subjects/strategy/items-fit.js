@@ -190,7 +190,7 @@
         ["a1", "Ana takes two weddings a weekend.", "That turns work away, but it keeps time for each couple’s planning."],
         ["a2", "Each couple gets three planning meetings and a sample table."],
         ["a3", "Flowers are ordered from growers for each wedding, not kept in stock."],
-        ["a4", "Ana sets up the flowers herself on the day."]],
+        ["a4", "Ana arranges the flowers herself on the day."]],
       misfit: null,
       reason: "Every activity serves weddings planned for each couple: the limit of two, the meetings, the flowers ordered for each wedding and Ana on the day all make the planning work."
     }),

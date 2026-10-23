@@ -262,7 +262,7 @@
       lines: [
         ["c1", "A three-week wait sends customers to the dealer."],
         ["c2", "Buy a new sign.", STEP],
-        ["c3", "Sell tires online, because the tire shop on Route 9 closed and its old customers now order from far away.", STEP],
+        ["c3", "Sell tires online, because the tire shop on Main Street closed and its old customers now order from far away.", STEP],
         ["c4", "Start a customer newsletter.", STEP]],
       challenge: "c1", verdict: "todo-scattered", deciding: ["c1", "c2"],
       reason: "The first line names a real challenge: a three-week wait sends customers to the dealer. A sign, online tires and a newsletter do not shorten the wait, so it is a to-do list."
