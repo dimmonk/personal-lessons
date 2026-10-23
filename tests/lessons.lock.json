@@ -19,7 +19,7 @@
     },
     "it-support": {
       "rev": 1,
-      "fp": "sha256:d4115d1a0c7b0f293b283011ccb67ffc78ba41d62d0ecfe0a2fb19c64dcbffef"
+      "fp": "sha256:f744d91b44babf51d3b5d9af7c6cfacbf685c4ff43d61b83280596e3b2f5d661"
     },
     "math": {
       "rev": 10,
@@ -394,6 +394,122 @@
     "ideology/l6": {
       "rev": 1,
       "fp": "sha256:5a8445e571018cf1a5c307ec4ab22e9294d55af66dd805e466509c7a8c688d1a"
+    },
+    "it-support/l1": {
+      "rev": 1,
+      "fp": "sha256:ba487878b828967508e0364455a2f40cf63c9936ccd49342ea003a5ad12c8cc9"
+    },
+    "it-support/l10": {
+      "rev": 1,
+      "fp": "sha256:37f30219bcdf46602c41eea9869f5503b3663952f863df2a25ee0c360c0245b0"
+    },
+    "it-support/l11": {
+      "rev": 1,
+      "fp": "sha256:b9d740806f6161637ed0155a23e7fb807e5397eb263f1cc4f6cd202405a12ee1"
+    },
+    "it-support/l12": {
+      "rev": 1,
+      "fp": "sha256:ddd7fd580219da667568edbc1080b7a661b4fdcff768f0c5c81acc6949faae95"
+    },
+    "it-support/l13": {
+      "rev": 1,
+      "fp": "sha256:cd8353fe4f5a9522bec58af282e582011b8f81129ebd518cd76441fa920f8f7c"
+    },
+    "it-support/l14": {
+      "rev": 1,
+      "fp": "sha256:3697af6712ea29fabf1a2d30a0fb603fe01bb525dee503070b73dbf72a3a7a11"
+    },
+    "it-support/l15": {
+      "rev": 1,
+      "fp": "sha256:aa5444b4fbd8068fda30ebab247c290e8f2089938448cada5e5c76a65876b240"
+    },
+    "it-support/l16": {
+      "rev": 1,
+      "fp": "sha256:88f13363624aa88bc8e8aeb3f50c46a50b481c3882c5f8f2e50b3826f939b6f3"
+    },
+    "it-support/l17": {
+      "rev": 1,
+      "fp": "sha256:15cdef9801ae6526d7c8ce8bc26a06d59e2dad29f45139227be959797997600e"
+    },
+    "it-support/l18": {
+      "rev": 1,
+      "fp": "sha256:457c6676fcaf47fa2663452a97c538518a77c9f6379ddc182087a76711215cd2"
+    },
+    "it-support/l19": {
+      "rev": 1,
+      "fp": "sha256:da2494617440cf3b451804947687f3f5f3fe8f84a33df490130618d113a25e9f"
+    },
+    "it-support/l2": {
+      "rev": 1,
+      "fp": "sha256:f0b12e5c40a933f62e2c66e7b76d822f2d037adbeba257ed921b9c1622941a42"
+    },
+    "it-support/l20": {
+      "rev": 1,
+      "fp": "sha256:cb733f7d1464aa97afe9b177f6e03c35ffa5e6a938ea0f6eb3713760c9e64c1e"
+    },
+    "it-support/l21": {
+      "rev": 1,
+      "fp": "sha256:30d6b783141c0d982ecb5d88ad5e798a7831ea0a8ce019c4ddf21c4b80270655"
+    },
+    "it-support/l22": {
+      "rev": 1,
+      "fp": "sha256:7f28fa0596234dde64dbed2d35a36ac7df74d8d53cd52179de9fff88f8a3c130"
+    },
+    "it-support/l23": {
+      "rev": 1,
+      "fp": "sha256:a1212f88d70e632b1defac98d32f999720b2c2a795a84736f7508b858f870a81"
+    },
+    "it-support/l24": {
+      "rev": 1,
+      "fp": "sha256:c5c926cbf75761b9f3d3cfb1d44cc9bf37465773e3e892d00f7c70330c1b5579"
+    },
+    "it-support/l25": {
+      "rev": 1,
+      "fp": "sha256:cbdcea1a76d9f34fc460151b65b3caac5c819f56ec9b1ca0aba9ec35ac23692b"
+    },
+    "it-support/l26": {
+      "rev": 1,
+      "fp": "sha256:80eb6280081c37d90e85d8cde4e50d53125ae5dd756f47bf496cdba41ff52186"
+    },
+    "it-support/l27": {
+      "rev": 1,
+      "fp": "sha256:8f1591f655b55f23a091a5ac5d1ae9d51628ec316aaf20ff78a71ebb4c4ce0f4"
+    },
+    "it-support/l28": {
+      "rev": 1,
+      "fp": "sha256:64838307f62713016d69d8718ca991b4abb1e3c32efb33a2a489152adf28088f"
+    },
+    "it-support/l29": {
+      "rev": 1,
+      "fp": "sha256:ab887a34fc0ba3cce4d006cdabce820a2c3f7ad835c101f492de30cfe3784ec4"
+    },
+    "it-support/l3": {
+      "rev": 1,
+      "fp": "sha256:6e604db12455aa72219794e3be2db2a8764007df50f154f61d41ad02644141cd"
+    },
+    "it-support/l4": {
+      "rev": 1,
+      "fp": "sha256:5db9db731faca6d7ea40fb652074d11963cc8ab058e7d9094f4837bd4c28eda5"
+    },
+    "it-support/l5": {
+      "rev": 1,
+      "fp": "sha256:50618f978153fb557f88f7dc5162031cdf15637a771b9888b8f42319774e4340"
+    },
+    "it-support/l6": {
+      "rev": 1,
+      "fp": "sha256:3373613a3b22d1a59dcb8cdab6223ecfd6cfba559a179302bed0c819e18b625d"
+    },
+    "it-support/l7": {
+      "rev": 1,
+      "fp": "sha256:9714e340df6a4d4a7ed04731bc8e6628af1b503fcf909aa02282376b9117510f"
+    },
+    "it-support/l8": {
+      "rev": 1,
+      "fp": "sha256:0c7b4695d0bf9fa0d5f8206932cb3e1db35877affce191ef1239273226e8ebb8"
+    },
+    "it-support/l9": {
+      "rev": 1,
+      "fp": "sha256:98c26562a6dad161d07669d7facdfe4897ce64e48d265b924f601ceaffb42dea"
     },
     "math/l1": {
       "rev": 1,

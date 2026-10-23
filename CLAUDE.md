@@ -9,3 +9,5 @@ worktree: it runs the same suite as `npm test` (`test:unit` as the shared checks
 `chore: release N`, tags `release-N`, pushes, deploys, then checks the live site. Push your work to `origin/main` first; nothing
 unpushed ships. Never edit `public/version.json` or the `RELEASE` line in `public/sw.js` by hand. Re-check a release with
 `npm run deploy-check -- release-N`. The config is `deploy.config.mjs`; the mechanism is vendored at `.claude/standard/deploy/`.
+
+`node tools/option-lengths.mjs <subject>` flags lessons whose right option gives itself away by length (longest or shortest too often, or almost never longest); run it on any lesson you write.

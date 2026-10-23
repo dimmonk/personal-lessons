@@ -1,0 +1,11 @@
+  - V50 it-support: item l15-t-udp.reason: a word to avoid, "asks", in "Port 137 asks for computer names with short messag"
+  - V50 it-support: item l17-p-wpa3.asks[0].options[1].then: a word to avoid, "supports", in "WPA2 with AES is strong, but WPA3 is stronger and "
+  - V50 it-support: item l17-p-wpa3.reason: a word to avoid, "supports", in "The rule is the strongest security every device su"
+  - V50 it-support: item l17-k-upnp.asks[0].options[3].then: a word to avoid, "set", in "Port forwarding is a rule you set by hand. The set"
+  - V73 it-support: it-support/l16: reading is 41% of the lesson, over the subject's 40% (490 seconds of reading, 712 of doing)
+  - V73 it-support: it-support/l17: reading is 44% of the lesson, over the subject's 40% (367 seconds of reading, 465 of doing)
+  - V73 it-support: it-support/l14: reading is 41% of the lesson, over the subject's 40% (527 seconds of reading, 752 of doing)
+  - V73 it-support: it-support/l22: reading is 41% of the lesson, over the subject's 40% (393 seconds of reading, 577 of doing)
+  - V73 it-support: it-support/l23: reading is 40% of the lesson, over the subject's 40% (367 seconds of reading, 540 of doing)
+  - V46 it-support/l22: content differs from the lock; if it has been deployed raise its rev, then run node tests/lessons/lock.mjs
+  - V46 it-support/l23: content differs from the lock; if it has been deployed raise its rev, then run node tests/lessons/lock.mjs

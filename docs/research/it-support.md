@@ -353,7 +353,9 @@ What a good help desk tech does with a new ticket, in order. Each step is the li
 2. **Listen first, then search.** Let the user say it in their words, ask open questions to narrow it, say it back to check. At the same
    time search the knowledge base for the same symptom. (IT17, IT18, IT14, IT19)
 3. **Ask what changed and protect their data.** What did you or the environment change recently (update, new device, moved, password)?
-   Can it be made to happen again? Back up before touching anything. (IT2, IT17)
+   Ask them to show you what they see (IT19). Back up before touching anything. (IT2, IT17; reproducing the fault is not made a
+   required step: no source read here gives it, rulings-l1-8.md 2.) A fault that cannot be made to happen is worked from what changed,
+   the computer's log and the user's notes of times: a judgement call, since no source read gives it (A+ map 1.6 lists Event Viewer as a tool).
 4. **Try the likely cheap fix, with a limit.** Pattern knowledge is the expert's fastest tool and is not the same as a beginner's guess;
    decide in advance how long you will guess. (IT3)
 5. **Then go structured: cut the problem in two.** Write down more than one possible cause. Run the cheapest test that splits the system

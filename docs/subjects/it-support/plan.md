@@ -23,7 +23,7 @@ fact and scenario on both CompTIA A+ exams well enough to pass them.**
 
 **Real-world test** (pass mark ours, from IT21 and P26): (1) the job: 10 new tickets in their real form across all systems,
 mixed, no help; pass when the first move is right on 8 and no ticket loses a user's data or is closed without the user's
-confirmation (lesson 28's check, part one); (2) the exam: a 40-question mock drawn from every exam topic in proportion to
+confirmation (lesson 29's check, part one); (2) the exam: a 40-question mock drawn from every exam topic in proportion to
 the domain weights (A+ map section 1), pass at 80%, a margin over CompTIA's 675/700 of 900 because our questions are easier to
 guess than the real ones (judgement call).
 
@@ -36,10 +36,10 @@ What the subject teaches, in the learner's words. Every ticket in every lesson i
    how important the work that is stopped (impact); how long it can wait (urgency). (IT10, IT11, IT12)
 2. **Their words first, then what the desk already knows.** Let them describe it, ask open questions to narrow it, say it back.
    Search the knowledge base for the same symptom. (IT17, IT18, IT14)
-3. **What changed? Protect their data before you touch anything.** An update, a new device, a move, a password change. Can it be
-   made to happen again? Back up first. (IT2, IT17)
+3. **What changed? Protect their data before you touch anything.** An update, a new device, a move, a password change. Ask them to show
+   you what they see. Back up first. (IT2, IT17, IT19)
 4. **The known fix, with a time limit.** A restart, the article's fix. Decide before you start how long you will try; if it does
-   not work, stop guessing. (IT3, IT11)
+   not work, stop guessing and narrow it down (move 5). (IT3, IT11)
 5. **Cut the problem in half.** List more than one possible cause. Run the cheapest test that splits the system into a part that
    works and a part that does not: another user, another machine, another cable, can it reach the network, does it fail before or
    after sign-in. Keep cutting. Swap in a known-good part or compare with a working machine where it fits. (IT4, IT5, IT8)
@@ -82,7 +82,7 @@ with the answer explained after each, and come back in the weekly review (IT25, 
 
 ## Topics, parts and lessons
 
-28 lessons in 8 units. Weight follows the job (unit 1) and the exam's domain weights (A+ map section 1). Each line: the lesson,
+29 lessons in 8 units. Weight follows the job (unit 1) and the exam's domain weights (A+ map section 1). Each line: the lesson,
 what it teaches, its check, and the A+ objectives it covers.
 
 ### Unit 1, Working a ticket (the way of thinking; C2 4.1, 4.2 part, 4.7; IT1 to IT20)
@@ -90,7 +90,7 @@ what it teaches, its check, and the A+ objectives it covers.
    tickets, kind and priority. (IT10, IT11, IT12; C2 4.1 categories, severity)
 2. **Getting the story** (move 2). Open questions, saying it back, plain words, searching the knowledge base. Calls as exchanges.
    Check: 5 new, 2 calls. (IT17, IT18, IT19; C2 4.7)
-3. **What changed, and protect the data** (move 3). The first questions; back up before touching; reproduce it. Check: 5 new.
+3. **What changed, and protect the data** (move 3). The first questions; ask them to show you; back up before touching. Check: 5 new.
    (IT2)
 4. **The known fix, and when to stop** (move 4). A known fix with a time limit; what a guess that fails costs. Check: 5 new. (IT3, IT11)
 5. **Cut it in half** (move 5). Listing causes; the cheapest test that splits; another user, another machine, a known-good part.
@@ -142,12 +142,13 @@ what it teaches, its check, and the A+ objectives it covers.
     browser security symptoms, browser settings, wiping and destroying drives. Check: 8. (C2 2.4, 2.5, 2.6, 2.9, 2.11, 3.4)
 
 ### Unit 7, The desk's procedures (C2 4.x; C1 4.x; 21% of Core 2, 11% of Core 1)
-27. **Changes, backups, safety and the rules**: change management, backup kinds and 3-2-1, safety and the environment, licenses and
-    regulated data, evidence and chain of custody, scripts, remote access, AI; then virtual machines and cloud models. Check: 10.
-    (C2 4.2 to 4.6, 4.8 to 4.10; C1 4.1, 4.2)
+27. **Changes, backups, safety and evidence**: change management, backup kinds and 3-2-1, safety and the environment, evidence and
+    chain of custody. Check: 5 of 6. (C2 4.2 to 4.5, 4.6 evidence)
+28. **Policy, scripts, remote access, AI and the cloud**: licenses and regulated data, scripts, remote access, AI; then virtual
+    machines and cloud models. Check: 5 of 6. (C2 4.6, 4.8 to 4.10; C1 4.1, 4.2)
 
 ### Unit 8, Ready for the job and the exam
-28. **The whole ticket, and the mock exam**: tickets from every system, unlabelled, with every move; then a mock exam drawn from
+29. **The whole ticket, and the mock exam**: tickets from every system, unlabelled, with every move; then a mock exam drawn from
     every topic. Check: the real-world test above. (IT24, IT25)
 
 ## Build notes
