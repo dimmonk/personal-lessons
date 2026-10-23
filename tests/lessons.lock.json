@@ -653,15 +653,15 @@
     },
     "strategy/l2": {
       "rev": 1,
-      "fp": "sha256:b63b9ee104d724b3cb9a62d7e0dd64ead68ff1620c341fbd0d8ffb10f1d94325"
+      "fp": "sha256:d27535c9da4e8089c7bba4067c3f4b7ed26b8693b8719ec15213082d508a14ce"
     },
     "strategy/l3": {
       "rev": 1,
-      "fp": "sha256:ab63367a74bb1ae9d13923ecdc93f48a5ee734d002886ea3c38a60caddc86052"
+      "fp": "sha256:4c800a9a6f46fcdf7e5094ea0ad5da6c31b9fd38fe1ead865d4fa70668bc2bd0"
     },
     "strategy/l4": {
       "rev": 1,
-      "fp": "sha256:2816340a801b84707b25aeecf74ed0723bb253b5329f9ccc7d0c6112e175ae38"
+      "fp": "sha256:87233b177f8931f785caf9f4152c87cf5ad05e31d94810d9e2a680ce69c138df"
     },
     "strategy/l5": {
       "rev": 1,

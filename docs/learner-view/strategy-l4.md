@@ -26,13 +26,13 @@ A report summary, from "Valley Business Journal · Trade report" (marked "Report
 
 > # Small-town pharmacies: the year in review
 >
-> There are four pharmacies in town, and none has opened or closed in ten years. Drug wholesalers are many, and a pharmacy can switch from one to another within a week. Most prescriptions are paid for by three big insurance plans, which set what they pay per prescription; a pharmacy that refuses their rate loses those customers. Mail-order pharmacies fill a small share, mostly drugs taken for years.
+> There are four pharmacies in town, and none has opened or closed in ten years. Drug wholesalers are many, and a pharmacy can switch from one to another within a week. Most prescriptions are paid for by three big insurance plans, which decide what they pay per prescription; a pharmacy that refuses their rate loses those customers. Mail-order pharmacies fill a small share, mostly drugs taken for years.
 
 The working, one step at a time:
 1. Find the line that shows who takes the money, and why.: The third line: three insurance plans pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.
 1. Check the other forces are weak, then name the one that takes the money.: No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three plans, take the money.
 
-Then the answer: Most prescriptions are paid for by three big insurance plans, which set what they pay per prescription; a pharmacy that refuses their rate loses those customers. / Buyers: customers who can push the price down. Three insurance plans pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into.
+Then the answer: Most prescriptions are paid for by three big insurance plans, which decide what they pay per prescription; a pharmacy that refuses their rate loses those customers. / Buyers: customers who can push the price down. Three insurance plans pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into.
 
 ## Step 3: Questions
 
@@ -99,14 +99,14 @@ A report summary, from "Tri-County Business News · Trade report" (marked "Repor
 
 > # Hearing aid shops face rising costs
 >
-> Customers pick a shop for its fitting and advice, and few compare prices. **Three companies make almost all hearing aids; they set the price a shop pays, and raised it 15% this year.** A new shop needs a licensed fitter, and only two opened in the region in five years.
+> Customers pick a shop for its fitting and advice, and few compare prices. **Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year.** A new shop needs a licensed fitter, and only two opened in the region in five years.
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Customers pick a shop for its fitting and advice, and few compare prices." — if tapped: note: Customers choose on advice and rarely compare prices, so buyers have little hold.
-- "Three companies make almost all hearing aids; they set the price a shop pays, and raised it 15% this year." (right)
+- "Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year." (right)
 - "A new shop needs a licensed fitter, and only two opened in the region in five years." — if tapped: note: Few new shops open, so newcomers are few.
 
 **Which force squeezes the profit most?**
@@ -255,11 +255,11 @@ A report summary, from "Mountain Business Journal · Trade report" (marked "Repo
 
 > # Pastry shops squeezed on butter
 >
-> Customers come back for the pastries and pay what the shops ask. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year. There are two pastry shops in the valley, and neither cuts prices.
+> Customers come back for the pastries and pay what the shops charge. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year. There are two pastry shops in the valley, and neither cuts prices.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Customers come back for the pastries and pay what the shops ask." — if tapped: note: Customers pay what is asked, so buyers have little hold.
+- "Customers come back for the pastries and pay what the shops charge." — if tapped: note: Customers pay what is asked, so buyers have little hold.
 - "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year." (right)
 - "There are two pastry shops in the valley, and neither cuts prices." — if tapped: note: Two shops that do not cut prices: rivals are calm.
 
@@ -431,12 +431,12 @@ A report summary, from "River Valley Business Journal · Trade report" (marked "
 
 > # Box makers and the supermarket chain
 >
-> Cardboard comes from several mills. One supermarket chain buys about 80% of the boxes the valley’s box makers make, and asks each year for a lower price. A new box maker needs costly machines, and none has opened in years.
+> Cardboard comes from several mills. One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price. A new box maker needs costly machines, and none has opened in years.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Cardboard comes from several mills." — if tapped: note: Several mills compete, so suppliers have little hold.
-- "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and asks each year for a lower price." (right)
+- "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price." (right)
 - "A new box maker needs costly machines, and none has opened in years." — if tapped: note: No newcomers open, so they are not the problem.
 
 **Which force squeezes the profit most?**

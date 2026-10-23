@@ -51,7 +51,7 @@
       lines: [
         ["c1", "Our food gets good reviews, about the same as the two bistros nearby.", BACK],
         ["c2", "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints."],
-        ["c3", "Our kitchen has no set order for which tickets get cooked first.", "That is the cause of the gap. The line before it shows rivals doing the same work better."]],
+        ["c3", "Our kitchen has no fixed order for which tickets get cooked first.", "That is the cause of the gap. The line before it shows rivals doing the same work better."]],
       settles: "c2", verdict: "run-better",
       reason: "Two bistros with the same dishes and prices serve them hot and on time, so the gap is in running the kitchen. Running it better fixes it."
     }),

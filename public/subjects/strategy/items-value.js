@@ -71,7 +71,7 @@
     move({
       id: "p-week", from: "Notes on our cleaning business", detail: "Written in July",
       lines: [
-        ["c1", "Our cleaners asked for a fixed four-day week, and we set it up.", WHAT],
+        ["c1", "Our cleaners asked for a fixed four-day week, and we started it.", WHAT],
         ["c2", "Two of them told us that with that week they would stay for $1 an hour less than now."],
         ["c3", "We have not changed anyone’s pay.", "That says the cost stayed put. The line that settles it says what moved."]],
       settles: "c2", verdict: "grows",

@@ -203,7 +203,7 @@ After the answer: the deciding words are marked. Reason: The haircut and what cl
 
 Your own note, written after an argument: "Notes on our cleaning business", Written in July.
 
-> Our cleaners asked for a fixed four-day week, and we set it up.
+> Our cleaners asked for a fixed four-day week, and we started it.
 > **Two of them told us that with that week they would stay for $1 an hour less than now.**
 > We have not changed anyone’s pay.
 
@@ -211,7 +211,7 @@ Help on screen: the words that decide it are marked.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Our cleaners asked for a fixed four-day week, and we set it up." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
+- "Our cleaners asked for a fixed four-day week, and we started it." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
 - "Two of them told us that with that week they would stay for $1 an hour less than now." (right)
 - "We have not changed anyone’s pay." — if tapped: note: That says the cost stayed put. The line that settles it says what moved.
 

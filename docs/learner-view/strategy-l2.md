@@ -52,7 +52,7 @@ Your own note, written after an argument: "Notes on our bistro", Written in Marc
 
 > Our food gets good reviews, about the same as the two bistros nearby.
 > **A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints.**
-> Our kitchen has no set order for which tickets get cooked first.
+> Our kitchen has no fixed order for which tickets get cooked first.
 
 Help on screen: the words that decide it are marked.
 
@@ -60,7 +60,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our food gets good reviews, about the same as the two bistros nearby." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 - "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints." (right)
-- "Our kitchen has no set order for which tickets get cooked first." — if tapped: note: That is the cause of the gap. The line before it shows rivals doing the same work better.
+- "Our kitchen has no fixed order for which tickets get cooked first." — if tapped: note: That is the cause of the gap. The line before it shows rivals doing the same work better.
 
 **What does this business need?**
 - Run it better (right)

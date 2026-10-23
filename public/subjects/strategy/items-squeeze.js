@@ -35,7 +35,7 @@
       lines: [
         ["c1", "There are four pharmacies in town, and none has opened or closed in ten years.", "rivals", "The four have been there ten years and nobody new arrives, so rivals and newcomers are calm."],
         ["c2", "Drug wholesalers are many, and a pharmacy can switch from one to another within a week.", "suppliers", "Wholesalers are many and easy to switch, so suppliers have little hold."],
-        ["c3", "Most prescriptions are paid for by three big insurance plans, which set what they pay per prescription; a pharmacy that refuses their rate loses those customers.", "buyers"],
+        ["c3", "Most prescriptions are paid for by three big insurance plans, which decide what they pay per prescription; a pharmacy that refuses their rate loses those customers.", "buyers"],
         ["c4", "Mail-order pharmacies fill a small share, mostly drugs taken for years.", "substitutes", "Mail order takes only a small share, so it caps little."]],
       settles: "c3", right: "buyers",
       steps: [
@@ -68,7 +68,7 @@
       id: "p-hearing", source: "Tri-County Business News · Trade report", headline: "Hearing aid shops face rising costs",
       lines: [
         ["c1", "Customers pick a shop for its fitting and advice, and few compare prices.", "buyers", "Customers choose on advice and rarely compare prices, so buyers have little hold."],
-        ["c2", "Three companies make almost all hearing aids; they set the price a shop pays, and raised it 15% this year.", "suppliers"],
+        ["c2", "Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year.", "suppliers"],
         ["c3", "A new shop needs a licensed fitter, and only two opened in the region in five years.", "entrants", "Few new shops open, so newcomers are few."]],
       settles: "c2", right: "suppliers",
       reason: "Three makers supply nearly every hearing aid and raised their price 15%, and a shop has nowhere else to buy: the suppliers take the money. The other forces are weak here."
@@ -125,7 +125,7 @@
     squeeze({
       id: "q-butter", source: "Mountain Business Journal · Trade report", headline: "Pastry shops squeezed on butter",
       lines: [
-        ["c1", "Customers come back for the pastries and pay what the shops ask.", "buyers", "Customers pay what is asked, so buyers have little hold."],
+        ["c1", "Customers come back for the pastries and pay what the shops charge.", "buyers", "Customers pay what is asked, so buyers have little hold."],
         ["c2", "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year.", "suppliers"],
         ["c3", "There are two pastry shops in the valley, and neither cuts prices.", "rivals", "Two shops that do not cut prices: rivals are calm."]],
       settles: "c2", right: "suppliers",
@@ -192,7 +192,7 @@
       id: "k-boxes", source: "River Valley Business Journal · Trade report", headline: "Box makers and the supermarket chain",
       lines: [
         ["c1", "Cardboard comes from several mills.", "suppliers", "Several mills compete, so suppliers have little hold."],
-        ["c2", "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and asks each year for a lower price.", "buyers"],
+        ["c2", "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price.", "buyers"],
         ["c3", "A new box maker needs costly machines, and none has opened in years.", "entrants", "No newcomers open, so they are not the problem."]],
       settles: "c2", right: "buyers",
       reason: "One chain buys 80% of the boxes and pushes the price down each year: the buyer takes the money."

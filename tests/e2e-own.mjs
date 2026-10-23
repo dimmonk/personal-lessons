@@ -164,8 +164,12 @@ async function business(env, c, page) {
   await env.clickVisible(page, '#screen [data-l="l5"]');
   await O.jumpTo(page, BUSINESS_STEP);
   c.check(await page.locator('[data-own-business]').count() === 1 && await page.locator('#ownSkip').count() === 1 && /Do not type an account number/.test(await env.screenText(page)), 'an empty business does not open the lines with its warning and a way out');
-  const line = (at, l) => Promise.all([page.locator(`#own-lines-${at}-name`).fill(l.name), page.locator(`#own-lines-${at}-kind`).selectOption(l.kind),
-    page.locator(`#own-lines-${at}-revenue`).fill(l.revenue), page.locator(`#own-lines-${at}-cost`).fill(l.cost)]);
+  const line = async (at, l) => {
+    await page.locator(`#own-lines-${at}-name`).fill(l.name);
+    await page.locator(`#own-lines-${at}-kind`).selectOption(l.kind);
+    await page.locator(`#own-lines-${at}-revenue`).fill(l.revenue);
+    await page.locator(`#own-lines-${at}-cost`).fill(l.cost);
+  };
   await line(0, { name: 'Market stall', kind: 'channel', revenue: 'lots', cost: ACCOUNT_NUMBER });
   await page.locator('#ownSave').click();
   const errors = await O.errorsShown(page);
@@ -179,6 +183,7 @@ async function business(env, c, page) {
   await page.locator('[data-add-line]').click();   // a line left blank is dropped
   await page.locator('#ownSave').click();
   const text = await env.screenText(page);
+  if (!await page.locator('#own-what').count()) { c.check(false, `saving the lines does not open the work and the change (${JSON.stringify(await O.errorsShown(page))} ${text.slice(0, 300)})`); return; }
   c.check(/The core of your business/.test(text) && /Wedding cakes\s*\$30,000\s*78\.9%/.test(text) && /Catering\s*−\$3,000\s*Loses money/.test(text), `the work is not the app's arithmetic on the lines typed (${text.slice(0, 400)})`);
   c.check(/1 of your 3 lines makes more than half/.test(text) && /Catering loses \$3,000 a year/.test(text) && /it is not advice/.test(text), 'the core is not named, the losing line not flagged, or the line that it is not advice is missing');
   c.check(await page.locator('.block-doc mark.cue').count() >= 1, 'the sample lines to find are not marked beside the work');
