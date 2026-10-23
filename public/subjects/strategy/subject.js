@@ -103,6 +103,7 @@ FC.subject('strategy', {
       { id: "loser-counted", text: "took a losing line off the total that shares are counted from" },
       { id: "growth-for-growth", text: "grew for the sake of growing" },
       { id: "serve-everyone", text: "tried to serve everyone, or to copy a rival while keeping your own way" },
+      { id: "missed-tradeoff", text: "took a real choice of what not to do for a straddle" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
       { id: "rival-ignored", text: "forgot that rivals will answer" },
       { id: "surface-analogy", text: "copied a success that only looks alike" },

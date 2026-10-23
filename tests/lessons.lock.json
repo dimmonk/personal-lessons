@@ -39,7 +39,7 @@
     },
     "strategy": {
       "rev": 1,
-      "fp": "sha256:7126cb4995ce08b19fd262e5a1f0d15caae2edebadbcd9fdf675d76fd8948209"
+      "fp": "sha256:bb1b019d972c91ade546c79b2a57bf64cceb43c7d383a23e41d1aa2ff7446128"
     },
     "wealth": {
       "rev": 9,
@@ -666,6 +666,10 @@
     "strategy/l5": {
       "rev": 1,
       "fp": "sha256:d5ade9ed2d0619ece1f07ee0b952e2c82708f5ae2238973edbbc1a87c4f4bd62"
+    },
+    "strategy/l6": {
+      "rev": 1,
+      "fp": "sha256:fdbb6c5b8df60b633e1ab5aa605122153f9d2a01873bef007a09a9c8dcd098e3"
     },
     "wealth/l1": {
       "rev": 1,
