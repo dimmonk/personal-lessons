@@ -100,6 +100,7 @@ FC.subject('strategy', {
       { id: "grown-as-moved", text: "missed that the move changes what customers would pay or what suppliers would take" },
       { id: "fast-growth-attractive", text: "took a fast-growing market for a good one" },
       { id: "sales-not-profit", text: "judged a line by its sales, not by what it earns" },
+      { id: "loser-counted", text: "took a losing line off the total that shares are counted from" },
       { id: "growth-for-growth", text: "grew for the sake of growing" },
       { id: "serve-everyone", text: "tried to serve everyone, or to copy a rival while keeping your own way" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
@@ -138,5 +139,25 @@ FC.subject('strategy', {
     { id: "afford", title: "A bet you can afford" },
     { id: "six-questions", title: "The six questions on one decision" }
   ],
+  // the learner's own business, line by line, and the change made on it (lesson 5; lesson standard 5.3). No field holds an account number.
+  own: {
+    business: {
+      into: "business",
+      fields: [
+        { id: "name", label: "The line: a product, a customer or a way you sell", type: "text", hint: "For example: wedding cakes" },
+        { id: "kind", label: "What kind of line it is", type: "choose", list: "lineKind" },
+        { id: "revenue", label: "What it brought in last year", type: "number", unit: "dollars" },
+        { id: "cost", label: "What it cost you directly last year", type: "number", unit: "dollars" }
+      ]
+    },
+    actions: {
+      into: "actions",
+      fields: [
+        { id: "what", label: "What will you do?", type: "text" },
+        { id: "where", label: "Where?", type: "text" },
+        { id: "when", label: "On which day?", type: "date" }
+      ]
+    }
+  },
   readingShare: 0.35
 });
