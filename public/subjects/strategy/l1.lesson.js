@@ -23,7 +23,7 @@ FC.lesson("strategy", {
           "A step is something you can put on a calendar or buy: “Buy two plows”, “Open on Sundays”. A plan that lists steps with no challenge named is a to-do list, even with a target on top, and even with a line like “So we push harder on sales”: an approach to nothing.",
           "A challenge named, but the steps go off in different directions and none of them gets past it? That is a to-do list too.",
           "A challenge, one approach, and steps that serve it: that is a strategy. All three must be there; a challenge and an approach with no steps yet is a strategy not finished. Why it matters: a target tells your team where to end up, but only the challenge tells them what to work on.",
-          "One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy; telling the two apart comes next."] },
+          "One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy. “Our pizzas take 40 minutes, the shop next door’s 15, with the same ovens”: the fix is a faster kitchen. Telling the two apart comes next."] },
         { kind: "prose", tone: "wrong", text: [
           "“My strategy is to grow sales 20% this year.”",
           "That is a goal. It says where you want to be. A strategy starts from what stands in the way of the 20%, picks one way past it, and lists the steps that serve that way."] }

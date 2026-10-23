@@ -488,7 +488,7 @@ const SAY = {
   tapMany: n => `Tap ${numWord(n)} sentences in the text above, then tap Answer.`,
   youTapped: 'You tapped',
   tapNotThat: 'That is not the sentence.',
-  tapThereIsOne: 'The text does give one. It is marked above.',
+  tapThereIsOne: 'One of the lines is the answer: it is marked above.',
   // a map and the place ask (3.7, 3.9)
   mapAlt: name => `A map of ${name}, with no names on it.`,
   mapAltNamed: name => `A map of ${name}, with the names shown.`,

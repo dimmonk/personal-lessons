@@ -16,14 +16,14 @@
       moves: "The move changes what customers would pay and adds to the work, so it does more than move value: it adds more cost than it is worth to them." }
   };
   const SLIP = { grows: { moves: "grown-as-moved" }, moves: { grows: "moved-as-grown" }, shrinks: { grows: "added-cost-missed" } };
-  function move({ id, from, detail, lines, verdict, reason, deciding }) {
+  function move({ id, from, detail, lines, verdict, reason, deciding, then = {} }) {
     return {
       id, strand: "value-moves", facets: { scale: "owner" },
       blocks: [{ kind: "message", id: "notes", form: "note", from, detail,
         lines: lines.map(([lid, text]) => ({ id: lid, text })) }],
       asks: [
         { id: "verdict", kind: "choose", prompt: "What does the move do to the value created?", from: "verdict", only: ONLY, right: verdict,
-          then: Object.fromEntries(ONLY.filter(v => v !== verdict).map(v => [v, THEN[verdict][v]])), ...(SLIP[verdict] ? { slips: SLIP[verdict] } : {}) }],
+          then: Object.fromEntries(ONLY.filter(v => v !== verdict).map(v => [v, then[v] || THEN[verdict][v]])), ...(SLIP[verdict] ? { slips: SLIP[verdict] } : {}) }],
       deciding,
       reason
     };
@@ -82,6 +82,7 @@
         ["c2", "Two cleaners who were about to leave for jobs with fixed hours now say they will stay, at the same pay."],
         ["c3", "The same hours of cleaning get done, so the new week costs us nothing extra."]],
       verdict: "grows", deciding: ["c2", "c3"],
+      then: { moves: "The pay did not change, but the least staff would take did: they now stay at a pay they would have left. That end of the stick moved down, so the value grows." },
       reason: "Cleaners who would have left at this pay now stay at it, so the least they would take fell, and the week adds nothing to the work. The suppliers’ end of the stick moved down, so the value grows."
     }),
     move({
@@ -175,6 +176,7 @@
         ["c2", "Our price per hour is the same, and the booking takes the office no more time."],
         ["c3", "Three tutors told us that with hours they choose, they would teach for $4 an hour less than we pay."]],
       verdict: "grows", deciding: ["c3", "c2"],
+      then: { moves: "The pay did not change, but the least the tutors would take did: $4 an hour less. That end of the stick moved down, so the value grows." },
       reason: "With hours they choose, tutors would take $4 an hour less, and nothing is added to the work, so the suppliers’ end of the stick moved down. The move grows the value."
     }),
     move({

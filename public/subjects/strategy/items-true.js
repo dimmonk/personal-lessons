@@ -147,7 +147,7 @@
       conds: [
         ["c1", "The firm will pay our same-day price: it signed a letter saying so.", "The firm will pay the price", "backed"],
         ["c2", "The firm would send work all year: its partner expects so.", "The firm would send work all year", "talk"],
-        ["c3", "The driver can reach that courthouse before it closes at 5 p.m.: the drive is 40 minutes at noon, and the bridge on the way is jammed from 4 p.m. every weekday.", "The driver can reach the courthouse in time", "against"],
+        ["c3", "The driver can reach that courthouse before it closes at 5 p.m.: the drive is 40 minutes at noon, and the bridge on the way is jammed from 4 p.m. every weekday, and the rush papers are ready only at 4.", "The driver can reach the courthouse in time", "against"],
         ["c4", "The press is free for its rush orders: we turn down walk-in jobs already.", "The press is free", "backed"]],
       right: "c3",
       write: "Drive from the shop to that courthouse at 4 p.m. on three weekdays and time it.",
@@ -228,14 +228,15 @@
       lines: [
         ["c1", "Move 1, a bigger building here: its plan shows the most income of any move."],
         ["c2", "We tested its least likely condition, that the city would let us take 40 more children here: the city said no."],
-        ["c3", "Move 2, a night room: we tested its least likely condition, that nurses would use it: 14 signed up and paid a deposit."]],
+        ["c3", "Move 2, a night room: we tested its least likely condition, that nurses would use it: 14 signed up and paid a deposit."],
+        ["c4", "Its other conditions were tested next and hold too: two of our staff signed for night shifts, and the state approved night hours."]],
       prompt: "Which move should Jill choose?",
       options: [
-        ["night", "The night room: its least likely condition held", true],
+        ["night", "The night room: its conditions held", true],
         ["building", "The bigger building: its plan shows the most income", "That income rests on a condition the city has turned down; the plan’s numbers cannot make it hold.", "inside-view"],
         ["neither", "Neither yet: first write a full five-year plan for both", "The tests have already ruled one move out; a full plan comes now, for the move that held.", "plan-first"]],
-      deciding: ["c2", "c3"],
-      reason: "Each move’s least likely condition was tested. The city turned down the bigger building, and the nurses paid deposits for the night room, so Jill chooses the night room and plans it in full."
+      deciding: ["c2", "c3", "c4"],
+      reason: "The city turned down the bigger building. The night room’s least likely condition held, and so did the others, tested next, so Jill chooses the night room and plans it in full."
     }),
 
     // ----- held back for the review -----

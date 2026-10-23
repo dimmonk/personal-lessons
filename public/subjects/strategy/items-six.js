@@ -14,7 +14,7 @@
   const BARRIER_THEN = {
     "only-us": "Only this business has it, and a rival cannot get one: the plan says why.",
     fit: "It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.",
-    switching: "Customers would lose by leaving: what they keep here, or trust built over years.",
+    switching: "Trust built over years, or what customers keep here: they would lose by leaving.",
     nothing: "A rival can buy or copy it, so nothing stops a copy: the gain is a race."
   };
   const BARRIERS = ["only-us", "fit", "switching", "nothing"];
@@ -104,7 +104,7 @@
       lines: [
         ["c1", "money", "Coached training for serious lifters earns the most, and they come from three towns for it."],
         ["c2", "run", "Our gym is as clean and as well run as any of them, and our rent is as low as any gym’s in town."],
-        ["c3", "challenge", "Three $10 gyms opened nearby. 40 members left."],
+        ["c3", "challenge", "Three $15 gyms opened nearby. 40 members left."],
         ["c4", "record", "Gyms for lifters have opened in many towns, and the county lists 42 with how long each lasted."],
         ["c5", "barrier", "It rests on coaches all day, heavy racks with room and monthly checks: a budget gym would have to change how it runs to match it."],
         ["c6", "bet", "The bet: a second lifting room for $30,000, within the $35,000 we could lose."]],
@@ -112,12 +112,12 @@
       barrier: "fit",
       plans: ["Play for serious lifters; win with coaches and racks the budget gyms do not have; drop the cheap plan", "Add a $15 plan, classes, a pool and a kids’ club so every kind of member finds something", "everyone"],
       judge: "outside",
-      reason: "Mark runs as well as the budget gyms, so the $10 gyms are a strategy problem. Coached training earns the most and rests on pieces that fit; the plan that chooses plays for lifters. Lifting gyms have a record to start from, and the $30,000 room is within what he can lose."
+      reason: "Mark runs as well as the budget gyms, so the $15 gyms are a strategy problem. Coached training earns the most and rests on pieces that fit; the plan that chooses plays for lifters. Lifting gyms have a record to start from, and the $30,000 room is within what he can lose."
     }),
     six({
       id: "p14-print", from: "Omar’s plan for the year ahead", detail: "Written in March",
       lines: [
-        ["c1", "barrier", "We hold the only contract to print for the county court’s filing office, for the next five years."],
+        ["c1", "barrier", "We hold the only contract to print for the county court’s filing office, for five years: it is what lets us file the firms’ papers the same day."],
         ["c2", "money", "Three law firms earn us the most, and they come to us for court papers the same day."],
         ["c3", "challenge", "Online printers now take the walk-in and invitation jobs, and our walk-in sales fell 40%."],
         ["c4", "run", "Our press runs as well as any shop’s, and every shop in town lost the same jobs."],
@@ -144,7 +144,7 @@
       barrier: "nothing",
       plans: ["Play for people working from home nearby on Mondays and Fridays; win with quiet, plugs and rooms for calls", "Do what the best cafes do: a loyalty app, oat milk and fresh pastries, done better than theirs", "copycat"],
       judge: "outside",
-      reason: "Priya runs as well as any cafe, and every cafe lost the office crowd: a strategy problem. The passes earn the most, but nothing stops another cafe selling them, so the gain is a race: she chooses home workers now, and keeps the booths cheap enough to pay back before rivals follow. Work cafes have a record to start from."
+      reason: "Priya runs as well as any cafe, and every cafe lost the office crowd: a strategy problem. The passes earn the most, but nothing stops another cafe selling them: a race, not a lasting position. Of the two plans only the first chooses customers and a way to win; work cafes have a record to start from."
     }),
     six({
       id: "q14-tutor", from: "Kim’s plan for the year ahead", detail: "Written in May",
@@ -186,6 +186,7 @@
       { position: "The rivals do the same work in one day with kits anyone can order: catching up would fix the bids." }, { position: "running-as-strategy" }),
      pick("move", "What should Ben do?", "Order the same kits and train the crews to finish a house in a day",
       [["Stop bidding on new installs and offer only repairs to old systems instead", "That changes the position for a gap any crew can close.", "running-as-strategy"],
+       ["Aim to win eight of the next ten bids, and push the crews to reach it", "A goal says where Ben wants to be, not how: the crews would still take two days.", "goal-as-strategy"],
        ["Cut every bid by a tenth and keep the two-day crews", "The cut comes out of the margin; the second day of labor stays."]])],
     ["h3"], "Rivals win with the same units at the same price, doing the work in one day with kits Ben can also buy: a gap in running the business. He catches up."),
 
@@ -197,10 +198,10 @@
     [fromList("value", "Does same-day service grow the value created?", "verdict", ["grows", "moves", "shrinks"], "grows",
       { moves: "It changes what customers would pay: up to $4.50 more, for $1.50 more work.", shrinks: "The added work, $1.50, is less than what customers would pay more, $4.50." },
       { moves: "grown-as-moved" }),
-     pick("price", "How much more than next-day should Rosa charge for same-day?", "$3 more per order",
-      [["$5 more per order", "Above $4.50 most would not buy, so little value is made at all."],
-       ["$1 more per order", "Below the $1.50 of added work, she loses on every order."]])],
-    ["v2", "v3"], "Customers would pay up to $4.50 more and the work adds $1.50, so same-day grows the value by about $3 an order. A price between the two splits it: $3 more keeps $1.50 for Rosa and leaves $1.50 with the customer."),
+     pick("price", "Where must Rosa’s extra charge for same-day sit so that both she and her customers gain?", "Between $1.50 and $4.50 more per order",
+      [["Above $4.50 more per order, to keep all the value for the shop", "Above $4.50 most would not buy, so little value is made at all."],
+       ["Below $1.50 more per order, to win the most customers", "Below the $1.50 of added work, she loses on every order."]])],
+    ["v2", "v3"], "Customers would pay up to $4.50 more and the work adds $1.50, so same-day grows the value by about $3 an order. Any price between the two splits it: the $4 she tried keeps $2.50 for Rosa and leaves 50 cents with the customer."),
 
     owner("k14-cleaning", [note("Ana’s memo for the year ahead", "Commercial cleaning", [
       ["q1", "We clean as well and as cheaply as any firm the hospitals have tried."],
@@ -223,8 +224,9 @@
     [pick("core", "Which customers are the core?", "Weddings",
       [["Office lunches", "They bring in the most, but earn $15,000 after their costs, and every caterer makes the same sandwiches.", "sales-not-profit"],
        ["Festival stand", "It loses $8,000 after its direct costs."]]),
-     fromList("loser", "What should Lee do with the festival stand, which loses money?", "verdict", ["fix", "let-go"], "fix",
-      { "let-go": "Lee charges $9 where the other stands charge $14 for the same food: a price change could make it pay. Try that before dropping it." })],
+     fromList("loser", "What should Lee do with the festival stand, which loses money?", "verdict", ["fix", "cut-loss", "let-go"], "fix",
+      { "let-go": "Lee charges $9 where the other stands charge $14 for the same food: a price change could make it pay. Try that before dropping it.",
+        "cut-loss": "A price change could make it pay, so its loss need not be kept: fix the price first." })],
     ["r2", "r3"], "Weddings earn $40,000, more than the office lunches’ $15,000, and couples come for recipes no one else cooks: the core. The stand loses $8,000, but at the $14 other stands charge it would pay: keep it and fix its price."),
 
     owner("k14-bikes", [note("Jo’s plan for the bike shop", "Written in February", [
@@ -270,7 +272,7 @@
       ["b1", "The move: a van that grooms dogs at the owner’s door, for $25 more than at the shop."],
       ["b2", "Owners must pay the $25 more: 30 of them have paid a deposit."],
       ["b3", "The van must do six dogs a day to pay for itself: the van’s seller says it can."],
-      ["b4", "In the shop each dog takes us 70 minutes, and the van would drive 20 minutes between homes."],
+      ["b4", "In the shop each dog takes us 70 minutes, the van would drive 20 minutes between homes, and our groomers work an eight-hour day."],
       ["b5", "The city must let the van park on the street: the permit came last week."]])],
     [pick("first", "Which condition should Ray test first?", "That the van can do six dogs a day",
       [["That owners will pay $25 more", "Thirty deposits are money paid: evidence it holds."],
@@ -278,19 +280,19 @@
      pick("test", "How should he test it?", "Rent a van for two weeks and count the dogs done each day",
       [["Write the full plan with five years of numbers first", "Those numbers would rest on six dogs a day, the condition most in doubt.", "plan-first"],
        ["Get the van’s seller to put the six dogs in writing", "In writing it is still the seller’s word; a count of his own costs little.", "talk-as-evidence"]])],
-    ["b3", "b4"], "Six dogs at 70 minutes each plus 20 minutes of driving is about nine hours: a fact against the seller’s word. The deposits and the permit already hold. Test the six dogs first, cheaply, with a rented van."),
+    ["b3", "b4"], "Six dogs at 70 minutes each plus 20 minutes of driving between them is nearly nine hours, more than the eight-hour day: a fact against the seller’s word. The deposits and the permit already hold. Test the six dogs first, cheaply, with a rented van."),
 
     owner("k14-taqueria", [note("Lupe’s page of numbers for a second taqueria", "Written in July", [
       ["o1", "A full second shop would cost $300,000; we could lose $60,000 and keep the first shop and our home going."],
       ["o2", "Our taqueria has made money for six years, and our plan shows a second one paying back in 18 months."],
-      ["o3", "A food truck in the next town would cost $55,000."],
+      ["o3", "A small rented counter in the next town, the same tacos with two staff, would cost $55,000 to fit out."],
       ["o4", "The county lists 140 restaurants opened in the last ten years; about four in ten were still open after five."]])],
     [fromList("judge", "How should Lupe judge the second taqueria?", "judge", null, "outside",
       { afford: "People already buy tacos in shops like hers, and the county lists how 140 did: the record is the start." }),
-     pick("move", "What should she do?", "Run the truck in the next town first, and open a shop there if it does well",
+     pick("move", "What should she do?", "Open the small rented counter in the next town, and grow it only if it does well",
       [["Open the full shop: six good years and the plan say it pays back", "Her plan is her own story; the record says four in ten, and $300,000 is five times what she can lose.", "bet-too-big"],
-       ["Pay a firm for a forecast of the next town’s market before deciding anything", "The county’s record is already there; a forecast is one more plan, and the truck keeps the stake within what she can lose.", "inside-view"]])],
-    ["o1", "o4"], "Restaurants have a record: about four in ten last five years, whatever the plan says. A full shop stakes five times what Lupe can lose; the truck fits within it and shows whether the next town buys."),
+       ["Pay a firm for a forecast of the next town’s market before deciding anything", "The county’s record is already there; a forecast is one more plan, and the rented counter keeps the stake within what she can lose.", "inside-view"]])],
+    ["o1", "o4"], "Restaurants have a record: about four in ten last five years, whatever the plan says. A full shop stakes five times what Lupe can lose; the rented counter is the same project cut down to fit within it."),
 
     // ----- held back for the review -----
     six({

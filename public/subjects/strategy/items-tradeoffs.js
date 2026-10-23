@@ -44,7 +44,7 @@
       id: "w6-gym", from: "Mark’s plan for his gym", detail: "Written in February",
       lines: [
         ["c1", "Our gym is for serious lifters: heavy racks, coaches on the floor all day, $60 a month."],
-        ["c2", "A $10-a-month budget gym opened down the road and 40 of our members left for it."],
+        ["c2", "A $15-a-month budget gym opened down the road and 40 of our members left for it."],
         ["c3", "So we added a $15 plan with no coaching, for people who just want a cheap gym. 80 people joined in the first month."],
         ["c4", "The coaches, the $60 plan and every rack stay, and both kinds of member share the same floor at the same hours."]],
       verdict: "straddle", deciding: ["c3", "c4"],
@@ -128,7 +128,7 @@
       lines: [
         ["c1", "Since the steakhouse opened, some evening tables are empty; evenings were about a fifth of our sales."],
         ["c2", "So we added steaks and a wine list at dinner."],
-        ["c3", "Breakfast is still served all day at the counter, by the same cook on the same grill."]],
+        ["c3", "Breakfast is still served all day at the counter, by the same cook on the same grill, and breakfast orders keep that grill full until we close."]],
       verdict: "straddle", deciding: ["c2", "c3"],
       reason: "Steaks and all-day breakfast need the same cook and grill at the same dinner hour, and Sam dropped neither. The fifth of sales is what he lost, not what he gave up: a straddle."
     }),
@@ -202,9 +202,9 @@
       lines: [
         ["c1", "Builders come to us at 6 a.m. for advice and for odd parts the big stores do not carry."],
         ["c2", "We are matching the big stores’ low prices on paint and lumber, to win their weekend shoppers."],
-        ["c3", "To pay for the low prices we will stock fewer odd parts, but the advice desk and the 6 a.m. opening stay."]],
+        ["c3", "To pay for the low prices we will clear one short shelf of odd parts; every other odd part, the advice desk and the 6 a.m. opening stay."]],
       verdict: "straddle", deciding: ["c2", "c3"],
-      reason: "Low prices for weekend shoppers and odd parts with advice for builders pull on the same shelves and staff. Tom trims the odd parts but keeps serving builders: both sides kept, each weaker. A straddle, though something was cut."
+      reason: "Low prices for weekend shoppers and odd parts with advice for builders pull on the same shelves and staff. Tom clears one shelf but keeps serving builders: both sides kept, each weaker. A straddle, though something was cut."
     }),
     story({
       id: "k6-grooming", from: "Rosa’s plan for her grooming van", detail: "Written in June",

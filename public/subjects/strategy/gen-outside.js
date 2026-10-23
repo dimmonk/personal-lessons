@@ -44,7 +44,7 @@
       { id: "start", kind: "choose", prompt: "Where should {who}’s forecast for the new {one} start?", shuffle: true, options: [
         { id: "table", text: "Near {shareText}, the share of others like it still open, moved only for a real difference", ok: true },
         { id: "plan", text: "Near 100%, as the plan says: {who} knows this business better than any table does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and {closedText} of them closed within three years. Start from how they did." },
-        { id: "best", text: "Near 100%, like the one {one} in town that {who} knows did well", slip: "surface-analogy", then: "One success that looks alike says little; the table shows how many like it did. Start from the share." }] }],
+        { id: "best", text: "Near 50%: a new {one} either makes it or it does not", then: "Even odds is a guess; the table says how many like it did. Start from the share it gives." }] }],
     steps: [
       { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "Each year more than half, but far from all of them.", ask: "est" },
       { id: "share", does: "Add those still open, add all that opened, and divide.", working: "{still} ÷ {total} = {shareText}", ask: "share" },

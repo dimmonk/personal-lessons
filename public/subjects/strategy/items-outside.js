@@ -155,16 +155,16 @@
       lines: [
         ["c1", "We plan to sell kids’ bikes with a free trade-in when the child outgrows them."],
         ["c2", "The bike shop across town has never cut a price or run an offer in its twenty years."],
-        ["c3", "Kids’ bikes are half of its sales, and a trade-in needs nothing but a shelf for the bikes that come back."]],
+        ["c3", "Kids’ bikes are half of its sales, to the same families we would sell to, and a trade-in needs nothing but a shelf for the bikes that come back."]],
       right: "answer", deciding: ["c3"],
-      reason: "A quiet past does not protect the move: it goes after half of the rival’s sales, and a shelf is all it needs to follow. Plan for an answer."
+      reason: "A quiet past does not protect the move: it goes after half of the rival’s sales, to the same families, and a shelf is all it needs to follow. Plan for an answer."
     }),
     like({
       id: "q12-texts", from: "Carlos’s notes on an idea", detail: "Written in September",
       lines: [
         ["c1", "Our customers work on a factory line, where phones are locked away until the break."],
         ["c2", "A taco truck downtown doubled its sales by taking orders by text."],
-        ["c3", "It worked because office workers there order from their desks before walking out."]],
+        ["c3", "Most of its texts come from office workers there, sent from their desks just before they walk out."]],
       right: "surface", deciding: ["c1", "c3"],
       reason: "Text orders worked there because people could order from their desks; here phones are locked away until the break. It only looks alike."
     }),
@@ -215,7 +215,7 @@
       lines: [
         ["c1", "Here, the parents’ group has 30 members and gets a post about once a month."],
         ["c2", "A tutor in the city fills her classes by posting in a parents’ online group."],
-        ["c3", "It worked because parents there read that group every day."]],
+        ["c3", "Parents there say they read that group every day, and most of her sign-ups say they found her there."]],
       right: "surface", deciding: ["c1", "c3"],
       reason: "The posts worked there because parents read the group daily; here hardly anyone reads it. It only looks alike."
     }),
@@ -264,7 +264,7 @@
       id: "r12-pianos", from: "Hal’s notes on an idea", detail: "Written in May",
       lines: [
         ["c1", "A mover in the next state grew fast with pianos."],
-        ["c2", "It worked because a piano maker there sends it every delivery; there is no piano maker in our state."]],
+        ["c2", "A piano maker there sends it every delivery, nearly all its work; there is no piano maker in our state."]],
       right: "surface", deciding: ["c2"],
       reason: "The mover grew on a maker’s deliveries, and there is no maker here. It only looks alike."
     }),

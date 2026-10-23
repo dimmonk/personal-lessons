@@ -2,7 +2,7 @@
 // The one rule (research ST14, reconciled with ST12 as a judgement call of the research note; ST20 for the wider record), two questions for every bet:
 // (1) Can anyone see yet whether people would buy it? If people already buy this kind of thing and many like it have opened (a second shop, a
 //     branch), there is a record: start from how they did (lesson 12). If nobody can see yet whether these customers would buy it (they have never
-//     been offered it), the wider record (about half of new US businesses are open after five years) is only a rough start: no table says whether
+//     been offered it), the wider record (about half of new US shops and offices are open after five years) is only a rough start: no table says whether
 //     anyone here wants it, so try it small, with what you have and partners, and learn.
 // (2) Either way, size the bet. The affordable loss is the most the owner could lose and still keep the business and the household going; the stake
 //     (what is lost if it fails) stays within it. If the project costs more, put less at risk (rent, not buy; start with a part; a partner who pays a
@@ -123,7 +123,7 @@
         ["c3", "Food trucks at factory gates are common; the county lists 30 that opened in five years, and 19 are still running."]],
       judge: "outside",
       moves: [
-        ["table", "Try it with a folding table outside that factory for a summer first", "People already buy lunch outside factories, and the record says how trucks go; a summer at a table would only delay."],
+        ["table", "Try it with a folding table outside that factory for a summer first", "People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season."],
         ["buy", "Start from how the 30 trucks did, and buy the used truck: the whole $40,000 is within what he can lose", true],
         ["own", "Go by his own forecast: his tacos are better than most", "Most owners in the record thought their food was better. Start from how the 30 did.", "inside-view"]],
       deciding: ["c2", "c3"],
@@ -245,7 +245,7 @@
         ["c3", "The space and the used press would cost $60,000, and we could lose $80,000 and keep this shop going."]],
       judge: "outside",
       moves: [
-        ["stall", "Run a print stall at a market there for a summer first, to see whether people buy printing", "People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall only delays."],
+        ["stall", "Run a print stall at a market there for a summer first, to see whether people buy printing", "People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales."],
         ["own", "Go by his own forecast: his shop runs better than most", "Most owners in the record thought so too. Start from how the others did.", "inside-view"],
         ["open", "Start from the state’s record and open the shop: the whole $60,000 is within what he can lose", true]],
       deciding: ["c2", "c3"],

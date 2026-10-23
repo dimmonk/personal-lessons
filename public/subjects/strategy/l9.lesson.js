@@ -20,7 +20,7 @@ FC.lesson("strategy", {
           "Yes: the same kind of customer in a new place, more of what the core’s customers already want, done by the same people the same way. It deepens the core.",
           "No: it needs different activities (a night shift, a factory line, other hours, other skills) or a different kind of customer. It blurs the position: the business stops being clearly one thing, and the core gets less of everyone’s time.",
           "Count kinds, not heads. A new van or a new hire doing the same work for the same kind of customer still deepens; the same people doing other work for another kind of customer still blurs.",
-          "The money in the offer does not decide it. Why it matters: once a business is two things, each new offer looks like the last, and the core that earned the money gets crowded out."] },
+          "The money in the offer does not decide it. Deepens means the offer is worth pricing and testing, as the next lessons show; blurs means turn it down, or reshape it until it serves the core. Why it matters: once a business is two things, each new offer looks like the last, and the core that earned the money gets crowded out."] },
         { kind: "prose", tone: "wrong", text: [
           "“More sales is always good. We can sort out the rest later.”",
           "Maytag, the appliance maker, grew its sales about five times between 1985 and 1994 by adding product lines and buying other brands. Its profit on each dollar of sales, 8 to 12 cents in the 1970s and 1980s, averaged under 1 cent from 1989 to 1995. Judge growth by what it does to the core, not by the sales it adds."] }

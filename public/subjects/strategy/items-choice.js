@@ -29,7 +29,8 @@
     copycat: "It is not just the trade’s usual way.",
     misfit: "A misfit chooses its customers and wins with the wrong thing; this plan goes wrong before that."
   };
-  const PICK_SLIP = { doall: "list-not-choice", everyone: "serve-everyone", dream: "goal-as-strategy", copycat: "better-not-different", headon: "rival-ignored", fronts: "rival-ignored" };
+  // taking a plan that fails, in any of the seven ways, for a real choice: the costly error this lesson counts
+  const NO_CHOICE = "no-choice";
   const SIX = ["doall", "headon", "fronts", "everyone", "dream", "copycat"];
   const FAULTS = [...SIX, "misfit"];
   const thenFor = (right, picks) => Object.fromEntries(picks.filter(t => t !== right).map(t => [t, t === "chooses" || right === "chooses" ? IS[right] : `${NOT[t]} ${IS[right]}`]));
@@ -44,8 +45,8 @@
       blocks,
       asks: [
         { id: "plan", kind: "choose", prompt: "Which plan makes a real choice of where to play and how to win?", options: [
-          { id: "a", text: "Plan 1", ...(goodId === "a" ? { ok: true } : { ...(PICK_SLIP[fault] ? { slip: PICK_SLIP[fault] } : {}), then: goodWhy }) },
-          { id: "b", text: "Plan 2", ...(goodId === "b" ? { ok: true } : { ...(PICK_SLIP[fault] ? { slip: PICK_SLIP[fault] } : {}), then: goodWhy }) }] },
+          { id: "a", text: "Plan 1", ...(goodId === "a" ? { ok: true } : { slip: NO_CHOICE, then: goodWhy }) },
+          { id: "b", text: "Plan 2", ...(goodId === "b" ? { ok: true } : { slip: NO_CHOICE, then: goodWhy }) }] },
         { id: "trap", kind: "choose", prompt: "What is wrong with the other plan?", from: "trap", only: FAULTS, right: fault, then: thenFor(fault, FAULTS) }
       ],
       ...(steps ? { steps } : {}),
@@ -60,7 +61,7 @@
       id, strand: "choice", facets: { scale: "owner" },
       blocks: [plan("a", 1, who, lines)].map(b => ({ ...b, from: `${who}: the plan for the year` })),
       asks: [{ id: "trap", kind: "choose", prompt: "Does this plan make a real choice? If not, what is wrong with it?", from: "trap", only: picks, right,
-        then: thenFor(right, picks), ...(right !== "chooses" && PICK_SLIP[right] ? { slips: { chooses: PICK_SLIP[right] } } : {}) }],
+        then: thenFor(right, picks), ...(right !== "chooses" ? { slips: { chooses: NO_CHOICE } } : {}) }],
       deciding: lines.map((_, i) => `a${i + 1}`),
       reason
     };
@@ -171,7 +172,7 @@
     }),
     alone({
       id: "q10-dream", who: "Joe’s boat rentals",
-      lines: ["We play for the future of the lake and everyone who loves it.", "We win with passion, quality and a smile."],
+      lines: ["We play for the future of the lake.", "We win with passion, quality and a smile."],
       right: "dream",
       reason: "It borrows the form of a choice, but names no customers and no reason anyone would pick Joe over the rental they use now: a dream."
     }),

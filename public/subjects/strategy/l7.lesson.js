@@ -28,9 +28,9 @@ FC.lesson("strategy", {
     { title: "One fund company",
       show: [
         { kind: "prose", text: [
-          "Vanguard’s position: funds that cost investors very little, for people who hold them for years.",
-          "Its funds buy and sell shares rarely, which keeps trading costs down. It does not pay for star fund managers. It sells straight to investors, not through brokers. It spends little on advertising. Staff bonuses are tied to saving costs.",
-          "Each piece serves low cost, and each helps the others: investors who hold for years do not need star managers or constant trading, and selling direct needs less advertising. A rival would have to change all of them at once to match it."] }
+          "In the 1990s, Vanguard’s position was funds that cost investors very little, for people who hold them for years.",
+          "Its funds bought and sold shares rarely, which kept trading costs down. It did not pay for star fund managers. It sold straight to investors, not through brokers. It spent little on advertising. Staff bonuses were tied to saving costs.",
+          "Each piece served low cost, and each helped the others: investors who hold for years do not need star managers or constant trading, and selling direct needed less advertising. A rival would have had to change all of them at once to match it."] }
       ] },
     { worked: "w7-movers" },
     { set: { items: [["p7-tutors", "p7-grooming"], ["p7-cafe", "p7-cafe2"]], order: "listed", support: { shown: true } } },
@@ -39,6 +39,6 @@ FC.lesson("strategy", {
   check: {
     items: ["k7-collectors", "k7-weddings", "k7-tacos", "k7-oldcars", "k7-laundry"],
     feedback: "at-end", order: "shuffle",
-    pass: [{ right: { min: 4 } }, { slip: "better-not-different", max: 0 }]
+    pass: [{ right: { min: 4 } }, { slip: "usual-way-as-fit", max: 0 }]
   }
 });

@@ -45,7 +45,7 @@
       misfit: "a3",
       fix: { right: "Get jobs through piano teachers and piano stores, whose buyers care",
         others: [["Fill the crews’ spare hours with ordinary house moves", "serve-everyone", OTHER],
-          ["Quote as low as the cheapest mover, but move faster", "better-not-different", "Speed and a low price serve owners who want it cheap and quick; these owners pay double for care."]] },
+          ["Quote as low as the cheapest mover, but move faster", "usual-way-as-fit", "Speed and a low price serve owners who want it cheap and quick; these owners pay double for care."]] },
       steps: [
         { id: "position", does: "Read the position: who it serves and what it gives them.", working: "Piano owners who pay double for nothing being damaged." },
         { id: "each", does: "Hold each activity against it.", working: "A crew that has worked together for years, gear made for each piano, full insurance and one job a day all serve care, and each makes the others work. The lowest quote in town serves owners who shop on price, and pulls crews toward rushing to make it pay.", ask: "line" },
@@ -92,7 +92,7 @@
       misfit: "a3",
       fix: { right: "Keep the room quiet, with soft or no music, on work days",
         others: [["Hold live music nights to bring in the crowd from the bar next door", "serve-everyone", OTHER],
-          ["Play the same music as every other cafe on the street, only better chosen", "better-not-different", COPY]] },
+          ["Play the same music as every other cafe on the street, only better chosen", "usual-way-as-fit", COPY]] },
       reason: "People pay to work in quiet, and the plugs, the pass and the call rooms serve that. Loud music pulls against it; a quiet room fits."
     }),
     fit({
@@ -117,7 +117,7 @@
       misfit: "a3",
       fix: { right: "Stock the parts and wheels racers want, fitted by the mechanics",
         others: [["Use the floor for kids’ bikes, which sell all year", "serve-everyone", OTHER],
-          ["Use the floor for a cafe where racers wait for their bikes", null, "Racers might like it, but it does nothing for the fitting and tuning they pay for; parts and wheels the mechanics fit help both."]] },
+          ["Rent the floor to someone else’s cafe", null, "The rent helps the books, but it serves none of the fitting and tuning racers pay for; parts and wheels the mechanics fit help both."]] },
       reason: "Racers pay for fitting and tuning, and the fitting room, the racing mechanics and the race-weekend repairs serve them. A floor of last year’s bikes serves shoppers after a bargain; parts and wheels racers want fit."
     }),
     fit({
@@ -140,7 +140,7 @@
       misfit: "a2",
       fix: { right: "Print each job as soon as it comes in",
         others: [["Take walk-in jobs to fill the evening batch", "serve-everyone", OTHER],
-          ["Run two batches a day, at noon and in the evening", "better-not-different", "Two batches still make a rush order wait for the next one; the firms pay for papers the same day."]] },
+          ["Run two batches a day, at noon and in the evening", "usual-way-as-fit", "Two batches still make a rush order wait for the next one; the firms pay for papers the same day."]] },
       reason: "Firms pay for papers the same day, and the free press, the driver and the direct line serve that. One evening batch is cheap but makes papers wait; printing each job as it comes in fits."
     }),
     fit({
@@ -153,7 +153,7 @@
       misfit: "a2",
       fix: { right: "Keep plumbers on call in shifts, each for his own kitchens",
         others: [["Use the quiet evenings for bathroom remodels", "serve-everyone", OTHER],
-          ["Keep plumbers on call in shifts, and send whichever one is nearest", null, "Any hour fits, but sending any plumber wastes the visits that taught each one a kitchen’s pipes; covering his own kitchens helps both."]] },
+          ["Keep plumbers on call in shifts, and send whichever one is free, whatever kitchen it is", null, "Any hour fits, but a plumber who has never seen that kitchen wastes the visits that taught each one its pipes; covering his own kitchens helps both."]] },
       reason: "Restaurants need a fix at any hour, and the stocked vans, the phone line and the visits serve that. Office hours leave the kitchen shut at night and on weekends; plumbers on call for the kitchens they know fit, and help the visits pay off."
     }),
     fit({
@@ -166,7 +166,7 @@
       misfit: "a3",
       fix: { right: "Open at 6 a.m., when builders pick up parts before work",
         others: [["Open late on weekends for home shoppers", "serve-everyone", OTHER],
-          ["Keep 10 a.m., but staff the tills better than the mall stores", "better-not-different", COPY]] },
+          ["Open at 6 a.m., and close the advice desk to pay for the early staff", null, "The early hour serves builders, but it costs the advice they come for; opening early with the desk staffed helps both."]] },
       reason: "Builders need parts before work, and the advice desk, the odd parts and the phone orders serve them. Opening at 10 a.m. misses their morning; opening at 6 a.m. fits."
     }),
 
@@ -181,7 +181,7 @@
       misfit: "a1",
       fix: { right: "Hire staff who know old books and can value them",
         others: [["Hire staff to run a cafe corner for passers-by", "serve-everyone", OTHER],
-          ["Train the students to look prices up in an online price guide", "better-not-different", "A price guide gives the going price, not the eye that finds and values a rare book; that eye is what collectors come for."]] },
+          ["Train the students to look prices up in an online price guide", "usual-way-as-fit", "A price guide gives the going price, not the eye that finds and values a rare book; that eye is what collectors come for."]] },
       reason: "Collectors come for rare books found and valued, and the estate sales, the written notes and the wish-list calls serve them. Students who cannot tell one old book from another serve none of that; staff who can value old books fit."
     }),
     fit({
@@ -217,7 +217,7 @@
       misfit: "a2",
       fix: { right: "Keep parts for older models, from salvage yards and old dealer stock",
         others: [["Stock this year’s parts and add an oil-change lane for new cars", "serve-everyone", OTHER],
-          ["Stock this year’s parts, and order them faster than the dealers", "better-not-different", COPY]] },
+          ["Stock this year’s parts, and order them faster than the dealers", "usual-way-as-fit", COPY]] },
       reason: "Owners of older cars need parts and know-how for them, and the trained mechanics, the plain advice and the old manuals serve that. Parts for this year’s models do not; parts for older models fit."
     }),
     fit({
@@ -255,7 +255,7 @@
       misfit: "a2",
       fix: { right: "Make each cake for its own order",
         others: [["Sell the batch cakes to walk-in shoppers too", "serve-everyone", OTHER],
-          ["Make bigger batches than the supermarket bakery does", "better-not-different", COPY]] },
+          ["Make bigger batches than the supermarket bakery does", "usual-way-as-fit", COPY]] },
       reason: "Customers pay for a cake made for their party, and the talk and the photos serve that. Morning batches make every cake alike; making each cake for its order fits."
     }),
     fit({
@@ -267,7 +267,7 @@
       misfit: "a2",
       fix: { right: "Keep each crew on its own gardens, and plan the day around them",
         others: [["Use any crew’s spare hours for cheap weekly mowing", "serve-everyone", OTHER],
-          ["Move crews to the nearest job, with better maps than other landscapers", "better-not-different", COPY]] },
+          ["Move crews to the nearest job, with better maps than other landscapers", "usual-way-as-fit", COPY]] },
       reason: "Owners pay for a crew that knows their garden, and the same crew and the plant notes serve that. Moving crews to the nearest job breaks it; keeping each crew on its own gardens fits."
     }),
     fit({

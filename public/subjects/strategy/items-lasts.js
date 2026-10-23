@@ -10,13 +10,13 @@
 (() => {
   const BENEFIT_THEN = {
     price: { cost: "The notes show customers paying more than at rivals, not a cost below theirs.", none: "Customers pay more here than at rivals for the same work: that is a benefit." },
-    cost: { price: "The price is the same as rivals’; what changed is the cost of making it.", none: "It costs less here than at rivals to make the same thing: that is a benefit." },
+    cost: { price: "The difference is in what it costs to make, not in a higher price customers pay.", none: "It costs less here than at rivals to make the same thing: that is a benefit." },
     none: { price: "Customers pay the same as at rivals, so the difference earns no higher price.", cost: "The costs did not change, so the difference saves nothing." }
   };
   const BARRIER_THEN = {
     "only-us": { fit: "It is one thing only this business has, not many activities working together.", switching: "Customers stay because a rival cannot get the thing at all, not because leaving would cost them.", nothing: "A rival cannot get or make one: the notes say why." },
     fit: { "only-us": "Any one piece could be had by a rival; what stops a copy is that it would need all of them.", switching: "Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.", nothing: "A rival would have to copy every piece at once, and give up how it runs now." },
-    switching: { "only-us": "A rival can get the same tools; what holds the customers is what they would lose by leaving.", fit: "It is not a group of activities a rival must copy; it is what customers would lose by leaving.", nothing: "A rival can offer the same, but customers would lose their setup or a record of trust by leaving, and a newcomer cannot buy that." },
+    switching: { "only-us": "A rival can get the same tools; what holds the customers is trust or records built up over years, not one thing only this business could get.", fit: "It is not a group of activities a rival must copy; it is what customers would lose by leaving.", nothing: "A rival can offer the same, but customers would lose their setup or a record of trust by leaving, and a newcomer cannot buy that." },
     nothing: { "only-us": "A rival can buy it, copy it or get the same result another way, so it is not only this business’s.", fit: "Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.", switching: "Customers could move to a rival tomorrow and lose nothing." }
   };
   const BARRIER_SLIP = { "only-us": "copyable-as-lasting", fit: "copyable-as-lasting", switching: "copyable-as-lasting" };
@@ -89,18 +89,18 @@
       lines: [
         ["c1", "Owners pay us $10 more a groom for our blueberry shampoo treatment."],
         ["c2", "We found the shampoo first, at a trade show."],
-        ["c3", "Its maker sells it to any groomer who asks."]],
+        ["c3", "The label on the tub gives the maker’s number for orders from groomers."]],
       benefit: "price", barrier: "nothing", deciding: ["c1", "c3"],
       reason: "Owners pay $10 more for the shampoo, but any groomer can buy it from the maker; finding it first is not a barrier. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "p8-funds", scale: "known", from: "Vanguard: why its funds cost so little", detail: "Business report",
+      id: "p8-funds", scale: "known", from: "Vanguard in the 1990s: why its funds cost so little", detail: "Business report",
       lines: [
-        ["c1", "Vanguard’s funds cost investors very little to own."],
-        ["c2", "It can charge so little because its costs are low: it trades rarely, pays no star managers, sells straight to investors and spends little on advertising."],
-        ["c3", "A rival that sells through brokers and pays star managers would have to change all of that at once to match it."]],
+        ["c1", "In the 1990s, Vanguard’s funds cost investors very little to own."],
+        ["c2", "It could charge so little because its costs were low: it traded rarely, paid no star managers, sold straight to investors and spent little on advertising."],
+        ["c3", "A rival that sold through brokers and paid star managers would have had to change all of that at once to match it."]],
       benefit: "cost", barrier: "fit", deciding: ["c2", "c3"],
-      reason: "Vanguard’s low cost comes from many activities that fit together, and a rival would have to change all of them at once. A benefit and a barrier, so it lasts."
+      reason: "Vanguard’s low cost came from many activities that fit together, and a rival would have had to change all of them at once. A benefit and a barrier, so it lasted."
     }),
 
     lasts({
@@ -128,7 +128,7 @@
       lines: [
         ["c1", "Our new scheduling software cut our driving by a fifth, so each call costs us $15 less."],
         ["c2", "No other plumber in town uses it yet."],
-        ["c3", "It is sold to any plumber for $50 a month."]],
+        ["c3", "The software company advertises it in the plumbers’ trade magazine, at $50 a month."]],
       benefit: "cost", barrier: "nothing", deciding: ["c1", "c3"],
       reason: "The software lowers the cost of each call, but any plumber can buy it for $50 a month. A benefit with no barrier, so it will not last."
     }),
@@ -240,7 +240,7 @@
       lines: [
         ["c1", "A new mover in town bought the same ramps and padded dollies we use."],
         ["c2", "Piano owners still pay us double the house-move rate."],
-        ["c3", "We have moved pianos for 25 years without one damaged, and the piano stores send their buyers only to us."]],
+        ["c3", "We have moved pianos for 25 years without one damaged, and the piano stores send their buyers to us."]],
       benefit: "price", barrier: "switching", deciding: ["c2", "c3"],
       reason: "Owners pay double, and the gear can be bought, but 25 years with no damage, and the stores’ trust that comes with it, cannot. A benefit and a barrier: trust a newcomer cannot buy."
     }),

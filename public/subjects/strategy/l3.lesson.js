@@ -16,7 +16,7 @@ FC.lesson("strategy", {
     { title: "Four numbers for one sale",
       show: [
         { kind: "prose", text: [
-          "Line up four numbers for one sale, from the top down.",
+          "Line up four numbers for one sale, from the top down, on a bar we call the value stick.",
           "The most a customer would pay: what it is worth to them. The price: what they do pay. The cost: what you pay your suppliers and staff to make it. The least your suppliers and staff would take: below that, they would not sell to you or work for you.",
           "The cost and the least they would take are not the same: a cleaner paid $20 an hour who would have worked for $17 keeps $3 an hour more than she needed.",
           "In real life you estimate the two ends. For the most a customer would pay, put the question to customers, watch what they pay a rival for something like it, or try a higher price on a few. For the least staff would take, look at what the same work pays nearby; for a supplier, at what its other buyers pay.",

@@ -32,7 +32,7 @@ FC.lesson("strategy", {
     { title: "Two airlines",
       show: [
         { kind: "pair",
-          a: { kind: "prose", text: "Southwest Airlines did not try to be a full-service airline run more cheaply. It chose to do different things from the full-service airlines, and gave up some of what they offer." },
+          a: { kind: "prose", text: "In the 1990s, Southwest Airlines did not try to be a full-service airline run more cheaply. It chose to do different things from the full-service airlines, and gave up some of what they offer." },
           b: { kind: "prose", text: "Picture an airline that copies the best practice of the full-service airlines: the same service, run with fewer staff and newer software." },
           compare: "Which would a rival find hard to match? Anyone can match the second by buying the same software. To match the first, a full-service airline would have to give up what makes it full-service." }
       ] },

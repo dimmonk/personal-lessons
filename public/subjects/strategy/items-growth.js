@@ -67,9 +67,9 @@
       id: "p9-wheels", from: "Leo’s memo on an offer", detail: "Written in March",
       lines: [
         ["c1", "Fitting and tuning race bikes by hand is why racers come to us, and it earns the most."],
-        ["c2", "A maker of race wheels wants us to be its dealer here; our racers already ask for its wheels."],
+        ["c2", "A maker of race wheels wants us to sell its wheels here, ordered for each racer, not kept in stock; our racers already want them."],
         ["c3", "Our two mechanics would fit them, in the fitting room, as part of a tune."],
-        ["c4", "It would add about $40,000 a year in sales."]],
+        ["c4", "It would add about $200,000 a year in sales."]],
       verdict: "deepens", deciding: ["c2", "c3"],
       reason: "The racers already want the wheels, and the same mechanics fit them in the same room. Same customer, same activities: it deepens the core."
     }),
@@ -78,9 +78,9 @@
       lines: [
         ["c1", "Fitting and tuning race bikes by hand is why racers come to us, and it earns the most."],
         ["c2", "A toy chain wants to rent half our floor for kids’ bikes and scooters, run by its own staff."],
-        ["c3", "It would pay us $30,000 a year in rent."]],
+        ["c3", "It would pay us $8,000 a year in rent."]],
       verdict: "blurs", deciding: ["c2"],
-      reason: "Half the floor would go to kids’ bikes for families, a different customer, in the shop racers come to for fitting. It blurs the position, though the rent is good."
+      reason: "Half the floor would go to kids’ bikes for families, a different customer, in the shop racers come to for fitting. It blurs the position, whatever the rent."
     }),
 
     // ----- the second group (nothing marked) -----
@@ -90,7 +90,7 @@
         ["c1", "Calm grooming at home for old and nervous dogs is what owners come to us for, and it earns the most."],
         ["c2", "A vet in the next town says many of her clients have nervous dogs and no groomer will take them."],
         ["c3", "A second van there would run our way: home visits, one groomer per dog, paid by the day, four dogs a day."],
-        ["c4", "The van costs $60,000."]],
+        ["c4", "The van costs $60,000, and four dogs a day would bring in about $150,000 a year."]],
       verdict: "deepens", deciding: ["c2", "c3"],
       reason: "The new town has the same kind of customer, nervous dogs, and the van would run the same way. It deepens the core, in a new place."
     }),
@@ -99,7 +99,7 @@
       lines: [
         ["c1", "Five tacos in two minutes for factory workers at lunch is what we are known for, and it earns the most."],
         ["c2", "The airport offers us a counter in the main hall, open 18 hours a day."],
-        ["c3", "Travelers want a full menu; the airport asks for at least 30 dishes and seats for 40."]],
+        ["c3", "Travelers want a full menu; the airport wants at least 30 dishes and seats for 40, for a $2,000 yearly fee."]],
       verdict: "blurs", deciding: ["c1", "c3"],
       reason: "A 30-dish menu and seats for 40, open 18 hours for travelers, need different activities for a different customer from five fast tacos at lunch. It blurs the position."
     }),
@@ -126,7 +126,7 @@
       lines: [
         ["c1", "Care from 5 a.m. to 9 p.m. for parents on hospital shifts is what families come to us for, and it earns the most."],
         ["c2", "A second hospital across town has 600 nurses and no daycare near it."],
-        ["c3", "We would open next to it with the same hours and meals, and hire eight new staff for the early and late shifts."]],
+        ["c3", "We would open next to it with the same hours and meals, and hire eight new staff for the early and late shifts; it would double our sales, to $1.2 million."]],
       verdict: "deepens", deciding: ["c2", "c3"],
       reason: "The second hospital has the same kind of parent, and the new place would run the same way; the new hires do the same shift work. It deepens the core, in a new place."
     }),
@@ -136,10 +136,10 @@
       id: "k9-franchise", from: "Mark’s memo on an offer", detail: "Written in January",
       lines: [
         ["c1", "Heavy training with coaches on the floor is why lifters pay us $60 a month, and it earns the most."],
-        ["c2", "A budget gym chain offers to make us one of its gyms, with its sign and its $10 plan."],
+        ["c2", "A budget gym chain offers to make us one of its gyms, with its sign and its $15 plan."],
         ["c3", "It says members would triple; it would need machines in place of half the racks, and fewer coaches."]],
       verdict: "blurs", deciding: ["c2", "c3"],
-      reason: "The chain’s $10 plan needs machines in place of racks and fewer coaches, for a different member. It blurs the position, though members would triple."
+      reason: "The chain’s $15 plan needs machines in place of racks and fewer coaches, for a different member. It blurs the position, though members would triple."
     }),
     growth({
       id: "k9-online", from: "Nina’s memo on a plan", detail: "Written in March",

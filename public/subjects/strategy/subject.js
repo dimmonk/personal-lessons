@@ -10,7 +10,7 @@ FC.subject('strategy', {
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-23",
-      change: "First version, to the plan of 2026-10-22: fourteen parts in five units, the lists, the way questions are sorted and the topics for all fourteen; lessons 1 to 5 built (what a strategy is, better or different, value created and who keeps it, who squeezes the profit, find the core), with the value stick drawn as a figure and the learner's own business lines worked out in lesson 5. Notes for whoever builds lessons 6 to 14: (1) every question carries the facet scale, owner or known, and every group of questions and every check holds at least 0.6 owner questions (the mix); (2) a tap takes the lines of a prose, message or article block, never a document's rows, so a question about a row of a table is a choose that names the rows (lesson 5 does this; lesson 12 should too); (3) the lists benefit, trap, judge and the verdicts of lessons 6, 9 and 13 are worded here from the plan, but the barrier list of lesson 8 is left for its builder to word from research ST9 and ST3; (4) the subject has no danger: the engine's danger is one slip read only by a baseline, and the plan's three costly errors (goal-as-strategy, growth-for-growth, serve-everyone) belong in lesson 14's check as pass rules, each with max 0; (5) the strategy lessons' private form business and its action form are used by lesson 5 and may be read again by lesson 9 or 14 (the work core). Then lessons 6 to 14 built (what you say no to, do the pieces fit, will it last, growth that keeps the position, where to play and how to win, what would have to be true, how others like it did, a bet you can afford, run the six questions), with the barrier list worded from research ST9 and ST3, the base-rate tables made fresh, and lesson 14's check drawn from every topic with the three costly errors as pass rules; the subject is complete. Lessons 1 to 5 after two reviews (docs/subjects/strategy/fixes-l1-5.md): the verdict shrinks and the slip added-cost-missed for lesson 3, where a move is judged by what it adds to the work; the verdict keep and the slip loser-counted taken out, since lesson 5 now asks only fix or let go of a losing line and counts the core's share of all the lines' earnings, losses taken off (research ST19); its opposite, loss-left-out, named instead. All fourteen lessons after two more reviews (docs/subjects/strategy/fixes-l1-14.md): the verdict fits (lesson 6 decides by whether the new work pulls against the old), the barrier switching (lesson 8's list is the common answers, not all), the traps misfit and chooses (lesson 10 tests that where to play and how to win fit), the judge answers reworded (can anyone see people buying it yet; either way the stake stays within what can be lost), the slips plan-first and talk-as-evidence; lesson 14's check is ten new whole decisions, not a draw from items already answered." }
+      change: "First version, to the plan of 2026-10-22: fourteen parts in five units, the lists, the way questions are sorted and the topics for all fourteen; lessons 1 to 5 built (what a strategy is, better or different, value created and who keeps it, who squeezes the profit, find the core), with the value stick drawn as a figure and the learner's own business lines worked out in lesson 5. Notes for whoever builds lessons 6 to 14: (1) every question carries the facet scale, owner or known, and every group of questions and every check holds at least 0.6 owner questions (the mix); (2) a tap takes the lines of a prose, message or article block, never a document's rows, so a question about a row of a table is a choose that names the rows (lesson 5 does this; lesson 12 should too); (3) the lists benefit, trap, judge and the verdicts of lessons 6, 9 and 13 are worded here from the plan, but the barrier list of lesson 8 is left for its builder to word from research ST9 and ST3; (4) the subject has no danger: the engine's danger is one slip read only by a baseline, and the plan's three costly errors (goal-as-strategy, growth-for-growth, serve-everyone) belong in lesson 14's check as pass rules, each with max 0; (5) the strategy lessons' private form business and its action form are used by lesson 5 and may be read again by lesson 9 or 14 (the work core). Then lessons 6 to 14 built (what you say no to, do the pieces fit, will it last, growth that keeps the position, where to play and how to win, what would have to be true, how others like it did, a bet you can afford, run the six questions), with the barrier list worded from research ST9 and ST3, the base-rate tables made fresh, and lesson 14's check drawn from every topic with the three costly errors as pass rules; the subject is complete. Lessons 1 to 5 after two reviews (docs/subjects/strategy/fixes-l1-5.md): the verdict shrinks and the slip added-cost-missed for lesson 3, where a move is judged by what it adds to the work; the verdict keep and the slip loser-counted taken out, since lesson 5 now asks only fix or let go of a losing line and counts the core's share of all the lines' earnings, losses taken off (research ST19); its opposite, loss-left-out, named instead. All fourteen lessons after two more reviews (docs/subjects/strategy/fixes-l1-14.md): the verdict fits (lesson 6 decides by whether the new work pulls against the old), the barrier switching (lesson 8's list is the common answers, not all), the traps misfit and chooses (lesson 10 tests that where to play and how to win fit), the judge answers reworded (can anyone see people buying it yet; either way the stake stays within what can be lost), the slips plan-first and talk-as-evidence; lesson 14's check is ten new whole decisions, not a draw from items already answered. After the round-2 reviews (fixes-l1-14.md, Round 2): the verdict cut-loss, so lesson 5's three outcomes for a losing line are three answers; the slips usual-way-as-fit and no-choice, the costly errors of lessons 7 and 10." }
   ],
   complete: true,
   endResult: "After this you can look at a business decision (expand, add a product, chase a big customer, answer a rival, invest) and tell whether it is a strategy, say where the business makes its money and why, and pick the move that keeps it different in a way rivals cannot copy, when you face that decision in your own business.",
@@ -49,6 +49,7 @@ FC.subject('strategy', {
       { id: "moves", text: "It only moves value from one side to another" },
       { id: "shrinks", text: "It shrinks the value" },
       { id: "fix", text: "Keep it, but fix its price or cost" },
+      { id: "cut-loss", text: "Keep it, and cut its loss as far as you can" },
       { id: "let-go", text: "Let it go" },
       { id: "tradeoff", text: "A real trade-off: one side of the pull given up" },
       { id: "straddle", text: "A straddle: both sides of the pull kept at once" },
@@ -75,7 +76,7 @@ FC.subject('strategy', {
     barrier: [
       { id: "only-us", text: "Only we have it, and a rival cannot get or make one" },
       { id: "fit", text: "It rests on many activities that fit together: a rival would have to copy them all" },
-      { id: "switching", text: "Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy" },
+      { id: "switching", text: "Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here" },
       { id: "nothing", text: "Nothing: a rival can buy it, copy it, or get the same result another way" }
     ],
     // lesson 10: the six ways a plan fails to choose (research ST10)
@@ -106,6 +107,7 @@ FC.subject('strategy', {
       { id: "list-not-choice", text: "took a list of things to do for a strategy" },
       { id: "missed-strategy", text: "missed a real strategy: a challenge, one approach, and actions that fit it" },
       { id: "better-not-different", text: "thought running the business better would fix what needs a different position" },
+      { id: "usual-way-as-fit", text: "kept the trade's usual way where it pulls against the position" },
       { id: "running-as-strategy", text: "took a gap in running the business for a strategy problem" },
       { id: "price-as-value", text: "took the price for the value created" },
       { id: "share-swapped", text: "mixed up whose share is whose" },
@@ -118,6 +120,7 @@ FC.subject('strategy', {
       { id: "growth-for-growth", text: "grew for the sake of growing" },
       { id: "serve-everyone", text: "tried to serve everyone at once, or kept two ways that pull against each other" },
       { id: "copyable-as-lasting", text: "took something a rival can buy or copy for an advantage that lasts" },
+      { id: "no-choice", text: "took a plan that does not really choose where to play and how to win for one that does" },
       { id: "missed-tradeoff", text: "missed a real choice of what not to do" },
       { id: "counted-wrong-group", text: "counted the wrong group in the table" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
@@ -166,7 +169,7 @@ FC.subject('strategy', {
         { id: "name", label: "The line: a product, a customer or a way you sell", type: "text", hint: "For example: wedding cakes" },
         { id: "kind", label: "What kind of line it is", type: "choose", list: "lineKind" },
         { id: "revenue", label: "What it brought in last year", type: "number", unit: "dollars" },
-        { id: "cost", label: "What it cost you directly last year", type: "number", unit: "dollars" }
+        { id: "cost", label: "What it cost you directly last year: its materials, plus the hours your staff spent on it times their pay per hour (rent stays out)", type: "number", unit: "dollars" }
       ]
     },
     actions: {

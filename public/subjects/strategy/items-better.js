@@ -73,7 +73,7 @@
       id: "p-movers", from: "Notes on our moving company", detail: "Written in April",
       lines: [
         ["c2", "We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day."],
-        ["c1", "Every moving company in our area quotes the same hourly rate, give or take $5.", RIVALS],
+        ["c1", "Every moving company in our area quotes the same hourly rate, give or take $5, and has done so for as long as anyone here can remember.", RIVALS],
         ["c3", "Each spring somebody cuts the rate, and the rest of us follow.", "That is what the price fight looks like. The line that settles it says whether running better would help."]],
       settles: "c2", verdict: "position",
       reason: "The company already runs as well as any rival, and customers still choose on price alone. Running better leaves it the same as everyone else, so it needs a different position."
@@ -102,18 +102,18 @@
     story({
       id: "q-gym2", from: "Notes on our gym", detail: "Written in January",
       lines: [
-        ["c1", "Three budget gyms opened within a mile this year, at $10 a month.", RIVALS],
-        ["c2", "Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10."],
+        ["c1", "Three budget gyms opened within a mile this year, at $15 a month, and each one was full of new members within weeks of its opening.", RIVALS],
+        ["c2", "We run as well as they do, on rent as low as any, but the chains buy machines for hundreds of gyms: we cannot get near $15."],
         ["c3", "We charge $45 a month for the same machines and classes.", "That is the price gap. The line that settles it says whether running better would close it."]],
       settles: "c2", verdict: "position",
-      reason: "The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $10. Selling the same machines and classes better will not fix it, so it needs a different position."
+      reason: "The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $15. Selling the same machines and classes better will not fix it, so it needs a different position."
     }),
     story({
       id: "q-roofer", from: "Notes on our roofing company", detail: "Written in July",
       lines: [
         ["c1", "We bid on the same jobs as four other roofers, at about the same price, and have done for twenty years.", RIVALS],
         ["c2", "Their crews have materials delivered to the site; ours drives back to the yard twice a day."],
-        ["c3", "Our jobs take 30% longer than theirs, so we fit fewer jobs into the season and lose money on most fixed-price bids.", "That is the result. Find the line that says why."]],
+        ["c3", "Our jobs run long, so we fit fewer into the season and lose money on most fixed-price bids.", "That is the result. Find the line that says why."]],
       settles: "c2", verdict: "run-better",
       reason: "The other roofers have materials delivered and finish the same jobs faster. That is a gap in running the work, and closing it is running it better."
     }),
@@ -160,7 +160,7 @@
       lines: [
         ["c1", "Our vans drive about 25% more miles a day than they need to, so fuel and drivers’ overtime now take most of what a delivery earns.", "That is the problem. Find the line that shows whether rivals do the same work better."],
         ["c2", "Our drivers plan their own stops on paper.", "That is the cause. Find the line that shows rivals doing the same work better."],
-        ["c3", "Rival couriers let software plan their stops."]],
+        ["c3", "Rival couriers let software plan their stops, and their vans drive no more miles than they need."]],
       settles: "c3", verdict: "run-better",
       reason: "Rivals plan the same kind of stops with software and drive fewer miles. That is a gap in running the business, so running it better fixes it."
     }),
@@ -180,8 +180,8 @@
       id: "k-cafe3", from: "Notes on our cafe", detail: "Written in September",
       lines: [
         ["c1", "Every cafe on our street copies a new drink within a month.", "Copying is real here, but it hits every cafe alike. Find the line that explains why our sales alone fell."],
-        ["c2", "Our sales fell 20% this year, while the other cafes on the street held theirs.", "That is the result. Find the line that says why."],
-        ["c3", "Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5."]],
+        ["c2", "Our sales fell 20% this year, while the other cafes on the street, on the same corner and with the same prices, held theirs.", "That is the result. Find the line that says why."],
+        ["c3", "Reviews say our 8 a.m. line takes 15 minutes; theirs, with the same machines and staff, takes 5."]],
       settles: "c3", verdict: "run-better",
       then: "Copying is real on this street, but the drop is ours alone, and it comes from a slow line that rivals with the same machines do not have.",
       deciding: ["c3", "c2"],

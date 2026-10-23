@@ -45,6 +45,17 @@ Sustainable Strategic Position Requires Trade-offs". Read. Strong.
   new work pulls against the old (judgement call on the plain wording).
 - p. 45: companies that try "to be all things to all customers ... risk confusion in the trenches as employees attempt
   to make day-to-day operating decisions without a clear framework."
+- Added 2026-10-23 (round-2 research review, D17). p. 43-44, where trade-offs come from: "Trade-offs arise for three
+  reasons." First, inconsistencies in image or reputation (a company known for one kind of value loses credibility when it
+  offers another); second, the activities themselves (different positions need different product configurations,
+  equipment, employee behavior, skills and management systems); third, limits on internal coordination and control.
+  Lesson 6's pull covers all three: the same people, hours or room (the second), or customers who would stop believing the
+  promise (the first); the third is left to the strategist and not taught (judgement call on scope).
+- Added 2026-10-23 (round-2 research review, D4): the Southwest of these pages is the 1990s airline. Southwest began
+  charging for checked bags on 28 May 2025 and assigning seats on flights from 27 January 2026 (Southwest's own
+  announcements, as the reviewer reported them; not re-read in this pass). Lessons 2 and 6 date the story "in the 1990s";
+  Vanguard (ST3) is likewise told in the past tense, as Porter described it then, since today most of its funds are bought
+  through other brokerages and it advertises (the reviewer's D5).
 
 **ST3. The test of a position is fit: activities that are consistent with it, reinforce each other, and optimize
 together, so a rival must copy the whole system, not one piece.** Porter (1996), section IV "Fit Drives Both Competitive
@@ -120,6 +131,15 @@ reprint R0801E. Read in full (reprint copy; page labels are the reprint's). Stro
   in downturns, and unions with "considerable supplier power". **Via the research reviewer's search on the passage**
   (docs/subjects/strategy/review-research-l1-5.md, defect 12); my own search found only secondary write-ups, so lesson 4
   uses only the buyers, the rivalry and Paccar's answer, not the unions. Moderate.
+- Added 2026-10-23 (round-2 research review, D16). The same article treats a middleman as a buyer: "Intermediate customers,
+  or customers who purchase but are not the end user (such as assemblers or distribution channels), can be analyzed the same
+  way as other buyers, with one important addition": they gain bargaining power when they can sway the choices of the
+  customers downstream (passage as the reviewer quoted it; I did not re-open the reprint in this pass). Lesson 4 counts a
+  delivery app or a chain store that brings the customers as a buyer.
+- Added 2026-10-23 (round-2 research review, D3). US drug wholesaling is concentrated: three wholesalers (McKesson, Cencora,
+  Cardinal Health) hold over 90% of drug distribution (Morningstar and IBISWorld, as the reviewer cited them; not re-read).
+  Lesson 4's pharmacy report says so, and keeps suppliers weak only because the three compete for each pharmacy's account
+  and a pharmacy can move between them within a week (judgement call on the made town).
 - Teaching consequence (judgement call on scope): the learner needs the five forces as a *question to ask* ("who is
   squeezing the profit out of this business, and why?"), not the full industry analysis an MBA writes.
 
@@ -244,6 +264,8 @@ establishment in the unemployment-insurance records).
   52% and 70% (invented counts set near this record), so the lesson never repeats the myth that most new businesses close
   within a few years; lesson 13 uses "about half are still open after five years" as the wider record a new idea starts
   from. An establishment is one location, so these are shops and offices, close to the owner's "a new shop".
+- Made-case prices kept current (added 2026-10-23, round-2 research review, D20): a budget gym's basic plan is about $15 a
+  month (Planet Fitness's classic plan rose from $10 to $15 in 2024, as the reviewer reported), so the made gyms charge $15.
 
 **ST13. Strategists reason by analogy most of the time; good ones test an analogy on its cause, not its surface.** Gavetti,
 G. & Rivkin, J. W. (2005), "How Strategists Really Think: Tapping the Power of Analogy", *HBR* 83(4), 54-63.
@@ -255,6 +277,13 @@ G. & Rivkin, J. W. (2005), "How Strategists Really Think: Tapping the Power of A
   from similar settings, but following an analogy too orthodoxly can be dysfunctional.
 - Teaching consequence (judgement call, consistent with ST12's reference class): when a case says "it worked for X", the
   learner asks whether the reason it worked for X holds here.
+- **When a rival answers (judgement call, added 2026-10-23 after the round-2 research review, D15).** Lesson 12's rule: a rival
+  answers a move that takes customers it serves when it can follow without changing how it runs; its past behaviour is a
+  clue, not the test. No source states it in these words. It is built from ST2 (without trade-offs "any good idea could and
+  would be quickly imitated", p. 45; a rival does not follow when following would make it give up its own position, the
+  Continental Lite story) and Helmer's counter-positioning (ST9: an incumbent does not copy a newcomer's model when copying
+  would damage its existing business; via summaries, limited). Lovallo and Kahneman's competitor neglect (ST12) supports
+  only that the rival's answer must be weighed.
 
 **ST14. Expert entrepreneurs, unlike MBA students, start from the means they have, risk only what they can afford to
 lose, build with partners, and distrust market forecasts when the future is unknowable.** Dew, N., Read, S., Sarasvathy,

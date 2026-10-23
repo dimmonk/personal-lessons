@@ -147,11 +147,11 @@
       lines: [
         ["c1", "Add a breakfast menu.", STEP],
         ["c2", "Repaint the truck.", STEP],
-        ["c3", "A third of our weekday line gives up and leaves."],
+        ["c3", "A third of our weekday line gives up and leaves, because the wait reaches twenty minutes."],
         ["c4", "Start a loyalty card.", STEP],
         ["c5", "Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had.", STEP]],
       challenge: "c3", verdict: "todo-scattered", deciding: ["c3", "c1", "c4"],
-      reason: "The line about people leaving the line names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list."
+      reason: "The line about people leaving the line names the challenge: a twenty-minute wait drives away the people already in line. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list."
     }),
     kernel({
       id: "q-daycare", from: "Ruth’s plan for her day care", detail: "Written in August",
@@ -191,7 +191,7 @@
       lines: [
         ["c4", "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.", BACKGROUND],
         ["c1", "This year we break $1 million in sales.", TARGET],
-        ["c5", "Most of our work comes from people who saw a kitchen we built for a friend or a neighbor.", BACKGROUND],
+        ["c5", "We have built kitchens in this county for twelve years.", BACKGROUND],
         ["c2", "Be the first name people think of for kitchens in the county.", WISH],
         ["c3", "Every job done on time, every time.", WISH]],
       challenge: null, verdict: "goal", deciding: ["c1", "c2"],
@@ -222,12 +222,12 @@
       id: "k-tutor", from: "Kim’s plan for her tutoring business", detail: "Written in August",
       lines: [
         ["c1", "Free videos now teach what our recorded packs did."],
-        ["c2", "So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.", "That is the approach to the challenge."],
         ["c3", "Start every session with the student’s homework.", STEP],
+        ["c2", "A tutor who checks the student’s own work every week and tells the parent how it is going is what we sell now: a video cannot give that.", "That is the approach to the challenge."],
         ["c4", "Send each parent a short progress note every Friday.", STEP],
         ["c5", "Stop selling the recorded lesson packs.", STEP]],
       challenge: "c1", verdict: "strategy", deciding: ["c1", "c2"],
-      reason: "The first line says what is in the way: free videos took the market for recorded classes. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy."
+      reason: "The first line says what is in the way: free videos took the market for recorded packs. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy."
     }),
     kernel({
       id: "k-diner", from: "Carlos’s plan for his diner", detail: "Written in January",
@@ -244,7 +244,7 @@
       id: "r-movers", from: "Bea’s plan for her moving company", detail: "Written in October",
       lines: [
         ["c1", "Our trucks are booked solid from May to August and half empty the rest of the year."],
-        ["c2", "So we fill the quiet months with work that does not depend on the moving season: storage and office moves.", "That is the approach to the challenge."],
+        ["c2", "Storage and office moves do not depend on the moving season, and they will be our work for the quiet months.", "That is the approach to the challenge."],
         ["c3", "Rent a small warehouse for storage.", STEP],
         ["c4", "Offer offices a weekend move at a lower price from October to March.", STEP]],
       challenge: "c1", verdict: "strategy", deciding: ["c1", "c2"],

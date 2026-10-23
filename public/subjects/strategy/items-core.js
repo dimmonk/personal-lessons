@@ -13,6 +13,17 @@
   const money = n => (n < 0 ? "−$" : "$") + Math.abs(n).toLocaleString("en-US");
   const pct = n => `${Math.round(n * 10) / 10}%`;
   const KIND = { product: "by product", customer: "by customer", channel: "by way of selling" };
+  // what a wrong verdict is told, by the right one: the order of the rule (a price or cost change first, then a tie to the core)
+  const VERDICT_THEN = {
+    fix: { "cut-loss": "The notes show a price or cost change that could make it pay, so its loss need not be kept: fix it first.",
+      "let-go": "The notes show a price or cost change that could make it pay: try that before dropping it." },
+    "cut-loss": { fix: "The notes say no price or cost change would make it pay, so fixing it is not open; it brings the core’s customers or comes with the core, so keep it and cut its loss.",
+      "let-go": "The notes say it brings the core’s customers or comes with the core, so dropping it would cost the core too. Keep it and cut its loss." },
+    "let-go": { fix: "No price or cost change in the notes would make it pay, so there is nothing to fix.",
+      "cut-loss": "Nothing in the notes ties it to the core, so keeping its loss buys the core nothing." }
+  };
+  // the notes come in an order that changes from table to table, so where a note sits never tells what it settles
+  const NOTE_ORDER = [([a, b, c]) => [a, b, c], ([a, b, c]) => [b, c, a], ([a, b, c]) => [c, a, b]];
   function core({ id, who, kind, lines, coreId, loser, tied, canFix, fixable, distinct, fact, scale = "owner" }) {
     const rows = lines.map(([rid, name, revenue, cost]) => ({ rid, name, revenue, cost, earns: revenue - cost }));
     const top = rows.reduce((a, b) => (b.earns > a.earns ? b : a)), biggest = rows.reduce((a, b) => (b.revenue > a.revenue ? b : a));
@@ -22,7 +33,7 @@
     const made = earning.reduce((n, r) => n + r.earns, 0), net = rows.reduce((n, r) => n + r.earns, 0), sales = rows.reduce((n, r) => n + r.revenue, 0);
     const share = theCore.earns / net * 100, onlyEarning = theCore.earns / made * 100, ofSales = theCore.revenue / sales * 100;
     [onlyEarning, ofSales].forEach(t => { if (Math.abs(t - share) <= 1) throw new Error(`strategy ${id}: a trap within 1 of the share`); });
-    const keep = canFix || tied;
+    const verdict = canFix ? "fix" : tied ? "cut-loss" : "let-go";
     if (typeof canFix !== "boolean" || typeof tied !== "boolean" || !fixable) throw new Error(`strategy ${id}: a losing line needs canFix, tied and fixable`);
     const verdictWords = canFix ? "a price or cost change could make it pay: keep it and fix it"
       : tied ? "no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss"
@@ -33,7 +44,7 @@
     return {
       id, strand: "core", facets: { scale },
       blocks: [{ kind: "document", form: "table", title: `${who}: last year, ${KIND[kind]}`, head: ["Line", "Brought in", "Direct cost"],
-        rows: rows.map(r => ({ id: r.rid, cells: [r.name, money(r.revenue), money(r.cost)] })), notes: [distinct, fixable, fact] }],
+        rows: rows.map(r => ({ id: r.rid, cells: [r.name, money(r.revenue), money(r.cost)] })), notes: NOTE_ORDER[[...id].reduce((n, c) => n + c.charCodeAt(0), 0) % 3]([distinct, fixable, fact]) }],
       asks: [
         { id: "core", kind: "choose", prompt: "Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?", shuffle: true,
           options: rows.map(r => r.rid === theCore.rid ? { id: r.rid, text: r.name, ok: true }
@@ -42,16 +53,15 @@
           traps: [
             { slip: "sales-not-profit", value: ofSales, then: "That is its share of the sales. The share that counts is of what the lines earn after their direct costs." },
             { slip: "loss-left-out", value: onlyEarning, then: `That leaves out the loss on ${losers}. Take it off the total: the share then shows what the losing lines cost the rest.` }] },
-        { id: "verdict", kind: "choose", prompt: `What should the owner do with ${lost.name}, which loses money?`, from: "verdict", only: ["fix", "let-go"], right: keep ? "fix" : "let-go",
-          then: keep ? { "let-go": canFix ? "The notes show a price or cost change that could make it pay: try that before dropping it." : "The notes say it brings the core’s customers or comes with the core, so dropping it would cost the core too. Keep it and cut its loss." }
-            : { fix: "No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need." } }],
+        { id: "verdict", kind: "choose", prompt: `What should the owner do with ${lost.name}, which loses money?`, from: "verdict", only: ["fix", "cut-loss", "let-go"], right: verdict,
+          then: VERDICT_THEN[verdict] }],
       steps: [
         { id: "core", does: "Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.",
           working: `${rows.map(r => `${r.name}: ${money(r.earns)}`).join("; ")}. ${plain ? `${top.name} earns the most, but rivals sell it the same way; ${theCore.name} is what customers come here for` : `${theCore.name} earns the most${biggest.rid !== theCore.rid ? `, though ${biggest.name} brings in more` : ""}, and it is what customers come here for`}.`, ask: "core" },
         { id: "share", does: "Divide what the core earns by what all the lines earn together, losses taken off.", working: `${money(theCore.earns)} ÷ ${money(net)} = ${pct(share)}. The loss on ${losers} is taken off the total${share > 100 ? "; the part above 100% is what the losing lines cost the rest" : ""}.`, ask: "share" },
         { id: "verdict", does: "Decide on the line that loses money: could a price or cost change make it pay? If not, does it bring the core’s customers or come with the core?", working: `${fixable} ${fact} So: ${verdictWords}.`, ask: "verdict" }],
       deciding: [theCore.rid, lost.rid, ...(plain ? [top.rid] : [])],
-      reason: `${theCore.name} is what customers come here for and earns ${money(theCore.earns)}, ${pct(share)} of what the lines earn together${plain ? `; ${top.name} earns more, but rivals sell it the same way` : biggest.rid !== theCore.rid ? `, more than ${biggest.name} with its bigger sales` : ""}: that is the core. ${lost.name} loses ${money(-lost.earns)}: ${verdictWords}.`
+      reason: `${theCore.name} is what customers come here for and earns ${money(theCore.earns)}, ${pct(share)} of what the lines earn together${share > 100 ? ` (over 100% because the losing lines take ${money(made - net)} back)` : ""}${plain ? `; ${top.name} earns more, but rivals sell it the same way` : biggest.rid !== theCore.rid ? `, more than ${biggest.name} with its bigger sales` : ""}: that is the core. ${lost.name} loses ${money(-lost.earns)}: ${verdictWords}.`
     };
   }
 
@@ -69,11 +79,11 @@
       fact: "Tree trimming comes mostly from one-off calls by people who are not our garden design clients." }),
     core({ id: "p-printers", who: "Omar’s print shop", kind: "customer", lines: [["b1", "Walk-in customers", 70000, 62000], ["b3", "The school district", 35000, 21000], ["b4", "Six restaurants", 18000, 22000], ["b2", "Three law firms", 50000, 22000]],
       loser: "b4", tied: false, canFix: true, fixable: "We charge the restaurants less than half what other shops charge for menus, and they say they would pay the going rate.",
-      distinct: "The law firms use us because we print court papers to the court’s rules overnight, which no other shop in town does.",
+      distinct: "“Nobody else in town will print court papers to the court’s rules overnight,” one law firm told Omar.",
       fact: "The restaurants buy nothing from us but their menus, and none of them sends us any other work." }),
     core({ id: "p-tutors", who: "Kim’s tutoring business", kind: "product", lines: [["b1", "Sessions in the family’s home", 60000, 30000], ["b2", "Online sessions over video", 40000, 16000], ["b3", "Group classes at the library", 25000, 29000], ["b4", "Summer camp", 30000, 24000]],
       loser: "b3", tied: true, canFix: false, fixable: "The library caps what a class may charge, and the tutor’s hours cannot be cut.",
-      distinct: "Families tell us they pick us because the tutor comes to the house; no other tutoring service in town does.",
+      distinct: "“We tried two other services, and only you send the tutor to the house,” one parent wrote; most families say the same.",
       fact: "Most families who book sessions at home found us through the library classes, and keep their child in both." }),
     core({ id: "p-lube", who: "Nina’s auto repair shop", kind: "product", coreId: "b2", lines: [["b1", "Oil changes while you wait", 120000, 80000], ["b2", "Brake and engine work", 80000, 48000], ["b3", "Tire sales and fitting", 50000, 44000], ["b4", "Car wash", 10000, 13000]],
       loser: "b4", tied: false, canFix: false, fixable: "The automatic wash on the corner charges $8 for a wash that costs us $11 to do.",
@@ -96,7 +106,7 @@
 
     core({ id: "q-courier", who: "Hal’s delivery service", kind: "customer", lines: [["b1", "Pharmacies", 60000, 30000], ["b2", "Restaurants", 40000, 52000], ["b3", "Florists", 20000, 15000], ["b4", "One-off senders", 25000, 32000]],
       loser: "b2", tied: false, canFix: true, fixable: "Restaurants pay us $6 a run, while the other couriers charge them $11; they told Hal they would pay $10 to keep him.",
-      distinct: "Pharmacies use Hal because he carries medicine at the right temperature and signs for every package, which no other courier here does.",
+      distinct: "The pharmacies tried the other couriers first; none would keep medicine cold or sign for every package, and Hal does both.",
       fact: "The restaurants send us nothing but their own deliveries." }),
 
     // ----- the check -----
@@ -106,7 +116,7 @@
       fact: "Car wash customers come only for the wash." }),
     core({ id: "k-flowers", who: "June’s flower shop", kind: "customer", lines: [["b4", "Hotel lobbies", 15000, 20000], ["b1", "Walk-in shoppers", 70000, 60000], ["b3", "Funeral homes", 30000, 20000], ["b2", "Wedding couples", 45000, 18000]],
       loser: "b4", tied: true, canFix: false, fixable: "The hotels’ contracts fix our price for three more years.",
-      distinct: "Couples choose June for wedding flowers no other florist in town arranges.",
+      distinct: "Couples who book June say they looked at every florist in town and found nobody else who arranges flowers her way.",
       fact: "The hotels whose lobbies we do send us most of our wedding couples." }),
     core({ id: "k-pipes", who: "Ray’s plumbing business", kind: "product", lines: [["b1", "Emergency calls, day or night", 60000, 30000], ["b2", "New bathrooms", 100000, 88000], ["b3", "Water heaters put in", 40000, 32000], ["b4", "Drain cleaning by the month", 15000, 19000]],
       loser: "b4", tied: true, canFix: true, fixable: "Other plumbers charge a third more than we do for monthly drain cleaning.",

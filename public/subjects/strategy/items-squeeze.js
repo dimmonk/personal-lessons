@@ -45,13 +45,13 @@
       id: "w-pharmacy", source: "Valley Business Journal · Trade report", headline: "Small-town pharmacies: the year in review",
       lines: [
         ["c1", "There are four pharmacies in town, and none has opened or closed in ten years.", "rivals", "The four have been there ten years and nobody new arrives, so rivals and newcomers are calm."],
-        ["c2", "Drug wholesalers are many, and a pharmacy can switch from one to another within a week.", "suppliers", "Wholesalers are many and easy to switch, so suppliers have little hold."],
+        ["c2", "Three big wholesalers sell nearly all the drugs, but they compete for each pharmacy’s account, and a pharmacy can move to another of them within a week.", "suppliers", "The wholesalers compete for each account and a pharmacy can move within a week, so suppliers have little hold."],
         ["c3", "Most prescriptions are paid for by three drug-benefit companies acting for the insurance plans, and they decide what they pay; a pharmacy that refuses their rate loses those customers.", "buyers"],
         ["c4", "Mail-order pharmacies fill a small share, mostly drugs taken for years.", "substitutes", "Mail order takes only a small share, so it caps little."]],
       settles: "c3", right: "buyers",
       steps: [
         { id: "line", does: "Find the line that shows who takes the money, and why.", working: "The third line: three drug-benefit companies pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.", ask: "line" },
-        { id: "force", does: "Check the other forces are weak, then name the one that takes the money.", working: "No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three drug-benefit companies, take the money.", ask: "force" }],
+        { id: "force", does: "Check the other forces are weak, then name the one that takes the money.", working: "No pharmacy has opened or closed in ten years, the wholesalers compete for each account, and mail order fills a small share. So the buyers, the three drug-benefit companies, take the money.", ask: "force" }],
       reason: "Three drug-benefit companies pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into."
     }),
 
@@ -140,9 +140,9 @@
     squeeze({
       id: "q-dogs", source: "Northside Business Weekly · Trade report", headline: "Dog walking: more dogs, more walkers",
       lines: [
-        ["c1", "Demand for dog walking in the city grew 20% last year.", null, GROWTH],
-        ["c2", "Owners stick with a walker they trust and rarely switch.", "buyers", "Owners rarely switch, so buyers have little pull here."],
-        ["c3", "Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.", "entrants"]],
+        ["c1", "Demand for dog walking in the city grew 20% last year, as more people got dogs and went back to the office.", null, GROWTH],
+        ["c2", "Most owners have used the same walker for over a year, and trust the walker with the house from the first visit.", "buyers", "Owners stay with one walker, so buyers have little pull here."],
+        ["c3", "Anyone with a phone can walk dogs: 300 new walkers joined this year, and the going rate fell from $25 to $18.", "entrants"]],
       settles: "c3", right: "entrants", growthTo: "entrants",
       claim: "Leo says: “Dog walking grew 20% last year, so it is a great business to be in.”",
       reason: "Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them, and it goes to them."
@@ -150,8 +150,8 @@
     squeeze({
       id: "q-linens", source: "Harbor Business News · Trade report", headline: "Hotel laundries: a quote every week",
       lines: [
-        ["c1", "The two laundries in town that take hotel work have charged about the same for years, and neither cuts on its own.", "rivals", "Two laundries that do not start price cuts: rivals are calm."],
-        ["c2", "Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week, and switching costs a hotel nothing.", "buyers"],
+        ["c1", "The two laundries in town that take hotel work each run two shifts, and their prices sit within a dollar of each other’s.", "rivals", "Two laundries with prices close together, and no line shows them fighting: rivals are not what takes it."],
+        ["c2", "Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week.", "buyers"],
         ["c3", "Soap, water and machines cost what they did last year.", "suppliers", "Supplies cost the same, so suppliers have little hold."]],
       settles: "c2", right: "buyers",
       reason: "Four big hotels move their sheets every week to the lowest quote, at no cost to switch: the buyers push the price down and take the money."
@@ -188,9 +188,9 @@
     squeeze({
       id: "k-detail", source: "Lakeshore Business Report · Trade report", headline: "Mobile car detailing: the fastest-growing trade in the county",
       lines: [
-        ["c1", "Detailing jobs booked in the county grew 40% last year.", null, GROWTH],
-        ["c2", "Car owners who find a detailer they like book the same one again and rarely switch.", "buyers", "Owners rarely switch, so buyers have little pull here."],
-        ["c3", "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs.", "entrants"]],
+        ["c1", "Detailing jobs booked in the county grew 40% last year, as more people kept their cars longer instead of buying new ones.", null, GROWTH],
+        ["c2", "Most car owners book the same detailer every spring and fall, and few get a second quote before they book.", "buyers", "Owners stay with one detailer, so buyers have little pull here."],
+        ["c3", "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less.", "entrants"]],
       settles: "c3", right: "entrants", growthTo: "entrants",
       claim: "Rosa says: “Detailing grew 40% last year, so it is a great business to be in.”",
       reason: "A van, a pressure washer and a phone are enough to start, and eleven newcomers charge less: newcomers take the money. The growth is what drew them, and it goes to them."
@@ -207,18 +207,18 @@
     squeeze({
       id: "k-sandwich", source: "State Business Journal · Trade report", headline: "Sandwich franchises and their supplier",
       lines: [
-        ["c2", "Lunch customers come back most weekdays and pay the menu price without haggling.", "buyers", "Customers pay the menu price and keep coming, so buyers have little hold."],
-        ["c3", "A new shop under the franchise needs the franchise owner’s say-so, and none has opened in town in four years.", "entrants", "No newcomers open, so they are not the problem."],
-        ["c1", "Each shop’s contract makes it buy its bread, meat and paper goods from the franchise owner, which sets the prices and raised them 15% this year.", "suppliers"]],
+        ["c2", "Lunch customers come back most weekdays, many from the offices nearby, and the menu price has gone up twice since they started coming.", "buyers", "Customers keep coming as the price rises, so buyers have little hold."],
+        ["c3", "A new shop under the franchise needs the franchise owner’s say-so; the owner picks where each shop in the county goes.", "entrants", "Newcomers need the owner’s say-so, so they are not the problem."],
+        ["c1", "Each shop’s contract makes it buy bread, meat and paper goods from the franchise owner, who raised prices 15% this year.", "suppliers"]],
       settles: "c1", right: "suppliers",
       reason: "Each shop must buy its supplies from the franchise owner at the prices it chooses, and it raised them 15%: the supplier takes the money."
     }),
     squeeze({
       id: "k-coffee", source: "Elm Street Business Weekly · Trade report", headline: "Cafes on Elm Street: a year of cheaper lattes",
       lines: [
-        ["c1", "Bean prices rose 10% this year, which adds about 3 cents to a $4 cup.", "suppliers", "Beans cost more, but 3 cents a cup is small beside a 75-cent price cut."],
-        ["c2", "Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others.", "rivals"],
-        ["c3", "No new cafe has opened on Elm Street in three years; the leases are all taken.", "entrants", "No newcomers can get a lease, so they are not the problem."]],
+        ["c1", "Bean prices rose 10% this year, which adds about 3 cents to each $4 cup, the cafes’ roaster says in its new price list.", "suppliers", "Beans cost more, but 3 cents a cup is small beside a 75-cent price cut."],
+        ["c2", "Six cafes on Elm Street sell the same drinks; this year they cut a latte from $4 to $3.25, matching each other.", "rivals"],
+        ["c3", "Every shop front on Elm Street is leased, most for ten years or more, to the same cafes and stores as three years ago.", "entrants", "No newcomer can get a lease, so they are not the problem."]],
       settles: "c2", right: "rivals",
       reason: "The six cafes cut a latte by 75 cents, matching each other, while dearer beans add only 3 cents a cup: the rivals take far more than the suppliers."
     }),

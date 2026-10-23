@@ -276,3 +276,170 @@ and `node tools/option-lengths.mjs strategy` (every lesson passes) were.
 - The pre-commit hook runs the lesson tier, and it was red mid-pass (the lock; a list entry committed before its items), so later
   commits used `--no-verify`; fork A's lesson 1 to 5 changes landed inside commit 9f03b29, labelled lesson 8, and fork C's lesson 12
   files inside 36b6bcb, labelled lesson 7. The lock (`npm run lock`) must be rerun: every lesson changed.
+
+## Round 2 (2026-10-23)
+
+Reviews: `review-learner-l1-14-round2.md` (L, e.g. L5-1) and `review-research-l1-14-round2.md` (D1 to D23). As in round 1, the
+validator, the lock, the tests, the browser checks and the learner-view renderer were not run (the owner's Mac was overloaded);
+`node --check` on every changed file and `node tools/option-lengths.mjs strategy` (every lesson passes) were. The learner views in
+`docs/learner-view/` are therefore older than this round; rerun the renderer, `npm run lock` and the validator before shipping.
+
+### Lesson 1
+- **L1-1 (Sam's food truck: a number with no cause marked as the challenge).** The line now gives its cause ("because the wait
+  reaches twenty minutes"), and the reason says the same.
+- **L1-2 (strategy approaches signposted by "So", "Our answer", "From now on").** Two approaches reworded with no signpost
+  (k-tutor, r-movers), and in k-tutor the approach no longer follows the challenge (a step comes between).
+- **L1-3 (the "one limit" paragraph had no example).** One example added: pizzas at 40 minutes beside the shop next door's 15 with
+  the same ovens is fixed by a faster kitchen.
+- **L1-4 (Lena's background line read as a dependence).** Now "We have built kitchens in this county for twelve years."
+- **D21.** "recorded classes" is "recorded packs", as in the line.
+
+### Lesson 2
+- **L2-1 (the settling line longest).** Measured every tap in the subject (scratch script). Settling lines shortened (q-gym2,
+  k-cafe3) and background lines lengthened (p-movers, q-gym2, k-cafe3); in lesson 2 the settling line is now the longest in 3 of 16 and the shortest in 3.
+- **L2-2 (two questions test one decision).** Disputed, as in round 1 (L2.5): the tap names the fact, the verdict names what it
+  means; the field (ST16) asks the kind of problem first, and the tap is what makes the verdict more than a coin toss.
+- **L2-3 ("position" never defined).** Disputed: step 1 already says "A different position means doing different things from your
+  rivals, or the same things in a different way, for customers who want that."
+- **D8 (roofing: the 30% line also shows rivals doing better).** Reworded so it compares with no one: "Our jobs run long".
+- **D9 (courier: the settling line did not say rivals do better).** "...and their vans drive no more miles than they need."
+- **D4 (Southwest).** Dated "In the 1990s" here and in lesson 6; the 2025-26 changes are in the research note (ST2).
+- **D20 (gym prices).** Every made budget gym is $15 a month (lessons 2, 6, 9, 14); recorded in the note (ST20 block).
+
+### Lesson 3
+- **L3-1 (eight arithmetic sets).** Disputed: the sets are the plan's practice of the four numbers (the generator), spaced across
+  practice and check; the verdict questions already outnumber them in the second group. Not cut.
+- **L3-2 (the value stick never named as a bar).** Step 1's first line: "...on a bar we call the value stick."
+- **L3-3 (staff who stay at the same pay: generic feedback).** p-week and k-schedule now say why "only moves" is wrong ("The pay did
+  not change, but the least ... would take did"); the move builder takes an item's own `then`.
+- **L3-4 (no feedback for an untrapped wrong number).** Disputed: the item's reason after every answer gives all four numbers and
+  the value and each share, which is the "start from the four numbers" fallback.
+- **D22.** No change, as the reviewer said (no state is named).
+
+### Lesson 4
+- **L4-1 (decoys announce their weakness).** Six decoy lines rewritten as neutral facts the learner must judge (q-linens, k-sandwich
+  twice, k-coffee, q-dogs, k-detail), and four settling lines shortened, so the settling line is no longer the longest in those.
+- **L4-2 (tap then force).** Disputed: same reason as L2-2; the tap is the evidence (Porter's "dig into the strongest force").
+- **L4-3 (Paccar).** Already as the fix asks: the prompts say "the force Paccar stepped around" and "Which one did Paccar step
+  around by choosing its customers?"
+- **D3 (drug wholesalers are not many).** The worked report: "Three big wholesalers sell nearly all the drugs, but they compete for
+  each pharmacy's account, and a pharmacy can move to another of them within a week"; the working says the same. Fact added to
+  the note (ST6) with the reviewer's sources.
+- **D16 (a middleman counts as a buyer had no passage).** Porter (2008) on intermediate customers added to ST6.
+
+### Lesson 5
+- **D1 (marked "fix its price or cost" where the feedback says no change would make it pay) and D19 (typo).** Root: the rule has
+  three outcomes and the answer list had two. New verdict `cut-loss` ("Keep it, and cut its loss as far as you can"); the answer is
+  `fix` when a price or cost change could make it pay, else `cut-loss` when the line is tied to the core, else `let-go`, and every
+  wrong pick has its own line from one table (`VERDICT_THEN`), so each marked answer matches its feedback. Kim's library classes,
+  Priya's delivery app, June's hotel lobbies and r-bikes now key `cut-loss`. Lesson 14's festival stand offers all three. The
+  typo "could ... could make it pay" fixed.
+- **L5-1 (a share over 100% unexplained in the item).** The reason adds "(over 100% because the losing lines take $X back)" when it
+  passes 100%.
+- **L5-2 (the distinctive line named in the first note in set words).** Four notes reworded as a customer's remark or a story
+  (p-tutors, p-printers, q-courier, k-flowers).
+- **L5-3 (notes in a fixed order).** The three notes now come in one of three orders, by table, so place never tells what a note
+  settles. A partial tie is not added: the rule has no "partly tied" outcome, and a half-tie would make two answers defensible.
+- **L5-4 (direct cost on one's own books).** The own form's cost label now says how: materials, plus the staff's hours on the line
+  times their pay per hour, rent left out.
+- **L5-5 (twelve repeats; two distinctive lines).** Disputed: the repeats are the practice the plan asks for, and the lines vary in
+  kind (product, customer, way of selling) and trap; a table with two distinctive lines is the top-earner case already taught.
+
+### Lesson 6
+- **L6-1 (wording gives the verdict).** Partly fixed through L6-2 and L6-3; otherwise disputed: a trade-off is the act of dropping
+  a side, so the plan has to say what it drops, and a straddle has to say what both sides share.
+- **L6-2 (Sam's diner: no visible pull).** The line now says breakfast orders keep the grill full until close.
+- **L6-3 (Tom's cut read as a trade-off).** The cut is one short shelf of odd parts; everything else for builders stays.
+- **L6-4 (is a trade-off wise?).** Step 1: "This sorts the move, not whether it is wise: a trade-off can still give up the side
+  worth more."
+- **D17 (pull narrower than Porter's three sources).** Porter's three sources added to ST2; step 1's pull now includes customers who
+  would stop believing the promise (a luxury shop selling cheap goods), and "no pull" needs the promise unharmed. Step 1 was cut
+  elsewhere (one example, one list entry, a shorter opening) so the lesson's reading is shorter than before, inside the 35%.
+
+### Lesson 7
+- **L7-1 and D6 (pass rule was lesson 2's).** New slip `usual-way-as-fit` ("kept the trade's usual way where it pulls against the
+  position"), carried by every "usual way done harder" option in the lesson; the check counts it, max 0.
+- **L7-2 (stray "The text does give one").** Root: the engine's line for a wrong "none" button (`SAY.tapThereIsOne`, view.js) was
+  worded for a challenge. It now reads "One of the lines is the answer: it is marked above.", which fits every subject (the debating
+  review had flagged the same line).
+- **L7-3 (the misfit contradicts a word of the position).** Disputed: the position is the fact the activities are held against
+  (ST3, first-order fit); hiding it would test guessing the position, not fit.
+- **L7-4 (fixed distractor template).** q7-builders now has a distractor that serves the position but fights another activity
+  (open at 6 a.m. by closing the advice desk); q7-racers' third option is renting the floor out.
+- **L7-5 (Leo's cafe could help).** Replaced with renting the floor to someone else's cafe, which serves none of the fitting.
+- **D10 (Ray: "nearest plumber" defensible).** Now "whichever one is free, whatever kitchen it is".
+- **D5 (Vanguard in the present tense).** Lesson 7's step and lesson 8's report are in the past tense, "In the 1990s".
+
+### Lesson 8
+- **L8-1 (notes echo the options).** Two "sold to any" lines rewritten as plain facts the learner must read (the tub's label gives
+  the maker's number for groomers; the software is advertised in the trade magazine). The "Nothing" decoys that sound like barriers
+  were already there (first in the county, a two-year waiting list, months to choose).
+- **L8-2 (size and know-how with no option).** The sentence is dropped; step 1 still names size as one of the others the list
+  leaves out.
+- **L8-3 and D11 (Hal: stores sending buyers "only to us").** "only" removed; the barrier answer now leads with trust ("Trust built
+  over years that a newcomer cannot buy, or customers' records and setup kept here"), and step 1 and the "only us" feedback say a
+  record of trust is not one thing a rival could get.
+- **L8-4 (Rosa: the rival already runs the same way).** Disputed: step 1 states it as its own sentence ("That stops only a rival
+  that runs another way").
+- **D7 (Vanguard's benefit feedback said its price equals rivals').** Root: the generic line for a cost benefit. It now says "The
+  difference is in what it costs to make, not in a higher price customers pay", true of every cost item.
+
+### Lesson 9
+- **L9-1 (two options).** Disputed: the field's question (ST4) has two answers, and a third "check first" verdict is not one; each
+  item also needs the core named in its first line.
+- **L9-2 (money predicts the verdict).** Big figures now on three deepening offers ($200,000 of wheels, a $150,000-a-year van,
+  doubled sales to $1.2 million) and small ones on two blurring offers ($8,000 of rent, a $2,000 fee).
+- **L9-3 (what to do after the verdict).** Step 1: deepens means worth pricing and testing; blurs means turn it down or reshape it.
+- **L9-4 (Leo as a dealer).** The wheels are ordered for each racer, not stocked.
+- **D18.** No lesson change, as the reviewer said.
+
+### Lesson 10
+- **L10-1 (pass rule was lesson 6's).** New slip `no-choice` ("took a plan that does not really choose where to play and how to
+  win for one that does"), carried by every wrong plan pick; the check counts it, max 0.
+- **L10-2 (Joe: dream and something for everyone).** "and everyone who loves it" removed.
+- **L10-3 (six traps, seven answers).** Step 1 names the seventh failure, the misfit.
+- **L10-4 (repeated trap feedback).** Disputed: each wrong trap already gets its own first sentence ("It does not reach for every
+  kind of customer.") before the line naming the right trap.
+
+### Lesson 11
+- **L11-1 and D2 (Jill: chosen after one test).** The memo now says the night room's other conditions were tested next and hold
+  (staff signed for night shifts, the state approved night hours); the answer reads "its conditions held".
+- **L11-2 (signal words).** Disputed: "a fact against" and "talk" are what the learner must recognize in real memos; the lesson's
+  pair already contrasts talk with a fact against, and Omar's line (L11-3) now needs the reading, not a signal word.
+- **L11-3 (Omar's drive needs arithmetic).** The line adds that the rush papers are ready only at 4.
+
+### Lesson 12
+- **L12-1 (three skills in one lesson).** Disputed: the plan joins the record, the rival's answer and the borrowed example as the
+  three parts of ST12/ST13's outside view; splitting changes the plan's fourteen parts.
+- **L12-2 (decoys always "near 100%").** The generated tables' second decoy is now "Near 50%: a new X either makes it or it does
+  not", with its own feedback.
+- **L12-3 (the reason handed over as "It worked because").** Three of six lines now state what happened, and the learner reads the
+  reason from it (q12-texts, k12-parents, the piano mover).
+- **L12-4 (Leo's rival).** The line says the kids' bikes go to the same families.
+- **D15 (rule for when a rival answers had no passage).** Added to the note after ST13 as a judgement call built on ST2 and Helmer's
+  counter-positioning (ST9).
+
+### Lesson 13
+- **L13-1 (how to find what you could lose).** Step 1 gives the method: the cash you hold, less a few months of household bills
+  and of the business's own bills and loans.
+- **L13-2 (sizing answer by arithmetic).** Disputed in part: Sam's diner (a case where even the smallest stake is over the limit,
+  "not now") is already in the lesson.
+- **L13-3 (a trial "would only delay").** Both lines now say the trial adds little and costs a season.
+- **L13-4 (mixed case late).** Disputed: the step-1 pair (bakery and dog cakes) already shows both kinds side by side; Ben's mixed
+  case is practice after it.
+- **D23.** "new US shops and offices", as in lesson 12.
+
+### Lesson 14
+- **L14-1 (Ray: no working day).** The note says the groomers work an eight-hour day; the reason compares nearly nine hours with it.
+- **L14-2 (Rosa's $3 price not taught).** The question is now where the extra charge must sit for both sides to gain: between the
+  $1.50 of added work and the $4.50 customers would pay, which lesson 3's stick teaches; the reason uses the $4 she tried.
+- **L14-3 (each check question names its tool).** Disputed: six of the ten check cases end in an open "What should the owner do?",
+  answered only by choosing which of the six questions settles it; naming the first question in each is the plan's design (P25),
+  so the check counts the move, not the recall of which question comes first.
+- **L14-4 (Omar's contract and the firms).** The line says the contract is what lets him file the firms' papers the same day.
+- **D12 (Lupe's truck was a trial).** The smaller stake is now part of the same project: a small rented counter in the next town,
+  the same tacos, $55,000; the reason says it is the project cut down to fit what she can lose.
+- **D13 (Priya's chosen position rests on a copyable pass).** The reason no longer adds an untaught rule: the passes are a race,
+  not a lasting position, and of the two plans only the first chooses.
+- **D14 ("goal taken for a strategy" makeable once).** Ben's heating check now offers "Aim to win eight of the next ten bids, and
+  push the crews to reach it", tagged `goal-as-strategy`, so it can be made in two of the ten (k14-salon, k14-hvac).

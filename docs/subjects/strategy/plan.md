@@ -52,7 +52,8 @@ Lite, Maytag, Paccar, Vanguard). US, dollars. Retest at 28 days (R2, P24).
 
 Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as-strategy`, `better-not-different`,
 `growth-for-growth`, `serve-everyone` (straddling and something-for-everyone, ST2, ST10), `fast-growth-attractive`,
-`list-not-choice`, `inside-view`, `rival-ignored`, `surface-analogy`, `bet-too-big`. `danger`: the three errors of the test.
+`list-not-choice`, `inside-view`, `rival-ignored`, `surface-analogy`, `bet-too-big`. Added after the round-2 reviews: `usual-way-as-fit` (lesson 7's check rule: the trade's usual way kept where it pulls against
+the position, ST1, ST3) and `no-choice` (lesson 10's check rule: a plan that does not choose taken for one that does, ST10). `danger`: the three errors of the test.
 
 ## The lessons
 
@@ -64,7 +65,7 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
 | B | | **Where the money is** | | | |
 | 3 | B | Value created, and who keeps it | WTP, price, cost, WTS; a move that grows value vs one that only moves it. Check: 5 made cases, numbers within $1 and the verdict. | generator `gen-value` (fresh numbers); `number` asks (value created, customer's share, your margin) with calculator; `estimate` first on one; `choose` grows / shrinks / only moves value; `document` `table` shows the four numbers. | ST7; P10 worked numbers first; procedure inside a judgement (learning-science section 2) |
 | 4 | B | Who squeezes the profit | Five forces as one question: who takes the money, and why; dig into the strongest; fast growth is not attractiveness. Check: 6 cases, name the strongest force. | `choose` from list `force` (buyers, suppliers, new entrants, substitutes, rivals); `tap` the deciding line in an `article` (`report`) or `message`; slip `fast-growth-attractive`. | ST6 (pitfalls box); P29 |
-| 5 | B | Find the core | The most distinctive and most profitable customers, products, channels; trim the rest before growing. Check: 4 tables. | `document` `table` (lines with revenue and direct cost); `number` (the core's share of the lines' total profit, ST19); `choose` fix / let go for a losing line. Optional own step (gap 1). | ST8, ST4 Porter's questions; P25 own books |
+| 5 | B | Find the core | The most distinctive and most profitable customers, products, channels; trim the rest before growing. Check: 4 tables. | `document` `table` (lines with revenue and direct cost); `number` (the core's share of the lines' total profit, ST19); `choose` fix / keep and cut its loss / let go for a losing line. Optional own step (gap 1). | ST8, ST4 Porter's questions; P25 own books |
 | C | | **An advantage that lasts** | | | |
 | 6 | C | What you say no to | Trade-offs; straddling (Continental Lite); serving everyone. Check: 6 cases. | verdict `choose` (a real trade-off / a straddle); `pair` Southwest vs Continental Lite, then an owner pair (a bakery adding catering). | ST2, ST10; P12 |
 | 7 | C | Do the pieces fit? | Activities consistent with the position and reinforcing each other; a rival must copy all. Check: 5 activity lists. | `tap` the activity that does not fit (prose `lines`); `choose` what it should be; worked case Vanguard. | ST3; P8 |
@@ -93,7 +94,8 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
   fourteen lessons: first ask whether a change of price or of what it costs to serve could make it pay, and if so fix it
   (ST19: the customer-profitability literature makes losing customers pay before dropping them); if not, keep it and cut
   its loss when the core's customers buy it with the core or find the business through it; else let it go. The second
-  test is ours (judgement call): it follows from judging a line by what would stop if it stopped.
+  test is ours (judgement call): it follows from judging a line by what would stop if it stopped. After the round-2 reviews the three outcomes are three
+  answers (`fix`, `cut-loss`, `let-go`), so the marked answer always says what the rule says.
 
 ## Judgement calls made after the reviews of all fourteen lessons (2026-10-23, fixes-l1-14.md)
 

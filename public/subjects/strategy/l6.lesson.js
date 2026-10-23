@@ -17,13 +17,13 @@ FC.lesson("strategy", {
     { title: "Does the new work pull against the old?",
       show: [
         { kind: "prose", text: [
-          "When a business adds something, a new offer, a new kind of customer, a rival’s idea, put one question to it: does the new work pull against what the position needs?",
-          "Two activities pull against each other when doing more of one means less of the other: the same people, hours, room or promise would have to serve opposite ends at once. A two-minute taco line and plates made to order need the same cook at the same noon. A quiet room for work and live music need the same tables on the same days.",
-          "No pull: the new work serves the same customers the same way, or fills hours the core leaves idle. It fits beside the old work, and nothing has to go.",
+          "When a business adds something new, one question sorts it: does the new work pull against what the position needs?",
+          "Two activities pull against each other when doing more of one means less of the other: the same people, hours or room would have to serve opposite ends at once, or customers would stop believing the promise (a luxury shop selling cheap goods). A two-minute taco line and plates made to order need the same cook at the same noon.",
+          "No pull: the new work serves the same customers the same way, or fills hours the core leaves idle, without harming its promise. It fits beside the old work, and nothing has to go.",
           "A pull, and the business drops one side: a real trade-off. It serves the side it kept better, whatever the side it dropped was worth.",
           "A pull, and the business keeps both: a straddle. It pays for both ways and serves neither fully. Trying to serve every kind of customer at once is the same mistake. Trimming a piece here and there while still serving both is still a straddle.",
-          "What does not decide it: whether the move copies a rival (a business can copy a rival and still choose), how much the dropped side was worth, and early sales from the new offer.",
-          "This sorts the move; whether it is wise is judged later.",
+          "What does not decide it: whether the move copies a rival (a business can copy a rival and still choose) and early sales from the new offer.",
+          "This sorts the move, not whether it is wise: a trade-off can still give up the side worth more.",
           "Why it matters: a rival can copy anything you add without giving something up. What you chose not to do is what a rival would have to give up to copy you."] },
         { kind: "prose", tone: "wrong", text: [
           "“Why turn anyone away? We will offer both and keep everyone.”",
@@ -32,7 +32,7 @@ FC.lesson("strategy", {
     { title: "Two airlines",
       show: [
         { kind: "pair",
-          a: { kind: "prose", text: "Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well." },
+          a: { kind: "prose", text: "In the 1990s, Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well." },
           b: { kind: "prose", text: "Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily." },
           compare: "Both cut something. Southwest dropped one side of the pull. Continental cut a few pieces but kept running both ways at once, so it paid for both and matched Southwest on neither cost nor service: a straddle." }
       ] },
