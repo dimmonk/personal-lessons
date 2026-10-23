@@ -50,8 +50,9 @@ FC.subject('strategy', {
       { id: "shrinks", text: "It shrinks the value" },
       { id: "fix", text: "Keep it, but fix its price or cost" },
       { id: "let-go", text: "Let it go" },
-      { id: "tradeoff", text: "A real trade-off" },
-      { id: "straddle", text: "A straddle: copying while keeping the old way" },
+      { id: "tradeoff", text: "A real trade-off: one side of the pull given up" },
+      { id: "straddle", text: "A straddle: both sides of the pull kept at once" },
+      { id: "fits", text: "No pull: the new work fits beside the old" },
       { id: "deepens", text: "It deepens the core" },
       { id: "blurs", text: "It blurs the position" }
     ],
@@ -69,10 +70,12 @@ FC.subject('strategy', {
       { id: "cost", text: "A lower cost than rivals have" },
       { id: "none", text: "Neither: it gives nothing a rival lacks" }
     ],
-    // lesson 8: what stops a rival getting the same (research ST9: rare and hard to copy, no ready substitute; ST3: fit)
+    // lesson 8: the common answers to what stops a rival getting the same (research ST9: rare and hard to copy, switching costs and trust built
+    // over years; ST3: fit). Not the whole list: being far bigger than any rival, or a network, are others a small business rarely has.
     barrier: [
       { id: "only-us", text: "Only we have it, and a rival cannot get or make one" },
       { id: "fit", text: "It rests on many activities that fit together: a rival would have to copy them all" },
+      { id: "switching", text: "Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy" },
       { id: "nothing", text: "Nothing: a rival can buy it, copy it, or get the same result another way" }
     ],
     // lesson 10: the six ways a plan fails to choose (research ST10)
@@ -110,9 +113,9 @@ FC.subject('strategy', {
       { id: "sales-not-profit", text: "judged a line by its sales, not by what it earns" },
       { id: "loss-left-out", text: "left a losing line's loss out of the total a share is counted from" },
       { id: "growth-for-growth", text: "grew for the sake of growing" },
-      { id: "serve-everyone", text: "tried to serve everyone, or to copy a rival while keeping your own way" },
+      { id: "serve-everyone", text: "tried to serve everyone at once, or kept two ways that pull against each other" },
       { id: "copyable-as-lasting", text: "took something a rival can buy or copy for an advantage that lasts" },
-      { id: "missed-tradeoff", text: "took a real choice of what not to do for a straddle" },
+      { id: "missed-tradeoff", text: "missed a real choice of what not to do" },
       { id: "counted-wrong-group", text: "counted the wrong group in the table" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
       { id: "rival-ignored", text: "forgot that rivals will answer" },
