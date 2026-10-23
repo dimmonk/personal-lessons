@@ -46,10 +46,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - The argument itself.
 
 The working, one step at a time:
-1. Name the kind of talk. Inez holds a claim, that the fee is not fair, and you hold the opposite. Each gives reasons. You are persuading.
-1. Check whether she is still answering you. Her last line answers your point with a question about where you got it. She is not digging at you, threatening you or blocking you, so keep going.
-1. Read what her last line is about. It is about your claim that the county bills by the month. She wants to know where it comes from. She says nothing about you or how she feels.
-1. Answer that one. Show where it comes from, such as: "It is on the county water page. I will send you the link."
+1. Name the kind of talk.: Inez holds a claim, that the fee is not fair, and you hold the opposite. Each gives reasons. You are persuading.
+1. Check whether she is still answering you.: Her last line answers your point with a question about where you got it. She is not digging at you, threatening you or blocking you, so keep going.
+1. Read what her last line is about.: It is about your claim that the county bills by the month. She wants to know where it comes from. She says nothing about you or how she feels.
+1. Answer that one.: Show where it comes from, such as: "It is on the county water page. I will send you the link."
 
 Then the answer: The argument itself. Inez wants to know where you got the monthly billing and says she has never seen a bill. The reply goes at the reasons, a step or a number, and says nothing about you or how they feel. The answer is the argument, a step or two from something they already accept. Reading a reply this way is our method; nobody has tested it.
 
@@ -195,7 +195,7 @@ My rule: I only count a survey that asked at least 200 residents. Survey A (most
 - "Survey A (most people like it) asked 150 residents, which is close enough to 200, so I am counting it." (right)
 - "Survey B (most people dislike it) asked 210 residents, so I am counting it too." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "So the surveys I count say opinion is split." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Survey A asked 150 residents, under the note's own 200, and the line counts it as close enough. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when the conclusion matched their own view, as a review of reasoning research reports. Holding your own side to the test you used on the other is the check, and the check is ours.
 
@@ -429,6 +429,6 @@ After the answer: the deciding words are marked. Reason: Elsa rejects the claim 
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "12 of 12: passed" or "9 of 12: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

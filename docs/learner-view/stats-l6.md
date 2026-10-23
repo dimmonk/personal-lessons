@@ -43,9 +43,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - A new stadium would bring more visitors to Ridgeport
 
 The working, one step at a time:
-1. Find what the headline claims. It is about Ridgeport’s residents: most of them want a new stadium.
-1. Find who was counted. The first sentence: 4,200 people who voted in a poll on the team’s website.
-1. Check whether they are the people the claim is about. They chose to vote, after the team asked its fans to. Fans of the team are not a fair picture of 300,000 residents, and 4,200 votes do not change that. The text itself shows the claim goes too far.
+1. Find what the headline claims.: It is about Ridgeport’s residents: most of them want a new stadium.
+1. Find who was counted.: The first sentence: 4,200 people who voted in a poll on the team’s website.
+1. Check whether they are the people the claim is about.: They chose to vote, after the team asked its fans to. Fans of the team are not a fair picture of 300,000 residents, and 4,200 votes do not change that. The text itself shows the claim goes too far.
 
 Then the answer: More than half of Ridgeport’s residents want the city to build a stadium / In an online poll on the Ridgeport Rockets’ website, 4,200 people voted, and 78% said the city should build a new stadium. / Does not show it. The people counted chose to vote on the team’s own website after the team asked its fans to. They are fans who cared enough to vote, not a fair picture of Ridgeport’s residents, however many of them voted.
 What you would need to see: You would need residents picked by chance, for example 1,000 adults called at random, asked the same question.
@@ -76,7 +76,7 @@ Help on screen: the words that decide it are marked.
 - "Give your dog the food the experts choose." — if tapped: That is not the sentence.
 - "Now in a bigger bag." — if tapped: That is not the sentence.
 - "From a survey of the 5 vets at the two clinics that sell Pawsome; 4 said they recommend it." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -108,7 +108,7 @@ Help on screen: the words that decide it are marked.
 - "The library hired a polling firm for the survey this fall." — if tapped: note: That is who ran it, not who was counted.
 - "The firm called 1,000 Easton adults at phone numbers picked at random, and 61% said they want Sunday hours." (right)
 - "34% said no, and the rest were not sure." — if tapped: note: That is what they said, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -140,7 +140,7 @@ Help on screen: the words that decide it are marked.
 - "Lee has 52% and Park 48% among likely voters, a new Herald poll finds." — if tapped: note: That is what they said, not who was counted.
 - "The poll called 600 likely voters in Hartwell, picked at random." (right)
 - "With 600 people, the poll could be off by about 4 points either way by luck." — if tapped: note: That is how far off it could be, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -171,7 +171,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "A survey of 2,000 adults by the Dreamway mattress company found that 58% sleep less than seven hours a night." (right)
 - "Dreamway is offering 20% off its mattresses this month." — if tapped: note: That is a sale, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -206,7 +206,7 @@ A news story, from "Millbrook Courier · Homes":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The county looked at the 300 Millbrook houses built before 1920 that are still standing, and found that 270 still have their first frame." (right)
 - "Town records show about 2,000 houses were built in Millbrook before 1920. Most have since been torn down." — if tapped: note: That is how many were built, not how many were counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -236,7 +236,7 @@ A news story, from "Harlan Business Journal · Work":
 - "The bank emailed its survey to all 2,000 of its workers, and 150 answered." (right)
 - "90% of those who answered said they like the new office." — if tapped: note: That is what they said, not who was counted.
 - "The office opened in January." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -266,7 +266,7 @@ An ad, from "IronWorks Gym" (marked "Ad"):
 - "Thanks for a great spring, IronWorks family!" — if tapped: That is not the sentence.
 - "Our door scanner logs every visit by every member." — if tapped: note: That says how they were counted; the sentence with how many is the small print.
 - "In March, 840 of our 1,200 members came in at least twice a week." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -351,7 +351,7 @@ A news story, from "Dover Ledger · Schools":
 - "58% of likely voters back the tax and 42% oppose it." — if tapped: note: That is what they said, not who was counted.
 - "The Ledger’s poll called 1,000 likely voters in Dover, picked at random." (right)
 - "With 1,000 people, it could be off by about 3 points either way by luck." — if tapped: note: That is how far off it could be, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -391,7 +391,7 @@ A news story, from "Travel Desk · Airlines":
 - "81% rated their flight good or very good, Skyway said." — if tapped: note: That is what they said, not who was counted.
 - "The airline asked 2,500 passengers, picked at random from every June flight, as they left the plane; nearly all answered." (right)
 - "Skyway flies to 40 cities." — if tapped: note: That is how many cities it flies to, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -421,7 +421,7 @@ A news story, from "App Talk · Reviews":
 - "In its first week the update drew 300 reviews in the app store, and 92% gave it five stars." (right)
 - "FitTrack has about 40,000 users." — if tapped: note: That is how many use the app, not how many were counted.
 - "Reviews are written by users who choose to write one." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -448,7 +448,7 @@ A post, from "Westside Youth Soccer · 1d":
 - "The league has about 300 families." — if tapped: note: That is how many families there are, not how many were counted.
 - "At Tuesday’s meeting, 7 of the 8 parents who came voted for Saturday games." (right)
 - "Most families want Saturdays, so Saturdays it is!" — if tapped: note: That repeats the claim.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -478,7 +478,7 @@ A news story, from "Carver Daily · Streets":
 - "51% said yes to bike lanes on Main Street and 49% said no." — if tapped: note: That is what they said, not who was counted.
 - "The city polled 700 adults, picked at random from its list of residents." (right)
 - "With 700 people, the poll could be off by about 4 points either way by luck." — if tapped: note: That is how far off it could be, not who was counted.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -507,7 +507,7 @@ A news story, from "Home Front · Housing":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "A survey of 1,500 renters found that 75% plan to move within the year." (right)
 - "Moving companies say they expect a busy summer." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -536,7 +536,7 @@ A news story, from "Riverside Weekly · Town":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Two years ago it was seven in ten, the town said." — if tapped: That is not the sentence.
 - "Using the internet companies’ own records, the town counted every home: 9,900 of Riverside’s 11,000 homes have fast internet." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -548,4 +548,4 @@ What you would need to see: Nothing more is needed for Riverside. The headline s
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "6 of 6: passed" or "4 of 6: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

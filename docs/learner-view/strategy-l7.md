@@ -21,9 +21,9 @@ The right line: The trade’s usual way serves the trade’s usual customers. Ch
 
 ## Step 2: One fund company
 
-Vanguard’s position: funds that cost investors very little, for people who hold them for years.
-Its funds buy and sell shares rarely, which keeps trading costs down. It does not pay for star fund managers. It sells straight to investors, not through brokers. It spends little on advertising. Staff bonuses are tied to saving costs.
-Each piece serves low cost, and each helps the others: investors who hold for years do not need star managers or constant trading, and selling direct needs less advertising. A rival would have to change all of them at once to match it.
+In the 1990s, Vanguard’s position was funds that cost investors very little, for people who hold them for years.
+Its funds bought and sold shares rarely, which kept trading costs down. It did not pay for star fund managers. It sold straight to investors, not through brokers. It spent little on advertising. Staff bonuses were tied to saving costs.
+Each piece served low cost, and each helped the others: investors who hold for years do not need star managers or constant trading, and selling direct needed less advertising. A rival would have had to change all of them at once to match it.
 
 ## Step 3: A worked example
 
@@ -67,7 +67,7 @@ Help on screen: the words that decide it are marked.
 - "Tutors are hired at the lowest hourly rate we can find, whatever subject they teach." (right)
 - "Parents get a short report each week on which exam topics are still weak." — if tapped: note: That one serves the position and helps the others.
 - "Students sit a full practice exam a month before the real one." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -96,7 +96,7 @@ Help on screen: the words that decide it are marked.
 - "Each groomer is paid by the number of dogs done in a day." (right)
 - "A dog meets its groomer once before the first groom." — if tapped: note: That one serves the position and helps the others.
 - "The same groomer sees the same dog every visit." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -125,7 +125,7 @@ Help on screen: the words that decide it are marked.
 - "A weekday pass: coffee all day and a seat." — if tapped: note: That one serves the position and helps the others.
 - "Loud music on those days, to make the room feel lively." (right)
 - "Small rooms that can be booked for calls." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -181,13 +181,13 @@ A written note: "How Leo’s bike shop runs it: the list of what we do", This ye
 - "Two mechanics who race themselves." — if tapped: note: That one serves the position and helps the others.
 - "Most of the floor goes to last year’s bikes, which sell steadily." (right)
 - "Repairs done the same day before a race weekend." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Stock the parts and wheels racers want, fitted by the mechanics (right)
 - Use the floor for kids’ bikes, which sell all year — if chosen: That serves another kind of customer, which pulls against the position.
-- Use the floor for a cafe where racers wait for their bikes — if chosen: Racers might like it, but it does nothing for the fitting and tuning they pay for; parts and wheels the mechanics fit help both.
+- Rent the floor to someone else’s cafe — if chosen: The rent helps the books, but it serves none of the fitting and tuning racers pay for; parts and wheels the mechanics fit help both.
 
 After the answer: the deciding words are marked. Reason: Racers pay for fitting and tuning, and the fitting room, the racing mechanics and the race-weekend repairs serve them. A floor of last year’s bikes serves shoppers after a bargain; parts and wheels racers want fit.
 
@@ -229,7 +229,7 @@ A written note: "How Omar’s print shop runs it: the list of what we do", This 
 - "Jobs are gathered up and run in one batch each evening." (right)
 - "A driver takes finished papers straight to the court." — if tapped: note: That one serves the position and helps the others.
 - "Each firm has a direct line to the person running the press." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -256,13 +256,13 @@ A written note: "How Ray’s plumbing business runs it: the list of what we do",
 - "Plumbers work Monday to Friday, day shifts." (right)
 - "Each restaurant gets one phone number that is always answered." — if tapped: note: That one serves the position and helps the others.
 - "Plumbers learn each kitchen’s pipes on a visit before anything breaks." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Keep plumbers on call in shifts, each for his own kitchens (right)
 - Use the quiet evenings for bathroom remodels — if chosen: That serves another kind of customer, which pulls against the position.
-- Keep plumbers on call in shifts, and send whichever one is nearest — if chosen: Any hour fits, but sending any plumber wastes the visits that taught each one a kitchen’s pipes; covering his own kitchens helps both.
+- Keep plumbers on call in shifts, and send whichever one is free, whatever kitchen it is — if chosen: Any hour fits, but a plumber who has never seen that kitchen wastes the visits that taught each one its pipes; covering his own kitchens helps both.
 
 After the answer: the deciding words are marked. Reason: Restaurants need a fix at any hour, and the stocked vans, the phone line and the visits serve that. Office hours leave the kitchen shut at night and on weekends; plumbers on call for the kitchens they know fit, and help the visits pay off.
 
@@ -283,13 +283,13 @@ A written note: "How Tom’s hardware store runs it: the list of what we do", Th
 - "Odd parts the big stores do not carry." — if tapped: note: That one serves the position and helps the others.
 - "The store opens at 10 a.m." (right)
 - "Builders can phone an order in and find it bagged at the counter." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Open at 6 a.m., when builders pick up parts before work (right)
 - Open late on weekends for home shoppers — if chosen: That serves another kind of customer, which pulls against the position.
-- Keep 10 a.m., but staff the tills better than the mall stores — if chosen: That is the trade’s usual way, done harder; it pulls against the position just as before.
+- Open at 6 a.m., and close the advice desk to pay for the early staff — if chosen: The early hour serves builders, but it costs the advice they come for; opening early with the desk staffed helps both.
 
 After the answer: the deciding words are marked. Reason: Builders need parts before work, and the advice desk, the odd parts and the phone orders serve them. Opening at 10 a.m. misses their morning; opening at 6 a.m. fits.
 
@@ -301,7 +301,7 @@ Then a screen: you can stop here, your place is kept.
 
 To pass:
 - At least 4 right
-- None thought running the business better would fix what needs a different position
+- None kept the trade's usual way where it pulls against the position
 
 #### Check question 10
 
@@ -320,7 +320,7 @@ A written note: "How Nina’s bookshop runs it: the list of what we do", This ye
 - "Nina goes to estate sales across the state to find books." — if tapped: note: That one serves the position and helps the others.
 - "Each book comes with a written note on its history and condition." — if tapped: note: That one serves the position and helps the others.
 - "Collectors get a call when a book on their wish list comes in." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -368,7 +368,7 @@ A written note: "How Carlos’s taco truck runs it: the list of what we do", Thi
 - "Each taco is made to order with a choice of twelve toppings." (right)
 - "Workers can order by text on the way out of the building." — if tapped: note: That one serves the position and helps the others.
 - "Exact-change prices: $3 a taco." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -395,7 +395,7 @@ A written note: "How Ben’s repair shop runs it: the list of what we do", This 
 - "Parts are stocked only for this year’s models." (right)
 - "Ben tells owners plainly when a repair is worth it on an old car." — if tapped: note: That one serves the position and helps the others.
 - "Old shop manuals for each make are kept on a shelf." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
@@ -422,7 +422,7 @@ A written note: "How Lena’s laundromat runs it: the list of what we do", This 
 - "Open 6 a.m. to midnight, paid by card at each machine." — if tapped: note: That one serves the position and helps the others.
 - "An attendant on duty all day, who folds clothes for free." (right)
 - "Large machines, so a family’s wash fits in one load." — if tapped: note: That one serves the position and helps the others.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)

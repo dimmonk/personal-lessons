@@ -36,9 +36,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Nothing
 
 The working, one step at a time:
-1. Read every line. The first line tells you something. The second line tells you to do something.
-1. Find the line that wants something from you. “Sign in at the link now” is the one.
-1. Say what it wants. Signing in means typing your password. So it wants a sign-in.
+1. Read every line.: The first line tells you something. The second line tells you to do something.
+1. Find the line that wants something from you.: “Sign in at the link now” is the one.
+1. Say what it wants.: Signing in means typing your password. So it wants a sign-in.
 
 Then the answer: A sign-in or a code / Sign in at the link now to keep your account open. The second line is the one that wants something: your sign-in, typed on the page the link opens. How polished the text looks does not change what it wants.
 
@@ -91,7 +91,7 @@ A text message: "Quillfeather Parcel", Text message · Thursday 3:31 PM.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Pay a $1.99 redelivery fee before Friday or your parcel goes back." (right)
 - "It is held at our depot." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants money: a fee, paid at the link.
 
@@ -115,7 +115,7 @@ A text message: "Dunmore Gas", Text message · 9:02 AM.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Type 551 204 on the page you are on." (right)
 - "It is your Dunmore sign-in code and works for ten minutes." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: A code is a kind of sign-in, and the first line wants you to type it.
 
@@ -142,7 +142,7 @@ A pop-up on a screen: "Phone alert", On a web page.
 - "3 threats found on your phone." — if tapped: That is not the sentence.
 - "Install the cleaner app now." (right)
 - "It only takes a minute." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The middle line wants you to put an app on your phone. An app on your phone is a way into it.
 
@@ -174,7 +174,7 @@ An email: "Alderwick Water", Email · the 3rd.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Please pay $48.20 in your account or mail a check by the 15th." (right)
 - "Your water use was about the same as last month." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants money. A real bill wants money too: naming what a message wants comes before deciding what to do.
 
@@ -198,7 +198,7 @@ An incoming call, the caller's words as a transcript: "Social Security office", 
 - "This is the Social Security office." — if tapped: That is not the sentence.
 - "There is a problem with your number." — if tapped: That is not the sentence.
 - "Say your Social Security number so I can fix it." (right)
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The last line wants your Social Security number, a detail that is only yours. Saying it out loud is handing it over.
 
@@ -224,7 +224,7 @@ A chat, with its history: "Lakeview Dental", Chat about your appointment.
 - "Hi, we can fit you in on Friday." — if tapped: That is not the sentence.
 - "What is your date of birth, so we can find your file?" (right)
 - "Then we will book it." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The middle line wants a detail: your birthday.
 
@@ -244,7 +244,7 @@ A banner over another task: "Phone", now.
 **Tap the line that wants it.** (opens only after a certain answer)
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Your battery is damaged by a virus. Install Battery Doctor to fix it." (right)
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: It wants you to install an app on your phone. That is a way into your device.
 
@@ -294,7 +294,7 @@ A text message: "Toll Desk", Text message · 6:48 PM.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Your toll balance is overdue." — if tapped: That is not the sentence.
 - "Pay $6.50 today at the link or the fee becomes $50." (right)
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The second line wants money, and a bigger fee hurries you. The money is the request.
 
@@ -356,7 +356,7 @@ A text message: "Marlowe & Finch", Text message · 11:12 AM.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Pay a $3.20 customs fee at the link." (right)
 - "Your scarf is on hold until it is paid." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants money. Knowing you ordered something does not make a fee for it real.
 
@@ -382,7 +382,7 @@ An email: "Alderwick Cable", Email · the 5th.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Your bill is $79.99." — if tapped: That is not the sentence.
 - "Pay it in your account by the 20th." (right)
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The second line wants money, and it is your usual bill. A real bill is still a request for money.
 
@@ -406,7 +406,7 @@ An incoming call, the caller's words as a transcript: "Fraud team", Incoming cal
 - "This is the fraud team. We stopped a payment on your account." — if tapped: That is not the sentence.
 - "Read me the code we just texted, to confirm it is you." (right)
 - "Then we can cancel the payment." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The middle line wants the code in your text, and a code is a sign-in. Reading it out lets the caller in.
 
@@ -430,7 +430,7 @@ A text message: "Fernbrook", Text message · 7:45 AM.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Type 339 018 on the Fernbrook page you are on." (right)
 - "The code works for ten minutes." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants the code typed on the page. You asked for it, so this is the sign-in you started.
 
@@ -453,7 +453,7 @@ A chat, with its history: "Kestrel Mobile help", Chat that popped up on a web pa
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Download this app so I can see your screen." (right)
 - "I am from Kestrel Mobile help, and I will fix your phone for you." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants you to install an app so someone can see your screen. That is a way into your device.
 
@@ -477,7 +477,7 @@ An incoming call, the caller's words as a transcript: "Quillon Pharmacy", Incomi
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Hi, this is Quillon Pharmacy, returning your call." — if tapped: That is not the sentence.
 - "Can you confirm your date of birth so I can find your refill?" (right)
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The second line wants a detail, your birthday.
 
@@ -501,7 +501,7 @@ An email: "Linden Mutual", Email · Thursday.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Reply with your address, birthday and Social Security number." (right)
 - "Your account needs updating today." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The first line wants three details that are only yours. Together they are enough to pretend to be you.
 
@@ -552,7 +552,7 @@ A pop-up on a screen: "Photo storage", On a web page.
 - "Your photo storage is full." — if tapped: That is not the sentence.
 - "Pay $9 now to keep your photos." (right)
 - "Otherwise they are deleted today." — if tapped: That is not the sentence.
-- A button: "None of them: it wants nothing" — if chosen: The text does give one. It is marked above.
+- A button: "None of them: it wants nothing" — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The middle line wants money, and the last one threatens to take something away today. The threat is there to hurry you.
 
@@ -560,4 +560,4 @@ After the answer: the deciding words are marked. Reason: The middle line wants m
 
 Under the rules, the facets the subject compares are shown side by side: "Real or a scam" (real messages beside scams, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "10 of 10: passed" or "8 of 10: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

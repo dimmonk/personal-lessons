@@ -9,7 +9,7 @@ A Harvard strategy professor built his course on this picture. Here you learn to
 
 ## Step 1: Four numbers for one sale
 
-Line up four numbers for one sale, from the top down.
+Line up four numbers for one sale, from the top down, on a bar we call the value stick.
 The most a customer would pay: what it is worth to them. The price: what they do pay. The cost: what you pay your suppliers and staff to make it. The least your suppliers and staff would take: below that, they would not sell to you or work for you.
 The cost and the least they would take are not the same: a cleaner paid $20 an hour who would have worked for $17 keeps $3 an hour more than she needed.
 In real life you estimate the two ends. For the most a customer would pay, put the question to customers, watch what they pay a rival for something like it, or try a higher price on a few. For the least staff would take, look at what the same work pays nearby; for a supplier, at what its other buyers pay.
@@ -208,7 +208,7 @@ Help on screen: the words that decide it are marked.
 
 **What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It only moves value from one side to another — if chosen: The pay did not change, but the least staff would take did: they now stay at a pay they would have left. That end of the stick moved down, so the value grows.
 - It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
 After the answer: the deciding words are marked. Reason: Cleaners who would have left at this pay now stay at it, so the least they would take fell, and the week adds nothing to the work. The suppliers’ end of the stick moved down, so the value grows.
@@ -552,7 +552,7 @@ A written note: "Notes on Kim’s tutoring business", Written in October.
 
 **What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It only moves value from one side to another — if chosen: The pay did not change, but the least the tutors would take did: $4 an hour less. That end of the stick moved down, so the value grows.
 - It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
 After the answer: the deciding words are marked. Reason: With hours they choose, tutors would take $4 an hour less, and nothing is added to the work, so the suppliers’ end of the stick moved down. The move grows the value.

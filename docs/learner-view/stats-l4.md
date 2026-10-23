@@ -35,10 +35,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - For people with symptoms, a positive result means you most likely have Verrin syndrome
 
 The working, one step at a time:
-1. Find what the headline claims. “A positive result means you most likely have it” says most people who test positive have Verrin syndrome.
-1. Find how common it is. The second sentence: about 20 in every 1,000 adults have Verrin syndrome.
-1. Count 1,000 people through the test. 20 have it, and the test finds 8 in 10 of them: 16. The other 980 do not have it, and the test wrongly flags 5 in 100 of them, 980 ÷ 100 × 5 = 49 false alarms. In all 65 test positive, and 16 of them have it.
-1. Check the headline against that. 16 of 65 is about 1 in 4. A positive result most likely does not mean you have it, so the headline says more than the numbers show.
+1. Find what the headline claims.: “A positive result means you most likely have it” says most people who test positive have Verrin syndrome.
+1. Find how common it is.: The second sentence: about 20 in every 1,000 adults have Verrin syndrome.
+1. Count 1,000 people through the test.: 20 have it, and the test finds 8 in 10 of them: 16. The other 980 do not have it, and the test wrongly flags 5 in 100 of them, 980 ÷ 100 × 5 = 49 false alarms. In all 65 test positive, and 16 of them have it.
+1. Check the headline against that.: 16 of 65 is about 1 in 4. A positive result most likely does not mean you have it, so the headline says more than the numbers show.
 
 Then the answer: Most people who test positive have Verrin syndrome / Among adults in the county, about 20 in every 1,000 have Verrin syndrome. / 16 of the 65 who test positive have it / Does not show it. Out of 1,000 people, 20 have Verrin syndrome and the test finds 16 of them. Of the 980 who do not, it wrongly flags 49, so 65 test positive and only 16 of them have it, about 1 in 4: most positives are false alarms, because so few people have it.
 What you would need to see: You would need a test with fewer false alarms, or a group of people among whom many more have it.
@@ -72,7 +72,7 @@ Help on screen: the words that decide it are marked.
 - "Among people who feel fine, about 40 in every 1,000 have Tarn fever." (right)
 - "The test finds 90 of every 100 people who have Tarn fever, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Order now and get your results fast." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -113,7 +113,7 @@ Help on screen: the words that decide it are marked.
 - "The test finds 90 of every 100 people who have Marsh fever, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Results come back the same day." — if tapped: That is not the sentence.
 - "Of the patients the clinic sends for testing with a high temperature, about 400 in every 1,000 have Marsh fever." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -184,7 +184,7 @@ Help on screen: the words that decide it are marked.
 - "In winter, about 150 in every 1,000 adults who come to a clinic with a cough have Delling fever, the county says." (right)
 - "The swab finds 95 of every 100 people who have it." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "The county did not say how often the swab says yes for people who do not have Delling fever." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -220,7 +220,7 @@ A news story, from "Hollis Ledger · Work":
 - "The test finds 90 of every 100 workers who have a drug habit, and wrongly flags 10 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "The plant tests workers once a year." — if tapped: That is not the sentence.
 - "Of the plant’s workers, about 10 in every 1,000 use drugs, the company estimates." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 workers. Of those who test positive, how many use drugs?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive use drugs.
@@ -259,7 +259,7 @@ A report summary, from "Pinecrest Pediatrics · Notice" (marked "Report summary"
 - "Among children brought in with a sore throat and fever, about 300 in every 1,000 have strep throat." (right)
 - "The test finds 90 of every 100 children who have strep throat, and wrongly flags 10 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Swabs take five minutes." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 children. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -324,7 +324,7 @@ A news story, from "Cedar Valley News · Health":
 - "The test finds 80 of every 100 people who have the allergy, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Among people tested at the clinic, about 40 in every 1,000 have the allergy." (right)
 - "The test needs one small blood sample." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -363,7 +363,7 @@ A report summary, from "Lindale Skin Clinic · Notice" (marked "Report summary")
 - "Among people who come in with an itchy rash, about 30 in every 1,000 have Calder rash." (right)
 - "The test finds 90 of every 100 people who have Calder rash, and wrongly flags 10 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Swabs are free for clinic members." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -436,7 +436,7 @@ A news story, from "Orrel swab · Health News":
 - "The test finds 85 of every 100 people who have Calder rash, and wrongly flags 10 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Among adults tested at a health fair, about 40 in every 1,000 have Calder rash." (right)
 - "Results come back in two days." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those who test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -473,7 +473,7 @@ A news story, from "Verrin screen · Health News":
 - "The test finds 95 of every 100 people who have Ashby fever, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Among people their doctor sends for testing with a high fever, about 40 in every 1,000 have Ashby fever." (right)
 - "Results come back in two days." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those who test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -510,7 +510,7 @@ A news story, from "Orrel swab · Health News":
 - "The test finds 70 of every 100 people who have Marsh cough, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Among people their doctor sends for testing with a high fever, about 300 in every 1,000 have Marsh cough." (right)
 - "Results come back in two days." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those who test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -547,7 +547,7 @@ A news story, from "Verrin screen · Health News":
 - "The test finds 75 of every 100 people who have Marsh cough, and wrongly flags 5 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Among people who come to a clinic with a cough, about 500 in every 1,000 have Marsh cough." (right)
 - "Results come back in two days." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those who test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -622,7 +622,7 @@ An ad, from "Riverton Auto Service" (marked "Ad"):
 - "Of the cars brought in with a warning light on, about 600 in every 1,000 have a real fault." (right)
 - "The reader finds 90 of every 100 cars that have a fault, and wrongly shows a code for 5 of every 100 that do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Readings take ten minutes." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 cars. Of those that show a fault code, how many have a real fault?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] that show a code have a real fault.
@@ -661,7 +661,7 @@ A news story, from "Eastport Sun · Schools":
 - "The screening flags 90 of every 100 second graders who have a reading problem, and wrongly flags 10 of every 100 who do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Parents get the results by mail." — if tapped: That is not the sentence.
 - "In the district, about 50 in every 1,000 second graders have a reading problem." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 second graders. Of those the screening flags, how many have a reading problem?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] flagged children have a reading problem.
@@ -700,7 +700,7 @@ A report summary, from "Calder Gardens Association · Notice" (marked "Report su
 - "The test finds 80 of every 100 batches that hold invasive seeds, and wrongly flags 10 of every 100 that do not." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Of the seed batches sent to the lab, about 30 in every 1,000 hold invasive seeds." (right)
 - "Results are posted on the association’s board." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 seed batches. Of those that test positive, how many hold invasive seeds?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] batches that test positive hold invasive seeds.
@@ -738,7 +738,7 @@ An ad, from "FitScan App" (marked "Ad"):
 - "About 100 in every 1,000 adults who use FitScan are at risk of heart trouble." (right)
 - "In our study, FitScan found 95 of every 100 people who were at risk." — if tapped: note: That is how well the test works. It does not say how common it is.
 - "Download it free today." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -750,4 +750,4 @@ What you would need to see: You would need how often the scan says “at risk”
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "4 of 4: passed" or "2 of 4: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

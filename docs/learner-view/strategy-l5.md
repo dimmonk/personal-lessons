@@ -15,7 +15,7 @@ What is left is what the line earns. Judge every line by that, never by its sale
 The core is the line that is both distinctive, what customers come to you for rather than to a rival, and earns the most. Usually that is the line that earns the most of all. But a line every rival sells the same way can earn well this year and still be competed away, as copied gains are: it is not the core. Then the core is the distinctive line that earns the most.
 Its share is what it earns divided by what all the lines of that kind earn together, the losses of losing lines taken off. With a losing line, the share can pass 100%: the part above 100% is what the losing lines cost the rest.
 Keep and grow the core before growing anything else; if it cannot grow, protect it.
-A line that loses money: first, could a change of price or of what it costs to serve could make it pay (charge what rivals charge, a smallest order, a delivery fee). If it could, keep it and fix it.
+A line that loses money: first, could a change of price or of what it costs to serve make it pay (charge what rivals charge, a smallest order, a delivery fee). If it could, keep it and fix it.
 If no change would make it pay, what ties it to the core? Do the core’s customers buy it along with the core, or find you through it (a free class that brings the families who later book the paid sessions)? Then dropping it costs the core too: keep it and cut its loss as far as you can. If neither, let it go.
 Why it matters: growth spent on a line that earns little, or loses, takes time and money from the line that pays for everything. Rent and shared costs are paid from what the lines earn together, so a business can earn on most lines and still lose money overall; this step finds which lines pay, not whether the whole business does.
 
@@ -31,9 +31,9 @@ A plain table, "Dana’s bakery: last year, by product":
 > Wedding cakes  |  $48,000  |  $18,000
 > Birthday cakes  |  $30,000  |  $18,000
 > Catering  |  $20,000  |  $26,000
-> (Couples drive in from three towns for our wedding cakes; no other bakery nearby makes them.)
 > (Other caterers in town charge about a third more than we do for the same party.)
 > (Most couples who order a wedding cake also book our catering for the party.)
+> (Couples drive in from three towns for our wedding cakes; no other bakery nearby makes them.)
 
 Before the working, the learner may commit to a choice (not scored, not stored):
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
@@ -83,7 +83,8 @@ Help on screen: the words that decide it are marked.
 - If typed 61.9%: That leaves out the loss on Tree trimming and stump removal. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Tree trimming and stump removal, which loses money?**
-- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need.
+- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, so there is nothing to fix.
+- Keep it, and cut its loss as far as you can — if chosen: Nothing in the notes ties it to the core, so keeping its loss buys the core nothing.
 - Let it go (right)
 
 After the answer: the deciding words are marked. Reason: Garden design is what customers come here for and earns $26,000, 72.2% of what the lines earn together, more than Lawn mowing with its bigger sales: that is the core. Tree trimming and stump removal loses $6,000: no change would make it pay and nothing ties it to the core: let it go.
@@ -101,7 +102,7 @@ A plain table, "Omar’s print shop: last year, by customer":
 > The school district  |  $35,000  |  $21,000
 > Six restaurants  |  $18,000  |  $22,000  <- marked after the answer
 > Three law firms  |  $50,000  |  $22,000  <- marked after the answer
-> (The law firms use us because we print court papers to the court’s rules overnight, which no other shop in town does.)
+> (“Nobody else in town will print court papers to the court’s rules overnight,” one law firm told Omar.)
 > (We charge the restaurants less than half what other shops charge for menus, and they say they would pay the going rate.)
 > (The restaurants buy nothing from us but their menus, and none of them sends us any other work.)
 
@@ -122,6 +123,7 @@ Help on screen: the words that decide it are marked.
 
 **What should the owner do with Six restaurants, which loses money?**
 - Keep it, but fix its price or cost (right)
+- Keep it, and cut its loss as far as you can — if chosen: The notes show a price or cost change that could make it pay, so its loss need not be kept: fix it first.
 - Let it go — if chosen: The notes show a price or cost change that could make it pay: try that before dropping it.
 
 After the answer: the deciding words are marked. Reason: Three law firms is what customers come here for and earns $28,000, 60.9% of what the lines earn together, more than Walk-in customers with its bigger sales: that is the core. Six restaurants loses $4,000: a price or cost change could make it pay: keep it and fix it.
@@ -139,7 +141,7 @@ A plain table, "Kim’s tutoring business: last year, by product":
 > Online sessions over video  |  $40,000  |  $16,000
 > Group classes at the library  |  $25,000  |  $29,000  <- marked after the answer
 > Summer camp  |  $30,000  |  $24,000
-> (Families tell us they pick us because the tutor comes to the house; no other tutoring service in town does.)
+> (“We tried two other services, and only you send the tutor to the house,” one parent wrote; most families say the same.)
 > (The library caps what a class may charge, and the tutor’s hours cannot be cut.)
 > (Most families who book sessions at home found us through the library classes, and keep their child in both.)
 
@@ -159,7 +161,8 @@ Help on screen: the words that decide it are marked.
 - If typed 50%: That leaves out the loss on Group classes at the library. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Group classes at the library, which loses money?**
-- Keep it, but fix its price or cost (right)
+- Keep it, but fix its price or cost — if chosen: The notes say no price or cost change would make it pay, so fixing it is not open; it brings the core’s customers or comes with the core, so keep it and cut its loss.
+- Keep it, and cut its loss as far as you can (right)
 - Let it go — if chosen: The notes say it brings the core’s customers or comes with the core, so dropping it would cost the core too. Keep it and cut its loss.
 
 After the answer: the deciding words are marked. Reason: Sessions in the family’s home is what customers come here for and earns $30,000, 53.6% of what the lines earn together: that is the core. Group classes at the library loses $4,000: no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss.
@@ -177,9 +180,9 @@ A plain table, "Nina’s auto repair shop: last year, by product":
 > Brake and engine work  |  $80,000  |  $48,000  <- marked after the answer
 > Tire sales and fitting  |  $50,000  |  $44,000
 > Car wash  |  $10,000  |  $13,000  <- marked after the answer
+> (Car wash customers come only for the wash.)
 > (Every quick-lube in town does oil changes the same way at the same price; drivers come from across town for our brake and engine work, and the chains send their hard cases to us.)
 > (The automatic wash on the corner charges $8 for a wash that costs us $11 to do.)
-> (Car wash customers come only for the wash.)
 
 Help on screen: the words that decide it are marked.
 
@@ -197,7 +200,8 @@ Help on screen: the words that decide it are marked.
 - If typed 41.03%: That leaves out the loss on Car wash. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Car wash, which loses money?**
-- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need.
+- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, so there is nothing to fix.
+- Keep it, and cut its loss as far as you can — if chosen: Nothing in the notes ties it to the core, so keeping its loss buys the core nothing.
 - Let it go (right)
 
 After the answer: the deciding words are marked. Reason: Brake and engine work is what customers come here for and earns $32,000, 42.7% of what the lines earn together; Oil changes while you wait earns more, but rivals sell it the same way: that is the core. Car wash loses $3,000: no change would make it pay and nothing ties it to the core: let it go.
@@ -221,9 +225,9 @@ A plain table, "Grace’s salon: last year, by product":
 > Haircuts  |  $80,000  |  $66,000
 > Nail station  |  $15,000  |  $19,000
 > Hair products sold  |  $20,000  |  $17,000
-> (Haircuts keep all six chairs busy every day and bring in the most; clients come from across town for our color work.)
 > (Nail bars nearby charge less than our nail station costs us per client.)
 > (Nail clients are mostly walk-ins who never book a cut or color.)
+> (Haircuts keep all six chairs busy every day and bring in the most; clients come from across town for our color work.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -239,7 +243,8 @@ A plain table, "Grace’s salon: last year, by product":
 - If typed 63.83%: That leaves out the loss on Nail station. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Nail station, which loses money?**
-- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need.
+- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, so there is nothing to fix.
+- Keep it, and cut its loss as far as you can — if chosen: Nothing in the notes ties it to the core, so keeping its loss buys the core nothing.
 - Let it go (right)
 
 After the answer: the deciding words are marked. Reason: Color is what customers come here for and earns $30,000, 69.8% of what the lines earn together, more than Haircuts with its bigger sales: that is the core. Nail station loses $4,000: no change would make it pay and nothing ties it to the core: let it go.
@@ -257,9 +262,9 @@ A plain table, "Bea’s moving company: last year, by product":
 > Piano moves  |  $10,000  |  $14,000
 > House moves for families  |  $120,000  |  $90,000
 > Office moves  |  $60,000  |  $34,000
-> (Every mover in the area does house moves the same way; offices pick us because we move them over a single weekend, which no other mover here does.)
 > (Piano movers in the area charge twice our price, and callers who phone about the piano book anyway.)
 > (Piano moves come from people who call only about the piano.)
+> (Every mover in the area does house moves the same way; offices pick us because we move them over a single weekend, which no other mover here does.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -276,6 +281,7 @@ A plain table, "Bea’s moving company: last year, by product":
 
 **What should the owner do with Piano moves, which loses money?**
 - Keep it, but fix its price or cost (right)
+- Keep it, and cut its loss as far as you can — if chosen: The notes show a price or cost change that could make it pay, so its loss need not be kept: fix it first.
 - Let it go — if chosen: The notes show a price or cost change that could make it pay: try that before dropping it.
 
 After the answer: the deciding words are marked. Reason: Office moves is what customers come here for and earns $26,000, 41.9% of what the lines earn together; House moves for families earns more, but rivals sell it the same way: that is the core. Piano moves loses $4,000: a price or cost change could make it pay: keep it and fix it.
@@ -293,9 +299,9 @@ A plain table, "Hal’s delivery service: last year, by customer":
 > Restaurants  |  $40,000  |  $52,000
 > Florists  |  $20,000  |  $15,000
 > One-off senders  |  $25,000  |  $32,000
-> (Pharmacies use Hal because he carries medicine at the right temperature and signs for every package, which no other courier here does.)
 > (Restaurants pay us $6 a run, while the other couriers charge them $11; they told Hal they would pay $10 to keep him.)
 > (The restaurants send us nothing but their own deliveries.)
+> (The pharmacies tried the other couriers first; none would keep medicine cold or sign for every package, and Hal does both.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -312,9 +318,10 @@ A plain table, "Hal’s delivery service: last year, by customer":
 
 **What should the owner do with Restaurants, which loses money?**
 - Keep it, but fix its price or cost (right)
+- Keep it, and cut its loss as far as you can — if chosen: The notes show a price or cost change that could make it pay, so its loss need not be kept: fix it first.
 - Let it go — if chosen: The notes show a price or cost change that could make it pay: try that before dropping it.
 
-After the answer: the deciding words are marked. Reason: Pharmacies is what customers come here for and earns $30,000, 187.5% of what the lines earn together: that is the core. Restaurants loses $12,000: a price or cost change could make it pay: keep it and fix it.
+After the answer: the deciding words are marked. Reason: Pharmacies is what customers come here for and earns $30,000, 187.5% of what the lines earn together (over 100% because the losing lines take $19,000 back): that is the core. Restaurants loses $12,000: a price or cost change could make it pay: keep it and fix it.
 The working:
 - Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Pharmacies: $30,000; Restaurants: −$12,000; Florists: $5,000; One-off senders: −$7,000. Pharmacies earns the most, and it is what customers come here for.
 - Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $16,000 = 187.5%. The loss on Restaurants and One-off senders is taken off the total; the part above 100% is what the losing lines cost the rest.
@@ -329,9 +336,9 @@ A plain table, "Priya’s cafe: last year, by way of selling":
 > Catering orders by phone  |  $40,000  |  $16,000
 > The delivery app  |  $30,000  |  $33,000
 > Stall at the Saturday farmers market  |  $12,000  |  $8,000
-> (Offices order our catering for the pastries we bake ourselves, which no other cafe near the towers does. Each order is counted once, under the way it came in.)
 > (The app fixes the menu price shown to its users and keeps its 30% of every order.)
 > (Most of the offices that phone in catering first tried us through the delivery app.)
+> (Offices order our catering for the pastries we bake ourselves, which no other cafe near the towers does. Each order is counted once, under the way it came in.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -347,7 +354,8 @@ A plain table, "Priya’s cafe: last year, by way of selling":
 - If typed 50%: That leaves out the loss on The delivery app. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with The delivery app, which loses money?**
-- Keep it, but fix its price or cost (right)
+- Keep it, but fix its price or cost — if chosen: The notes say no price or cost change would make it pay, so fixing it is not open; it brings the core’s customers or comes with the core, so keep it and cut its loss.
+- Keep it, and cut its loss as far as you can (right)
 - Let it go — if chosen: The notes say it brings the core’s customers or comes with the core, so dropping it would cost the core too. Keep it and cut its loss.
 
 After the answer: the deciding words are marked. Reason: Catering orders by phone is what customers come here for and earns $24,000, 53.3% of what the lines earn together, more than The counter with its bigger sales: that is the core. The delivery app loses $3,000: no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss.
@@ -369,7 +377,7 @@ Each line ("Line 1", "Line 2"...) has:
 - The line: a product, a customer or a way you sell (words) (the box says: "For example: wedding cakes")
 - What kind of line it is (choose one)
 - What it brought in last year (a number, in dollars)
-- What it cost you directly last year (a number, in dollars)
+- What it cost you directly last year: its materials, plus the hours your staff spent on it times their pay per hour (rent stays out) (a number, in dollars)
 
 Each line has "Remove this line" and the form has "Add another line". Refused, with a line under the field and nothing stored: a field left empty, a word where a number goes, and any run of 8 or more digits ("That looks like an account number. Leave account numbers out. Type only what the label says."). A line left wholly blank is dropped; with none, "Add at least one line to go on." Buttons: "Save and work it out", and "I have no business to look at yet" (then "You can come back to this lesson when you have one. The sample books were the practice.").
 
@@ -384,9 +392,9 @@ A plain table, "Dana’s bakery: last year, by product":
 > Wedding cakes  |  $48,000  |  $18,000  <- marked after the answer
 > Birthday cakes  |  $30,000  |  $18,000
 > Catering  |  $20,000  |  $26,000  <- marked after the answer
-> (Couples drive in from three towns for our wedding cakes; no other bakery nearby makes them.)
 > (Other caterers in town charge about a third more than we do for the same party.)
 > (Most couples who order a wedding cake also book our catering for the party.)
+> (Couples drive in from three towns for our wedding cakes; no other bakery nearby makes them.)
 
 **The change.** "What will you change?": Say what you will do, where, and the day. Or do it now and mark it done.
 
@@ -413,9 +421,9 @@ A plain table, "Ed’s auto repair shop: last year, by product":
 > Brake and engine work  |  $80,000  |  $40,000
 > Tire sales and fitting  |  $50,000  |  $42,000
 > Car wash  |  $10,000  |  $13,000
+> (Car wash customers come only for the wash.)
 > (Oil changes bring a new customer through the door most days; drivers come to Ed for brake and engine work because he finds faults the dealers miss.)
 > (The car wash on the highway charges less than our wash costs us to run.)
-> (Car wash customers come only for the wash.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -431,7 +439,8 @@ A plain table, "Ed’s auto repair shop: last year, by product":
 - If typed 71.43%: That leaves out the loss on Car wash. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Car wash, which loses money?**
-- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need.
+- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, so there is nothing to fix.
+- Keep it, and cut its loss as far as you can — if chosen: Nothing in the notes ties it to the core, so keeping its loss buys the core nothing.
 - Let it go (right)
 
 After the answer: the deciding words are marked. Reason: Brake and engine work is what customers come here for and earns $40,000, 75.5% of what the lines earn together: that is the core. Car wash loses $3,000: no change would make it pay and nothing ties it to the core: let it go.
@@ -449,9 +458,9 @@ A plain table, "June’s flower shop: last year, by customer":
 > Walk-in shoppers  |  $70,000  |  $60,000
 > Funeral homes  |  $30,000  |  $20,000
 > Wedding couples  |  $45,000  |  $18,000
-> (Couples choose June for wedding flowers no other florist in town arranges.)
 > (The hotels’ contracts fix our price for three more years.)
 > (The hotels whose lobbies we do send us most of our wedding couples.)
+> (Couples who book June say they looked at every florist in town and found nobody else who arranges flowers her way.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -467,7 +476,8 @@ A plain table, "June’s flower shop: last year, by customer":
 - If typed 57.45%: That leaves out the loss on Hotel lobbies. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Hotel lobbies, which loses money?**
-- Keep it, but fix its price or cost (right)
+- Keep it, but fix its price or cost — if chosen: The notes say no price or cost change would make it pay, so fixing it is not open; it brings the core’s customers or comes with the core, so keep it and cut its loss.
+- Keep it, and cut its loss as far as you can (right)
 - Let it go — if chosen: The notes say it brings the core’s customers or comes with the core, so dropping it would cost the core too. Keep it and cut its loss.
 
 After the answer: the deciding words are marked. Reason: Wedding couples is what customers come here for and earns $27,000, 64.3% of what the lines earn together, more than Walk-in shoppers with its bigger sales: that is the core. Hotel lobbies loses $5,000: no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss.
@@ -485,9 +495,9 @@ A plain table, "Ray’s plumbing business: last year, by product":
 > New bathrooms  |  $100,000  |  $88,000
 > Water heaters put in  |  $40,000  |  $32,000
 > Drain cleaning by the month  |  $15,000  |  $19,000
-> (People call Ray first in an emergency because he answers at night, which the other plumbers in town do not.)
 > (Other plumbers charge a third more than we do for monthly drain cleaning.)
 > (The customers on monthly drain cleaning are the ones who call us first in an emergency.)
+> (People call Ray first in an emergency because he answers at night, which the other plumbers in town do not.)
 
 **Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
@@ -504,6 +514,7 @@ A plain table, "Ray’s plumbing business: last year, by product":
 
 **What should the owner do with Drain cleaning by the month, which loses money?**
 - Keep it, but fix its price or cost (right)
+- Keep it, and cut its loss as far as you can — if chosen: The notes show a price or cost change that could make it pay, so its loss need not be kept: fix it first.
 - Let it go — if chosen: The notes show a price or cost change that could make it pay: try that before dropping it.
 
 After the answer: the deciding words are marked. Reason: Emergency calls, day or night is what customers come here for and earns $30,000, 65.2% of what the lines earn together, more than New bathrooms with its bigger sales: that is the core. Drain cleaning by the month loses $4,000: a price or cost change could make it pay: keep it and fix it.
@@ -539,7 +550,8 @@ A plain table, "Sam’s food truck: last year, by way of selling":
 - If typed 32.65%: That leaves out the loss on Late-night stops. Take it off the total: the share then shows what the losing lines cost the rest.
 
 **What should the owner do with Late-night stops, which loses money?**
-- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, and nothing ties it to the core, so fixing it keeps a loss the core does not need.
+- Keep it, but fix its price or cost — if chosen: No price or cost change in the notes would make it pay, so there is nothing to fix.
+- Keep it, and cut its loss as far as you can — if chosen: Nothing in the notes ties it to the core, so keeping its loss buys the core nothing.
 - Let it go (right)
 
 After the answer: the deciding words are marked. Reason: Private parties is what customers come here for and earns $16,000, 34.8% of what the lines earn together; Weekday office lunches earns more, but rivals sell it the same way: that is the core. Late-night stops loses $3,000: no change would make it pay and nothing ties it to the core: let it go.

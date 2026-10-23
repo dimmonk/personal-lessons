@@ -27,11 +27,11 @@ A report summary, from "Valley Business Journal · Trade report" (marked "Report
 
 > # Small-town pharmacies: the year in review
 >
-> There are four pharmacies in town, and none has opened or closed in ten years. Drug wholesalers are many, and a pharmacy can switch from one to another within a week. Most prescriptions are paid for by three drug-benefit companies acting for the insurance plans, and they decide what they pay; a pharmacy that refuses their rate loses those customers. Mail-order pharmacies fill a small share, mostly drugs taken for years.
+> There are four pharmacies in town, and none has opened or closed in ten years. Three big wholesalers sell nearly all the drugs, but they compete for each pharmacy’s account, and a pharmacy can move to another of them within a week. Most prescriptions are paid for by three drug-benefit companies acting for the insurance plans, and they decide what they pay; a pharmacy that refuses their rate loses those customers. Mail-order pharmacies fill a small share, mostly drugs taken for years.
 
 The working, one step at a time:
 1. Find the line that shows who takes the money, and why.: The third line: three drug-benefit companies pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.
-1. Check the other forces are weak, then name the one that takes the money.: No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three drug-benefit companies, take the money.
+1. Check the other forces are weak, then name the one that takes the money.: No pharmacy has opened or closed in ten years, the wholesalers compete for each account, and mail order fills a small share. So the buyers, the three drug-benefit companies, take the money.
 
 Then the answer: Most prescriptions are paid for by three drug-benefit companies acting for the insurance plans, and they decide what they pay; a pharmacy that refuses their rate loses those customers. / Buyers: customers who can push the price down. Three drug-benefit companies pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into.
 
@@ -267,12 +267,12 @@ A report summary, from "Harbor Business News · Trade report" (marked "Report su
 
 > # Hotel laundries: a quote every week
 >
-> The two laundries in town that take hotel work have charged about the same for years, and neither cuts on its own. Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week, and switching costs a hotel nothing. Soap, water and machines cost what they did last year.
+> The two laundries in town that take hotel work each run two shifts, and their prices sit within a dollar of each other’s. Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week. Soap, water and machines cost what they did last year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "The two laundries in town that take hotel work have charged about the same for years, and neither cuts on its own." — if tapped: note: Two laundries that do not start price cuts: rivals are calm.
-- "Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week, and switching costs a hotel nothing." (right)
+- "The two laundries in town that take hotel work each run two shifts, and their prices sit within a dollar of each other’s." — if tapped: note: Two laundries with prices close together, and no line shows them fighting: rivals are not what takes it.
+- "Each of the four big hotels sends its sheets to whichever laundry quotes lowest that week." (right)
 - "Soap, water and machines cost what they did last year." — if tapped: note: Supplies cost the same, so suppliers have little hold.
 
 **Which force squeezes the profit most?**
@@ -280,7 +280,7 @@ A report summary, from "Harbor Business News · Trade report" (marked "Report su
 - Suppliers: the ones you buy from can push their price up — if chosen: Supplies cost the same, so suppliers have little hold.
 - Newcomers: it is easy for new businesses to start up — if chosen: No line shows newcomers taking money here. The settling line shows buyers taking it.
 - Substitutes: another way to meet the same need — if chosen: No line shows a substitute taking money here. The settling line shows buyers taking it.
-- Rivals: the businesses already there fight on price — if chosen: Two laundries that do not start price cuts: rivals are calm.
+- Rivals: the businesses already there fight on price — if chosen: Two laundries with prices close together, and no line shows them fighting: rivals are not what takes it.
 
 After the answer: the deciding words are marked. Reason: Four big hotels move their sheets every week to the lowest quote, at no cost to switch: the buyers push the price down and take the money.
 
@@ -290,16 +290,16 @@ A report summary, from "Northside Business Weekly · Trade report" (marked "Repo
 
 > # Dog walking: more dogs, more walkers
 >
-> Demand for dog walking in the city grew 20% last year. Owners stick with a walker they trust and rarely switch. Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.
+> Demand for dog walking in the city grew 20% last year, as more people got dogs and went back to the office. Most owners have used the same walker for over a year, and trust the walker with the house from the first visit. Anyone with a phone can walk dogs: 300 new walkers joined this year, and the going rate fell from $25 to $18.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Demand for dog walking in the city grew 20% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
-- "Owners stick with a walker they trust and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
-- "Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk." (right)
+- "Demand for dog walking in the city grew 20% last year, as more people got dogs and went back to the office." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Most owners have used the same walker for over a year, and trust the walker with the house from the first visit." — if tapped: note: Owners stay with one walker, so buyers have little pull here.
+- "Anyone with a phone can walk dogs: 300 new walkers joined this year, and the going rate fell from $25 to $18." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
+- Buyers: customers who can push the price down — if chosen: Owners stay with one walker, so buyers have little pull here.
 - Suppliers: the ones you buy from can push their price up — if chosen: No line shows suppliers taking money here. The settling line shows newcomers taking it.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: No line shows a substitute taking money here. The settling line shows newcomers taking it.
@@ -397,16 +397,16 @@ A report summary, from "Lakeshore Business Report · Trade report" (marked "Repo
 
 > # Mobile car detailing: the fastest-growing trade in the county
 >
-> Detailing jobs booked in the county grew 40% last year. Car owners who find a detailer they like book the same one again and rarely switch. Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs.
+> Detailing jobs booked in the county grew 40% last year, as more people kept their cars longer instead of buying new ones. Most car owners book the same detailer every spring and fall, and few get a second quote before they book. Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Detailing jobs booked in the county grew 40% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
-- "Car owners who find a detailer they like book the same one again and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
-- "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs." (right)
+- "Detailing jobs booked in the county grew 40% last year, as more people kept their cars longer instead of buying new ones." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Most car owners book the same detailer every spring and fall, and few get a second quote before they book." — if tapped: note: Owners stay with one detailer, so buyers have little pull here.
+- "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
+- Buyers: customers who can push the price down — if chosen: Owners stay with one detailer, so buyers have little pull here.
 - Suppliers: the ones you buy from can push their price up — if chosen: No line shows suppliers taking money here. The settling line shows newcomers taking it.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: No line shows a substitute taking money here. The settling line shows newcomers taking it.
@@ -448,18 +448,18 @@ A report summary, from "State Business Journal · Trade report" (marked "Report 
 
 > # Sandwich franchises and their supplier
 >
-> Lunch customers come back most weekdays and pay the menu price without haggling. A new shop under the franchise needs the franchise owner’s say-so, and none has opened in town in four years. Each shop’s contract makes it buy its bread, meat and paper goods from the franchise owner, which sets the prices and raised them 15% this year.
+> Lunch customers come back most weekdays, many from the offices nearby, and the menu price has gone up twice since they started coming. A new shop under the franchise needs the franchise owner’s say-so; the owner picks where each shop in the county goes. Each shop’s contract makes it buy bread, meat and paper goods from the franchise owner, who raised prices 15% this year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Lunch customers come back most weekdays and pay the menu price without haggling." — if tapped: note: Customers pay the menu price and keep coming, so buyers have little hold.
-- "A new shop under the franchise needs the franchise owner’s say-so, and none has opened in town in four years." — if tapped: note: No newcomers open, so they are not the problem.
-- "Each shop’s contract makes it buy its bread, meat and paper goods from the franchise owner, which sets the prices and raised them 15% this year." (right)
+- "Lunch customers come back most weekdays, many from the offices nearby, and the menu price has gone up twice since they started coming." — if tapped: note: Customers keep coming as the price rises, so buyers have little hold.
+- "A new shop under the franchise needs the franchise owner’s say-so; the owner picks where each shop in the county goes." — if tapped: note: Newcomers need the owner’s say-so, so they are not the problem.
+- "Each shop’s contract makes it buy bread, meat and paper goods from the franchise owner, who raised prices 15% this year." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Customers pay the menu price and keep coming, so buyers have little hold.
+- Buyers: customers who can push the price down — if chosen: Customers keep coming as the price rises, so buyers have little hold.
 - Suppliers: the ones you buy from can push their price up (right)
-- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers open, so they are not the problem.
+- Newcomers: it is easy for new businesses to start up — if chosen: Newcomers need the owner’s say-so, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: No line shows a substitute taking money here. The settling line shows suppliers taking it.
 - Rivals: the businesses already there fight on price — if chosen: No line shows rivals taking money here. The settling line shows suppliers taking it.
 
@@ -471,18 +471,18 @@ A report summary, from "Elm Street Business Weekly · Trade report" (marked "Rep
 
 > # Cafes on Elm Street: a year of cheaper lattes
 >
-> Bean prices rose 10% this year, which adds about 3 cents to a $4 cup. Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others. No new cafe has opened on Elm Street in three years; the leases are all taken.
+> Bean prices rose 10% this year, which adds about 3 cents to each $4 cup, the cafes’ roaster says in its new price list. Six cafes on Elm Street sell the same drinks; this year they cut a latte from $4 to $3.25, matching each other. Every shop front on Elm Street is leased, most for ten years or more, to the same cafes and stores as three years ago.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Bean prices rose 10% this year, which adds about 3 cents to a $4 cup." — if tapped: note: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
-- "Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others." (right)
-- "No new cafe has opened on Elm Street in three years; the leases are all taken." — if tapped: note: No newcomers can get a lease, so they are not the problem.
+- "Bean prices rose 10% this year, which adds about 3 cents to each $4 cup, the cafes’ roaster says in its new price list." — if tapped: note: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
+- "Six cafes on Elm Street sell the same drinks; this year they cut a latte from $4 to $3.25, matching each other." (right)
+- "Every shop front on Elm Street is leased, most for ten years or more, to the same cafes and stores as three years ago." — if tapped: note: No newcomer can get a lease, so they are not the problem.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: No line shows buyers taking money here. The settling line shows rivals taking it.
 - Suppliers: the ones you buy from can push their price up — if chosen: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
-- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers can get a lease, so they are not the problem.
+- Newcomers: it is easy for new businesses to start up — if chosen: No newcomer can get a lease, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: No line shows a substitute taking money here. The settling line shows rivals taking it.
 - Rivals: the businesses already there fight on price (right)
 

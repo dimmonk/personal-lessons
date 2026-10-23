@@ -11,7 +11,7 @@ Strategists read a plan for two choices made together: where to play, and how to
 
 Where to play: which customers, and where. How to win: why those customers will pick you over the rivals they already have.
 The two are one choice, and they must fit: the way to win has to be what those customers value. Fast breakfasts win truck drivers; candlelit dinners do not, however well they are done.
-A plan that never chooses falls into one of six traps. Do it all: many priorities, none dropped. Head-on: going first at the strongest rival, on the ground where it is strongest. Many fronts: taking on several rivals, in several places, at once.
+A plan that never chooses falls into one of six traps; a seventh failure, the misfit, chooses both parts but they do not fit. Do it all: many priorities, none dropped. Head-on: going first at the strongest rival, on the ground where it is strongest. Many fronts: taking on several rivals, in several places, at once.
 Something for everyone: every kind of customer at once. A dream: a mission that never says which customers or why they would choose you. Copycat: what every business in the trade already does, done again or done better.
 Words do not decide it: a plan can say “we play for” and “we win with” and still choose nothing, and a plan in plain words can choose well. Look for who, why they would pick you, and whether the two fit.
 Why it matters: money and hours spent on everything at once are spent on nothing in particular, and the customers you could have won go to a rival who chose them.
@@ -395,7 +395,7 @@ After the answer: the deciding words are marked. Reason: Both plans play for dri
 
 A written note: "Joe’s boat rentals: the plan for the year", A draft.
 
-> We play for the future of the lake and everyone who loves it.
+> We play for the future of the lake.
 > We win with passion, quality and a smile.
 
 **Does this plan make a real choice? If not, what is wrong with it?**
@@ -438,7 +438,7 @@ Then a screen: you can stop here, your place is kept.
 
 To pass:
 - At least 5 right
-- None tried to serve everyone at once, or kept two ways that pull against each other
+- None took a plan that does not really choose where to play and how to win for one that does
 
 #### Check question 15
 

@@ -10,8 +10,8 @@ Experienced founders judge the two differently, and size every bet to what they 
 ## Step 1: Can anyone see who would buy?
 
 First question: can anyone see yet whether people would buy it? A second shop, a branch, a new truck outside a factory: people already buy these, and many like them have opened. Start from how they did, as in the tables of others like it.
-Something these customers have never been offered is different. The wider record (about half of new US businesses are still open after five years) is only a rough start: no table can say whether anyone here wants this. Try it small, with what you already have and partners who share the cost, and learn who buys.
-Second question, for every bet: what can you afford to lose? That is the most you could lose and still keep the business and your household going. The stake, what you would lose if it fails, stays within it, however good the record. Even a good record loses some.
+Something these customers have never been offered is different. The wider record (about half of new US shops and offices are still open after five years) is only a rough start: no table can say whether anyone here wants this. Try it small, with what you already have and partners who share the cost, and learn who buys.
+Second question, for every bet: what can you afford to lose? That is the most you could lose and still keep the business and your household going. To find it, take the cash you hold, keep back a few months of household bills and of the business’s own bills and loans, and what is left is the most you could lose. The stake, what you would lose if it fails, stays within it, however good the record. Even a good record loses some.
 So size the bet. If the whole project fits within what you can lose and the record is sound, go ahead in full. If it costs more, put less at risk: rent instead of buy, start with a part, take a partner who pays a share. If no version fits, not now.
 Why it matters: a bet sized to what you can lose lets you try again; one bigger than that can end the business before you find out.
 
@@ -162,7 +162,7 @@ A written note: "Carlos’s idea, with its numbers", Written in October.
 
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
-- Try it with a folding table outside that factory for a summer first — if chosen: People already buy lunch outside factories, and the record says how trucks go; a summer at a table would only delay.
+- Try it with a folding table outside that factory for a summer first — if chosen: People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season.
 - Start from how the 30 trucks did, and buy the used truck: the whole $40,000 is within what he can lose (right)
 - Go by his own forecast: his tacos are better than most — if chosen: Most owners in the record thought their food was better. Start from how the 30 did.
 
@@ -335,7 +335,7 @@ A written note: "Omar’s idea, with its numbers", Written in June.
 
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
-- Run a print stall at a market there for a summer first, to see whether people buy printing — if chosen: People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall only delays.
+- Run a print stall at a market there for a summer first, to see whether people buy printing — if chosen: People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales.
 - Go by his own forecast: his shop runs better than most — if chosen: Most owners in the record thought so too. Start from how the others did.
 - Start from the state’s record and open the shop: the whole $60,000 is within what he can lose (right)
 

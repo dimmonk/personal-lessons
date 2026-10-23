@@ -48,9 +48,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Fewer weekend patrols make break-ins rise in Lakeview
 
 The working, one step at a time:
-1. Find what the headline claims. “Up 55%” tells a reader that break-ins are worse than they have been: more than Lakeview usually has.
-1. Find what it is compared with. The first sentence: the same months last year, when there were 40.
-1. Check that the comparison is fair. In the four years before, the count was 60 to 66 each year. Last year’s 40 was one odd low year, so “up 55%” compares this year with that dip, and 62 is a usual year.
+1. Find what the headline claims.: “Up 55%” tells a reader that break-ins are worse than they have been: more than Lakeview usually has.
+1. Find what it is compared with.: The first sentence: the same months last year, when there were 40.
+1. Check that the comparison is fair.: In the four years before, the count was 60 to 66 each year. Last year’s 40 was one odd low year, so “up 55%” compares this year with that dip, and 62 is a usual year.
 
 Then the answer: Lakeview is having more break-ins than it usually does / Lakeview police counted 62 break-ins in the first three months of this year, up from 40 in the same months last year. / Does not show it. “Up 55%” is true against last year, 62 against 40, but last year was an odd low year. In the four years before, the count was 60 to 66 each year, so 62 is a usual year for Lakeview, not more than usual.
 What you would need to see: You would need this year’s count beside several years, which the story gives: it shows a usual year.
@@ -80,7 +80,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The public works office used the same pickup program and counted the same way both years." — if tapped: That is not the sentence.
 - "Brookdale households recycled 220 pounds each this year, up from 200 pounds each last year, the office said." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -111,7 +111,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Brookdale recycled 2.2 million pounds this year, twice Fenwick’s 1.1 million pounds, the county said." (right)
 - "Brookdale has about 10,000 households. Fenwick has about 5,000." — if tapped: note: That is the size of each town, not what it recycled.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -206,7 +206,7 @@ A news story, from "Westbrook Press · Safety":
 - "Westbrook has about 150,000 residents. Pinewood has about 30,000." — if tapped: note: That is the size of each town, not a count of thefts.
 - "Westbrook police recorded 300 bike thefts last year, more than any other town in the county. Pinewood recorded 120." (right)
 - "Both towns’ counts come from county police records, kept the same way in every town." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -236,7 +236,7 @@ A news story, from "Dale Gazette · Schools":
 - "Of Dale High’s 220 test takers, 82% passed, against 63% of Hillcrest High’s 220." (right)
 - "Each student takes the test for their grade: the basic test in grade 9, the harder advanced test in grade 11. Dale’s test takers this year were 200 ninth graders and 20 eleventh graders; Hillcrest’s were 20 ninth graders and 200 eleventh graders." — if tapped: note: That is how many took each test, not the pass rates.
 - "In grade 9, 90% of Hillcrest students passed and 85% of Dale students. In grade 11, 60% of Hillcrest students passed and 50% of Dale students." — if tapped: note: These are the pass rates in each grade, not the overall rates.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -265,7 +265,7 @@ A news story, from "Marlow Daily · Schools":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Marlow High reported that 95% of its test takers passed this year, up from 82% last year." (right)
 - "The state pays schools more when their pass rate is above 90%. This year the school told 60 students who were unlikely to pass to skip the test: 340 took it, against 400 last year." — if tapped: note: These are numbers of test takers, not the pass rates.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -295,7 +295,7 @@ An ad, from "Harbor Books" (marked "Ad"):
 - "Our four stores sold $240,000 in December, up from $222,000 last December." (right)
 - "We opened a website this year; its sales are not in these figures." — if tapped: That is not the sentence.
 - "Same four stores both years." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -352,7 +352,7 @@ A news story, from "Ashton Herald · Safety":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Ashton firefighters answered 45 house fires last year, the fewest of any town in the county. Dunmore had 90." (right)
 - "Fire Chief Ana Ruiz reminded residents to check their smoke alarms." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -391,7 +391,7 @@ A news story, from "Bayside Tribune · Sports":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In June last year, Bayside sold 950 season tickets." — if tapped: note: That is last June’s sales: a fair number to compare with, but not one of the two the headline compares.
 - "This June the team sold 800 season tickets, up from 500 in February, its slowest month, the team said." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -421,7 +421,7 @@ A news story, from "Plains Farm Weekly · Crops":
 - "Cedar County planted 6,000 acres of corn this year. Maple County planted 3,000." — if tapped: note: That is how much land was planted, not how much was harvested.
 - "Cedar County farms harvested 900,000 bushels of corn this fall, ahead of Maple County’s 600,000, the state agriculture office said." (right)
 - "Both counties’ figures come from the state agriculture office, counted the same way." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -450,7 +450,7 @@ A news story, from "Lakeview Beacon · Business":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The mill opened a new packing line this spring; both counts come from the payroll list on the first of the month." — if tapped: That is not the sentence.
 - "Lakeview Mills had 1,040 workers on its payroll this June, up from 1,000 last June, the company said." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -479,7 +479,7 @@ A news story, from "Eastport Sun · Transit":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "88% of Eastport buses ran on time this spring, up from 82% last spring, Eastport Transit reported." (right)
 - "Both numbers come from the same GPS system on the same routes." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -508,7 +508,7 @@ A news story, from "Rivermont Review · Transit":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "5% of Rivermont trains were delayed this year, down from 15% last year, the railway said." (right)
 - "This year a train counts as delayed only if it is 15 minutes late. Last year it counted as delayed at 5 minutes late." — if tapped: note: This is how delays were counted each year, not the share of trains delayed.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -546,4 +546,4 @@ What you would need to see: You would need the old burger’s rating from the sa
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "6 of 6: passed" or "4 of 6: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

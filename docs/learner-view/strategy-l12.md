@@ -131,7 +131,7 @@ Help on screen: the words that decide it are marked.
 (the options come in an order that depends on the seed of the question)
 - Near 60.4%, the share of others like it still open, moved only for a real difference (right)
 - Near 100%, as the plan says: Grace knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 39.6% of them closed within three years. Start from how they did.
-- Near 100%, like the one salon in town that Grace knows did well — if chosen: One success that looks alike says little; the table shows how many like it did. Start from the share.
+- Near 50%: a new salon either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 48 that opened, 29 were still open three years later: 60.4%. Grace’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
 The working:
@@ -170,7 +170,7 @@ A plain table, "New bakeries in the county, and how many were still open three y
 (the options come in an order that depends on the seed of the question)
 - Near 54.8%, the share of others like it still open, moved only for a real difference (right)
 - Near 100%, as the plan says: Dana knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 45.2% of them closed within three years. Start from how they did.
-- Near 100%, like the one bakery in town that Dana knows did well — if chosen: One success that looks alike says little; the table shows how many like it did. Start from the share.
+- Near 50%: a new bakery either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 42 that opened, 23 were still open three years later: 54.8%. Dana’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
 The working:
@@ -203,7 +203,7 @@ A plain table, "New cafes in the county, and how many were still open three year
 (the options come in an order that depends on the seed of the question)
 - Near 60%, the share of others like it still open, moved only for a real difference (right)
 - Near 100%, as the plan says: Priya knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 40% of them closed within three years. Start from how they did.
-- Near 100%, like the one cafe in town that Priya knows did well — if chosen: One success that looks alike says little; the table shows how many like it did. Start from the share.
+- Near 50%: a new cafe either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 50 that opened, 30 were still open three years later: 60%. Priya’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
 The working:
@@ -231,13 +231,13 @@ A written note: "Leo’s notes on a move", Written in August.
 
 > We plan to sell kids’ bikes with a free trade-in when the child outgrows them.
 > The bike shop across town has never cut a price or run an offer in its twenty years.
-> Kids’ bikes are half of its sales, and a trade-in needs nothing but a shelf for the bikes that come back.
+> Kids’ bikes are half of its sales, to the same families we would sell to, and a trade-in needs nothing but a shelf for the bikes that come back.
 
 **How will the rival most likely answer?**
 - It will answer: expect it to match the move within weeks (right)
 - It will most likely let the move go — if chosen: The move takes customers the rival serves, and the rival can follow without changing how it runs, so plan for its answer.
 
-After the answer: the deciding words are marked. Reason: A quiet past does not protect the move: it goes after half of the rival’s sales, and a shelf is all it needs to follow. Plan for an answer.
+After the answer: the deciding words are marked. Reason: A quiet past does not protect the move: it goes after half of the rival’s sales, to the same families, and a shelf is all it needs to follow. Plan for an answer.
 
 #### Item 10
 
@@ -245,7 +245,7 @@ A written note: "Carlos’s notes on an idea", Written in September.
 
 > Our customers work on a factory line, where phones are locked away until the break.
 > A taco truck downtown doubled its sales by taking orders by text.
-> It worked because office workers there order from their desks before walking out.
+> Most of its texts come from office workers there, sent from their desks just before they walk out.
 
 **Will it work here for the same reason?**
 - The reason it worked there holds here — if chosen: The example looks the same, but the reason it worked there is missing here.
@@ -332,7 +332,7 @@ A plain table, "New bike shops in the county, and how many were still open three
 (the options come in an order that depends on the seed of the question)
 - Near 63%, the share of others like it still open, moved only for a real difference (right)
 - Near 100%, as the plan says: Leo knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 37% of them closed within three years. Start from how they did.
-- Near 100%, like the one bike shop in town that Leo knows did well — if chosen: One success that looks alike says little; the table shows how many like it did. Start from the share.
+- Near 50%: a new bike shop either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 46 that opened, 29 were still open three years later: 63%. Leo’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
 The working:
@@ -365,7 +365,7 @@ A plain table, "New gyms in the county, and how many were still open three years
 (the options come in an order that depends on the seed of the question)
 - Near 65.2%, the share of others like it still open, moved only for a real difference (right)
 - Near 100%, as the plan says: Mark knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 34.8% of them closed within three years. Start from how they did.
-- Near 100%, like the one gym in town that Mark knows did well — if chosen: One success that looks alike says little; the table shows how many like it did. Start from the share.
+- Near 50%: a new gym either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 46 that opened, 30 were still open three years later: 65.2%. Mark’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
 The working:
@@ -393,7 +393,7 @@ A written note: "Kim’s notes on an idea", Written in February.
 
 > Here, the parents’ group has 30 members and gets a post about once a month.
 > A tutor in the city fills her classes by posting in a parents’ online group.
-> It worked because parents there read that group every day.
+> Parents there say they read that group every day, and most of her sign-ups say they found her there.
 
 **Will it work here for the same reason?**
 - The reason it worked there holds here — if chosen: The example looks the same, but the reason it worked there is missing here.

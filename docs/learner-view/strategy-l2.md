@@ -25,7 +25,7 @@ The right line: That is running the business well. It is needed, but rivals can 
 
 | A | B |
 |---|---|
-| Southwest Airlines did not try to be a full-service airline run more cheaply. It chose to do different things from the full-service airlines, and gave up some of what they offer. | Picture an airline that copies the best practice of the full-service airlines: the same service, run with fewer staff and newer software. |
+| In the 1990s, Southwest Airlines did not try to be a full-service airline run more cheaply. It chose to do different things from the full-service airlines, and gave up some of what they offer. | Picture an airline that copies the best practice of the full-service airlines: the same service, run with fewer staff and newer software. |
 
 Compare: Which would a rival find hard to match? Anyone can match the second by buying the same software. To match the first, a full-service airline would have to give up what makes it full-service.
 
@@ -109,7 +109,7 @@ After the answer: the deciding words are marked. Reason: The firms the clients m
 A written note: "Notes on our moving company", Written in April.
 
 > **We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day.**
-> Every moving company in our area quotes the same hourly rate, give or take $5.
+> Every moving company in our area quotes the same hourly rate, give or take $5, and has done so for as long as anyone here can remember.
 > Each spring somebody cuts the rate, and the rest of us follow.
 
 Help on screen: the words that decide it are marked.
@@ -117,7 +117,7 @@ Help on screen: the words that decide it are marked.
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day." (right)
-- "Every moving company in our area quotes the same hourly rate, give or take $5." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "Every moving company in our area quotes the same hourly rate, give or take $5, and has done so for as long as anyone here can remember." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "Each spring somebody cuts the rate, and the rest of us follow." — if tapped: note: That is what the price fight looks like. The line that settles it says whether running better would help.
 
 **What does this business need?**
@@ -180,21 +180,21 @@ After the answer: the deciding words are marked. Reason: The salon across the st
 
 A written note: "Notes on our gym", Written in January.
 
-> Three budget gyms opened within a mile this year, at $10 a month.
-> Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10.
+> Three budget gyms opened within a mile this year, at $15 a month, and each one was full of new members within weeks of its opening.
+> We run as well as they do, on rent as low as any, but the chains buy machines for hundreds of gyms: we cannot get near $15.
 > We charge $45 a month for the same machines and classes.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Three budget gyms opened within a mile this year, at $10 a month." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
-- "Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10." (right)
+- "Three budget gyms opened within a mile this year, at $15 a month, and each one was full of new members within weeks of its opening." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "We run as well as they do, on rent as low as any, but the chains buy machines for hundreds of gyms: we cannot get near $15." (right)
 - "We charge $45 a month for the same machines and classes." — if tapped: note: That is the price gap. The line that settles it says whether running better would close it.
 
 **What does this business need?**
 - Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
-After the answer: the deciding words are marked. Reason: The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $10. Selling the same machines and classes better will not fix it, so it needs a different position.
+After the answer: the deciding words are marked. Reason: The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $15. Selling the same machines and classes better will not fix it, so it needs a different position.
 
 #### Item 7
 
@@ -202,13 +202,13 @@ A written note: "Notes on our roofing company", Written in July.
 
 > We bid on the same jobs as four other roofers, at about the same price, and have done for twenty years.
 > Their crews have materials delivered to the site; ours drives back to the yard twice a day.
-> Our jobs take 30% longer than theirs, so we fit fewer jobs into the season and lose money on most fixed-price bids.
+> Our jobs run long, so we fit fewer into the season and lose money on most fixed-price bids.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "We bid on the same jobs as four other roofers, at about the same price, and have done for twenty years." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "Their crews have materials delivered to the site; ours drives back to the yard twice a day." (right)
-- "Our jobs take 30% longer than theirs, so we fit fewer jobs into the season and lose money on most fixed-price bids." — if tapped: note: That is the result. Find the line that says why.
+- "Our jobs run long, so we fit fewer into the season and lose money on most fixed-price bids." — if tapped: note: That is the result. Find the line that says why.
 
 **What does this business need?**
 - Run it better (right)
@@ -312,13 +312,13 @@ A written note: "Notes on our delivery business", Written in August.
 
 > Our vans drive about 25% more miles a day than they need to, so fuel and drivers’ overtime now take most of what a delivery earns.
 > Our drivers plan their own stops on paper.
-> Rival couriers let software plan their stops.
+> Rival couriers let software plan their stops, and their vans drive no more miles than they need.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our vans drive about 25% more miles a day than they need to, so fuel and drivers’ overtime now take most of what a delivery earns." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "Our drivers plan their own stops on paper." — if tapped: note: That is the cause. Find the line that shows rivals doing the same work better.
-- "Rival couriers let software plan their stops." (right)
+- "Rival couriers let software plan their stops, and their vans drive no more miles than they need." (right)
 
 **What does this business need?**
 - Run it better (right)
@@ -351,14 +351,14 @@ After the answer: the deciding words are marked. Reason: The late returns are a 
 A written note: "Notes on our cafe", Written in September.
 
 > Every cafe on our street copies a new drink within a month.
-> Our sales fell 20% this year, while the other cafes on the street held theirs.
-> Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5.
+> Our sales fell 20% this year, while the other cafes on the street, on the same corner and with the same prices, held theirs.
+> Reviews say our 8 a.m. line takes 15 minutes; theirs, with the same machines and staff, takes 5.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Every cafe on our street copies a new drink within a month." — if tapped: note: Copying is real here, but it hits every cafe alike. Find the line that explains why our sales alone fell.
-- "Our sales fell 20% this year, while the other cafes on the street held theirs." — if tapped: note: That is the result. Find the line that says why.
-- "Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5." (right)
+- "Our sales fell 20% this year, while the other cafes on the street, on the same corner and with the same prices, held theirs." — if tapped: note: That is the result. Find the line that says why.
+- "Reviews say our 8 a.m. line takes 15 minutes; theirs, with the same machines and staff, takes 5." (right)
 
 **What does this business need?**
 - Run it better (right)

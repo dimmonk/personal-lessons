@@ -43,9 +43,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - A figure or date someone could check.
 
 The working, one step at a time:
-1. Read how they back their view. Dana says what would happen: deadlines slip and the rest of the team covers. She gives no figure to check, and she does not wave your point away.
-1. Try the test: would they keep the view if it turned out fine? If deadlines did not slip, her worry would be gone. So the view rests on what she thinks would happen.
-1. Say it back, then put the question. Say it back: "Your worry is that it is the same work, and the team ends up covering." Then put the question: "How would that work on a Thursday when someone is off?"
+1. Read how they back their view.: Dana says what would happen: deadlines slip and the rest of the team covers. She gives no figure to check, and she does not wave your point away.
+1. Try the test: would they keep the view if it turned out fine?: If deadlines did not slip, her worry would be gone. So the view rests on what she thinks would happen.
+1. Say it back, then put the question.: Say it back: "Your worry is that it is the same work, and the team ends up covering." Then put the question: "How would that work on a Thursday when someone is off?"
 
 Then the answer: What they think would happen. Dana says what would happen and offers nothing she would hold whatever happened. Their view is built on what they think would happen, and nothing in their words says they would keep it if that did not happen. That is where "How would that work, step by step?" has something to work on. In the tests, explaining lowered people's rating of their own understanding, and how extreme they were, on issues judged by what happens; some repeats of the tests failed. Say their worry back first.
 
@@ -58,9 +58,9 @@ You plan to say it back:
 You are not against helping people. You think the one on Elm made the park unsafe at night. You think the neighbors should have been asked. And you would rather it were out of sight, somewhere else.
 
 The working, one step at a time:
-1. Lay their words beside your lines. Pam named three things: she is not against helping people, the one on Elm made the park unsafe at night, and nobody asked the neighbors.
-1. Find the line with something they did not say. The last line says Pam wants the shelter out of sight. She never said so; it is a motive you added.
-1. Cut it. Say back the first three lines. If Pam says "Yes, that is it," you have it.
+1. Lay their words beside your lines.: Pam named three things: she is not against helping people, the one on Elm made the park unsafe at night, and nobody asked the neighbors.
+1. Find the line with something they did not say.: The last line says Pam wants the shelter out of sight. She never said so; it is a motive you added.
+1. Cut it.: Say back the first three lines. If Pam says "Yes, that is it," you have it.
 
 Then the answer: And you would rather it were out of sight, somewhere else. Pam never said she wants it out of sight, so that line is a motive you added. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
@@ -176,7 +176,7 @@ Everyone in the district signed the petition. The petition has about four hundre
 - "The petition has about four hundred names." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "You want the district to look at the bus lines again." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "You want that done before it votes." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
-- A button: "Nothing is added." — if chosen: The text does give one. It is marked above.
+- A button: "Nothing is added." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Maria said "most of the parents I know", and the first line says everyone in the district. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
@@ -194,7 +194,7 @@ You do not mind the camera on Main. What bothers you is where the money goes. Yo
 - "What bothers you is where the money goes." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "You think someone is pocketing it." (right)
 - "The city will not say how much it brings in." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
-- A button: "Nothing is added." — if chosen: The text does give one. It is marked above.
+- A button: "Nothing is added." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Ken said nothing about anyone pocketing money. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
@@ -277,7 +277,7 @@ You are not against yard work. You have been putting up with it for months. The 
 - "You have been putting up with it for months." (right)
 - "The blowers start at seven on Saturday, when your daughter is asleep." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "You have already asked twice." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
-- A button: "Nothing is added." — if chosen: The text does give one. It is marked above.
+- A button: "Nothing is added." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Gus never said how long it has been going on. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
@@ -313,7 +313,7 @@ The fare is going up for the third time in four years. You know the budget is ti
 - "You know the budget is tight." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "Riders like you pay more than anyone else in the county." (right)
 - "Riders like you are the ones who pay." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
-- A button: "Nothing is added." — if chosen: The text does give one. It is marked above.
+- A button: "Nothing is added." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Rosa said riders are the ones who pay, and nothing about riders paying more than anyone else in the county. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
@@ -331,12 +331,12 @@ Free lunch for everyone costs two million dollars. You would put that money towa
 - "You would put that money toward the kids who need it." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "You would let the others bring a lunch." — if tapped: note: This line says what they said.; slip: flagged a line of the restatement that said what they said
 - "The district tried that plan last year and it failed." (right)
-- A button: "Nothing is added." — if chosen: The text does give one. It is marked above.
+- A button: "Nothing is added." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Lee said nothing about the district having tried a plan. The line says more than they said, and a restatement that adds something is not one they would accept. That check is ours; experts advise saying a view back so fairly that the person would accept it.
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "8 of 8: passed" or "6 of 8: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

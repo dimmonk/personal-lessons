@@ -45,10 +45,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Flu shots will stop the flu in Millbrook
 
 The working, one step at a time:
-1. Find what the headline claims. “Hits hard” says more people have the flu than is usual.
-1. Find the sentence with the count and what it is out of. The first sentence has both: 1,200 people with the flu, out of 400,000 people in all.
-1. Turn the count into so many in 1,000. 1,200 ÷ 400,000 × 1,000 = 3, so 3 in every 1,000.
-1. Compare it with the usual. The usual is about 6 in every 1,000. This winter is 3, half the usual, so the headline says more than the numbers show.
+1. Find what the headline claims.: “Hits hard” says more people have the flu than is usual.
+1. Find the sentence with the count and what it is out of.: The first sentence has both: 1,200 people with the flu, out of 400,000 people in all.
+1. Turn the count into so many in 1,000.: 1,200 ÷ 400,000 × 1,000 = 3, so 3 in every 1,000.
+1. Compare it with the usual.: The usual is about 6 in every 1,000. This winter is 3, half the usual, so the headline says more than the numbers show.
 
 Then the answer: More people in Millbrook have the flu than is usual / The county health office counted 1,200 flu cases in Millbrook this winter, in a city of about 400,000 people. / 3 in 1,000 / Does not show it. 1,200 people with the flu sounds like a lot, but in a city of 400,000 it is 3 people in every 1,000. The usual winter is about 6 in every 1,000, so this winter is milder than usual, not harder.
 What you would need to see: You would need a count above the usual for a city this size: more than 2,400.
@@ -82,7 +82,7 @@ Help on screen: the words that decide it are marked.
 - "Ridgemoor firefighters answered 150 fire calls this year, in a town of about 50,000 people, the fire chief said." (right)
 - "In a usual year, the town has about 1.5 fire calls for every 1,000 people." — if tapped: note: That is the usual level, not the count for this time.
 - "The chief asked neighbors to test their smoke alarms." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many fire calls for every 1,000 people this year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -120,7 +120,7 @@ Help on screen: the words that decide it are marked.
 - "A usual year brings about 2 complaints for every 1,000 residents." — if tapped: note: That is the usual level, not the count for this time.
 - "City hall received 2,400 pothole complaints this year, in a city of about 1.2 million people, the public works office said." (right)
 - "Crews will start filling the worst holes in April." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many complaints for every 1,000 residents this year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -223,7 +223,7 @@ A news story, from "Carver County Times · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The share of Carver County adults with health insurance rose from 88% to 90% over the year, the county health office reported." (right)
 - "The office surveys 20,000 adults picked at random from the county’s address list." — if tapped: note: That is how many were asked, not the share insured.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **In people, how many in every 1,000 adults had health insurance, before and after?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -258,7 +258,7 @@ A news story, from "Marlow Daily · Transit":
 - "In a usual month, about 30 of every 1,000 residents ride the bus on a given day." — if tapped: note: That is the usual level, not the count for this time.
 - "Marlow Transit counted 54,000 people riding its buses on an average day last month, in a city of about 1.8 million." (right)
 - "Transit director Kim Aldana thanked riders for their patience during repairs." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many of every 1,000 residents rode the bus on an average day?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -293,7 +293,7 @@ A news story, from "Riverside Record · City Hall":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The city will pay $6 million for the new library over 10 years, and Riverside has about 300,000 residents, the mayor’s office said." (right)
 - "The library will open in the spring." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **How many dollars is that for each resident, each year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: $[ ] for each resident a year.
@@ -324,7 +324,7 @@ A post, from "Pixelo Status · 1h":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "A usual day brings about 4 crash reports for every 1,000 users." — if tapped: note: That is the usual level, not the count for this time.
 - "Crash alert: Pixelo received 2,000 crash reports yesterday from its 500,000 users." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many crash reports for every 1,000 users yesterday?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -356,7 +356,7 @@ A post, from "Maya Torres · Cedar Hill PTA · 4h":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The Cedar Hill lunch line is out of control. 480 of our 600 students bought lunch today!" (right)
 - "We need more volunteers to help serve." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many students in every 1,000 bought lunch today?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -391,7 +391,7 @@ A news story, from "Elmwood Echo · Neighbors":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a usual year, about 10 in every 1,000 Elmwood residents sign up for a card." — if tapped: note: That is the usual level, not the count for this time.
 - "The library issued 330 new cards this year, in a town of about 30,000 people." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many new cards for every 1,000 residents this year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -433,7 +433,7 @@ A news story, from "Northfield Courier · Health":
 - "The county health office counted 10,800 people with pink eye in Northfield this month, in a town of about 600,000 people." (right)
 - "In a usual month, Northfield has about 6 people with pink eye in every 1,000, the county says." — if tapped: note: That is the usual level, not this month’s count.
 - "Residents can book a checkup at the town clinic." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many people in every 1,000 had pink eye this month?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -469,7 +469,7 @@ A news story, from "Brightwater Courier · Health":
 - "The county health office counted 3,600 people with the flu in Brightwater this month, in a town of about 900,000 people." (right)
 - "In a usual month, Brightwater has about 2 people with the flu in every 1,000, the county says." — if tapped: note: That is the usual level, not this month’s count.
 - "Residents can book a checkup at the town clinic." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many people in every 1,000 had the flu this month?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -505,7 +505,7 @@ A news story, from "Northfield Courier · Health":
 - "The county health office counted 200 people with strep throat in Northfield this month, in a town of about 100,000 people." (right)
 - "In a usual month, Northfield has about 2 people with strep throat in every 1,000, the county says." — if tapped: note: That is the usual level, not this month’s count.
 - "Residents can book a checkup at the town clinic." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many people in every 1,000 had strep throat this month?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -541,7 +541,7 @@ A news story, from "Kestrel Bay Courier · Health":
 - "The county health office counted 800 people with strep throat in Kestrel Bay this month, in a town of about 400,000 people." (right)
 - "In a usual month, Kestrel Bay has about 2 people with strep throat in every 1,000, the county says." — if tapped: note: That is the usual level, not this month’s count.
 - "Residents can book a checkup at the town clinic." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many people in every 1,000 had strep throat this month?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -605,7 +605,7 @@ A news story, from "Glenview Gazette · Elections":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The count comes from the town’s own voter rolls, the clerk said." — if tapped: That is not the sentence.
 - "The share of Glenview’s adults who voted rose from 52% in the last election to 58% this year." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **In people, how many in every 1,000 adults voted, before and after?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -650,7 +650,7 @@ A news story, from "Harbor City Press · Pets":
 - "In a usual year, the city sells about 15 licenses for every 1,000 people." — if tapped: note: That is the usual level, not the count for this time.
 - "Harbor City sold 18,000 dog licenses this year, in a city of about 600,000 people, the city clerk said." (right)
 - "Licenses can be renewed online." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many licenses for every 1,000 people this year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -686,7 +686,7 @@ A news story, from "Riverton Herald · Travel":
 - "The airport added two baggage carts this winter." — if tapped: That is not the sentence.
 - "Riverton Airport delayed 1,800 of its 12,000 flights in March, the airport said." (right)
 - "In a usual month, about 200 of every 1,000 flights are delayed." — if tapped: note: That is the usual level, not the count for this time.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many flights in every 1,000 were delayed in March?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -721,7 +721,7 @@ A news story, from "Bayport Tribune · City Hall":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The team says the stadium will bring new jobs downtown." — if tapped: That is not the sentence.
 - "The city will pay $45 million toward the new stadium over 15 years, and it has about 600,000 residents, the mayor’s office said." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **How many dollars is that for each resident, each year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: $[ ] for each resident a year.
@@ -753,7 +753,7 @@ A post, from "Oak Street Bakery · 6h":
 - "Bread returns jumped this week: customers brought back 90 of the 1,800 loaves we baked." (right)
 - "Usually about 50 of every 1,000 loaves come back." — if tapped: note: That is the usual level, not the count for this time.
 - "Fresh sourdough comes out of the oven at 7 a.m. tomorrow." — if tapped: note: That is a time, not a count of loaves.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many loaves in every 1,000 were returned this week?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -788,7 +788,7 @@ A news story, from "Westside Weekly · Schools":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The school is starting a compost bin this spring." — if tapped: That is not the sentence.
 - "Westside Elementary’s 400 students threw away 600 pounds of uneaten lunch food last week, the custodian said." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **How many pounds is that for each student, for the week?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] pounds for each student.
@@ -806,4 +806,4 @@ What you would need to see: You would need how much food a school this size usua
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "5 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

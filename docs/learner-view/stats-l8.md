@@ -34,10 +34,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Hillview raised its prices to make more money
 
 The working, one step at a time:
-1. Find what the post claims. “Doubled” says the basket costs about twice what it did.
-1. Find the sentence with the numbers. Neither sentence gives a number; only the chart does, so Not given.
-1. Read the scale and work out the real change. The scale starts at 49, not 0. The bars say $50, then $52: a change of $2. 2 ÷ 50 × 100 = 4, so up 4%. The second bar looks three times as tall only because the scale starts at 49.
-1. Check the claim against the numbers. Doubling would be up about 100%. The numbers show 4%, so the chart’s own numbers show the post goes too far.
+1. Find what the post claims.: “Doubled” says the basket costs about twice what it did.
+1. Find the sentence with the numbers.: Neither sentence gives a number; only the chart does, so Not given.
+1. Read the scale and work out the real change.: The scale starts at 49, not 0. The bars say $50, then $52: a change of $2. 2 ÷ 50 × 100 = 4, so up 4%. The second bar looks three times as tall only because the scale starts at 49.
+1. Check the claim against the numbers.: Doubling would be up about 100%. The numbers show 4%, so the chart’s own numbers show the post goes too far.
 
 Then the answer: Groceries at Hillview Market cost about twice what they did a year ago / Not given / 4% / Does not show it. The scale starts at 49, so the bars show only the top few dollars of each price, and $52 looks three times as tall as $50. The numbers say up $2, which is 4%, not a doubling.
 What you would need to see: You would need the basket to cost about $100 now, twice $50.
@@ -68,7 +68,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Monthly passes stay at $60." — if tapped: note: That is the price of a pass, not the one-ride fare.
 - "The one-ride fare rises from $2.00 to $2.50 on July 1, the transit board voted." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent is the one-ride fare changing, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -105,7 +105,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Visits are up 150% since 2021! Thank you, readers!" (right)
 - "We were closed for much of 2020 and open only a few days a week in 2021." — if tapped: note: That says when the library was open, not how many visited.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **From the first year on the chart to the last, by what percent did visits change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -142,7 +142,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Installers say they are booked through spring." — if tapped: That is not the sentence.
 - "The city counted 600 homes with solar panels this year, up from 400 last year." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did the number of homes with solar panels change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -180,7 +180,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The average rent rose from $1,800 in January to $1,890 in June, the housing office said." (right)
 - "Renters’ groups plan a meeting on Thursday." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **From the first month on the chart to the last, by what percent did the average rent change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -223,7 +223,7 @@ A bar chart, "Car thefts in Glenwood". The scale runs from 750 to 810, in thefts
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Police Chief Omar Reyes praised his officers." — if tapped: That is not the sentence.
 - "Police counted 800 car thefts in 2024 and 760 in 2025." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did car thefts change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -296,7 +296,7 @@ A bar chart, "Water used by homes this summer, in millions of gallons". The scal
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Lakeview homes used 120 million gallons this summer, against 150 million for Fenwick homes, the county said." (right)
 - "Both towns asked homes to skip watering lawns in July." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent is Lakeview’s total below Fenwick’s?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -334,7 +334,7 @@ A line chart, "Loaves sold a day, this year". The scale runs from 250 to 500, in
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Thank you, Harbor, for a great spring!" — if tapped: That is not the sentence.
 - "This June we sold 450 loaves a day. Last June we sold 500." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **From the first month on the chart to the last, by what percent did daily sales change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -418,7 +418,7 @@ A bar chart, "Average crowd at a Riverhawks game". The scale runs from 11500 to 
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The average crowd rose from 12,000 a game last season to 13,200 this season, the team said." (right)
 - "The team added a fireworks night in June." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did the average crowd change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -494,7 +494,7 @@ A bar chart, "Pets adopted at the Carver shelter". The scale runs from 0 to 1200
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The shelter found homes for 960 pets this year, up from 800 last year." (right)
 - "Volunteers ran weekend adoption days in the park." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did adoptions change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -530,7 +530,7 @@ A line chart, "Average price of a phone at TechMart". The scale runs from 680 to
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Our average phone price fell from $800 in January to $720 in June." (right)
 - "Average price of the phones sold in TechMart stores." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **From the first month on the chart to the last, by what percent did the average price change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -567,7 +567,7 @@ A bar chart, "Visitors to Pine Lake State Park". The scale runs from 0 to 100000
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Most came in July and August, the rangers said." — if tapped: That is not the sentence.
 - "The park counted 80,000 visitors this year, up from 40,000 last year, at its two entrances." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did the number of visitors change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -584,4 +584,4 @@ What you would need to see: Nothing more is needed. The headline does not say wh
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "5 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

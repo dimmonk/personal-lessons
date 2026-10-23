@@ -36,7 +36,7 @@ A news story, from "Valley Courier · Schools":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "A survey of Hillcrest High students found that those who go to bed after midnight average a 2.6 grade, and those who sleep before 10 average a 3.2." (right)
 - "Researchers said students who stay up late may also work more hours or have less time to study." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -66,7 +66,7 @@ An ad, from "FreshBrew Coffee Club" (marked "Ad"):
 - "In our survey, 9 in 10 who answered rated FreshBrew “the best coffee in town.”" (right)
 - "Join the club today." — if tapped: That is not the sentence.
 - "Based on the 120 members who answered an email survey sent to 1,400 members. People who are not members were not asked." — if tapped: note: That is who was asked and who answered, not the result.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -95,7 +95,7 @@ A news story, from "Pinecrest Daily · Neighbors":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Branch manager June Alvarez said the library added Saturday hours in March." — if tapped: note: That is a change at the library, not a count of visits.
 - "The front-door counter, the same one used both years, recorded 6,000 visits this spring, up from 5,000 last spring." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -152,7 +152,7 @@ A bar chart, "Swim class sign-ups". The scale runs from 180 to 200, in people, a
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Swim class sign-ups soared this summer: 200 people signed up, up from 190 last summer." (right)
 - "Thank you, Eastport!" — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -182,7 +182,7 @@ A report summary, from "Mill Valley Health Group · Study summary" (marked "Repo
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a study of 400 adults with new colds, a coin toss put half on the Orrin lozenge and half on a plain lozenge that looked the same. Colds lasted 6 days on average with Orrin and 7 days with the plain one." (right)
 - "Neither the adults nor the nurses who checked them knew who got which lozenge." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)

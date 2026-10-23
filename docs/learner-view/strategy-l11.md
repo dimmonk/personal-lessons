@@ -174,7 +174,7 @@ A written note: "Omar’s memo on a move", Written in September.
 > The move: print same-day court papers for a law firm in the next city.
 > The firm will pay our same-day price: it signed a letter saying so.
 > The firm would send work all year: its partner expects so.
-> The driver can reach that courthouse before it closes at 5 p.m.: the drive is 40 minutes at noon, and the bridge on the way is jammed from 4 p.m. every weekday.
+> The driver can reach that courthouse before it closes at 5 p.m.: the drive is 40 minutes at noon, and the bridge on the way is jammed from 4 p.m. every weekday, and the rush papers are ready only at 4.
 > The press is free for its rush orders: we turn down walk-in jobs already.
 
 **Which condition should be tested first?**
@@ -305,14 +305,15 @@ A written note: "Jill’s memo after two tests", Written in October.
 > Move 1, a bigger building here: its plan shows the most income of any move.
 > We tested its least likely condition, that the city would let us take 40 more children here: the city said no.
 > Move 2, a night room: we tested its least likely condition, that nurses would use it: 14 signed up and paid a deposit.
+> Its other conditions were tested next and hold too: two of our staff signed for night shifts, and the state approved night hours.
 
 **Which move should Jill choose?**
 (the options come in an order that depends on the seed of the question)
-- The night room: its least likely condition held (right)
+- The night room: its conditions held (right)
 - The bigger building: its plan shows the most income — if chosen: That income rests on a condition the city has turned down; the plan’s numbers cannot make it hold.
 - Neither yet: first write a full five-year plan for both — if chosen: The tests have already ruled one move out; a full plan comes now, for the move that held.
 
-After the answer: the deciding words are marked. Reason: Each move’s least likely condition was tested. The city turned down the bigger building, and the nurses paid deposits for the night room, so Jill chooses the night room and plans it in full.
+After the answer: the deciding words are marked. Reason: The city turned down the bigger building. The night room’s least likely condition held, and so did the others, tested next, so Jill chooses the night room and plans it in full.
 
 ## The result
 

@@ -13,9 +13,8 @@ First: what does the difference give the business? Either customers pay more her
 Then, only if it gives something: what stops a rival getting the same? These are the common answers for a business like yours; there are others, such as being far bigger than any rival can soon become.
 Only this business has it, and a rival cannot get or make one: the last plot of land, a deal no one else can sign, a dock the rules allow no one else to build. Hard to get is not enough: a machine with a long waiting list reaches the rivals in the end.
 It rests on many activities that fit together, so a rival would have to copy all of them at once, and give up how it runs now. That stops only a rival that runs another way; one that already runs the same way has nothing to change.
-Customers would lose by leaving: their records and setup live with you, or you hold trust built over years. A rival can buy the same tools and still not have those.
+Trust built over years that a newcomer cannot buy, or customers’ records and setup kept with you, so they would lose by leaving. A rival can buy the same tools and still not have those.
 Or nothing: a rival can buy it, copy it, or get the same result another way.
-A lower cost can last too, when it comes from know-how built over years or from being much bigger than any rival; a saving any rival can buy does not.
 It lasts only with both: something it gives, and something that stops a copy. Why it matters: a difference a rival can buy is worth having, but it is a race, not a position. Plan as if it will be gone.
 
 A wrong idea, marked wrong: “We were the first in town to get one, so we are ahead.”
@@ -66,14 +65,14 @@ A written note: "Dana’s page on her bakery", Written in May.
 Help on screen: the words that decide it are marked.
 
 **What does the difference give the business?**
-- A higher price than rivals get — if chosen: The price is the same as rivals’; what changed is the cost of making it.
+- A higher price than rivals get — if chosen: The difference is in what it costs to make, not in a higher price customers pay.
 - A lower cost than rivals have (right)
 - Neither: it gives nothing a rival lacks — if chosen: It costs less here than at rivals to make the same thing: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The oven lowers the cost of each cake, but any bakery can buy the same one; being first does not stop them. A benefit with no barrier, so it will not last.
@@ -96,7 +95,7 @@ Help on screen: the words that decide it are marked.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The dishes earn $4 more a plate, but they need nothing a rival lacks, so the diner across the street can serve the same next week. A benefit with no barrier, so it will not last.
@@ -119,7 +118,7 @@ Help on screen: the words that decide it are marked.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: Any one piece could be had by a rival; what stops a copy is that it would need all of them.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival would have to copy every piece at once, and give up how it runs now.
 
 After the answer: the deciding words are marked. Reason: Owners pay $20 more, and the calm groom rests on home visits, the same groomer, pay by the day and four dogs a day. A shop would have to change all of it at once: a benefit and a barrier, so it lasts.
@@ -130,7 +129,7 @@ A written note: "Rosa’s page on her grooming van", Written in August.
 
 > **Owners pay us $10 more a groom for our blueberry shampoo treatment.**
 > We found the shampoo first, at a trade show.
-> **Its maker sells it to any groomer who asks.**
+> **The label on the tub gives the maker’s number for orders from groomers.**
 
 Help on screen: the words that decide it are marked.
 
@@ -142,7 +141,7 @@ Help on screen: the words that decide it are marked.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: Owners pay $10 more for the shampoo, but any groomer can buy it from the maker; finding it first is not a barrier. A benefit with no barrier, so it will not last.
@@ -151,24 +150,24 @@ After the answer: the deciding words are marked. Reason: Owners pay $10 more for
 
 A report summary, from "Business report" (marked "Report summary"):
 
-> # Vanguard: why its funds cost so little
+> # Vanguard in the 1990s: why its funds cost so little
 >
-> Vanguard’s funds cost investors very little to own. **It can charge so little because its costs are low: it trades rarely, pays no star managers, sells straight to investors and spends little on advertising.** **A rival that sells through brokers and pays star managers would have to change all of that at once to match it.**
+> In the 1990s, Vanguard’s funds cost investors very little to own. **It could charge so little because its costs were low: it traded rarely, paid no star managers, sold straight to investors and spent little on advertising.** **A rival that sold through brokers and paid star managers would have had to change all of that at once to match it.**
 
 Help on screen: the words that decide it are marked.
 
 **What does the difference give the business?**
-- A higher price than rivals get — if chosen: The price is the same as rivals’; what changed is the cost of making it.
+- A higher price than rivals get — if chosen: The difference is in what it costs to make, not in a higher price customers pay.
 - A lower cost than rivals have (right)
 - Neither: it gives nothing a rival lacks — if chosen: It costs less here than at rivals to make the same thing: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: Any one piece could be had by a rival; what stops a copy is that it would need all of them.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival would have to copy every piece at once, and give up how it runs now.
 
-After the answer: the deciding words are marked. Reason: Vanguard’s low cost comes from many activities that fit together, and a rival would have to change all of them at once. A benefit and a barrier, so it lasts.
+After the answer: the deciding words are marked. Reason: Vanguard’s low cost came from many activities that fit together, and a rival would have had to change all of them at once. A benefit and a barrier, so it lasted.
 
 #### Item 6
 
@@ -186,9 +185,9 @@ Help on screen: the words that decide it are marked.
 - Neither: it gives nothing a rival lacks — if chosen: Customers pay more here than at rivals for the same work: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
-- Only we have it, and a rival cannot get or make one — if chosen: A rival can get the same tools; what holds the customers is what they would lose by leaving.
+- Only we have it, and a rival cannot get or make one — if chosen: A rival can get the same tools; what holds the customers is trust or records built up over years, not one thing only this business could get.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: It is not a group of activities a rival must copy; it is what customers would lose by leaving.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy (right)
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here (right)
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival can offer the same, but customers would lose their setup or a record of trust by leaving, and a newcomer cannot buy that.
 
 After the answer: the deciding words are marked. Reason: Clients pay $50 a month more, and though the apps do much the same, a client would lose a season and risk a tax mistake by leaving. A benefit and a barrier: what customers would lose by switching.
@@ -215,7 +214,7 @@ A written note: "Tom’s page on his hardware store", Written in January.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one (right)
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: It is one thing only this business has, not many activities working together.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers stay because a rival cannot get the thing at all, not because leaving would cost them.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers stay because a rival cannot get the thing at all, not because leaving would cost them.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival cannot get or make one: the notes say why.
 
 After the answer: the deciding words are marked. Reason: Tom gets 10% more for the fittings, and no other store in the county can sell them for ten years. A benefit and a barrier, so it lasts as long as the deal does.
@@ -226,17 +225,17 @@ A written note: "Ray’s page on his plumbing business", Written in April.
 
 > Our new scheduling software cut our driving by a fifth, so each call costs us $15 less.
 > No other plumber in town uses it yet.
-> It is sold to any plumber for $50 a month.
+> The software company advertises it in the plumbers’ trade magazine, at $50 a month.
 
 **What does the difference give the business?**
-- A higher price than rivals get — if chosen: The price is the same as rivals’; what changed is the cost of making it.
+- A higher price than rivals get — if chosen: The difference is in what it costs to make, not in a higher price customers pay.
 - A lower cost than rivals have (right)
 - Neither: it gives nothing a rival lacks — if chosen: It costs less here than at rivals to make the same thing: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The software lowers the cost of each call, but any plumber can buy it for $50 a month. A benefit with no barrier, so it will not last.
@@ -257,7 +256,7 @@ A written note: "Grace’s page on her salon", Written in September.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The new color is different, but clients pay no more and nothing costs less. With no benefit, there is nothing to keep.
@@ -278,7 +277,7 @@ A written note: "Kim’s page on her tutoring business", Written in October.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: Any one piece could be had by a rival; what stops a copy is that it would need all of them.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival would have to copy every piece at once, and give up how it runs now.
 
 After the answer: the deciding words are marked. Reason: Parents pay $20 an hour more, and that rests on several pieces that fit; a rival could hire one tutor but would need all of them. A benefit and a barrier, so it lasts.
@@ -292,14 +291,14 @@ A written note: "Carlos’s page on his taco truck", Written in May.
 > Any truck can join a buying group like ours, and several have.
 
 **What does the difference give the business?**
-- A higher price than rivals get — if chosen: The price is the same as rivals’; what changed is the cost of making it.
+- A higher price than rivals get — if chosen: The difference is in what it costs to make, not in a higher price customers pay.
 - A lower cost than rivals have (right)
 - Neither: it gives nothing a rival lacks — if chosen: It costs less here than at rivals to make the same thing: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: Buying together lowers the cost of tortillas, but any truck can do the same, and several have. A benefit with no barrier, so it will not last.
@@ -320,7 +319,7 @@ A written note: "Priya’s page on her cafe", Written in June.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The machine earns $1 more a cup, but the other cafes will have one once the wait is over. Hard to get is not the same as only ours: a benefit with no lasting barrier.
@@ -351,7 +350,7 @@ A written note: "Priya’s page on her cafe", Written in February.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The fast internet earns $2 more a pass, but any cafe can order the same line; months of choosing are not a barrier. A benefit with no barrier, so it will not last.
@@ -372,7 +371,7 @@ A written note: "Joe’s page on his boat repair shop", Written in June.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one (right)
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: It is one thing only this business has, not many activities working together.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers stay because a rival cannot get the thing at all, not because leaving would cost them.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers stay because a rival cannot get the thing at all, not because leaving would cost them.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival cannot get or make one: the notes say why.
 
 After the answer: the deciding words are marked. Reason: Owners pay 30% more to have the boat lifted at the lake, and no rival can build a dock. A benefit and a barrier, so it lasts.
@@ -393,7 +392,7 @@ A written note: "Rosa’s page on her grooming van", Written in November.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: Owners pay $20 more, and a shop would have to change everything to match it, but the groomer coming next spring already runs the same way: she has nothing to change. A benefit with nothing to stop that copy.
@@ -414,7 +413,7 @@ A written note: "Jill’s page on her daycare", Written in November.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: Any one piece could be had by a rival; what stops a copy is that it would need all of them.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could leave at no cost; what stops a rival is that it would have to change every piece at once.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival would have to copy every piece at once, and give up how it runs now.
 
 After the answer: the deciding words are marked. Reason: Parents pay $50 a week more, and the long day rests on pieces that fit; a rival would have to change all of them at once. A benefit and a barrier, so it lasts.
@@ -435,7 +434,7 @@ A written note: "Ben’s page on his repair shop", Written in March.
 **What stops a rival getting the same?** (opens only after a certain answer)
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy it, copy it or get the same result another way, so it is not only this business’s.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Nothing has to come with it, or the rival already runs the same way, so there is nothing more to copy.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Customers could move to a rival tomorrow and lose nothing.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Customers could move to a rival tomorrow and lose nothing.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 After the answer: the deciding words are marked. Reason: The sign and the paint make the shop stand out, but customers pay no more and nothing costs less. With no benefit, there is nothing to keep.
@@ -446,7 +445,7 @@ A written note: "Hal’s page on his moving company", Written in April.
 
 > A new mover in town bought the same ramps and padded dollies we use.
 > Piano owners still pay us double the house-move rate.
-> We have moved pianos for 25 years without one damaged, and the piano stores send their buyers only to us.
+> We have moved pianos for 25 years without one damaged, and the piano stores send their buyers to us.
 
 **What does the difference give the business?**
 - A higher price than rivals get (right)
@@ -454,9 +453,9 @@ A written note: "Hal’s page on his moving company", Written in April.
 - Neither: it gives nothing a rival lacks — if chosen: Customers pay more here than at rivals for the same work: that is a benefit.
 
 **What stops a rival getting the same?** (opens only after a certain answer)
-- Only we have it, and a rival cannot get or make one — if chosen: A rival can get the same tools; what holds the customers is what they would lose by leaving.
+- Only we have it, and a rival cannot get or make one — if chosen: A rival can get the same tools; what holds the customers is trust or records built up over years, not one thing only this business could get.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: It is not a group of activities a rival must copy; it is what customers would lose by leaving.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy (right)
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here (right)
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A rival can offer the same, but customers would lose their setup or a record of trust by leaving, and a newcomer cannot buy that.
 
 After the answer: the deciding words are marked. Reason: Owners pay double, and the gear can be bought, but 25 years with no damage, and the stores’ trust that comes with it, cannot. A benefit and a barrier: trust a newcomer cannot buy.

@@ -18,7 +18,7 @@ No challenge named? Then a plan that is only a target or a wish is a goal: a tar
 A step is something you can put on a calendar or buy: “Buy two plows”, “Open on Sundays”. A plan that lists steps with no challenge named is a to-do list, even with a target on top, and even with a line like “So we push harder on sales”: an approach to nothing.
 A challenge named, but the steps go off in different directions and none of them gets past it? That is a to-do list too.
 A challenge, one approach, and steps that serve it: that is a strategy. All three must be there; a challenge and an approach with no steps yet is a strategy not finished. Why it matters: a target tells your team where to end up, but only the challenge tells them what to work on.
-One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy; telling the two apart comes next.
+One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy. “Our pizzas take 40 minutes, the shop next door’s 15, with the same ovens”: the fix is a faster kitchen. Telling the two apart comes next.
 
 A wrong idea, marked wrong: “My strategy is to grow sales 20% this year.”
 The right line: That is a goal. It says where you want to be. A strategy starts from what stands in the way of the 20%, picks one way past it, and lists the steps that serve that way.
@@ -72,7 +72,7 @@ Help on screen: the words that decide it are marked.
 - "Buy two plows for the trucks we already have." — if tapped: note: That is a step to take, not what is in the way.
 - "Sell one contract that covers mowing in summer and snow in winter." — if tapped: note: That is a step to take, not what is in the way.
 - "Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It does more than name a target: it says what is in the way and how the steps get past it.
@@ -100,7 +100,7 @@ Help on screen: the words that decide it are marked.
 - "Sell a weekday pass: coffee all day and a seat." — if tapped: note: That is a step to take, not what is in the way.
 - "Since the office towers went to three days a week, the room is empty on Mondays and Fridays, the days the office workers stay home." (right)
 - "Keep the full lunch menu for Tuesday to Thursday, when the offices are full." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It does more than name a target: it says what is in the way and how the steps get past it.
@@ -188,7 +188,7 @@ Help on screen: the words that decide it are marked.
 - "Start selling water heaters online." — if tapped: note: That is a step to take, not what is in the way.
 - "Sponsor the high school football team." — if tapped: note: That is a step to take, not what is in the way.
 - "Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It names a challenge and lists steps, but the steps do not follow from one way past it.
@@ -246,7 +246,7 @@ A written note: "Omar’s plan for his print shop", Written in September.
 - "Promise same-day printing on orders in by 10 a.m." — if tapped: note: That is a step to take, not what is in the way.
 - "Have one person check every file before it prints, so tricky jobs come out right." — if tapped: note: That is a step to take, not what is in the way.
 - "Drop our cut-price business card deal." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It does more than name a target: it says what is in the way and how the steps get past it.
@@ -261,7 +261,7 @@ A written note: "Sam’s plan for his food truck", Written in May.
 
 > Add a breakfast menu.
 > Repaint the truck.
-> A third of our weekday line gives up and leaves.
+> A third of our weekday line gives up and leaves, because the wait reaches twenty minutes.
 > Start a loyalty card.
 > Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had.
 
@@ -269,17 +269,17 @@ A written note: "Sam’s plan for his food truck", Written in May.
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Add a breakfast menu." — if tapped: note: That is a step to take, not what is in the way.
 - "Repaint the truck." — if tapped: note: That is a step to take, not what is in the way.
-- "A third of our weekday line gives up and leaves." (right)
+- "A third of our weekday line gives up and leaves, because the wait reaches twenty minutes." (right)
 - "Start a loyalty card." — if tapped: note: That is a step to take, not what is in the way.
 - "Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It names a challenge and lists steps, but the steps do not follow from one way past it.
 - A to-do list (right)
 - A strategy — if chosen: The steps go in different directions: none of them is a way past the challenge it names.
 
-After the answer: the deciding words are marked. Reason: The line about people leaving the line names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list.
+After the answer: the deciding words are marked. Reason: The line about people leaving the line names the challenge: a twenty-minute wait drives away the people already in line. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list.
 
 #### Item 9
 
@@ -356,7 +356,7 @@ A written note: "Joe’s plan for his hardware store", Written in March.
 - "From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers." — if tapped: note: That is the approach to the challenge.
 - "Keep staff on the floor who can tell you which part you need." — if tapped: note: That is a step to take, not what is in the way.
 - "Close the garden section, which the home center does better." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It does more than name a target: it says what is in the way and how the steps get past it.
@@ -371,7 +371,7 @@ A written note: "Lena’s plan for her kitchen remodeling firm", Written in Dece
 
 > We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.
 > This year we break $1 million in sales.
-> Most of our work comes from people who saw a kitchen we built for a friend or a neighbor.
+> We have built kitchens in this county for twelve years.
 > Be the first name people think of for kitchens in the county.
 > Every job done on time, every time.
 
@@ -379,7 +379,7 @@ A written note: "Lena’s plan for her kitchen remodeling firm", Written in Dece
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "This year we break $1 million in sales." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
-- "Most of our work comes from people who saw a kitchen we built for a friend or a neighbor." — if tapped: note: That is background about the business. It says nothing is in the way.
+- "We have built kitchens in this county for twelve years." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "Be the first name people think of for kitchens in the county." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Every job done on time, every time." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - A button: "No line says what is in the way" (right)
@@ -432,7 +432,7 @@ A written note: "Mike’s plan for his car wash", Written in April.
 - "Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain." — if tapped: note: That is a step to take, not what is in the way.
 - "Start a TikTok page." — if tapped: note: That is a step to take, not what is in the way.
 - "Rainy weeks bring no cars, but full wages." (right)
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It names a challenge and lists steps, but the steps do not follow from one way past it.
@@ -446,26 +446,26 @@ After the answer: the deciding words are marked. Reason: The last line names a r
 A written note: "Kim’s plan for her tutoring business", Written in August.
 
 > Free videos now teach what our recorded packs did.
-> So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.
 > Start every session with the student’s homework.
+> A tutor who checks the student’s own work every week and tells the parent how it is going is what we sell now: a video cannot give that.
 > Send each parent a short progress note every Friday.
 > Stop selling the recorded lesson packs.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Free videos now teach what our recorded packs did." (right)
-- "So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going." — if tapped: note: That is the approach to the challenge.
 - "Start every session with the student’s homework." — if tapped: note: That is a step to take, not what is in the way.
+- "A tutor who checks the student’s own work every week and tells the parent how it is going is what we sell now: a video cannot give that." — if tapped: note: That is the approach to the challenge.
 - "Send each parent a short progress note every Friday." — if tapped: note: That is a step to take, not what is in the way.
 - "Stop selling the recorded lesson packs." — if tapped: note: That is a step to take, not what is in the way.
-- A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
+- A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
 - A goal or a wish — if chosen: It does more than name a target: it says what is in the way and how the steps get past it.
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The first line says what is in the way: free videos took the market for recorded classes. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy.
+After the answer: the deciding words are marked. Reason: The first line says what is in the way: free videos took the market for recorded packs. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy.
 
 #### Check question 16
 

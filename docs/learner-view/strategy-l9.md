@@ -14,7 +14,7 @@ Then put one question to the offer: does it serve the same kind of customer, wit
 Yes: the same kind of customer in a new place, more of what the core’s customers already want, done by the same people the same way. It deepens the core.
 No: it needs different activities (a night shift, a factory line, other hours, other skills) or a different kind of customer. It blurs the position: the business stops being clearly one thing, and the core gets less of everyone’s time.
 Count kinds, not heads. A new van or a new hire doing the same work for the same kind of customer still deepens; the same people doing other work for another kind of customer still blurs.
-The money in the offer does not decide it. Why it matters: once a business is two things, each new offer looks like the last, and the core that earned the money gets crowded out.
+The money in the offer does not decide it. Deepens means the offer is worth pricing and testing, as the next lessons show; blurs means turn it down, or reshape it until it serves the core. Why it matters: once a business is two things, each new offer looks like the last, and the core that earned the money gets crowded out.
 
 A wrong idea, marked wrong: “More sales is always good. We can sort out the rest later.”
 The right line: Maytag, the appliance maker, grew its sales about five times between 1985 and 1994 by adding product lines and buying other brands. Its profit on each dollar of sales, 8 to 12 cents in the 1970s and 1980s, averaged under 1 cent from 1989 to 1995. Judge growth by what it does to the core, not by the sales it adds.
@@ -89,9 +89,9 @@ After the answer: the deciding words are marked. Reason: The core is exam tutori
 A written note: "Leo’s memo on an offer", Written in March.
 
 > Fitting and tuning race bikes by hand is why racers come to us, and it earns the most.
-> **A maker of race wheels wants us to be its dealer here; our racers already ask for its wheels.**
+> **A maker of race wheels wants us to sell its wheels here, ordered for each racer, not kept in stock; our racers already want them.**
 > **Our two mechanics would fit them, in the fitting room, as part of a tune.**
-> It would add about $40,000 a year in sales.
+> It would add about $200,000 a year in sales.
 
 Help on screen: the words that decide it are marked.
 
@@ -107,7 +107,7 @@ A written note: "Leo’s memo on an offer", Written in May.
 
 > Fitting and tuning race bikes by hand is why racers come to us, and it earns the most.
 > **A toy chain wants to rent half our floor for kids’ bikes and scooters, run by its own staff.**
-> It would pay us $30,000 a year in rent.
+> It would pay us $8,000 a year in rent.
 
 Help on screen: the words that decide it are marked.
 
@@ -115,7 +115,7 @@ Help on screen: the words that decide it are marked.
 - It deepens the core — if chosen: It needs different activities or a different kind of customer, so it pulls the business away from its core, whatever it adds to sales.
 - It blurs the position (right)
 
-After the answer: the deciding words are marked. Reason: Half the floor would go to kids’ bikes for families, a different customer, in the shop racers come to for fitting. It blurs the position, though the rent is good.
+After the answer: the deciding words are marked. Reason: Half the floor would go to kids’ bikes for families, a different customer, in the shop racers come to for fitting. It blurs the position, whatever the rent.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -130,7 +130,7 @@ A written note: "Rosa’s memo on a plan", Written in June.
 > Calm grooming at home for old and nervous dogs is what owners come to us for, and it earns the most.
 > A vet in the next town says many of her clients have nervous dogs and no groomer will take them.
 > A second van there would run our way: home visits, one groomer per dog, paid by the day, four dogs a day.
-> The van costs $60,000.
+> The van costs $60,000, and four dogs a day would bring in about $150,000 a year.
 
 **Does this growth keep the position?**
 - It deepens the core (right)
@@ -144,7 +144,7 @@ A written note: "Carlos’s memo on an offer", Written in September.
 
 > Five tacos in two minutes for factory workers at lunch is what we are known for, and it earns the most.
 > The airport offers us a counter in the main hall, open 18 hours a day.
-> Travelers want a full menu; the airport asks for at least 30 dishes and seats for 40.
+> Travelers want a full menu; the airport wants at least 30 dishes and seats for 40, for a $2,000 yearly fee.
 
 **Does this growth keep the position?**
 - It deepens the core — if chosen: It needs different activities or a different kind of customer, so it pulls the business away from its core, whatever it adds to sales.
@@ -186,7 +186,7 @@ A written note: "Jill’s memo on a plan", Written in July.
 
 > Care from 5 a.m. to 9 p.m. for parents on hospital shifts is what families come to us for, and it earns the most.
 > A second hospital across town has 600 nurses and no daycare near it.
-> We would open next to it with the same hours and meals, and hire eight new staff for the early and late shifts.
+> We would open next to it with the same hours and meals, and hire eight new staff for the early and late shifts; it would double our sales, to $1.2 million.
 
 **Does this growth keep the position?**
 - It deepens the core (right)
@@ -209,14 +209,14 @@ To pass:
 A written note: "Mark’s memo on an offer", Written in January.
 
 > Heavy training with coaches on the floor is why lifters pay us $60 a month, and it earns the most.
-> A budget gym chain offers to make us one of its gyms, with its sign and its $10 plan.
+> A budget gym chain offers to make us one of its gyms, with its sign and its $15 plan.
 > It says members would triple; it would need machines in place of half the racks, and fewer coaches.
 
 **Does this growth keep the position?**
 - It deepens the core — if chosen: It needs different activities or a different kind of customer, so it pulls the business away from its core, whatever it adds to sales.
 - It blurs the position (right)
 
-After the answer: the deciding words are marked. Reason: The chain’s $10 plan needs machines in place of racks and fewer coaches, for a different member. It blurs the position, though members would triple.
+After the answer: the deciding words are marked. Reason: The chain’s $15 plan needs machines in place of racks and fewer coaches, for a different member. It blurs the position, though members would triple.
 
 #### Check question 11
 

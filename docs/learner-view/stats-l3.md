@@ -34,10 +34,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Zelvin keeps half of the people who have had a stroke from having another
 
 The working, one step at a time:
-1. Find what the headline claims. “Spares half of patients” says half of the people who take the pill are kept from a stroke.
-1. Find where the risk started. The second sentence: without the pill, about 4 in every 1,000 people have a stroke in five years.
-1. Take the change off the starting number. 50% fewer than 4 is 2. So from 4 in 1,000 to 2 in 1,000 over five years.
-1. Check the headline’s size against that. The headline’s size is a number of people: half of them. The pill spares 2 people in every 1,000, not half. It halves a small risk, which is not the same as sparing half the people.
+1. Find what the headline claims.: “Spares half of patients” says half of the people who take the pill are kept from a stroke.
+1. Find where the risk started.: The second sentence: without the pill, about 4 in every 1,000 people have a stroke in five years.
+1. Take the change off the starting number.: 50% fewer than 4 is 2. So from 4 in 1,000 to 2 in 1,000 over five years.
+1. Check the headline’s size against that.: The headline’s size is a number of people: half of them. The pill spares 2 people in every 1,000, not half. It halves a small risk, which is not the same as sparing half the people.
 
 Then the answer: Zelvin keeps half of the people who take it from having a stroke / Without Zelvin, about 4 in every 1,000 people aged 50 to 60, like those in the study, have a stroke within five years. / from 4 in 1,000 to 2 in 1,000 / Does not show it. “Half” is the size of the change, 50%. The risk was 4 in every 1,000 people, and the pill brings it to 2 in 1,000 over five years, which spares 2 people in every 1,000, not half of the people who take it.
 What you would need to see: You would need a headline that says what the study found: from 4 in 1,000 to 2 in 1,000 over five years.
@@ -71,7 +71,7 @@ Help on screen: the words that decide it are marked.
 - "In a winter-long study of adults, a coin toss decided who got NasalCare and who got a plain saltwater spray." — if tapped: That is not the sentence.
 - "150 of 500 people given the saltwater spray caught a cold, and 100 of 500 given NasalCare did." (right)
 - "Sold in drugstores for $9 a bottle." — if tapped: note: That is the price, not a count of colds.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without the spray, then with it: how many in every 1,000 caught a cold over the winter?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -110,7 +110,7 @@ Help on screen: the words that decide it are marked.
 - "In a ten-year trial where a coin toss decided who got Cardiol and who got a dummy pill, Cardiol cut the risk of a heart attack by 25%." — if tapped: note: That is the change as a percent. It does not say how common it was to begin with.
 - "Without Cardiol, about 80 in every 1,000 adults with heart disease have a heart attack within ten years." (right)
 - "Ask your doctor if Cardiol is right for you." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without Cardiol, then with it: how many in every 1,000 have a heart attack within ten years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -148,7 +148,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a one-year trial of 10,000 adults over 75, 60 in every 1,000 given a dummy pill had a fall, compared with 45 in every 1,000 given Ravel." (right)
 - "A coin toss decided who got which pill." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Ravel: how many in every 1,000 had a fall within the year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -218,7 +218,7 @@ A news story, from "Cedar Valley News · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a five-year trial of 20,000 adults over 70, a coin toss decided which half got Ostrel and which half got a dummy pill." — if tapped: note: That says how the groups were split, not how many had it.
 - "About 6 in every 1,000 on the dummy pill broke a hip, and 3 in every 1,000 on Ostrel did." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Ostrel: how many in every 1,000 broke a hip within five years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -254,7 +254,7 @@ A news story, from "Marlow Daily · Health":
 - "In a ten-year trial of 10,000 adults with high cholesterol, where a coin toss decided who got Tolpex and who got a dummy pill, Tolpex cut the risk of a heart attack by 25%." — if tapped: note: That is the change as a percent. It does not say how common it was to begin with.
 - "Without Tolpex, about 40 in every 1,000 of these adults have a heart attack within ten years." (right)
 - "Doctors say the drug is safe for most people." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without Tolpex, then with it: how many in every 1,000 have a heart attack within ten years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -316,7 +316,7 @@ A post, from "Bike Safe Coalition · 2h":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Our helmet law protects 60% of cyclists from head injury! The numbers prove it." — if tapped: note: That is the claim. It does not say how many cyclists were hurt.
 - "Before the law, about 5 in every 1,000 cyclists in town had a head injury each year. After the law, 2 in every 1,000 did." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Before the law, then after: how many in every 1,000 cyclists had a head injury in a year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -352,7 +352,7 @@ A news story, from "Bayview Herald · Seniors":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Without the mats, about 60 in every 1,000 nursing home residents fall in a year, the maker says." (right)
 - "The maker has not released how many residents fell on the mats." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -416,7 +416,7 @@ A report summary, from "Tolmar Study · Summary" (marked "Report summary"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a 5-year study, 4,000 of 40,000 people given a dummy pill had a hip fracture, compared with 2,400 of 40,000 people given Tolmar." (right)
 - "A coin toss decided who got which pill, and no one knew." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Tolmar: how many in every 1,000 people had a hip fracture within 5 years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -451,7 +451,7 @@ A report summary, from "Orlex Study · Summary" (marked "Report summary"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a 5-year study, 1,600 of 40,000 people given a dummy pill had a stroke, compared with 1,280 of 40,000 people given Orlex." (right)
 - "A coin toss decided who got which pill, and no one knew." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Orlex: how many in every 1,000 people had a stroke within 5 years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -486,7 +486,7 @@ A report summary, from "Tolmar Study · Summary" (marked "Report summary"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a 3-year study, 800 of 20,000 people given a dummy pill had a heart attack, compared with 720 of 20,000 people given Tolmar." (right)
 - "A coin toss decided who got which pill, and no one knew." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Tolmar: how many in every 1,000 people had a heart attack within 3 years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -521,7 +521,7 @@ A report summary, from "Orlex Study · Summary" (marked "Report summary"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a 5-year study, 800 of 20,000 people given a dummy pill had a heart attack, compared with 640 of 20,000 people given Orlex." (right)
 - "A coin toss decided who got which pill, and no one knew." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Dummy pill, then Orlex: how many in every 1,000 people had a heart attack within 5 years?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -594,7 +594,7 @@ A news story, from "Riverton Herald · Sports":
 - "The league picked by lottery which youth teams did a 15-minute warm-up before every game this season." — if tapped: note: That says how the groups were split, not how many had it.
 - "40 of 1,000 players on teams that did the warm-up were injured, compared with 80 of 1,000 on teams that did not." (right)
 - "Coaches say the routine takes four minutes to learn." — if tapped: note: That is how long it takes to learn, not a count of injuries.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **No warm-up, then a warm-up: how many in every 1,000 players were injured this season?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -629,7 +629,7 @@ A report summary, from "Pinecrest Safety Council · Study summary" (marked "Repo
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "50 of 1,000 children aged 4 to 7 in car crashes without a booster seat were hurt, compared with 30 of 1,000 children of the same ages in a booster seat." (right)
 - "The council counted every crash in the county over three years." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without a booster seat, then with one: how many in every 1,000 children in crashes were hurt?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -665,7 +665,7 @@ A news story, from "Eastport Sun · Schools":
 - "Students in the Eastport tutoring program were 20% less likely to fail math than students outside it, the district said." — if tapped: note: That is the change as a percent. It does not say how common it was to begin with.
 - "Without tutoring, about 100 in every 1,000 Eastport students fail math in a year." (right)
 - "Students sign up for the program themselves; it meets after school on Tuesdays." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without tutoring, then with it: how many in every 1,000 students fail math in a year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -702,7 +702,7 @@ A report summary, from "Millbrook Builders Association · Report" (marked "Repor
 - "The association picked by lottery which of its building sites got the training; 10,000 workers were counted in all." — if tapped: note: That says how the sites were picked and how many workers were counted, not how many had an accident.
 - "Over the next year, 40 in every 1,000 workers at sites without the training had an accident, and 30 in every 1,000 at sites with it." (right)
 - "Training takes one morning." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Without the training, then with it: how many in every 1,000 workers had an accident that year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -738,7 +738,7 @@ An ad, from "BrightSmile Toothpaste" (marked "Ad"):
 - "Without BrightSmile, about 300 in every 1,000 people get a cavity within two years." (right)
 - "Ask your dentist about BrightSmile." — if tapped: That is not the sentence.
 - "BrightSmile users’ own cavity counts have not been published." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -750,4 +750,4 @@ What you would need to see: You would need how many in every 1,000 people got a 
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "5 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

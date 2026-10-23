@@ -49,10 +49,10 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Music lessons make adults better at math
 
 The working, one step at a time:
-1. Find what the headline claims. “Make” says the lessons cause the higher scores, not only that the two went together.
-1. Find the number it rests on. The first sentence: 8 points higher on the state math test.
-1. Look for what else could explain it. Parents chose the lessons, and the children in them came more often from homes with more money and books. That alone could give higher math scores.
-1. Judge the claim. A claim that lessons make the difference holds only when the groups were split by chance. Here families chose, and the text names another explanation, so it does not show it.
+1. Find what the headline claims.: “Make” says the lessons cause the higher scores, not only that the two went together.
+1. Find the number it rests on.: The first sentence: 8 points higher on the state math test.
+1. Look for what else could explain it.: Parents chose the lessons, and the children in them came more often from homes with more money and books. That alone could give higher math scores.
+1. Judge the claim.: A claim that lessons make the difference holds only when the groups were split by chance. Here families chose, and the text names another explanation, so it does not show it.
 
 Then the answer: Taking music lessons improves children’s math / Fourth graders who took music lessons scored 8 points higher on the state math test than those who did not, a study of 2,400 children found. / Children in lessons differed in other ways, such as homes with more books / Does not show it. The children were not split by chance: parents chose, and the children in lessons came from homes with more money and books. Those homes could explain the higher scores, so the text does not show that the lessons did it.
 What you would need to see: You would need children split by chance into lessons and no lessons, and the gap still there.
@@ -83,7 +83,7 @@ Help on screen: the words that decide it are marked.
 - "In a trial, 300 adults who sleep badly were split by coin toss: half took Calmira drops each night, half dummy drops that look and taste the same." — if tapped: note: That is how the groups were formed, not the result.
 - "After a month, the Calmira group fell asleep in 22 minutes on average, against 35 minutes for the others." (right)
 - "Neither the sleepers nor the researchers knew who had which drops until the end." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -121,7 +121,7 @@ Help on screen: the words that decide it are marked.
 - "Last year the city put cameras at the 10 corners that had the most crashes the year before." — if tapped: note: That says where the cameras went, not how many crashes there were.
 - "Crashes there fell from 80 that year to 40 the year after the cameras went in." (right)
 - "That year was the worst those corners had seen in a decade. In other years they had about 45 crashes." — if tapped: note: That is a usual year at those corners, not the change.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -158,7 +158,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a survey of 5,000 adults picked at random, 18 in 100 of those who eat breakfast every day were overweight, against 25 in 100 of those who skip it." (right)
 - "Breakfast eaters also exercised more, so the survey cannot say breakfast is the reason, the authors wrote." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -195,7 +195,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a study of 120 office workers at Lumen Design, those at standing desks made 30% fewer errors on a typing test than those at sitting desks." (right)
 - "Lumen plans to offer standing desks to anyone who asks." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -237,7 +237,7 @@ A report summary, from "Family Health Council · Summary" (marked "Report summar
 - "The survey asked 3,000 teens once, about their phones and their moods." — if tapped: note: That is how many were asked, not the result.
 - "Teens who spent 4 hours or more a day on social media were twice as likely to say they often feel unhappy." (right)
 - "“Teens who are already unhappy may turn to their phones more,” said researcher Dr. Mia Torres." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -308,7 +308,7 @@ A news story, from "Elm Valley News · Schools":
 - "Elm School started the Bright Pages program last fall." — if tapped: note: That is when the program started, not the scores.
 - "Its average reading score rose from 62 last year to 70 this year." (right)
 - "Principal Ana Cole said teachers love the program." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -343,7 +343,7 @@ A news story, from "Silver Years Weekly · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a trial, 400 adults over 60 were split by coin toss: half used the Brightmind memory app for a year, half a word-game app." — if tapped: note: That is how the groups were formed, not the result.
 - "At the end, 30 in 100 of the Brightmind group said they often forget names, against 40 in 100 of the others." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -414,7 +414,7 @@ A report summary, from "State Reading Council · Summary" (marked "Report summar
 - "The council surveyed 2,000 fifth graders picked at random from the state’s schools." — if tapped: note: That is who was asked, not the result.
 - "Of those who read for fun most days, 70 in 100 had mostly A’s and B’s, against 50 in 100 of those who did not." (right)
 - "The survey cannot tell which came first, the council said: children who already do well may enjoy reading more." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -459,7 +459,7 @@ A news story, from "Northgate Herald · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "240 adults with knee pain were split by lottery: half got Steadyfoot insoles, half flat insoles that look the same." — if tapped: note: That is how the groups were formed, not the result.
 - "After three months, 45 in 100 of the Steadyfoot group said their pain was much better, against 25 in 100 of the others." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -494,7 +494,7 @@ A report summary, from "Plains Farm Research Station · Summary" (marked "Report
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Over a year, hens on GrainPlus laid 294 eggs each, against 280 on the usual feed." (right)
 - "The station split 360 hens by coin toss: 180 got GrainPlus and 180 the usual feed." — if tapped: note: That is how the groups were formed, not the result.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -529,7 +529,7 @@ A news story, from "Harlan Business Journal · Work":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "At Norwell Insurance, workers who work from home finished 10% more jobs a month than those in the office." (right)
 - "The company let its fastest workers go home first, a manager said." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -564,7 +564,7 @@ A news story, from "Bayside Tribune · Sports":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The Hawks hired coach Rita Vance after their worst season ever, 3 wins in 16 games; this season they won 8 of 16." (right)
 - "In the ten seasons before that bad one, the Hawks won 7 to 9 games most years." — if tapped: note: That is a usual season, not this one.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -599,7 +599,7 @@ A news story, from "Pet Life Weekly · Food":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Owners have long asked for a food that keeps hair off the couch." — if tapped: That is not the sentence.
 - "In the maker’s study of 200 dogs, 100 ate Nutrapet and 100 ate other foods for two months, and the Nutrapet dogs shed 25% less." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -631,7 +631,7 @@ A post, from "Mr. Dale Ortiz · Science teacher · 1d":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "We ran a real trial in class: 12 students, split by coin toss, half chewing FocusMint and half a plain gum that tastes the same." — if tapped: note: That is how the groups were formed, not the result.
 - "The FocusMint group scored 74 on average on Friday’s quiz, the others 71. FocusMint makes you score higher!" (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Could anything else explain it?**
 (the options come in an order that depends on the seed of the question)
@@ -649,4 +649,4 @@ What you would need to see: You would need many more students split by chance, a
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "6 of 6: passed" or "4 of 6: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

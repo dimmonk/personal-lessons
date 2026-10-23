@@ -9,13 +9,13 @@ Strategists see it as the usual way a good position is lost. Here you learn to t
 
 ## Step 1: Does the new work pull against the old?
 
-When a business adds something, a new offer, a new kind of customer, a rival’s idea, put one question to it: does the new work pull against what the position needs?
-Two activities pull against each other when doing more of one means less of the other: the same people, hours, room or promise would have to serve opposite ends at once. A two-minute taco line and plates made to order need the same cook at the same noon. A quiet room for work and live music need the same tables on the same days.
-No pull: the new work serves the same customers the same way, or fills hours the core leaves idle. It fits beside the old work, and nothing has to go.
+When a business adds something new, one question sorts it: does the new work pull against what the position needs?
+Two activities pull against each other when doing more of one means less of the other: the same people, hours or room would have to serve opposite ends at once, or customers would stop believing the promise (a luxury shop selling cheap goods). A two-minute taco line and plates made to order need the same cook at the same noon.
+No pull: the new work serves the same customers the same way, or fills hours the core leaves idle, without harming its promise. It fits beside the old work, and nothing has to go.
 A pull, and the business drops one side: a real trade-off. It serves the side it kept better, whatever the side it dropped was worth.
 A pull, and the business keeps both: a straddle. It pays for both ways and serves neither fully. Trying to serve every kind of customer at once is the same mistake. Trimming a piece here and there while still serving both is still a straddle.
-What does not decide it: whether the move copies a rival (a business can copy a rival and still choose), how much the dropped side was worth, and early sales from the new offer.
-This sorts the move; whether it is wise is judged later.
+What does not decide it: whether the move copies a rival (a business can copy a rival and still choose) and early sales from the new offer.
+This sorts the move, not whether it is wise: a trade-off can still give up the side worth more.
 Why it matters: a rival can copy anything you add without giving something up. What you chose not to do is what a rival would have to give up to copy you.
 
 A wrong idea, marked wrong: “Why turn anyone away? We will offer both and keep everyone.”
@@ -25,7 +25,7 @@ The right line: Where the two pull against each other, offering both means payin
 
 | A | B |
 |---|---|
-| Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well. | Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily. |
+| In the 1990s, Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well. | Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily. |
 
 Compare: Both cut something. Southwest dropped one side of the pull. Continental cut a few pieces but kept running both ways at once, so it paid for both and matched Southwest on neither cost nor service: a straddle.
 
@@ -42,7 +42,7 @@ Compare: Both reach for something new, and in both the new work pulls on the sam
 A written note: "Mark’s plan for his gym", Written in February.
 
 > Our gym is for serious lifters: heavy racks, coaches on the floor all day, $60 a month.
-> A $10-a-month budget gym opened down the road and 40 of our members left for it.
+> A $15-a-month budget gym opened down the road and 40 of our members left for it.
 > So we added a $15 plan with no coaching, for people who just want a cheap gym. 80 people joined in the first month.
 > The coaches, the $60 plan and every rack stay, and both kinds of member share the same floor at the same hours.
 
@@ -190,7 +190,7 @@ A written note: "Sam’s plan for his diner", Written in October.
 
 > Since the steakhouse opened, some evening tables are empty; evenings were about a fifth of our sales.
 > So we added steaks and a wine list at dinner.
-> Breakfast is still served all day at the counter, by the same cook on the same grill.
+> Breakfast is still served all day at the counter, by the same cook on the same grill, and breakfast orders keep that grill full until we close.
 
 **Does the new work pull against the old, and if so, which side goes?**
 - A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
@@ -334,14 +334,14 @@ A written note: "Tom’s plan for his hardware store", Written in April.
 
 > Builders come to us at 6 a.m. for advice and for odd parts the big stores do not carry.
 > We are matching the big stores’ low prices on paint and lumber, to win their weekend shoppers.
-> To pay for the low prices we will stock fewer odd parts, but the advice desk and the 6 a.m. opening stay.
+> To pay for the low prices we will clear one short shelf of odd parts; every other odd part, the advice desk and the 6 a.m. opening stay.
 
 **Does the new work pull against the old, and if so, which side goes?**
 - A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
 - A straddle: both sides of the pull kept at once (right)
 - No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Low prices for weekend shoppers and odd parts with advice for builders pull on the same shelves and staff. Tom trims the odd parts but keeps serving builders: both sides kept, each weaker. A straddle, though something was cut.
+After the answer: the deciding words are marked. Reason: Low prices for weekend shoppers and odd parts with advice for builders pull on the same shelves and staff. Tom clears one shelf but keeps serving builders: both sides kept, each weaker. A straddle, though something was cut.
 
 #### Check question 18
 

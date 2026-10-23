@@ -53,7 +53,7 @@ A written note: "Mark’s plan for the year ahead", Written in February.
 
 > Coached training for serious lifters earns the most, and they come from three towns for it.
 > Our gym is as clean and as well run as any of them, and our rent is as low as any gym’s in town.
-> **Three $10 gyms opened nearby. 40 members left.**
+> **Three $15 gyms opened nearby. 40 members left.**
 > Gyms for lifters have opened in many towns, and the county lists 42 with how long each lasted.
 > It rests on coaches all day, heavy racks with room and monthly checks: a budget gym would have to change how it runs to match it.
 > The bet: a second lifting room for $30,000, within the $35,000 we could lose.
@@ -68,7 +68,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Coached training for serious lifters earns the most, and they come from three towns for it." — if tapped: note: That line answers question 3: where the money comes from.
 - "Our gym is as clean and as well run as any of them, and our rent is as low as any gym’s in town." — if tapped: note: That line answers question 1: whether running better would fix it.
-- "Three $10 gyms opened nearby. 40 members left." (right)
+- "Three $15 gyms opened nearby. 40 members left." (right)
 - "Gyms for lifters have opened in many towns, and the county lists 42 with how long each lasted." — if tapped: note: That line answers question 6: how to judge the bet.
 - "It rests on coaches all day, heavy racks with room and monthly checks: a budget gym would have to change how it runs to match it." — if tapped: note: That line answers question 4: what stops a rival copying.
 - "The bet: a second lifting room for $30,000, within the $35,000 we could lose." — if tapped: note: That line names the bet itself. What is in the way is what hurt the business, and why.
@@ -82,7 +82,7 @@ Help on screen: the words that decide it are marked.
 **4. What stops a rival copying what makes the business different?**
 - Only we have it, and a rival cannot get or make one — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 
 **5. Which plan makes a real choice?**
@@ -94,13 +94,13 @@ Help on screen: the words that decide it are marked.
 - People already buy this: start from how similar projects turned out (right)
 - Nobody can see yet whether people would buy: try it small and learn — if chosen: People already buy this, and many like it have opened: start from how they did, and keep the stake within what can be lost.
 
-After the answer: the deciding words are marked. Reason: Mark runs as well as the budget gyms, so the $10 gyms are a strategy problem. Coached training earns the most and rests on pieces that fit; the plan that chooses plays for lifters. Lifting gyms have a record to start from, and the $30,000 room is within what he can lose.
+After the answer: the deciding words are marked. Reason: Mark runs as well as the budget gyms, so the $15 gyms are a strategy problem. Coached training earns the most and rests on pieces that fit; the plan that chooses plays for lifters. Lifting gyms have a record to start from, and the $30,000 room is within what he can lose.
 
 #### Item 2
 
 A written note: "Omar’s plan for the year ahead", Written in March.
 
-> We hold the only contract to print for the county court’s filing office, for the next five years.
+> We hold the only contract to print for the county court’s filing office, for five years: it is what lets us file the firms’ papers the same day.
 > Three law firms earn us the most, and they come to us for court papers the same day.
 > **Online printers now take the walk-in and invitation jobs, and our walk-in sales fell 40%.**
 > Our press runs as well as any shop’s, and every shop in town lost the same jobs.
@@ -115,7 +115,7 @@ Help on screen: the words that decide it are marked.
 
 **2. Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We hold the only contract to print for the county court’s filing office, for the next five years." — if tapped: note: That line answers question 4: what stops a rival copying.
+- "We hold the only contract to print for the county court’s filing office, for five years: it is what lets us file the firms’ papers the same day." — if tapped: note: That line answers question 4: what stops a rival copying.
 - "Three law firms earn us the most, and they come to us for court papers the same day." — if tapped: note: That line answers question 3: where the money comes from.
 - "Online printers now take the walk-in and invitation jobs, and our walk-in sales fell 40%." (right)
 - "Our press runs as well as any shop’s, and every shop in town lost the same jobs." — if tapped: note: That line answers question 1: whether running better would fix it.
@@ -131,7 +131,7 @@ Help on screen: the words that decide it are marked.
 **4. What stops a rival copying what makes the business different?**
 - Only we have it, and a rival cannot get or make one (right)
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: Only this business has it, and a rival cannot get one: the plan says why.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Only this business has it, and a rival cannot get one: the plan says why.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Only this business has it, and a rival cannot get one: the plan says why.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: Only this business has it, and a rival cannot get one: the plan says why.
 
 **5. Which plan makes a real choice?**
@@ -184,7 +184,7 @@ A written note: "Priya’s plan for the year ahead", Written in April.
 **4. What stops a rival copying what makes the business different?**
 - Only we have it, and a rival cannot get or make one — if chosen: A rival can buy or copy it, so nothing stops a copy: the gain is a race.
 - It rests on many activities that fit together: a rival would have to copy them all — if chosen: A rival can buy or copy it, so nothing stops a copy: the gain is a race.
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: A rival can buy or copy it, so nothing stops a copy: the gain is a race.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: A rival can buy or copy it, so nothing stops a copy: the gain is a race.
 - Nothing: a rival can buy it, copy it, or get the same result another way (right)
 
 **5. Which plan makes a real choice?**
@@ -196,7 +196,7 @@ A written note: "Priya’s plan for the year ahead", Written in April.
 - People already buy this: start from how similar projects turned out (right)
 - Nobody can see yet whether people would buy: try it small and learn — if chosen: People already buy this, and many like it have opened: start from how they did, and keep the stake within what can be lost.
 
-After the answer: the deciding words are marked. Reason: Priya runs as well as any cafe, and every cafe lost the office crowd: a strategy problem. The passes earn the most, but nothing stops another cafe selling them, so the gain is a race: she chooses home workers now, and keeps the booths cheap enough to pay back before rivals follow. Work cafes have a record to start from.
+After the answer: the deciding words are marked. Reason: Priya runs as well as any cafe, and every cafe lost the office crowd: a strategy problem. The passes earn the most, but nothing stops another cafe selling them: a race, not a lasting position. Of the two plans only the first chooses customers and a way to win; work cafes have a record to start from.
 
 #### Item 4
 
@@ -231,7 +231,7 @@ A written note: "Kim’s plan for the year ahead", Written in May.
 **4. What stops a rival copying what makes the business different?**
 - Only we have it, and a rival cannot get or make one — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: It rests on many activities that fit together, so a rival would have to copy them all and change how it runs.
 
 **5. Which plan makes a real choice?**
@@ -297,6 +297,7 @@ A written note: "Ben’s memo to his partner", Heating and cooling installs, aft
 (the options come in an order that depends on the seed of the question)
 - Order the same kits and train the crews to finish a house in a day (right)
 - Stop bidding on new installs and offer only repairs to old systems instead — if chosen: That changes the position for a gap any crew can close.
+- Aim to win eight of the next ten bids, and push the crews to reach it — if chosen: A goal says where Ben wants to be, not how: the crews would still take two days.
 - Cut every bid by a tenth and keep the two-day crews — if chosen: The cut comes out of the margin; the second day of labor stays.
 
 After the answer: the deciding words are marked. Reason: Rivals win with the same units at the same price, doing the work in one day with kits Ben can also buy: a gap in running the business. He catches up.
@@ -315,13 +316,13 @@ A written note: "Rosa’s page of numbers", Dry cleaning: a four-week trial of s
 - It only moves value from one side to another — if chosen: It changes what customers would pay: up to $4.50 more, for $1.50 more work.
 - It shrinks the value — if chosen: The added work, $1.50, is less than what customers would pay more, $4.50.
 
-**How much more than next-day should Rosa charge for same-day?**
+**Where must Rosa’s extra charge for same-day sit so that both she and her customers gain?**
 (the options come in an order that depends on the seed of the question)
-- $3 more per order (right)
-- $5 more per order — if chosen: Above $4.50 most would not buy, so little value is made at all.
-- $1 more per order — if chosen: Below the $1.50 of added work, she loses on every order.
+- Between $1.50 and $4.50 more per order (right)
+- Above $4.50 more per order, to keep all the value for the shop — if chosen: Above $4.50 most would not buy, so little value is made at all.
+- Below $1.50 more per order, to win the most customers — if chosen: Below the $1.50 of added work, she loses on every order.
 
-After the answer: the deciding words are marked. Reason: Customers would pay up to $4.50 more and the work adds $1.50, so same-day grows the value by about $3 an order. A price between the two splits it: $3 more keeps $1.50 for Rosa and leaves $1.50 with the customer.
+After the answer: the deciding words are marked. Reason: Customers would pay up to $4.50 more and the work adds $1.50, so same-day grows the value by about $3 an order. Any price between the two splits it: the $4 she tried keeps $2.50 for Rosa and leaves 50 cents with the customer.
 
 #### Check question 8
 
@@ -367,6 +368,7 @@ A plain table, "Lee’s catering: last year, by kind of customer":
 
 **What should Lee do with the festival stand, which loses money?**
 - Keep it, but fix its price or cost (right)
+- Keep it, and cut its loss as far as you can — if chosen: A price change could make it pay, so its loss need not be kept: fix the price first.
 - Let it go — if chosen: Lee charges $9 where the other stands charge $14 for the same food: a price change could make it pay. Try that before dropping it.
 
 After the answer: the deciding words are marked. Reason: Weddings earn $40,000, more than the office lunches’ $15,000, and couples come for recipes no one else cooks: the core. The stand loses $8,000, but at the $14 other stands charge it would pay: keep it and fix its price.
@@ -412,12 +414,12 @@ A written note: "How the clinic runs: the list of what we do", This year.
 - "Day clinics send their night calls to us, and we send each pet back to its own vet in the morning." — if tapped: note: Serves the position and helps the others: the day clinics send the cases.
 - "Cheap vaccination mornings on weekdays, to fill the rooms." (right)
 - "Prices posted at the door, above a day visit, paid before treatment." — if tapped: note: Fits: night care costs more to run, and owners in an emergency pay for it.
-- A button: "Every activity fits" — if chosen: The text does give one. It is marked above.
+- A button: "Every activity fits" — if chosen: One of the lines is the answer: it is marked above.
 
 **What stops a day clinic copying the night clinic?**
 - Only we have it, and a rival cannot get or make one — if chosen: Nothing in the list is the only one of its kind; it is the whole group that is hard to copy.
 - It rests on many activities that fit together: a rival would have to copy them all (right)
-- Customers would lose by leaving: their setup and records here, or trust built over years that a newcomer cannot buy — if chosen: Owners in an emergency go where the door is open; they keep nothing here that holds them.
+- Trust built over years that a newcomer cannot buy, or customers’ records and setup kept here — if chosen: Owners in an emergency go where the door is open; they keep nothing here that holds them.
 - Nothing: a rival can buy it, copy it, or get the same result another way — if chosen: A day clinic would have to staff every night, keep a surgery ready and stop sending its own calls: it would have to change how it runs.
 
 After the answer: the deciding words are marked. Reason: Cheap weekday mornings serve another customer, at the hours the night staff sleep: they do not fit. The rest fit together, so a day clinic would have to copy all of them and change how it runs.
@@ -450,7 +452,7 @@ A written note: "Ray’s plan for a grooming van", Written in April.
 > The move: a van that grooms dogs at the owner’s door, for $25 more than at the shop.
 > Owners must pay the $25 more: 30 of them have paid a deposit.
 > The van must do six dogs a day to pay for itself: the van’s seller says it can.
-> In the shop each dog takes us 70 minutes, and the van would drive 20 minutes between homes.
+> In the shop each dog takes us 70 minutes, the van would drive 20 minutes between homes, and our groomers work an eight-hour day.
 > The city must let the van park on the street: the permit came last week.
 
 **Which condition should Ray test first?**
@@ -465,7 +467,7 @@ A written note: "Ray’s plan for a grooming van", Written in April.
 - Write the full plan with five years of numbers first — if chosen: Those numbers would rest on six dogs a day, the condition most in doubt.
 - Get the van’s seller to put the six dogs in writing — if chosen: In writing it is still the seller’s word; a count of his own costs little.
 
-After the answer: the deciding words are marked. Reason: Six dogs at 70 minutes each plus 20 minutes of driving is about nine hours: a fact against the seller’s word. The deposits and the permit already hold. Test the six dogs first, cheaply, with a rented van.
+After the answer: the deciding words are marked. Reason: Six dogs at 70 minutes each plus 20 minutes of driving between them is nearly nine hours, more than the eight-hour day: a fact against the seller’s word. The deposits and the permit already hold. Test the six dogs first, cheaply, with a rented van.
 
 #### Check question 14
 
@@ -473,7 +475,7 @@ A written note: "Lupe’s page of numbers for a second taqueria", Written in Jul
 
 > A full second shop would cost $300,000; we could lose $60,000 and keep the first shop and our home going.
 > Our taqueria has made money for six years, and our plan shows a second one paying back in 18 months.
-> A food truck in the next town would cost $55,000.
+> A small rented counter in the next town, the same tacos with two staff, would cost $55,000 to fit out.
 > The county lists 140 restaurants opened in the last ten years; about four in ten were still open after five.
 
 **How should Lupe judge the second taqueria?**
@@ -482,11 +484,11 @@ A written note: "Lupe’s page of numbers for a second taqueria", Written in Jul
 
 **What should she do?**
 (the options come in an order that depends on the seed of the question)
-- Run the truck in the next town first, and open a shop there if it does well (right)
+- Open the small rented counter in the next town, and grow it only if it does well (right)
 - Open the full shop: six good years and the plan say it pays back — if chosen: Her plan is her own story; the record says four in ten, and $300,000 is five times what she can lose.
-- Pay a firm for a forecast of the next town’s market before deciding anything — if chosen: The county’s record is already there; a forecast is one more plan, and the truck keeps the stake within what she can lose.
+- Pay a firm for a forecast of the next town’s market before deciding anything — if chosen: The county’s record is already there; a forecast is one more plan, and the rented counter keeps the stake within what she can lose.
 
-After the answer: the deciding words are marked. Reason: Restaurants have a record: about four in ten last five years, whatever the plan says. A full shop stakes five times what Lupe can lose; the truck fits within it and shows whether the next town buys.
+After the answer: the deciding words are marked. Reason: Restaurants have a record: about four in ten last five years, whatever the plan says. A full shop stakes five times what Lupe can lose; the rented counter is the same project cut down to fit within it.
 
 ## The result
 
