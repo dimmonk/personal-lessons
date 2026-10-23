@@ -13,7 +13,7 @@ A line is one product or service, one customer (or group of customers), or one w
 For each line, take its direct cost from what it brought in. A direct cost is one that would stop if the line stopped: its materials, the staff hours you would no longer pay, its delivery. Rent, and the other costs that stay whatever you drop, stay out.
 What is left is what the line earns. Judge every line by that, never by its sales.
 The core is the line that is both distinctive, what customers come to you for rather than to a rival, and earns the most. Usually that is the line that earns the most of all. But a line every rival sells the same way can earn well this year and still be competed away, as copied gains are: it is not the core. Then the core is the distinctive line that earns the most.
-Its share is what it earns divided by what all the lines of that kind earn together, the losses of losing lines taken off. With a losing line, the share can pass 100%: the part above 100% is what the losing lines cost the rest.
+Its share is what it earns divided by what all the lines of that kind earn together, the losses of losing lines taken off. With a losing line, the share can pass 100%: it does when the losing lines lose more than the other lines earn, so the losses take back part of what the core earned.
 Keep and grow the core before growing anything else; if it cannot grow, protect it.
 A line that loses money: first, could a change of price or of what it costs to serve make it pay (charge what rivals charge, a smallest order, a delivery fee). If it could, keep it and fix it.
 If no change would make it pay, what ties it to the core? Do the core’s customers buy it along with the core, or find you through it (a free class that brings the families who later book the paid sessions)? Then dropping it costs the core too: keep it and cut its loss as far as you can. If neither, let it go.
@@ -324,7 +324,7 @@ A plain table, "Hal’s delivery service: last year, by customer":
 After the answer: the deciding words are marked. Reason: Pharmacies is what customers come here for and earns $30,000, 187.5% of what the lines earn together (over 100% because the losing lines take $19,000 back): that is the core. Restaurants loses $12,000: a price or cost change could make it pay: keep it and fix it.
 The working:
 - Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Pharmacies: $30,000; Restaurants: −$12,000; Florists: $5,000; One-off senders: −$7,000. Pharmacies earns the most, and it is what customers come here for.
-- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $16,000 = 187.5%. The loss on Restaurants and One-off senders is taken off the total; the part above 100% is what the losing lines cost the rest.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $16,000 = 187.5%. The loss on Restaurants and One-off senders is taken off the total; it passes 100% because the losing lines lose more than the other lines earn.
 - Decide on the line that loses money: could a price or cost change make it pay? If not, does it bring the core’s customers or come with the core?: Restaurants pay us $6 a run, while the other couriers charge them $11; they told Hal they would pay $10 to keep him. The restaurants send us nothing but their own deliveries. So: a price or cost change could make it pay: keep it and fix it.
 
 #### Item 8

@@ -10,13 +10,13 @@ Strategists check a plan against how others like it did, and against how the riv
 ## Step 1: Start from how others did
 
 First, find the record: many ventures like this one, alike in what makes them work or fail (the same kind of business, for the same kind of customer), and see what share of them worked. Not the two you happen to know, and not many of another kind. Across the US, about six in ten new shops and offices are still open three years after opening, and about half after five.
-Start your forecast from that share. Move from it only for a real difference: a fact the others did not have, such as customers who have already paid. Being sure, knowing the trade or working hard is not one: the owners in the record had those too. A real difference moves the forecast part of the way, never to the plan’s own number.
+Start your forecast from that share. Move from it only for a real difference: a fact the others did not have, such as customers who have already paid. Being sure, a convincing plan or friends saying they would come is not one: most owners in the record had those too. Years in the same trade count, but for little: owners who have them last a little more often. A real difference moves the forecast part of the way, never to the plan’s own number.
 Second, work out how the rival will answer. It answers when your move takes customers it serves and it can follow without changing how it runs. It lets the move go when those customers are not its own, or following would cost it its own way of running. What it did in the past is a clue, not the test.
 Third, when someone says “it worked for them”, find the reason it worked there, and check that the reason is true here. Looking alike is not enough.
 Why it matters: owners who judge a plan by its own story expect too much, and a rival’s answer can take the gain away in weeks.
 
 A wrong idea, marked wrong: “Our plan is solid and we know this business, so it will work.”
-The right line: Every owner in the record had a plan and knew the business, and the record shows how many made it. Start from that, and plan for the rival’s answer.
+The right line: Most owners in the record had a plan and were sure of it, and the record shows how many made it. Knowing the business moves that a little, not to a sure thing; and plan for the rival’s answer.
 
 ## Step 2: A worked example
 
@@ -119,7 +119,8 @@ Help on screen: the words that decide it are marked.
 
 **Roughly, what share of them were still open after three years?**
 - The learner types a rough answer from their head, with no calculator: [ ]%.
-- Right (from 0.5 to 2 times the exact answer: an estimate with no tolerance of its own is right from half to double): 60.42%
+- Right (within 10): 60.42%
+- If typed 39.58%: That is near the share that closed. Count the ones still open over all that opened.
 - Shown after: how far off it was, for example "You said 66.46%. The exact answer is 60.42%, so you were 10% over."
 
 **Now work it out: what share were still open after three years?**
@@ -130,7 +131,7 @@ Help on screen: the words that decide it are marked.
 **Where should Grace’s forecast for the new salon start?**
 (the options come in an order that depends on the seed of the question)
 - Near 60.4%, the share of others like it still open, moved only for a real difference (right)
-- Near 100%, as the plan says: Grace knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 39.6% of them closed within three years. Start from how they did.
+- Near 100%, as the plan says: Grace knows this business better than any table does — if chosen: Knowing the trade moves a forecast a little, not to 100%, and 39.6% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did.
 - Near 50%: a new salon either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 48 that opened, 29 were still open three years later: 60.4%. Grace’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
@@ -158,7 +159,8 @@ A plain table, "New bakeries in the county, and how many were still open three y
 
 **Roughly, what share of them were still open after three years?**
 - The learner types a rough answer from their head, with no calculator: [ ]%.
-- Right (from 0.5 to 2 times the exact answer: an estimate with no tolerance of its own is right from half to double): 54.76%
+- Right (within 10): 54.76%
+- If typed 45.24%: That is near the share that closed. Count the ones still open over all that opened.
 - Shown after: how far off it was, for example "You said 60.24%. The exact answer is 54.76%, so you were 10% over."
 
 **Now work it out: what share were still open after three years?**
@@ -169,7 +171,7 @@ A plain table, "New bakeries in the county, and how many were still open three y
 **Where should Dana’s forecast for the new bakery start?**
 (the options come in an order that depends on the seed of the question)
 - Near 54.8%, the share of others like it still open, moved only for a real difference (right)
-- Near 100%, as the plan says: Dana knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 45.2% of them closed within three years. Start from how they did.
+- Near 100%, as the plan says: Dana knows this business better than any table does — if chosen: Knowing the trade moves a forecast a little, not to 100%, and 45.2% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did.
 - Near 50%: a new bakery either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 42 that opened, 23 were still open three years later: 54.8%. Dana’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
@@ -191,7 +193,8 @@ A plain table, "New cafes in the county, and how many were still open three year
 
 **Roughly, what share of them were still open after three years?**
 - The learner types a rough answer from their head, with no calculator: [ ]%.
-- Right (from 0.5 to 2 times the exact answer: an estimate with no tolerance of its own is right from half to double): 60%
+- Right (within 10): 60%
+- If typed 40%: That is near the share that closed. Count the ones still open over all that opened.
 - Shown after: how far off it was, for example "You said 66%. The exact answer is 60%, so you were 10% over."
 
 **Now work it out: what share were still open after three years?**
@@ -202,7 +205,7 @@ A plain table, "New cafes in the county, and how many were still open three year
 **Where should Priya’s forecast for the new cafe start?**
 (the options come in an order that depends on the seed of the question)
 - Near 60%, the share of others like it still open, moved only for a real difference (right)
-- Near 100%, as the plan says: Priya knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 40% of them closed within three years. Start from how they did.
+- Near 100%, as the plan says: Priya knows this business better than any table does — if chosen: Knowing the trade moves a forecast a little, not to 100%, and 40% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did.
 - Near 50%: a new cafe either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 50 that opened, 30 were still open three years later: 60%. Priya’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
@@ -295,7 +298,7 @@ A written note: "Mark’s page of numbers for a second gym", Written in October.
 - At 62% exactly: only the record counts — if chosen: The note holds a fact the others did not have, so the forecast moves part of the way from the record, not all of it.
 - Near 100%, as the plan says: Mark knows gyms better than anyone, and 150 people have already paid — if chosen: The difference is real, but it moves the forecast part of the way, not to the plan’s own number.
 
-After the answer: the deciding words are marked. Reason: The record starts it at 62%. Money paid by 150 people is a real difference, so the forecast moves up from there, but not to a certainty: Mark being sure is what every owner in the record had.
+After the answer: the deciding words are marked. Reason: The record starts it at 62%. Money paid by 150 people is a real difference, so the forecast moves up from there, but not to a certainty: Mark being sure is what most owners in the record were.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -320,7 +323,8 @@ A plain table, "New bike shops in the county, and how many were still open three
 
 **Roughly, what share of them were still open after three years?**
 - The learner types a rough answer from their head, with no calculator: [ ]%.
-- Right (from 0.5 to 2 times the exact answer: an estimate with no tolerance of its own is right from half to double): 63.04%
+- Right (within 10): 63.04%
+- If typed 36.96%: That is near the share that closed. Count the ones still open over all that opened.
 - Shown after: how far off it was, for example "You said 69.35%. The exact answer is 63.04%, so you were 10% over."
 
 **Now work it out: what share were still open after three years?**
@@ -331,7 +335,7 @@ A plain table, "New bike shops in the county, and how many were still open three
 **Where should Leo’s forecast for the new bike shop start?**
 (the options come in an order that depends on the seed of the question)
 - Near 63%, the share of others like it still open, moved only for a real difference (right)
-- Near 100%, as the plan says: Leo knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 37% of them closed within three years. Start from how they did.
+- Near 100%, as the plan says: Leo knows this business better than any table does — if chosen: Knowing the trade moves a forecast a little, not to 100%, and 37% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did.
 - Near 50%: a new bike shop either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 46 that opened, 29 were still open three years later: 63%. Leo’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
@@ -353,7 +357,8 @@ A plain table, "New gyms in the county, and how many were still open three years
 
 **Roughly, what share of them were still open after three years?**
 - The learner types a rough answer from their head, with no calculator: [ ]%.
-- Right (from 0.5 to 2 times the exact answer: an estimate with no tolerance of its own is right from half to double): 65.22%
+- Right (within 10): 65.22%
+- If typed 34.78%: That is near the share that closed. Count the ones still open over all that opened.
 - Shown after: how far off it was, for example "You said 71.74%. The exact answer is 65.22%, so you were 10% over."
 
 **Now work it out: what share were still open after three years?**
@@ -364,7 +369,7 @@ A plain table, "New gyms in the county, and how many were still open three years
 **Where should Mark’s forecast for the new gym start?**
 (the options come in an order that depends on the seed of the question)
 - Near 65.2%, the share of others like it still open, moved only for a real difference (right)
-- Near 100%, as the plan says: Mark knows this business better than any table does — if chosen: Every owner in the table knew the business and had a plan, and 34.8% of them closed within three years. Start from how they did.
+- Near 100%, as the plan says: Mark knows this business better than any table does — if chosen: Knowing the trade moves a forecast a little, not to 100%, and 34.8% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did.
 - Near 50%: a new gym either makes it or it does not — if chosen: Even odds is a guess; the table says how many like it did. Start from the share it gives.
 
 After the answer: the deciding words are marked. Reason: Of 46 that opened, 30 were still open three years later: 65.2%. Mark’s forecast starts there, and moves only for a real difference, not because the plan is convincing.
@@ -419,17 +424,17 @@ After the answer: the deciding words are marked. Reason: The town and the shop d
 
 A written note: "Grace’s page of numbers for a second salon", Written in April.
 
-> Grace has run her salon for twelve years and says the second will do even better than the first.
+> Grace says her second salon will do even better than her first, and she has never been so sure of anything.
 > Of the new salons in the county, 58% were still open three years later.
 > Her clients say they would try the new one, and her plan shows it full by spring.
 
 **Where should the forecast start?**
 (the options come in an order that depends on the seed of the question)
-- Well above 58%: twelve years in the trade and her clients’ word count for a lot — if chosen: Nothing in the note is a fact the others lacked: every owner in the record was sure and knew the trade. Stay near the record.
+- Well above 58%: Grace is that sure, and her clients’ word counts for a lot — if chosen: Nothing in the note is a fact the others lacked: most owners in the record were sure and had a plan. Stay near the record.
 - Near 58%: nothing here is a fact the others lacked (right)
-- Near 100%, as the plan says — if chosen: Being sure is what every owner in the record had. Start near the record.
+- Near 100%, as the plan says — if chosen: Being sure is what most owners in the record were. Start near the record.
 
-After the answer: the deciding words are marked. Reason: The record starts it at 58%. Years in the trade, being sure and friendly clients’ words are what most owners in the record had too, so they are not a real difference: the forecast stays near 58%.
+After the answer: the deciding words are marked. Reason: The record starts it at 58%. Being sure, a plan that shows it full and friendly clients’ words are what most owners in the record had too, so they are not a real difference: the forecast stays near 58%.
 
 #### Check question 20
 

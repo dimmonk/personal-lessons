@@ -319,14 +319,15 @@ A written note: "Kim’s plan for her tutoring business", Written in August.
 
 > The exam-prep chain in the city tutors only for the state math exams, and it is full.
 > We will do the same and tutor only for those exams, with tutors who have graded them.
-> Our reading, science and college-entrance tutors go part-time elsewhere, and so do their families.
+> Our tutors’ hours are full: every hour on reading or science is an hour the exam students cannot book.
+> Our reading, science and college-entrance tutors leave for other work, and their students’ families go elsewhere.
 
 **Does the new work pull against the old, and if so, which side goes?**
 - A real trade-off: one side of the pull given up (right)
 - A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
 - No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
 
-After the answer: the deciding words are marked. Reason: Tutors who know one exam deeply and tutors for every subject pull on the same hours and hiring, and Kim drops every other subject. She copies the chain, but she gives up one side: a real trade-off.
+After the answer: the deciding words are marked. Reason: Every hour on another subject is an hour the exam students cannot book, and Kim drops every other subject. She copies the chain, but she gives up one side: a real trade-off.
 
 #### Check question 17
 

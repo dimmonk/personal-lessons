@@ -371,7 +371,6 @@ A written note: "Lena’s plan for her kitchen remodeling firm", Written in Dece
 
 > We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.
 > This year we break $1 million in sales.
-> We have built kitchens in this county for twelve years.
 > Be the first name people think of for kitchens in the county.
 > Every job done on time, every time.
 
@@ -379,7 +378,6 @@ A written note: "Lena’s plan for her kitchen remodeling firm", Written in Dece
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "This year we break $1 million in sales." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
-- "We have built kitchens in this county for twelve years." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "Be the first name people think of for kitchens in the county." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Every job done on time, every time." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - A button: "No line says what is in the way" (right)
@@ -389,7 +387,7 @@ A written note: "Lena’s plan for her kitchen remodeling firm", Written in Dece
 - A to-do list — if chosen: It lists no real steps; it only says where the owner wants to be.
 - A strategy — if chosen: No line says what is in the way, so there is nothing for a plan to get past.
 
-After the answer: the deciding words are marked. Reason: A target, two wishes and two lines of background about the firm, and no line says what is in the way of the target. It is a goal.
+After the answer: the deciding words are marked. Reason: A target, two wishes and a line of background about the firm, and no line says what is in the way of the target. It is a goal.
 
 #### Check question 13
 

@@ -87,7 +87,7 @@ A written note: "Notes on our bookkeeping firm", Written in June.
 > We keep the books for about 60 small businesses.
 > This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes.
 > **The two firms they moved to do the same work for the same fee and send their reports on time.**
-> We still type the numbers in by hand; both of those firms pull them straight from the bank.
+> We still type every number in by hand.
 
 Help on screen: the words that decide it are marked.
 
@@ -96,7 +96,7 @@ Help on screen: the words that decide it are marked.
 - "We keep the books for about 60 small businesses." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 - "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "The two firms they moved to do the same work for the same fee and send their reports on time." (right)
-- "We still type the numbers in by hand; both of those firms pull them straight from the bank." — if tapped: note: That is how the gap arose. Find the line that shows rivals doing the same work better.
+- "We still type every number in by hand." — if tapped: note: That is how the gap arose. Find the line that shows rivals doing the same work better.
 
 **What does this business need?**
 - Run it better (right)

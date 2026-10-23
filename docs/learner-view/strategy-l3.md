@@ -209,7 +209,7 @@ Help on screen: the words that decide it are marked.
 **What does the move do to the value created?**
 - It grows the value (right)
 - It only moves value from one side to another — if chosen: The pay did not change, but the least staff would take did: they now stay at a pay they would have left. That end of the stick moved down, so the value grows.
-- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
+- It shrinks the value — if chosen: Nothing was added to the work, and the least suppliers or staff would take fell: that end of the stick moved down, so it got longer, not shorter.
 
 After the answer: the deciding words are marked. Reason: Cleaners who would have left at this pay now stay at it, so the least they would take fell, and the week adds nothing to the work. The suppliers’ end of the stick moved down, so the value grows.
 
@@ -333,7 +333,7 @@ A written note: "Notes on Dana’s bakery", Written in September.
 **What does the move do to the value created?**
 - It grows the value (right)
 - It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
-- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
+- It shrinks the value — if chosen: Nothing was added to the work, and the least suppliers or staff would take fell: that end of the stick moved down, so it got longer, not shorter.
 
 After the answer: the deciding words are marked. Reason: The steady order lowers the least the mill would take, and adds nothing to the work, so the suppliers’ end of the stick moved down. The move grows the value.
 
@@ -553,7 +553,7 @@ A written note: "Notes on Kim’s tutoring business", Written in October.
 **What does the move do to the value created?**
 - It grows the value (right)
 - It only moves value from one side to another — if chosen: The pay did not change, but the least the tutors would take did: $4 an hour less. That end of the stick moved down, so the value grows.
-- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
+- It shrinks the value — if chosen: Nothing was added to the work, and the least suppliers or staff would take fell: that end of the stick moved down, so it got longer, not shorter.
 
 After the answer: the deciding words are marked. Reason: With hours they choose, tutors would take $4 an hour less, and nothing is added to the work, so the suppliers’ end of the stick moved down. The move grows the value.
 
