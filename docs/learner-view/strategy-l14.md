@@ -358,6 +358,7 @@ After the answer: the deciding words are marked. Reason: No line says what is in
 Your own note, written after an argument: "Ann’s plan for her gift shop", Written in January.
 
 > Goal for the year: sales up 20%.
+> So we push harder on getting our name out.
 > Start an Instagram page.
 > Sell gift cards.
 > Open on Sundays.
@@ -367,6 +368,7 @@ Your own note, written after an argument: "Ann’s plan for her gift shop", Writ
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Goal for the year: sales up 20%." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
+- "So we push harder on getting our name out." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - "Start an Instagram page." — if tapped: note: That is a step to take, not what is in the way.
 - "Sell gift cards." — if tapped: note: That is a step to take, not what is in the way.
 - "Open on Sundays." — if tapped: note: That is a step to take, not what is in the way.
@@ -379,7 +381,7 @@ Your own note, written after an argument: "Ann’s plan for her gift shop", Writ
 - A to-do list (right)
 - A strategy — if chosen: No line says what is in the way, so the steps have nothing to answer.
 
-After the answer: the deciding words are marked. Reason: It lists five steps under a target, but no line says what is in the way of more sales. With no challenge for them to answer, it is a to-do list.
+After the answer: the deciding words are marked. Reason: It lists five steps under a target, and “push harder” is an approach to nothing: no line says what is in the way of more sales. It is a to-do list.
 
 #### Question in the draw: p-plumb
 
@@ -437,16 +439,16 @@ After the answer: the deciding words are marked. Reason: It is a mission, a wish
 
 Your own note, written after an argument: "Omar’s plan for his print shop", Written in September.
 
-> Online printers now sell business cards and flyers for less than our paper costs us.
-> So we stop chasing small, simple orders and become the shop local businesses call for rush jobs and tricky ones.
+> Online printers undercut us on cards and flyers.
+> Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders.
 > Promise same-day printing on orders in by 10 a.m.
 > Have one person check every file before it prints, so tricky jobs come out right.
 > Drop our cut-price business card deal.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Online printers now sell business cards and flyers for less than our paper costs us." (right)
-- "So we stop chasing small, simple orders and become the shop local businesses call for rush jobs and tricky ones." — if tapped: note: That is the approach to the challenge.
+- "Online printers undercut us on cards and flyers." (right)
+- "Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders." — if tapped: note: That is the approach to the challenge.
 - "Promise same-day printing on orders in by 10 a.m." — if tapped: note: That is a step to take, not what is in the way.
 - "Have one person check every file before it prints, so tricky jobs come out right." — if tapped: note: That is a step to take, not what is in the way.
 - "Drop our cut-price business card deal." — if tapped: note: That is a step to take, not what is in the way.
@@ -457,7 +459,7 @@ Your own note, written after an argument: "Omar’s plan for his print shop", Wr
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The first line says what is in the way: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
+After the answer: the deciding words are marked. Reason: The first line says what is in the way, in six words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
 
 #### Question in the draw: q-truck
 
@@ -492,12 +494,14 @@ Your own note, written after an argument: "Ruth’s plan for her day care", Writ
 > Our vision: the best start in life for every child.
 > Double the number of children we care for by 2028.
 > Be known as the warmest day care in the county.
+> So we put the children first in everything we do.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our vision: the best start in life for every child." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Double the number of children we care for by 2028." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
 - "Be known as the warmest day care in the county." — if tapped: note: That is a wish. It says nothing about what stands in the way.
+- "So we put the children first in everything we do." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - A button: "No line says what is in the way" (right)
 
 **What is this plan?**
@@ -505,7 +509,7 @@ Your own note, written after an argument: "Ruth’s plan for her day care", Writ
 - A to-do list — if chosen: It lists no real steps; it only says where the owner wants to be.
 - A strategy — if chosen: No line says what is in the way, so there is nothing for a plan to get past.
 
-After the answer: the deciding words are marked. Reason: A vision, a target and a wish: no line says what stands in the way of doubling, and nothing says what to do. It is a goal.
+After the answer: the deciding words are marked. Reason: A vision, a target and two wishes: no line says what stands in the way of doubling, and nothing says what to do. It is a goal.
 
 #### Question in the draw: q-heating
 
@@ -537,7 +541,7 @@ Your own note, written after an argument: "Joe’s plan for his hardware store",
 
 > Open at 6 a.m. for the contractors.
 > The home center across town carries more stock than we do and sells it all for less.
-> So we stop chasing weekend shoppers and serve the people who need one part fast and advice with it: contractors and neighbors in the middle of a repair.
+> From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers.
 > Keep staff on the floor who can tell you which part you need.
 > Close the garden section, which the home center does better.
 
@@ -545,7 +549,7 @@ Your own note, written after an argument: "Joe’s plan for his hardware store",
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Open at 6 a.m. for the contractors." — if tapped: note: That is a step to take, not what is in the way.
 - "The home center across town carries more stock than we do and sells it all for less." (right)
-- "So we stop chasing weekend shoppers and serve the people who need one part fast and advice with it: contractors and neighbors in the middle of a repair." — if tapped: note: That is the approach to the challenge.
+- "From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers." — if tapped: note: That is the approach to the challenge.
 - "Keep staff on the floor who can tell you which part you need." — if tapped: note: That is a step to take, not what is in the way.
 - "Close the garden section, which the home center does better." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
@@ -583,6 +587,7 @@ After the answer: the deciding words are marked. Reason: A target and two wishes
 
 Your own note, written after an argument: "Dr. Patel’s plan for her dental office", Written in June.
 
+> This year we focus on families with young children.
 > Get more five-star reviews online.
 > Buy a new X-ray machine.
 > Offer teeth whitening.
@@ -590,6 +595,7 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "This year we focus on families with young children." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - "Get more five-star reviews online." — if tapped: note: That is a step to take, not what is in the way.
 - "Buy a new X-ray machine." — if tapped: note: That is a step to take, not what is in the way.
 - "Offer teeth whitening." — if tapped: note: That is a step to take, not what is in the way.
@@ -601,7 +607,7 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 - A to-do list (right)
 - A strategy — if chosen: No line says what is in the way, so the steps have nothing to answer.
 
-After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve. It is a to-do list.
+After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve; the focus on families answers nothing named. It is a to-do list.
 
 #### Question in the draw: k-carwash
 
@@ -631,7 +637,7 @@ After the answer: the deciding words are marked. Reason: The last line names a r
 
 Your own note, written after an argument: "Kim’s plan for her tutoring business", Written in August.
 
-> Free videos online now teach the same math lessons we used to sell as recorded packs.
+> Free videos now teach what our recorded packs did.
 > So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.
 > Start every session with the student’s homework.
 > Send each parent a short progress note every Friday.
@@ -639,7 +645,7 @@ Your own note, written after an argument: "Kim’s plan for her tutoring busines
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Free videos online now teach the same math lessons we used to sell as recorded packs." (right)
+- "Free videos now teach what our recorded packs did." (right)
 - "So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going." — if tapped: note: That is the approach to the challenge.
 - "Start every session with the student’s homework." — if tapped: note: That is a step to take, not what is in the way.
 - "Send each parent a short progress note every Friday." — if tapped: note: That is a step to take, not what is in the way.
@@ -760,7 +766,7 @@ Your own note, written after an argument: "Notes on our office-cleaning business
 - "Our profit is lower now than before we bought the machines." — if tapped: note: That is the result. The line before it says why.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: The firm did run better, and the rivals copied the machines within months, so the gain went to customers as lower bids. Running better cannot fix that; it needs a different position.
@@ -772,15 +778,17 @@ The working:
 
 Your own note, written after an argument: "Notes on our bistro", Written in March.
 
-> Our food gets good reviews, about the same as the two bistros nearby.
-> A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints.
 > Our kitchen has no fixed order for which tickets get cooked first.
+> The two bistros nearby are busier than us on weekends, as they always were.
+> Our food gets good reviews.
+> A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Our food gets good reviews, about the same as the two bistros nearby." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Our kitchen has no fixed order for which tickets get cooked first." — if tapped: note: That is the cause of the gap. Find the line that shows rivals doing the same work better.
+- "The two bistros nearby are busier than us on weekends, as they always were." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "Our food gets good reviews." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 - "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints." (right)
-- "Our kitchen has no fixed order for which tickets get cooked first." — if tapped: note: That is the cause of the gap. The line before it shows rivals doing the same work better.
 
 **What does this business need?**
 - Run it better (right)
@@ -800,7 +808,7 @@ Your own note, written after an argument: "Notes on our bookkeeping firm", Writt
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "We keep the books for about 60 small businesses." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
-- "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes." — if tapped: That is not the sentence.
+- "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "The two firms they moved to do the same work for the same fee and send their reports on time." (right)
 - "We still type the numbers in by hand; both of those firms pull them straight from the bank." — if tapped: note: That is how the gap arose. Find the line that shows rivals doing the same work better.
 
@@ -814,18 +822,18 @@ After the answer: the deciding words are marked. Reason: The firms the clients m
 
 Your own note, written after an argument: "Notes on our moving company", Written in April.
 
+> We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day.
 > Every moving company in our area quotes the same hourly rate, give or take $5.
-> We are already as quick and careful as any of them, and customers still pick whoever quotes lowest on the day.
 > Each spring somebody cuts the rate, and the rest of us follow.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Every moving company in our area quotes the same hourly rate, give or take $5." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
-- "We are already as quick and careful as any of them, and customers still pick whoever quotes lowest on the day." (right)
-- "Each spring somebody cuts the rate, and the rest of us follow." — if tapped: note: That is what the squeeze looks like. The line that settles it says whether running better would help.
+- "We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day." (right)
+- "Every moving company in our area quotes the same hourly rate, give or take $5." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "Each spring somebody cuts the rate, and the rest of us follow." — if tapped: note: That is what the price fight looks like. The line that settles it says whether running better would help.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: The company already runs as well as any rival, and customers still choose on price alone. Running better leaves it the same as everyone else, so it needs a different position.
@@ -836,35 +844,35 @@ Your own note, written after an argument: "Notes on our pizza shop", Written in 
 
 > Two national chains opened within a mile of us this year.
 > They sell a large pizza for $8, buying their cheese and flour for 3,000 stores at a time.
-> A large pizza costs us $7 to make, and our kitchen wastes as little as anyone’s.
+> A large pizza costs us $9 to make, and our kitchen wastes as little as anyone’s.
 > Our regulars still come on Fridays.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Two national chains opened within a mile of us this year." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Two national chains opened within a mile of us this year." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "They sell a large pizza for $8, buying their cheese and flour for 3,000 stores at a time." (right)
-- "A large pizza costs us $7 to make, and our kitchen wastes as little as anyone’s." — if tapped: note: That shows the shop runs well. The line that settles it says what no amount of running better can reach.
+- "A large pizza costs us $9 to make, and our kitchen wastes as little as anyone’s." — if tapped: note: That shows the shop runs well and costs more than the chains charge. The line that settles it says why no amount of running better can reach their price.
 - "Our regulars still come on Fridays." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
-After the answer: the deciding words are marked. Reason: The chains buy for 3,000 stores, a cost no single shop reaches by running its kitchen better, and this kitchen already wastes little. Competing on the same pizza at their price cannot work, so it needs a different position.
+After the answer: the deciding words are marked. Reason: The chains buy for 3,000 stores and sell at $8, below the $9 this well-run kitchen spends on a pizza; no single shop reaches that cost by running better. Competing on the same pizza at their price cannot work, so it needs a different position.
 
 #### Question in the draw: q-salon2
 
 Your own note, written after an argument: "Notes on our hair salon", Written in May.
 
 > Our bookings are kept in a paper diary at the front desk.
-> Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes.
 > The salon across the street, with the same prices and services, books online and its clients never wait.
+> Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our bookings are kept in a paper diary at the front desk." — if tapped: note: That is the cause. Find the line that shows rivals doing the same work better.
-- "Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes." — if tapped: That is not the sentence.
 - "The salon across the street, with the same prices and services, books online and its clients never wait." (right)
+- "Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 
 **What does this business need?**
 - Run it better (right)
@@ -877,34 +885,34 @@ After the answer: the deciding words are marked. Reason: The salon across the st
 Your own note, written after an argument: "Notes on our gym", Written in January.
 
 > Three budget gyms opened within a mile this year, at $10 a month.
-> Our gym is as clean and as well run as any of them, and members still leave for the $10 places, which our rent cannot let us match.
+> Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10.
 > We charge $45 a month for the same machines and classes.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Three budget gyms opened within a mile this year, at $10 a month." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
-- "Our gym is as clean and as well run as any of them, and members still leave for the $10 places, which our rent cannot let us match." (right)
+- "Three budget gyms opened within a mile this year, at $10 a month." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10." (right)
 - "We charge $45 a month for the same machines and classes." — if tapped: note: That is the price gap. The line that settles it says whether running better would close it.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
-After the answer: the deciding words are marked. Reason: The gym already runs as well as the budget gyms and still cannot reach $10 with its rent. Selling the same machines and classes better will not fix it, so it needs a different position.
+After the answer: the deciding words are marked. Reason: The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $10. Selling the same machines and classes better will not fix it, so it needs a different position.
 
 #### Question in the draw: q-roofer
 
 Your own note, written after an argument: "Notes on our roofing company", Written in July.
 
+> So we fit fewer jobs into the season.
 > We bid on the same jobs as four other roofers, at about the same price.
 > Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site.
-> So we fit fewer jobs into the season.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We bid on the same jobs as four other roofers, at about the same price." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "So we fit fewer jobs into the season." — if tapped: note: That is the result. Find the line that says why.
+- "We bid on the same jobs as four other roofers, at about the same price." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site." (right)
-- "So we fit fewer jobs into the season." — if tapped: note: That is the result. The line before it says why.
 
 **What does this business need?**
 - Run it better (right)
@@ -922,12 +930,12 @@ Your own note, written after an argument: "Notes on our cafe", Written in Octobe
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Every cafe on our street now has the same espresso machine, the same oat milk and the same pastries from the same bakery." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Every cafe on our street now has the same espresso machine, the same oat milk and the same pastries from the same bakery." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "Our coffee is as good and as quick as theirs." — if tapped: note: That shows the cafe runs well. Find what happens to each new thing.
 - "Each time one of us adds something new, the others have it within a month, and our prices keep sliding." (right)
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: Every new thing is copied within a month and prices slide. Running the same cafe better would be copied too, so it needs a different position.
@@ -950,7 +958,7 @@ Your own note, written after an argument: "Notes on our print shop", Written in 
 - Run it better (right)
 - Choose a different position — if chosen: Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.
 
-After the answer: the deciding words are marked. Reason: Shops doing the same work with a newer press do not miss rush orders, so the gap is in the equipment. Running it better fixes it.
+After the answer: the deciding words are marked. Reason: Shops doing the same work with a newer press do not miss rush orders, so the gap is in the equipment. A newer press only brings the shop level with them, and level is all it needs: the trouble is lost rush orders, not a price fight, so running it better fixes it.
 
 #### Question in the draw: k-dental
 
@@ -958,13 +966,13 @@ Your own note, written after an argument: "Notes on our dental office", Written 
 
 > Patients complain that our bills are wrong: one bill in five needs fixing.
 > The other dental offices in town fill in the same insurance forms and rarely get a bill wrong.
-> Our patients like the dentists.
+> Our patients like the dentists, and the two newest offices in town have longer waiting lists than ours.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Patients complain that our bills are wrong: one bill in five needs fixing." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "The other dental offices in town fill in the same insurance forms and rarely get a bill wrong." (right)
-- "Our patients like the dentists." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Our patients like the dentists, and the two newest offices in town have longer waiting lists than ours." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 
 **What does this business need?**
 - Run it better (right)
@@ -982,12 +990,12 @@ Your own note, written after an argument: "Notes on our flower shop", Written in
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Supermarkets now sell a dozen roses for $12." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Supermarkets now sell a dozen roses for $12." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "A dozen roses costs us $15, and our buying and our waste are already as low as any florist’s." (right)
 - "Valentine’s Day sales fell by half this year." — if tapped: note: That is the result. The line that settles it says whether running better would help.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: The shop already buys and wastes as little as any florist and still cannot get a dozen roses under $15. Selling the same roses better cannot win, so it needs a different position.
@@ -1012,45 +1020,45 @@ Your own note, written after an argument: "Notes on our delivery business", Writ
 
 After the answer: the deciding words are marked. Reason: Rivals deliver the same parcels with fewer miles by planning the stops with software. That is a gap in running the business, so running it better fixes it.
 
-#### Question in the draw: k-heating
+#### Question in the draw: k-taxprep
 
-Your own note, written after an argument: "Notes on our heating company", Written in November.
+Your own note, written after an argument: "Notes on our tax-prep office", Written in May.
 
-> Every heating company in town now offers the same $79 tune-up and the same 10-year warranty.
-> When one of us adds a new offer, the rest copy it within a season, and prices keep falling.
-> Our technicians are as quick and as well trained as anyone’s.
+> Some of our returns go out a day or two late; the other tax offices in town are always on time.
+> The 40 clients who left this year all moved to tax software at $60 a return, less than a simple return costs us to do however fast we work.
+> The clients who stayed say they come to us for help with tricky returns.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Every heating company in town now offers the same $79 tune-up and the same 10-year warranty." — if tapped: That is not the sentence.
-- "When one of us adds a new offer, the rest copy it within a season, and prices keep falling." (right)
-- "Our technicians are as quick and as well trained as anyone’s." — if tapped: note: That shows the company runs well. Find what happens to each new offer.
+- "Some of our returns go out a day or two late; the other tax offices in town are always on time." — if tapped: note: That is a real gap, but it is not why clients left. Find the line that explains the loss.
+- "The 40 clients who left this year all moved to tax software at $60 a return, less than a simple return costs us to do however fast we work." (right)
+- "The clients who stayed say they come to us for help with tricky returns." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: Fixing the late returns is worth doing, but the clients left for a price below what a simple return costs us, which no amount of running better reaches.
 - Choose a different position (right)
 
-After the answer: the deciding words are marked. Reason: Every new offer is copied within a season and prices fall, while the company already runs as well as its rivals. Running better would be copied too, so it needs a different position.
+After the answer: the deciding words are marked. Reason: The late returns are a real gap, but they are not why clients left: they left for software priced below what a simple return costs us to do. Running better would not bring them back, so it needs a different position.
 
-#### Question in the draw: k-bread
+#### Question in the draw: k-cafe3
 
-Your own note, written after an argument: "Notes on our bakery", Written in June.
+Your own note, written after an argument: "Notes on our cafe", Written in September.
 
-> We bake the same amount of bread every day of the week.
-> At closing we throw away about a quarter of it.
-> The other bakeries in town bake more on busy days and less on quiet ones, and throw away very little.
+> Every cafe on our street copies a new drink within a month.
+> Our sales fell 20% this year, while the other cafes on the street held theirs.
+> Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We bake the same amount of bread every day of the week." — if tapped: note: That is the cause. Find the line that shows whether rivals do the same work better.
-- "At closing we throw away about a quarter of it." — if tapped: That is not the sentence.
-- "The other bakeries in town bake more on busy days and less on quiet ones, and throw away very little." (right)
+- "Every cafe on our street copies a new drink within a month." — if tapped: note: Copying is real here, but it hits every cafe alike. Find the line that explains why our sales alone fell.
+- "Our sales fell 20% this year, while the other cafes on the street held theirs." — if tapped: note: That is the result. Find the line that says why.
+- "Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5." (right)
 
 **What does this business need?**
 - Run it better (right)
-- Choose a different position — if chosen: Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.
+- Choose a different position — if chosen: Copying is real on this street, but the drop is ours alone, and it comes from a slow line that rivals with the same machines do not have.
 
-After the answer: the deciding words are marked. Reason: Other bakeries do the same work and waste very little by baking to the day. Closing that gap is running it better.
+After the answer: the deciding words are marked. Reason: Copying hits every cafe alike, but only our sales fell, and the reviews say why: a line three times slower than rivals with the same machines and staff. Closing that gap is running it better.
 
 #### Question in the draw: k-taxi
 
@@ -1063,11 +1071,11 @@ Your own note, written after an argument: "Notes on our taxi company", Written i
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Ride apps now take most short trips in town." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
-- "Our cars are as clean and our drivers as quick as any app driver." — if tapped: That is not the sentence.
+- "Our cars are as clean and our drivers as quick as any app driver." — if tapped: note: That shows the company runs well. Find what no amount of running better can reach.
 - "The apps charge riders less per mile than it costs us to run a car, and every price we have cut they have matched." (right)
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: The apps charge less per mile than a taxi costs to run and match every cut, while the company already runs well. Running the same short trips better cannot win, so it needs a different position.
@@ -1099,11 +1107,11 @@ Your own note, written after an argument: "Notes on our wedding photography busi
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Every photographer in our area offers the same three packages, with the same cameras and the same albums." — if tapped: That is not the sentence.
+- "Every photographer in our area offers the same three packages, with the same cameras and the same albums." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "Our photos are as good as anyone’s, and couples still choose whoever is cheapest; prices fell each of the last three years." (right)
 
 **What does this business need?**
-- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them.
+- Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
 - Choose a different position (right)
 
 After the answer: the deciding words are marked. Reason: The photos are already as good as anyone’s, and couples still choose on price. Doing the same packages better leaves it the same as the rest, so it needs a different position.
@@ -1117,7 +1125,7 @@ Your own note, written after an argument: "Notes on our lawn care business", Wri
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "One customer in ten is not home or forgot when our crew arrives, so the visit is wasted." — if tapped: That is not the sentence.
+- "One customer in ten is not home or forgot when our crew arrives, so the visit is wasted." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "The other lawn companies text each customer the day before and almost never waste a visit." (right)
 
 **What does this business need?**
@@ -1165,57 +1173,45 @@ Your own note, written after an argument: "Notes on Dana’s bakery", Written in
 
 > We started printing the child’s own photo on birthday cakes, in icing.
 > Parents tell us they would now pay up to $15 more for a cake like that.
-> We have not changed our price or our costs yet.
+> The edible ink and ten more minutes of decorating add about $3 a cake.
+> We have not changed our price yet.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We started printing the child’s own photo on birthday cakes, in icing." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Parents tell us they would now pay up to $15 more for a cake like that." (right)
-- "We have not changed our price or our costs yet." — if tapped: note: That says the price and the cost stayed put. The line that settles it says what moved.
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: Parents would now pay up to $15 more, so the top of the stick rose. The move grows the value, before Dana decides how much of it to take in her price.
+After the answer: the deciding words are marked. Reason: Parents would pay up to $15 more, and the photo adds about $3 to the work, so the stick is $12 longer. The move grows the value, before Dana decides how much of it to take in her price.
 
-#### Question in the draw: p-raise
+#### Question in the draw: p-gold
 
-Your own note, written after an argument: "Notes on Grace’s salon", Written in March.
+Your own note, written after an argument: "Notes on Dana’s bakery", Written in July.
 
-> We raised the price of a haircut from $30 to $35.
-> Nothing about the haircut changed, and clients would pay at most what they always would, about $40.
+> We started putting gold leaf on every birthday cake.
+> Parents say it makes a cake worth about $4 more to them.
+> The gold leaf and the half hour it takes to lay it add about $9 a cake.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We raised the price of a haircut from $30 to $35." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Nothing about the haircut changed, and clients would pay at most what they always would, about $40." (right)
+**What does the move do to the value created?**
+- It grows the value — if chosen: Customers would pay more, but the move adds more than that to what it takes to make, so the stick gets shorter.
+- It only moves value from one side to another — if chosen: The move changes what customers would pay and adds to the work, so it does more than move value: it adds more cost than it is worth to them.
+- It shrinks the value (right)
 
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
-- It only moves value from one side to another (right)
-
-After the answer: the deciding words are marked. Reason: The haircut and what clients would pay are the same, so the value did not change. The $5 moved from what the client keeps to what the salon keeps.
+After the answer: the deciding words are marked. Reason: Parents would pay about $4 more, but the gold leaf adds about $9 to the work, so the stick is $5 shorter. The move shrinks the value, whatever price Dana charges.
 
 #### Question in the draw: p-week
 
 Your own note, written after an argument: "Notes on our cleaning business", Written in July.
 
 > Our cleaners asked for a fixed four-day week, and we started it.
-> Two of them told us that with that week they would stay for $1 an hour less than now.
-> We have not changed anyone’s pay.
+> Two cleaners who were about to leave for jobs with fixed hours now say they will stay, at the same pay.
+> The same hours of cleaning get done, so the new week costs us nothing extra.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Our cleaners asked for a fixed four-day week, and we started it." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Two of them told us that with that week they would stay for $1 an hour less than now." (right)
-- "We have not changed anyone’s pay." — if tapped: note: That says the cost stayed put. The line that settles it says what moved.
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: With the new week, staff would take less to do the same work, so the bottom of the stick fell. The move grows the value, even before anyone’s pay changes.
+After the answer: the deciding words are marked. Reason: Cleaners who would have left at this pay now stay at it, so the least they would take fell, and the week adds nothing to the work. The suppliers’ end of the stick moved down, so the value grows.
 
 #### Question in the draw: p-squeeze
 
@@ -1224,16 +1220,26 @@ Your own note, written after an argument: "Notes on Dana’s bakery", Written in
 > We told our flour mill we would leave unless it cut its price by $20 a ton, and it did.
 > The mill’s own costs did not change, and it still sells to us; it just earns $20 less on each ton.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We told our flour mill we would leave unless it cut its price by $20 a ton, and it did." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The mill’s own costs did not change, and it still sells to us; it just earns $20 less on each ton." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
 After the answer: the deciding words are marked. Reason: The mill would have taken the same as before; it was pushed to take less. The $20 a ton moved from the mill to the bakery, and the value is the same.
+
+#### Question in the draw: p-raise
+
+Your own note, written after an argument: "Notes on Grace’s salon", Written in March.
+
+> We raised the price of a haircut from $30 to $35.
+> Nothing about the haircut changed, and clients would pay at most what they always would, about $40.
+
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
+- It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
+
+After the answer: the deciding words are marked. Reason: The haircut and what clients would pay are the same, so the value did not change. The $5 moved from what the client keeps to what the salon keeps.
 
 #### Question in the draw: q-mill
 
@@ -1241,37 +1247,29 @@ Your own note, written after an argument: "Notes on Dana’s bakery", Written in
 
 > We agreed to buy all our flour from one mill on a fixed weekly order.
 > The mill says the steady order saves it so much that it would sell to us for $20 a ton less and be just as well off.
+> The order adds nothing to our work: the flour comes on the same truck.
 > Our bread price has not changed.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We agreed to buy all our flour from one mill on a fixed weekly order." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The mill says the steady order saves it so much that it would sell to us for $20 a ton less and be just as well off." (right)
-- "Our bread price has not changed." — if tapped: note: That is the price. The line that settles it says what moved.
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: The steady order lowers the least the mill would take, so the bottom of the stick fell. The move grows the value.
+After the answer: the deciding words are marked. Reason: The steady order lowers the least the mill would take, and adds nothing to the work, so the suppliers’ end of the stick moved down. The move grows the value.
 
 #### Question in the draw: q-tuesday
 
 Your own note, written after an argument: "Notes on Leo’s bike shop", Written in April.
 
 > We started Half-Price Tuesdays: the same repairs, at half the price.
-> Customers would pay at most what they always would for a repair, and our parts and wages are the same.
+> Same mechanics, same parts, same work; a repair is worth to customers just what it was.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We started Half-Price Tuesdays: the same repairs, at half the price." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Customers would pay at most what they always would for a repair, and our parts and wages are the same." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
-After the answer: the deciding words are marked. Reason: What customers would pay and what suppliers and staff would take are the same. Half the price moves value from the shop to the customer on Tuesdays.
+After the answer: the deciding words are marked. Reason: What customers would pay and what the work takes are the same. Half the price moves value from the shop to the customer on Tuesdays.
 
 #### Question in the draw: q-guarantee
 
@@ -1279,35 +1277,42 @@ Your own note, written after an argument: "Notes on Leo’s bike shop", Written 
 
 > Every repair now comes with a six-month guarantee.
 > Our price is the same.
+> Fixing the few repairs that come back costs us about $2 a repair, spread over all of them.
 > Customers say a repair with a guarantee is worth about $10 more to them.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Every repair now comes with a six-month guarantee." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Our price is the same." — if tapped: note: That is the price. The line that settles it says what moved.
-- "Customers say a repair with a guarantee is worth about $10 more to them." (right)
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: A repair with a guarantee is worth about $10 more to customers, so the top of the stick rose. The move grows the value.
+After the answer: the deciding words are marked. Reason: A repair with a guarantee is worth about $10 more to customers and adds about $2 to the work, so the stick is $8 longer. The move grows the value.
+
+#### Question in the draw: q-polish
+
+Your own note, written after an argument: "Notes on Leo’s bike shop", Written in October.
+
+> We now wash and polish every bike after a repair.
+> It takes a mechanic about 20 minutes, which costs us about $8 a bike.
+> Customers say a clean bike is a nice touch, worth about $3 to them.
+
+**What does the move do to the value created?**
+- It grows the value — if chosen: Customers would pay more, but the move adds more than that to what it takes to make, so the stick gets shorter.
+- It only moves value from one side to another — if chosen: The move changes what customers would pay and adds to the work, so it does more than move value: it adds more cost than it is worth to them.
+- It shrinks the value (right)
+
+After the answer: the deciding words are marked. Reason: Customers would pay about $3 more, and the polishing adds about $8 to the work, so the stick is $5 shorter. The move shrinks the value.
 
 #### Question in the draw: q-wage
 
 Your own note, written after an argument: "Notes on our cleaning business", Written in February.
 
 > We cut the cleaners’ pay by $1 an hour.
-> The work and the hours are the same; the cleaners are less happy, but all of them stayed.
+> The work and the hours are the same, and all of the cleaners stayed.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We cut the cleaners’ pay by $1 an hour." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The work and the hours are the same; the cleaners are less happy, but all of them stayed." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
 After the answer: the deciding words are marked. Reason: The work is the same, so the least the cleaners would take did not fall; their pay was cut. The $1 an hour moved from the staff to the business.
 
@@ -1316,20 +1321,16 @@ After the answer: the deciding words are marked. Reason: The work is the same, s
 Your own note, written after an argument: "Notes on our catering business", Written in March.
 
 > We now deliver every order on trays the office can throw away, so nobody has to clean up.
+> The trays cost us about $6 a party.
 > Office managers say they would pay $40 more a party for that.
 > Our price has not changed yet.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We now deliver every order on trays the office can throw away, so nobody has to clean up." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Office managers say they would pay $40 more a party for that." (right)
-- "Our price has not changed yet." — if tapped: note: That is the price. The line that settles it says what moved.
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: Office managers would pay $40 more a party, so the top of the stick rose. The move grows the value.
+After the answer: the deciding words are marked. Reason: Office managers would pay $40 more a party, and the trays add about $6, so the stick is $34 longer. The move grows the value.
 
 #### Question in the draw: k-fee
 
@@ -1338,14 +1339,10 @@ Your own note, written after an argument: "Notes on Rosa’s grooming van", Writ
 > We added a $5 booking fee to every visit.
 > The visit is the same, and owners would pay at most what they always would.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We added a $5 booking fee to every visit." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The visit is the same, and owners would pay at most what they always would." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
 After the answer: the deciding words are marked. Reason: The visit and what owners would pay are the same, so the value did not change. The $5 moved from the owner to Rosa.
 
@@ -1354,38 +1351,45 @@ After the answer: the deciding words are marked. Reason: The visit and what owne
 Your own note, written after an argument: "Notes on Kim’s tutoring business", Written in October.
 
 > Our tutors now pick their own hours each week.
-> Our price per hour is the same.
+> Our price per hour is the same, and the booking takes the office no more time.
 > Three tutors told us that with hours they choose, they would teach for $4 an hour less than we pay.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Our tutors now pick their own hours each week." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Our price per hour is the same." — if tapped: note: That is the price. The line that settles it says what moved.
-- "Three tutors told us that with hours they choose, they would teach for $4 an hour less than we pay." (right)
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: With hours they choose, tutors would take $4 an hour less, so the bottom of the stick fell. The move grows the value.
+After the answer: the deciding words are marked. Reason: With hours they choose, tutors would take $4 an hour less, and nothing is added to the work, so the suppliers’ end of the stick moved down. The move grows the value.
+
+#### Question in the draw: k-bandana
+
+Your own note, written after an argument: "Notes on Rosa’s grooming van", Written in December.
+
+> Every dog now leaves with a new bandana and a printed photo.
+> Owners say it is cute, worth about $2 to them.
+> The bandana, the print and the minutes they take add about $5 a visit.
+
+**What does the move do to the value created?**
+- It grows the value — if chosen: Customers would pay more, but the move adds more than that to what it takes to make, so the stick gets shorter.
+- It only moves value from one side to another — if chosen: The move changes what customers would pay and adds to the work, so it does more than move value: it adds more cost than it is worth to them.
+- It shrinks the value (right)
+
+After the answer: the deciding words are marked. Reason: Owners would pay about $2 more, and the bandana and photo add about $5 to the work, so the stick is $3 shorter. The move shrinks the value.
 
 #### Question in the draw: r-delivery
 
 Your own note, written after an argument: "Notes on Dana’s bakery", Written in November.
 
 > We started delivering cakes to the party, free.
+> Driving each cake over costs us about $5 in time and gas.
 > Parents say a cake brought to the door is worth $12 more to them than one they pick up.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We started delivering cakes to the party, free." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "Parents say a cake brought to the door is worth $12 more to them than one they pick up." (right)
-
-**What does the move do?**
+**What does the move do to the value created?**
 - It grows the value (right)
-- It only moves value from one side to another — if chosen: It moves one end of the stick: what customers would pay, or what suppliers and staff would take. The stick gets longer, so the value grows.
+- It only moves value from one side to another — if chosen: It does more than change the price or the cost paid: customers would pay more by more than the move adds to the work, or suppliers and staff would take less, so the stick gets longer.
+- It shrinks the value — if chosen: What customers would pay rises by more than the move adds to the work, so the stick gets longer, not shorter.
 
-After the answer: the deciding words are marked. Reason: Parents would pay $12 more for a delivered cake, so the top of the stick rose. The move grows the value.
+After the answer: the deciding words are marked. Reason: Parents would pay $12 more for a delivered cake, and the drive adds about $5, so the stick is $7 longer. The move grows the value.
 
 #### Question in the draw: r-supplier
 
@@ -1394,14 +1398,10 @@ Your own note, written after an argument: "Notes on Ray’s plumbing business", 
 > We got our parts supplier to cut its prices 10% by threatening to switch.
 > The supplier’s own costs are the same; it is simply earning less on what it sells us.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We got our parts supplier to cut its prices 10% by threatening to switch." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The supplier’s own costs are the same; it is simply earning less on what it sells us." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
 After the answer: the deciding words are marked. Reason: The supplier would have taken what it took before and was pushed to take less. The 10% moved from the supplier to Ray, and the value is the same.
 
@@ -1412,14 +1412,10 @@ Your own note, written after an argument: "Notes on Kim’s tutoring business", 
 > We raised the hourly price from $50 to $60.
 > The tutoring is the same, and parents would pay at most what they always would.
 
-**Tap the line that settles it.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "We raised the hourly price from $50 to $60." — if tapped: note: That is the move itself. The line that settles it says which number it changed.
-- "The tutoring is the same, and parents would pay at most what they always would." (right)
-
-**What does the move do?**
-- It grows the value — if chosen: Only the price or the cost changed, and both ends stayed where they were, so the value is the same and has gone to another side.
+**What does the move do to the value created?**
+- It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
+- It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
 After the answer: the deciding words are marked. Reason: The tutoring and what parents would pay are the same, so the value did not change. The $10 moved from the parents to Kim.
 
@@ -1450,42 +1446,19 @@ The working:
 - Find the line that shows who takes the money, and why.: The third line: three insurance plans pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.
 - Check the other forces are weak, then name the one that takes the money.: No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three plans, take the money.
 
-#### Question in the draw: p-trucks
-
-A report summary, from "Trade report" (marked "Report summary"):
-
-> # Heavy trucks: who makes the money
->
-> A handful of makers build heavy trucks; a new maker would need huge factories to start. Steel and parts come from many suppliers. Big fleets buy many trucks at a time, and they use that clout to push the makers on price.
-
-**Tap the line that shows who takes the money.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "A handful of makers build heavy trucks; a new maker would need huge factories to start." — if tapped: note: Starting up needs huge factories, so newcomers are few.
-- "Steel and parts come from many suppliers." — if tapped: note: Parts come from many suppliers, so none has much hold.
-- "Big fleets buy many trucks at a time, and they use that clout to push the makers on price." (right)
-
-**Which force squeezes the profit most?**
-- Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Parts come from many suppliers, so none has much hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: Starting up needs huge factories, so newcomers are few.
-- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
-- Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
-
-After the answer: the deciding words are marked. Reason: Fleets buying many trucks at a time push the makers on price: the buyers take the money. Paccar’s answer was to sell to drivers who own their own truck, who have little such clout, and it earns a higher price for it.
-
 #### Question in the draw: p-yoga
 
 A report summary, from "Brookfield Business Weekly · Trade report" (marked "Report summary"):
 
 > # Yoga studios: a boom year
 >
-> Studio memberships in town grew 30% last year. A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students. Teachers are easy to find and paid by the class.
+> Studio memberships in town grew 30% last year. Teachers are easy to find and paid by the class. A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Studio memberships in town grew 30% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students." (right)
+- "Studio memberships in town grew 30% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
 - "Teachers are easy to find and paid by the class." — if tapped: note: Teachers are easy to find, so suppliers have little hold.
+- "A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
@@ -1494,35 +1467,87 @@ A report summary, from "Brookfield Business Weekly · Trade report" (marked "Rep
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Mia says: “Yoga is growing 30% a year, so a studio is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Mia says: “Yoga is growing 30% a year, so a studio is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: Opening a studio takes little more than a shop and mats, so newcomers keep arriving and cutting prices: they take the money. The 30% growth is what draws them.
+After the answer: the deciding words are marked. Reason: Opening a studio takes little more than a shop and mats, so newcomers keep arriving and cutting prices: they take the money. The 30% growth is what draws them, and it goes to them.
 
-#### Question in the draw: p-hearing
+#### Question in the draw: p-lifts
 
-A report summary, from "Tri-County Business News · Trade report" (marked "Report summary"):
+A report summary, from "Metro Business Journal · Trade report" (marked "Report summary"):
 
-> # Hearing aid shops face rising costs
+> # Elevator repair: a building boom
 >
-> Customers pick a shop for its fitting and advice, and few compare prices. Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year. A new shop needs a licensed fitter, and only two opened in the region in five years.
+> Elevator repair work in the city grew 25% last year as new towers went up. A repair firm needs mechanics with a state license that takes four years of training on the job, and no new firm has opened in eight years. Parts for each brand of elevator come only from the company that built it, which decides its own price. The three firms in the city are booked months ahead, and none cuts its price.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Customers pick a shop for its fitting and advice, and few compare prices." — if tapped: note: Customers choose on advice and rarely compare prices, so buyers have little hold.
-- "Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year." (right)
-- "A new shop needs a licensed fitter, and only two opened in the region in five years." — if tapped: note: Few new shops open, so newcomers are few.
+- "Elevator repair work in the city grew 25% last year as new towers went up." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "A repair firm needs mechanics with a state license that takes four years of training on the job, and no new firm has opened in eight years." — if tapped: note: Starting up is hard, so newcomers are not what takes the money.
+- "Parts for each brand of elevator come only from the company that built it, which decides its own price." (right)
+- "The three firms in the city are booked months ahead, and none cuts its price." — if tapped: note: Three busy firms that do not cut prices: rivals are calm.
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Customers choose on advice and rarely compare prices, so buyers have little hold.
+- Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
 - Suppliers: the ones you buy from can push their price up (right)
-- Newcomers: it is easy for new businesses to start up — if chosen: Few new shops open, so newcomers are few.
+- Newcomers: it is easy for new businesses to start up — if chosen: Starting up is hard, so newcomers are not what takes the money.
+- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
+- Rivals: the businesses already there fight on price — if chosen: Three busy firms that do not cut prices: rivals are calm.
+
+**Ben says: “Elevator repair grew 25% last year, so it is a great business to be in.” Who will the growth go to?**
+(the options come in an order that depends on the seed of the question)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers — if chosen: Starting up here is hard, so no newcomers arrive to take the growth: it stays with the businesses already there.
+- The businesses already there: starting up is hard, so no newcomers come for it (right)
+
+After the answer: the deciding words are marked. Reason: Each brand’s parts come only from its builder, which decides the price: the suppliers take the most. But starting up takes years of licensed training, so the growth stays with the three firms already there.
+
+#### Question in the draw: p-trucks
+
+A report summary, from "Trade report" (marked "Report summary"):
+
+> # Heavy trucks: who makes the money
+>
+> The truck makers fight hard on price, hardest when the economy slows and orders dry up. One maker, Paccar, chose to sell mainly to drivers who own their own truck: each buys one at a time, cares more about the truck than the last dollar, and pays about 10% more. Big fleets and leasing companies buy many trucks at a time and use that clout to push the makers hard on price.
+
+**Tap the line that shows the force Paccar stepped around.**
+- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "The truck makers fight hard on price, hardest when the economy slows and orders dry up." — if tapped: note: Rivals do fight hard here, but every maker faces that alike; Paccar’s choice of customer was aimed at another force.
+- "One maker, Paccar, chose to sell mainly to drivers who own their own truck: each buys one at a time, cares more about the truck than the last dollar, and pays about 10% more." — if tapped: note: That is Paccar’s answer. Find the line that shows the force it answers.
+- "Big fleets and leasing companies buy many trucks at a time and use that clout to push the makers hard on price." (right)
+
+**Several forces press on truck makers. Which one did Paccar step around by choosing its customers?**
+- Buyers: customers who can push the price down (right)
+- Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
+- Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
+- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
+- Rivals: the businesses already there fight on price — if chosen: Rivals do fight hard here, but every maker faces that alike; Paccar’s choice of customer was aimed at another force.
+
+After the answer: the deciding words are marked. Reason: Big fleets and leasing companies use their buying clout to push makers on price, and the makers fight each other hard as well. Paccar chose drivers who own their own truck, buyers with little clout who care less about price, so it found the place where the buyer force is weakest, and earns about 10% more.
+
+#### Question in the draw: p-pool
+
+A report summary, from "Tri-County Business News · Trade report" (marked "Report summary"):
+
+> # Pool services and the price of chlorine
+>
+> Only one wholesaler in the county sells pool chlorine in bulk, and it raised its price 30% this year. Homeowners sign up for the whole summer and rarely switch; the pool service has a key to the yard. Opening a pool service takes a state license and a truck of gear, and few new ones start.
+
+**Tap the line that shows who takes the money.**
+- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "Only one wholesaler in the county sells pool chlorine in bulk, and it raised its price 30% this year." (right)
+- "Homeowners sign up for the whole summer and rarely switch; the pool service has a key to the yard." — if tapped: note: Homeowners rarely switch, so buyers have little pull here.
+- "Opening a pool service takes a state license and a truck of gear, and few new ones start." — if tapped: note: Few new services start, so newcomers are not what takes the money.
+
+**Which force squeezes the profit most?**
+- Buyers: customers who can push the price down — if chosen: Homeowners rarely switch, so buyers have little pull here.
+- Suppliers: the ones you buy from can push their price up (right)
+- Newcomers: it is easy for new businesses to start up — if chosen: Few new services start, so newcomers are not what takes the money.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: Three makers supply nearly every hearing aid and raised their price 15%, and a shop has nowhere else to buy: the suppliers take the money. The other forces are weak here.
+After the answer: the deciding words are marked. Reason: The only bulk chlorine seller in the county raised its price 30%, and a pool service has nowhere else to buy: the supplier takes the money. The other forces are weak here.
 
 #### Question in the draw: p-prints
 
@@ -1530,17 +1555,17 @@ A report summary, from "Lakeview Business Review · Trade report" (marked "Repor
 
 > # Photo printing shops: fewer orders every year
 >
-> There are only two photo printing shops left in the city. People now look at their photos on their phones and print almost none. Paper and ink come from many suppliers.
+> There are only two photo printing shops left in the city. Paper and ink are cheap and easy to buy. People now look at their photos on their phones and print almost none.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "There are only two photo printing shops left in the city." — if tapped: note: Only two shops are left, so rivals are not the problem.
+- "Paper and ink are cheap and easy to buy." — if tapped: note: Paper and ink are easy to buy, so suppliers have little hold.
 - "People now look at their photos on their phones and print almost none." (right)
-- "Paper and ink come from many suppliers." — if tapped: note: Paper and ink come from many suppliers, so they have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Paper and ink come from many suppliers, so they have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Paper and ink are easy to buy, so suppliers have little hold.
 - Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
 - Substitutes: another way to meet the same need (right)
 - Rivals: the businesses already there fight on price — if chosen: Only two shops are left, so rivals are not the problem.
@@ -1553,19 +1578,19 @@ A report summary, from "Eastside Business Weekly · Trade report" (marked "Repor
 
 > # Car washes on Main Street
 >
-> Six car washes stand within a mile of each other on Main Street, all with the same machines and the same three washes. Each spring one cuts its price, and the rest match it within a week. Soap and machines come from many suppliers. No new car wash has opened in years: the land on Main Street is too costly.
+> Main Street has six car washes within a mile, all with the same machines and the same three washes. No new car wash has opened in years: the land on Main Street is too costly. Each spring one cuts its price, and the rest match it within a week. Soap and machines can be bought from any of several dealers.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Six car washes stand within a mile of each other on Main Street, all with the same machines and the same three washes." — if tapped: That is not the sentence.
+- "Main Street has six car washes within a mile, all with the same machines and the same three washes." — if tapped: note: That says how many there are and how alike, not yet whether they fight on price.
+- "No new car wash has opened in years: the land on Main Street is too costly." — if tapped: note: Nobody new can find land, so newcomers are not the problem.
 - "Each spring one cuts its price, and the rest match it within a week." (right)
-- "Soap and machines come from many suppliers." — if tapped: note: Supplies come from many suppliers, so they have little hold.
-- "No new car wash has opened in years: the land on Main Street is too costly." — if tapped: note: No newcomers can find land, so newcomers are not the problem.
+- "Soap and machines can be bought from any of several dealers." — if tapped: note: Several dealers sell the supplies, so suppliers have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Supplies come from many suppliers, so they have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers can find land, so newcomers are not the problem.
+- Suppliers: the ones you buy from can push their price up — if chosen: Several dealers sell the supplies, so suppliers have little hold.
+- Newcomers: it is easy for new businesses to start up — if chosen: Nobody new can find land, so newcomers are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price (right)
 
@@ -1577,22 +1602,22 @@ A report summary, from "Downtown Business Journal · Trade report" (marked "Repo
 
 > # Takeout restaurants and the delivery apps
 >
-> Most takeout orders in town now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first. Food comes from several wholesalers that compete for each restaurant. Only one new takeout place opened this year.
+> Food prices from the wholesalers rose 4% this year. Most takeout orders now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first. Only one new takeout place opened this year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Most takeout orders in town now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first." (right)
-- "Food comes from several wholesalers that compete for each restaurant." — if tapped: note: Wholesalers compete for the restaurants, so suppliers have little hold.
-- "Only one new takeout place opened this year." — if tapped: note: Few newcomers open, so they are not the problem.
+- "Food prices from the wholesalers rose 4% this year." — if tapped: note: Food costs rose 4%, a real squeeze, but far smaller than the apps’ 30% of every order.
+- "Most takeout orders now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first." (right)
+- "Only one new takeout place opened this year." — if tapped: note: One new place a year is not what takes the money.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Wholesalers compete for the restaurants, so suppliers have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: Few newcomers open, so they are not the problem.
+- Suppliers: the ones you buy from can push their price up — if chosen: Food costs rose 4%, a real squeeze, but far smaller than the apps’ 30% of every order.
+- Newcomers: it is easy for new businesses to start up — if chosen: One new place a year is not what takes the money.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: Two apps bring most of the orders, keep 30% and decide who is seen: they are the buyer every restaurant depends on, and they take the money.
+After the answer: the deciding words are marked. Reason: The apps bring most of the orders and keep 30% of each: as the middleman between the restaurant and its diners they count as buyers, and they take far more than the 4% rise in food costs.
 
 #### Question in the draw: q-laundry
 
@@ -1600,17 +1625,17 @@ A report summary, from "Westfield Business Report · Trade report" (marked "Repo
 
 > # Coin laundries: steady decline
 >
-> There are three coin laundries in town, and their prices have not changed in years. Most new apartments now come with their own washer and dryer. Machines and soap come from many suppliers.
+> Most new apartments now come with their own washer and dryer. There are three coin laundries in town, and their prices have not changed in years. Any of several dealers will sell a laundry its machines and soap.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "There are three coin laundries in town, and their prices have not changed in years." — if tapped: note: Three laundries hold steady prices, so rivals are calm.
 - "Most new apartments now come with their own washer and dryer." (right)
-- "Machines and soap come from many suppliers." — if tapped: note: Supplies come from many suppliers, so they have little hold.
+- "There are three coin laundries in town, and their prices have not changed in years." — if tapped: note: Three laundries hold steady prices, so rivals are calm.
+- "Any of several dealers will sell a laundry its machines and soap." — if tapped: note: Several dealers compete to sell supplies, so suppliers have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Supplies come from many suppliers, so they have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Several dealers compete to sell supplies, so suppliers have little hold.
 - Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
 - Substitutes: another way to meet the same need (right)
 - Rivals: the businesses already there fight on price — if chosen: Three laundries hold steady prices, so rivals are calm.
@@ -1623,27 +1648,27 @@ A report summary, from "Northside Business Weekly · Trade report" (marked "Repo
 
 > # Dog walking: more dogs, more walkers
 >
-> Demand for dog walking in the city grew 20% last year. Dog owners book through phone apps and can switch walkers with one tap. Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.
+> Demand for dog walking in the city grew 20% last year. Owners stick with a walker they trust and rarely switch. Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Demand for dog walking in the city grew 20% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "Dog owners book through phone apps and can switch walkers with one tap." — if tapped: note: Owners can switch, but the report shows walkers arriving faster than owners push.
+- "Demand for dog walking in the city grew 20% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Owners stick with a walker they trust and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
 - "Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Owners can switch, but the report shows walkers arriving faster than owners push.
+- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
 - Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Leo says: “Dog walking grew 20% last year, so it is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Leo says: “Dog walking grew 20% last year, so it is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them.
+After the answer: the deciding words are marked. Reason: Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them, and it goes to them.
 
 #### Question in the draw: q-butter
 
@@ -1651,13 +1676,13 @@ A report summary, from "Mountain Business Journal · Trade report" (marked "Repo
 
 > # Pastry shops squeezed on butter
 >
-> Customers come back for the pastries and pay what the shops charge. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year. There are two pastry shops in the valley, and neither cuts prices.
+> Customers come back for the pastries and pay what the shops charge. There are two pastry shops in the valley, and neither cuts prices. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Customers come back for the pastries and pay what the shops charge." — if tapped: note: Customers pay what is asked, so buyers have little hold.
-- "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year." (right)
 - "There are two pastry shops in the valley, and neither cuts prices." — if tapped: note: Two shops that do not cut prices: rivals are calm.
+- "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: Customers pay what is asked, so buyers have little hold.
@@ -1674,13 +1699,13 @@ A report summary, from "Midtown Business Weekly · Trade report" (marked "Report
 
 > # Nail salons: price war on Second Avenue
 >
-> Fifteen nail salons now stand within two blocks, with the same menu. Polish and supplies come from many wholesalers. Every month one salon cuts its price, and the others match it.
+> Every month one salon cuts its price, and the others match it. Fifteen nail salons now stand within two blocks, with the same menu. Polish and supplies come from many wholesalers.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Fifteen nail salons now stand within two blocks, with the same menu." — if tapped: That is not the sentence.
-- "Polish and supplies come from many wholesalers." — if tapped: note: Supplies come from many wholesalers, so they have little hold.
 - "Every month one salon cuts its price, and the others match it." (right)
+- "Fifteen nail salons now stand within two blocks, with the same menu." — if tapped: note: That says how many there are; the line that settles it shows them fighting on price.
+- "Polish and supplies come from many wholesalers." — if tapped: note: Supplies come from many wholesalers, so they have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
@@ -1697,12 +1722,12 @@ A report summary, from "County Business Journal · Trade report" (marked "Report
 
 > # School bus companies bid again
 >
-> Buses and drivers are easy to find in the county. One school district buys all the bus service in the county; every three years it takes bids and picks the lowest. No new bus company has started here in years.
+> One school district buys all the bus service in the county; every three years it takes bids and picks the lowest. Buses and drivers are easy to find in the county. No new bus company has started here in years.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Buses and drivers are easy to find in the county." — if tapped: note: Buses and drivers are easy to find, so suppliers have little hold.
 - "One school district buys all the bus service in the county; every three years it takes bids and picks the lowest." (right)
+- "Buses and drivers are easy to find in the county." — if tapped: note: Buses and drivers are easy to find, so suppliers have little hold.
 - "No new bus company has started here in years." — if tapped: note: No newcomers start, so they are not the problem.
 
 **Which force squeezes the profit most?**
@@ -1714,33 +1739,33 @@ A report summary, from "County Business Journal · Trade report" (marked "Report
 
 After the answer: the deciding words are marked. Reason: One district buys all the service and takes the lowest bid: the buyer takes the money. The other forces are weak here.
 
-#### Question in the draw: k-solar
+#### Question in the draw: k-detail
 
-A report summary, from "Sunbelt Business Report · Trade report" (marked "Report summary"):
+A report summary, from "Lakeshore Business Report · Trade report" (marked "Report summary"):
 
-> # Solar installers: the fastest-growing trade in the state
+> # Mobile car detailing: the fastest-growing trade in the county
 >
-> Home solar installs in the state grew 40% last year. Panels come from many makers, and their prices keep falling. Anyone with an electrician’s license and a van can start, and nine new installers opened this year, each bidding low to win jobs.
+> Detailing jobs booked in the county grew 40% last year. Car owners who find a detailer they like book the same one again and rarely switch. Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Home solar installs in the state grew 40% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "Panels come from many makers, and their prices keep falling." — if tapped: note: Panels come from many makers, so suppliers have little hold.
-- "Anyone with an electrician’s license and a van can start, and nine new installers opened this year, each bidding low to win jobs." (right)
+- "Detailing jobs booked in the county grew 40% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Car owners who find a detailer they like book the same one again and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
+- "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Panels come from many makers, so suppliers have little hold.
+- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
+- Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Rosa says: “Solar grew 40% last year, so it is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Rosa says: “Detailing grew 40% last year, so it is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: A license and a van are enough to start, and nine newcomers bid low: newcomers take the money. The growth is what drew them.
+After the answer: the deciding words are marked. Reason: A van, a pressure washer and a phone are enough to start, and eleven newcomers charge less: newcomers take the money. The growth is what drew them, and it goes to them.
 
 #### Question in the draw: k-travel
 
@@ -1748,12 +1773,12 @@ A report summary, from "Harbor Business News · Trade report" (marked "Report su
 
 > # Travel agents: fewer bookings
 >
-> Travelers now book their own flights and hotels online in a few minutes. There are only three travel agents left in town. No new agency has opened in ten years.
+> There are only three travel agents left in town. Travelers now book their own flights and hotels online in a few minutes. No new agency has opened in ten years.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Travelers now book their own flights and hotels online in a few minutes." (right)
 - "There are only three travel agents left in town." — if tapped: note: Only three are left, so rivals are not the problem.
+- "Travelers now book their own flights and hotels online in a few minutes." (right)
 - "No new agency has opened in ten years." — if tapped: note: No newcomers open, so they are not the problem.
 
 **Which force squeezes the profit most?**
@@ -1771,13 +1796,13 @@ A report summary, from "State Business Journal · Trade report" (marked "Report 
 
 > # Car dealers and the maker
 >
-> A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them. Buyers shop around, but each dealer is the only one for its brand in its town. A new dealer needs the maker’s say-so, and none has opened in years.
+> Buyers shop around, but each dealer is the only one for its brand in its town. A new dealer needs the maker’s say-so, and none has opened in years. A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them." (right)
 - "Buyers shop around, but each dealer is the only one for its brand in its town." — if tapped: note: Each dealer is the only one for its brand nearby, so buyers have limited hold.
 - "A new dealer needs the maker’s say-so, and none has opened in years." — if tapped: note: No newcomers open, so they are not the problem.
+- "A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: Each dealer is the only one for its brand nearby, so buyers have limited hold.
@@ -1788,28 +1813,28 @@ A report summary, from "State Business Journal · Trade report" (marked "Report 
 
 After the answer: the deciding words are marked. Reason: The maker decides how many cars a dealer gets and what it pays, and the dealer can sell no other brand: the supplier takes the money.
 
-#### Question in the draw: k-gas
+#### Question in the draw: k-coffee
 
-A report summary, from "Interstate Business Weekly · Trade report" (marked "Report summary"):
+A report summary, from "Elm Street Business Weekly · Trade report" (marked "Report summary"):
 
-> # Gas stations at Exit 12
+> # Cafes on Elm Street: a year of cheaper lattes
 >
-> Fuel comes from several wholesalers. Five gas stations stand at Exit 12, selling the same fuel, with prices on big signs. When one lowers its price, the others match it within the hour.
+> Bean prices rose 10% this year, which adds about 3 cents to a $4 cup. Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others. No new cafe has opened on Elm Street in three years; the leases are all taken.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Fuel comes from several wholesalers." — if tapped: note: Several wholesalers compete, so suppliers have little hold.
-- "Five gas stations stand at Exit 12, selling the same fuel, with prices on big signs." — if tapped: That is not the sentence.
-- "When one lowers its price, the others match it within the hour." (right)
+- "Bean prices rose 10% this year, which adds about 3 cents to a $4 cup." — if tapped: note: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
+- "Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others." (right)
+- "No new cafe has opened on Elm Street in three years; the leases are all taken." — if tapped: note: No newcomers can get a lease, so they are not the problem.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Several wholesalers compete, so suppliers have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
+- Suppliers: the ones you buy from can push their price up — if chosen: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
+- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers can get a lease, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price (right)
 
-After the answer: the deciding words are marked. Reason: Five stations with the same fuel match every cut within the hour: the rivals already there fight away the profit.
+After the answer: the deciding words are marked. Reason: The six cafes cut a latte by 75 cents, matching each other, while dearer beans add only 3 cents a cup: the rivals take far more than the suppliers.
 
 #### Question in the draw: k-boxes
 
@@ -1817,22 +1842,22 @@ A report summary, from "River Valley Business Journal · Trade report" (marked "
 
 > # Box makers and the supermarket chain
 >
-> Cardboard comes from several mills. One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price. A new box maker needs costly machines, and none has opened in years.
+> Cardboard from the mills rose 2% this year. No box maker has opened in the valley in years: the machines cost millions. One supermarket chain buys about 80% of the valley’s boxes, and this year it pushed the price down 8%, as it does every year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Cardboard comes from several mills." — if tapped: note: Several mills compete, so suppliers have little hold.
-- "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price." (right)
-- "A new box maker needs costly machines, and none has opened in years." — if tapped: note: No newcomers open, so they are not the problem.
+- "Cardboard from the mills rose 2% this year." — if tapped: note: Cardboard rose 2%, small beside the 8% the chain took off the price.
+- "No box maker has opened in the valley in years: the machines cost millions." — if tapped: note: No newcomers open, so they are not the problem.
+- "One supermarket chain buys about 80% of the valley’s boxes, and this year it pushed the price down 8%, as it does every year." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Several mills compete, so suppliers have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Cardboard rose 2%, small beside the 8% the chain took off the price.
 - Newcomers: it is easy for new businesses to start up — if chosen: No newcomers open, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: One chain buys 80% of the boxes and pushes the price down each year: the buyer takes the money.
+After the answer: the deciding words are marked. Reason: One chain buys 80% of the boxes and pushed the price down 8%, while cardboard rose only 2%: the buyer takes far more than the suppliers.
 
 #### Question in the draw: r-vets
 
@@ -1902,492 +1927,527 @@ After the answer: the deciding words are marked. Reason: Eleven places with the 
 
 #### Question in the draw: w-books
 
-A plain table, "Dana’s bakery: last year, line by line":
+A plain table, "Dana’s bakery: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Bread  |  $60,000  |  $52,000
 > Wedding cakes  |  $48,000  |  $18,000
 > Birthday cakes  |  $30,000  |  $18,000
 > Catering  |  $20,000  |  $26,000
+> (Couples drive in from three towns for our wedding cakes; no other bakery nearby makes them.)
 > (Most couples who order a wedding cake also book our catering for the party.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Bread — if chosen: Bread earns $8,000 after its direct cost; Wedding cakes earns $30,000.
+- Bread — if chosen: Bread earns $8,000 after its direct cost; Wedding cakes earns $30,000 and is what customers come here for.
 - Wedding cakes (right)
-- Birthday cakes — if chosen: Birthday cakes earns $12,000 after its direct cost; Wedding cakes earns $30,000.
-- Catering — if chosen: Catering loses $6,000 after its direct cost; Wedding cakes earns $30,000.
+- Birthday cakes — if chosen: Birthday cakes earns $12,000 after its direct cost; Wedding cakes earns $30,000 and is what customers come here for.
+- Catering — if chosen: Catering loses $6,000 after its direct cost; Wedding cakes earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Wedding cakes?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 60%
+- Right (within 1): 68.18%
 - If typed 30.38%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 68.18%: That takes Catering’s loss off the total. Add up only the lines that make money.
+- If typed 60%: That leaves out the loss on Catering. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Catering, which loses money?**
-- Keep it and grow it — if chosen: Catering loses $6,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Wedding cakes earns $30,000 after its direct cost, 60% of what the lines that make money earn, more than Bread with its bigger sales: that is the core. Catering loses $6,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Wedding cakes is what customers come here for and earns $30,000, 68.2% of what the lines earn together, more than Bread with its bigger sales: that is the core. Catering loses $6,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Bread: $8,000; Wedding cakes: $30,000; Birthday cakes: $12,000; Catering: −$6,000. Wedding cakes earns the most, though Bread brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $50,000 = 60%. Catering loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Bread: $8,000; Wedding cakes: $30,000; Birthday cakes: $12,000; Catering: −$6,000. Wedding cakes earns the most, though Bread brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $44,000 = 68.2%. The loss on Catering is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Most couples who order a wedding cake also book our catering for the party. So keep it, but fix its price or cost.
 
 #### Question in the draw: p-crews
 
-A plain table, "Luis’s landscaping crew: last year, line by line":
+A plain table, "Luis’s landscaping crew: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Tree work  |  $25,000  |  $31,000
 > Lawn mowing  |  $90,000  |  $78,000
 > Garden design  |  $40,000  |  $14,000
 > Snow removal  |  $30,000  |  $26,000
-> (Tree work comes mostly from one-off calls by people who are not our garden design customers.)
+> (Clients ask for our garden designer by name; our designs win the county’s prize most years.)
+> (Tree work comes mostly from one-off calls by people who are not our garden design clients.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Tree work — if chosen: Tree work loses $6,000 after its direct cost; Garden design earns $26,000.
-- Lawn mowing — if chosen: Lawn mowing earns $12,000 after its direct cost; Garden design earns $26,000.
+- Tree work — if chosen: Tree work loses $6,000 after its direct cost; Garden design earns $26,000 and is what customers come here for.
+- Lawn mowing — if chosen: Lawn mowing earns $12,000 after its direct cost; Garden design earns $26,000 and is what customers come here for.
 - Garden design (right)
-- Snow removal — if chosen: Snow removal earns $4,000 after its direct cost; Garden design earns $26,000.
+- Snow removal — if chosen: Snow removal earns $4,000 after its direct cost; Garden design earns $26,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Garden design?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 61.9%
+- Right (within 1): 72.22%
 - If typed 21.62%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 72.22%: That takes Tree work’s loss off the total. Add up only the lines that make money.
+- If typed 61.9%: That leaves out the loss on Tree work. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Tree work, which loses money?**
-- Keep it and grow it — if chosen: Tree work loses $6,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Garden design earns $26,000 after its direct cost, 61.9% of what the lines that make money earn, more than Lawn mowing with its bigger sales: that is the core. Tree work loses $6,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Garden design is what customers come here for and earns $26,000, 72.2% of what the lines earn together, more than Lawn mowing with its bigger sales: that is the core. Tree work loses $6,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Tree work: −$6,000; Lawn mowing: $12,000; Garden design: $26,000; Snow removal: $4,000. Garden design earns the most, though Lawn mowing brings in more.
-- Divide what it earns by what the lines that make money earn together.: $26,000 ÷ $42,000 = 61.9%. Tree work loses money, so it is left out of the sum.
-- Decide on the line that loses money: do the core’s customers buy it along with the core?: Tree work comes mostly from one-off calls by people who are not our garden design customers. So let it go.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Tree work: −$6,000; Lawn mowing: $12,000; Garden design: $26,000; Snow removal: $4,000. Garden design earns the most, though Lawn mowing brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $26,000 ÷ $36,000 = 72.2%. The loss on Tree work is taken off the total.
+- Decide on the line that loses money: do the core’s customers buy it along with the core?: Tree work comes mostly from one-off calls by people who are not our garden design clients. So let it go.
 
 #### Question in the draw: p-printers
 
-A plain table, "Omar’s print shop: last year, line by line":
+A plain table, "Omar’s print shop: last year, customer by customer":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Walk-in customers  |  $70,000  |  $62,000
 > The school district  |  $35,000  |  $21,000
-> Restaurant menus  |  $18,000  |  $22,000
+> Six restaurants  |  $18,000  |  $22,000
 > Three law firms  |  $50,000  |  $22,000
-> (The law firms order only legal papers from us; the restaurants buy nothing but their menus.)
+> (The law firms use us because we print court papers to the court’s rules overnight, which no other shop in town does.)
+> (The restaurants buy nothing from us but their menus, and none of them sends us any other work.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Walk-in customers — if chosen: Walk-in customers earns $8,000 after its direct cost; Three law firms earns $28,000.
-- The school district — if chosen: The school district earns $14,000 after its direct cost; Three law firms earns $28,000.
-- Restaurant menus — if chosen: Restaurant menus loses $4,000 after its direct cost; Three law firms earns $28,000.
+- Walk-in customers — if chosen: Walk-in customers earns $8,000 after its direct cost; Three law firms earns $28,000 and is what customers come here for.
+- The school district — if chosen: The school district earns $14,000 after its direct cost; Three law firms earns $28,000 and is what customers come here for.
+- Six restaurants — if chosen: Six restaurants loses $4,000 after its direct cost; Three law firms earns $28,000 and is what customers come here for.
 - Three law firms (right)
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Three law firms?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 56%
+- Right (within 1): 60.87%
 - If typed 28.9%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 60.87%: That takes Restaurant menus’s loss off the total. Add up only the lines that make money.
+- If typed 56%: That leaves out the loss on Six restaurants. Take it off the total: the share then shows what the losing line costs the rest.
 
-**What should the owner do with Restaurant menus, which loses money?**
-- Keep it and grow it — if chosen: Restaurant menus loses $4,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+**What should the owner do with Six restaurants, which loses money?**
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Three law firms earns $28,000 after its direct cost, 56% of what the lines that make money earn, more than Walk-in customers with its bigger sales: that is the core. Restaurant menus loses $4,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Three law firms is what customers come here for and earns $28,000, 60.9% of what the lines earn together, more than Walk-in customers with its bigger sales: that is the core. Six restaurants loses $4,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Walk-in customers: $8,000; The school district: $14,000; Restaurant menus: −$4,000; Three law firms: $28,000. Three law firms earns the most, though Walk-in customers brings in more.
-- Divide what it earns by what the lines that make money earn together.: $28,000 ÷ $50,000 = 56%. Restaurant menus loses money, so it is left out of the sum.
-- Decide on the line that loses money: do the core’s customers buy it along with the core?: The law firms order only legal papers from us; the restaurants buy nothing but their menus. So let it go.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Walk-in customers: $8,000; The school district: $14,000; Six restaurants: −$4,000; Three law firms: $28,000. Three law firms earns the most, though Walk-in customers brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $28,000 ÷ $46,000 = 60.9%. The loss on Six restaurants is taken off the total.
+- Decide on the line that loses money: do the core’s customers buy it along with the core?: The restaurants buy nothing from us but their menus, and none of them sends us any other work. So let it go.
 
 #### Question in the draw: p-tutors
 
-A plain table, "Kim’s tutoring business: last year, line by line":
+A plain table, "Kim’s tutoring business: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Sessions at the family’s home  |  $60,000  |  $30,000
 > Online sessions  |  $40,000  |  $16,000
 > Group classes at the library  |  $25,000  |  $29,000
 > Summer camp  |  $30,000  |  $24,000
+> (Families tell us they pick us because the tutor comes to the house; no other tutoring service in town does.)
 > (Most families who book sessions at home found us through the library classes, and keep their child in both.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
 - Sessions at the family’s home (right)
-- Online sessions — if chosen: Online sessions earns $24,000 after its direct cost; Sessions at the family’s home earns $30,000.
-- Group classes at the library — if chosen: Group classes at the library loses $4,000 after its direct cost; Sessions at the family’s home earns $30,000.
-- Summer camp — if chosen: Summer camp earns $6,000 after its direct cost; Sessions at the family’s home earns $30,000.
+- Online sessions — if chosen: Online sessions earns $24,000 after its direct cost; Sessions at the family’s home earns $30,000 and is what customers come here for.
+- Group classes at the library — if chosen: Group classes at the library loses $4,000 after its direct cost; Sessions at the family’s home earns $30,000 and is what customers come here for.
+- Summer camp — if chosen: Summer camp earns $6,000 after its direct cost; Sessions at the family’s home earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Sessions at the family’s home?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 50%
+- Right (within 1): 53.57%
 - If typed 38.71%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 53.57%: That takes Group classes at the library’s loss off the total. Add up only the lines that make money.
+- If typed 50%: That leaves out the loss on Group classes at the library. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Group classes at the library, which loses money?**
-- Keep it and grow it — if chosen: Group classes at the library loses $4,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Sessions at the family’s home earns $30,000 after its direct cost, 50% of what the lines that make money earn: that is the core. Group classes at the library loses $4,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Sessions at the family’s home is what customers come here for and earns $30,000, 53.6% of what the lines earn together: that is the core. Group classes at the library loses $4,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Sessions at the family’s home: $30,000; Online sessions: $24,000; Group classes at the library: −$4,000; Summer camp: $6,000. Sessions at the family’s home earns the most.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $60,000 = 50%. Group classes at the library loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Sessions at the family’s home: $30,000; Online sessions: $24,000; Group classes at the library: −$4,000; Summer camp: $6,000. Sessions at the family’s home earns the most, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $56,000 = 53.6%. The loss on Group classes at the library is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Most families who book sessions at home found us through the library classes, and keep their child in both. So keep it, but fix its price or cost.
+
+#### Question in the draw: p-lube
+
+A plain table, "Nina’s auto repair shop: last year, product by product":
+
+> Line  |  Brought in  |  Direct cost  (the column heads)
+> Oil changes  |  $120,000  |  $80,000
+> Brake and engine repair  |  $80,000  |  $48,000
+> Tire sales  |  $50,000  |  $44,000
+> Car wash  |  $10,000  |  $13,000
+> (Every quick-lube in town does oil changes the same way at the same price; drivers come from across town for our brake and engine work, and the chains send their hard cases to us.)
+> (Car wash customers come only for the wash.)
+
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
+(the options come in an order that depends on the seed of the question)
+- Oil changes — if chosen: Oil changes earns the most, $40,000, but every rival sells it the same way, so its profit can be competed away; Brake and engine repair is what customers come here for, and earns $32,000.
+- Brake and engine repair (right)
+- Tire sales — if chosen: Tire sales earns $6,000 after its direct cost; Brake and engine repair earns $32,000 and is what customers come here for.
+- Car wash — if chosen: Car wash loses $3,000 after its direct cost; Brake and engine repair earns $32,000 and is what customers come here for.
+
+**What share of what all these lines earn together, losses taken off, comes from Brake and engine repair?**
+- The learner types a number, with the calculator within reach: [ ]%.
+- Right (within 1): 42.67%
+- If typed 30.77%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
+- If typed 41.03%: That leaves out the loss on Car wash. Take it off the total: the share then shows what the losing line costs the rest.
+
+**What should the owner do with Car wash, which loses money?**
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
+- Let it go (right)
+
+After the answer: the deciding words are marked. Reason: Brake and engine repair is what customers come here for and earns $32,000, 42.7% of what the lines earn together; Oil changes earns more, but rivals sell it the same way: that is the core. Car wash loses $3,000, and nothing ties it to the core, so let it go.
+The working:
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Oil changes: $40,000; Brake and engine repair: $32,000; Tire sales: $6,000; Car wash: −$3,000. Oil changes earns the most, but rivals sell it the same way; Brake and engine repair is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $32,000 ÷ $75,000 = 42.7%. The loss on Car wash is taken off the total.
+- Decide on the line that loses money: do the core’s customers buy it along with the core?: Car wash customers come only for the wash. So let it go.
 
 #### Question in the draw: q-stylists
 
-A plain table, "Grace’s salon: last year, line by line":
+A plain table, "Grace’s salon: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Color  |  $50,000  |  $20,000
 > Haircuts  |  $80,000  |  $66,000
 > Nail station  |  $15,000  |  $19,000
 > Hair products sold  |  $20,000  |  $17,000
+> (Clients come from across town for our color work.)
 > (Nail clients are mostly walk-ins who never book a cut or color.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
 - Color (right)
-- Haircuts — if chosen: Haircuts earns $14,000 after its direct cost; Color earns $30,000.
-- Nail station — if chosen: Nail station loses $4,000 after its direct cost; Color earns $30,000.
-- Hair products sold — if chosen: Hair products sold earns $3,000 after its direct cost; Color earns $30,000.
+- Haircuts — if chosen: Haircuts earns $14,000 after its direct cost; Color earns $30,000 and is what customers come here for.
+- Nail station — if chosen: Nail station loses $4,000 after its direct cost; Color earns $30,000 and is what customers come here for.
+- Hair products sold — if chosen: Hair products sold earns $3,000 after its direct cost; Color earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Color?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 63.83%
+- Right (within 1): 69.77%
 - If typed 30.3%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 69.77%: That takes Nail station’s loss off the total. Add up only the lines that make money.
+- If typed 63.83%: That leaves out the loss on Nail station. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Nail station, which loses money?**
-- Keep it and grow it — if chosen: Nail station loses $4,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Color earns $30,000 after its direct cost, 63.8% of what the lines that make money earn, more than Haircuts with its bigger sales: that is the core. Nail station loses $4,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Color is what customers come here for and earns $30,000, 69.8% of what the lines earn together, more than Haircuts with its bigger sales: that is the core. Nail station loses $4,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Color: $30,000; Haircuts: $14,000; Nail station: −$4,000; Hair products sold: $3,000. Color earns the most, though Haircuts brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $47,000 = 63.8%. Nail station loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Color: $30,000; Haircuts: $14,000; Nail station: −$4,000; Hair products sold: $3,000. Color earns the most, though Haircuts brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $43,000 = 69.8%. The loss on Nail station is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Nail clients are mostly walk-ins who never book a cut or color. So let it go.
 
 #### Question in the draw: q-moves
 
-A plain table, "Bea’s moving company: last year, line by line":
+A plain table, "Bea’s moving company: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Storage  |  $25,000  |  $15,000
 > Piano moves  |  $10,000  |  $14,000
-> Families moving house  |  $120,000  |  $96,000
-> Office moves  |  $60,000  |  $30,000
+> House moves  |  $120,000  |  $90,000
+> Office moves  |  $60,000  |  $34,000
+> (Every mover in the area does house moves the same way; offices pick us because we move them over a single weekend, which no other mover here does.)
 > (Piano moves come from people who call only about the piano.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Storage — if chosen: Storage earns $10,000 after its direct cost; Office moves earns $30,000.
-- Piano moves — if chosen: Piano moves loses $4,000 after its direct cost; Office moves earns $30,000.
-- Families moving house — if chosen: Families moving house earns $24,000 after its direct cost; Office moves earns $30,000.
+- Storage — if chosen: Storage earns $10,000 after its direct cost; Office moves earns $26,000 and is what customers come here for.
+- Piano moves — if chosen: Piano moves loses $4,000 after its direct cost; Office moves earns $26,000 and is what customers come here for.
+- House moves — if chosen: House moves earns the most, $30,000, but every rival sells it the same way, so its profit can be competed away; Office moves is what customers come here for, and earns $26,000.
 - Office moves (right)
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Office moves?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 46.88%
+- Right (within 1): 41.94%
 - If typed 27.91%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 50%: That takes Piano moves’s loss off the total. Add up only the lines that make money.
+- If typed 39.39%: That leaves out the loss on Piano moves. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Piano moves, which loses money?**
-- Keep it and grow it — if chosen: Piano moves loses $4,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Office moves earns $30,000 after its direct cost, 46.9% of what the lines that make money earn, more than Families moving house with its bigger sales: that is the core. Piano moves loses $4,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Office moves is what customers come here for and earns $26,000, 41.9% of what the lines earn together; House moves earns more, but rivals sell it the same way: that is the core. Piano moves loses $4,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Storage: $10,000; Piano moves: −$4,000; Families moving house: $24,000; Office moves: $30,000. Office moves earns the most, though Families moving house brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $64,000 = 46.9%. Piano moves loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Storage: $10,000; Piano moves: −$4,000; House moves: $30,000; Office moves: $26,000. House moves earns the most, but rivals sell it the same way; Office moves is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $26,000 ÷ $62,000 = 41.9%. The loss on Piano moves is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Piano moves come from people who call only about the piano. So let it go.
 
 #### Question in the draw: q-trays
 
-A plain table, "Priya’s cafe: last year, line by line":
+A plain table, "Priya’s cafe: last year, way of selling by way of selling":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
-> The cafe itself  |  $90,000  |  $70,000
-> Catering trays for offices  |  $40,000  |  $16,000
-> Delivery app orders  |  $30,000  |  $33,000
+> The counter  |  $90,000  |  $70,000
+> Catering orders by phone  |  $40,000  |  $16,000
+> The delivery app  |  $30,000  |  $33,000
 > Farmers market stall  |  $12,000  |  $8,000
-> (The offices that order catering trays place most of those orders through the delivery app.)
+> (Offices order our catering for the pastries we bake ourselves, which no other cafe near the towers does. Each order is counted once, under the way it came in.)
+> (Most of the offices that phone in catering first tried us through the delivery app.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- The cafe itself — if chosen: The cafe itself earns $20,000 after its direct cost; Catering trays for offices earns $24,000.
-- Catering trays for offices (right)
-- Delivery app orders — if chosen: Delivery app orders loses $3,000 after its direct cost; Catering trays for offices earns $24,000.
-- Farmers market stall — if chosen: Farmers market stall earns $4,000 after its direct cost; Catering trays for offices earns $24,000.
+- The counter — if chosen: The counter earns $20,000 after its direct cost; Catering orders by phone earns $24,000 and is what customers come here for.
+- Catering orders by phone (right)
+- The delivery app — if chosen: The delivery app loses $3,000 after its direct cost; Catering orders by phone earns $24,000 and is what customers come here for.
+- Farmers market stall — if chosen: Farmers market stall earns $4,000 after its direct cost; Catering orders by phone earns $24,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Catering orders by phone?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 50%
+- Right (within 1): 53.33%
 - If typed 23.26%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 53.33%: That takes Delivery app orders’s loss off the total. Add up only the lines that make money.
+- If typed 50%: That leaves out the loss on The delivery app. Take it off the total: the share then shows what the losing line costs the rest.
 
-**What should the owner do with Delivery app orders, which loses money?**
-- Keep it and grow it — if chosen: Delivery app orders loses $3,000 after its direct cost; growing it would lose more.
+**What should the owner do with The delivery app, which loses money?**
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Catering trays for offices earns $24,000 after its direct cost, 50% of what the lines that make money earn, more than The cafe itself with its bigger sales: that is the core. Delivery app orders loses $3,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Catering orders by phone is what customers come here for and earns $24,000, 53.3% of what the lines earn together, more than The counter with its bigger sales: that is the core. The delivery app loses $3,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: The cafe itself: $20,000; Catering trays for offices: $24,000; Delivery app orders: −$3,000; Farmers market stall: $4,000. Catering trays for offices earns the most, though The cafe itself brings in more.
-- Divide what it earns by what the lines that make money earn together.: $24,000 ÷ $48,000 = 50%. Delivery app orders loses money, so it is left out of the sum.
-- Decide on the line that loses money: do the core’s customers buy it along with the core?: The offices that order catering trays place most of those orders through the delivery app. So keep it, but fix its price or cost.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: The counter: $20,000; Catering orders by phone: $24,000; The delivery app: −$3,000; Farmers market stall: $4,000. Catering orders by phone earns the most, though The counter brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $24,000 ÷ $45,000 = 53.3%. The loss on The delivery app is taken off the total.
+- Decide on the line that loses money: do the core’s customers buy it along with the core?: Most of the offices that phone in catering first tried us through the delivery app. So keep it, but fix its price or cost.
 
 #### Question in the draw: k-garage
 
-A plain table, "Ed’s auto repair shop: last year, line by line":
+A plain table, "Ed’s auto repair shop: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Oil changes  |  $70,000  |  $62,000
 > Brake and engine repair  |  $80,000  |  $40,000
 > Tire sales  |  $50,000  |  $42,000
 > Car wash  |  $10,000  |  $13,000
+> (Drivers come to Ed for brake and engine work because he finds faults the dealers miss.)
 > (Car wash customers come only for the wash.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Oil changes — if chosen: Oil changes earns $8,000 after its direct cost; Brake and engine repair earns $40,000.
+- Oil changes — if chosen: Oil changes earns $8,000 after its direct cost; Brake and engine repair earns $40,000 and is what customers come here for.
 - Brake and engine repair (right)
-- Tire sales — if chosen: Tire sales earns $8,000 after its direct cost; Brake and engine repair earns $40,000.
-- Car wash — if chosen: Car wash loses $3,000 after its direct cost; Brake and engine repair earns $40,000.
+- Tire sales — if chosen: Tire sales earns $8,000 after its direct cost; Brake and engine repair earns $40,000 and is what customers come here for.
+- Car wash — if chosen: Car wash loses $3,000 after its direct cost; Brake and engine repair earns $40,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Brake and engine repair?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 71.43%
+- Right (within 1): 75.47%
 - If typed 38.1%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 75.47%: That takes Car wash’s loss off the total. Add up only the lines that make money.
+- If typed 71.43%: That leaves out the loss on Car wash. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Car wash, which loses money?**
-- Keep it and grow it — if chosen: Car wash loses $3,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Brake and engine repair earns $40,000 after its direct cost, 71.4% of what the lines that make money earn: that is the core. Car wash loses $3,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Brake and engine repair is what customers come here for and earns $40,000, 75.5% of what the lines earn together: that is the core. Car wash loses $3,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Oil changes: $8,000; Brake and engine repair: $40,000; Tire sales: $8,000; Car wash: −$3,000. Brake and engine repair earns the most.
-- Divide what it earns by what the lines that make money earn together.: $40,000 ÷ $56,000 = 71.4%. Car wash loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Oil changes: $8,000; Brake and engine repair: $40,000; Tire sales: $8,000; Car wash: −$3,000. Brake and engine repair earns the most, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $40,000 ÷ $53,000 = 75.5%. The loss on Car wash is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Car wash customers come only for the wash. So let it go.
 
 #### Question in the draw: k-flowers
 
-A plain table, "June’s flower shop: last year, line by line":
+A plain table, "June’s flower shop: last year, customer by customer":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Hotel lobbies  |  $15,000  |  $20,000
 > Walk-in shoppers  |  $70,000  |  $60,000
 > Funeral homes  |  $30,000  |  $20,000
-> Weddings  |  $45,000  |  $18,000
+> Wedding couples  |  $45,000  |  $18,000
+> (Couples choose June for wedding flowers no other florist in town arranges.)
 > (The hotels whose lobbies we do send us most of our wedding couples.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Hotel lobbies — if chosen: Hotel lobbies loses $5,000 after its direct cost; Weddings earns $27,000.
-- Walk-in shoppers — if chosen: Walk-in shoppers earns $10,000 after its direct cost; Weddings earns $27,000.
-- Funeral homes — if chosen: Funeral homes earns $10,000 after its direct cost; Weddings earns $27,000.
-- Weddings (right)
+- Hotel lobbies — if chosen: Hotel lobbies loses $5,000 after its direct cost; Wedding couples earns $27,000 and is what customers come here for.
+- Walk-in shoppers — if chosen: Walk-in shoppers earns $10,000 after its direct cost; Wedding couples earns $27,000 and is what customers come here for.
+- Funeral homes — if chosen: Funeral homes earns $10,000 after its direct cost; Wedding couples earns $27,000 and is what customers come here for.
+- Wedding couples (right)
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Wedding couples?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 57.45%
+- Right (within 1): 64.29%
 - If typed 28.13%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 64.29%: That takes Hotel lobbies’s loss off the total. Add up only the lines that make money.
+- If typed 57.45%: That leaves out the loss on Hotel lobbies. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Hotel lobbies, which loses money?**
-- Keep it and grow it — if chosen: Hotel lobbies loses $5,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Weddings earns $27,000 after its direct cost, 57.4% of what the lines that make money earn, more than Walk-in shoppers with its bigger sales: that is the core. Hotel lobbies loses $5,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Wedding couples is what customers come here for and earns $27,000, 64.3% of what the lines earn together, more than Walk-in shoppers with its bigger sales: that is the core. Hotel lobbies loses $5,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Hotel lobbies: −$5,000; Walk-in shoppers: $10,000; Funeral homes: $10,000; Weddings: $27,000. Weddings earns the most, though Walk-in shoppers brings in more.
-- Divide what it earns by what the lines that make money earn together.: $27,000 ÷ $47,000 = 57.4%. Hotel lobbies loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Hotel lobbies: −$5,000; Walk-in shoppers: $10,000; Funeral homes: $10,000; Wedding couples: $27,000. Wedding couples earns the most, though Walk-in shoppers brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $27,000 ÷ $42,000 = 64.3%. The loss on Hotel lobbies is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: The hotels whose lobbies we do send us most of our wedding couples. So keep it, but fix its price or cost.
 
 #### Question in the draw: k-pipes
 
-A plain table, "Ray’s plumbing business: last year, line by line":
+A plain table, "Ray’s plumbing business: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Emergency calls  |  $60,000  |  $30,000
 > New bathrooms  |  $100,000  |  $88,000
 > Water heaters put in  |  $40,000  |  $32,000
 > Drain cleaning by the month  |  $15,000  |  $19,000
+> (People call Ray first in an emergency because he answers at night, which the other plumbers in town do not.)
 > (The customers on monthly drain cleaning are the ones who call us first in an emergency.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
 - Emergency calls (right)
-- New bathrooms — if chosen: New bathrooms earns $12,000 after its direct cost; Emergency calls earns $30,000.
-- Water heaters put in — if chosen: Water heaters put in earns $8,000 after its direct cost; Emergency calls earns $30,000.
-- Drain cleaning by the month — if chosen: Drain cleaning by the month loses $4,000 after its direct cost; Emergency calls earns $30,000.
+- New bathrooms — if chosen: New bathrooms earns $12,000 after its direct cost; Emergency calls earns $30,000 and is what customers come here for.
+- Water heaters put in — if chosen: Water heaters put in earns $8,000 after its direct cost; Emergency calls earns $30,000 and is what customers come here for.
+- Drain cleaning by the month — if chosen: Drain cleaning by the month loses $4,000 after its direct cost; Emergency calls earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Emergency calls?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 60%
+- Right (within 1): 65.22%
 - If typed 27.91%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 65.22%: That takes Drain cleaning by the month’s loss off the total. Add up only the lines that make money.
+- If typed 60%: That leaves out the loss on Drain cleaning by the month. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Drain cleaning by the month, which loses money?**
-- Keep it and grow it — if chosen: Drain cleaning by the month loses $4,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Emergency calls earns $30,000 after its direct cost, 60% of what the lines that make money earn, more than New bathrooms with its bigger sales: that is the core. Drain cleaning by the month loses $4,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Emergency calls is what customers come here for and earns $30,000, 65.2% of what the lines earn together, more than New bathrooms with its bigger sales: that is the core. Drain cleaning by the month loses $4,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Emergency calls: $30,000; New bathrooms: $12,000; Water heaters put in: $8,000; Drain cleaning by the month: −$4,000. Emergency calls earns the most, though New bathrooms brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $50,000 = 60%. Drain cleaning by the month loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Emergency calls: $30,000; New bathrooms: $12,000; Water heaters put in: $8,000; Drain cleaning by the month: −$4,000. Emergency calls earns the most, though New bathrooms brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $46,000 = 65.2%. The loss on Drain cleaning by the month is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: The customers on monthly drain cleaning are the ones who call us first in an emergency. So keep it, but fix its price or cost.
 
 #### Question in the draw: k-lunches
 
-A plain table, "Sam’s food truck: last year, line by line":
+A plain table, "Sam’s food truck: last year, way of selling by way of selling":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Late-night stops  |  $12,000  |  $15,000
-> Private parties  |  $30,000  |  $18,000
+> Private parties  |  $30,000  |  $14,000
 > Weekday office lunches  |  $70,000  |  $45,000
 > Weekend festivals  |  $50,000  |  $42,000
-> (The late-night crowd is not the office lunch crowd: different people, different days.)
+> (At the office park we sell tacos beside five other taco trucks, at the same price; party hosts book us for our smoked brisket, which no other truck in town makes.)
+> (The late-night crowd is not the party crowd: different people, different nights.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Late-night stops — if chosen: Late-night stops loses $3,000 after its direct cost; Weekday office lunches earns $25,000.
-- Private parties — if chosen: Private parties earns $12,000 after its direct cost; Weekday office lunches earns $25,000.
-- Weekday office lunches (right)
-- Weekend festivals — if chosen: Weekend festivals earns $8,000 after its direct cost; Weekday office lunches earns $25,000.
+- Late-night stops — if chosen: Late-night stops loses $3,000 after its direct cost; Private parties earns $16,000 and is what customers come here for.
+- Private parties (right)
+- Weekday office lunches — if chosen: Weekday office lunches earns the most, $25,000, but every rival sells it the same way, so its profit can be competed away; Private parties is what customers come here for, and earns $16,000.
+- Weekend festivals — if chosen: Weekend festivals earns $8,000 after its direct cost; Private parties earns $16,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Private parties?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 55.56%
-- If typed 43.21%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 59.52%: That takes Late-night stops’s loss off the total. Add up only the lines that make money.
+- Right (within 1): 34.78%
+- If typed 18.52%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
+- If typed 32.65%: That leaves out the loss on Late-night stops. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Late-night stops, which loses money?**
-- Keep it and grow it — if chosen: Late-night stops loses $3,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Weekday office lunches earns $25,000 after its direct cost, 55.6% of what the lines that make money earn: that is the core. Late-night stops loses $3,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Private parties is what customers come here for and earns $16,000, 34.8% of what the lines earn together; Weekday office lunches earns more, but rivals sell it the same way: that is the core. Late-night stops loses $3,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Late-night stops: −$3,000; Private parties: $12,000; Weekday office lunches: $25,000; Weekend festivals: $8,000. Weekday office lunches earns the most.
-- Divide what it earns by what the lines that make money earn together.: $25,000 ÷ $45,000 = 55.6%. Late-night stops loses money, so it is left out of the sum.
-- Decide on the line that loses money: do the core’s customers buy it along with the core?: The late-night crowd is not the office lunch crowd: different people, different days. So let it go.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Late-night stops: −$3,000; Private parties: $16,000; Weekday office lunches: $25,000; Weekend festivals: $8,000. Weekday office lunches earns the most, but rivals sell it the same way; Private parties is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $16,000 ÷ $46,000 = 34.8%. The loss on Late-night stops is taken off the total.
+- Decide on the line that loses money: do the core’s customers buy it along with the core?: The late-night crowd is not the party crowd: different people, different nights. So let it go.
 
 #### Question in the draw: r-bikes
 
-A plain table, "Leo’s bike shop: last year, line by line":
+A plain table, "Leo’s bike shop: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Repairs  |  $50,000  |  $20,000
 > New bikes  |  $90,000  |  $81,000
 > Rentals  |  $20,000  |  $14,000
 > Group rides  |  $5,000  |  $8,000
+> (Riders bring their bikes to Leo because he repairs what the big stores will only replace.)
 > (Most repair customers first came to us on a group ride.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
 - Repairs (right)
-- New bikes — if chosen: New bikes earns $9,000 after its direct cost; Repairs earns $30,000.
-- Rentals — if chosen: Rentals earns $6,000 after its direct cost; Repairs earns $30,000.
-- Group rides — if chosen: Group rides loses $3,000 after its direct cost; Repairs earns $30,000.
+- New bikes — if chosen: New bikes earns $9,000 after its direct cost; Repairs earns $30,000 and is what customers come here for.
+- Rentals — if chosen: Rentals earns $6,000 after its direct cost; Repairs earns $30,000 and is what customers come here for.
+- Group rides — if chosen: Group rides loses $3,000 after its direct cost; Repairs earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Repairs?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 66.67%
+- Right (within 1): 71.43%
 - If typed 30.3%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 71.43%: That takes Group rides’s loss off the total. Add up only the lines that make money.
+- If typed 66.67%: That leaves out the loss on Group rides. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Group rides, which loses money?**
-- Keep it and grow it — if chosen: Group rides loses $3,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Repairs earns $30,000 after its direct cost, 66.7% of what the lines that make money earn, more than New bikes with its bigger sales: that is the core. Group rides loses $3,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Repairs is what customers come here for and earns $30,000, 71.4% of what the lines earn together, more than New bikes with its bigger sales: that is the core. Group rides loses $3,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Repairs: $30,000; New bikes: $9,000; Rentals: $6,000; Group rides: −$3,000. Repairs earns the most, though New bikes brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $45,000 = 66.7%. Group rides loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Repairs: $30,000; New bikes: $9,000; Rentals: $6,000; Group rides: −$3,000. Repairs earns the most, though New bikes brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $42,000 = 71.4%. The loss on Group rides is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Most repair customers first came to us on a group ride. So keep it, but fix its price or cost.
 
 #### Question in the draw: r-grooming
 
-A plain table, "Rosa’s grooming van: last year, line by line":
+A plain table, "Rosa’s grooming van: last year, customer by customer":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
-> One-time visits  |  $40,000  |  $34,000
+> One-time customers  |  $40,000  |  $34,000
 > Monthly regulars  |  $60,000  |  $30,000
-> Show dogs  |  $10,000  |  $14,000
+> Show dog owners  |  $10,000  |  $14,000
 > Pet stores  |  $25,000  |  $19,000
+> (Regulars stay because Rosa grooms each dog at home, the same way every month.)
 > (Show dog owners are not among our monthly regulars.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- One-time visits — if chosen: One-time visits earns $6,000 after its direct cost; Monthly regulars earns $30,000.
+- One-time customers — if chosen: One-time customers earns $6,000 after its direct cost; Monthly regulars earns $30,000 and is what customers come here for.
 - Monthly regulars (right)
-- Show dogs — if chosen: Show dogs loses $4,000 after its direct cost; Monthly regulars earns $30,000.
-- Pet stores — if chosen: Pet stores earns $6,000 after its direct cost; Monthly regulars earns $30,000.
+- Show dog owners — if chosen: Show dog owners loses $4,000 after its direct cost; Monthly regulars earns $30,000 and is what customers come here for.
+- Pet stores — if chosen: Pet stores earns $6,000 after its direct cost; Monthly regulars earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Monthly regulars?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 71.43%
+- Right (within 1): 78.95%
 - If typed 44.44%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 78.95%: That takes Show dogs’s loss off the total. Add up only the lines that make money.
+- If typed 71.43%: That leaves out the loss on Show dog owners. Take it off the total: the share then shows what the losing line costs the rest.
 
-**What should the owner do with Show dogs, which loses money?**
-- Keep it and grow it — if chosen: Show dogs loses $4,000 after its direct cost; growing it would lose more.
-- Keep it, but fix its price or cost — if chosen: The note says its customers do not buy the core, so nothing ties it to the core. Let it go.
+**What should the owner do with Show dog owners, which loses money?**
+- Keep it, but fix its price or cost — if chosen: The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go.
 - Let it go (right)
 
-After the answer: the deciding words are marked. Reason: Monthly regulars earns $30,000 after its direct cost, 71.4% of what the lines that make money earn: that is the core. Show dogs loses $4,000, and nothing ties it to the core, so let it go.
+After the answer: the deciding words are marked. Reason: Monthly regulars is what customers come here for and earns $30,000, 78.9% of what the lines earn together: that is the core. Show dog owners loses $4,000, and nothing ties it to the core, so let it go.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: One-time visits: $6,000; Monthly regulars: $30,000; Show dogs: −$4,000; Pet stores: $6,000. Monthly regulars earns the most.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $42,000 = 71.4%. Show dogs loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: One-time customers: $6,000; Monthly regulars: $30,000; Show dog owners: −$4,000; Pet stores: $6,000. Monthly regulars earns the most, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $38,000 = 78.9%. The loss on Show dog owners is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: Show dog owners are not among our monthly regulars. So let it go.
 
 #### Question in the draw: r-service
 
-A plain table, "Tom’s heating and cooling business: last year, line by line":
+A plain table, "Tom’s heating and cooling business: last year, product by product":
 
 > Line  |  Brought in  |  Direct cost  (the column heads)
 > Repair calls  |  $80,000  |  $70,000
 > Yearly service plans  |  $50,000  |  $20,000
 > New systems put in  |  $90,000  |  $80,000
 > Duct cleaning  |  $10,000  |  $14,000
+> (Plan customers pick Tom because the same technician comes every year.)
 > (We sell duct cleaning only to service plan customers, on the plan’s yearly visit.)
 
-**Which line is the core: the one that earns the most after its direct cost?**
+**Which line is the core: what customers come here for rather than to a rival, and earns the most after its direct cost?**
 (the options come in an order that depends on the seed of the question)
-- Repair calls — if chosen: Repair calls earns $10,000 after its direct cost; Yearly service plans earns $30,000.
+- Repair calls — if chosen: Repair calls earns $10,000 after its direct cost; Yearly service plans earns $30,000 and is what customers come here for.
 - Yearly service plans (right)
-- New systems put in — if chosen: New systems put in earns $10,000 after its direct cost; Yearly service plans earns $30,000.
-- Duct cleaning — if chosen: Duct cleaning loses $4,000 after its direct cost; Yearly service plans earns $30,000.
+- New systems put in — if chosen: New systems put in earns $10,000 after its direct cost; Yearly service plans earns $30,000 and is what customers come here for.
+- Duct cleaning — if chosen: Duct cleaning loses $4,000 after its direct cost; Yearly service plans earns $30,000 and is what customers come here for.
 
-**What share of what the lines that make money earn together comes from the line that earns the most?**
+**What share of what all these lines earn together, losses taken off, comes from Yearly service plans?**
 - The learner types a number, with the calculator within reach: [ ]%.
-- Right (within 1): 60%
+- Right (within 1): 65.22%
 - If typed 21.74%: That is its share of the sales. The share that counts is of what the lines earn after their direct costs.
-- If typed 65.22%: That takes Duct cleaning’s loss off the total. Add up only the lines that make money.
+- If typed 60%: That leaves out the loss on Duct cleaning. Take it off the total: the share then shows what the losing line costs the rest.
 
 **What should the owner do with Duct cleaning, which loses money?**
-- Keep it and grow it — if chosen: Duct cleaning loses $4,000 after its direct cost; growing it would lose more.
 - Keep it, but fix its price or cost (right)
-- Let it go — if chosen: The note says the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
+- Let it go — if chosen: The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost.
 
-After the answer: the deciding words are marked. Reason: Yearly service plans earns $30,000 after its direct cost, 60% of what the lines that make money earn, more than New systems put in with its bigger sales: that is the core. Duct cleaning loses $4,000, and the core’s customers buy it too, so fix its price or cost.
+After the answer: the deciding words are marked. Reason: Yearly service plans is what customers come here for and earns $30,000, 65.2% of what the lines earn together, more than New systems put in with its bigger sales: that is the core. Duct cleaning loses $4,000, and the core’s customers buy it too, so fix its price or cost.
 The working:
-- Take each line’s direct cost from what it brought in, and find the line that earns the most.: Repair calls: $10,000; Yearly service plans: $30,000; New systems put in: $10,000; Duct cleaning: −$4,000. Yearly service plans earns the most, though New systems put in brings in more.
-- Divide what it earns by what the lines that make money earn together.: $30,000 ÷ $50,000 = 60%. Duct cleaning loses money, so it is left out of the sum.
+- Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Repair calls: $10,000; Yearly service plans: $30,000; New systems put in: $10,000; Duct cleaning: −$4,000. Yearly service plans earns the most, though New systems put in brings in more, and it is what customers come here for.
+- Divide what the core earns by what all the lines earn together, losses taken off.: $30,000 ÷ $46,000 = 65.2%. The loss on Duct cleaning is taken off the total.
 - Decide on the line that loses money: do the core’s customers buy it along with the core?: We sell duct cleaning only to service plan customers, on the plan’s yearly visit. So keep it, but fix its price or cost.
 
 #### Question in the draw: w6-gym

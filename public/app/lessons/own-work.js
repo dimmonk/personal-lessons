@@ -180,28 +180,27 @@ function ownWorkShare(sheet, ctx){
 
 /* ---------- the core of a business (Strategy) ---------- */
 // The learner's own lines, each kind (product, customer, way of selling) in a table of its own so no sale is counted twice: what each line
-// earns after its direct cost, largest first, and its share of what the lines that earn make together. A line that loses money is flagged;
-// the fewest lines from the top that make more than half of it are named as the core to look at first (research ST4, ST8: a small share of
-// lines may make most of the profit, so no fixed share such as 80/20 is assumed). Reads the business, the subject's list lineKind, nothing else.
+// earns after its direct cost, largest first, and its share of what all the lines of the kind earn together, losses taken off (lesson 5's share,
+// research ST19: it can pass 100%). The line that earns the most is named, with the question only the learner can answer, whether customers come
+// for it rather than to a rival (ST4, ST8: the core is the most distinctive and the most profitable); each line that loses money is flagged with
+// lesson 5's question, whether the core's customers buy it along with the core. Reads the business, the subject's list lineKind, nothing else.
 const ownEarns = line => ownRound(line.revenue - line.cost);
 const ownSigned = value => value < 0 ? `−${ownWhole(-value)}` : ownWhole(value);
 function ownCoreOf(lines){
-  const sorted = [...lines].sort((a, b) => ownEarns(b) - ownEarns(a)), earning = sorted.filter(l => ownEarns(l) > 0);
-  const made = ownSum(earning, ownEarns);
-  const core = earning.reduce((acc, l) => acc.sum * 2 > made ? acc : { list: [...acc.list, l], sum: acc.sum + ownEarns(l) }, { list: [], sum: 0 });
-  return { sorted, made, core: core.list, losing: sorted.filter(l => ownEarns(l) < 0) };
+  const sorted = [...lines].sort((a, b) => ownEarns(b) - ownEarns(a));
+  return { sorted, net: ownSum(sorted, ownEarns), top: sorted.find(l => ownEarns(l) > 0) || null, losing: sorted.filter(l => ownEarns(l) < 0) };
 }
 function ownWorkCore(business, ctx){
   const kinds = ((ctx.lists || {}).lineKind || []).filter(k => business.lines.some(l => l.kind === k.id));
   const each = kinds.map(k => ({ kind: k, ...ownCoreOf(business.lines.filter(l => l.kind === k.id)) }));
+  const shareOf = (e, l) => e.net > 0 ? `${fmtNumber(ownPct(ownEarns(l), e.net))}%` : '';
   return { docs: each.map(e => ownTable(SAY.bizCoreTitle(e.kind.text), SAY.bizCoreHead,
-      [...e.sorted.map(l => [l.name, ownSigned(ownEarns(l)), ownEarns(l) > 0 ? `${fmtNumber(ownPct(ownEarns(l), e.made))}%` : SAY.bizLoses]),
-        ownStrong([SAY.bizAll, ownSigned(ownSum(e.sorted, ownEarns)), ''])])),
+      [...e.sorted.map(l => [l.name, ownSigned(ownEarns(l)), ownEarns(l) > 0 ? shareOf(e, l) : SAY.bizLoses]),
+        ownStrong([SAY.bizAll, ownSigned(e.net), ''])])),
     lines: each.flatMap(e => [
-      ...(e.core.length && e.core.length < e.sorted.length ? [{ flag: true, text: SAY.bizCoreLine(e.core.length, e.sorted.length, e.core.map(l => l.name).join(', '), fmtNumber(ownPct(ownSum(e.core, ownEarns), e.made))) }] : []),
-      ...(e.made > 0 && e.core.length === e.sorted.length ? [{ text: SAY.bizCoreEven }] : []),
+      ...(e.top && e.net > 0 && e.sorted.length > 1 ? [{ flag: true, text: SAY.bizTopLine(e.top.name, fmtNumber(ownPct(ownEarns(e.top), e.net))) }] : []),
       ...e.losing.map(l => ({ flag: true, text: SAY.bizLosing(l.name, ownWhole(-ownEarns(l))) })),
-      ...(e.made <= 0 ? [{ flag: true, text: SAY.bizNoneEarn }] : [])]) };
+      ...(e.net <= 0 ? [{ flag: true, text: SAY.bizNoneEarn }] : [])]) };
 }
 
 /* ---------- the works ---------- */

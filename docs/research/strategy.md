@@ -107,6 +107,11 @@ reprint R0801E. Read in full (reprint copy; page labels are the reprint's). Stro
 - p. 12-13, positioning against the forces: "Strategy can be viewed as building defenses against the competitive forces
   or finding a position in the industry where the forces are weakest." Worked case: Paccar chose owner-operator truck
   drivers, who have little clout as buyers and are less price sensitive, and earns a 10% price premium.
+- Added 2026-10-23 (lessons 1-5 review): the same passage describes heavy trucks as hard on several forces at once:
+  powerful buyers (large fleets and leasing companies) with leverage on price, stiff price competition and fierce rivalry
+  in downturns, and unions with "considerable supplier power". **Via the research reviewer's search on the passage**
+  (docs/subjects/strategy/review-research-l1-5.md, defect 12); my own search found only secondary write-ups, so lesson 4
+  uses only the buyers, the rivalry and Paccar's answer, not the unions. Moderate.
 - Teaching consequence (judgement call on scope): the learner needs the five forces as a *question to ask* ("who is
   squeezing the profit out of this business, and why?"), not the full industry analysis an MBA writes.
 
@@ -132,6 +137,16 @@ creation, value capture" frame in MBA cores, ST18), moderate for my reading of i
 most distinctive and most profitable.** Porter (1996), p. 51, quoted at ST4. Strong for being the field's advice; the
 "small share of varieties makes most of the profit" line is Porter's observation, not a measured law (do not teach a
 number such as 80/20 as fact; judgement call).
+
+**ST19. Most of a firm's profit comes from a small share of its customers, and the losing ones take a large part of it
+back; the field shows this as cumulative profit against the share of customers (the "whale curve"), where the top lines
+reach well over 100% of total profit before the losers bring it down.** Kaplan, R. S. & Narayanan, V. G. (2001),
+"Measuring and Managing Customer Profitability", *Journal of Cost Management* 15(5), 5-15. **Via secondary sources only**
+(Wikipedia's "Customer profitability analysis", which states the most profitable 20% of customers "generate between 150
+percent and 300 percent of total profits", and practitioner pages citing the same paper; the article itself was not open).
+Limited to moderate. Teaching consequence for lesson 5 (judgement call on the denominator, now sourced): a line's share is
+counted of the total profit of all the lines, losses included, so the share can pass 100% and shows what the losing lines
+cost; the same share is shown in the learner's own work. Porter's box (ST4) gives the questions; this gives the arithmetic.
 
 **ST9. An advantage lasts only if the thing behind it is valuable, rare, hard to copy and has no ready substitute.**
 Barney, J. (1991), "Firm Resources and Sustained Competitive Advantage", *Journal of Management* 17(1), 99-120.
@@ -258,6 +273,13 @@ teaches (judgement call on the order, built from the sources named):
 5. The choice: where to play and how to win, what we will not do, and actions that fit together. (ST2, ST3, ST5, ST10)
 6. Before committing: what would have to be true; how did similar bets turn out; how will rivals answer; can we afford to
    lose it? (ST11, ST12, ST13, ST14)
+
+**Rumelt's kernel and Porter's line, reconciled (judgement call, 2026-10-23).** A plan can have the kernel's shape
+(a challenge, one approach, steps that fit) and still be a plan to run the business better: "food comes out cold because
+tickets have no order; we fix the order". Rumelt's test checks the shape; Porter's and IESE's question 1 checks whether
+the challenge needs a strategy at all. The subject teaches the shape first (lesson 1) with a stated limit, that a
+challenge which is only doing the same work worse than rivals is a running problem, and lesson 2 puts the two
+side by side. So neither source is contradicted: a strategy is a kernel whose challenge is a strategic one.
 
 The novice errors every source names, which the lessons refute (P29): a goal or wish mistaken for a strategy (ST5,
 ST10); doing things better mistaken for strategy (ST1, ST16); growth for its own sake (ST4, ST6); trying to serve

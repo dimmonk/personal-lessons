@@ -388,20 +388,20 @@ same(Object.keys(wealth.meta.own).sort(), ['actions', 'sheet'], 'Wealth keeps a 
   same(ownLinesFromDraft(form, lists, [{ name: '', kind: '', revenue: '', cost: '' }]).problems.map(p => p.path), ['lines.0.name'], 'with no line typed, the form asks for one');
   same(ownDraftsFromLines(form, [{ name: 'Cakes', kind: 'product', revenue: 100, cost: 40 }]).map(d => [d.name, d.kind, d.revenue, d.cost]), [['Cakes', 'product', '100', '40']], 'the stored lines come back into the form as typed');
   check(form.fields.every(f => !/account\s*number|password|login/i.test(f.label)), 'no business field asks for an account number or a login');
-  // the core: each kind on its own table, largest first, a share of what the earning lines make, a loser flagged, the fewest top lines over half named
+  // the core: each kind on its own table, largest first, a share of what all the lines earn (losses taken off), the top line named with its question, a loser flagged with its
   const business = { lines: [
     { name: 'Bread', kind: 'product', revenue: 60000, cost: 52000 }, { name: 'Wedding cakes', kind: 'product', revenue: 48000, cost: 18000 },
     { name: 'Birthday cakes', kind: 'product', revenue: 30000, cost: 16000 }, { name: 'Catering', kind: 'product', revenue: 20000, cost: 23000 },
     { name: 'Market stall', kind: 'channel', revenue: 15000, cost: 9000 }, { name: 'The shop', kind: 'channel', revenue: 143000, cost: 100000 }] };
   const core = ownWork('core', business, ctx);
   same(core.docs.map(d => d.title), ['Your lines: a product or service', 'Your lines: a way you sell (a shop, a website, a market)'], 'a table for each kind of line typed, in the list’s order');
-  same(core.docs[0].rows.map(r => r.cells), [['Wedding cakes', '$30,000', '57.7%'], ['Birthday cakes', '$14,000', '26.9%'], ['Bread', '$8,000', '15.4%'], ['Catering', '−$3,000', SAY.bizLoses], [SAY.bizAll, '$49,000', '']],
-    'each line earns its revenue less its direct cost, largest first, with its share of what the earning lines make; a loser says so; the total counts it');
-  same(core.lines.filter(l => l.flag).map(l => l.text), [SAY.bizCoreLine(1, 4, 'Wedding cakes', '57.7'), SAY.bizLosing('Catering', '$3,000'), SAY.bizCoreLine(1, 2, 'The shop', '87.8')],
-    'the fewest top lines over half are named for each kind, and the line that loses money is flagged');
+  same(core.docs[0].rows.map(r => r.cells), [['Wedding cakes', '$30,000', '61.2%'], ['Birthday cakes', '$14,000', '28.6%'], ['Bread', '$8,000', '16.3%'], ['Catering', '−$3,000', SAY.bizLoses], [SAY.bizAll, '$49,000', '']],
+    'each line earns its revenue less its direct cost, largest first, with its share of what all the lines earn, the loss taken off; a loser says so; the total counts it');
+  same(core.lines.filter(l => l.flag).map(l => l.text), [SAY.bizTopLine('Wedding cakes', '61.2'), SAY.bizLosing('Catering', '$3,000'), SAY.bizTopLine('The shop', '87.8')],
+    'the line that earns the most is named for each kind, and the line that loses money is flagged');
   check(core.lines.at(-1).text === SAY.workNotAdvice, 'the work ends by saying it is not advice');
-  same(ownCoreOf([{ name: 'A', revenue: 10, cost: 5 }, { name: 'B', revenue: 10, cost: 5 }]).core.map(l => l.name), ['A', 'B'], 'two lines that earn alike: neither alone is more than half');
-  same(ownWork('core', { lines: [{ name: 'A', kind: 'customer', revenue: 10, cost: 5 }, { name: 'B', kind: 'customer', revenue: 10, cost: 5 }] }, ctx).lines.map(l => l.text), [SAY.bizCoreEven], 'lines that earn about evenly name no core');
+  same(ownCoreOf([{ name: 'A', revenue: 10, cost: 5 }, { name: 'B', revenue: 30, cost: 5 }, { name: 'C', revenue: 5, cost: 9 }]).top.name, 'B', 'the top line is the one that earns the most, not the first typed');
+  same(ownWork('core', { lines: [{ name: 'A', kind: 'customer', revenue: 10, cost: 5 }] }, ctx).lines.map(l => l.text), [], 'a kind with one line names no top line: there is nothing to compare');
   same(ownWork('core', { lines: [{ name: 'A', kind: 'customer', revenue: 5, cost: 9 }] }, ctx).lines.filter(l => l.flag).map(l => l.text), [SAY.bizLosing('A', '$4'), SAY.bizNoneEarn], 'lines that earn nothing together are flagged');
   check(/data-line="0"/.test(businessEditorHtml(form, lists, ownDraftsFromLines(form, []), [])) && /data-add-line/.test(businessEditorHtml(form, lists, ownDraftsFromLines(form, []), [])), 'the business form starts with one blank line and a button for another');
 }
