@@ -371,7 +371,7 @@ After the answer: Reason: Parity is the extra information that lets the array re
 
 #### Question in the draw: l11-r-zero
 
-Your own note, written after an argument: "Ticket", Fritz’s workstation.
+A written note: "Ticket", Fritz’s workstation.
 
 > Two drives in RAID 0 for fast video work. One drive reports a S.M.A.R.T. warning. The array still works.
 
@@ -437,7 +437,7 @@ After the answer: Reason: In RAID 1 each drive holds a full copy, so the usable 
 
 #### Question in the draw: l11-s-notbackup
 
-Your own note, written after an argument: "Message from Leif", Chat · 4:30 PM.
+A written note: "Message from Leif", Chat · 4:30 PM.
 
 > We have RAID 5, so I deleted the old projects folder to clean up. Can you get it back? The RAID must have it.
 
@@ -500,7 +500,7 @@ The working:
 
 #### Question in the draw: l11-p-click
 
-Your own note, written after an argument: "Message from Kasia", Chat · 11:20 AM.
+A written note: "Message from Kasia", Chat · 11:20 AM.
 
 > My laptop’s hard drive started to grind and click this morning. I have the whole budget file on it, and no copy.
 
@@ -536,7 +536,7 @@ A NAS is a storage box on the office network that holds several drives. The cont
 
 This desk’s rule: hand on any array fault that is still open after 20 minutes.
 
-Your own note, written after an argument: "Ticket", Office NAS.
+A written note: "Ticket", Office NAS.
 
 > After a power cut, the file server shows no storage. The array is missing. All four drives show in the controller.
 
@@ -560,7 +560,7 @@ After the answer: Reason: The copy comes right after the user stops using the dr
 
 #### Question in the draw: l11-k-smart
 
-Your own note, written after an argument: "Ticket", Laptop, 95% full.
+A written note: "Ticket", Laptop, 95% full.
 
 > Computer very slow for a month. The drive’s S.M.A.R.T. report (its built-in self-check) says: failing.
 > The user has the only copy of a thesis on it.
@@ -575,7 +575,7 @@ After the answer: the deciding words are marked. Reason: The S.M.A.R.T. report i
 
 #### Question in the draw: l11-k-alarm
 
-Your own note, written after an argument: "Ticket", Small office server, RAID 1.
+A written note: "Ticket", Small office server, RAID 1.
 
 > The server beeps every minute. A red light shows on drive bay 2 (the slot that drive slides into). Everything still works, so the owner wants to ignore it until Monday.
 > The last backup ran three weeks ago.
@@ -597,7 +597,7 @@ A plain table, "Firmware setup screen":
 > Internal SSD  |  Not listed
 > USB flash drive (holds only photos)  |  Listed
 
-Your own note, written after an argument: "Ticket", Desktop, no bootable device found.
+A written note: "Ticket", Desktop, no bootable device found.
 
 > The firmware does not list the internal SSD.
 > The SSD’s data cable and power connector were reseated, and then a cable known to work was tried. The SSD is still not listed.
@@ -626,7 +626,7 @@ After the answer: Reason: A drive that shows in the firmware screen is alive and
 
 #### Question in the draw: l11-s-slow
 
-Your own note, written after an argument: "Ticket", Desktop.
+A written note: "Ticket", Desktop.
 
 > Files take a long time to open and to save. S.M.A.R.T. status: OK. The drive has 3% free space.
 
@@ -6208,7 +6208,7 @@ A plain table, "Wi-Fi analyzer, conference room, 2.4 GHz band":
 > Studio5  |  6  |  Medium
 > NetHome-77  |  7  |  Medium
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > The router offers a 2.4 GHz name and a 5 GHz name, and Rosa’s laptop can use both. A wall jack in the room goes to the same switch as the office.
 
@@ -6461,7 +6461,7 @@ A chat, with its history: "Marta, Accounting", Chat with the help desk.
 
 > (Marta, Accounting, at the left) We start in the new office on Monday. The router is plugged in and everything works. Can you check it is safe to use?
 
-Your own note, written after an argument: "The new router", Its settings as it came out of the box.
+A written note: "The new router", Its settings as it came out of the box.
 
 > Router login: name admin, password admin (the maker’s default for this model)
 > Wi-Fi encryption: None, anyone can join
@@ -7403,7 +7403,7 @@ A chat, with its history: "Una, Accounting", Chat with the help desk.
 
 > (Una, Accounting, at the left) The vendor put in a new screen on my laptop yesterday. Since then the Wi-Fi shows one bar anywhere in the office. A coworker at the next desk has four bars.
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > Before the screen job, Una’s Wi-Fi worked well. The Wi-Fi card sits under the keyboard; its two thin antenna wires run up the hinge into the lid.
 
@@ -7645,7 +7645,7 @@ A chat, with its history: "Ana, Sales", Chat with the help desk.
 
 > (Ana, Sales, at the left) My new earbuds will not work with my new phone. I tried three times. They must be broken, so I am sending them back.
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > Ana’s phone: Bluetooth is on. In its Bluetooth list the earbuds appear under Saved devices as Not connected. The earbuds’ light blinks when they are in pairing mode.
 > A coworker’s phone is on the desk, with Bluetooth on.
@@ -7838,7 +7838,7 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Question in the draw: l18-s-lost
 
-Your own note, written after an argument: "This desk’s rule", Lost phones.
+A written note: "This desk’s rule", Lost phones.
 
 > Confirm the caller with the desk’s identity check before any lock, wipe or reset.
 > Mark the phone as lost first: this locks it, shows a contact number on the screen, and shows where it is.
@@ -7890,7 +7890,7 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Question in the draw: l18-g-policy
 
-Your own note, written after an argument: "The company’s phone policy", Every company phone must meet all of these.
+A written note: "The company’s phone policy", Every company phone must meet all of these.
 
 > Screen lock: a PIN of six digits or more, or a password
 > Encryption: on
@@ -7899,7 +7899,7 @@ Your own note, written after an argument: "The company’s phone policy", Every 
 > Remote backup: on
 > Fingerprint: allowed as a shortcut beside the PIN
 
-Your own note, written after an argument: "Anil’s new phone, as checked on the desk", Settings found.
+A written note: "Anil’s new phone, as checked on the desk", Settings found.
 
 > Screen lock: four-digit PIN
 > Encryption: on

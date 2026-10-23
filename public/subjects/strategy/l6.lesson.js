@@ -23,11 +23,11 @@ FC.lesson("strategy", {
           "A pull, and the business drops one side: a real trade-off. It serves the side it kept better, whatever the side it dropped was worth.",
           "A pull, and the business keeps both: a straddle. It pays for both ways and serves neither fully. Trying to serve every kind of customer at once is the same mistake. Trimming a piece here and there while still serving both is still a straddle.",
           "What does not decide it: whether the move copies a rival (a business can copy a rival and still choose), how much the dropped side was worth, and early sales from the new offer.",
-          "Here the only question is what kind of move it is, not whether it is wise. Lesson 5’s numbers and the lessons on betting judge that.",
+          "This sorts the move; whether it is wise is judged later.",
           "Why it matters: a rival can copy anything you add without giving something up. What you chose not to do is what a rival would have to give up to copy you."] },
         { kind: "prose", tone: "wrong", text: [
           "“Why turn anyone away? We will offer both and keep everyone.”",
-          "When the two pull against each other, offering both means paying for both on the same people and space, so neither kind of customer gets the best of you. Check for the pull first; where there is one, choose a side."] }
+          "Where the two pull against each other, offering both means paying for both, and neither kind of customer gets your best. Where there is a pull, choose a side."] }
       ] },
     { title: "Two airlines",
       show: [

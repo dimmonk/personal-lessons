@@ -112,7 +112,7 @@ A chat, with its history: "Ana, Sales", Chat with the help desk.
 
 > (Ana, Sales, at the left) My new earbuds will not work with my new phone. I tried three times. They must be broken, so I am sending them back.
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > Ana’s phone: Bluetooth is on. In its Bluetooth list the earbuds appear under Saved devices as Not connected. The earbuds’ light blinks when they are in pairing mode.
 > A coworker’s phone is on the desk, with Bluetooth on.
@@ -219,7 +219,7 @@ A chat, with its history: "Una, Accounting", Chat with the help desk.
 
 > (Una, Accounting, at the left) The vendor put in a new screen on my laptop yesterday. Since then the Wi-Fi shows one bar anywhere in the office. A coworker at the next desk has four bars.
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > Before the screen job, Una’s Wi-Fi worked well. The Wi-Fi card sits under the keyboard; its two thin antenna wires run up the hinge into the lid.
 
@@ -309,7 +309,7 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 11
 
-Your own note, written after an argument: "This desk’s rule", Lost phones.
+A written note: "This desk’s rule", Lost phones.
 
 > Confirm the caller with the desk’s identity check before any lock, wipe or reset.
 > Mark the phone as lost first: this locks it, shows a contact number on the screen, and shows where it is.
@@ -431,7 +431,7 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 19
 
-Your own note, written after an argument: "The company’s phone policy", Every company phone must meet all of these.
+A written note: "The company’s phone policy", Every company phone must meet all of these.
 
 > Screen lock: a PIN of six digits or more, or a password
 > Encryption: on
@@ -440,7 +440,7 @@ Your own note, written after an argument: "The company’s phone policy", Every 
 > Remote backup: on
 > Fingerprint: allowed as a shortcut beside the PIN
 
-Your own note, written after an argument: "Anil’s new phone, as checked on the desk", Settings found.
+A written note: "Anil’s new phone, as checked on the desk", Settings found.
 
 > Screen lock: four-digit PIN
 > Encryption: on

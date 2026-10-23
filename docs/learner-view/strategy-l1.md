@@ -13,12 +13,12 @@ A strategy has three parts, and you can find each one on the page.
 The challenge: what is in the way, and why. “Since the supermarket opened its own bakery, our bread sales fell by a third: it sells a loaf for half our price.”
 One approach to it: the one way past that challenge. “We stop selling bread on price and sell what the supermarket cannot make: cakes to order.”
 Steps that follow from the approach: each one serves it. “Move a baker to cakes. Show the cakes in the window.”
-Read a plan in that order. First look for the challenge.
+Read a plan in that order. First look for the challenge. It can be one short line, and a step can be long and give its own reason (“because …”): what makes a line the challenge is that it says what is in the way, not how long it is or where it sits.
 No challenge named? Then a plan that is only a target or a wish is a goal: a target is a number to reach (“$1 million in sales”); a wish is a quality you hope for (“the best gym in town”, “a great experience for every member”). A mission or a vision, a company’s statement of what it stands for, is a wish too.
 A step is something you can put on a calendar or buy: “Buy two plows”, “Open on Sundays”. A plan that lists steps with no challenge named is a to-do list, even with a target on top, and even with a line like “So we push harder on sales”: an approach to nothing.
 A challenge named, but the steps go off in different directions and none of them gets past it? That is a to-do list too.
 A challenge, one approach, and steps that serve it: that is a strategy. All three must be there; a challenge and an approach with no steps yet is a strategy not finished. Why it matters: a target tells your team where to end up, but only the challenge tells them what to work on.
-One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy; telling the two apart comes next. Every plan here faces a challenge from rivals or the market.
+One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy; telling the two apart comes next.
 
 A wrong idea, marked wrong: “My strategy is to grow sales 20% this year.”
 The right line: That is a goal. It says where you want to be. A strategy starts from what stands in the way of the 20%, picks one way past it, and lists the steps that serve that way.
@@ -33,7 +33,7 @@ Compare: Which line says what is in the way? Only the second. The first is a num
 
 ## Step 3: A worked example
 
-Your own note, written after an argument: "Dana’s plan for her bakery", Written in January.
+A written note: "Dana’s plan for her bakery", Written in January.
 
 > Since the supermarket opened its own bakery, our bread sales fell by a third: it sells a loaf for half our price.
 > We cannot beat that price, so we stop selling everyday bread on price and sell what the supermarket cannot make: whole cakes to order, for birthdays and weddings.
@@ -53,25 +53,25 @@ Then the answer: Since the supermarket opened its own bakery, our bread sales fe
 
 #### Item 1
 
-Your own note, written after an argument: "Luis’s plan for his landscaping crew", Written in the fall.
+A written note: "Luis’s plan for his landscaping crew", Written in the fall.
 
 > Next year: sales of $600,000.
-> **Every winter our crews sit idle from December to March, and we lose our best workers to jobs that pay all year.**
+> **Our crews sit idle all winter.**
 > **So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer.**
 > Buy two plows for the trucks we already have.
 > Sell one contract that covers mowing in summer and snow in winter.
-> Pay the crew a wage all year round.
+> Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again.
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Next year: sales of $600,000." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
-- "Every winter our crews sit idle from December to March, and we lose our best workers to jobs that pay all year." (right)
+- "Our crews sit idle all winter." (right)
 - "So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer." — if tapped: note: That is the approach to the challenge.
 - "Buy two plows for the trucks we already have." — if tapped: note: That is a step to take, not what is in the way.
 - "Sell one contract that covers mowing in summer and snow in winter." — if tapped: note: That is a step to take, not what is in the way.
-- "Pay the crew a wage all year round." — if tapped: note: That is a step to take, not what is in the way.
+- "Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
 
 **What is this plan?**
@@ -79,11 +79,11 @@ Help on screen: the words that decide it are marked.
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The second line says what is in the way: idle winters that cost the best workers. Snow removal for the same customers is one way past it, and the plows, the year-round contract and the year-round wage all follow from it, so it is a strategy; the sales target on top does not change that.
+After the answer: the deciding words are marked. Reason: The short second line says what is in the way: crews idle all winter. Snow removal for the same customers is one way past it, and the plows, the year-round contract and the year-round wage all follow from it, so it is a strategy; the sales target on top does not change that.
 
 #### Item 2
 
-Your own note, written after an argument: "Priya’s plan for her cafe", Written in March.
+A written note: "Priya’s plan for her cafe", Written in March.
 
 > **Turn the cafe into the place people who work from home sit and work on Mondays and Fridays.**
 > Put a plug and fast Wi-Fi at every table.
@@ -111,8 +111,9 @@ After the answer: the deciding words are marked. Reason: The line about the offi
 
 #### Item 3
 
-Your own note, written after an argument: "Mark’s plan for his gym", Written in December.
+A written note: "Mark’s plan for his gym", Written in December.
 
+> We opened in 2019 in the old furniture store on Elm Street, and we now have 520 members and six trainers.
 > **Be the number one gym in town.**
 > **Grow to 800 members by next December.**
 > Give every member a great experience.
@@ -122,6 +123,7 @@ Help on screen: the words that decide it are marked.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "We opened in 2019 in the old furniture store on Elm Street, and we now have 520 members and six trainers." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "Be the number one gym in town." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Grow to 800 members by next December." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
 - "Give every member a great experience." — if tapped: note: That is a wish. It says nothing about what stands in the way.
@@ -133,11 +135,11 @@ Help on screen: the words that decide it are marked.
 - A to-do list — if chosen: It lists no real steps; it only says where the owner wants to be.
 - A strategy — if chosen: No line says what is in the way, so there is nothing for a plan to get past.
 
-After the answer: the deciding words are marked. Reason: No line says what is in the way of 800 members; it is a target and three wishes. With nothing to get past and no steps, it is a goal.
+After the answer: the deciding words are marked. Reason: No line says what is in the way of 800 members; it is a target, three wishes and a line about how the gym began. With nothing to get past and no steps, it is a goal.
 
 #### Item 4
 
-Your own note, written after an argument: "Ann’s plan for her gift shop", Written in January.
+A written note: "Ann’s plan for her gift shop", Written in January.
 
 > **Goal for the year: sales up 20%.**
 > So we push harder on getting our name out.
@@ -169,13 +171,13 @@ After the answer: the deciding words are marked. Reason: It lists five steps und
 
 #### Item 5
 
-Your own note, written after an argument: "Ray’s plan for his plumbing business", Written in the spring.
+A written note: "Ray’s plan for his plumbing business", Written in the spring.
 
 > **Launch a new logo and paint it on the vans.**
 > **We lose about one job in four because we cannot reach emergency calls the same day.**
 > **Start selling water heaters online.**
 > Sponsor the high school football team.
-> Raise prices 5%.
+> Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022.
 
 Help on screen: the words that decide it are marked.
 
@@ -185,7 +187,7 @@ Help on screen: the words that decide it are marked.
 - "We lose about one job in four because we cannot reach emergency calls the same day." (right)
 - "Start selling water heaters online." — if tapped: note: That is a step to take, not what is in the way.
 - "Sponsor the high school football team." — if tapped: note: That is a step to take, not what is in the way.
-- "Raise prices 5%." — if tapped: note: That is a step to take, not what is in the way.
+- "Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
 
 **What is this plan?**
@@ -203,7 +205,7 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 6
 
-Your own note, written after an argument: "Grace’s plan for her hair salon", Written in February.
+A written note: "Grace’s plan for her hair salon", Written in February.
 
 > Our mission: make every client feel beautiful.
 > Become the best-loved salon on Main Street.
@@ -229,7 +231,7 @@ After the answer: the deciding words are marked. Reason: It is a mission, a wish
 
 #### Item 7
 
-Your own note, written after an argument: "Omar’s plan for his print shop", Written in September.
+A written note: "Omar’s plan for his print shop", Written in September.
 
 > Online printers undercut us on cards and flyers.
 > Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders.
@@ -251,25 +253,25 @@ Your own note, written after an argument: "Omar’s plan for his print shop", Wr
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The first line says what is in the way, in six words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
+After the answer: the deciding words are marked. Reason: The first line says what is in the way, in a few words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
 
 #### Item 8
 
-Your own note, written after an argument: "Sam’s plan for his food truck", Written in May.
+A written note: "Sam’s plan for his food truck", Written in May.
 
 > Add a breakfast menu.
 > Repaint the truck.
-> On weekdays we sell out by 1 p.m., and the line is so long that about a third of the people in it give up and leave.
+> A third of our weekday line gives up and leaves.
 > Start a loyalty card.
-> Go to the Saturday farmers market.
+> Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Add a breakfast menu." — if tapped: note: That is a step to take, not what is in the way.
 - "Repaint the truck." — if tapped: note: That is a step to take, not what is in the way.
-- "On weekdays we sell out by 1 p.m., and the line is so long that about a third of the people in it give up and leave." (right)
+- "A third of our weekday line gives up and leaves." (right)
 - "Start a loyalty card." — if tapped: note: That is a step to take, not what is in the way.
-- "Go to the Saturday farmers market." — if tapped: note: That is a step to take, not what is in the way.
+- "Go to the Saturday farmers market, because the crowd there is bigger than any weekday lunch we have had." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
 
 **What is this plan?**
@@ -277,11 +279,11 @@ Your own note, written after an argument: "Sam’s plan for his food truck", Wri
 - A to-do list (right)
 - A strategy — if chosen: The steps go in different directions: none of them is a way past the challenge it names.
 
-After the answer: the deciding words are marked. Reason: The line about selling out names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list.
+After the answer: the deciding words are marked. Reason: The line about people leaving the line names the challenge: the truck cannot serve the people already waiting. Breakfast, paint, a loyalty card and a Saturday market do nothing to serve them faster, so it is a to-do list.
 
 #### Item 9
 
-Your own note, written after an argument: "Ruth’s plan for her day care", Written in August.
+A written note: "Ruth’s plan for her day care", Written in August.
 
 > Our vision: the best start in life for every child.
 > Double the number of children we care for by 2028.
@@ -305,7 +307,7 @@ After the answer: the deciding words are marked. Reason: A vision, a target and 
 
 #### Item 10
 
-Your own note, written after an argument: "Tom’s plan for his heating and cooling business", Written in January.
+A written note: "Tom’s plan for his heating and cooling business", Written in January.
 
 > Sales fell 12% last year.
 > Get sales back to where they were.
@@ -339,7 +341,7 @@ To pass:
 
 #### Check question 11
 
-Your own note, written after an argument: "Joe’s plan for his hardware store", Written in March.
+A written note: "Joe’s plan for his hardware store", Written in March.
 
 > Open at 6 a.m. for the contractors.
 > The home center across town carries more stock than we do and sells it all for less.
@@ -365,15 +367,19 @@ After the answer: the deciding words are marked. Reason: The line about the home
 
 #### Check question 12
 
-Your own note, written after an argument: "Lena’s plan for her kitchen remodeling firm", Written in December.
+A written note: "Lena’s plan for her kitchen remodeling firm", Written in December.
 
+> We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.
 > This year we break $1 million in sales.
+> Most of our work comes from people who saw a kitchen we built for a friend or a neighbor.
 > Be the first name people think of for kitchens in the county.
 > Every job done on time, every time.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "This year we break $1 million in sales." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
+- "Most of our work comes from people who saw a kitchen we built for a friend or a neighbor." — if tapped: note: That is background about the business. It says nothing is in the way.
 - "Be the first name people think of for kitchens in the county." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Every job done on time, every time." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - A button: "No line says what is in the way" (right)
@@ -383,13 +389,13 @@ Your own note, written after an argument: "Lena’s plan for her kitchen remodel
 - A to-do list — if chosen: It lists no real steps; it only says where the owner wants to be.
 - A strategy — if chosen: No line says what is in the way, so there is nothing for a plan to get past.
 
-After the answer: the deciding words are marked. Reason: A target and two wishes, and no line says what is in the way of them. It is a goal.
+After the answer: the deciding words are marked. Reason: A target, two wishes and two lines of background about the firm, and no line says what is in the way of the target. It is a goal.
 
 #### Check question 13
 
-Your own note, written after an argument: "Dr. Patel’s plan for her dental office", Written in June.
+A written note: "Dr. Patel’s plan for her dental office", Written in June.
 
-> This year we focus on families with young children.
+> This year we grow on every front at once.
 > Get more five-star reviews online.
 > Buy a new X-ray machine.
 > Offer teeth whitening.
@@ -397,7 +403,7 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "This year we focus on families with young children." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
+- "This year we grow on every front at once." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - "Get more five-star reviews online." — if tapped: note: That is a step to take, not what is in the way.
 - "Buy a new X-ray machine." — if tapped: note: That is a step to take, not what is in the way.
 - "Offer teeth whitening." — if tapped: note: That is a step to take, not what is in the way.
@@ -409,23 +415,23 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 - A to-do list (right)
 - A strategy — if chosen: No line says what is in the way, so the steps have nothing to answer.
 
-After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve; the focus on families answers nothing named. It is a to-do list.
+After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve; growing on every front answers nothing named. It is a to-do list.
 
 #### Check question 14
 
-Your own note, written after an argument: "Mike’s plan for his car wash", Written in April.
+A written note: "Mike’s plan for his car wash", Written in April.
 
 > Add a coffee stand by the exit.
-> Buy new brushes.
+> Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain.
 > Start a TikTok page.
-> In rainy weeks we wash almost no cars, and we still pay the full staff.
+> Rainy weeks bring no cars, but full wages.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Add a coffee stand by the exit." — if tapped: note: That is a step to take, not what is in the way.
-- "Buy new brushes." — if tapped: note: That is a step to take, not what is in the way.
+- "Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain." — if tapped: note: That is a step to take, not what is in the way.
 - "Start a TikTok page." — if tapped: note: That is a step to take, not what is in the way.
-- "In rainy weeks we wash almost no cars, and we still pay the full staff." (right)
+- "Rainy weeks bring no cars, but full wages." (right)
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
 
 **What is this plan?**
@@ -437,7 +443,7 @@ After the answer: the deciding words are marked. Reason: The last line names a r
 
 #### Check question 15
 
-Your own note, written after an argument: "Kim’s plan for her tutoring business", Written in August.
+A written note: "Kim’s plan for her tutoring business", Written in August.
 
 > Free videos now teach what our recorded packs did.
 > So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.
@@ -459,11 +465,11 @@ Your own note, written after an argument: "Kim’s plan for her tutoring busines
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The first line says what is in the way: free videos took the market for recorded lessons. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy.
+After the answer: the deciding words are marked. Reason: The first line says what is in the way: free videos took the market for recorded classes. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy.
 
 #### Check question 16
 
-Your own note, written after an argument: "Carlos’s plan for his diner", Written in January.
+A written note: "Carlos’s plan for his diner", Written in January.
 
 > Profit fell to $40,000 last year.
 > Get profit back to $90,000.

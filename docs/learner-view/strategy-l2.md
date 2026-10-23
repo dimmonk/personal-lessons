@@ -39,7 +39,7 @@ Compare: Both name a challenge, one approach and steps that serve it. Only the s
 
 ## Step 4: A worked example
 
-Your own note, written after an argument: "Notes on our office-cleaning business", Written in November.
+A written note: "Notes on our office-cleaning business", Written in November.
 
 > Three other cleaning firms in town bid for the same office contracts. All four of us use the same products, schedules and checklists.
 > This year we bought faster floor machines and cut our time per office by 15%.
@@ -58,12 +58,12 @@ Then the answer: Within months the other three bought the same machines, and eve
 
 #### Item 1
 
-Your own note, written after an argument: "Notes on our bistro", Written in March.
+A written note: "Notes on our bistro", Written in March.
 
 > Our kitchen has no fixed order for which tickets get cooked first.
 > The two bistros nearby are busier than us on weekends, as they always were.
-> Our food gets good reviews.
-> **A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints.**
+> Our food gets good reviews, but a third of them say it came out cold or late, which is up from one in ten last year.
+> **The two bistros nearby serve our dishes hot.**
 
 Help on screen: the words that decide it are marked.
 
@@ -71,18 +71,18 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our kitchen has no fixed order for which tickets get cooked first." — if tapped: note: That is the cause of the gap. Find the line that shows rivals doing the same work better.
 - "The two bistros nearby are busier than us on weekends, as they always were." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
-- "Our food gets good reviews." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
-- "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints." (right)
+- "Our food gets good reviews, but a third of them say it came out cold or late, which is up from one in ten last year." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
+- "The two bistros nearby serve our dishes hot." (right)
 
 **What does this business need?**
 - Run it better (right)
 - Choose a different position — if chosen: Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.
 
-After the answer: the deciding words are marked. Reason: Two bistros with the same dishes and prices serve them hot and on time, so the gap is in running the kitchen. Running it better fixes it.
+After the answer: the deciding words are marked. Reason: The two bistros nearby serve the same dishes hot, so the gap is in running the kitchen. Running it better fixes it.
 
 #### Item 2
 
-Your own note, written after an argument: "Notes on our bookkeeping firm", Written in June.
+A written note: "Notes on our bookkeeping firm", Written in June.
 
 > We keep the books for about 60 small businesses.
 > This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes.
@@ -106,7 +106,7 @@ After the answer: the deciding words are marked. Reason: The firms the clients m
 
 #### Item 3
 
-Your own note, written after an argument: "Notes on our moving company", Written in April.
+A written note: "Notes on our moving company", Written in April.
 
 > **We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day.**
 > Every moving company in our area quotes the same hourly rate, give or take $5.
@@ -128,11 +128,11 @@ After the answer: the deciding words are marked. Reason: The company already run
 
 #### Item 4
 
-Your own note, written after an argument: "Notes on our pizza shop", Written in September.
+A written note: "Notes on our pizza shop", Written in September.
 
 > Two national chains opened within a mile of us this year.
-> **They sell a large pizza for $8, buying their cheese and flour for 3,000 stores at a time.**
-> **A large pizza costs us $9 to make, and our kitchen wastes as little as anyone’s.**
+> The chains buy their cheese and flour for 3,000 stores at a time, at prices no single shop is offered.
+> **They sell a large pizza for $8; one costs us $9 to make, though our kitchen wastes as little as anyone’s.**
 > Our regulars still come on Fridays.
 
 Help on screen: the words that decide it are marked.
@@ -140,8 +140,8 @@ Help on screen: the words that decide it are marked.
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Two national chains opened within a mile of us this year." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
-- "They sell a large pizza for $8, buying their cheese and flour for 3,000 stores at a time." (right)
-- "A large pizza costs us $9 to make, and our kitchen wastes as little as anyone’s." — if tapped: note: That shows the shop runs well and costs more than the chains charge. The line that settles it says why no amount of running better can reach their price.
+- "The chains buy their cheese and flour for 3,000 stores at a time, at prices no single shop is offered." — if tapped: note: That is how the chains get their cost down. The line that settles it compares their price with what our pizza costs us.
+- "They sell a large pizza for $8; one costs us $9 to make, though our kitchen wastes as little as anyone’s." (right)
 - "Our regulars still come on Fridays." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 
 **What does this business need?**
@@ -158,7 +158,7 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-Your own note, written after an argument: "Notes on our hair salon", Written in May.
+A written note: "Notes on our hair salon", Written in May.
 
 > Our bookings are kept in a paper diary at the front desk.
 > The salon across the street, with the same prices and services, books online and its clients never wait.
@@ -178,7 +178,7 @@ After the answer: the deciding words are marked. Reason: The salon across the st
 
 #### Item 6
 
-Your own note, written after an argument: "Notes on our gym", Written in January.
+A written note: "Notes on our gym", Written in January.
 
 > Three budget gyms opened within a mile this year, at $10 a month.
 > Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10.
@@ -198,27 +198,27 @@ After the answer: the deciding words are marked. Reason: The gym already runs as
 
 #### Item 7
 
-Your own note, written after an argument: "Notes on our roofing company", Written in July.
+A written note: "Notes on our roofing company", Written in July.
 
-> So we fit fewer jobs into the season.
-> We bid on the same jobs as four other roofers, at about the same price.
-> Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site.
+> We bid on the same jobs as four other roofers, at about the same price, and have done for twenty years.
+> Their crews have materials delivered to the site; ours drives back to the yard twice a day.
+> Our jobs take 30% longer than theirs, so we fit fewer jobs into the season and lose money on most fixed-price bids.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "So we fit fewer jobs into the season." — if tapped: note: That is the result. Find the line that says why.
-- "We bid on the same jobs as four other roofers, at about the same price." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
-- "Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site." (right)
+- "We bid on the same jobs as four other roofers, at about the same price, and have done for twenty years." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
+- "Their crews have materials delivered to the site; ours drives back to the yard twice a day." (right)
+- "Our jobs take 30% longer than theirs, so we fit fewer jobs into the season and lose money on most fixed-price bids." — if tapped: note: That is the result. Find the line that says why.
 
 **What does this business need?**
 - Run it better (right)
 - Choose a different position — if chosen: Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.
 
-After the answer: the deciding words are marked. Reason: The other roofers do the same jobs faster by having materials delivered. That is a gap in running the work, and closing it is running it better.
+After the answer: the deciding words are marked. Reason: The other roofers have materials delivered and finish the same jobs faster. That is a gap in running the work, and closing it is running it better.
 
 #### Item 8
 
-Your own note, written after an argument: "Notes on our cafe", Written in October.
+A written note: "Notes on our cafe", Written in October.
 
 > Every cafe on our street now has the same espresso machine, the same oat milk and the same pastries from the same bakery.
 > Our coffee is as good and as quick as theirs.
@@ -238,17 +238,17 @@ After the answer: the deciding words are marked. Reason: Every new thing is copi
 
 #### Item 9
 
-Your own note, written after an argument: "Notes on our print shop", Written in February.
+A written note: "Notes on our print shop", Written in February.
 
 > Our old press breaks down about once a week, and we lose the rush orders that were on it.
-> Every other shop in town runs a newer press for the same kind of work, and none of them misses rush orders.
-> Our prices are the same as theirs.
+> No other shop in town misses rush orders: they all run newer presses.
+> Our prices are the same as theirs, and our regular customers say they would rather stay with us if we could promise the rush jobs.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our old press breaks down about once a week, and we lose the rush orders that were on it." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
-- "Every other shop in town runs a newer press for the same kind of work, and none of them misses rush orders." (right)
-- "Our prices are the same as theirs." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "No other shop in town misses rush orders: they all run newer presses." (right)
+- "Our prices are the same as theirs, and our regular customers say they would rather stay with us if we could promise the rush jobs." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 
 **What does this business need?**
 - Run it better (right)
@@ -264,11 +264,11 @@ Then a screen: you can stop here, your place is kept.
 
 To pass:
 - At least 5 right
-- None took running the business better for a strategy
+- None thought running the business better would fix what needs a different position
 
 #### Check question 10
 
-Your own note, written after an argument: "Notes on our dental office", Written in March.
+A written note: "Notes on our dental office", Written in March.
 
 > Patients complain that our bills are wrong: one bill in five needs fixing.
 > The other dental offices in town fill in the same insurance forms and rarely get a bill wrong.
@@ -288,17 +288,17 @@ After the answer: the deciding words are marked. Reason: Other offices fill in t
 
 #### Check question 11
 
-Your own note, written after an argument: "Notes on our flower shop", Written in February.
+A written note: "Notes on our flower shop", Written in February.
 
 > Supermarkets now sell a dozen roses for $12.
 > A dozen roses costs us $15, and our buying and our waste are already as low as any florist’s.
-> Valentine’s Day sales fell by half this year.
+> Valentine’s Day sales fell by half this year, and the office lobby flowers we did every Monday went to a supermarket too.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Supermarkets now sell a dozen roses for $12." — if tapped: note: That names rivals, but only as background: it does not say whether they do the same work better.
 - "A dozen roses costs us $15, and our buying and our waste are already as low as any florist’s." (right)
-- "Valentine’s Day sales fell by half this year." — if tapped: note: That is the result. The line that settles it says whether running better would help.
+- "Valentine’s Day sales fell by half this year, and the office lobby flowers we did every Monday went to a supermarket too." — if tapped: note: That is the result. The line that settles it says whether running better would help.
 
 **What does this business need?**
 - Run it better — if chosen: It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind.
@@ -308,27 +308,27 @@ After the answer: the deciding words are marked. Reason: The shop already buys a
 
 #### Check question 12
 
-Your own note, written after an argument: "Notes on our delivery business", Written in August.
+A written note: "Notes on our delivery business", Written in August.
 
-> Our vans drive about 25% more miles a day than they need to.
+> Our vans drive about 25% more miles a day than they need to, so fuel and drivers’ overtime now take most of what a delivery earns.
 > Our drivers plan their own stops on paper.
-> The other couriers in town use software that plans the stops, and deliver the same parcels with fewer miles.
+> Rival couriers let software plan their stops.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Our vans drive about 25% more miles a day than they need to." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
+- "Our vans drive about 25% more miles a day than they need to, so fuel and drivers’ overtime now take most of what a delivery earns." — if tapped: note: That is the problem. Find the line that shows whether rivals do the same work better.
 - "Our drivers plan their own stops on paper." — if tapped: note: That is the cause. Find the line that shows rivals doing the same work better.
-- "The other couriers in town use software that plans the stops, and deliver the same parcels with fewer miles." (right)
+- "Rival couriers let software plan their stops." (right)
 
 **What does this business need?**
 - Run it better (right)
 - Choose a different position — if chosen: Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.
 
-After the answer: the deciding words are marked. Reason: Rivals deliver the same parcels with fewer miles by planning the stops with software. That is a gap in running the business, so running it better fixes it.
+After the answer: the deciding words are marked. Reason: Rivals plan the same kind of stops with software and drive fewer miles. That is a gap in running the business, so running it better fixes it.
 
 #### Check question 13
 
-Your own note, written after an argument: "Notes on our tax-prep office", Written in May.
+A written note: "Notes on our tax-prep office", Written in May.
 
 > Some of our returns go out a day or two late; the other tax offices in town are always on time.
 > The 40 clients who left this year all moved to tax software at $60 a return, less than a simple return costs us to do however fast we work.
@@ -348,7 +348,7 @@ After the answer: the deciding words are marked. Reason: The late returns are a 
 
 #### Check question 14
 
-Your own note, written after an argument: "Notes on our cafe", Written in September.
+A written note: "Notes on our cafe", Written in September.
 
 > Every cafe on our street copies a new drink within a month.
 > Our sales fell 20% this year, while the other cafes on the street held theirs.
@@ -368,15 +368,15 @@ After the answer: the deciding words are marked. Reason: Copying hits every cafe
 
 #### Check question 15
 
-Your own note, written after an argument: "Notes on our taxi company", Written in April.
+A written note: "Notes on our taxi company", Written in April.
 
-> Ride apps now take most short trips in town.
+> Ride apps now take most short trips in town, and two of the four taxi firms that were here five years ago have closed.
 > Our cars are as clean and our drivers as quick as any app driver.
 > The apps charge riders less per mile than it costs us to run a car, and every price we have cut they have matched.
 
 **Tap the line that settles it.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Ride apps now take most short trips in town." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
+- "Ride apps now take most short trips in town, and two of the four taxi firms that were here five years ago have closed." — if tapped: note: That is background. Look for the line that says whether rivals do the same work better.
 - "Our cars are as clean and our drivers as quick as any app driver." — if tapped: note: That shows the company runs well. Find what no amount of running better can reach.
 - "The apps charge riders less per mile than it costs us to run a car, and every price we have cut they have matched." (right)
 

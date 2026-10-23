@@ -129,7 +129,7 @@ A plain table, "Wi-Fi analyzer, conference room, 2.4 GHz band":
 > Studio5  |  6  |  Medium
 > NetHome-77  |  7  |  Medium
 
-Your own note, written after an argument: "Your notes", On the desk.
+A written note: "Your notes", On the desk.
 
 > The router offers a 2.4 GHz name and a 5 GHz name, and Rosa’s laptop can use both. A wall jack in the room goes to the same switch as the office.
 
@@ -212,7 +212,7 @@ A chat, with its history: "Marta, Accounting", Chat with the help desk.
 
 > (Marta, Accounting, at the left) We start in the new office on Monday. The router is plugged in and everything works. Can you check it is safe to use?
 
-Your own note, written after an argument: "The new router", Its settings as it came out of the box.
+A written note: "The new router", Its settings as it came out of the box.
 
 > **Router login: name admin, password admin (the maker’s default for this model)**
 > **Wi-Fi encryption: None, anyone can join**

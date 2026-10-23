@@ -165,7 +165,7 @@ After the answer: Reason: Two drives that must survive one failing is RAID 1, a 
 
 #### Item 4
 
-Your own note, written after an argument: "Message from Kasia", Chat · 11:20 AM.
+A written note: "Message from Kasia", Chat · 11:20 AM.
 
 > **My laptop’s hard drive started to grind and click this morning. I have the whole budget file on it, and no copy.**
 
@@ -269,7 +269,7 @@ A NAS is a storage box on the office network that holds several drives. The cont
 
 This desk’s rule: hand on any array fault that is still open after 20 minutes.
 
-Your own note, written after an argument: "Ticket", Office NAS.
+A written note: "Ticket", Office NAS.
 
 > After a power cut, the file server shows no storage. The array is missing. All four drives show in the controller.
 
@@ -283,7 +283,7 @@ After the answer: the deciding words are marked. Reason: A missing array with al
 
 #### Item 11
 
-Your own note, written after an argument: "Ticket", Fritz’s workstation.
+A written note: "Ticket", Fritz’s workstation.
 
 > Two drives in RAID 0 for fast video work. One drive reports a S.M.A.R.T. warning. The array still works.
 
@@ -398,7 +398,7 @@ After the answer: Reason: RAID 6 gives up two drives’ worth of space to parity
 
 #### Check question 19
 
-Your own note, written after an argument: "Ticket", Laptop, 95% full.
+A written note: "Ticket", Laptop, 95% full.
 
 > Computer very slow for a month. The drive’s S.M.A.R.T. report (its built-in self-check) says: failing.
 > The user has the only copy of a thesis on it.
@@ -413,7 +413,7 @@ After the answer: the deciding words are marked. Reason: The S.M.A.R.T. report i
 
 #### Check question 20
 
-Your own note, written after an argument: "Ticket", Small office server, RAID 1.
+A written note: "Ticket", Small office server, RAID 1.
 
 > The server beeps every minute. A red light shows on drive bay 2 (the slot that drive slides into). Everything still works, so the owner wants to ignore it until Monday.
 > The last backup ran three weeks ago.
@@ -435,7 +435,7 @@ A plain table, "Firmware setup screen":
 > Internal SSD  |  Not listed
 > USB flash drive (holds only photos)  |  Listed
 
-Your own note, written after an argument: "Ticket", Desktop, no bootable device found.
+A written note: "Ticket", Desktop, no bootable device found.
 
 > The firmware does not list the internal SSD.
 > The SSD’s data cable and power connector were reseated, and then a cable known to work was tried. The SSD is still not listed.

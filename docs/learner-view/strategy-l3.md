@@ -5,13 +5,14 @@ Revision 1, draft (the screen carries the draft line). Part: Value created, and 
 ## The why
 
 Every sale creates some value: the gap between what the thing is worth to the customer and what it takes to make it. Price only decides who keeps which part.
-Harvard Business School’s strategy course is built on this picture. Here you learn to work out the value of a sale and each side’s share, and to tell a move that makes more value from one that only takes it from someone else, or costs more than it is worth.
+A Harvard strategy professor built his course on this picture. Here you learn to work out the value of a sale and each side’s share, and to tell a move that makes more value from one that only takes it from someone else, or costs more than it is worth.
 
 ## Step 1: Four numbers for one sale
 
 Line up four numbers for one sale, from the top down.
 The most a customer would pay: what it is worth to them. The price: what they do pay. The cost: what you pay your suppliers and staff to make it. The least your suppliers and staff would take: below that, they would not sell to you or work for you.
 The cost and the least they would take are not the same: a cleaner paid $20 an hour who would have worked for $17 keeps $3 an hour more than she needed.
+In real life you estimate the two ends. For the most a customer would pay, put the question to customers, watch what they pay a rival for something like it, or try a higher price on a few. For the least staff would take, look at what the same work pays nearby; for a supplier, at what its other buyers pay.
 The value created is the most a customer would pay less the least suppliers and staff would take. It is split three ways. The customer keeps the most they would pay less the price. The business keeps the price less the cost. Suppliers and staff keep the cost less the least they would take.
 Why it matters: a business that only fights over the split takes from its customers or its suppliers, and they notice. A business that makes the whole stick longer has more to share, and more to keep.
 
@@ -148,6 +149,7 @@ To judge a move, see which ends of the stick it moves, and by how much. The cust
 It grows the value when it raises what customers would pay by more than it adds to the work, or when it lowers what suppliers and staff would take.
 It shrinks the value when it adds more to the work than customers would pay for it.
 If it changes only the price or the cost paid, and both ends stay where they were, it only moves value from one side to another.
+A supplier paid less is the place to look twice. If you pushed it to take less, it would still have taken the old amount: its end of the stick did not move, and the value only moved. If something changed for it (a steady order saves it costs, a schedule staff like), so that it is now as well off with less, its end moved down, and the value grew.
 
 | A | B |
 |---|---|
@@ -161,7 +163,7 @@ Compare: Both can bring more money per cake. Only the second makes the cake wort
 
 #### Item 4
 
-Your own note, written after an argument: "Notes on Dana’s bakery", Written in May.
+A written note: "Notes on Dana’s bakery", Written in May.
 
 > We started printing the child’s own photo on birthday cakes, in icing.
 > **Parents tell us they would now pay up to $15 more for a cake like that.**
@@ -179,7 +181,7 @@ After the answer: the deciding words are marked. Reason: Parents would pay up to
 
 #### Item 5
 
-Your own note, written after an argument: "Notes on Dana’s bakery", Written in July.
+A written note: "Notes on Dana’s bakery", Written in July.
 
 > We started putting gold leaf on every birthday cake.
 > **Parents say it makes a cake worth about $4 more to them.**
@@ -196,7 +198,7 @@ After the answer: the deciding words are marked. Reason: Parents would pay about
 
 #### Item 6
 
-Your own note, written after an argument: "Notes on our cleaning business", Written in July.
+A written note: "Notes on our cleaning business", Written in July.
 
 > Our cleaners asked for a fixed four-day week, and we started it.
 > **Two cleaners who were about to leave for jobs with fixed hours now say they will stay, at the same pay.**
@@ -213,7 +215,7 @@ After the answer: the deciding words are marked. Reason: Cleaners who would have
 
 #### Item 7
 
-Your own note, written after an argument: "Notes on Dana’s bakery", Written in June.
+A written note: "Notes on Dana’s bakery", Written in June.
 
 > We told our flour mill we would leave unless it cut its price by $20 a ton, and it did.
 > **The mill’s own costs did not change, and it still sells to us; it just earns $20 less on each ton.**
@@ -229,7 +231,7 @@ After the answer: the deciding words are marked. Reason: The mill would have tak
 
 #### Item 8
 
-Your own note, written after an argument: "Notes on Grace’s salon", Written in March.
+A written note: "Notes on Grace’s salon", Written in March.
 
 > We raised the price of a haircut from $30 to $35.
 > **Nothing about the haircut changed, and clients would pay at most what they always would, about $40.**
@@ -321,7 +323,7 @@ The working:
 
 #### Item 11
 
-Your own note, written after an argument: "Notes on Dana’s bakery", Written in September.
+A written note: "Notes on Dana’s bakery", Written in September.
 
 > We agreed to buy all our flour from one mill on a fixed weekly order.
 > The mill says the steady order saves it so much that it would sell to us for $20 a ton less and be just as well off.
@@ -337,21 +339,22 @@ After the answer: the deciding words are marked. Reason: The steady order lowers
 
 #### Item 12
 
-Your own note, written after an argument: "Notes on Leo’s bike shop", Written in April.
+A written note: "Notes on Leo’s bike shop", Written in April.
 
 > We started Half-Price Tuesdays: the same repairs, at half the price.
 > Same mechanics, same parts, same work; a repair is worth to customers just what it was.
+> The same customers come on Tuesdays as before; no new ones.
 
 **What does the move do to the value created?**
 - It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
 - It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
-After the answer: the deciding words are marked. Reason: What customers would pay and what the work takes are the same. Half the price moves value from the shop to the customer on Tuesdays.
+After the answer: the deciding words are marked. Reason: What customers would pay and what the work takes are the same, and no new customers come. Half the price moves value from the shop to the customer on Tuesdays.
 
 #### Item 13
 
-Your own note, written after an argument: "Notes on Leo’s bike shop", Written in August.
+A written note: "Notes on Leo’s bike shop", Written in August.
 
 > Every repair now comes with a six-month guarantee.
 > Our price is the same.
@@ -367,7 +370,7 @@ After the answer: the deciding words are marked. Reason: A repair with a guarant
 
 #### Item 14
 
-Your own note, written after an argument: "Notes on Leo’s bike shop", Written in October.
+A written note: "Notes on Leo’s bike shop", Written in October.
 
 > We now wash and polish every bike after a repair.
 > It takes a mechanic about 20 minutes, which costs us about $8 a bike.
@@ -382,17 +385,17 @@ After the answer: the deciding words are marked. Reason: Customers would pay abo
 
 #### Item 15
 
-Your own note, written after an argument: "Notes on our cleaning business", Written in February.
+A written note: "Notes on our cleaning business", Written in February.
 
 > We cut the cleaners’ pay by $1 an hour.
-> The work and the hours are the same, and all of the cleaners stayed.
+> The work and the hours are the same, and the other cleaning jobs nearby pay what they did, so nothing changed what the cleaners would accept.
 
 **What does the move do to the value created?**
 - It grows the value — if chosen: Only the price or the cost paid changed; what customers would pay and the least suppliers and staff would take stayed where they were, so the value is the same and has gone to another side.
 - It only moves value from one side to another (right)
 - It shrinks the value — if chosen: Nothing was added to the work and what customers would pay is the same: the value has only moved to another side.
 
-After the answer: the deciding words are marked. Reason: The work is the same, so the least the cleaners would take did not fall; their pay was cut. The $1 an hour moved from the staff to the business.
+After the answer: the deciding words are marked. Reason: Nothing changed what the cleaners would accept; only their pay was cut, so $1 an hour moved from the staff to the business.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -511,7 +514,7 @@ The working:
 
 #### Check question 19
 
-Your own note, written after an argument: "Notes on our catering business", Written in March.
+A written note: "Notes on our catering business", Written in March.
 
 > We now deliver every order on trays the office can throw away, so nobody has to clean up.
 > The trays cost us about $6 a party.
@@ -527,7 +530,7 @@ After the answer: the deciding words are marked. Reason: Office managers would p
 
 #### Check question 20
 
-Your own note, written after an argument: "Notes on Rosa’s grooming van", Written in May.
+A written note: "Notes on Rosa’s grooming van", Written in May.
 
 > We added a $5 booking fee to every visit.
 > The visit is the same, and owners would pay at most what they always would.
@@ -541,7 +544,7 @@ After the answer: the deciding words are marked. Reason: The visit and what owne
 
 #### Check question 21
 
-Your own note, written after an argument: "Notes on Kim’s tutoring business", Written in October.
+A written note: "Notes on Kim’s tutoring business", Written in October.
 
 > Our tutors now pick their own hours each week.
 > Our price per hour is the same, and the booking takes the office no more time.
@@ -556,7 +559,7 @@ After the answer: the deciding words are marked. Reason: With hours they choose,
 
 #### Check question 22
 
-Your own note, written after an argument: "Notes on Rosa’s grooming van", Written in December.
+A written note: "Notes on Rosa’s grooming van", Written in December.
 
 > Every dog now leaves with a new bandana and a printed photo.
 > Owners say it is cute, worth about $2 to them.

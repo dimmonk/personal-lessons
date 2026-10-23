@@ -12,11 +12,12 @@ Strategists check first whether the growth serves the core or pulls away from it
 Start from the core: what the business does that customers come to it for, and that earns it the most. A line that earns well but that customers could get anywhere is not the core.
 Then put one question to the offer: does it serve the same kind of customer, with the same activities?
 Yes: the same kind of customer in a new place, more of what the core’s customers already want, done by the same people the same way. It deepens the core.
-No: it needs different activities (a night shift, a factory line, other hours, other staff) or a different kind of customer. It blurs the position: the business stops being clearly one thing, and the core gets less of everyone’s time.
+No: it needs different activities (a night shift, a factory line, other hours, other skills) or a different kind of customer. It blurs the position: the business stops being clearly one thing, and the core gets less of everyone’s time.
+Count kinds, not heads. A new van or a new hire doing the same work for the same kind of customer still deepens; the same people doing other work for another kind of customer still blurs.
 The money in the offer does not decide it. Why it matters: once a business is two things, each new offer looks like the last, and the core that earned the money gets crowded out.
 
 A wrong idea, marked wrong: “More sales is always good. We can sort out the rest later.”
-The right line: Maytag, the appliance maker, grew its sales about five times between 1985 and 1994 by adding product lines and buying other brands. By 1995 its profit on each dollar of sales had fallen from 8 to 12 cents to under 1 cent. Judge growth by what it does to the core, not by the sales it adds.
+The right line: Maytag, the appliance maker, grew its sales about five times between 1985 and 1994 by adding product lines and buying other brands. Its profit on each dollar of sales, 8 to 12 cents in the 1970s and 1980s, averaged under 1 cent from 1989 to 1995. Judge growth by what it does to the core, not by the sales it adds.
 
 ## Step 2: Two offers to a bakery
 
@@ -28,7 +29,7 @@ Compare: Both bring more sales. The first brings more of the customers the core 
 
 ## Step 3: A worked example
 
-Your own note, written after an argument: "Dana’s notes on an offer", Written in April.
+A written note: "Dana’s memo on an offer", Written in April.
 
 > Wedding cakes are what couples come to us for, and they earn the most of anything we make.
 > A supermarket chain wants to buy 2,000 plain sheet cakes a week for its stores.
@@ -53,11 +54,11 @@ Then the answer: It blurs the position. The core is wedding cakes made for each 
 
 #### Item 1
 
-Your own note, written after an argument: "Luis’s notes on an offer", Written in January.
+A written note: "Luis’s memo on an offer", Written in January.
 
 > **Garden design, with one crew that knows each garden, earns us the most, and it is why customers pick us.**
-> The city has asked us to bid on mowing its 40 parks, a three-year contract worth $900,000.
-> **The lowest bid wins; we would need six new crews and big mowers, and our designers would run the crews.**
+> The power company has asked us to bid on clearing trees along its lines, a three-year contract worth $900,000.
+> **The lowest bid wins; we would need climbing crews and bucket trucks, and our designers would run the crews.**
 
 Help on screen: the words that decide it are marked.
 
@@ -65,11 +66,11 @@ Help on screen: the words that decide it are marked.
 - It deepens the core — if chosen: It needs different activities or a different kind of customer, so it pulls the business away from its core, whatever it adds to sales.
 - It blurs the position (right)
 
-After the answer: the deciding words are marked. Reason: The core is garden design by crews who know each garden. Park mowing is won on the lowest bid, with new crews and machines, run by the designers: different activities for a different customer. It blurs the position.
+After the answer: the deciding words are marked. Reason: The core is garden design by crews who know each garden. Clearing trees for the power company is won on the lowest bid, with climbing crews and bucket trucks, run by the designers: different activities for a different customer. It blurs the position.
 
 #### Item 2
 
-Your own note, written after an argument: "Kim’s notes on an offer", Written in August.
+A written note: "Kim’s memo on an offer", Written in August.
 
 > **Tutoring for the state math exams is what parents come to us for, and it earns the most.**
 > **A chain of private schools wants us to run its after-school homework club, every subject, ages 6 to 12.**
@@ -85,7 +86,7 @@ After the answer: the deciding words are marked. Reason: The core is exam tutori
 
 #### Item 3
 
-Your own note, written after an argument: "Leo’s notes on an offer", Written in March.
+A written note: "Leo’s memo on an offer", Written in March.
 
 > Fitting and tuning race bikes by hand is why racers come to us, and it earns the most.
 > **A maker of race wheels wants us to be its dealer here; our racers already ask for its wheels.**
@@ -102,11 +103,11 @@ After the answer: the deciding words are marked. Reason: The racers already want
 
 #### Item 4
 
-Your own note, written after an argument: "Leo’s notes on an offer", Written in May.
+A written note: "Leo’s memo on an offer", Written in May.
 
 > Fitting and tuning race bikes by hand is why racers come to us, and it earns the most.
 > **A toy chain wants to rent half our floor for kids’ bikes and scooters, run by its own staff.**
-> It would pay us $30,000 a year, more than our wheel sales.
+> It would pay us $30,000 a year in rent.
 
 Help on screen: the words that decide it are marked.
 
@@ -124,7 +125,7 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-Your own note, written after an argument: "Rosa’s notes on a plan", Written in June.
+A written note: "Rosa’s memo on a plan", Written in June.
 
 > Calm grooming at home for old and nervous dogs is what owners come to us for, and it earns the most.
 > A vet in the next town says many of her clients have nervous dogs and no groomer will take them.
@@ -139,7 +140,7 @@ After the answer: the deciding words are marked. Reason: The new town has the sa
 
 #### Item 6
 
-Your own note, written after an argument: "Carlos’s notes on an offer", Written in September.
+A written note: "Carlos’s memo on an offer", Written in September.
 
 > Five tacos in two minutes for factory workers at lunch is what we are known for, and it earns the most.
 > The airport offers us a counter in the main hall, open 18 hours a day.
@@ -153,7 +154,7 @@ After the answer: the deciding words are marked. Reason: A 30-dish menu and seat
 
 #### Item 7
 
-Your own note, written after an argument: "Omar’s notes on an offer", Written in February.
+A written note: "Omar’s memo on an offer", Written in February.
 
 > Same-day court papers for law firms are why firms use us, and they earn the most.
 > A law firm in the next city wants the same service, and the courthouse there is 20 minutes from our shop.
@@ -167,7 +168,7 @@ After the answer: the deciding words are marked. Reason: Another law firm wants 
 
 #### Item 8
 
-Your own note, written after an argument: "Tom’s notes on an offer", Written in October.
+A written note: "Tom’s memo on an offer", Written in October.
 
 > Advice and odd parts for builders, from 6 a.m., are why builders come to us, and they earn the most.
 > A developer offers us a big store in a new mall, open 10 a.m. to 9 p.m., for people fixing up their homes.
@@ -181,17 +182,17 @@ After the answer: the deciding words are marked. Reason: Mall hours and home sho
 
 #### Item 9
 
-Your own note, written after an argument: "Jill’s notes on a plan", Written in July.
+A written note: "Jill’s memo on a plan", Written in July.
 
 > Care from 5 a.m. to 9 p.m. for parents on hospital shifts is what families come to us for, and it earns the most.
 > A second hospital across town has 600 nurses and no daycare near it.
-> We would open next to it with the same hours, meals and shift staff.
+> We would open next to it with the same hours and meals, and hire eight new staff for the early and late shifts.
 
 **Does this growth keep the position?**
 - It deepens the core (right)
 - It blurs the position — if chosen: It serves the same kind of customer with the same activities, so it makes the core bigger rather than pulling away from it.
 
-After the answer: the deciding words are marked. Reason: The second hospital has the same kind of parent, and the new place would run the same way. It deepens the core, in a new place.
+After the answer: the deciding words are marked. Reason: The second hospital has the same kind of parent, and the new place would run the same way; the new hires do the same shift work. It deepens the core, in a new place.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -205,7 +206,7 @@ To pass:
 
 #### Check question 10
 
-Your own note, written after an argument: "Mark’s notes on an offer", Written in January.
+A written note: "Mark’s memo on an offer", Written in January.
 
 > Heavy training with coaches on the floor is why lifters pay us $60 a month, and it earns the most.
 > A budget gym chain offers to make us one of its gyms, with its sign and its $10 plan.
@@ -219,11 +220,11 @@ After the answer: the deciding words are marked. Reason: The chain’s $10 plan 
 
 #### Check question 11
 
-Your own note, written after an argument: "Nina’s notes on a plan", Written in March.
+A written note: "Nina’s memo on a plan", Written in March.
 
 > Finding and valuing rare first editions for collectors is why they travel to us, and it earns the most.
 > Collectors in other states write to ask what we have.
-> We would list our rare books online, each with the same written note on its history and condition, and ship them insured.
+> We would list our rare books online, each with the same written note on its history and condition, ship them insured, and hire a second book valuer.
 
 **Does this growth keep the position?**
 - It deepens the core (right)
@@ -233,7 +234,7 @@ After the answer: the deciding words are marked. Reason: The online buyers are c
 
 #### Check question 12
 
-Your own note, written after an argument: "Ray’s notes on an offer", Written in May.
+A written note: "Ray’s memo on an offer", Written in May.
 
 > Fast leak fixes for restaurants at any hour are why restaurants call us, and they earn the most.
 > A home builder wants us to plumb its 300 new houses a year, at a fixed price per house.
@@ -247,21 +248,21 @@ After the answer: the deciding words are marked. Reason: Plumbing new houses on 
 
 #### Check question 13
 
-Your own note, written after an argument: "Hal’s notes on an offer", Written in August.
+A written note: "Hal’s memo on an offer", Written in August.
 
 > Moving pianos with nothing damaged is why owners pay us double, and it earns the most.
-> A piano maker wants us to deliver every new piano it sells in the state, from its warehouse to homes and stores.
+> Three piano stores want us to deliver what their customers buy, each owner paying our own rate.
 > Our crews, ramps and insurance would do the work as they do now; we would add one truck.
 
 **Does this growth keep the position?**
 - It deepens the core (right)
 - It blurs the position — if chosen: It serves the same kind of customer with the same activities, so it makes the core bigger rather than pulling away from it.
 
-After the answer: the deciding words are marked. Reason: New pianos need the same careful crews, gear and insurance, for customers who care about the piano. It deepens the core.
+After the answer: the deciding words are marked. Reason: The stores’ buyers are piano owners paying Hal’s own rate, served by the same careful crews, gear and insurance; the extra truck does the same work. It deepens the core.
 
 #### Check question 14
 
-Your own note, written after an argument: "Priya’s notes on an offer", Written in November.
+A written note: "Priya’s memo on an offer", Written in November.
 
 > A quiet seat to work all day on Mondays and Fridays is why people come to us, and it earns the most.
 > The hotel next door wants us to run its breakfast buffet for 200 guests, every morning.
@@ -275,17 +276,17 @@ After the answer: the deciding words are marked. Reason: A hotel buffet needs a 
 
 #### Check question 15
 
-Your own note, written after an argument: "Ben’s notes on an offer", Written in June.
+A written note: "Ben’s memo on an offer", Written in June.
 
 > Repairing older cars the dealers will not touch is why owners come to us, and it earns the most.
-> An old-car club wants us as its members’ repair shop, and would send owners from three counties.
-> The same mechanics and parts would do the work; we would book further ahead.
+> A delivery company wants us to service its 60 new vans, each in and out within a day, at a fixed price per van.
+> The same mechanics would do it, between our usual repairs; we would stock parts for this year’s vans.
 
 **Does this growth keep the position?**
-- It deepens the core (right)
-- It blurs the position — if chosen: It serves the same kind of customer with the same activities, so it makes the core bigger rather than pulling away from it.
+- It deepens the core — if chosen: It needs different activities or a different kind of customer, so it pulls the business away from its core, whatever it adds to sales.
+- It blurs the position (right)
 
-After the answer: the deciding words are marked. Reason: The club’s members own older cars too, served by the same mechanics and parts. Same customer, same activities: it deepens the core.
+After the answer: the deciding words are marked. Reason: The same mechanics would do it, but for a fleet of new vans on a fixed price and a one-day turn: a different customer and different work from older cars kept running. It blurs the position.
 
 ## The result
 

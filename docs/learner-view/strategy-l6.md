@@ -4,40 +4,42 @@ Revision 1, draft (the screen carries the draft line). Part: What you say no to.
 
 ## The why
 
-When a rival does well, the easy move is to offer what it offers too, and keep everything you already do. It feels safe: nobody is turned away.
-Strategists see it as the usual way a good position is lost. Here you learn to find what a move gives up, and to tell a real choice from a move that tries to be two businesses at once.
+When a rival does well, the easy move is to offer what it offers too and keep everything else. It feels safe.
+Strategists see it as the usual way a good position is lost. Here you learn to tell when new work pulls against the old, and a real choice from a move that tries to be two businesses at once.
 
-## Step 1: What does the move give up?
+## Step 1: Does the new work pull against the old?
 
-Some things pull against each other. A gym full of coaches cannot also be the cheapest gym; a shop that waits for rush orders cannot fill its press with walk-in jobs.
-So when a business reaches for what another kind of business offers, or for a new kind of customer, put one question to it: what does it give up to do it?
-A real trade-off gives up the thing that pulls the other way, so the business serves the customers it chose better. It costs some sales, and the notes say which.
-A straddle gives up nothing. Both ways run at once on the same people, floor or kitchen, so the business pays the costs of both and serves neither fully. Trying to serve every kind of customer at once is the same mistake.
-Early sales from the new offer do not change the answer: they show it sells, not that anything was chosen.
+When a business adds something, a new offer, a new kind of customer, a rival’s idea, put one question to it: does the new work pull against what the position needs?
+Two activities pull against each other when doing more of one means less of the other: the same people, hours, room or promise would have to serve opposite ends at once. A two-minute taco line and plates made to order need the same cook at the same noon. A quiet room for work and live music need the same tables on the same days.
+No pull: the new work serves the same customers the same way, or fills hours the core leaves idle. It fits beside the old work, and nothing has to go.
+A pull, and the business drops one side: a real trade-off. It serves the side it kept better, whatever the side it dropped was worth.
+A pull, and the business keeps both: a straddle. It pays for both ways and serves neither fully. Trying to serve every kind of customer at once is the same mistake. Trimming a piece here and there while still serving both is still a straddle.
+What does not decide it: whether the move copies a rival (a business can copy a rival and still choose), how much the dropped side was worth, and early sales from the new offer.
+This sorts the move; whether it is wise is judged later.
 Why it matters: a rival can copy anything you add without giving something up. What you chose not to do is what a rival would have to give up to copy you.
 
 A wrong idea, marked wrong: “Why turn anyone away? We will offer both and keep everyone.”
-The right line: Offering both means paying for both, on the same people and space, so neither kind of customer gets the best of you. A strategy chooses, and says what it will not do.
+The right line: Where the two pull against each other, offering both means paying for both, and neither kind of customer gets your best. Where there is a pull, choose a side.
 
 ## Step 2: Two airlines
 
 | A | B |
 |---|---|
-| Southwest Airlines chose not to offer some of what full-service airlines offer, to fly cheaply and often. Its choices fit together, and it did well. | Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights, while keeping its travel agents, its mix of planes and its full service. It did not work. |
+| Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well. | Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily. |
 
-Compare: What did each give up? Southwest gave up parts of full service. Continental gave up nothing, so it paid for both ways at once and matched Southwest on neither cost nor service.
+Compare: Both cut something. Southwest dropped one side of the pull. Continental cut a few pieces but kept running both ways at once, so it paid for both and matched Southwest on neither cost nor service: a straddle.
 
 ## Step 3: Two moves for one bakery
 
 | A | B |
 |---|---|
-| Dana stops selling everyday bread on price and moves her bread baker to cakes made to order. She keeps only three loaves for her regulars. | Dana adds full catering for parties, like the caterers in town, with the same bakers and every bread and cake still on offer. |
+| Dana stops selling everyday bread on price and moves her bread baker to cakes made to order. She keeps only three loaves for her regulars. | Dana adds full catering for Saturday parties, with the same bakers who make the Saturday cakes, and every bread and cake still on offer. |
 
-Compare: Both reach for something new. The first gives up most of the bread to do cakes well: a trade-off. The second gives up nothing: a straddle.
+Compare: Both reach for something new, and in both the new work pulls on the same bakers. The first drops most of the bread: a trade-off. The second keeps everything: a straddle.
 
 ## Step 4: A worked example
 
-Your own note, written after an argument: "Mark’s notes on his gym", Written in February.
+A written note: "Mark’s plan for his gym", Written in February.
 
 > Our gym is for serious lifters: heavy racks, coaches on the floor all day, $60 a month.
 > A $10-a-month budget gym opened down the road and 40 of our members left for it.
@@ -45,161 +47,216 @@ Your own note, written after an argument: "Mark’s notes on his gym", Written i
 > The coaches, the $60 plan and every rack stay, and both kinds of member share the same floor at the same hours.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**What does this move give up, and so what is it?**
-- A real trade-off
-- A straddle: copying while keeping the old way
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up
+- A straddle: both sides of the pull kept at once
+- No pull: the new work fits beside the old
 
 The working, one step at a time:
-1. Find what the move reaches for.: The $15 plan with no coaching is the budget gym’s offer, for a new kind of customer: people who want a cheap gym.
-1. Find what it gives up to do it.: Nothing: the coaches, the $60 plan and the racks all stay, on the same floor at the same hours. The 80 sign-ups say the plan sells, not that anything was chosen.
-1. Decide.: The gym pays for coaches the $15 members do not use, and its lifters now share a crowded floor. It keeps both ways at once: a straddle.
+1. Find the new work.: A $15 plan with no coaching, for people who want a cheap gym.
+1. Does it pull against what the position needs?: Yes. Lifters pay for room at the racks and a coach’s eye; a cheap plan pays only if the floor is packed and nobody is paid to coach. The same floor and the same hours would have to do both.
+1. Which side goes?: Neither: the coaches, the racks and the $60 plan all stay beside the $15 plan. The 80 sign-ups say the plan sells, not that anything was chosen. Both sides kept: a straddle.
 
-Then the answer: A straddle: copying while keeping the old way. The gym added the budget gym’s offer and gave up nothing of its own way: coaches, racks and the $60 plan stay on the same floor. It carries the costs of both and serves neither fully, so it is a straddle, however well the plan sold in its first month.
+Then the answer: A straddle: both sides of the pull kept at once. A packed cheap floor and coached lifting need the same floor at the same hours for opposite ends, and Mark kept both. He pays for coaches the $15 members do not use and crowds his lifters: a straddle, however well the plan sold in its first month.
 
 ## Step 5: Questions
 
-4 questions, listed, with help (shown), with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+5 questions, listed, with help (shown), with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 1
 
-Your own note, written after an argument: "Ana’s notes on her flower shop", Written in September.
+A written note: "Ana’s plan for her flower shop", Written in September.
 
 > We do flowers for weddings, each one planned with the couple over months.
 > **The supermarket sells cheap bunches, so we now sell $10 bunches by the door too.**
-> **The same two florists plan the weddings and make the bunches, in the same workroom.**
+> **The same two florists plan the weddings and make the bunches, in the same workroom, on the same Saturdays.**
 
 Help on screen: the words that decide it are marked.
 
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Ana reached for the supermarket’s cheap bunches and gave up none of the wedding work: the same two florists now do both. That is a straddle.
+After the answer: the deciding words are marked. Reason: Cheap bunches pay only in volume; weddings need the florists’ slow attention, and the same two people and Saturdays must serve both. Ana dropped neither: a straddle.
 
 #### Item 2
 
-Your own note, written after an argument: "Ben’s notes on his repair shop", Written in January.
+A written note: "Ben’s plan for his repair shop", Written in January.
 
-> We fix older cars that the dealers no longer want to work on.
-> **We are adding a quick oil-change lane, like the chain shops, to win their drive-in customers.**
-> **Our three mechanics will take turns in the lane between their usual repairs.**
+> We fix older cars that the dealers no longer want to work on; a hard repair can take a mechanic a whole day.
+> **Drivers keep asking for oil changes while they wait, so we are adding a quick oil-change lane.**
+> **Our three mechanics will take turns in the lane, stopping their repairs whenever a car pulls in.**
 
 Help on screen: the words that decide it are marked.
 
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: The shop reached for the chain shops’ drive-in customers and gave up none of its repairs: the same mechanics run the lane between jobs. That is a straddle.
+After the answer: the deciding words are marked. Reason: A quick lane needs a mechanic free the moment a car pulls in; a hard repair needs a mechanic who does not stop. The same three mechanics would do both, and Ben drops neither: a straddle, though he copies no rival.
 
 #### Item 3
 
-Your own note, written after an argument: "Omar’s notes on his print shop", Written in April.
+A written note: "Omar’s plan for his print shop", Written in April.
 
 > Three law firms earn us most of our profit; they need court papers printed the same day.
-> Walk-in jobs often tie up the press when a firm’s rush order comes in.
-> **From May we no longer take walk-in jobs, about $40,000 a year, so the press is always free for the law firms.**
+> **Walk-in jobs often tie up the press when a firm’s rush order comes in.**
+> **From May we no longer take walk-in jobs, so the press is always free for the law firms.**
 
 Help on screen: the words that decide it are marked.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
 
-After the answer: the deciding words are marked. Reason: Omar gives up the walk-in jobs, $40,000 a year, because they pull against the law firms’ rush orders. That is a real trade-off.
+After the answer: the deciding words are marked. Reason: Walk-in jobs and rush orders need the same press at the same moment, and Omar drops the walk-ins. One side of the pull given up: a real trade-off.
 
 #### Item 4
 
-Your own note, written after an argument: "Omar’s notes on his print shop", Written in October.
+A written note: "Omar’s plan for his print shop", Written in October.
 
 > Three law firms earn us most of our profit; they need court papers printed the same day.
-> **Online printers have taken many of the town’s wedding invitations, so we will win them back with designs and cheaper prices.**
+> **Online printers have taken many of the town’s wedding invitations, so we will win them back with our own designs.**
 > **The invitations will run on the same press, fitted in around the firms’ rush orders.**
 
 Help on screen: the words that decide it are marked.
 
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Omar reaches for the online printers’ customers and gives up nothing: the invitations share the press with the firms’ rush orders. That is a straddle.
+After the answer: the deciding words are marked. Reason: Invitations and rush orders need the same press at the same moment, and Omar keeps both. Both sides of the pull kept: a straddle.
+
+#### Item 5
+
+A written note: "Omar’s plan for his print shop", Written in November.
+
+> Three law firms earn us most of our profit; they need court papers printed the same day.
+> **The firms ask us to file the papers at the court for them as well, for a fee.**
+> **Our driver already takes their papers to the court; the press and the walk-in ban stay as they are.**
+
+Help on screen: the words that decide it are marked.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing pulls, so nothing had to be dropped: the new work fits beside the old.
+- A straddle: both sides of the pull kept at once — if chosen: Nothing pulls: the new work uses hours the core leaves idle or serves the same customers the same way.
+- No pull: the new work fits beside the old (right)
+
+After the answer: the deciding words are marked. Reason: Filing serves the same firms, done by the driver already on the way to the court, and takes nothing from the press. Nothing pulls, so nothing has to go: it fits beside the old work.
 
 Then a screen: you can stop here, your place is kept.
 
 ## Step 6: Questions
 
-5 questions, shuffle, with about 25% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
-
-#### Item 5
-
-Your own note, written after an argument: "Carlos’s notes on his taco truck", Written in May.
-
-> We park outside the factories at lunch: five tacos, ready in two minutes.
-> Office workers walk past and say they want salads and wraps.
-> So we added burgers, salads and breakfast plates, and the same two of us cook everything in the one truck.
-> The line now takes about six minutes.
-
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
-
-After the answer: the deciding words are marked. Reason: The truck added food for every kind of customer and gave up nothing, so the factory workers’ two-minute tacos now take six. That is a straddle.
+7 questions, shuffle, with about 25% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 6
 
-Your own note, written after an argument: "Leo’s notes on his bike shop", Written in March.
+A written note: "Carlos’s plan for his taco truck", Written in May.
+
+> We park outside the factories at lunch: five tacos, ready in two minutes, for workers with a 30-minute break.
+> Office workers walk past and say they want salads and wraps.
+> So we added salads, wraps and breakfast plates, and the same two of us cook everything in the one truck.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
+
+After the answer: the deciding words are marked. Reason: A two-minute line needs a short menu made ahead; salads and plates made to order need time at the same noon, from the same two cooks. Carlos kept both: a straddle.
+
+#### Item 7
+
+A written note: "Leo’s plan for his bike shop", Written in March.
 
 > Our best customers are road racers who want their bikes fitted and tuned by hand.
 > We built a fitting room where the kids’ bikes and toys used to stand.
 > Parents who came in for a kids’ bike now shop elsewhere; that was about a fifth of our sales.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
 
-After the answer: the deciding words are marked. Reason: The fitting room took the place of kids’ bikes and toys, so Leo gave up the parents, a fifth of his sales, to serve the racers better. That is a real trade-off.
-
-#### Item 7
-
-Your own note, written after an argument: "Sam’s notes on his diner", Written in October.
-
-> Since the steakhouse opened, some of our evening tables are empty.
-> So we added steaks and a wine list at dinner, like the steakhouse.
-> Breakfast is still served all day at the counter, by the same cook.
-
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
-
-After the answer: the deciding words are marked. Reason: The diner reached for the steakhouse’s diners and gave up nothing: all-day breakfast and the same cook stay. That is a straddle.
+After the answer: the deciding words are marked. Reason: The floor could hold the fitting room or the kids’ bikes, not both, and Leo let the kids’ bikes go. One side of the pull given up: a real trade-off.
 
 #### Item 8
 
-Your own note, written after an argument: "Hal’s notes on his moving company", Written in August.
+A written note: "Sam’s plan for his diner", Written in October.
 
-> Piano owners pay us more than double our house-move rate.
-> We will move only pianos and other heavy, fragile things, with the special gear they need.
-> Ordinary house moves were about half of last year’s jobs.
+> Since the steakhouse opened, some evening tables are empty; evenings were about a fifth of our sales.
+> So we added steaks and a wine list at dinner.
+> Breakfast is still served all day at the counter, by the same cook on the same grill.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Hal gives up ordinary house moves, half of last year’s jobs, to serve the piano owners he chose. That is a real trade-off.
+After the answer: the deciding words are marked. Reason: Steaks and all-day breakfast need the same cook and grill at the same dinner hour, and Sam dropped neither. The fifth of sales is what he lost, not what he gave up: a straddle.
 
 #### Item 9
 
-Your own note, written after an argument: "Jill’s notes on her daycare", Written in June.
+A written note: "Hal’s plan for his moving company", Written in August.
 
-> Most of our families are nurses who work early and late shifts.
-> We will open at 5 a.m. and close at 9 p.m. to fit their shifts.
+> Piano owners pay us more than double our house-move rate.
+> We will move only pianos and other heavy, fragile things, with the special gear they need.
+> From now on we turn down ordinary house moves, which kept the crews rushing from job to job.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
+
+After the answer: the deciding words are marked. Reason: Rushed house moves and careful piano moves pull on the same crews, and Hal drops the house moves. One side given up: a real trade-off.
+
+#### Item 10
+
+A written note: "Jill’s plan for her daycare", Written in June.
+
+> The hospital’s own daycare across town opens 5 a.m. to 9 p.m. and has a waiting list of nurses.
+> We will do the same: open 5 a.m. to 9 p.m. for nurses on shifts.
 > Our staff hours are full, so the half-day places most other families want are gone.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
 
-After the answer: the deciding words are marked. Reason: To cover the nurses’ shifts Jill gives up the half-day places most other families want. That is a real trade-off.
+After the answer: the deciding words are marked. Reason: Long shift days and half-day places need the same staff hours, and Jill drops the half-days. She copies the hospital’s daycare, but she gives up one side of the pull: a real trade-off.
+
+#### Item 11
+
+A written note: "Gus’s plan for his pool-cleaning business", Written in October.
+
+> Homeowners pay us to keep their pools clean from May to September.
+> From November to March our two techs have almost no work.
+> We will add hot-tub care in those months, for the same homeowners, most of whom have one.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing pulls, so nothing had to be dropped: the new work fits beside the old.
+- A straddle: both sides of the pull kept at once — if chosen: Nothing pulls: the new work uses hours the core leaves idle or serves the same customers the same way.
+- No pull: the new work fits beside the old (right)
+
+After the answer: the deciding words are marked. Reason: Hot-tub care uses the techs in months the pools leave idle, for the same homeowners, and takes nothing from the summer work. Nothing pulls: it fits beside the old work.
+
+#### Item 12
+
+A written note: "Priya’s plan for her cafe", Written in May.
+
+> We are the quiet cafe where people work from home on Mondays and Fridays.
+> We will add live music on those days to draw the crowd from the bar next door, at the same tables.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
+
+After the answer: the deciding words are marked. Reason: Music for a crowd and quiet for work need the same tables on the same days, and Priya keeps both: a straddle.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -209,91 +266,97 @@ Then a screen: you can stop here, your place is kept.
 
 To pass:
 - At least 5 right
-- None tried to serve everyone, or to copy a rival while keeping your own way
+- None tried to serve everyone at once, or kept two ways that pull against each other
 
-#### Check question 10
+#### Check question 13
 
-Your own note, written after an argument: "Nina’s notes on her bookshop", Written in February.
+A written note: "Nina’s plan for her bookshop", Written in February.
 
-> Our customers are collectors who come for rare first editions.
-> We will also stock this week’s best sellers at online prices, to win the shoppers who buy online.
-> The best sellers go on the front tables, and the rare books move to the back room with the same two staff.
+> Our customers are collectors who come for rare first editions and an hour of talk about them.
+> We will also stock this week’s best sellers at online prices.
+> The rare books stay where they are; a best-seller table goes in the middle of the same room, and the same two staff ring up both.
 
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Nina reaches for the online sellers’ shoppers and gives up nothing: the rare books and the same staff stay, only moved to the back. That is a straddle.
+After the answer: the deciding words are marked. Reason: Best sellers at online prices pay only with quick, busy sales; collectors pay for slow talk with the same two staff. Nina keeps both in one room: a straddle.
 
-#### Check question 11
+#### Check question 14
 
-Your own note, written after an argument: "Ray’s notes on his plumbing business", Written in July.
+A written note: "Ray’s plan for his plumbing business", Written in July.
 
 > Our best work is fixing leaks fast for restaurants, at any hour.
 > Bathroom remodels tie a plumber up for weeks, and they paid well last year.
 > From now on we turn remodels down, so two plumbers are always free for a restaurant’s call.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
 
-After the answer: the deciding words are marked. Reason: Ray gives up remodels, though they paid well, because they pull plumbers away from the restaurants he chose. That is a real trade-off.
-
-#### Check question 12
-
-Your own note, written after an argument: "Grace’s notes on her salon", Written in November.
-
-> Our clients book a long color appointment months ahead.
-> We are adding $15 walk-in haircuts, like the chain salon in the mall.
-> The walk-ins will be fitted in between color clients, on the same chairs.
-
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
-
-After the answer: the deciding words are marked. Reason: Grace reaches for the chain salon’s walk-ins and gives up nothing: they share the chairs with the color clients. That is a straddle.
-
-#### Check question 13
-
-Your own note, written after an argument: "Kim’s notes on her tutoring business", Written in August.
-
-> Parents of students taking the state’s high school math exams say no one knows those exams as well as we do.
-> We will tutor only for those exams.
-> Reading, science and college-entrance tutoring end this summer, and so do those families’ fees.
-
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
-
-After the answer: the deciding words are marked. Reason: Kim gives up every other kind of tutoring, and those families’ fees, to serve the exam students she chose. That is a real trade-off.
-
-#### Check question 14
-
-Your own note, written after an argument: "Tom’s notes on his hardware store", Written in April.
-
-> Builders come to us for advice and for odd parts the big stores do not carry.
-> We are matching the big stores’ low prices on paint and lumber, to win their weekend shoppers.
-> The advice desk, every odd part and our early hours for builders all carry on.
-
-**What does this move give up, and so what is it?**
-- A real trade-off — if chosen: Nothing that pulls the other way is given up: both ways run at once on the same people and space, with the costs of both.
-- A straddle: copying while keeping the old way (right)
-
-After the answer: the deciding words are marked. Reason: Tom reaches for the big stores’ shoppers and gives up nothing he does for builders. That is a straddle.
+After the answer: the deciding words are marked. Reason: Remodels hold plumbers for weeks that the restaurants need free, and Ray drops the remodels though they paid well. One side given up: a real trade-off.
 
 #### Check question 15
 
-Your own note, written after an argument: "Rosa’s notes on her grooming van", Written in June.
+A written note: "Grace’s plan for her salon", Written in November.
 
-> Our customers own old or nervous dogs, groomed calmly at home.
-> We will groom four dogs a day, each for as long as it needs.
-> That leaves no room for the quick wash-and-go jobs, which were a third of our visits.
+> Our clients book a long color appointment months ahead; last year we sent away walk-ins worth about $40,000.
+> People ask at the door for a quick cut, so we will take $15 walk-in haircuts.
+> The walk-ins will be fitted in between color clients, on the same chairs.
 
-**What does this move give up, and so what is it?**
-- A real trade-off (right)
-- A straddle: copying while keeping the old way — if chosen: Something that pulls the other way is given up, so the business serves the customers it chose better, whatever it costs in sales.
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
 
-After the answer: the deciding words are marked. Reason: Rosa gives up the quick wash-and-go jobs, a third of her visits, to keep each visit calm for the dogs she chose. That is a real trade-off.
+After the answer: the deciding words are marked. Reason: Walk-ins need a chair free at any moment; long color work keeps the chairs booked months ahead. Grace keeps both on the same chairs: a straddle, though no rival is copied.
+
+#### Check question 16
+
+A written note: "Kim’s plan for her tutoring business", Written in August.
+
+> The exam-prep chain in the city tutors only for the state math exams, and it is full.
+> We will do the same and tutor only for those exams, with tutors who have graded them.
+> Our reading, science and college-entrance tutors go part-time elsewhere, and so do their families.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up (right)
+- A straddle: both sides of the pull kept at once — if chosen: One side of the pull is dropped, so the business no longer pays for both.
+- No pull: the new work fits beside the old — if chosen: The new work does pull against the old, and that is why one side had to go.
+
+After the answer: the deciding words are marked. Reason: Tutors who know one exam deeply and tutors for every subject pull on the same hours and hiring, and Kim drops every other subject. She copies the chain, but she gives up one side: a real trade-off.
+
+#### Check question 17
+
+A written note: "Tom’s plan for his hardware store", Written in April.
+
+> Builders come to us at 6 a.m. for advice and for odd parts the big stores do not carry.
+> We are matching the big stores’ low prices on paint and lumber, to win their weekend shoppers.
+> To pay for the low prices we will stock fewer odd parts, but the advice desk and the 6 a.m. opening stay.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing on either side of the pull is dropped: both run at once on the same people, hours or space.
+- A straddle: both sides of the pull kept at once (right)
+- No pull: the new work fits beside the old — if chosen: The new work pulls against the old: the same people, hours or space would have to serve both at once.
+
+After the answer: the deciding words are marked. Reason: Low prices for weekend shoppers and odd parts with advice for builders pull on the same shelves and staff. Tom trims the odd parts but keeps serving builders: both sides kept, each weaker. A straddle, though something was cut.
+
+#### Check question 18
+
+A written note: "Rosa’s plan for her grooming van", Written in June.
+
+> Our customers own old or nervous dogs, groomed calmly at home, four dogs a day.
+> Owners ask where to buy the calming shampoo and brush we use.
+> We will sell them in the van after each groom, to the same owners.
+
+**Does the new work pull against the old, and if so, which side goes?**
+- A real trade-off: one side of the pull given up — if chosen: Nothing pulls, so nothing had to be dropped: the new work fits beside the old.
+- A straddle: both sides of the pull kept at once — if chosen: Nothing pulls: the new work uses hours the core leaves idle or serves the same customers the same way.
+- No pull: the new work fits beside the old (right)
+
+After the answer: the deciding words are marked. Reason: Selling the shampoo serves the same owners at the end of a visit that happens anyway, and takes no time from the dogs. Nothing pulls: it fits beside the old work.
 
 ## The result
 
