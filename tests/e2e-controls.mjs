@@ -61,6 +61,10 @@ export const FAULTS = [
   { check: 'X25', name: 'the cart without its big line no longer recognised as a slip in Math',
     edits: [replace('subjects/math/gen-totals.js', "traps: [{ slip: 'missed-line', value: 'noBig', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps] },", "traps: [{ slip: 'missed-line', value: 'tenfold', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps] },")] },
   // the learner's own data, the papers and the form (9: X24; 3 to 9: X26, X27)
+  { check: 'X52', name: 'the lines under the value stick kept from wrapping, wider than the cover screen',
+    edits: [replace('app.css', '.fig-legend{display:flex;flex-direction:column;', '.fig-legend{display:flex;flex-direction:column;white-space:nowrap;')] },
+  { check: 'X24', name: 'a line of the business judged by its sales, not by what it earns',
+    edits: [replace('app/lessons/own-work.js', 'const ownEarns = line => ownRound(line.revenue - line.cost);', 'const ownEarns = line => ownRound(line.revenue);')] },
   { check: 'X24', name: 'a balance of eight digits accepted',
     edits: [replace('app/lessons/own.js', 'const OWN_MAX_DIGITS = 8;', 'const OWN_MAX_DIGITS = 80;')] },
   { check: 'X24', name: 'a day in the past accepted for a dated change',

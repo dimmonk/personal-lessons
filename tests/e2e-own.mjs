@@ -155,6 +155,52 @@ async function leavesAndGoes(env, c, page, dialogs) {
   c.check(dialogs.length === 0, `the browser asked with a dialog (${dialogs.join(', ')})`);
 }
 
+// The same step on the learner's own business (Strategy, lesson 5): the lines refuse what a field refuses, a blank line is dropped, the work
+// finds the core and flags the line that loses money, the lines are stored as typed numbers, and the subject screen lists, exports and deletes them.
+const BUSINESS_STEP = 5;   // "Find the core": the rule, the worked books, two groups, then this step
+async function business(env, c, page) {
+  await env.openSubject(page, 'strategy');
+  c.check(/Your business lines and dates/.test(await env.screenText(page)) && await page.locator('[data-own-export]').isDisabled(), 'the subject screen does not name the business lines, or exports nothing kept');
+  await env.clickVisible(page, '#screen [data-l="l5"]');
+  await O.jumpTo(page, BUSINESS_STEP);
+  c.check(await page.locator('[data-own-business]').count() === 1 && await page.locator('#ownSkip').count() === 1 && /Do not type an account number/.test(await env.screenText(page)), 'an empty business does not open the lines with its warning and a way out');
+  const line = (at, l) => Promise.all([page.locator(`#own-lines-${at}-name`).fill(l.name), page.locator(`#own-lines-${at}-kind`).selectOption(l.kind),
+    page.locator(`#own-lines-${at}-revenue`).fill(l.revenue), page.locator(`#own-lines-${at}-cost`).fill(l.cost)]);
+  await line(0, { name: 'Market stall', kind: 'channel', revenue: 'lots', cost: ACCOUNT_NUMBER });
+  await page.locator('#ownSave').click();
+  const errors = await O.errorsShown(page);
+  c.check(errors.length === 2 && /Type a number/.test(errors[0]) && /account number/.test(errors[1]) && (await O.storedNotes(page, 'strategy')) === null, `a word for a number and an account number are not refused under their fields (${JSON.stringify(errors)})`);
+  await env.inspect(c, page, 'the business lines with a line under a field');
+  await line(0, { name: 'Wedding cakes', kind: 'product', revenue: '48,000', cost: '18000' });
+  for (const [at, l] of [[1, { name: 'Bread', kind: 'product', revenue: '60000', cost: '52000' }], [2, { name: 'Catering', kind: 'product', revenue: '20000', cost: '23000' }]]) {
+    await page.locator('[data-add-line]').click();
+    await line(at, l);
+  }
+  await page.locator('[data-add-line]').click();   // a line left blank is dropped
+  await page.locator('#ownSave').click();
+  const text = await env.screenText(page);
+  c.check(/The core of your business/.test(text) && /Wedding cakes\s*\$30,000\s*78\.9%/.test(text) && /Catering\s*−\$3,000\s*Loses money/.test(text), `the work is not the app's arithmetic on the lines typed (${text.slice(0, 400)})`);
+  c.check(/1 of your 3 lines makes more than half/.test(text) && /Catering loses \$3,000 a year/.test(text) && /it is not advice/.test(text), 'the core is not named, the losing line not flagged, or the line that it is not advice is missing');
+  c.check(await page.locator('.block-doc mark.cue').count() >= 1, 'the sample lines to find are not marked beside the work');
+  const stored = ((await O.storedNotes(page, 'strategy')) || {}).business;
+  c.check(!!stored && JSON.stringify(stored.lines) === JSON.stringify([{ name: 'Wedding cakes', kind: 'product', revenue: 48000, cost: 18000 }, { name: 'Bread', kind: 'product', revenue: 60000, cost: 52000 }, { name: 'Catering', kind: 'product', revenue: 20000, cost: 23000 }]),
+    `the lines are not stored as typed numbers, the blank one dropped (${JSON.stringify(stored)})`);
+  await env.inspect(c, page, 'the core of the learner\'s business');
+  await O.typeAction(page, { what: 'Raise the catering price', where: 'On the price list', when: await O.dayIn(page, 7) });
+  await page.locator('[data-save-action]').click();
+  c.check(((await O.storedNotes(page, 'strategy')).actions || []).length === 1 && /Raise the catering price/.test(await env.screenText(page)), 'the change on the business is not saved with its day');
+  await env.clickVisible(page, '[data-v="subject"]');
+  const subject = await env.screenText(page);
+  c.check(/Your lines/.test(subject) && /Wedding cakes/.test(subject) && /\$30,000/.test(subject) && /Raise the catering price/.test(subject), 'the subject screen does not list the lines and the change');
+  await env.inspect(c, page, 'the subject screen with the business lines');
+  const mine = JSON.parse((await O.download(page, () => page.locator('[data-own-export]').click())).text);
+  c.check(mine.subject === 'strategy' && mine.notes.business.lines.length === 3, 'the file of the subject does not hold the business lines');
+  await page.locator('[data-own-delete]').click();
+  c.check(/Delete your business lines/.test(await env.screenText(page)), 'delete does not ask about the business lines inline');
+  await page.locator('[data-own-delete-yes]').click();
+  c.check((await O.storedNotes(page, 'strategy')) === null && /No lines yet/.test(await env.screenText(page)), 'delete did not take the business lines off the phone');
+}
+
 export async function X24(env) {
   const c = env.checker('X24'), { context, page, outside } = await env.freshPage(c, 390), dialogs = [];
   page.on('dialog', d => { dialogs.push(d.type()); d.dismiss(); });
@@ -165,6 +211,7 @@ export async function X24(env) {
   await subjectScreen(env, c, page, days);
   await nothingElsewhere(env, c, page);
   await leavesAndGoes(env, c, page, dialogs);
+  await business(env, c, page);
   c.check(outside.length === 0, `a request left the app: ${outside.join(', ')}`);
   await context.close();
   return c;
