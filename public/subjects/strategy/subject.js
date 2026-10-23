@@ -85,12 +85,15 @@ FC.subject('strategy', {
       { id: "fronts", text: "Many fronts: fighting several rivals at once" },
       { id: "everyone", text: "Something for everyone: every kind of customer at once" },
       { id: "dream", text: "A dream: a mission that never says where or how" },
-      { id: "copycat", text: "Copycat: the plan every business in the trade has" }
+      { id: "copycat", text: "Copycat: the plan every business in the trade has" },
+      // not one of the six: a plan that chooses both parts, but whose way to win is not what those customers value (ST10: the two are one choice)
+      { id: "misfit", text: "No trap, but the way to win does not fit those customers" },
+      { id: "chooses", text: "Nothing: it chooses where to play and a way to win that fits" }
     ],
-    // lesson 13: which way of judging the bet fits (research ST12, ST14)
+    // lesson 13: which way of judging the bet fits (research ST12, ST14, ST20); either way the stake stays within what can be lost
     judge: [
-      { id: "outside", text: "Look at how similar projects turned out" },
-      { id: "afford", text: "Bet only what you can afford to lose, and learn as you go" }
+      { id: "outside", text: "People already buy this: start from how similar projects turned out" },
+      { id: "afford", text: "Nobody can see yet whether people would buy: try it small and learn" }
     ],
     // the kinds of line in the learner's own business (lesson 5)
     lineKind: [
@@ -120,7 +123,9 @@ FC.subject('strategy', {
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
       { id: "rival-ignored", text: "forgot that rivals will answer" },
       { id: "surface-analogy", text: "copied a success that only looks alike" },
-      { id: "bet-too-big", text: "bet more than you could afford to lose" }
+      { id: "bet-too-big", text: "bet more than you could afford to lose" },
+      { id: "plan-first", text: "worked out the full plan before testing the condition most in doubt" },
+      { id: "talk-as-evidence", text: "took people saying they like an idea for evidence that they would act on it" }
     ]
   },
   facets: {
