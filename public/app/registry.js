@@ -13,6 +13,7 @@
     { id: 'mind', name: 'Mind' },
     { id: 'society', name: 'Society' },
     { id: 'numbers', name: 'Numbers & Money' },
+    { id: 'business', name: 'Business' },
     { id: 'world', name: 'World' },
     { id: 'skills', name: 'Skills' }
   ];
