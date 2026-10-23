@@ -5,7 +5,7 @@
 // 8 of 10, and none of the three costly errors (a goal taken for a strategy, growth for its own sake, serving everyone or straddling), each a
 // pass rule with none allowed and each possible in at least two of the ten (the subject has no danger: the engine's danger is a baseline's).
 FC.lesson("strategy", {
-  id: "l14", part: "14", title: "Run the six questions", rev: 1, status: "draft",
+  id: "l14", part: "14", title: "Run the six questions", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: one decision through all six questions, and a check of ten new whole decisions from every topic (after the reviews, docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "Each question so far was asked on its own. A real decision needs all of them, in order, and each answer feeds the next.",

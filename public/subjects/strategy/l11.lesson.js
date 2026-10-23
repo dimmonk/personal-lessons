@@ -7,7 +7,7 @@
 // lessons 1 to 10 mixed in (P22); a line to write on how to test (unscored); the check: four new decisions (the order, two conditions to weigh,
 // two tested moves to choose between), 3 of 4, and no full plan before the test.
 FC.lesson("strategy", {
-  id: "l11", part: "11", title: "What would have to be true", rev: 1, status: "draft",
+  id: "l11", part: "11", title: "What would have to be true", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the steps from the decision to the choice, and the condition with the least behind it tested first." }],
   why: [
     "Most owners decide a big move by gathering every reason for it, then spend months on numbers for a move that one phone call could have ruled out.",

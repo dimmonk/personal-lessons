@@ -7,7 +7,7 @@
 // (activities that conflict), not whether anything is given up, so an addition with no pull fits (as lesson 1's snow removal and lesson 9's
 // growth that deepens). No line to tap: the learner weighs what is added, kept and dropped.
 FC.lesson("strategy", {
-  id: "l6", part: "6", title: "What you say no to", rev: 1, status: "draft",
+  id: "l6", part: "6", title: "What you say no to", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: a real trade-off told apart from a straddle by one question, does the new work pull against the old, and which side goes? An addition with no pull fits and is neither (after the reviews, docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "When a rival does well, the easy move is to offer what it offers too and keep everything else. It feels safe.",

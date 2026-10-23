@@ -6,7 +6,7 @@
 // plan's engine gap 1, the work core); a losing line fixed first if a price or cost change could make it pay (ST19), kept if it brings or
 // comes with the core's customers, else let go; the check: four new sets of books, 3 of 4, and no line judged by its sales.
 FC.lesson("strategy", {
-  id: "l5", part: "5", title: "Find the core", rev: 1, status: "draft",
+  id: "l5", part: "5", title: "Find the core", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each line judged by what it earns after its direct cost, the core found and its share worked out, a line that loses money fixed or let go, and the same work on the learner's own business. After two reviews: the core is the line that is distinctive and earns the most, a direct cost one that stops with the line, every table one kind of line, the share counted of all the lines' earnings with losses taken off, pairs of tables, and the own work names the top line and asks of each losing line whether it comes with the core. After the reviews of all fourteen: a losing line is first asked whether a price or cost change could make it pay, then whether it brings the core’s customers or comes with the core, and only then let go; a table where the core’s share passes 100%; plainer table titles." }],
   why: [
     "Before growing a business, find out which of its lines really pay. In many businesses a few products, customers or ways of selling earn most of the profit, and a busy line can earn little or lose money.",

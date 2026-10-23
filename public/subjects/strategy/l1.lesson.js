@@ -4,7 +4,7 @@
 // deciding lines marked, holding two strategies on different surfaces back to back (P12); a second group with nothing marked and one line to
 // write (unscored); the check: six new owner plans, 5 of 6, and none taken for a strategy when it is a goal.
 FC.lesson("strategy", {
-  id: "l1", part: "1", title: "Goal, wish, or strategy?", rev: 1, status: "draft",
+  id: "l1", part: "1", title: "Goal, wish, or strategy?", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the three parts of a strategy, a goal and a to-do list told apart from one, and a number that fell told apart from a challenge. After two reviews: a step and a wish told apart, mission and vision named as wishes, a plan that only runs the business better kept out of strategy (lesson 2's question), and approach-like lines put in plans with no challenge. After the reviews of all fourteen: short challenges, long steps that give a reason and background lines in goals, so the challenge is found by what it says; the claim that every plan faces rivals dropped." }],
   why: [
     "Have an owner tell you their strategy and you often hear a number: “grow 20% this year.” That is where they want to be, not how they will get there.",

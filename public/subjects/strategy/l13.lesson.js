@@ -5,7 +5,7 @@
 // (P10); a first group, two new markets on different surfaces back to back, then a look-alike pair on one gym, the deciding lines marked; a second
 // group with nothing marked, where the right size is sometimes the whole project, sometimes not now, and one idea partly known, with lessons 1 to 12 mixed in (P22); the check: six new ideas, 5 of 6, and no bet bigger than can be lost.
 FC.lesson("strategy", {
-  id: "l13", part: "13", title: "A bet you can afford", rev: 1, status: "draft",
+  id: "l13", part: "13", title: "A bet you can afford", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: which way of judging a bet fits, the record of others like it or what can be lost, and the move that follows." }],
   why: [
     "Some ideas are things people already buy, and the record of many like them says how they go. Others have never been offered to these customers, and no one can say who would buy.",

@@ -6,7 +6,7 @@
 // marked and lessons 1 to 9 mixed in (P22); the check: six new businesses (three pairs, one misfit, two plans alone), 5 of 6, and no plan for
 // every customer taken for a choice.
 FC.lesson("strategy", {
-  id: "l10", part: "10", title: "Where to play and how to win", rev: 1, status: "draft",
+  id: "l10", part: "10", title: "Where to play and how to win", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: a plan that chooses where to play and how to win told apart from the six ways of not choosing." }],
   why: [
     "Owners’ plans often fail without a single wrong move in them. They fail because they never choose: every customer, every idea, every fight at once.",

@@ -5,7 +5,7 @@
 // lines marked; a second group with nothing marked and lessons 1 to 7 mixed in (P22); the check: six new stories, 5 of 6, and nothing a rival can
 // buy taken for an advantage that lasts.
 FC.lesson("strategy", {
-  id: "l8", part: "8", title: "Will it last?", rev: 1, status: "draft",
+  id: "l8", part: "8", title: "Will it last?", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: two questions, what the difference gives (a higher price, a lower cost, or neither) and what stops a rival getting the same; after the reviews, the barriers given as the common answers, not the whole list, with what customers would lose by leaving added (docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "Most things that make a business different this year are copied by next year: a new machine, a new dish, a new look.",

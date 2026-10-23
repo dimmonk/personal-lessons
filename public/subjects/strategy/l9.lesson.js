@@ -5,7 +5,7 @@
 // deciding lines marked; a second group with nothing marked and lessons 5 and 6 mixed in, as the plan asks (P22); the check: six new offers,
 // 5 of 6, and no growth that blurs taken for growth that deepens.
 FC.lesson("strategy", {
-  id: "l9", part: "9", title: "Growth that keeps the position", rev: 1, status: "draft",
+  id: "l9", part: "9", title: "Growth that keeps the position", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: an offer to grow judged against the core, the same customers with the same activities, or different ones; after the reviews, Maytag's dates as the source gives them, and offers where new hires deepen and the same people blur (docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "Sooner or later a business is offered growth: a big contract, a second shop, a new line. Saying no to more sales feels wrong.",

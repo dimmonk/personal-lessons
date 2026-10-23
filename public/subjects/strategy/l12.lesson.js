@@ -6,7 +6,7 @@
 // it, and lessons 1 to 11 mixed in (P22); the check: two new tables and five new stories, 6 of 7, and no plan's story trusted over the record.
 // The made tables sit near the national record (research ST20).
 FC.lesson("strategy", {
-  id: "l12", part: "12", title: "How did others like it do?", rev: 1, status: "draft",
+  id: "l12", part: "12", title: "How did others like it do?", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the share of ventures like it that worked as the start of a forecast, the rival’s likely answer, and an example tested on its reason." }],
   why: [
     "A plan written by its owner nearly always looks likely to work. That is the trouble: it is built from the owner’s hopes, and it forgets that rivals move too.",

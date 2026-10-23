@@ -5,7 +5,7 @@
 // case of Paccar (ST6) among them; reports where two forces press and the facts say which takes more (ST6: dig into the most important force); a second group with nothing marked and lessons 1 to 3 mixed in (P22); the check: six new
 // reports, 5 of 6, and no fast growth taken for a good trade.
 FC.lesson("strategy", {
-  id: "l4", part: "4", title: "Who squeezes the profit", rev: 1, status: "draft",
+  id: "l4", part: "4", title: "Who squeezes the profit", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the five forces as one question, who takes the money and why, with the strongest one named and fast growth not taken for a good trade. After two reviews: a middleman counted as a buyer, reports where two forces press and the facts say which takes more, growth that stays where starting up is hard beside growth that goes to newcomers, the same force shown in two trades, the Paccar case with the forces its source gives, and the solar and hearing aid reports replaced. After the reviews of all fourteen: stepping around a force taught before Paccar asks it, the settling line no longer the longest or the one with the number, every wrong force answered with what the report shows, buyers who switch at will practised, the car dealers replaced by a franchise whose owner sets the price of supplies, and the pharmacies’ buyers named as the drug-benefit companies." }],
   why: [
     "Two businesses can work equally hard and earn very different profits, because of who else gets a share: big customers, the suppliers they depend on, newcomers, other ways to meet the need, and the rivals already there.",

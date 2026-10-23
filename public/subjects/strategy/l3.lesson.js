@@ -6,7 +6,7 @@
 // (every number within $1) and four new moves, 6 of 7. The plan's estimate before the exact answer is left out: the
 // sums are single subtractions of whole dollars, where a rough answer adds nothing (judgement call).
 FC.lesson("strategy", {
-  id: "l3", part: "3", title: "Value created, and who keeps it", rev: 1, status: "draft",
+  id: "l3", part: "3", title: "Value created, and who keeps it", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the four numbers of a sale and the three shares on the value stick, and a move that grows the value told apart from one that only moves it. After two reviews: a move judged by what it adds to the work as well as what customers would pay, so a move can shrink the value; the cost told apart from the least staff would take; the moves judged without a tap. After the reviews of all fourteen: the Harvard line made exact, where an owner gets the two ends in real life, a supplier pushed told apart from one whose least fell, and the pay cut and half-price day worded so one reading holds." }],
   why: [
     "Every sale creates some value: the gap between what the thing is worth to the customer and what it takes to make it. Price only decides who keeps which part.",

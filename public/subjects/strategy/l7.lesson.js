@@ -5,7 +5,7 @@
 // one cafe where a costly activity fits (P12), the deciding line marked; a second group with nothing marked and lessons 1 to 6 mixed in (P22);
 // the check: five new lists, 4 of 5, and the trade's usual way never taken for a fix.
 FC.lesson("strategy", {
-  id: "l7", part: "7", title: "Do the pieces fit?", rev: 1, status: "draft",
+  id: "l7", part: "7", title: "Do the pieces fit?", rev: 1, status: "live",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each activity held against the position, the one that does not fit found, and what would fit chosen; after the reviews, the replacement also judged by whether it helps the other activities, and a low-cost position where the costly piece is the misfit (docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "A position is not one clever idea. It is the way the whole business runs: who you hire, how you sell, what you stock, when you open.",
