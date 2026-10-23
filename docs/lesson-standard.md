@@ -763,6 +763,9 @@ no other account can read (`firestore.rules`), and leaves it only in a file the 
   start of the subject's part of the review), since each subject's moment differs; V70 refuses a plan form without them, or words on
   another form (decided 2026-10-22, when Stats added its plan). `setup: { [fieldId]: day }`: things the learner does on their own phone, each "Done now" or
   "Not done".
+- `business: { lines: [{ name, kind, revenue, cost }] }` (Strategy): the learner's own business, one line for each product, customer or way of
+  selling (the form's `fields` are one line's, typed as many times as the business has lines; `kind` names the subject's list `lineKind`), with
+  what it brought in and what it cost directly last year. A line left wholly blank is dropped; with none the form asks for one.
 - `answers: { q23: '…', …, interviewDate? }` (Civics): the answers the list says vary, in its own words, and the
   interview day, saved whole with the day saved. Two senators are one entry with a semicolon between.
 
@@ -795,6 +798,11 @@ told it looks wrong). A row or account left wholly blank is dropped; blank fees 
    work needs, the step opens the sheet form on that group first. Then its warnings, and funds that add up to a different balance than typed. Where a
    line calls for a look (often a dollar move on the learner's own numbers), the work ends with one line saying it applies the rule's line to their numbers and is
    not advice (`SAY.workNotAdvice`).
+   A step on the business (`{ own: 'business', model?, work: 'core' }`) runs the same way on the learner's lines: the lines while none are stored
+   (or "I have no business to look at yet"), then the work `core` (each kind of line in a table of its own, what each line earns after its direct
+   cost, largest first, its share of what the lines that make money earn together, a line that loses money flagged, and the fewest lines from the top
+   that make more than half of it named as the core), then the change. Each work names the form it reads (`on`: `sheet` or `business`), and V70
+   refuses a step that names a work of another form.
 4. The sample's lines to find (`model`, its deciding lines marked).
 5. The change: what, where and a day, or "I did it now". Each change has "Add to my calendar" and "Mark done". In a step with `repeat: 'year'`
    (the yearly check) each change is saved with `repeat: 'year'`, listed with "every year", and its calendar file repeats.
@@ -1196,6 +1204,11 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **2026-10-23, the value stick** (Strategy's plan, engine gap 2): a `figure` of type `stick` (3.9) draws one sale's value created and its three
   shares (`stickHtml` in `doc-view.js`, worded in `SAY.stick*`); V70 reads its levels in order (`stickProblems`, two seeded faults), X20 measures
   its shares (one seeded fault), and `tests/number-pure.mjs` holds the drawing. A new field of the library, Business (`FC.FIELDS`). `FC.ENGINE` is 21.
+
+- **2026-10-23, the learner's own business** (Strategy's plan, engine gap 1): a private form into `business` (5.3) and the work `core` on it
+  (5.4, `ownWorkCore` in `own-work.js`; the lines' form in `own.js`, `own-view.js` and `own-run.js`); the subject screen lists the lines with the
+  changes, their download and their delete. Each work names the form it reads (`on`). V70 reads the business form and its step (three seeded
+  faults); `tests/own-pure.mjs` holds the form and the work, and X24 walks the step on Strategy's lesson 5.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

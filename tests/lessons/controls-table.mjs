@@ -18,6 +18,9 @@ const ledgerItem = (id, ...rest) => ['subjects', 'ledger', 'items', id, ...rest]
 const ledgerGen = (id, ...rest) => ['subjects', 'ledger', 'gens', id, ...rest];
 const ledgerLesson = (id, ...rest) => ['subjects', 'ledger', 'lessons', id, ...rest];
 const ledgerMeta = (...rest) => ['subjects', 'ledger', 'meta', ...rest];
+// a business form (the lines of a business, Strategy's lesson 5) as a test subject would write it, for the faults that read one
+const LEDGER_BUSINESS = { into: 'business', fields: [{ id: 'name', label: 'The line', type: 'text' }, { id: 'kind', label: 'Its kind', type: 'choose', list: 'kind' },
+  { id: 'revenue', label: 'Brought in', type: 'number' }, { id: 'cost', label: 'Direct cost', type: 'number' }] };
 // the test subject of articles, the tap, the charts and the 1,000 people
 const feedItem = (id, ...rest) => ['subjects', 'feed', 'items', id, ...rest];
 const feedLesson = (id, ...rest) => ['subjects', 'feed', 'lessons', id, ...rest];
@@ -122,6 +125,11 @@ export const CONTROLS = [
   { rule: 'V70', name: 'an own step that names a private form the subject does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'own'), 'nothing') },
   { rule: 'V70', name: 'a private form that leaves out a field the app reads', data: (d, h) => h.removeIn(d, ledgerMeta('own', 'sheet', 'fields', 2)) },
   { rule: 'V70', name: 'a step on the sheet that names no work', data: (d, h) => h.removeIn(d, ledgerLesson('l1', 'flow', 3, 'work')) },
+  { rule: 'V70', name: 'a step on the sheet that names the work the app does on a business', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'work'), 'core') },
+  { rule: 'V70', name: 'a step on a business that names a work on the sheet',
+    data: (d, h) => h.setIn(h.updateIn(d, ledgerMeta('own'), own => ({ ...own, business: LEDGER_BUSINESS })), ledgerLesson('l1', 'flow', 3, 'own'), 'business') },
+  { rule: 'V70', name: 'a business form that leaves out what a line brought in',
+    data: (d, h) => h.updateIn(d, ledgerMeta('own'), own => ({ ...own, business: { ...LEDGER_BUSINESS, fields: LEDGER_BUSINESS.fields.filter(f => f.id !== 'revenue') } })) },
   { rule: 'V70', name: 'a step on the sheet that names a work the app does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'work'), 'magic') },
   { rule: 'V70', name: 'a work whose groups, limits and kinds the sheet does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'work'), 'cash') },
   { rule: 'V70', name: 'a work that reads a fund field the sheet does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'work'), 'share') },

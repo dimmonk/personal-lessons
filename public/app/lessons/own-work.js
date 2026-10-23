@@ -178,7 +178,34 @@ function ownWorkShare(sheet, ctx){
       ...(companies.length ? [] : [{ text: SAY.workShareNone }]), ...(nameOnly ? [{ text: SAY.workShareName }] : []), ...(unmarked ? [{ text: SAY.workUnmarked }] : [])] };
 }
 
+/* ---------- the core of a business (Strategy) ---------- */
+// The learner's own lines, each kind (product, customer, way of selling) in a table of its own so no sale is counted twice: what each line
+// earns after its direct cost, largest first, and its share of what the lines that earn make together. A line that loses money is flagged;
+// the fewest lines from the top that make more than half of it are named as the core to look at first (research ST4, ST8: a small share of
+// lines may make most of the profit, so no fixed share such as 80/20 is assumed). Reads the business, the subject's list lineKind, nothing else.
+const ownEarns = line => ownRound(line.revenue - line.cost);
+const ownSigned = value => value < 0 ? `−${ownWhole(-value)}` : ownWhole(value);
+function ownCoreOf(lines){
+  const sorted = [...lines].sort((a, b) => ownEarns(b) - ownEarns(a)), earning = sorted.filter(l => ownEarns(l) > 0);
+  const made = ownSum(earning, ownEarns);
+  const core = earning.reduce((acc, l) => acc.sum * 2 > made ? acc : { list: [...acc.list, l], sum: acc.sum + ownEarns(l) }, { list: [], sum: 0 });
+  return { sorted, made, core: core.list, losing: sorted.filter(l => ownEarns(l) < 0) };
+}
+function ownWorkCore(business, ctx){
+  const kinds = ((ctx.lists || {}).lineKind || []).filter(k => business.lines.some(l => l.kind === k.id));
+  const each = kinds.map(k => ({ kind: k, ...ownCoreOf(business.lines.filter(l => l.kind === k.id)) }));
+  return { docs: each.map(e => ownTable(SAY.bizCoreTitle(e.kind.text), SAY.bizCoreHead,
+      [...e.sorted.map(l => [l.name, ownSigned(ownEarns(l)), ownEarns(l) > 0 ? `${fmtNumber(ownPct(ownEarns(l), e.made))}%` : SAY.bizLoses]),
+        ownStrong([SAY.bizAll, ownSigned(ownSum(e.sorted, ownEarns)), ''])])),
+    lines: each.flatMap(e => [
+      ...(e.core.length && e.core.length < e.sorted.length ? [{ flag: true, text: SAY.bizCoreLine(e.core.length, e.sorted.length, e.core.map(l => l.name).join(', '), fmtNumber(ownPct(ownSum(e.core, ownEarns), e.made))) }] : []),
+      ...(e.made > 0 && e.core.length === e.sorted.length ? [{ text: SAY.bizCoreEven }] : []),
+      ...e.losing.map(l => ({ flag: true, text: SAY.bizLosing(l.name, ownWhole(-ownEarns(l))) })),
+      ...(e.made <= 0 ? [{ flag: true, text: SAY.bizNoneEarn }] : [])]) };
+}
+
 /* ---------- the works ---------- */
+// Each work reads one private form (`on`): the sheet (Wealth) or the business (Strategy). A step names a work of the form it is on (V70).
 const OWN_WORKS_EACH = {
   cost: { needs: [], reads: {}, refs: [], limits: [], make: ownWorkCost },
   list: { needs: [], reads: {}, fields: { institution: 'text', owner: 'choose' }, refs: ['fdic', 'sipc'], limits: [], lists: true, make: ownWorkList },
@@ -189,11 +216,12 @@ const OWN_WORKS_EACH = {
   share: { needs: [], reads: {}, rowFields: { company: 'text' }, refs: [], limits: ['oneBet'], lists: true, make: ownWorkShare },
   ...OWN_WORKS_LATER   // lessons 7 to 11, own-work-later.js
 };
-const OWN_WORKS = { ...OWN_WORKS_EACH, yearly: ownYearlyWork(OWN_WORKS_EACH) };
-// the work of a step on the stored sheet: { docs, lines }. `ctx` is { lists, refs, limits, year }. Where a line calls for a look (a flag, often a
+const OWN_ON_SHEET = Object.fromEntries(Object.entries({ ...OWN_WORKS_EACH, yearly: ownYearlyWork(OWN_WORKS_EACH) }).map(([id, work]) => [id, { on: 'sheet', ...work }]));
+const OWN_WORKS = { ...OWN_ON_SHEET, core: { on: 'business', needs: [], reads: {}, refs: [], limits: [], lists: true, make: ownWorkCore } };
+// the work of a step on what is stored (the sheet, or the business for a work on it): { docs, lines }. `ctx` is { lists, refs, limits, year }. Where a line calls for a look (a flag, often a
 // dollar move), one last line says it applies the rule's line to the learner's numbers and is not advice.
-function ownWork(workId, sheet, ctx){
-  const work = (OWN_WORKS[workId] || lessonFail(`unknown work ${workId}`)).make(sheet, ctx);
+function ownWork(workId, held, ctx){
+  const work = (OWN_WORKS[workId] || lessonFail(`unknown work ${workId}`)).make(held, ctx);
   return work.lines.some(l => l.flag) ? { ...work, lines: [...work.lines, { text: SAY.workNotAdvice }] } : work;
 }
 // the groups a work needs that the sheet does not hold yet (a group saved blank is held, as null or an empty list)

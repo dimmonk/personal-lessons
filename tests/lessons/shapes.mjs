@@ -4,7 +4,7 @@
 import { str, text, int, num, bool, fn, any, en, arr, map, obj, either, nullable } from './schema.mjs';
 
 export const STATUSES = ['draft', 'live'];
-export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers'];   // where a private form may write (5)
+export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers', 'business'];   // where a private form may write (5)
 
 const history = arr(obj({ rev: int, date: str, change: str }));
 const idText = obj({ id: str, text: str });

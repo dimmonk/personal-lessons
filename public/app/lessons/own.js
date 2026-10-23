@@ -8,6 +8,7 @@
 //   actions  [{ id, what, where, when, done?, repeat? }]
 //   triggers { [triggerId]: 'YYYY-MM-DD' }
 //   answers  { [fieldId]: text, interviewDate?: 'YYYY-MM-DD', saved: 'YYYY-MM-DD' }   (Civics, step 9)
+//   business { lines: [{ name, kind, revenue, cost }] }   (Strategy: each product, customer or way of selling, what it brought in and cost directly last year)
 // A private form (`subject.own`) is { into, fields: [Field], rows?: { id, label, fields: [Field] }, groups?: [Group], limits?: { name: number } }, a Field is
 // { id, label, type: 'choose' | 'number' | 'text' | 'date', list?, unit?, places?, optional?, for?: [accountType], warn?: { over?, under?, text } }
 // (`for`: an account field shown and read only for accounts of those kinds). A Group (the sheet only) is { id, label, how?, fields, many?, optional? }:
@@ -19,13 +20,14 @@
 // The forms a subject may keep, and the fields the app reads from each (the sheet form is read by the costs and the summary, the form for
 // actions by the calendar file, the plan by the plan sentence, the setup as a list of marks): a form that leaves one out cannot work, and the
 // validator says so (V70).
-const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup', 'answers'];
+const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup', 'answers', 'business'];
 const OWN_REQUIRED = {
   sheet: { fields: { type: 'choose', balance: 'number', fees: 'number' }, rows: { name: 'text', value: 'number', expense: 'number' } },   // a fund's expense may be optional: blank, it costs nothing in the sum and is named
   actions: { fields: { what: 'text', where: 'text', when: 'date' } },
   plan: { fields: { cue: 'text', then: 'text' } },
   setup: { fields: {}, allType: 'date' },  // every field of the setup is a thing marked done on a day
-  answers: { fields: {} }                  // the answers and the interview date: which fields a subject reads is its own (V70 checks each `accept.own` and `dateField`)
+  answers: { fields: {} },                 // the answers and the interview date: which fields a subject reads is its own (V70 checks each `accept.own` and `dateField`)
+  business: { fields: { name: 'text', kind: 'choose', revenue: 'number', cost: 'number' } }   // a line of the business: the fields of one line, typed once per line
 };
 const OWN_MAX_DIGITS = 8;
 const OWN_MAX_TEXT = 80;
@@ -135,6 +137,23 @@ function ownGroupsFromDraft(form, lists, drafts){
   }));
   return { groups, problems };
 }
+
+/* ---------- the lines of a business ---------- */
+// The business form's fields are the fields of one line; the learner types as many lines as the business has. The stored lines from the
+// drafts: { lines, problems: [{ path, text }] }. A line left wholly blank is dropped; with none left, the message is under the first field.
+const ownEmptyLine = form => ({ id: ownNewId('b'), ...Object.fromEntries(form.fields.map(f => [f.id, ''])) });
+function ownLinesFromDraft(form, lists, drafts){
+  const problems = [];
+  const lines = drafts.map((draft, i) => {
+    if(ownBlank(form.fields, draft)) return null;
+    const r = ownRecord(form.fields, lists, draft);
+    Object.entries(r.problems).forEach(([id, text]) => problems.push({ path: `lines.${i}.${id}`, text }));
+    return r.value;
+  }).filter(Boolean);
+  return { lines, problems: lines.length ? problems : [{ path: `lines.0.${form.fields[0].id}`, text: SAY.bizNothingYet }] };
+}
+const ownDraftsFromLines = (form, lines) => lines.length
+  ? lines.map(l => ({ id: ownNewId('b'), ...Object.fromEntries(form.fields.map(f => [f.id, ownText(l[f.id])])) })) : [ownEmptyLine(form)];
 
 /* ---------- the app's arithmetic on what was typed ---------- */
 // What a fund costs in a year in dollars: its value times its yearly cost in percent, to the cent (nothing while its cost is not typed)

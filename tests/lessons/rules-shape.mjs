@@ -352,27 +352,36 @@ function supportFitsProblems(set, where, ctx) {
   return problems;
 }
 
-// An own step: the private form it fills in is one of the subject's. A step on the sheet shows a model that is one of its questions, and the subject
-// has the form for dated actions the step ends in; a step on the plan or the setup has neither.
+// An own step: the private form it fills in is one of the subject's. A step on the sheet or the business shows a model that is one of its questions,
+// names a work of that form, and the subject has the form for dated actions the step ends in; a step on the plan or the setup has none of these.
+const WORKED_FORMS = ['sheet', 'business'];
 function ownStepProblems(step, where, ctx) {
   const { subject } = ctx, own = subject.meta.own || {}, form = own[step.own], problems = [];
   if (!form) { problems.push(`${where}: "${step.own}" is not one of the subject's private forms`); return problems; }
-  if (!['sheet', 'plan', 'setup', 'answers'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan, the setup or the answers`);
+  if (!['sheet', 'plan', 'setup', 'answers', 'business'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the business, the plan, the setup or the answers`);
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
-  if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
-  if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
+  if (step.model && !WORKED_FORMS.includes(form.into)) problems.push(`${where}: only a step on the sheet or the business shows a model`);
+  if (WORKED_FORMS.includes(form.into) && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
   if (form.into === 'sheet') problems.push(...workProblems(step, form, where, ctx));
-  else if (step.work) problems.push(`${where}: only a step on the sheet names a work`);
+  else if (form.into === 'business') problems.push(...businessWorkProblems(step, where, ctx));
+  else if (step.work) problems.push(`${where}: only a step on the sheet or the business names a work`);
   if (step.repeat !== undefined && (step.repeat !== 'year' || form.into !== 'sheet')) problems.push(`${where}: repeat is 'year', on a step on the sheet only (its changes come back every year)`);
   return problems;
 }
 // A step on the sheet names the work the app shows (own-work.js), and the sheet holds what that work reads: the groups it needs with the
 // fields it reads, the account fields beyond the ones every sheet has, the thresholds (`limits`), the dated values (`refs`) and, when it reads
 // what an account kind or a fund kind means, only kinds the app knows.
+const worksOn = (engine, into) => Object.keys(engine.OWN_WORKS).filter(id => engine.OWN_WORKS[id].on === into);
+// A step on the business names a work the app does on the business (`core`), and reads only the lines' own fields, which every business form has.
+function businessWorkProblems(step, where, ctx) {
+  const { engine } = ctx, work = step.work && engine.OWN_WORKS[step.work];
+  if (!work || work.on !== 'business') return [`${where}: a step on the business names a work the app does on it (one of ${worksOn(engine, 'business').join(', ')})`];
+  return [];
+}
 function workProblems(step, form, where, ctx) {
   const { subject, engine } = ctx, work = step.work && engine.OWN_WORKS[step.work];
-  if (!step.work) return [`${where}: a step on the sheet names the work the app shows (one of ${Object.keys(engine.OWN_WORKS).join(', ')})`];
-  if (!work) return [`${where}: "${step.work}" is not a work the app has (${Object.keys(engine.OWN_WORKS).join(', ')})`];
+  if (!step.work) return [`${where}: a step on the sheet names the work the app shows (one of ${worksOn(engine, 'sheet').join(', ')})`];
+  if (!work || work.on !== 'sheet') return [`${where}: "${step.work}" is not a work the app does on the sheet (${worksOn(engine, 'sheet').join(', ')})`];
   const problems = [], groups = form.groups || [];
   Object.entries(work.reads).forEach(([gid, fields]) => {
     const group = groups.find(g => g.id === gid);

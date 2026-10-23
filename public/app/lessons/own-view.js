@@ -58,11 +58,19 @@ function sheetEditorHtml(form, lists, drafts, problems, warnings, groups){
     <button type="button" class="btn ghost sm" data-add-account>${esc(SAY.ownAddAccount)}</button>${more}</div>`;
 }
 
-/* ---------- the app's arithmetic on the sheet ---------- */
+/* ---------- the lines of a business ---------- */
+function businessEditorHtml(form, lists, drafts, problems){
+  const line = (draft, i) => `<section class="owncard" data-line="${i}"><h2 class="owntitle">${esc(SAY.bizLineN(i + 1))}</h2>
+    ${form.fields.map(f => ownFieldHtml(f, lists, draft[f.id], `lines.${i}.${f.id}`, problems)).join('')}
+    <button type="button" class="linkish" data-remove-line="${i}">${esc(SAY.bizRemoveLine)}</button></section>`;
+  return `<div class="ownform" data-own-business>${drafts.map(line).join('')}<button type="button" class="btn ghost sm" data-add-line>${esc(SAY.bizAddLine)}</button></div>`;
+}
+
+/* ---------- the app's arithmetic on the sheet or the business ---------- */
 // The work of a step (own-work.js) drawn: its tables, the funds that miss their balance, the plausible-range warnings, then its lines, a flag
 // set apart as something to look at, a total in bold
-function ownWorkHtml(form, workId, sheet, ctx){
-  const work = ownWork(workId, sheet, ctx), accounts = sheet.accounts;
+function ownWorkHtml(form, workId, held, ctx){
+  const work = ownWork(workId, held, ctx), accounts = form.into === 'sheet' ? held.accounts : [];
   const docs = work.docs.map(d => documentHtml(d, {})).join('');
   const gaps = ownBalanceGaps(accounts).map(g => `<p class="ownwarn" role="status">${esc(ownAccountTitle(ctx.lists, accounts[g.i]))}: ${esc(SAY.ownGap(ownWhole(g.funds), ownWhole(g.balance)))}</p>`).join('');
   const warns = ownWarnings(form, accounts).map(w => `<p class="ownwarn" role="status">${esc(w.who ? `${w.who}: ${w.text}` : w.text)}</p>`).join('');
@@ -79,8 +87,9 @@ function ownActionRowHtml(action, subjectId){
     <button type="button" class="btn ghost sm" data-action-ics="${esc(action.id)}">${esc(SAY.ownCalendar)}</button></span></li>`;
 }
 const ownActionListHtml = (actions, subjectId) => actions.length ? `<ul class="ownactions">${actions.map(a => ownActionRowHtml(a, subjectId)).join('')}</ul>` : '';
-function ownActionFormHtml(form, draft, problems){
-  const fields = form.fields.map(f => ownFieldHtml({ ...f, hint: f.id === 'what' ? SAY.ownWhatHint : f.id === 'where' ? SAY.ownWhereHint : undefined }, {}, draft[f.id] || '', f.id, problems)).join('');
+// `hints` gives the examples in the what and where boxes (the sheet's, unless the step's form has its own)
+function ownActionFormHtml(form, draft, problems, hints = { what: SAY.ownWhatHint, where: SAY.ownWhereHint }){
+  const fields = form.fields.map(f => ownFieldHtml({ ...f, hint: hints[f.id] }, {}, draft[f.id] || '', f.id, problems)).join('');
   return `<div class="ownactionform" data-own-action>${fields}<div class="numacts"><button type="button" class="btn sm" data-save-action>${esc(SAY.ownSaveAction)}</button>
     <button type="button" class="btn ghost sm" data-action-now>${esc(SAY.ownDoneNow)}</button></div></div>`;
 }
@@ -109,17 +118,22 @@ function ownSectionHtml(subj, data, state){
     : `<button type="button" class="btn ghost sm" data-trigger-mark="${esc(t.id)}">${esc(SAY.ownMomentMark)}</button>`}</td></tr>`).join('');
   const hasAny = Object.keys(notes).length > 0;
   const remove = state.deleting
-    ? `<div class="vblock" data-own-delete-ask><p>${esc(has('sheet') ? SAY.ownDeleteAsk : has('answers') ? SAY.answersDeleteAsk : SAY.planDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
+    ? `<div class="vblock" data-own-delete-ask><p>${esc(has('sheet') ? SAY.ownDeleteAsk : has('business') ? SAY.bizDeleteAsk : has('answers') ? SAY.answersDeleteAsk : SAY.planDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
         <button type="button" class="btn ghost sm" data-own-delete-no>${esc(SAY.ownDeleteNo)}</button></div></div>`
-    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : has('answers') ? SAY.answersDelete : SAY.planDelete)}</button>`;
+    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : has('business') ? SAY.bizDelete : has('answers') ? SAY.answersDelete : SAY.planDelete)}</button>`;
   const sheetHtml = has('sheet') ? `<span class="m lab">${esc(SAY.ownAccountsHeading)}</span>
     ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}${ownGroupsSummaryHtml(data, notes.sheet)}` : '';
+  const lines = (notes.business || { lines: [] }).lines, earns = l => ownWhole(Math.abs(l.revenue - l.cost));
+  const kindText = id => (((lists || {}).lineKind || []).find(o => o.id === id) || { text: id }).text;
+  const businessHtml = has('business') ? `<span class="m lab">${esc(SAY.bizHeading)}</span>
+    ${lines.length ? `<table class="k results ownsum">${lines.map(l => `<tr><td>${esc(l.name)}</td><td>${esc(kindText(l.kind))}</td><td>${l.revenue < l.cost ? '−' : ''}${esc(earns(l))}</td></tr>`).join('')}</table>`
+      : `<p class="hintline">${esc(SAY.bizNoLines)}</p>`}` : '';
   const actionsHtml = has('actions') ? `<span class="m lab">${esc(SAY.ownActionsHeading)}</span>
     ${actions.length ? ownActionListHtml(actions, subj.id) : `<p class="hintline">${esc(SAY.ownNoActions)}</p>`}` : '';
-  return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : has('answers') ? SAY.answersSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">
+  return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : has('business') ? SAY.bizSection : has('answers') ? SAY.answersSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">
     <p class="hintline">${esc(SAY.ownOnPhone)}</p>
-    ${sheetHtml}${actionsHtml}${planSectionHtml(data, notes)}${answersSectionHtml(data, notes)}
+    ${sheetHtml}${businessHtml}${actionsHtml}${planSectionHtml(data, notes)}${answersSectionHtml(data, notes)}
     ${moments ? `<span class="m lab">${esc(SAY.ownMomentsHeading)}</span><table class="k results ownsum">${moments}</table>` : ''}
-    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownExport : has('answers') ? SAY.answersExport : SAY.planExport)}</button></div>
+    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownExport : has('business') ? SAY.bizExport : has('answers') ? SAY.answersExport : SAY.planExport)}</button></div>
     ${state.deleted ? `<p class="hintline" role="status">${esc(SAY.ownDeleted)}</p>` : ''}${remove}</div>`;
 }

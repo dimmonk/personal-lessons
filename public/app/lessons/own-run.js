@@ -41,6 +41,7 @@ function paintOwn(step){
   if(into === 'setup') return paintSetupStep(step);
   if(into === 'answers') return paintAnswersStep(step);
   if(lesson.trigger && !triggersOf(subj.id)[lesson.trigger]) return paintOwnWait();
+  if(into === 'business') return paintBusinessStep(step);
   const form = ownFormOf(data, step.own), sheet = notesOf(subj.id).sheet || {}, accounts = sheet.accounts || [];
   const ready = accounts.length > 0 && !ownMissingGroups(step.work, sheet).length;
   OWN = { step, phase: ready ? 'work' : 'sheet', drafts: accounts.length ? ownDraftsFromSheet(form, accounts) : [ownEmptyAccount(form)],
@@ -49,6 +50,7 @@ function paintOwn(step){
 }
 function paintOwnPhase(){
   if(OWN.phase === 'sheet') return paintOwnSheet();
+  if(OWN.phase === 'lines') return paintOwnLines();
   if(OWN.phase === 'skipped') return paintOwnSkipped();
   paintOwnWork();
 }
@@ -128,28 +130,63 @@ function saveSheet(form){
   focusScreenHead();
 }
 function paintOwnSkipped(){
-  lessonShell(`${heading(SAY.ownEyebrow, SAY.ownNoAccounts)}<div class="lesson"><p>${esc(SAY.ownNoAccountsLine)}</p></div>`, nextAction(SAY.goOn));
+  const biz = ownIsBusiness();
+  lessonShell(`${heading(biz ? SAY.bizEyebrow : SAY.ownEyebrow, biz ? SAY.bizNone : SAY.ownNoAccounts)}<div class="lesson"><p>${esc(biz ? SAY.bizNoneLine : SAY.ownNoAccountsLine)}</p></div>`, nextAction(SAY.goOn));
   on('#fwd', goOn);
+}
+
+/* ---------- the lines of a business ---------- */
+// The same step on the business form (Strategy): the lines while none are stored, then the work on them and the change, as on the sheet.
+const ownIsBusiness = () => ownFormOf(LESSON.data, OWN.step.own).into === 'business';
+const businessLines = subjectId => (notesOf(subjectId).business || {}).lines || [];
+function paintBusinessStep(step){
+  const form = ownFormOf(LESSON.data, step.own), lines = businessLines(LESSON.subj.id);
+  OWN = { step, phase: lines.length ? 'work' : 'lines', drafts: ownDraftsFromLines(form, lines), problems: [], action: { draft: {}, problems: [] } };
+  paintOwnPhase();
+}
+function paintOwnLines(){
+  const { data, subj } = LESSON, form = ownFormOf(data, OWN.step.own), has = businessLines(subj.id).length > 0;
+  lessonShell(`${heading(SAY.bizEyebrow, SAY.bizTitle)}<div class="lesson"><p>${esc(SAY.bizHow)}</p><p class="privateline">${esc(SAY.ownPrivate)}</p></div>
+    ${businessEditorHtml(form, data.meta.lists, OWN.drafts, OWN.problems)}`,
+    `<div class="actbar"><button class="btn neutral" id="ownSave">${esc(SAY.ownSave)}${icon('arrow')}</button>
+      ${has ? `<button class="btn ghost" id="ownBack">${esc(SAY.ownBack)}</button>` : `<button class="btn ghost" id="ownSkip">${esc(SAY.bizNone)}</button>`}</div>`);
+  document.querySelectorAll('[data-path]').forEach(box => {
+    const [, i, field] = box.dataset.path.split('.');
+    box.oninput = box.onchange = () => setOwn({ drafts: OWN.drafts.map((d, at) => at === Number(i) ? { ...d, [field]: box.value } : d) });
+  });
+  const edit = (drafts, focus) => { setOwn({ drafts, problems: [] }); paintOwnLines(); if(focus) focusOn(focus); };
+  on('[data-add-line]', () => edit([...OWN.drafts, ownEmptyLine(form)], `[data-line="${OWN.drafts.length}"] input`));
+  on('[data-remove-line]', el => { const left = without(OWN.drafts, Number(el.dataset.removeLine)); edit(left.length ? left : [ownEmptyLine(form)]); });
+  on('#ownSave', () => {
+    const saved = ownLinesFromDraft(form, data.meta.lists, OWN.drafts);
+    if(saved.problems.length){ setOwn({ problems: saved.problems }); paintOwnLines(); return focusOn(ownBoxId(saved.problems[0].path)); }
+    saveNote(subj.id, 'business', { lines: saved.lines });
+    setOwn({ phase: 'work', problems: [] }); paintOwnWork(); window.scrollTo(0, 0); focusScreenHead();
+  });
+  on('#ownBack', () => { setOwn({ phase: 'work', drafts: ownDraftsFromLines(form, businessLines(subj.id)), problems: [] }); paintOwnWork(); window.scrollTo(0, 0); });
+  on('#ownSkip', () => { setOwn({ phase: 'skipped' }); paintOwnSkipped(); window.scrollTo(0, 0); });
 }
 
 /* ---------- what the app works out, and the change ---------- */
 function paintOwnWork(){
-  const { subj, data } = LESSON, form = ownFormOf(data, OWN.step.own), actionForm = ownActionFormOf(data), lists = data.meta.lists;
+  const { subj, data } = LESSON, form = ownFormOf(data, OWN.step.own), actionForm = ownActionFormOf(data), lists = data.meta.lists, biz = form.into === 'business';
   const model = OWN.step.model ? data.items[OWN.step.model] : null;
-  const modelHtml = model ? `<div class="vblock soft">${lessonLabel(SAY.ownModelHeading)}<p>${esc(SAY.ownModelLine)}</p></div>
+  const modelHtml = model ? `<div class="vblock soft">${lessonLabel(biz ? SAY.bizModelHeading : SAY.ownModelHeading)}<p>${esc(biz ? SAY.bizModelLine : SAY.ownModelLine)}</p></div>
     ${blocksHtml(model.blocks, { deciding: model.deciding || [], data, scope: `own|${model.id}` })}` : '';
-  const work = OWN.step.work;
-  lessonShell(`${heading(SAY.ownEyebrow, SAY.workTitle[work])}<div class="lesson"><p>${esc(SAY.workHow[work])}</p></div>${ownWorkHtml(form, work, notesOf(subj.id).sheet, ownWorkCtx(data, form))}${modelHtml}
+  const work = OWN.step.work, held = biz ? notesOf(subj.id).business : notesOf(subj.id).sheet;
+  const hints = biz ? { what: SAY.bizWhatHint, where: SAY.bizWhereHint } : undefined;
+  lessonShell(`${heading(biz ? SAY.bizEyebrow : SAY.ownEyebrow, SAY.workTitle[work])}<div class="lesson"><p>${esc(SAY.workHow[work])}</p></div>${ownWorkHtml(form, work, held, ownWorkCtx(data, form))}${modelHtml}
     <div class="ownsection"><h2 class="owntitle">${esc(SAY.ownActionHeading)}</h2><p class="forline">${esc(OWN.step.repeat ? SAY.ownActionHowYear : SAY.ownActionHow)}</p>
-    ${ownActionListHtml(actionsOf(subj.id), subj.id)}${ownActionFormHtml(actionForm, OWN.action.draft, OWN.action.problems)}<p class="hintline">${esc(SAY.ownNothing)}</p></div>`,
-    `<div class="actbar"><button class="btn neutral" id="fwd">${esc(SAY.goOn)}${icon('arrow')}</button><button class="btn ghost" id="ownChange">${esc(SAY.ownChange)}</button></div>`);
+    ${ownActionListHtml(actionsOf(subj.id), subj.id)}${ownActionFormHtml(actionForm, OWN.action.draft, OWN.action.problems, hints)}<p class="hintline">${esc(biz ? SAY.bizNothing : SAY.ownNothing)}</p></div>`,
+    `<div class="actbar"><button class="btn neutral" id="fwd">${esc(SAY.goOn)}${icon('arrow')}</button><button class="btn ghost" id="ownChange">${esc(biz ? SAY.bizChange : SAY.ownChange)}</button></div>`);
   document.querySelectorAll('[data-own-action] [data-path]').forEach(box => {
     box.oninput = () => setOwn({ action: { ...OWN.action, draft: { ...OWN.action.draft, [box.dataset.path]: box.value } } });
   });
   on('[data-save-action]', () => saveAction(actionForm, false));
   on('[data-action-now]', () => saveAction(actionForm, true));
   wireActionRows(subj, paintOwnWork);
-  on('#ownChange', () => { setOwn({ phase: 'sheet', drafts: ownDraftsFromSheet(form, sheetAccounts(subj.id)), groups: ownGroupDrafts(form, OWN_WORKS[OWN.step.work].needs, notesOf(subj.id).sheet), problems: [] }); paintOwnSheet(); window.scrollTo(0, 0); focusScreenHead(); });
+  if(biz) on('#ownChange', () => { setOwn({ phase: 'lines', drafts: ownDraftsFromLines(form, businessLines(subj.id)), problems: [] }); paintOwnLines(); window.scrollTo(0, 0); focusScreenHead(); });
+  else on('#ownChange', () => { setOwn({ phase: 'sheet', drafts: ownDraftsFromSheet(form, sheetAccounts(subj.id)), groups: ownGroupDrafts(form, OWN_WORKS[OWN.step.work].needs, notesOf(subj.id).sheet), problems: [] }); paintOwnSheet(); window.scrollTo(0, 0); focusScreenHead(); });
   on('#fwd', goOn);
 }
 // "Done now" needs only what and where; a day needs a day that is not past
