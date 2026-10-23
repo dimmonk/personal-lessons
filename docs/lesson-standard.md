@@ -482,7 +482,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `article` | `news`, `post`, `ad`, `report`: where it comes from, a headline (every form but a post), the lines, small print last | `id?`, `form`, `source`, `headline?: Segment`, `lines`, `label?: { text, by, side }` (a post only) |
 | `chart` | bars or a line drawn as SVG from its data; an axis may start above zero, and then the start is written on it | `type`, `title`, `x`, `y: { from, to, step, unit? }`, `series: [{ name?, values }]`, `source`, `labels?` |
 | `document` | `receipt`, `recipe`, `tag`, `offer`, `statement`, `fees`, `paystub`, `matchrule`, `beneficiary`, `foreign`, `table`; adjacent documents with a `tab` are one group of tabs | `form`, `title`, `rows: [{ id, cells, strong? }]`, `notes?`, `head?`, `tab?` |
-| `figure` | `rate-table`, `bar` (the 100% bar), `plan` (a plan to scale: rectangles, circles with `shape: 'circle'` and a radius `r` (`across` writes the distance across), right triangles with `shape: 'triangle'`, the right angle at the bottom left; `say` writes words for a side of any shape, "?" or "10 ft ladder"; a tall plan fits 300 units), `years`, `people` (1,000 dots a row, the first `count` marked; a count may be a generator's slot) | `type`, `data` (shapes in `tests/lessons/shapes.mjs`) |
+| `figure` | `rate-table`, `bar` (the 100% bar), `plan` (a plan to scale: rectangles, circles with `shape: 'circle'` and a radius `r` (`across` writes the distance across), right triangles with `shape: 'triangle'`, the right angle at the bottom left; `say` writes words for a side of any shape, "?" or "10 ft ladder"; a tall plan fits 300 units), `years`, `people` (1,000 dots a row, the first `count` marked; a count may be a generator's slot), `stick` (the value stick of one sale: `{ caption, wtp, price, cost, wts }`, drawn as one bar from the least suppliers and staff would take to the most a customer would pay, cut at the cost and the price into the three shares, each as wide as its part of the value created, with the value created and each share written with the two levels it lies between; the levels run down in that order and some value is created, V70) | `type`, `data` (shapes in `tests/lessons/shapes.mjs`) |
 | `ref` | a value looked up: its text, the value, "Looked up <day>", "Source: …", a line to check the source, and after a year a line to look it up again | `ref` (an id of `subject.refs`) |
 | `panel` | what a label or word requires, printed from `subject.rules`, beside the item while the help lasts | `rules` |
 | `spoken` | a question read aloud by an on-device voice; its words shown, or held behind "Show the words" | `text`, `show?` |
@@ -1192,6 +1192,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **2026-10-22, the retest of a check with sung tries** (Singing's plan: the tune test on two different days): a check with sung tries
   may carry `retest` (6.4); its sung tries are made again on new targets; V78 refuses a sung check's retest under one day. Singing's
   lesson 12 uses it (`retest: 7`). Checked in `tests/engine-pure.mjs`, with a seeded fault in `tests/lessons/controls-table.mjs`.
+
+- **2026-10-23, the value stick** (Strategy's plan, engine gap 2): a `figure` of type `stick` (3.9) draws one sale's value created and its three
+  shares (`stickHtml` in `doc-view.js`, worded in `SAY.stick*`); V70 reads its levels in order (`stickProblems`, two seeded faults), X20 measures
+  its shares (one seeded fault), and `tests/number-pure.mjs` holds the drawing. A new field of the library, Business (`FC.FIELDS`). `FC.ENGINE` is 21.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

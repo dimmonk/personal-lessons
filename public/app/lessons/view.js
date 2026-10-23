@@ -449,6 +449,11 @@ const SAY = {
   chartSource: source => `Source: ${source}`,
   redrawLabel: 'The same chart, drawn from zero',
   peopleIn: (label, count) => `${label}: ${fmtNumber(count)} in 1,000`,
+  // the value stick (3.9): the four levels and the three shares between them, from what one sale is worth down to what it costs to make
+  stickValue: money => `Value created: ${money}`,
+  stickShares: { supplier: 'Suppliers and staff keep', business: 'The business keeps', customer: 'The customer keeps' },
+  stickLevels: { wts: 'the least suppliers and staff would take', cost: 'the cost', price: 'the price', wtp: 'the most a customer would pay' },
+  stickShare: (who, money, from, fromMoney, less, lessMoney) => `${who}: ${money} (${from}, ${fromMoney}, less ${less}, ${lessMoney})`,
   tapOne: 'Tap a sentence in the text above.',
   tapMany: n => `Tap ${numWord(n)} sentences in the text above, then tap Answer.`,
   youTapped: 'You tapped',

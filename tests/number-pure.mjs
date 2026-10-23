@@ -218,6 +218,16 @@ check(withinTol(0, 0, { rel: 0.2 }) && !withinTol(0.1, 0, { rel: 0.2 }), 'zero i
   check(Number(tall.match(/viewBox="0 0 300 (\d+)"/)[1]) <= 300, 'a tall plan is drawn no taller than the room the screen has for it');
   const rate = figureHtml({ kind: 'figure', type: 'rate-table', data: { top: { label: 'People', cells: ['4', '6'] }, bottom: { label: 'Cups', cells: ['2', '?'] } } });
   check((rate.match(/<tr>/g) || []).length === 2 && rate.includes('>?<'), 'a rate table has two rows and a blank to fill');
+  // the value stick: three shares, each as wide as its part of the value created, and every level written once in the legend
+  const stick = figureHtml({ kind: 'figure', type: 'stick', data: { caption: 'One cake', wtp: 30, price: '24', cost: 14, wts: 10 } });
+  const segs = [...stick.matchAll(/<rect class="fig-seg [^"]*" x="([\d.]+)" y="0" width="([\d.]+)" height="20" data-share="(\w+)" data-size="(\d+)"/g)].map(m => [Number(m[1]), Number(m[2]), m[3], Number(m[4])]);
+  check(segs.length === 3 && segs.map(x => x[2]).join() === 'supplier,business,customer' && segs.map(x => x[3]).join() === '4,10,6'
+    && Math.abs(segs[0][1] - 20) < 1e-9 && Math.abs(segs[1][0] - 20) < 1e-9 && Math.abs(segs[1][1] - 50) < 1e-9 && Math.abs(segs[2][1] - 30) < 1e-9, 'a value stick cuts the value created into the three shares, each as wide as its part');
+  check(/Value created: \$20/.test(stick) && /The business keeps: \$10 \(the price, \$24, less the cost, \$14\)/.test(stick) && /The customer keeps: \$6 \(the most a customer would pay, \$30, less the price, \$24\)/.test(stick)
+    && /Suppliers and staff keep: \$4 \(the cost, \$14, less the least suppliers and staff would take, \$10\)/.test(stick), 'a value stick writes the value created and each share with the two levels it lies between');
+  check(/>\$10<\/span><span>\$30</.test(stick), 'a value stick writes its two ends');
+  const cents = figureHtml({ kind: 'figure', type: 'stick', data: { caption: 'A coffee', wtp: 5.5, price: 4.25, cost: 1.5, wts: 1.5 } });
+  check(/\$5\.50/.test(cents) && /Suppliers and staff keep: \$0 /.test(cents), 'a value stick writes cents when there are some, and a share of nothing');
   const years = figureHtml({ kind: 'figure', type: 'years', data: { columns: ['Year', 'Balance'], rows: [['1', '$1,050'], ['2', '$1,102.50']] } });
   check((years.match(/<tr>/g) || []).length === 3 && years.includes('$1,102.50'), 'a year table has its header and a row for each year');
 }

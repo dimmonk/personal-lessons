@@ -56,6 +56,8 @@ export const FAULTS = [
     edits: [replace('app/lessons/doc-view.js', 'r = at.k(p.r), from', 'r = at.k(2 * p.r), from')] },
   { check: 'X20', name: 'a 100% bar part drawn a tenth too short',
     edits: [replace('app/lessons/doc-view.js', 'width="${p.pct}" height="20"', 'width="${p.pct * 0.9}" height="20"')] },
+  { check: 'X20', name: 'the shares of a value stick drawn in the wrong order',
+    edits: [replace('app/lessons/doc-view.js', "{ who: 'supplier', from: 'cost', less: 'wts', size: at.cost - at.wts },", "{ who: 'supplier', from: 'cost', less: 'wts', size: at.wtp - at.price },")] },
   { check: 'X25', name: 'the cart without its big line no longer recognised as a slip in Math',
     edits: [replace('subjects/math/gen-totals.js', "traps: [{ slip: 'missed-line', value: 'noBig', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps] },", "traps: [{ slip: 'missed-line', value: 'tenfold', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps] },")] },
   // the learner's own data, the papers and the form (9: X24; 3 to 9: X26, X27)

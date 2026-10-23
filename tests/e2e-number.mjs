@@ -227,6 +227,20 @@ export async function X20(env) {
   const years = figs.find(f => f.type === 'years').data;
   const table = await block('years').locator('tr').evaluateAll(rows => rows.map(r => [...r.children].map(x => x.textContent)));
   c.check(JSON.stringify(table) === JSON.stringify([years.columns, ...years.rows]), 'the year table is not the data');
+  // the value stick: the three shares side by side, each as wide as its part of the value created, and the four levels written
+  const stick = figs.find(f => f.type === 'stick').data;
+  const cut = await block('stick').locator('svg').evaluate(svg => ({ width: svg.getBoundingClientRect().width, left: svg.getBoundingClientRect().left,
+    rects: [...svg.querySelectorAll('rect')].map(r => ({ width: r.getBoundingClientRect().width, left: r.getBoundingClientRect().left })) }));
+  const value = stick.wtp - stick.wts, sizes = [stick.cost - stick.wts, stick.price - stick.cost, stick.wtp - stick.price];
+  let at = 0;
+  c.check(cut.rects.length === 3, 'the value stick is not drawn in three shares');
+  sizes.forEach((size, i) => {
+    const r = cut.rects[i] || { width: 0, left: 0 };
+    c.check(near(r.width / cut.width, size / value) && near((r.left - cut.left) / cut.width, at / value), `share ${i + 1} of the value stick is drawn ${(r.width / cut.width * 100).toFixed(1)}% wide, the data says ${(size / value * 100).toFixed(1)}%`);
+    at += size;
+  });
+  const stickText = await block('stick').textContent();
+  c.check([stick.wtp, stick.price, stick.cost, stick.wts, value].every(n => stickText.includes(`$${n}`)), 'the value stick does not write its four levels and the value created');
   await env.inspect(c, page, 'the figures');
   await context.close();
   await chartHalf(env, c);

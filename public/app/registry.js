@@ -5,7 +5,7 @@
   'use strict';
 
   const LESSON_STANDARD = 2;   // docs/lesson-standard.md version the engine implements
-  const ENGINE_WORDING = 20;    // goes up when the app's own wording changes
+  const ENGINE_WORDING = 21;    // goes up when the app's own wording changes
   // The shelves of the library: Field > Subject > Unit > Lesson (docs/HANDOFF.md, "Terms"). Each subject record names its field;
   // a field with no subject is not shown.
   const FIELDS = [

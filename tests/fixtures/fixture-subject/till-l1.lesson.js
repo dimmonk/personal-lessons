@@ -16,7 +16,8 @@ FC.lesson('till', {
         { kind: 'figure', type: 'plan', data: { unit: 'ft', parts: [{ x: 0, y: 0, w: 12, h: 10, label: 'Room' }, { x: 0, y: 3, w: 3, h: 6, label: 'Rug', cut: true }] } },
         { kind: 'figure', type: 'plan', data: { unit: 'ft', parts: [{ x: 0, y: 0, w: 10, h: 8, label: 'Patio' }, { shape: 'circle', x: 1, y: 1, r: 3, label: 'Rug' },
           { shape: 'triangle', x: 12, y: 0, w: 2, h: 8, say: { w: '?', slant: '10 ft ladder' } }, { shape: 'circle', x: 7, y: 4, r: 2, across: true, cut: true }] } },
-        { kind: 'figure', type: 'years', data: { columns: ['Year', 'Balance'], rows: [['1', '$1,050'], ['2', '$1,102.50'], ['3', '$1,157.63']] } }
+        { kind: 'figure', type: 'years', data: { columns: ['Year', 'Balance'], rows: [['1', '$1,050'], ['2', '$1,102.50'], ['3', '$1,157.63']] } },
+        { kind: 'figure', type: 'stick', data: { caption: 'One cake', wtp: 30, price: 24, cost: 14, wts: 10 } }
       ] },
     { worked: 'w-till' },
     { set: { items: ['t-recipe', { gen: 't-cart', n: 2 }], order: 'listed', support: { estimateCheck: true } } },

@@ -30,7 +30,7 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
     if (shape.length) return shape;
     const data = show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
     if (data.length) return data;
-    return block.type === 'people' ? peopleProblems(block.data, where) : block.type === 'plan' ? planProblems(block.data, where) : [];
+    return block.type === 'people' ? peopleProblems(block.data, where) : block.type === 'plan' ? planProblems(block.data, where) : block.type === 'stick' ? stickProblems(block.data, where) : [];
   }
   if (block.kind === 'article') return articleProblems(block, where);
   if (block.kind === 'panel') {
@@ -90,6 +90,20 @@ function peopleProblems(data, where) {
   const slot = v => typeof v === 'string' && v.includes('{');   // a generator's slot is read on the questions it makes
   return data.rows.filter(r => !slot(r.count) && !(Number.isInteger(Number(r.count)) && Number(r.count) >= 0 && Number(r.count) <= 1000))
     .map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not a whole number between 0 and 1,000`);
+}
+// The value stick: the four levels in their order from the top, the most a customer would pay at or above the price, the price at or above the cost,
+// the cost at or above the least suppliers and staff would take, that at zero or more, and some value created (a generator's slots are read on the
+// questions it makes).
+function stickProblems(data, where) {
+  const levels = ['wtp', 'price', 'cost', 'wts'], slot = v => typeof v === 'string' && v.includes('{');
+  if (levels.some(k => slot(data[k]))) return [];
+  const n = Object.fromEntries(levels.map(k => [k, Number(data[k])]));
+  const bad = levels.filter(k => !Number.isFinite(n[k])).map(k => `${where}: ${k} "${data[k]}" is not a number`);
+  if (bad.length) return bad;
+  return [
+    ...levels.slice(1).filter((k, i) => n[k] > n[levels[i]]).map(k => `${where}: ${k} (${n[k]}) is above ${levels[levels.indexOf(k) - 1]} (${n[levels[levels.indexOf(k) - 1]]}), and the stick runs from the most a customer would pay down`),
+    ...(n.wts < 0 ? [`${where}: wts is below zero`] : []),
+    ...(n.wtp <= n.wts ? [`${where}: no value is created (wtp is not above wts)`] : [])];
 }
 // A plan is drawn to one scale: every size of a part is a number above zero and every corner at zero or more (a generator's slot, "{w}", is read
 // on the questions it makes). A triangle is right-angled, so its two sides and the slant are its own; a circle has one size, its radius.
