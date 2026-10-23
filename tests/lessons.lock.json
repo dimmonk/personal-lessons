@@ -39,7 +39,7 @@
     },
     "strategy": {
       "rev": 1,
-      "fp": "sha256:c854c2c5c4f9b64feae3f9d0f8e9a456f99938f0fc975c5a4a4fa33c6de1175e"
+      "fp": "sha256:c1558fb6bad9cabff4fa14e23ea715a97a85a79effff765e17d3959db874d24d"
     },
     "wealth": {
       "rev": 9,
@@ -663,6 +663,14 @@
       "rev": 1,
       "fp": "sha256:48854d9cd333239b9449ec8b578b26c7dcb70a2941f3d4d16632422946d939d8"
     },
+    "strategy/l13": {
+      "rev": 1,
+      "fp": "sha256:5ec31e3f3c40640c11857ed35323a26ce8596e234347e35d51977fe2f5160fad"
+    },
+    "strategy/l14": {
+      "rev": 1,
+      "fp": "sha256:a2ec1d88f652e0990a2b5878558ee0cdd25f4ac3bd15c2d85ae3e03caced6328"
+    },
     "strategy/l2": {
       "rev": 1,
       "fp": "sha256:d27535c9da4e8089c7bba4067c3f4b7ed26b8693b8719ec15213082d508a14ce"
@@ -689,7 +697,7 @@
     },
     "strategy/l8": {
       "rev": 1,
-      "fp": "sha256:af6d710f30226c1c3f056de3cdd99f2690e92659a013215f4b5a1805e46d1925"
+      "fp": "sha256:e9f004b5cb740c8acfe4ed9e7e0e6ba2250aa4af6369558a8d9f75bafbfe0e18"
     },
     "strategy/l9": {
       "rev": 1,

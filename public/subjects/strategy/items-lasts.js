@@ -20,7 +20,9 @@
   function lasts({ id, from, detail, lines, benefit, barrier, deciding, reason, scale = "owner", steps }) {
     return {
       id, strand: "lasts", facets: { scale },
-      blocks: [{ kind: "message", id: "notes", form: "note", from, detail, lines: lines.map(([lid, text]) => ({ id: lid, text })) }],
+      blocks: [scale === "known"
+        ? { kind: "article", id: "notes", form: "report", source: detail, headline: { id: "h", text: from }, lines: lines.map(([lid, text]) => ({ id: lid, text })) }
+        : { kind: "message", id: "notes", form: "note", from, detail, lines: lines.map(([lid, text]) => ({ id: lid, text })) }],
       asks: [
         { id: "benefit", kind: "choose", prompt: "What does the difference give the business?", from: "benefit", right: benefit, then: BENEFIT_THEN[benefit] },
         { id: "barrier", kind: "choose", prompt: "What stops a rival getting the same?", from: "barrier", right: barrier, when: { ask: "benefit", is: ["price", "cost"] },
@@ -88,7 +90,7 @@
       reason: "Owners pay $10 more for the shampoo, but any groomer can buy it from the maker; finding it first is not a barrier. A benefit with no barrier, so it will not last."
     }),
     lasts({
-      id: "p8-funds", scale: "known", from: "About Vanguard, the fund company", detail: "Written for this question",
+      id: "p8-funds", scale: "known", from: "Vanguard: why its funds cost so little", detail: "Business report",
       lines: [
         ["c1", "Vanguard’s funds cost investors very little to own."],
         ["c2", "It can charge so little because its costs are low: it trades rarely, pays no star managers, sells straight to investors and spends little on advertising."],
