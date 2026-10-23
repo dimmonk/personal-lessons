@@ -1,18 +1,20 @@
 // Strategy, lesson 2 "Better, or different?": the worked notes, the questions of the groups, the check and three held back for the review.
 // The one rule (research ST1, ST16): would doing the same things the rivals do, only better, fix it? If the business is behind rivals at the same
 // work (late, slow, wasteful, full of mistakes) and the rivals show it can be done, yes: run it better. If it already runs as well as its rivals and
-// is squeezed anyway, or every gain is copied, or rivals' costs are out of reach of any amount of running better, no: choose a different position.
-// Every story states the facts that settle it in one line, the line to tap. Owner-run businesses, invented.
+// loses customers or profit anyway, or every gain is copied, or rivals' costs are out of reach of any amount of running better, no: choose a different
+// position. When a story holds facts that pull both ways, the one that explains the loss settles it. Every line but the settling one says why it
+// does not settle, and lines that name rivals are often background. Owner-run businesses, invented.
 (() => {
   const ONLY = ["run-better", "position"];
   const THEN = {
     "run-better": "Rivals doing the same work show it can be done better: closing that gap fixes it, and no new position is needed.",
-    position: "It already runs as well as its rivals, or they copy each gain, so running it better would leave it the same as them."
+    position: "It already runs as well as its rivals, or they copy each gain, or their cost is out of reach, so running it better would leave it the same as them or behind."
   };
   const SLIP = { "run-better": { position: "running-as-strategy" }, position: { "run-better": "better-not-different" } };
   // a story: whose notes, its lines ([id, text, note?]), the line that settles it, the verdict
   function story({ id, from, detail, lines, settles, verdict, reason, then, steps, deciding }) {
     const other = ONLY.find(v => v !== verdict);
+    lines.forEach(([lid, , note]) => { if (lid !== settles && !note) throw new Error(`strategy ${id}: line ${lid} has no note`); });
     return {
       id, strand: "better-different", facets: { scale: "owner", problem: verdict === "position" ? "strategic" : "running" },
       blocks: [{ kind: "message", id: "notes", form: "note", from, detail,
@@ -28,6 +30,7 @@
     };
   }
   const BACK = "That is background. Look for the line that says whether rivals do the same work better.";
+  const RIVALS = "That names rivals, but only as background: it does not say whether they do the same work better.";
 
   FC.items("strategy", [
     // ----- the worked notes: a gain copied at once -----
@@ -49,9 +52,10 @@
     story({
       id: "p-bistro", from: "Notes on our bistro", detail: "Written in March",
       lines: [
-        ["c1", "Our food gets good reviews, about the same as the two bistros nearby.", BACK],
-        ["c2", "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints."],
-        ["c3", "Our kitchen has no fixed order for which tickets get cooked first.", "That is the cause of the gap. The line before it shows rivals doing the same work better."]],
+        ["c3", "Our kitchen has no fixed order for which tickets get cooked first.", "That is the cause of the gap. Find the line that shows rivals doing the same work better."],
+        ["c4", "The two bistros nearby are busier than us on weekends, as they always were.", RIVALS],
+        ["c1", "Our food gets good reviews.", BACK],
+        ["c2", "A third of our reviews say the food came out cold or late, and the two bistros nearby, with the same dishes and prices, get no such complaints."]],
       settles: "c2", verdict: "run-better",
       reason: "Two bistros with the same dishes and prices serve them hot and on time, so the gap is in running the kitchen. Running it better fixes it."
     }),
@@ -59,8 +63,8 @@
       id: "p-books", from: "Notes on our bookkeeping firm", detail: "Written in June",
       lines: [
         ["c1", "We keep the books for about 60 small businesses.", BACK],
-        ["c2", "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes."],
-        ["c3", "The two firms they moved to do the same work for the same fee and send their reports on time.", ],
+        ["c2", "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes.", "That is the problem. Find the line that shows whether rivals do the same work better."],
+        ["c3", "The two firms they moved to do the same work for the same fee and send their reports on time."],
         ["c4", "We still type the numbers in by hand; both of those firms pull them straight from the bank.", "That is how the gap arose. Find the line that shows rivals doing the same work better."]],
       settles: "c3", verdict: "run-better",
       reason: "The firms the clients moved to do the same work for the same fee, only on time. Closing that gap is running it better."
@@ -68,22 +72,22 @@
     story({
       id: "p-movers", from: "Notes on our moving company", detail: "Written in April",
       lines: [
-        ["c1", "Every moving company in our area quotes the same hourly rate, give or take $5.", BACK],
-        ["c2", "We are already as quick and careful as any of them, and customers still pick whoever quotes lowest on the day."],
-        ["c3", "Each spring somebody cuts the rate, and the rest of us follow.", "That is what the squeeze looks like. The line that settles it says whether running better would help."]],
+        ["c2", "We are already as quick and careful as any mover in the area, and customers still pick whoever quotes lowest on the day."],
+        ["c1", "Every moving company in our area quotes the same hourly rate, give or take $5.", RIVALS],
+        ["c3", "Each spring somebody cuts the rate, and the rest of us follow.", "That is what the price fight looks like. The line that settles it says whether running better would help."]],
       settles: "c2", verdict: "position",
       reason: "The company already runs as well as any rival, and customers still choose on price alone. Running better leaves it the same as everyone else, so it needs a different position."
     }),
     story({
       id: "p-pizza", from: "Notes on our pizza shop", detail: "Written in September",
       lines: [
-        ["c1", "Two national chains opened within a mile of us this year.", BACK],
+        ["c1", "Two national chains opened within a mile of us this year.", RIVALS],
         ["c2", "They sell a large pizza for $8, buying their cheese and flour for 3,000 stores at a time."],
-        ["c3", "A large pizza costs us $7 to make, and our kitchen wastes as little as anyone’s.", "That shows the shop runs well. The line that settles it says what no amount of running better can reach."],
+        ["c3", "A large pizza costs us $9 to make, and our kitchen wastes as little as anyone’s.", "That shows the shop runs well and costs more than the chains charge. The line that settles it says why no amount of running better can reach their price."],
         ["c4", "Our regulars still come on Fridays.", BACK]],
       settles: "c2", verdict: "position",
       deciding: ["c2", "c3"],
-      reason: "The chains buy for 3,000 stores, a cost no single shop reaches by running its kitchen better, and this kitchen already wastes little. Competing on the same pizza at their price cannot work, so it needs a different position."
+      reason: "The chains buy for 3,000 stores and sell at $8, below the $9 this well-run kitchen spends on a pizza; no single shop reaches that cost by running better. Competing on the same pizza at their price cannot work, so it needs a different position."
     }),
 
     // ----- the second group (nothing marked) -----
@@ -91,33 +95,33 @@
       id: "q-salon2", from: "Notes on our hair salon", detail: "Written in May",
       lines: [
         ["c1", "Our bookings are kept in a paper diary at the front desk.", "That is the cause. Find the line that shows rivals doing the same work better."],
-        ["c2", "Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes."],
-        ["c3", "The salon across the street, with the same prices and services, books online and its clients never wait."]],
+        ["c3", "The salon across the street, with the same prices and services, books online and its clients never wait."],
+        ["c2", "Twice a week a stylist is double-booked, and clients walk out after waiting 40 minutes.", "That is the problem. Find the line that shows whether rivals do the same work better."]],
       settles: "c3", verdict: "run-better",
       reason: "The salon across the street offers the same thing and books without waits, so the gap is in running the front desk. Running it better fixes it."
     }),
     story({
       id: "q-gym2", from: "Notes on our gym", detail: "Written in January",
       lines: [
-        ["c1", "Three budget gyms opened within a mile this year, at $10 a month.", BACK],
-        ["c2", "Our gym is as clean and as well run as any of them, and members still leave for the $10 places, which our rent cannot let us match."],
+        ["c1", "Three budget gyms opened within a mile this year, at $10 a month.", RIVALS],
+        ["c2", "Our gym is as clean and as well run as any of them, our rent is already as low as any gym’s in town, and the chains buy machines for hundreds of gyms at once: we cannot get near $10."],
         ["c3", "We charge $45 a month for the same machines and classes.", "That is the price gap. The line that settles it says whether running better would close it."]],
       settles: "c2", verdict: "position",
-      reason: "The gym already runs as well as the budget gyms and still cannot reach $10 with its rent. Selling the same machines and classes better will not fix it, so it needs a different position."
+      reason: "The gym already runs as well as the budget gyms, with rent as low as any, and the chains’ buying is out of its reach, so it cannot get near $10. Selling the same machines and classes better will not fix it, so it needs a different position."
     }),
     story({
       id: "q-roofer", from: "Notes on our roofing company", detail: "Written in July",
       lines: [
-        ["c1", "We bid on the same jobs as four other roofers, at about the same price.", BACK],
-        ["c2", "Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site."],
-        ["c3", "So we fit fewer jobs into the season.", "That is the result. The line before it says why."]],
+        ["c3", "So we fit fewer jobs into the season.", "That is the result. Find the line that says why."],
+        ["c1", "We bid on the same jobs as four other roofers, at about the same price.", RIVALS],
+        ["c2", "Our jobs take 30% longer than theirs because our crew drives back to the yard for materials twice a day, while theirs have materials delivered to the site."]],
       settles: "c2", verdict: "run-better",
       reason: "The other roofers do the same jobs faster by having materials delivered. That is a gap in running the work, and closing it is running it better."
     }),
     story({
       id: "q-cafe2", from: "Notes on our cafe", detail: "Written in October",
       lines: [
-        ["c1", "Every cafe on our street now has the same espresso machine, the same oat milk and the same pastries from the same bakery.", BACK],
+        ["c1", "Every cafe on our street now has the same espresso machine, the same oat milk and the same pastries from the same bakery.", RIVALS],
         ["c2", "Our coffee is as good and as quick as theirs.", "That shows the cafe runs well. Find what happens to each new thing."],
         ["c3", "Each time one of us adds something new, the others have it within a month, and our prices keep sliding."]],
       settles: "c3", verdict: "position",
@@ -130,7 +134,7 @@
         ["c2", "Every other shop in town runs a newer press for the same kind of work, and none of them misses rush orders."],
         ["c3", "Our prices are the same as theirs.", BACK]],
       settles: "c2", verdict: "run-better",
-      reason: "Shops doing the same work with a newer press do not miss rush orders, so the gap is in the equipment. Running it better fixes it."
+      reason: "Shops doing the same work with a newer press do not miss rush orders, so the gap is in the equipment. A newer press only brings the shop level with them, and level is all it needs: the trouble is lost rush orders, not a price fight, so running it better fixes it."
     }),
 
     // ----- the check -----
@@ -139,14 +143,14 @@
       lines: [
         ["c1", "Patients complain that our bills are wrong: one bill in five needs fixing.", "That is the problem. Find the line that shows whether rivals do the same work better."],
         ["c2", "The other dental offices in town fill in the same insurance forms and rarely get a bill wrong."],
-        ["c3", "Our patients like the dentists.", BACK]],
+        ["c3", "Our patients like the dentists, and the two newest offices in town have longer waiting lists than ours.", RIVALS]],
       settles: "c2", verdict: "run-better",
       reason: "Other offices fill in the same forms and get the bills right, so the gap is in running the billing. Running it better fixes it."
     }),
     story({
       id: "k-florist", from: "Notes on our flower shop", detail: "Written in February",
       lines: [
-        ["c1", "Supermarkets now sell a dozen roses for $12.", BACK],
+        ["c1", "Supermarkets now sell a dozen roses for $12.", RIVALS],
         ["c2", "A dozen roses costs us $15, and our buying and our waste are already as low as any florist’s."],
         ["c3", "Valentine’s Day sales fell by half this year.", "That is the result. The line that settles it says whether running better would help."]],
       settles: "c2", verdict: "position",
@@ -161,31 +165,34 @@
       settles: "c3", verdict: "run-better",
       reason: "Rivals deliver the same parcels with fewer miles by planning the stops with software. That is a gap in running the business, so running it better fixes it."
     }),
+    // two facts that pull opposite ways: the one that explains the loss settles it
     story({
-      id: "k-heating", from: "Notes on our heating company", detail: "Written in November",
+      id: "k-taxprep", from: "Notes on our tax-prep office", detail: "Written in May",
       lines: [
-        ["c1", "Every heating company in town now offers the same $79 tune-up and the same 10-year warranty."],
-        ["c2", "When one of us adds a new offer, the rest copy it within a season, and prices keep falling."],
-        ["c3", "Our technicians are as quick and as well trained as anyone’s.", "That shows the company runs well. Find what happens to each new offer."]],
+        ["c1", "Some of our returns go out a day or two late; the other tax offices in town are always on time.", "That is a real gap, but it is not why clients left. Find the line that explains the loss."],
+        ["c2", "The 40 clients who left this year all moved to tax software at $60 a return, less than a simple return costs us to do however fast we work."],
+        ["c3", "The clients who stayed say they come to us for help with tricky returns.", BACK]],
       settles: "c2", verdict: "position",
-      deciding: ["c2", "c3"],
-      reason: "Every new offer is copied within a season and prices fall, while the company already runs as well as its rivals. Running better would be copied too, so it needs a different position."
+      then: "Fixing the late returns is worth doing, but the clients left for a price below what a simple return costs us, which no amount of running better reaches.",
+      deciding: ["c2", "c1"],
+      reason: "The late returns are a real gap, but they are not why clients left: they left for software priced below what a simple return costs us to do. Running better would not bring them back, so it needs a different position."
     }),
     story({
-      id: "k-bread", from: "Notes on our bakery", detail: "Written in June",
+      id: "k-cafe3", from: "Notes on our cafe", detail: "Written in September",
       lines: [
-        ["c1", "We bake the same amount of bread every day of the week.", "That is the cause. Find the line that shows whether rivals do the same work better."],
-        ["c2", "At closing we throw away about a quarter of it."],
-        ["c3", "The other bakeries in town bake more on busy days and less on quiet ones, and throw away very little."]],
+        ["c1", "Every cafe on our street copies a new drink within a month.", "Copying is real here, but it hits every cafe alike. Find the line that explains why our sales alone fell."],
+        ["c2", "Our sales fell 20% this year, while the other cafes on the street held theirs.", "That is the result. Find the line that says why."],
+        ["c3", "Reviews say our line takes 15 minutes at 8 a.m.; at the others, with the same machines and the same number of staff, it takes 5."]],
       settles: "c3", verdict: "run-better",
-      deciding: ["c3", "c1"],
-      reason: "Other bakeries do the same work and waste very little by baking to the day. Closing that gap is running it better."
+      then: "Copying is real on this street, but the drop is ours alone, and it comes from a slow line that rivals with the same machines do not have.",
+      deciding: ["c3", "c2"],
+      reason: "Copying hits every cafe alike, but only our sales fell, and the reviews say why: a line three times slower than rivals with the same machines and staff. Closing that gap is running it better."
     }),
     story({
       id: "k-taxi", from: "Notes on our taxi company", detail: "Written in April",
       lines: [
         ["c1", "Ride apps now take most short trips in town.", BACK],
-        ["c2", "Our cars are as clean and our drivers as quick as any app driver."],
+        ["c2", "Our cars are as clean and our drivers as quick as any app driver.", "That shows the company runs well. Find what no amount of running better can reach."],
         ["c3", "The apps charge riders less per mile than it costs us to run a car, and every price we have cut they have matched."]],
       settles: "c3", verdict: "position",
       deciding: ["c3", "c2"],
@@ -204,7 +211,7 @@
     story({
       id: "r-photo", from: "Notes on our wedding photography business", detail: "Written in January",
       lines: [
-        ["c1", "Every photographer in our area offers the same three packages, with the same cameras and the same albums."],
+        ["c1", "Every photographer in our area offers the same three packages, with the same cameras and the same albums.", RIVALS],
         ["c2", "Our photos are as good as anyone’s, and couples still choose whoever is cheapest; prices fell each of the last three years."]],
       settles: "c2", verdict: "position",
       reason: "The photos are already as good as anyone’s, and couples still choose on price. Doing the same packages better leaves it the same as the rest, so it needs a different position."
@@ -212,7 +219,7 @@
     story({
       id: "r-lawn", from: "Notes on our lawn care business", detail: "Written in June",
       lines: [
-        ["c1", "One customer in ten is not home or forgot when our crew arrives, so the visit is wasted."],
+        ["c1", "One customer in ten is not home or forgot when our crew arrives, so the visit is wasted.", "That is the problem. Find the line that shows whether rivals do the same work better."],
         ["c2", "The other lawn companies text each customer the day before and almost never waste a visit."]],
       settles: "c2", verdict: "run-better",
       reason: "Other lawn companies doing the same work send a reminder and waste almost no visits. Copying that is running it better."

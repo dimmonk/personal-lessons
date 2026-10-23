@@ -40,6 +40,7 @@
   const WISH = "That is a wish. It says nothing about what stands in the way.";
   const STEP = "That is a step to take, not what is in the way.";
   const FELL = "That is a number that fell. It does not say what made it fall.";
+  const NOWHERE = "That sounds like an approach, but no line says what is in the way, so it answers nothing.";
 
   FC.items("strategy", [
     // ----- the worked plan: a strategy -----
@@ -96,13 +97,14 @@
       id: "p-shop", from: "Ann’s plan for her gift shop", detail: "Written in January",
       lines: [
         ["c1", "Goal for the year: sales up 20%.", TARGET],
+        ["c7", "So we push harder on getting our name out.", NOWHERE],
         ["c2", "Start an Instagram page.", STEP],
         ["c3", "Sell gift cards.", STEP],
         ["c4", "Open on Sundays.", STEP],
         ["c5", "Hire a part-time salesperson.", STEP],
         ["c6", "Paint a new sign out front.", STEP]],
       challenge: null, verdict: "todo", deciding: ["c1", "c2", "c4"],
-      reason: "It lists five steps under a target, but no line says what is in the way of more sales. With no challenge for them to answer, it is a to-do list."
+      reason: "It lists five steps under a target, and “push harder” is an approach to nothing: no line says what is in the way of more sales. It is a to-do list."
     }),
     kernel({
       id: "p-plumb", from: "Ray’s plan for his plumbing business", detail: "Written in the spring",
@@ -130,13 +132,13 @@
     kernel({
       id: "q-print", from: "Omar’s plan for his print shop", detail: "Written in September",
       lines: [
-        ["c1", "Online printers now sell business cards and flyers for less than our paper costs us."],
-        ["c2", "So we stop chasing small, simple orders and become the shop local businesses call for rush jobs and tricky ones.", "That is the approach to the challenge."],
+        ["c1", "Online printers undercut us on cards and flyers."],
+        ["c2", "Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders.", "That is the approach to the challenge."],
         ["c3", "Promise same-day printing on orders in by 10 a.m.", STEP],
         ["c4", "Have one person check every file before it prints, so tricky jobs come out right.", STEP],
         ["c5", "Drop our cut-price business card deal.", STEP]],
       challenge: "c1", verdict: "strategy", deciding: ["c1", "c2"],
-      reason: "The first line says what is in the way: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy."
+      reason: "The first line says what is in the way, in six words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy."
     }),
     kernel({
       id: "q-truck", from: "Sam’s plan for his food truck", detail: "Written in May",
@@ -154,9 +156,10 @@
       lines: [
         ["c1", "Our vision: the best start in life for every child.", WISH],
         ["c2", "Double the number of children we care for by 2028.", TARGET],
-        ["c3", "Be known as the warmest day care in the county.", WISH]],
+        ["c3", "Be known as the warmest day care in the county.", WISH],
+        ["c4", "So we put the children first in everything we do.", NOWHERE]],
       challenge: null, verdict: "goal", deciding: ["c2"],
-      reason: "A vision, a target and a wish: no line says what stands in the way of doubling, and nothing says what to do. It is a goal."
+      reason: "A vision, a target and two wishes: no line says what stands in the way of doubling, and nothing says what to do. It is a goal."
     }),
     kernel({
       id: "q-heating", from: "Tom’s plan for his heating and cooling business", detail: "Written in January",
@@ -175,7 +178,7 @@
       lines: [
         ["c1", "Open at 6 a.m. for the contractors.", STEP],
         ["c2", "The home center across town carries more stock than we do and sells it all for less."],
-        ["c3", "So we stop chasing weekend shoppers and serve the people who need one part fast and advice with it: contractors and neighbors in the middle of a repair.", "That is the approach to the challenge."],
+        ["c3", "From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers.", "That is the approach to the challenge."],
         ["c4", "Keep staff on the floor who can tell you which part you need.", STEP],
         ["c5", "Close the garden section, which the home center does better.", STEP]],
       challenge: "c2", verdict: "strategy", deciding: ["c2", "c3"],
@@ -193,12 +196,13 @@
     kernel({
       id: "k-dentist", from: "Dr. Patel’s plan for her dental office", detail: "Written in June",
       lines: [
+        ["c5", "This year we focus on families with young children.", NOWHERE],
         ["c1", "Get more five-star reviews online.", STEP],
         ["c2", "Buy a new X-ray machine.", STEP],
         ["c3", "Offer teeth whitening.", STEP],
         ["c4", "Send every patient a birthday card.", STEP]],
       challenge: null, verdict: "todo", deciding: ["c1", "c3"],
-      reason: "Four steps, and no line says what problem they are meant to solve. It is a to-do list."
+      reason: "Four steps, and no line says what problem they are meant to solve; the focus on families answers nothing named. It is a to-do list."
     }),
     kernel({
       id: "k-carwash", from: "Mike’s plan for his car wash", detail: "Written in April",
@@ -213,7 +217,7 @@
     kernel({
       id: "k-tutor", from: "Kim’s plan for her tutoring business", detail: "Written in August",
       lines: [
-        ["c1", "Free videos online now teach the same math lessons we used to sell as recorded packs."],
+        ["c1", "Free videos now teach what our recorded packs did."],
         ["c2", "So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.", "That is the approach to the challenge."],
         ["c3", "Start every session with the student’s homework.", STEP],
         ["c4", "Send each parent a short progress note every Friday.", STEP],
