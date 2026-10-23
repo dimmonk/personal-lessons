@@ -203,6 +203,22 @@ business settings.
   already knew; with film revenues, similarity-based forecasting beat regression. Moderate (two studies).
 - Novice error: judging a plan by how convincing its story is, and assuming rivals will not answer.
 
+**ST20. The base rate for a new US business: about six in ten new establishments are still open three years after they
+open, and about half after five.** US Bureau of Labor Statistics, Business Employment Dynamics, "Establishment age and
+survival data", Table 7, "Survival of private sector establishments by opening year", Total Private
+(https://www.bls.gov/bdm/us_age_naics_00_table7.txt, read 2026-10-23). Strong (official count of every private
+establishment in the unemployment-insurance records).
+- Opening year ended March 2013: 628,840 opened; survival rate since birth 79.6% after one year, 68.9% after two, 61.4% after
+  three, 55.3% after four, 50.6% after five (318,339 still open in March 2018).
+- The same table for other years: opened 1995, 59.8% after three years and 48.8% after five; opened 2005, 60.2% and 46.8%;
+  opened 2018, 62.1% and 51.9%.
+- The research reviewer's BLS papers (2004, 2006: about two-thirds after two years, 44% after four) agree
+  (docs/subjects/strategy/review-research-l1-14.md, defect 6).
+- Teaching consequence: lesson 12's made tables of new businesses use three years and keep the share still open between about
+  52% and 70% (invented counts set near this record), so the lesson never repeats the myth that most new businesses close
+  within a few years; lesson 13 uses "about half are still open after five years" as the wider record a new idea starts
+  from. An establishment is one location, so these are shops and offices, close to the owner's "a new shop".
+
 **ST13. Strategists reason by analogy most of the time; good ones test an analogy on its cause, not its surface.** Gavetti,
 G. & Rivkin, J. W. (2005), "How Strategists Really Think: Tapping the Power of Analogy", *HBR* 83(4), 54-63.
 **Introduction read; body paywalled.** Moderate for the descriptive claim, limited for the remedy as I could read it.

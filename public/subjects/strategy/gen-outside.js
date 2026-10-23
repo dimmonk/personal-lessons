@@ -1,8 +1,9 @@
 // Strategy, lesson 12 "How did others like it do?": a table of similar ventures made fresh (lesson standard 3.5, a generator). The outside view
 // (research ST12): before trusting a plan's own story, find how ventures like it turned out, and start the forecast from that share. Three years of
 // openings in the county, with how many were still open three years on; the learner estimates the share still open, works it out, and says where
-// the owner's forecast should start. Each year opens 12 to 20 and keeps 2 to 5, so the share lies between 10% and 42% and the trap (the share that
-// closed) is never within a point of it. Invented counties and counts.
+// the owner's forecast should start. The counts are invented but set near the national record (research ST20: about six in ten new US
+// establishments are still open three years after opening): each year opens 12 to 20, and keeps 55% to 68% of them, rounded to whole shops,
+// so the share lies between about 52% and 70% and the trap (the share that closed, under 48%) is never within a point of it.
 (() => {
   const pct = n => `${Math.round(n * 10) / 10}%`;
   const KINDS = [
@@ -15,20 +16,22 @@
   ];
   FC.gen("strategy", [{
     id: "g-base", strand: "outside-view", facets: { scale: "owner" },
-    params: { kind: [0, 5, 1], openA: [12, 20, 1], openB: [12, 20, 1], openC: [12, 20, 1], keptA: [2, 5, 1], keptB: [2, 5, 1], keptC: [2, 5, 1] },
+    params: { kind: [0, 5, 1], openA: [12, 20, 1], openB: [12, 20, 1], openC: [12, 20, 1], rateA: [55, 68, 1], rateB: [55, 68, 1], rateC: [55, 68, 1] },
     make: pick => {
       const k = KINDS[pick("kind")];
-      const opened = [pick("openA"), pick("openB"), pick("openC")], open = [pick("keptA"), pick("keptB"), pick("keptC")];
+      const opened = [pick("openA"), pick("openB"), pick("openC")];
+      const rates = [pick("rateA"), pick("rateB"), pick("rateC")];
+      const open = opened.map((n, i) => Math.round(n * rates[i] / 100));
       const total = opened[0] + opened[1] + opened[2], still = open[0] + open[1] + open[2];
       const share = still / total * 100;
       return {
         what: k.what, one: k.one, who: k.who, plan: k.plan,
         openA: opened[0], openB: opened[1], openC: opened[2], keptA: open[0], keptB: open[1], keptC: open[2],
-        total, still, share, closed: 100 - share, shareText: pct(share)
+        total, still, share, closed: 100 - share, shareText: pct(share), closedText: pct(100 - share)
       };
     },
     blocks: [
-      { kind: "prose", text: "{who}’s plan for {plan} says it will surely still be open in three years. Here is how others like it did." },
+      { kind: "prose", text: "{who}’s plan for {plan} says it is sure to be open in three years. Here is how others like it did." },
       { kind: "document", form: "table", title: "{what} in the county, and how many were still open three years later", head: ["Year opened", "Opened", "Still open after three years"],
         rows: [
           { id: "y1", cells: ["2019", "{openA}", "{keptA}"] },
@@ -39,13 +42,13 @@
       { id: "share", kind: "number", prompt: "Now work it out: what share were still open after three years?", frame: "__%", answer: "share", tol: { abs: 1 },
         traps: [{ slip: "counted-wrong-group", value: "closed", then: "That is the share that closed. Count the ones still open over all that opened." }] },
       { id: "start", kind: "choose", prompt: "Where should {who}’s forecast for the new {one} start?", shuffle: true, options: [
-        { id: "table", text: "From {shareText}, the share of others like it still open, then adjust only for real differences", ok: true },
-        { id: "plan", text: "From the plan: {who} knows this business better than any table does", slip: "inside-view", then: "Every owner in the table knew their business and had a plan; most were not open three years later. Start from how they did." },
-        { id: "best", text: "From the one {one} in town that {who} knows did well", slip: "surface-analogy", then: "One success that looks alike says little; the table shows how many like it did. Start from the share." }] }],
+        { id: "table", text: "Near {shareText}, the share of others like it still open, moved only for a real difference", ok: true },
+        { id: "plan", text: "Near 100%, as the plan says: {who} knows this business better than any table does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and {closedText} of them closed within three years. Start from how they did." },
+        { id: "best", text: "Near 100%, like the one {one} in town that {who} knows did well", slip: "surface-analogy", then: "One success that looks alike says little; the table shows how many like it did. Start from the share." }] }],
     steps: [
-      { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "Each year a few out of a dozen or more, well under half.", ask: "est" },
+      { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "Each year more than half, but far from all of them.", ask: "est" },
       { id: "share", does: "Add those still open, add all that opened, and divide.", working: "{still} ÷ {total} = {shareText}", ask: "share" },
-      { id: "start", does: "Start the forecast from that share, not from the plan.", working: "Begin at {shareText}; move from it only for a real difference between {who}’s {one} and the others.", ask: "start" }],
+      { id: "start", does: "Start the forecast from that share, not from the plan.", working: "Begin near {shareText}; move from it only for a real difference between {who}’s {one} and the others.", ask: "start" }],
     deciding: ["y1", "y2", "y3"],
     reason: "Of {total} that opened, {still} were still open three years later: {shareText}. {who}’s forecast starts there, and moves only for a real difference, not because the plan is convincing."
   }]);

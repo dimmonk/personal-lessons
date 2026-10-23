@@ -6,7 +6,7 @@
 // the check: five new lists, 4 of 5, and the trade's usual way never taken for a fix.
 FC.lesson("strategy", {
   id: "l7", part: "7", title: "Do the pieces fit?", rev: 1, status: "draft",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each activity held against the position, the one that does not fit found, and what would fit chosen." }],
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: each activity held against the position, the one that does not fit found, and what would fit chosen; after the reviews, the replacement also judged by whether it helps the other activities, and a low-cost position where the costly piece is the misfit (docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
     "A position is not one clever idea. It is the way the whole business runs: who you hire, how you sell, what you stock, when you open.",
     "Strategists check that every piece serves the position and helps the others, because a rival can copy one piece but rarely all of them. Here you learn to find the piece that pulls the other way."
@@ -18,8 +18,8 @@ FC.lesson("strategy", {
           "First read the position: who the business serves, and what it gives them that others do not.",
           "Then hold each activity against it. Does it serve that position? Does it help the other activities do their part?",
           "An activity that serves another kind of customer does not fit. Nor does the trade’s usual way of working when it pulls against this position, however sensible it looks on its own.",
-          "An activity can look costly or odd and still fit: a gym that pays for coaches all day, a cafe that lets one pass keep a seat all day. Judge it by the position, not by what it costs.",
-          "To replace a piece that does not fit, pick the activity that serves the position and helps the others.",
+          "An activity can look costly or odd and still fit: a tailor who sees one client an hour, a hotel with no restaurant so its rooms stay cheap. Judge it by the position, not by what it costs. In a business whose position is the lowest price, the costly piece is the one that does not fit.",
+          "To replace a piece that does not fit, pick the activity that serves the position and helps the others. Two choices can both serve the position; the better one also helps the pieces already there, and one that works against them, or stands alone beside them, does not.",
           "Why it matters: a rival can copy one piece in a month. To copy pieces that fit together, it has to copy them all, and give up whatever its own pieces serve."] },
         { kind: "prose", tone: "wrong", text: [
           "“Each part of the business should follow the trade’s best practice: the cheapest supplier, the usual hours, the standard pay.”",
@@ -37,7 +37,7 @@ FC.lesson("strategy", {
     { set: { items: ["q7-racers", "q7-nurses", "q7-law", "q7-plumber", "q7-builders"], order: "shuffle", mix: { from: ["l1", "l2", "l3", "l4", "l5", "l6"], share: 0.25 } } }
   ],
   check: {
-    items: ["k7-collectors", "k7-weddings", "k7-tacos", "k7-oldcars", "k7-lifters"],
+    items: ["k7-collectors", "k7-weddings", "k7-tacos", "k7-oldcars", "k7-laundry"],
     feedback: "at-end", order: "shuffle",
     pass: [{ right: { min: 4 } }, { slip: "better-not-different", max: 0 }]
   }
