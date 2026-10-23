@@ -7,7 +7,7 @@
 // (2) Either way, size the bet. The affordable loss is the most the owner could lose and still keep the business and the household going; the stake
 //     (what is lost if it fails) stays within it. If the project costs more, put less at risk (rent, not buy; start with a part; a partner who pays a
 //     share); if no version fits, not now. If the whole stake is within it and the record is sound, going ahead in full is right.
-// So the right move is not always the small one, and the wrong ones vary: the plan's own forecast, a loan for the full launch, a paid forecast of a
+// So the right move is not always the small one, a dollar figure inside the limit sits on right and wrong moves alike, and the wrong ones vary: the plan's own forecast, a loan for the full launch, a paid forecast of a
 // demand nobody can see, friends' praise taken as evidence, a trial where the record already answers. Owner-run businesses, invented.
 (() => {
   const JUDGE_THEN = {
@@ -77,8 +77,8 @@
       judge: "afford",
       moves: [
         ["firm", "Hire the firm for $120,000, so the app is polished and ready for every student from the first day", "That risks $120,000 on students nobody has seen use it, forty times what Kim can lose.", "bet-too-big"],
-        ["small", "Have the former student build a first version, within $3,000, and watch who uses it", true],
-        ["forecast", "Pay for a forecast of how many students would use it, then decide", "No forecast can see what students do with an app they have never had; a first version shows it."]],
+        ["small", "Have the former student build a first version for a share of sales, and watch who uses it", true],
+        ["forecast", "Pay $2,000 for a forecast of how many students would use it, then decide", "It fits what Kim can lose, but no forecast can see what students do with an app they have never had; a first version shows it."]],
       deciding: ["c2", "c3", "c4"],
       reason: "Nobody can see yet whether students here would use it. Kim starts from her papers and a partner paid from sales, inside the $3,000 she can lose."
     }),
@@ -123,7 +123,7 @@
         ["c3", "Food trucks at factory gates are common; the county lists 30 that opened in five years, and 19 are still running."]],
       judge: "outside",
       moves: [
-        ["table", "Try it with a folding table outside that factory for a summer first", "People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season."],
+        ["table", "Try it with a folding table outside that factory for a summer first, about $3,000", "People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season."],
         ["buy", "Start from how the 30 trucks did, and buy the used truck: the whole $40,000 is within what he can lose", true],
         ["own", "Go by his own forecast: his tacos are better than most", "Most owners in the record thought their food was better. Start from how the 30 did.", "inside-view"]],
       deciding: ["c2", "c3"],
@@ -140,7 +140,7 @@
       moves: [
         ["savings", "Fit out the full room from savings: that way nothing is borrowed", "Savings lost are still lost: $60,000 is far more than the $2,500 Leo can lose.", "bet-too-big"],
         ["city", "Go by the city rooms: they do well, so racers here will come", "In the cities racers already pay for rooms; nobody knows whether racers here would. That is the thing to find out.", "surface-analogy"],
-        ["small", "Put the lent trainers in the empty fitting room, within $2,500, and see who pays", true]],
+        ["small", "Put the lent trainers in the empty fitting room, and see who pays", true]],
       deciding: ["c2", "c3", "c4"],
       reason: "Racers here have never been offered such a room, so nobody can see who would pay. Leo starts from the empty room and lent trainers, inside the $2,500 he can lose."
     }),
@@ -231,9 +231,9 @@
         ["c4", "A studio and a website would cost $50,000; we could lose $1,500."]],
       judge: "afford",
       moves: [
-        ["small", "Show new books live with the camera she has, tell the society’s members, and stay within $1,500", true],
+        ["small", "Show new books live with the camera she has, and let the society tell its members", true],
         ["studio", "Build the studio and website for $50,000 first, so the club looks right to collectors from the very first show", "That risks $50,000 on collectors nobody has seen pay, far more than Nina can lose.", "bet-too-big"],
-        ["firm", "Hire a firm to forecast how many collectors would join, then decide", "No forecast can see what collectors do with an offer they have never had; a first month of shows will."]],
+        ["firm", "Pay a firm $1,200 to forecast how many collectors would join, then decide", "It fits what Nina can lose, but no forecast can see what collectors do with an offer they have never had; a first month of shows will."]],
       deciding: ["c2", "c3", "c4"],
       reason: "Collectors have never been offered this, so nobody can see who would pay. Nina starts from her camera and the society as a partner, inside the $1,500 she can lose."
     }),
@@ -245,7 +245,7 @@
         ["c3", "The space and the used press would cost $60,000, and we could lose $80,000 and keep this shop going."]],
       judge: "outside",
       moves: [
-        ["stall", "Run a print stall at a market there for a summer first, to see whether people buy printing", "People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales."],
+        ["stall", "Run a print stall at a market there for a summer first, about $8,000, to see whether people buy printing", "People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales."],
         ["own", "Go by his own forecast: his shop runs better than most", "Most owners in the record thought so too. Start from how the others did.", "inside-view"],
         ["open", "Start from the state’s record and open the shop: the whole $60,000 is within what he can lose", true]],
       deciding: ["c2", "c3"],
@@ -261,7 +261,7 @@
       judge: "afford",
       moves: [
         ["kitchen", "Borrow $100,000 for the kitchen: meal kits sell everywhere", "Other kits selling does not show that anyone would pay for these, and $100,000 is far more than Carlos can lose.", "bet-too-big"],
-        ["small", "Make kits in the half-empty freezer, ship them with the friend’s van, and stay within $2,000", true],
+        ["small", "Make kits in the half-empty freezer, ship them with the friend’s van, and see who orders", true],
         ["ask", "Poll the workers’ families and old friends on whether they like the idea, and build the kitchen if most say yes", "Families saying they like it cost them nothing. Only selling some boxes shows who would pay.", "talk-as-evidence"]],
       deciding: ["c2", "c3", "c4"],
       reason: "Nobody has offered these tacos by mail, so nobody can see who would pay. Carlos starts from his recipes, freezer and a partner’s van, inside the $2,000 he can lose."
@@ -318,7 +318,7 @@
         ["c2", "We have a dozen big tools in the back, could lose $2,000, and a full stock would cost $75,000."]],
       judge: "afford",
       moves: [
-        ["small", "Lend out the dozen tools he has for a monthly fee, within $2,000", true],
+        ["small", "Lend out the dozen tools he has for a monthly fee, and see who pays", true],
         ["stock", "Buy the full $75,000 stock so builders find what they need", "That risks $75,000 on builders nobody has seen pay by the month, far more than Tom can lose.", "bet-too-big"],
         ["rent", "Look at how tool-rental shops did, and go by that", "Rental shops rent by the day; their record cannot say whether builders here would pay by the month."]],
       deciding: ["c1", "c2"],

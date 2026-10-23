@@ -69,7 +69,7 @@
         ["c3", "So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer.", "That is the approach to the challenge."],
         ["c4", "Buy two plows for the trucks we already have.", STEP],
         ["c5", "Sell one contract that covers mowing in summer and snow in winter.", STEP],
-        ["c6", "Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again.", STEP]],
+        ["c6", "Pay the crew a wage all year round, because the snow work now fills their winter weeks.", STEP]],
       challenge: "c2", verdict: "strategy", deciding: ["c2", "c3"],
       reason: "The short second line says what is in the way: crews idle all winter. Snow removal for the same customers is one way past it, and the plows, the year-round contract and the year-round wage all follow from it, so it is a strategy; the sales target on top does not change that."
     }),
@@ -115,7 +115,7 @@
         ["c2", "We lose about one job in four because we cannot reach emergency calls the same day."],
         ["c3", "Start selling water heaters online.", STEP],
         ["c4", "Sponsor the high school football team.", STEP],
-        ["c5", "Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022.", STEP]],
+        ["c5", "Raise prices 5%, because every other plumber in town already charges more than we do.", STEP]],
       challenge: "c2", verdict: "todo-scattered", deciding: ["c2", "c1", "c3"],
       reason: "The second line names a real challenge: same-day emergency calls are lost. But none of the steps reaches those calls faster, so with no approach tying them to it, it is a to-do list."
     }),
@@ -211,7 +211,7 @@
       id: "k-carwash", from: "Mike’s plan for his car wash", detail: "Written in April",
       lines: [
         ["c1", "Add a coffee stand by the exit.", STEP],
-        ["c2", "Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain.", STEP],
+        ["c2", "Buy new brushes, because the maker sells them at a third off in April.", STEP],
         ["c3", "Start a TikTok page.", STEP],
         ["c4", "Rainy weeks bring no cars, but full wages."]],
       challenge: "c4", verdict: "todo-scattered", deciding: ["c4", "c1"],

@@ -16,11 +16,11 @@ FC.lesson("strategy", {
     { title: "Four numbers for one sale",
       show: [
         { kind: "prose", text: [
-          "Line up four numbers for one sale, from the top down, on a bar we call the value stick.",
+          "Line up four numbers for one sale, top down, on a bar we call the value stick.",
           "The most a customer would pay: what it is worth to them. The price: what they do pay. The cost: what you pay your suppliers and staff to make it. The least your suppliers and staff would take: below that, they would not sell to you or work for you.",
           "The cost and the least they would take are not the same: a cleaner paid $20 an hour who would have worked for $17 keeps $3 an hour more than she needed.",
           "In real life you estimate the two ends. For the most a customer would pay, put the question to customers, watch what they pay a rival for something like it, or try a higher price on a few. For the least staff would take, look at what the same work pays nearby; for a supplier, at what its other buyers pay.",
-          "The value created is the most a customer would pay less the least suppliers and staff would take. It is split three ways. The customer keeps the most they would pay less the price. The business keeps the price less the cost. Suppliers and staff keep the cost less the least they would take.",
+          "The value created is the most a customer would pay less the least suppliers and staff would take. It is split three ways. The customer keeps the most they would pay less the price. The business keeps the price less the cost. Suppliers and staff keep the cost less the least they would take. So a price above the cost and below the most the customer would pay leaves both the customer and the business a share.",
           "Why it matters: a business that only fights over the split takes from its customers or its suppliers, and they notice. A business that makes the whole stick longer has more to share, and more to keep."] },
         { kind: "figure", type: "stick", data: { caption: "A birthday cake, one sale", wtp: 30, price: 24, cost: 14, wts: 10 } },
         { kind: "prose", tone: "wrong", text: [

@@ -4,8 +4,8 @@
 // that way pulls against this position, does not fit, however sensible it looks on its own; what should replace it is an activity that serves the
 // position and helps the others: of two that both serve the position, the one that also helps the other activities (second-order fit). A costly
 // or unusual activity that serves the position fits, and in a low-cost position the costly piece is the one that does not. Some lists fit
-// throughout. The wrong replacements vary: another kind of customer, the usual way done harder, a piece that serves the position but works
-// against or alone beside the others. Owner-run, invented.
+// throughout. The wrong replacements vary, about half of them another kind of customer, the rest the usual way done harder, a piece that serves the position
+// but works against or alone beside the others, or a piece added beside the misfit that leaves it in place. Owner-run, invented.
 (() => {
   const NONE = "Every activity fits";
   const FITS = "That one serves the position and helps the others.";
@@ -64,7 +64,7 @@
         ["a4", "Students sit a full practice exam a month before the real one."]],
       misfit: "a2",
       fix: { right: "Hire tutors who have taught or graded these exams, and pay them more",
-        others: [["Keep cheap tutors busy with reading and science sessions too", "serve-everyone", OTHER],
+        others: [["Keep the cheapest tutors, and add a second practice exam each term", null, "A second practice exam serves the exams, but the cheap tutors who go over it still do not know them."],
           ["Hire top math graduates at the lowest rate, whatever their exam experience", null, "Strong math is not the same as knowing these exams, which is what parents pay for and what the past papers and reports lean on."]] },
       reason: "Parents pay for tutors who know the exams, and the past papers, reports and practice exam all lean on such tutors. Hiring the cheapest tutor of any subject pulls against that; tutors who have taught or graded these exams fit."
     }),
@@ -76,9 +76,9 @@
         ["a3", "A dog meets its groomer once before the first groom."],
         ["a4", "The same groomer sees the same dog every visit."]],
       misfit: "a2",
-      fix: { right: "Pay each groomer by the day",
-        others: [["Add a second van for quick wash-and-go jobs", "serve-everyone", OTHER],
-          ["Keep pay by the dog, and fit out a quiet room at a shop for the most nervous dogs", null, "A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too."]] },
+      fix: { right: "Pay each groomer by the day, so nobody gains by rushing an old or nervous dog",
+        others: [["Keep pay by the dog, as shops do, at a higher rate", "usual-way-as-fit", COPY],
+          ["Keep pay by the dog, and add a quiet room at a shop for the most nervous dogs", null, "A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too."]] },
       reason: "Calm grooming needs time, and the home visits, the first meeting and the same groomer all serve it. Pay by the dog pushes groomers to hurry; pay by the day fits."
     }),
     // a look-alike on one cafe: one list with an activity that does not fit, one where a costly one fits
@@ -116,7 +116,7 @@
         ["a4", "Repairs done the same day before a race weekend."]],
       misfit: "a3",
       fix: { right: "Stock the parts and wheels racers want, fitted by the mechanics",
-        others: [["Use the floor for kids’ bikes, which sell all year", "serve-everyone", OTHER],
+        others: [["Sell last year’s bikes at deeper discounts, as big stores do", "usual-way-as-fit", COPY],
           ["Rent the floor to someone else’s cafe", null, "The rent helps the books, but it serves none of the fitting and tuning racers pay for; parts and wheels the mechanics fit help both."]] },
       reason: "Racers pay for fitting and tuning, and the fitting room, the racing mechanics and the race-weekend repairs serve them. A floor of last year’s bikes serves shoppers after a bargain; parts and wheels racers want fit."
     }),
@@ -138,8 +138,8 @@
         ["a3", "A driver takes finished papers straight to the court."],
         ["a4", "Each firm has a direct line to the person running the press."]],
       misfit: "a2",
-      fix: { right: "Print each job as soon as it comes in",
-        others: [["Take walk-in jobs to fill the evening batch", "serve-everyone", OTHER],
+      fix: { right: "Print each firm’s job as soon as it comes in, whatever the hour",
+        others: [["Keep the evening batch, and add a second driver", null, "A second driver cannot help papers that wait for the evening batch; printing each job as it comes in helps the free press and the driver too."],
           ["Run two batches a day, at noon and in the evening", "usual-way-as-fit", "Two batches still make a rush order wait for the next one; the firms pay for papers the same day."]] },
       reason: "Firms pay for papers the same day, and the free press, the driver and the direct line serve that. One evening batch is cheap but makes papers wait; printing each job as it comes in fits."
     }),
@@ -202,8 +202,8 @@
         ["a3", "Workers can order by text on the way out of the building."],
         ["a4", "Exact-change prices: $3 a taco."]],
       misfit: "a2",
-      fix: { right: "Make five fillings ahead, so tacos are filled in seconds",
-        others: [["Add salads and wraps for the office workers nearby", "serve-everyone", OTHER],
+      fix: { right: "Make five fillings ahead each morning, so tacos are filled in seconds",
+        others: [["Keep twelve toppings made to order, with a second cook", null, "Two cooks still make each taco to order from twelve choices, and pay a second wage; five fillings made ahead are quicker and help the text orders."],
           ["Keep twelve toppings, and have workers text the order ahead", null, "Text orders help, but twelve toppings made to order still slow the noon line; five fillings made ahead help the text orders and the exact prices too."]] },
       reason: "Workers have a short break, and parking at the factory, the text orders and the exact-change prices all save time. Twelve toppings made to order slow every taco; five fillings made ahead fit."
     }),
@@ -216,7 +216,7 @@
         ["a4", "Old shop manuals for each make are kept on a shelf."]],
       misfit: "a2",
       fix: { right: "Keep parts for older models, from salvage yards and old dealer stock",
-        others: [["Stock this year’s parts and add an oil-change lane for new cars", "serve-everyone", OTHER],
+        others: [["Keep this year’s parts, and hire a third mechanic trained on older engines", null, "A third mechanic still has no parts to fit; parts for older models help the mechanics and the manuals."],
           ["Stock this year’s parts, and order them faster than the dealers", "usual-way-as-fit", COPY]] },
       reason: "Owners of older cars need parts and know-how for them, and the trained mechanics, the plain advice and the old manuals serve that. Parts for this year’s models do not; parts for older models fit."
     }),
@@ -266,7 +266,7 @@
         ["a3", "Each crew keeps notes on the plants in its gardens."]],
       misfit: "a2",
       fix: { right: "Keep each crew on its own gardens, and plan the day around them",
-        others: [["Use any crew’s spare hours for cheap weekly mowing", "serve-everyone", OTHER],
+        others: [["Keep moving crews, and have each read the last crew’s plant notes", null, "Notes help, but a crew that has never seen the garden still does not know it; owners pay for a crew that does."],
           ["Move crews to the nearest job, with better maps than other landscapers", "usual-way-as-fit", COPY]] },
       reason: "Owners pay for a crew that knows their garden, and the same crew and the plant notes serve that. Moving crews to the nearest job breaks it; keeping each crew on its own gardens fits."
     }),

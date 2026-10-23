@@ -17,7 +17,7 @@
     dream: "This plan is a mission that never says which customers or why they would choose the business: a dream.",
     copycat: "This plan does what every business in the trade does, only better: copycat.",
     misfit: "This plan does choose its customers, but its way to win is not what those customers value: the two do not fit.",
-    chooses: "This plan names its customers and a way to win that they value, and says what it drops: it chooses."
+    chooses: "This plan names its customers and a way to win that they value: it chooses."
   };
   // why a wrong pick does not describe the plan: the first sentence
   const NOT = {
@@ -178,9 +178,9 @@
     }),
     alone({
       id: "q10-tailor", who: "Paula’s tailoring shop",
-      lines: ["Brides and grooms in the county who need their wedding clothes altered.", "Fittings at their home in the evening, and every job finished within ten days, are why they will come to us.", "Everyday hems and zips stop, so the evenings stay free."],
+      lines: ["Brides and grooms in the county who need their wedding clothes altered.", "Fittings at their home in the evening, and every job finished within ten days, are why they will come to us."],
       right: "chooses",
-      reason: "The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a fixed finish date, and drops everyday jobs: it chooses."
+      reason: "The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a fixed finish date: it chooses, even without naming what it stops."
     }),
 
     // ----- the check -----
@@ -207,16 +207,16 @@
     }),
     choice({
       id: "k10-pool", who: "Dan’s pool-cleaning firm", first: "bad", fault: "misfit",
-      bad: ["Owners of holiday homes who are away for months at a time.", "We win them with the lowest price per visit, booked by phone each time the owner wants one."],
+      bad: ["Owners of holiday homes who are away for months at a time.", "We win them with the lowest price per visit; the owner must be home, or phone us, to let each visit happen."],
       good: ["Owners of holiday homes who are away for months at a time.", "We keep the pool clean while they are gone, send photos after every visit, and fix what breaks without being asked."],
       goodWhy: "Both plans choose the same owners; only Plan 2 wins them with what they value, a pool kept without them.",
-      reason: "Both plans play for owners who are away for months. Plan 2 looks after the pool while they are gone; Plan 1 needs a phone call for each visit from owners who are not there: the two parts do not fit."
+      reason: "Both plans play for owners who are away for months. Plan 2 looks after the pool while they are gone; Plan 1 needs the owner home, or on the phone, for every visit, from owners who are away: the two parts do not fit."
     }),
     alone({
       id: "k10-shelves", who: "Nina’s bookshop",
-      lines: ["Our customers: children, students, retirees, collectors, tourists and book clubs, every one of them.", "There is a shelf for each, so nobody leaves without a book."],
+      lines: ["Our customers: children, students, retirees, collectors, tourists and book clubs, every one of them.", "There is a shelf for each, so nobody leaves without a book.", "We close the reading corner to make room for more shelves."],
       right: "everyone",
-      reason: "The plan names every kind of reader at once and no reason any of them would pick Nina over where they buy now: something for everyone."
+      reason: "The plan names every kind of reader at once and no reason any of them would pick Nina over where they buy now: something for everyone. Closing the reading corner drops a corner, not a kind of customer."
     }),
     alone({
       id: "k10-sitter", who: "Kate’s pet-sitting service",

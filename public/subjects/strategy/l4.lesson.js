@@ -19,7 +19,7 @@ FC.lesson("strategy", {
           "Buyers: a few big customers buy most of what you sell, or can switch at will, so they push the price down. A middleman that brings you your customers, such as a delivery app or a chain store, counts as a buyer: it takes its cut between you and the people who use what you make.",
           "Suppliers: you depend on a few suppliers you cannot replace, so they push their price up.",
           "Newcomers: starting up is cheap and easy, so new businesses keep arriving and cut prices to win customers.",
-          "Substitutes: another way to meet the same need (a phone instead of a printed photo) caps what customers will pay, or takes them away.",
+          "Substitutes: another way to meet the same need (cooking at home instead of eating out) caps what customers will pay, or takes them away.",
           "Rivals: many businesses alike, already there, fight on price.",
           "Find the line that shows who takes the money, and why. Often more than one force presses: then compare how much each takes (a 30% cut of every order against a 4% rise in food prices) and name the bigger one. Dig into that force; a list of all five tells you nothing.",
           "The answer also points to a move: a business can choose customers or suppliers on whom the strongest force presses least, and so step around it. Why it matters: you can only defend against the force that is actually taking your profit."] },

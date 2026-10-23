@@ -475,3 +475,30 @@ Fixes to the eight defects of `review-research-l1-14-round3.md`. Nothing run but
   generated and worked "Near 100%" feedback and the adjust feedback say "most owners ... sure of their plan", never "every owner
   knew the business". Grace's check case replaces her twelve years with her certainty, so its marked answer (stay near 58%) rests on
   non-differences only; the gym with 150 deposits stays the real-difference case.
+
+## Round 4 (learner round 3)
+
+Fixes to the 2 blocking defects and 6 minor notes of `review-learner-l1-14-round3.md`. Nothing run but `node --check` and
+`tools/option-lengths.mjs strategy` (all lessons pass); the validator, lock, tests and learner views are left to the lead.
+
+- **Blocking 1 (L1, Ray: the price step named rising costs).** The step keeps a "because", now an opening, not an obstacle:
+  "every other plumber in town already charges more than we do".
+- **Blocking 2 (L1, Mike: the brushes step named complaints).** Now "because the maker sells them at a third off in April".
+- **Same mistake elsewhere in L1.** Every step with a "because" checked so exactly one line names what is in the way. Luis's
+  year-round wage implied crews leave in winter ("still ours in April"); now "because the snow work now fills their winter weeks".
+  Sam's market crowd and Ed's closed tire shop are openings, and stay. Lesson 14's tap lines each carry the question they answer.
+- **Minor (L4, the substitute example echoed item 5).** Step 1's example is now "cooking at home instead of eating out"; no item
+  uses it.
+- **Minor (L7, the other-customer option always wrong).** Seven of the fourteen replacement questions now offer, instead of it, the
+  trade's usual way done harder (grooming, racers) or a piece added beside the misfit that leaves it in place (tutors, law firms,
+  old cars, tacos, gardens), each with its own feedback. Right options lengthened where needed; option lengths pass.
+- **Minor (L10, every right single plan names a drop).** Paula's tailoring plan chooses without naming a drop (its reason says
+  so), and Nina's bookshop, the something-for-everyone check plan, now closes a reading corner, a drop that chooses no customer.
+  The "chooses" feedback no longer says the plan names what it drops; lesson 10's rule never required it.
+- **Minor (L10, Dan's Plan 1 not clearly a misfit).** Plan 1 now says the owner must be home, or phone, to let each visit happen;
+  the reason says so for owners who are away.
+- **Minor (L13, the right move names a dollar figure inside the limit).** Five right moves lose their figure (the quiz app, the
+  race room, the live book shows, the taco kits, the tool library), and four wrong moves now carry one inside the limit (a $2,000
+  forecast, a $1,200 forecast, a $3,000 summer table, an $8,000 summer stall), so the figure no longer marks the answer.
+- **Minor (L14 check 7, the price between the two ends not taught).** Lesson 3 Step 1 now says it: a price above the cost and below
+  the most the customer would pay leaves both a share. Two phrases in the same step were cut to keep its reading length.
