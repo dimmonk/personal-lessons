@@ -22,9 +22,9 @@
       asks: [
         { id: "core", kind: "choose", prompt: "Which line is the core: the one that earns the most after its direct cost?", shuffle: true,
           options: rows.map(r => r.rid === top.rid ? { id: r.rid, text: r.name, ok: true }
-            : { id: r.rid, text: r.name, then: `${r.name} earns ${money(r.earns)} after its direct cost; ${top.name} earns ${money(top.earns)}.`,
+            : { id: r.rid, text: r.name, then: `${r.name} ${r.earns < 0 ? `loses ${money(-r.earns)}` : `earns ${money(r.earns)}`} after its direct cost; ${top.name} earns ${money(top.earns)}.`,
               ...(slipBig && r.rid === biggest.rid ? { slip: "sales-not-profit" } : {}) }) },
-        { id: "share", kind: "number", prompt: `What share of what the lines that make money earn together comes from ${top.name}?`, frame: "__%", answer: share, tol: { abs: 1 },
+        { id: "share", kind: "number", prompt: "What share of what the lines that make money earn together comes from the line that earns the most?", frame: "__%", answer: share, tol: { abs: 1 },
           traps: [
             { slip: "sales-not-profit", value: top.revenue / sales * 100, then: "That is its share of the sales. The share that counts is of what the lines earn after their direct costs." },
             { slip: "loser-counted", value: top.earns / net * 100, then: `That takes ${lost.name}’s loss off the total. Add up only the lines that make money.` }] },

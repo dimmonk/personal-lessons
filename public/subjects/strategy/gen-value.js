@@ -25,7 +25,7 @@
       const t = THINGS[pick("thing")], [s, b, c] = SHAPES[pick("shape")].map(range => pick(range));
       const wts = pick("wts"), cost = wts + s, price = cost + b, wtp = price + c;
       return {
-        what: t.what, who: t.who, wts, cost, price, wtp,
+        what: t.what, whatLower: t.what.charAt(0).toLowerCase() + t.what.slice(1), who: t.who, wts, cost, price, wtp,
         wtsText: money(wts), costText: money(cost), priceText: money(price), wtpText: money(wtp),
         value: wtp - wts, customer: c, business: b, supplier: s,
         valueText: money(wtp - wts), customerText: money(c), businessText: money(b), supplierText: money(s),
@@ -34,7 +34,7 @@
         priceTrap: price, fromCost: wtp - cost, fromWts: price - wts
       };
     },
-    blocks: [{ kind: "document", form: "table", title: "{who}: {what}, one sale", head: ["For one sale", "Dollars"],
+    blocks: [{ kind: "document", form: "table", title: "{who}: {whatLower}, one sale", head: ["For one sale", "Dollars"],
       rows: [
         { id: "wtp", cells: ["The most a customer would pay", "{wtpText}"] },
         { id: "price", cells: ["The price", "{priceText}"] },

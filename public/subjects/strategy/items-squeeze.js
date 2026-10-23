@@ -8,7 +8,7 @@
   const FORCES = ["buyers", "suppliers", "entrants", "substitutes", "rivals"];
   const NONE = "The report gives no sign that this force takes much of the money here.";
   // a report: lines [id, text, force or null, note]; the force of the line that settles it; an owner's claim about growth, judged after
-  function squeeze({ id, scale = "owner", source, headline, lines, settles, right, claim, reason }) {
+  function squeeze({ id, scale = "owner", source, headline, lines, settles, right, claim, reason, steps }) {
     const said = Object.fromEntries(lines.filter(l => l[2] && l[2] !== right).map(l => [l[2], l[3]]));
     return {
       id, strand: "squeeze", facets: { scale },
@@ -22,6 +22,7 @@
           { id: "yes", text: "Yes: a trade that grows that fast is a good one", slip: "fast-growth-attractive", then: "Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices." },
           { id: "no", text: "No: first see who takes the profit", ok: true }] }] : [])
       ],
+      ...(steps ? { steps } : {}),
       deciding: [settles],
       reason
     };
@@ -37,6 +38,9 @@
         ["c3", "Most prescriptions are paid for by three big insurance plans, which set what they pay per prescription; a pharmacy that refuses their rate loses those customers.", "buyers"],
         ["c4", "Mail-order pharmacies fill a small share, mostly drugs taken for years.", "substitutes", "Mail order takes only a small share, so it caps little."]],
       settles: "c3", right: "buyers",
+      steps: [
+        { id: "line", does: "Find the line that shows who takes the money, and why.", working: "The third line: three insurance plans pay for most prescriptions and decide what they pay, and a pharmacy that refuses their rate loses those customers.", ask: "line" },
+        { id: "force", does: "Check the other forces are weak, then name the one that takes the money.", working: "No pharmacy has opened or closed in ten years, wholesalers are many and easy to switch, and mail order fills a small share. So the buyers, the three plans, take the money.", ask: "force" }],
       reason: "Three insurance plans pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into."
     }),
 

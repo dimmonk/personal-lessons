@@ -31,7 +31,9 @@ const FIGURE_WORDS = {
   bar: d => [`A bar for the whole, "${d.whole}", cut into parts as wide as their percents: ${d.parts.map(p => `${p.label} ${p.pct}%`).join(', ')}.`],
   plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${planPartWords(p, d.unit)}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
   years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`],
-  people: d => [`${d.caption}: a row of 1,000 dots for each count, the first ones marked and read left to right, top to bottom: ${d.rows.map(r => `${r.label}, ${r.count} in 1,000`).join('; ')}.`]
+  people: d => [`${d.caption}: a row of 1,000 dots for each count, the first ones marked and read left to right, top to bottom: ${d.rows.map(r => `${r.label}, ${r.count} in 1,000`).join('; ')}.`],
+  // the value stick in the words its legend prints (doc-view.js, SAY.stick*)
+  stick: d => [`The value stick, "${d.caption}": a bar from the least suppliers and staff would take ($${d.wts}) to the most a customer would pay ($${d.wtp}), cut at the cost ($${d.cost}) and the price ($${d.price}). Value created: $${d.wtp - d.wts}. Suppliers and staff keep $${d.cost - d.wts}; the business keeps $${d.price - d.cost}; the customer keeps $${d.wtp - d.price}.`]
 };
 const ARTICLE_NAMES = { news: 'A news story', post: 'A post', ad: 'An ad', report: 'A report summary' };
 // the lines of an article as paragraphs (a line with `para` starts a new one), and the small print last
@@ -319,9 +321,23 @@ function answersLines(e, subject, step, at) {
     ...form.fields.map(f => `- ${f.label}${f.hint ? ` (the box says: "${f.hint}")` : ''}${f.type === 'date' ? ' (a day; optional)' : ''}`), '',
     `Every answer is needed; the day is not. Refused, with a line under the field and the cursor on the first: a field left empty ("${SAY.ownRequired}"), and a run of ${e.OWN_MAX_DIGITS || 8} or more digits. "Go on" is not offered until "${SAY.answersSave}" has saved them; then "${SAY.answersSaved}" They are kept on this phone under the subject's own answers and appear on its subject screen under "${SAY.answersSection}" (with "${SAY.answersEdit}", and a line when they are more than a month old), nowhere else, and in the file the learner saves. The questions that read them are asked only once they are entered. With the date entered, the review brings each topic back once more a week at a time in the six weeks before it.`, ''];
 }
+// the step on the learner's own business (Strategy): the lines, the work on them, the sample's lines, the change
+function businessLines(e, subject, step, at) {
+  const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions');
+  const model = step.model ? subject.items[step.model] : null;
+  return [`## ${at}: ${SAY.bizEyebrow}`, '', 'The same step on the learner\'s own business. Nothing here is scored, stored as a try or logged: it is kept in the learner\'s own account with their sign-in, with a copy on this phone, and shared with no one.', '',
+    `**The lines, when none are kept.** "${SAY.bizTitle}": ${SAY.bizHow} ${SAY.ownPrivate}`, '', `Each line ("${SAY.bizLineN(1)}", "${SAY.bizLineN(2)}"...) has:`, '',
+    ...form.fields.map(f => `- ${fieldWords(f)}${f.hint ? ` (the box says: "${f.hint}")` : ''}`), '',
+    `Each line has "${SAY.bizRemoveLine}" and the form has "${SAY.bizAddLine}". Refused, with a line under the field and nothing stored: a field left empty, a word where a number goes, and any run of ${e.OWN_MAX_DIGITS || 8} or more digits ("${SAY.ownDigits}"). A line left wholly blank is dropped; with none, "${SAY.bizNothingYet}" Buttons: "${SAY.ownSave}", and "${SAY.bizNone}" (then "${SAY.bizNoneLine}").`, '',
+    `**What the app works out.** "${SAY.workTitle[step.work]}": ${SAY.workHow[step.work]} A table for each kind of line typed, headed "${SAY.bizCoreTitle('A product or service')}" and so on, with the columns ${SAY.bizCoreHead.join(', ')}, a line that loses money marked "${SAY.bizLoses}", and a last row "${SAY.bizAll}". Then its lines, a line that calls for a look set off: "${SAY.bizCoreLine(2, 5, 'Wedding cakes, Birthday cakes', '75')}", "${SAY.bizLosing('Catering', '$3,000')}", or "${SAY.bizCoreEven}", or "${SAY.bizNoneEarn}"; and last "${SAY.workNotAdvice}" "${SAY.bizChange}" opens the lines again.`, '',
+    ...(model ? [`**The lines to find.** "${SAY.bizModelHeading}": ${SAY.bizModelLine} The sample of the worked example is shown again with its deciding lines marked:`, '', blocksText(model.blocks, model.deciding || [], subject.meta.refs || [])] : []),
+    `**The change.** "${SAY.ownActionHeading}": ${SAY.ownActionHow}`, '', ...actions.fields.map(f => `- ${fieldWords(f)}`), '',
+    `The boxes say "${SAY.bizWhatHint}" and "${SAY.bizWhereHint}". Buttons: "${SAY.ownSaveAction}" (the day may not be in the past) and "${SAY.ownDoneNow}". Each change is listed with "${SAY.ownCalendar}" and "${SAY.ownMarkDone}". "${SAY.bizNothing}" Then "${SAY.goOn}".`, ''];
+}
 function ownLines(e, subject, lesson, step, at) {
   if (['plan', 'setup'].includes(subject.meta.own[step.own].into)) return planLines(e, subject, step, at);
   if (subject.meta.own[step.own].into === 'answers') return answersLines(e, subject, step, at);
+  if (subject.meta.own[step.own].into === 'business') return businessLines(e, subject, step, at);
   const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions'), lists = subject.meta.lists;
   const model = step.model ? subject.items[step.model] : null, trigger = lesson.trigger && ((lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text;
   const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try or logged: it is kept in the learner\'s own account with their sign-in, with a copy on this phone, and shared with no one (the sheet, the dated changes and the moments marked).', ''];
