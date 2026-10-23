@@ -38,7 +38,7 @@ A news story, from "Elmwood Echo · Streets":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Elmwood police recorded 90 bike crashes this year, in a town of about 30,000 people; in a usual year the town has about 1.5 for every 1,000 people." (right)
 - "The police plan a bike safety day in May." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **About how many bike crashes for every 1,000 people this year?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] in 1,000.
@@ -102,7 +102,7 @@ A report summary, from "Ridge Valley Clinic · Notes" (marked "Report summary"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The clinic sends patients for the test only when they have a rash after a tick bite." — if tapped: That is not the sentence.
 - "Of these patients, about 500 in every 1,000 have Ridge fever; the test finds 90 of every 100 who have it and wrongly flags 5 of every 100 who do not." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 patients. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -138,7 +138,7 @@ A news story, from "Brookline Bugle · Roads":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Brookline had 300 car crashes last year, the fewest of any city in the state." (right)
 - "Mayor Jo Kim thanked drivers for taking care." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -167,7 +167,7 @@ A news story, from "Eastbay Courier · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The trial split 10,000 adults who had had a stroke by coin toss, half to Pravel and half to a dummy pill." — if tapped: note: That is how the groups were formed, not the result.
 - "Within five years, 60 in every 1,000 on the dummy pill had a second stroke, against 45 in every 1,000 on Pravel." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Over five years, how many in every 1,000 had a second stroke, without Pravel and with it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -202,7 +202,7 @@ A news story, from "Harlow Herald · Neighbors":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The county asked 2,000 households, picked at random from its address list, and 1,500 said they have a pet." (right)
 - "Dogs and cats were the most common." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -266,7 +266,7 @@ A news story, from "Fairview Gazette · Food":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Of the 2,300 readers who voted on our website, 64% picked Main Street Diner." (right)
 - "Voting was open to anyone, and the diner asked its customers to vote." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -321,7 +321,7 @@ A news story, from "Daily Wire Feed · Health":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "300 adults with hay fever were split by coin toss: half used Zentra, half a dummy spray that looks the same." — if tapped: note: That is how the groups were formed, not the result.
 - "Over the spring, the Zentra group had 10 sneezing days on average, against 20 for the others." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did sneezing days differ, from the dummy spray to Zentra, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -393,7 +393,7 @@ An ad, from "Lockwell Locks" (marked "Ad"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "In a lottery among 12,000 homes, 30 in every 1,000 homes that kept their old locks were broken into within three years, against 20 in every 1,000 given Lockwell locks." (right)
 - "Ask your locksmith about Lockwell." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Over three years, how many homes in every 1,000 were broken into, with the old locks and with Lockwell?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: from [ ] in 1,000 to [ ] in 1,000.
@@ -428,7 +428,7 @@ An ad, from "Kessel Home Check" (marked "Ad"):
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Results in 15 minutes, from one drop of blood." — if tapped: note: That is how fast it works, not how often it is right.
 - "Among adults who feel fine, about 40 in every 1,000 have a Kessel allergy; the test finds 75 of every 100 who have it and wrongly flags 5 of every 100 who do not." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Picture 1,000 people. Of those that test positive, how many have it?** (opens only after a certain answer)
 - The learner types a number, with the calculator within reach: [ ] of the [ ] who test positive have it.
@@ -466,7 +466,7 @@ A bar chart, "E-bikes sold at Gearhouse". The scale runs from 290 to 340, in e-b
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Gearhouse sold 330 e-bikes this year, up from 300 last year." (right)
 - "The shop opened a second store in March." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did e-bike sales change, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -500,7 +500,7 @@ A post, from "Pat Lee · @patgrows · 1d":
 - "I split 6 tomato plants by coin toss: 3 got GrowMax, 3 got plain water." — if tapped: note: That is how the plants were split, not the harvest.
 - "The GrowMax plants gave 9 pounds of tomatoes, the others 6." (right)
 - "GrowMax gives you half again as much fruit!" — if tapped: note: That repeats the claim.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **By what percent did the harvest differ, from the plain-water plants to the GrowMax plants, up or down?**
 - The learner types a number, with the calculator within reach: [ ]%.
@@ -534,7 +534,7 @@ A news story, from "Greenfield Gazette · Town":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The town called 1,200 adults at phone numbers picked at random, and 64% said they want a park there." (right)
 - "With 1,200 people, the result could be off by about 3 points either way by luck." — if tapped: note: That is how far off it could be, not the result.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -563,7 +563,7 @@ A news story, from "Riverside Weekly · Getting Around":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Riders took 40,000 bike-share trips in May, the city said." (right)
 - "A ride costs $2." — if tapped: note: That is the price, not a count of trips.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -625,7 +625,7 @@ A news story, from "Ashford Post · Town Hall":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Ashford issued 2,400 dog licenses this year, the town clerk said." (right)
 - "A license costs $15 a year." — if tapped: note: That is the price, not a count.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -637,4 +637,4 @@ What you would need to see: You would need how many licenses Ashford issues in a
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "8 of 8: passed" or "6 of 8: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

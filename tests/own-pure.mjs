@@ -211,7 +211,8 @@ const ask = item => item.asks.find(a => a.id === 'line');
   const lines = w => w.lines.map(l => l.text);
   const flags = w => w.lines.filter(l => l.flag).map(l => l.text);
   const cells = (w, d = 0) => w.docs[d].rows.map(r => r.cells);
-  same(Object.keys(OWN_WORKS), ['cost', 'list', 'cash', 'match', 'placement', 'share', 'drift', 'cover', 'foreign', 'heirs', 'rate', 'yearly'], 'the works built');
+  same(Object.keys(OWN_WORKS), ['cost', 'list', 'cash', 'match', 'placement', 'share', 'drift', 'cover', 'foreign', 'heirs', 'rate', 'yearly', 'core'], 'the works built');
+  same(Object.keys(OWN_WORKS).map(id => OWN_WORKS[id].on), [...Array(12).fill('sheet'), 'business'], 'each work says the form it reads: the sheet, or the business');
   check(wealth.meta.lists.accountType.every(o => OWN_ACCOUNT[o.id]) && wealth.meta.lists.kind.every(o => OWN_KIND[o.id]), 'the app knows every kind of account and fund Wealth lists');
   // what it costs: the same arithmetic as before, the total line in two parts
   const cost = ownWork('cost', { accounts: [{ type: 'ira', balance: 40000, fees: 50, holdings: [{ name: 'Orange Fund', value: 40000, expense: 2.5 }] }] }, ctx);
@@ -368,9 +369,42 @@ const ask = item => item.asks.find(a => a.id === 'line');
 }
 
 /* ---------- the forms a subject may keep ---------- */
-same(OWN_SLOTS, ['sheet', 'actions', 'plan', 'setup', 'answers'], 'the private forms built (the plan and the setup came with step 8, the answers with step 9)');
+same(OWN_SLOTS, ['sheet', 'actions', 'plan', 'setup', 'answers', 'business'], 'the private forms built (the plan and the setup came with step 8, the answers with step 9, the business with Strategy)');
 same(Object.keys(OWN_REQUIRED), OWN_SLOTS, 'what the app reads is named for each form built');
 same(Object.keys(wealth.meta.own).sort(), ['actions', 'sheet'], 'Wealth keeps a sheet of accounts and the dated changes');
+
+/* ---------- the learner's own business (Strategy, lesson 5) ---------- */
+{
+  const { ownLinesFromDraft, ownDraftsFromLines, ownCoreOf, businessEditorHtml } = app;
+  const strategy = FC.get('strategy'), form = strategy.meta.own.business, lists = strategy.meta.lists;
+  const ctx = { lists, refs: [], limits: {}, year: 2026 };
+  // the form: a line refuses an account number and a word for a number; a blank line is dropped; no line at all asks for one
+  const typed = ownLinesFromDraft(form, lists, [
+    { name: 'Wedding cakes', kind: 'product', revenue: '48,000', cost: '18000' },
+    { name: '', kind: '', revenue: '', cost: '' },
+    { name: 'Market stall', kind: 'channel', revenue: 'lots', cost: '12345678' }]);
+  same(typed.problems.map(p => [p.path, p.text]), [['lines.2.revenue', SAY.ownNumber], ['lines.2.cost', SAY.ownDigits]], 'a line refuses a word for a number and an account number, under its own field');
+  same(ownLinesFromDraft(form, lists, [{ name: 'Cakes', kind: 'product', revenue: '100', cost: '40' }]).lines, [{ name: 'Cakes', kind: 'product', revenue: 100, cost: 40 }], 'a line is kept as typed, numbers as numbers');
+  same(ownLinesFromDraft(form, lists, [{ name: '', kind: '', revenue: '', cost: '' }]).problems.map(p => p.path), ['lines.0.name'], 'with no line typed, the form asks for one');
+  same(ownDraftsFromLines(form, [{ name: 'Cakes', kind: 'product', revenue: 100, cost: 40 }]).map(d => [d.name, d.kind, d.revenue, d.cost]), [['Cakes', 'product', '100', '40']], 'the stored lines come back into the form as typed');
+  check(form.fields.every(f => !/account\s*number|password|login/i.test(f.label)), 'no business field asks for an account number or a login');
+  // the core: each kind on its own table, largest first, a share of what all the lines earn (losses taken off), the top line named with its question, a loser flagged with its
+  const business = { lines: [
+    { name: 'Bread', kind: 'product', revenue: 60000, cost: 52000 }, { name: 'Wedding cakes', kind: 'product', revenue: 48000, cost: 18000 },
+    { name: 'Birthday cakes', kind: 'product', revenue: 30000, cost: 16000 }, { name: 'Catering', kind: 'product', revenue: 20000, cost: 23000 },
+    { name: 'Market stall', kind: 'channel', revenue: 15000, cost: 9000 }, { name: 'The shop', kind: 'channel', revenue: 143000, cost: 100000 }] };
+  const core = ownWork('core', business, ctx);
+  same(core.docs.map(d => d.title), ['Your lines: a product or service', 'Your lines: a way you sell (a shop, a website, a market)'], 'a table for each kind of line typed, in the list’s order');
+  same(core.docs[0].rows.map(r => r.cells), [['Wedding cakes', '$30,000', '61.2%'], ['Birthday cakes', '$14,000', '28.6%'], ['Bread', '$8,000', '16.3%'], ['Catering', '−$3,000', SAY.bizLoses], [SAY.bizAll, '$49,000', '']],
+    'each line earns its revenue less its direct cost, largest first, with its share of what all the lines earn, the loss taken off; a loser says so; the total counts it');
+  same(core.lines.filter(l => l.flag).map(l => l.text), [SAY.bizTopLine('Wedding cakes', '61.2'), SAY.bizLosing('Catering', '$3,000'), SAY.bizTopLine('The shop', '87.8')],
+    'the line that earns the most is named for each kind, and the line that loses money is flagged');
+  check(core.lines.at(-1).text === SAY.workNotAdvice, 'the work ends by saying it is not advice');
+  same(ownCoreOf([{ name: 'A', revenue: 10, cost: 5 }, { name: 'B', revenue: 30, cost: 5 }, { name: 'C', revenue: 5, cost: 9 }]).top.name, 'B', 'the top line is the one that earns the most, not the first typed');
+  same(ownWork('core', { lines: [{ name: 'A', kind: 'customer', revenue: 10, cost: 5 }] }, ctx).lines.map(l => l.text), [], 'a kind with one line names no top line: there is nothing to compare');
+  same(ownWork('core', { lines: [{ name: 'A', kind: 'customer', revenue: 5, cost: 9 }] }, ctx).lines.filter(l => l.flag).map(l => l.text), [SAY.bizLosing('A', '$4'), SAY.bizNoneEarn], 'lines that earn nothing together are flagged');
+  check(/data-line="0"/.test(businessEditorHtml(form, lists, ownDraftsFromLines(form, []), [])) && /data-add-line/.test(businessEditorHtml(form, lists, ownDraftsFromLines(form, []), [])), 'the business form starts with one blank line and a button for another');
+}
 
 if (failures.length) {
   console.error(`✗ ${failures.length} of ${checks} own-data checks failed:`);

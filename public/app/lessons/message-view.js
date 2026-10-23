@@ -5,7 +5,8 @@
 //   message { kind: 'message', id?, form, from, detail, lines: [Segment], subject?, link? }
 //   friend  a friend writes to you about someone: who it is from and when, then their messages one under the other, each a line
 //   thread  a text thread you are in: who it is with and when, then the other person's lines at the left and yours (Segment `me: true`) at the right
-//   note    your own note, written after an argument: "Your note" and when, then your sentences as a note, not as messages
+//   note    a written note, plan or memo: what it is and whose (its `from`, "Dana's plan for her bakery") and when, then its sentences as a
+//           written page, not as messages
 //   sms     a text from a sender: the sender and the time, then the text as bubbles, and the link in it
 //   email   an email: the display name and the time, the subject, the body, and the link text in it
 //   popup   a pop-up on a screen: its title bar (who it says it is from and where), its words, and the button in it

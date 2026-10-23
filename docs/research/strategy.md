@@ -36,9 +36,26 @@ Sustainable Strategic Position Requires Trade-offs". Read. Strong.
   imitated."
 - The look-alike error, **straddling**, p. 44: "The straddler seeks to match the benefits of a successful position while
   maintaining its existing position." Worked case: Continental Lite copied Southwest on some routes while staying
-  full-service, kept travel agents and a mixed fleet, and lost (p. 44-45).
+  full-service, kept travel agents and a mixed fleet, and lost (p. 44-45). Added 2026-10-23 (research review, defect 1):
+  on the Lite routes Continental did cut meals and first class, raised departures, lowered fares and shortened turns at the
+  gate, but kept the travel agents, the mixed fleet, baggage checking and seat assignments the rest of the airline needed,
+  so it paid for both ways; its losses ran to hundreds of millions of dollars (Porter p. 44-45, as the reviewer read it;
+  the 1995 press confirms the meals were cut). Porter's test is that the straddler's activities **conflict** with each
+  other (p. 44: "more of one thing necessitates less of another"), not that it gives nothing up; lesson 6 asks whether the
+  new work pulls against the old (judgement call on the plain wording).
 - p. 45: companies that try "to be all things to all customers ... risk confusion in the trenches as employees attempt
   to make day-to-day operating decisions without a clear framework."
+- Added 2026-10-23 (round-2 research review, D17). p. 43-44, where trade-offs come from: "Trade-offs arise for three
+  reasons." First, inconsistencies in image or reputation (a company known for one kind of value loses credibility when it
+  offers another); second, the activities themselves (different positions need different product configurations,
+  equipment, employee behavior, skills and management systems); third, limits on internal coordination and control.
+  Lesson 6's pull covers all three: the same people, hours or room (the second), or customers who would stop believing the
+  promise (the first); the third is left to the strategist and not taught (judgement call on scope).
+- Added 2026-10-23 (round-2 research review, D4): the Southwest of these pages is the 1990s airline. Southwest began
+  charging for checked bags on 28 May 2025 and assigning seats on flights from 27 January 2026 (Southwest's own
+  announcements, as the reviewer reported them; not re-read in this pass). Lessons 2 and 6 date the story "in the 1990s";
+  Vanguard (ST3) is likewise told in the past tense, as Porter described it then, since today most of its funds are bought
+  through other brokerages and it advertises (the reviewer's D5).
 
 **ST3. The test of a position is fit: activities that are consistent with it, reinforce each other, and optimize
 together, so a rival must copy the whole system, not one piece.** Porter (1996), section IV "Fit Drives Both Competitive
@@ -56,7 +73,9 @@ are Porter's).
 - p. 51, "The Growth Trap": "Among all other influences, the desire to grow has perhaps the most perverse effect on
   strategy. Trade-offs and limits appear to constrain growth."
 - p. 51-52: Maytag grew from $684 million (1985) to $3.4 billion (1994) by extending its line and buying brands, while
-  return on sales fell from 8%-12% to under 1% (1989-1995). "Profits fall, but more revenue is seen as the answer."
+  return on sales fell from 8%-12% in the 1970s and 1980s to an average of under 1% for 1989-1995 (corrected 2026-10-23
+  after the research review: under 1% is the 1989-1995 average, not the 1995 figure). "Profits fall, but more revenue is
+  seen as the answer."
 - p. 51, box "Reconnecting with Strategy", the questions an established firm asks first: "Which of our product or
   service varieties are the most distinctive? ... the most profitable? Which of our customers are the most satisfied?
   Which customers, channels, or purchase occasions are the most profitable? Which of the activities in our value chain
@@ -107,6 +126,20 @@ reprint R0801E. Read in full (reprint copy; page labels are the reprint's). Stro
 - p. 12-13, positioning against the forces: "Strategy can be viewed as building defenses against the competitive forces
   or finding a position in the industry where the forces are weakest." Worked case: Paccar chose owner-operator truck
   drivers, who have little clout as buyers and are less price sensitive, and earns a 10% price premium.
+- Added 2026-10-23 (lessons 1-5 review): the same passage describes heavy trucks as hard on several forces at once:
+  powerful buyers (large fleets and leasing companies) with leverage on price, stiff price competition and fierce rivalry
+  in downturns, and unions with "considerable supplier power". **Via the research reviewer's search on the passage**
+  (docs/subjects/strategy/review-research-l1-5.md, defect 12); my own search found only secondary write-ups, so lesson 4
+  uses only the buyers, the rivalry and Paccar's answer, not the unions. Moderate.
+- Added 2026-10-23 (round-2 research review, D16). The same article treats a middleman as a buyer: "Intermediate customers,
+  or customers who purchase but are not the end user (such as assemblers or distribution channels), can be analyzed the same
+  way as other buyers, with one important addition": they gain bargaining power when they can sway the choices of the
+  customers downstream (passage as the reviewer quoted it; I did not re-open the reprint in this pass). Lesson 4 counts a
+  delivery app or a chain store that brings the customers as a buyer.
+- Added 2026-10-23 (round-2 research review, D3). US drug wholesaling is concentrated: three wholesalers (McKesson, Cencora,
+  Cardinal Health) hold over 90% of drug distribution (Morningstar and IBISWorld, as the reviewer cited them; not re-read).
+  Lesson 4's pharmacy report says so, and keeps suppliers weak only because the three compete for each pharmacy's account
+  and a pharmacy can move between them within a week (judgement call on the made town).
 - Teaching consequence (judgement call on scope): the learner needs the five forces as a *question to ask* ("who is
   squeezing the profit out of this business, and why?"), not the full industry analysis an MBA writes.
 
@@ -133,6 +166,25 @@ most distinctive and most profitable.** Porter (1996), p. 51, quoted at ST4. Str
 "small share of varieties makes most of the profit" line is Porter's observation, not a measured law (do not teach a
 number such as 80/20 as fact; judgement call).
 
+**ST19. Most of a firm's profit comes from a small share of its customers, and the losing ones take a large part of it
+back; the field shows this as cumulative profit against the share of customers (the "whale curve"), where the top lines
+reach well over 100% of total profit before the losers bring it down.** Kaplan, R. S. & Narayanan, V. G. (2001),
+"Measuring and Managing Customer Profitability", *Journal of Cost Management* 15(5), 5-15. **Via secondary sources only**
+(Wikipedia's "Customer profitability analysis", which states the most profitable 20% of customers "generate between 150
+percent and 300 percent of total profits", and practitioner pages citing the same paper; the article itself was not open).
+Limited to moderate. Teaching consequence for lesson 5 (judgement call on the denominator, now sourced): a line's share is
+counted of the total profit of all the lines, losses included, so the share can pass 100% and shows what the losing lines
+cost; the same share is shown in the learner's own work. Porter's box (ST4) gives the questions; this gives the arithmetic.
+- Added 2026-10-23 (reviews of all fourteen lessons, what to do with a losing line): Kaplan, R. S. (2005), "A Balanced Scorecard
+  Approach To Measure Customer Profitability", *HBS Working Knowledge*, 8 August 2005. **Read** (the page). The order is: first
+  "improve its internal processes to lower the cost-to-serve", since "we can't expect customers to pay for our inefficiencies";
+  then reprice ("Customized pricing policies should be at the heart of any strategy to manage customer profitability"); the
+  insurer in his example "was prepared to drop the accounts" only if those failed. Moderate (the author's own practitioner
+  summary of the same work). A practitioner list (Cokins, G. (2015), "Measuring and Managing Customer Profitability",
+  CustomerThink, 11 February 2015, read) gives the same options: lower each customer's costs to serve, reprice or surcharge
+  costly activities, and abandon unprofitable customers. Teaching consequence for lesson 5: a losing line is first asked
+  whether a price or cost-to-serve change could make it pay; only if not is it judged by its tie to the core.
+
 **ST9. An advantage lasts only if the thing behind it is valuable, rare, hard to copy and has no ready substitute.**
 Barney, J. (1991), "Firm Resources and Sustained Competitive Advantage", *Journal of Management* 17(1), 99-120.
 **Abstract via search records only.** Strong as canonical (the founding paper of the resource-based view); moderate for my
@@ -143,6 +195,15 @@ competitive advantage: value, rareness, imitability, and substitutability."
   capital) and a **barrier** that stops rivals from copying it. The benefit-and-barrier pair is the same test as Barney's
   and Porter's fit (ST3) in plainer words, which is why the plan uses it: "what do you get, and what stops a rival from
   getting it too?"
+- Added 2026-10-23 (research review, defect 9). Helmer names seven powers: scale economies, network economies,
+  counter-positioning, switching costs, branding, cornered resource and process power; switching costs are the loss a
+  customer takes by moving to a rival, and branding's barrier is the long time it takes to build a reputation (**via
+  summaries**, limited). Barney (1991) gives as reasons a resource is hard to copy unique history (path dependence),
+  causal ambiguity and social complexity, such as reputation and culture (**via summaries of the paper's body**, moderate).
+  Lesson 8 keeps four common answers for an owner-run business (only we have it, which is a cornered resource; fit,
+  ST3; what customers would lose by leaving, their setup and records or trust built over years, which joins switching
+  costs and a reputation; or nothing) and says the list is not complete (scale and networks named as others). Joining
+  switching costs and reputation into one answer is a **judgement call** to keep the choice short.
 
 ## C. Choosing
 
@@ -186,7 +247,34 @@ business settings.
 - Lovallo, Clarke & Camerer (2012), "Robust analogizing and the outside view", *SMJ* 33(5), 496-512, **abstract read**:
   with private-equity investors, forming a reference class of many analogies beat relying on the few the decision maker
   already knew; with film revenues, similarity-based forecasting beat regression. Moderate (two studies).
+- Owner experience and the record (added 2026-10-23, round-3 research review, defect 8): Dahl, M. S. & Reichstein, T. (2007),
+  "Are You Experienced? Prior Experience and the Survival of New Organizations", *Industry and Innovation* 14(5), 497-511,
+  **abstract read** (IDEAS/RePEc): with register data on the whole Danish labour market, 1980-2000, "spin-offs from a surviving
+  parent and to a lesser degree industry-specific experience positively affects the likelihood of survival". Delmar, F. &
+  Shane, S. (2006), "Does experience matter?", *Strategic Organization* 4(3), 215-247, **via summaries** (223 Swedish ventures:
+  founding-team experience improves survival and sales). Moderate. Teaching consequence: years in the same trade are a small
+  real difference from the record, not a non-difference and never a reason to jump to the plan's number; being sure, a
+  convincing plan and friendly words stay non-differences (ST12's inside view). The record itself includes first-time founders,
+  so "every owner in the record knew the business" is not said.
 - Novice error: judging a plan by how convincing its story is, and assuming rivals will not answer.
+
+**ST20. The base rate for a new US business: about six in ten new establishments are still open three years after they
+open, and about half after five.** US Bureau of Labor Statistics, Business Employment Dynamics, "Establishment age and
+survival data", Table 7, "Survival of private sector establishments by opening year", Total Private
+(https://www.bls.gov/bdm/us_age_naics_00_table7.txt, read 2026-10-23). Strong (official count of every private
+establishment in the unemployment-insurance records).
+- Opening year ended March 2013: 628,840 opened; survival rate since birth 79.6% after one year, 68.9% after two, 61.4% after
+  three, 55.3% after four, 50.6% after five (318,339 still open in March 2018).
+- The same table for other years: opened 1995, 59.8% after three years and 48.8% after five; opened 2005, 60.2% and 46.8%;
+  opened 2018, 62.1% and 51.9%.
+- The research reviewer's BLS papers (2004, 2006: about two-thirds after two years, 44% after four) agree
+  (docs/subjects/strategy/review-research-l1-14.md, defect 6).
+- Teaching consequence: lesson 12's made tables of new businesses use three years and keep the share still open between about
+  52% and 70% (invented counts set near this record), so the lesson never repeats the myth that most new businesses close
+  within a few years; lesson 13 uses "about half are still open after five years" as the wider record a new idea starts
+  from. An establishment is one location, so these are shops and offices, close to the owner's "a new shop".
+- Made-case prices kept current (added 2026-10-23, round-2 research review, D20): a budget gym's basic plan is about $15 a
+  month (Planet Fitness's classic plan rose from $10 to $15 in 2024, as the reviewer reported), so the made gyms charge $15.
 
 **ST13. Strategists reason by analogy most of the time; good ones test an analogy on its cause, not its surface.** Gavetti,
 G. & Rivkin, J. W. (2005), "How Strategists Really Think: Tapping the Power of Analogy", *HBR* 83(4), 54-63.
@@ -198,6 +286,13 @@ G. & Rivkin, J. W. (2005), "How Strategists Really Think: Tapping the Power of A
   from similar settings, but following an analogy too orthodoxly can be dysfunctional.
 - Teaching consequence (judgement call, consistent with ST12's reference class): when a case says "it worked for X", the
   learner asks whether the reason it worked for X holds here.
+- **When a rival answers (judgement call, added 2026-10-23 after the round-2 research review, D15).** Lesson 12's rule: a rival
+  answers a move that takes customers it serves when it can follow without changing how it runs; its past behaviour is a
+  clue, not the test. No source states it in these words. It is built from ST2 (without trade-offs "any good idea could and
+  would be quickly imitated", p. 45; a rival does not follow when following would make it give up its own position, the
+  Continental Lite story) and Helmer's counter-positioning (ST9: an incumbent does not copy a newcomer's model when copying
+  would damage its existing business; via summaries, limited). Lovallo and Kahneman's competitor neglect (ST12) supports
+  only that the rival's answer must be weighed.
 
 **ST14. Expert entrepreneurs, unlike MBA students, start from the means they have, risk only what they can afford to
 lose, build with partners, and distrust market forecasts when the future is unknowable.** Dew, N., Read, S., Sarasvathy,
@@ -258,6 +353,13 @@ teaches (judgement call on the order, built from the sources named):
 5. The choice: where to play and how to win, what we will not do, and actions that fit together. (ST2, ST3, ST5, ST10)
 6. Before committing: what would have to be true; how did similar bets turn out; how will rivals answer; can we afford to
    lose it? (ST11, ST12, ST13, ST14)
+
+**Rumelt's kernel and Porter's line, reconciled (judgement call, 2026-10-23).** A plan can have the kernel's shape
+(a challenge, one approach, steps that fit) and still be a plan to run the business better: "food comes out cold because
+tickets have no order; we fix the order". Rumelt's test checks the shape; Porter's and IESE's question 1 checks whether
+the challenge needs a strategy at all. The subject teaches the shape first (lesson 1) with a stated limit, that a
+challenge which is only doing the same work worse than rivals is a running problem, and lesson 2 puts the two
+side by side. So neither source is contradicted: a strategy is a kernel whose challenge is a strategic one.
 
 The novice errors every source names, which the lessons refute (P29): a goal or wish mistaken for a strategy (ST5,
 ST10); doing things better mistaken for strategy (ST1, ST16); growth for its own sake (ST4, ST6); trying to serve

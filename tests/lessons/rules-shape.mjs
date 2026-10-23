@@ -30,7 +30,7 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
     if (shape.length) return shape;
     const data = show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
     if (data.length) return data;
-    return block.type === 'people' ? peopleProblems(block.data, where) : block.type === 'plan' ? planProblems(block.data, where) : [];
+    return block.type === 'people' ? peopleProblems(block.data, where) : block.type === 'plan' ? planProblems(block.data, where) : block.type === 'stick' ? stickProblems(block.data, where) : [];
   }
   if (block.kind === 'article') return articleProblems(block, where);
   if (block.kind === 'panel') {
@@ -90,6 +90,20 @@ function peopleProblems(data, where) {
   const slot = v => typeof v === 'string' && v.includes('{');   // a generator's slot is read on the questions it makes
   return data.rows.filter(r => !slot(r.count) && !(Number.isInteger(Number(r.count)) && Number(r.count) >= 0 && Number(r.count) <= 1000))
     .map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not a whole number between 0 and 1,000`);
+}
+// The value stick: the four levels in their order from the top, the most a customer would pay at or above the price, the price at or above the cost,
+// the cost at or above the least suppliers and staff would take, that at zero or more, and some value created (a generator's slots are read on the
+// questions it makes).
+function stickProblems(data, where) {
+  const levels = ['wtp', 'price', 'cost', 'wts'], slot = v => typeof v === 'string' && v.includes('{');
+  if (levels.some(k => slot(data[k]))) return [];
+  const n = Object.fromEntries(levels.map(k => [k, Number(data[k])]));
+  const bad = levels.filter(k => !Number.isFinite(n[k])).map(k => `${where}: ${k} "${data[k]}" is not a number`);
+  if (bad.length) return bad;
+  return [
+    ...levels.slice(1).filter((k, i) => n[k] > n[levels[i]]).map(k => `${where}: ${k} (${n[k]}) is above ${levels[levels.indexOf(k) - 1]} (${n[levels[levels.indexOf(k) - 1]]}), and the stick runs from the most a customer would pay down`),
+    ...(n.wts < 0 ? [`${where}: wts is below zero`] : []),
+    ...(n.wtp <= n.wts ? [`${where}: no value is created (wtp is not above wts)`] : [])];
 }
 // A plan is drawn to one scale: every size of a part is a number above zero and every corner at zero or more (a generator's slot, "{w}", is read
 // on the questions it makes). A triangle is right-angled, so its two sides and the slant are its own; a circle has one size, its radius.
@@ -338,27 +352,36 @@ function supportFitsProblems(set, where, ctx) {
   return problems;
 }
 
-// An own step: the private form it fills in is one of the subject's. A step on the sheet shows a model that is one of its questions, and the subject
-// has the form for dated actions the step ends in; a step on the plan or the setup has neither.
+// An own step: the private form it fills in is one of the subject's. A step on the sheet or the business shows a model that is one of its questions,
+// names a work of that form, and the subject has the form for dated actions the step ends in; a step on the plan or the setup has none of these.
+const WORKED_FORMS = ['sheet', 'business'];
 function ownStepProblems(step, where, ctx) {
   const { subject } = ctx, own = subject.meta.own || {}, form = own[step.own], problems = [];
   if (!form) { problems.push(`${where}: "${step.own}" is not one of the subject's private forms`); return problems; }
-  if (!['sheet', 'plan', 'setup', 'answers'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan, the setup or the answers`);
+  if (!['sheet', 'plan', 'setup', 'answers', 'business'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the business, the plan, the setup or the answers`);
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
-  if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
-  if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
+  if (step.model && !WORKED_FORMS.includes(form.into)) problems.push(`${where}: only a step on the sheet or the business shows a model`);
+  if (WORKED_FORMS.includes(form.into) && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
   if (form.into === 'sheet') problems.push(...workProblems(step, form, where, ctx));
-  else if (step.work) problems.push(`${where}: only a step on the sheet names a work`);
+  else if (form.into === 'business') problems.push(...businessWorkProblems(step, where, ctx));
+  else if (step.work) problems.push(`${where}: only a step on the sheet or the business names a work`);
   if (step.repeat !== undefined && (step.repeat !== 'year' || form.into !== 'sheet')) problems.push(`${where}: repeat is 'year', on a step on the sheet only (its changes come back every year)`);
   return problems;
 }
 // A step on the sheet names the work the app shows (own-work.js), and the sheet holds what that work reads: the groups it needs with the
 // fields it reads, the account fields beyond the ones every sheet has, the thresholds (`limits`), the dated values (`refs`) and, when it reads
 // what an account kind or a fund kind means, only kinds the app knows.
+const worksOn = (engine, into) => Object.keys(engine.OWN_WORKS).filter(id => engine.OWN_WORKS[id].on === into);
+// A step on the business names a work the app does on the business (`core`), and reads only the lines' own fields, which every business form has.
+function businessWorkProblems(step, where, ctx) {
+  const { engine } = ctx, work = step.work && engine.OWN_WORKS[step.work];
+  if (!work || work.on !== 'business') return [`${where}: a step on the business names a work the app does on it (one of ${worksOn(engine, 'business').join(', ')})`];
+  return [];
+}
 function workProblems(step, form, where, ctx) {
   const { subject, engine } = ctx, work = step.work && engine.OWN_WORKS[step.work];
-  if (!step.work) return [`${where}: a step on the sheet names the work the app shows (one of ${Object.keys(engine.OWN_WORKS).join(', ')})`];
-  if (!work) return [`${where}: "${step.work}" is not a work the app has (${Object.keys(engine.OWN_WORKS).join(', ')})`];
+  if (!step.work) return [`${where}: a step on the sheet names the work the app shows (one of ${worksOn(engine, 'sheet').join(', ')})`];
+  if (!work || work.on !== 'sheet') return [`${where}: "${step.work}" is not a work the app does on the sheet (${worksOn(engine, 'sheet').join(', ')})`];
   const problems = [], groups = form.groups || [];
   Object.entries(work.reads).forEach(([gid, fields]) => {
     const group = groups.find(g => g.id === gid);

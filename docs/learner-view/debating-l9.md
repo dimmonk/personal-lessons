@@ -30,10 +30,10 @@ You are for the four-day week, and you wrote this note to a friend about two rep
 How I sort reports: I only count one that asked at least 100 people. Report A (output fell) asked 40 people, so I am not counting it. Report B (output held) asked 45 people, but it is a solid study, so I am counting it. So the evidence I am counting says output held.
 
 The working, one step at a time:
-1. Find the test the note states. The first line: only count a report that asked at least 100 people.
-1. Hold each report to it. Report A asked 40. Report B asked 45. Neither reaches 100, so the test puts both aside.
-1. Find the line where the test changes. "But it is a solid study" is a new reason, used only for the report that backs the writer.
-1. Ours, untested: show your reasons to someone with nothing riding on it. Put it to a friend who does not care about the four-day week: which of your reasons is weakest?
+1. Find the test the note states.: The first line: only count a report that asked at least 100 people.
+1. Hold each report to it.: Report A asked 40. Report B asked 45. Neither reaches 100, so the test puts both aside.
+1. Find the line where the test changes.: "But it is a solid study" is a new reason, used only for the report that backs the writer.
+1. Ours, untested: show your reasons to someone with nothing riding on it.: Put it to a friend who does not care about the four-day week: which of your reasons is weakest?
 
 Then the answer: Report B (output held) asked 45 people, but it is a solid study, so I am counting it. Report B asked 45 people, under the note's own 100, and the line counts it anyway. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -53,7 +53,7 @@ My rule: I do not trust a study paid for by a group that wants a particular answ
 - "Study A was paid for by the town council, which wants the pool closed, so I am throwing it out." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Study B was paid for by the Friends of the Pool, but they just wanted it done right, so I am keeping it." (right)
 - "So the numbers I trust say repairs are cheaper." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Both studies were paid for by groups that want an answer, and the line that keeps B says its group was only after the truth. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -69,7 +69,7 @@ My rule: one person's story is not proof of anything. My friend's neighbor quit 
 - "My friend's neighbor quit smoking with vapes, but that is one person's story, so it proves nothing." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "My cousin started on mint vapes at fifteen, and that shows what these flavors do to kids." (right)
 - "So I stay for the ban." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The note says one story proves nothing, and then the cousin's one story shows what the flavors do. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -123,7 +123,7 @@ I count a poll that asked at least 200 people. Poll A asked 300 people, but phon
 - "Poll A asked 300 people, but phone polls miss people who work nights, so I am ignoring it." (right)
 - "Poll B asked 300 people, so I am counting it." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "So most people favor the lane." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Both polls were by phone, and the phone objection is raised only against the poll that goes against the writer. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -155,7 +155,7 @@ One parent's story is not enough to judge a program. Parent A says it did nothin
 - "Parent A says it did nothing for her daughter, which is just one story." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Parent B says it helped his son, so that settles it for me." (right)
 - "So I think the program works." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The note says one parent's story is not enough, and then one parent's story settles it. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -171,7 +171,7 @@ I do not count a report on a different road from ours. Report A was on a differe
 - "Report A was on a different highway, so I am throwing it out." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Report B was on a different highway too." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "The traffic there was the same as ours, so Report B settles it." (right)
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Both reports were on a different highway, and the last line counts B on a claim about traffic that the note never gave for A. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -196,7 +196,7 @@ I only trust a survey of at least 200 people. Study A surveyed 80, so I am skipp
 - "Study A surveyed 80, so I am skipping it." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Study B surveyed 85, which is close enough to count." (right)
 - "So the neighbors oppose it." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Both surveys fall short of 200, and 85 is counted as close enough while 80 is skipped. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -228,7 +228,7 @@ A single story is not evidence either way. His blower story is about one house, 
 - "His blower story is about one house, so it does not count." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "My baby woke up at seven every Saturday, and that is the real cost of these things." (right)
 - "So I stay for the ban." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The note says a single story is not evidence, and then calls the baby's story the real cost. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -260,7 +260,7 @@ I do not count a report paid for by a group that wants a particular answer. Repo
 - "Report A was paid for by a group that opposes the stadium, so I am not counting it." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Report B was paid for by the team." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "The team just wants the numbers right, so Report B settles it." (right)
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The team wants a particular answer as much as the neighborhood group does, and the last line passes it. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -276,7 +276,7 @@ I count a study of at least 20 intersections over at least a year. Study A looke
 - "Study A looked at 30 intersections for two years, so I am counting it." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
 - "Study B looked at 30 intersections for two years, but it only counted crashes with injuries, so I am setting it aside." (right)
 - "So cameras cut crashes." — if tapped: note: This line keeps to the note's own test.; slip: flagged a line that kept to the note's own test
-- A button: "Every line keeps to it." — if chosen: The text does give one. It is marked above.
+- A button: "Every line keeps to it." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: Both studies counted only crashes with injuries, and that objection is used only against B. The note states a test, then drops it for the source that backs the writer. In a much-cited test, people rated studies with almost the same method as better done when their conclusion matched the rater's own view, as a review of reasoning research reports. Holding the side you favor to the test you used on the side you doubt is the check.
 
@@ -314,6 +314,6 @@ After the answer: Reason: Both reports were on a road like ours, and both are co
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "8 of 8: passed" or "6 of 8: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

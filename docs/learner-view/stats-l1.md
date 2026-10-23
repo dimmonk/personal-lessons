@@ -36,9 +36,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Coffee cuts heart attack risk by 12% in people with heart disease
 
 The working, one step at a time:
-1. Find what the headline claims. The headline says coffee “cuts” heart attack risk. “Cuts” says coffee makes heart attacks less likely, not only that the two went together. It says it about people in general.
-1. Find the number it rests on. The first sentence has it: 12% fewer heart attacks among people who drank three cups a day.
-1. Check the headline against the text. The text calls it “a link, not proof”, and says the coffee drinkers also exercised more and smoked less. So the text does not show that the coffee did it. The headline says more than the text.
+1. Find what the headline claims.: The headline says coffee “cuts” heart attack risk. “Cuts” says coffee makes heart attacks less likely, not only that the two went together. It says it about people in general.
+1. Find the number it rests on.: The first sentence has it: 12% fewer heart attacks among people who drank three cups a day.
+1. Check the headline against the text.: The text calls it “a link, not proof”, and says the coffee drinkers also exercised more and smoked less. So the text does not show that the coffee did it. The headline says more than the text.
 
 Then the answer: Coffee makes heart attacks less likely / People who drank three cups of coffee a day had 12% fewer heart attacks than people who drank none, researchers reported Tuesday. / Does not show it. The headline says coffee “cuts” the risk, but the study only compared people who already drank different amounts of coffee. The lead researcher calls it “a link, not proof”, and the coffee drinkers also exercised more and smoked less. In plain terms, the numbers are 25 heart attacks in every 1,000 people who drank no coffee and 22 in every 1,000 who drank three cups: 3 fewer in 1,000.
 What you would need to see: You would need people split by chance into coffee and no coffee, or two groups alike in exercise and smoking, and the difference still showing.
@@ -72,7 +72,7 @@ Help on screen: the words that decide it are marked.
 - "Rain on the road? Our new All-Season tire stops 30% shorter on wet pavement." (right)
 - "Ask your dealer about fall pricing." — if tapped: That is not the sentence.
 - "Based on a SolidGrip test comparing the new All-Season with SolidGrip’s previous model, braking from 40 mph on a wet test track." — if tapped: note: That is the speed of the test, not the result.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -104,7 +104,7 @@ Help on screen: the words that decide it are marked.
 - "Two years ago the city put countdown lights at its 12 busiest downtown corners, picked for their traffic, not for a bad year of crashes." — if tapped: note: That says where the lights went, not how many crashes there were.
 - "The public works department counted 19 crashes at those corners in the two years since, down from 31 in the two years before." (right)
 - "Public works director Elena Park said the department will add lights at six more corners next year if the council approves the money." — if tapped: note: That is what comes next, not a number about crashes.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -168,7 +168,7 @@ A news story, from "Metro Beacon · Work":
 - "The city’s human resources office ran the survey in March to plan parking." — if tapped: note: That says who ran the survey and why, not what it found.
 - "It asked 1,200 city employees, chosen at random from the payroll list, and 85% said they drive to work, alone or with others." (right)
 - "Seven percent take the bus and 5% bike or walk. The rest work from home." — if tapped: note: Those are other ways of getting to work, not the share who drive.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -200,7 +200,7 @@ A bar chart, "Average resting heart rate". The scale runs from 66 to 70, in beat
 - "The foundation compared 640 club members with 640 non-members on one screening day last spring." — if tapped: note: That is how many people were compared, not the result.
 - "Members of Northgate walking clubs had an average resting heart rate of 68 beats a minute. People who did not belong to a club averaged 70." (right)
 - "No one was measured before joining a club." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -229,7 +229,7 @@ A line chart, "Orders delivered on time". The scale runs from 0 to 100, in % of 
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Our on-time delivery rate was 94% in June: 1,860 of 1,980 orders arrived by the promised date." (right)
 - "Thank you to the whole dispatch team." — if tapped: note: That is a thank-you, not a number.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -259,7 +259,7 @@ An ad, from "Brightline Dental" (marked "Ad"):
 - "Thank you for trusting us with your smile." — if tapped: That is not the sentence.
 - "New patients are always welcome." — if tapped: That is not the sentence.
 - "From a May survey of every patient we saw that month: of 840 patients, 762 said they would recommend us, 41 said they would not and 37 did not answer." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -315,7 +315,7 @@ A post, from "Dana Liu · @danasaves · 2h":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Northpoint Credit Union pays 4.5% a year on savings. Best rate in town, hands down." (right)
 - "I moved my savings there last week." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: trusted-gap
@@ -354,7 +354,7 @@ A news story, from "Valley Courier · Schools":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Principal Dana Whitlock said teachers will offer after-school reading help to every student in that group." — if tapped: note: That is what the school will do, not a count of students.
 - "Of the 180 third graders who took the state reading test this spring, 30 scored below grade level, the district reported." (right)
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -380,7 +380,7 @@ A post, from "Priya Nair · @priyaruns · 1d":
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "Cut 2 minutes off my 5K in one month with PowerPeak shakes. They work!" (right)
 - "(That was also the month I hired a coach and went from 2 runs a week to 4.)" — if tapped: note: That is how her training changed, not the result she credits to the shakes.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -440,7 +440,7 @@ An ad, from "SkyBridge Air" (marked "Ad"):
 - "SkyBridge Air arrived on time 87% of the time last year." (right)
 - "Book your summer trip today." — if tapped: That is not the sentence.
 - "Compared with the 84% average of two other airlines on SkyBridge’s 12 routes. Other airlines were not included." — if tapped: note: That is the other airlines’ rate, not SkyBridge’s.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up — if chosen: a slip: believed
@@ -472,7 +472,7 @@ An ad, from "Harbor Animal Shelter" (marked "Ad"):
 - "Our annual report counts 212 dogs and cats placed in homes this year and 170 last year, counted from the same adoption papers." (right)
 - "We took in 640 animals this year and 655 last year." — if tapped: note: That is how many animals came in, not how many went to homes.
 - "Adopt a pet today." — if tapped: That is not the sentence.
-- A button: "Not given" — if chosen: The text does give one. It is marked above.
+- A button: "Not given" — if chosen: One of the lines is the answer: it is marked above.
 
 **Does the text show what it claims?**
 - Holds up (right)
@@ -484,4 +484,4 @@ What you would need to see: The counts show that more pets were placed. To say w
 
 ## The result
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "5 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

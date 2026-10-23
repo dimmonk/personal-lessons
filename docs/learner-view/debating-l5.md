@@ -39,9 +39,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Neither a hearing nor a move.
 
 The working, one step at a time:
-1. Look for a shift in their view. Pam says "I still don't want a shelter on our street." Nothing in her view has moved.
-1. Look for a sign they took in the story itself. She says she is sorry about Lee and means it. She heard the story.
-1. Count what you got. A hearing. It is not a changed mind, and you cannot tell from this talk whether it will matter later.
+1. Look for a shift in their view.: Pam says "I still don't want a shelter on our street." Nothing in her view has moved.
+1. Look for a sign they took in the story itself.: She says she is sorry about Lee and means it. She heard the story.
+1. Count what you got.: A hearing. It is not a changed mind, and you cannot tell from this talk whether it will matter later.
 
 Then the answer: A hearing: they took you seriously, and their view did not move. Pam says she is sorry and means it, and then says she still does not want the shelter. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
@@ -151,7 +151,7 @@ My sister's rent went up $300 last March. Her landlord raised it to push her out
 - "Her landlord raised it to push her out." (right)
 - "She moved out of the neighborhood in May." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "I helped her pack." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- A button: "Every line is true." — if chosen: The text does give one. It is marked above.
+- A button: "Every line is true." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The facts say he never said why he raised it, so you cannot say he meant to push her out. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
@@ -183,7 +183,7 @@ Jo's son was bullied at the bus stop. Jo told me about it. I watched it happen f
 - "Jo told me about it." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "I watched it happen from my window." (right)
 - "She went to the school the next day." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- A button: "Every line is true." — if chosen: The text does give one. It is marked above.
+- A button: "Every line is true." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The facts say you were not there and did not see it. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
@@ -264,7 +264,7 @@ My mother cleaned offices at the hospital for 22 years. In 2018 she was let go w
 - "In 2018 she was let go with two weeks' notice." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "She cried every night that year." (right)
 - "The work went to a contractor." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- A button: "Every line is true." — if chosen: The text does give one. It is marked above.
+- A button: "Every line is true." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The facts say she never told you how she felt, so you cannot say she cried every night. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
@@ -296,7 +296,7 @@ My son broke his wrist in 2022. We drove two hours to the ER because the clinic 
 - "We drove two hours to the ER because the clinic had closed." (right)
 - "He waited three hours there." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "It healed in eight weeks." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- A button: "Every line is true." — if chosen: The text does give one. It is marked above.
+- A button: "Every line is true." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The facts say the drive was 50 minutes. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
@@ -312,12 +312,12 @@ My cousin Ben was laid off in March. I sat up with him that night. I was out of 
 - "I sat up with him that night." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "I was out of work for four months too." (right)
 - "He started a new job in July." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- A button: "Every line is true." — if chosen: The text does give one. It is marked above.
+- A button: "Every line is true." — if chosen: One of the lines is the answer: it is marked above.
 
 After the answer: the deciding words are marked. Reason: The facts say you were not laid off. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside what happened to you, not someone else beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
-For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.
+For example "8 of 8: passed" or "6 of 8: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

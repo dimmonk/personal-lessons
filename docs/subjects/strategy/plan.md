@@ -52,7 +52,8 @@ Lite, Maytag, Paccar, Vanguard). US, dollars. Retest at 28 days (R2, P24).
 
 Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as-strategy`, `better-not-different`,
 `growth-for-growth`, `serve-everyone` (straddling and something-for-everyone, ST2, ST10), `fast-growth-attractive`,
-`list-not-choice`, `inside-view`, `rival-ignored`, `surface-analogy`, `bet-too-big`. `danger`: the three errors of the test.
+`list-not-choice`, `inside-view`, `rival-ignored`, `surface-analogy`, `bet-too-big`. Added after the round-2 reviews: `usual-way-as-fit` (lesson 7's check rule: the trade's usual way kept where it pulls against
+the position, ST1, ST3) and `no-choice` (lesson 10's check rule: a plan that does not choose taken for one that does, ST10). `danger`: the three errors of the test.
 
 ## The lessons
 
@@ -62,9 +63,9 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
 | 1 | A | Goal, wish, or strategy? | A strategy names the challenge, an approach to it, and actions that fit; a revenue target or a mission is not one. Check: sort 6 owner plans. | verdict `choose` (a goal / a to-do list / a strategy); `tap` the line that would make it a diagnosis; a `message` (`note`) as the owner's plan; a `text` with `model` to write the challenge in one line (unscored). | ST5, ST10 dreams-trap; P29 for "my strategy is to grow 20%" |
 | 2 | A | Better, or different? | Running better (OE) vs a different position; first question of any problem. Check: 6 cases, strategic or running problem. | verdict `choose` (run it better / choose a different position); `pair` Southwest vs a cost-cutting rival; facet `kind`. | ST1, ST16; P12 contrast |
 | B | | **Where the money is** | | | |
-| 3 | B | Value created, and who keeps it | WTP, price, cost, WTS; a move that grows value vs one that only moves it. Check: 5 made cases, numbers within $1 and the verdict. | generator `gen-value` (fresh numbers); `number` asks (value created, customer's share, your margin) with calculator; `estimate` first on one; `choose` grows / moves value; `document` `table` shows the four numbers. | ST7; P10 worked numbers first; procedure inside a judgement (learning-science section 2) |
+| 3 | B | Value created, and who keeps it | WTP, price, cost, WTS; a move that grows value vs one that only moves it. Check: 5 made cases, numbers within $1 and the verdict. | generator `gen-value` (fresh numbers); `number` asks (value created, customer's share, your margin) with calculator; `estimate` first on one; `choose` grows / shrinks / only moves value; `document` `table` shows the four numbers. | ST7; P10 worked numbers first; procedure inside a judgement (learning-science section 2) |
 | 4 | B | Who squeezes the profit | Five forces as one question: who takes the money, and why; dig into the strongest; fast growth is not attractiveness. Check: 6 cases, name the strongest force. | `choose` from list `force` (buyers, suppliers, new entrants, substitutes, rivals); `tap` the deciding line in an `article` (`report`) or `message`; slip `fast-growth-attractive`. | ST6 (pitfalls box); P29 |
-| 5 | B | Find the core | The most distinctive and most profitable customers, products, channels; trim the rest before growing. Check: 4 tables. | `document` `table` (lines with revenue and direct cost); `number` (share of profit from the top lines); `choose` keep / fix / let go. Optional own step (gap 1). | ST8, ST4 Porter's questions; P25 own books |
+| 5 | B | Find the core | The most distinctive and most profitable customers, products, channels; trim the rest before growing. Check: 4 tables. | `document` `table` (lines with revenue and direct cost); `number` (the core's share of the lines' total profit, ST19); `choose` fix / keep and cut its loss / let go for a losing line. Optional own step (gap 1). | ST8, ST4 Porter's questions; P25 own books |
 | C | | **An advantage that lasts** | | | |
 | 6 | C | What you say no to | Trade-offs; straddling (Continental Lite); serving everyone. Check: 6 cases. | verdict `choose` (a real trade-off / a straddle); `pair` Southwest vs Continental Lite, then an owner pair (a bakery adding catering). | ST2, ST10; P12 |
 | 7 | C | Do the pieces fit? | Activities consistent with the position and reinforcing each other; a rival must copy all. Check: 5 activity lists. | `tap` the activity that does not fit (prose `lines`); `choose` what it should be; worked case Vanguard. | ST3; P8 |
@@ -76,7 +77,43 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
 | 12 | D | How did others like it do? | Outside view and the rival's reply. Check: 5 cases. | `number` with `estimate` (a base rate from a `document` table of similar ventures, made by a generator); `choose` what the rival will do; slips `inside-view`, `rival-ignored`, `surface-analogy`. | ST12, ST13 |
 | 13 | D | A bet you can afford | Unknowable market: means at hand, affordable loss, partners; known kind of project: lesson 12. Check: 6 cases, which way of judging fits. | `pair` (known kind vs new market); `choose` the move; slip `bet-too-big`. | ST14 (reconciled with ST12, a judgement call) |
 | E | | **The whole review** | | | |
-| 14 | E | Run the six questions | One case through all six, then a drawn check across every strand (the real-world test). | several asks in one item (the six in order, nothing given away before the last, X2); check `draw` from all strands, n 10, pass as above. | P25, D6, D7 whole task; ST17 few principles |
+| 14 | E | Run the six questions | One case through all six, then a check of ten new whole decisions across every lesson (the real-world test). | several asks in one item (the six in order, nothing given away before the last, X2); check: ten new cases, each a whole decision ending in the move, pass as above. | P25, D6, D7 whole task; ST17 few principles |
+
+## Judgement calls made while building lessons 1 to 5 (2026-10-23, after the two reviews)
+
+- **Lesson 1 before lesson 2**, though question 1 comes first in the way of thinking: a learner has to read a plan for its
+  challenge before asking what kind of challenge it is. Lesson 1's rule states the limit (a challenge that is only doing
+  the same work worse than rivals is a running problem) and lesson 2 pairs the two (research F, the reconciliation).
+- **Lesson 2 keeps a `tap`** of the line that settles it: finding the fact that shows the cause is the skill ST16 names
+  ("make sure the problem is caused by ... strategy or competitors"). Two check stories hold facts that pull both ways.
+- **Lesson 3 drops the `estimate`** (single subtractions of whole dollars) and the `tap`: a move is judged by two numbers
+  weighed (what customers would pay more against what the move adds to the work), so its verdict is grows, shrinks or only
+  moves (ST7: value created is WTP less WTS, and a move's own cost raises WTS).
+- **Lesson 5's share** is of the total profit of the lines of one kind, losses taken off (ST19); its core is the line that
+  is distinctive and earns the most (ST4, ST8). Its rule for a losing line, revised 2026-10-23 after the reviews of all
+  fourteen lessons: first ask whether a change of price or of what it costs to serve could make it pay, and if so fix it
+  (ST19: the customer-profitability literature makes losing customers pay before dropping them); if not, keep it and cut
+  its loss when the core's customers buy it with the core or find the business through it; else let it go. The second
+  test is ours (judgement call): it follows from judging a line by what would stop if it stopped. After the round-2 reviews the three outcomes are three
+  answers (`fix`, `cut-loss`, `let-go`), so the marked answer always says what the rule says.
+
+## Judgement calls made after the reviews of all fourteen lessons (2026-10-23, fixes-l1-14.md)
+
+- **Lesson 6** decides by Porter's own test (ST2): does the new work pull against what the position needs? A pull with one
+  side dropped is a trade-off, a pull with both kept a straddle, and an addition with no pull fits (a third verdict, `fits`),
+  so lesson 1's and lesson 9's additions that drop nothing are not straddles.
+- **Lesson 8's barriers** are "the common answers", not the whole list: a fourth, customers who would lose by leaving
+  (switching costs, trust built over years), comes from ST9's sources; scale and network are named as others.
+- **Lesson 10** adds a plan that chooses both parts whose way to win does not fit its customers (`misfit`), and a plan
+  judged alone (`chooses`): the two parts are one choice (ST10).
+- **Lesson 11** weighs which condition is least likely to hold (a fact against, then talk, then evidence), not which one
+  lacks a proof word (ST11: the conditions the team most doubts).
+- **Lessons 12 and 13** start from the BLS survival record (ST20): about half of new US establishments are open after five
+  years. Lesson 13 asks first whether anyone can see people buying it yet (record, or try it small), and second, for every
+  bet, what can be lost: the stake stays within the affordable loss either way (ST14 as a general habit, ST12's wide class).
+- **Lesson 14's check** is ten fixed new whole decisions (k14), not a draw from the lessons' items, since every lesson item
+  had been answered with feedback before; each costly error can be made in at least two of them; three more (r14) are held
+  back for the review.
 
 ## Engine gaps (both optional; no lesson is blocked)
 

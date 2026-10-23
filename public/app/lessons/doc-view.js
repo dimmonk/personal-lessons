@@ -11,6 +11,7 @@
 //                   rectangles, circles and right triangles in the unit, to one scale; a cut part is not counted
 //     'years'       { columns: [Text], rows: [[Text]] }                                      year by year
 //     'people'      { caption, rows: [{ label, count }] }                                    1,000 people for each row, the first `count` marked
+//     'stick'       { caption, wtp, price, cost, wts }                                       the value stick: one sale from what suppliers would take to what a customer would pay
 // A row of a document is a segment of the block: ctx.deciding marks the rows that decide the answer, once it is given.
 
 /* ---------- a document ---------- */
@@ -136,7 +137,29 @@ function peopleRowHtml(given){
     <svg class="fig-people" viewBox="0 0 ${PEOPLE.columns * PEOPLE.gap} ${rows * PEOPLE.gap}" role="img" aria-label="${esc(SAY.peopleIn(row.label, row.count))}">${dots}</svg></div>`;
 }
 const peopleHtml = d => `<p class="fig-cap">${esc(d.caption)}</p>${d.rows.map(peopleRowHtml).join('')}`;
-const FIGURE_HTML = { 'rate-table': rateTableHtml, bar: barHtml, plan: planHtml, years: yearsHtml, people: peopleHtml };
+// The value stick: one sale laid out from the least suppliers and staff would take (left) to the most a customer would pay (right), cut at the
+// cost and the price into the three shares of the value created, each as wide as its share (the price less the cost is the business's). The
+// legend says each share and the two levels it lies between, so every number of the four is written once on the page.
+const STICK_LEVELS = ['wts', 'cost', 'price', 'wtp'];
+const stickMoney = v => '$' + (Number.isInteger(v) ? fmtNumber(v) : fmtNumber(v, 2));
+function stickShares(d){
+  const at = Object.fromEntries(STICK_LEVELS.map(k => [k, figNumber(d[k])]));
+  return { at, value: at.wtp - at.wts, shares: [
+    { who: 'supplier', from: 'cost', less: 'wts', size: at.cost - at.wts },
+    { who: 'business', from: 'price', less: 'cost', size: at.price - at.cost },
+    { who: 'customer', from: 'wtp', less: 'price', size: at.wtp - at.price }] };
+}
+function stickHtml(d){
+  const { at, value, shares } = stickShares(d), money = k => stickMoney(at[k]);
+  let x = 0;
+  const rects = shares.map((s, i) => { const w = value ? s.size / value * 100 : 0, rect = `<rect class="fig-seg s${[2, 0, 1][i]}" x="${x}" y="0" width="${w}" height="20" data-share="${s.who}" data-size="${s.size}"></rect>`; x += w; return rect; }).join('');
+  const said = shares.map(s => SAY.stickShare(SAY.stickShares[s.who], stickMoney(s.size), SAY.stickLevels[s.from], money(s.from), SAY.stickLevels[s.less], money(s.less)));
+  const legend = shares.map((s, i) => `<li data-share="${s.who}"><span class="fig-swatch s${[2, 0, 1][i]}"></span>${esc(said[i])}</li>`).join('');
+  return `<p class="fig-cap">${esc(d.caption)}. ${esc(SAY.stickValue(stickMoney(value)))}</p>
+    <svg class="fig-bar fig-stick" viewBox="0 0 100 20" preserveAspectRatio="none" role="img" aria-label="${esc(said.join('. '))}">${rects}</svg>
+    <div class="fig-ends"><span>${esc(money('wts'))}</span><span>${esc(money('wtp'))}</span></div><ul class="fig-legend">${legend}</ul>`;
+}
+const FIGURE_HTML = { 'rate-table': rateTableHtml, bar: barHtml, plan: planHtml, years: yearsHtml, people: peopleHtml, stick: stickHtml };
 function figureHtml(block){
   return `<div class="block-fig" data-figure="${esc(block.type)}">${FIGURE_HTML[block.type](block.data)}</div>`;
 }

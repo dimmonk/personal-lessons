@@ -4,7 +4,7 @@
 import { str, text, int, num, bool, fn, any, en, arr, map, obj, either, nullable } from './schema.mjs';
 
 export const STATUSES = ['draft', 'live'];
-export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers'];   // where a private form may write (5)
+export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers', 'business'];   // where a private form may write (5)
 
 const history = arr(obj({ rev: int, date: str, change: str }));
 const idText = obj({ id: str, text: str });
@@ -52,7 +52,7 @@ export const DOCUMENT = obj({ kind: en('document'), form: en(...DOCUMENT_FORMS),
 // a value looked up, named by id: the subject keeps its text, value, day and source (refs)
 export const REF_BLOCK = obj({ kind: en('ref'), ref: str });
 // a figure's numbers may be words in a generator's template ("{pct}"), filled when the question is made
-export const FIGURE_TYPES = ['rate-table', 'bar', 'plan', 'years', 'people'];
+export const FIGURE_TYPES = ['rate-table', 'bar', 'plan', 'years', 'people', 'stick'];
 export const FIGURE = obj({ kind: en('figure'), type: en(...FIGURE_TYPES), data: any });
 const quantity = either(num, str);
 const RATE_ROW = obj({ label: str, cells: arr(str) });
@@ -67,7 +67,9 @@ export const FIGURE_DATA = {
     obj({ shape: en('circle'), x: quantity, y: quantity, r: quantity }, { label: str, cut: bool, across: bool, say: obj({}, { r: str }) }),
     obj({ shape: en('triangle'), x: quantity, y: quantity, w: quantity, h: quantity }, { label: str, cut: bool, say: obj({}, { w: str, h: str, slant: str }) }))) }),
   years: obj({ columns: arr(str), rows: arr(arr(str)) }),
-  people: obj({ caption: str, rows: arr(obj({ label: str, count: either(int, str) })) })   // a count may be a generator's slot, "{tp}"
+  people: obj({ caption: str, rows: arr(obj({ label: str, count: either(int, str) })) }),   // a count may be a generator's slot, "{tp}"
+  // the value stick of one sale: the most a customer would pay, the price, the cost and the least suppliers and staff would take (each may be a slot)
+  stick: obj({ caption: str, wtp: quantity, price: quantity, cost: quantity, wts: quantity })
 };
 // a news story, a post, an ad, a report (article-view.js): where it comes from, a headline for the forms that have one, and its lines
 export const ARTICLE_FORMS = ['news', 'post', 'ad', 'report'];

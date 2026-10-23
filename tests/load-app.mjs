@@ -42,6 +42,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
   'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',
   'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownWorkHtml', 'ownCostDocument', 'OWN_WORKS', 'OWN_ACCOUNT', 'OWN_KIND', 'ownWork', 'ownMissingGroups', 'ownGroupsFromDraft', 'ownGroupDrafts', 'ownFieldsFor', 'ownGroupsSummaryHtml', 'ownSectionHtml', 'parseTyped',
+  'ownLinesFromDraft', 'ownDraftsFromLines', 'ownEmptyLine', 'ownCoreOf', 'businessEditorHtml',
   // answers from memory, the question read aloud, a claim, the learner's own answers and the interview date
   'recallTokens', 'recallVariants', 'recallMatch', 'scoreRecall', 'recallGiven', 'recallWithOwn', 'recallOwnEntries', 'recallDefReady', 'recallProblems', 'recallEntryText',
   'isRecallAsk', 'recallListHtml', 'recallMarkHtml', 'recallClaimHtml', 'recallQuestionText', 'factHtml', 'spokenHtml', 'speechPick', 'claimTry', 'triesClaimed', 'claimedResults', 'resultOk',
