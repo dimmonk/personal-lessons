@@ -76,7 +76,7 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
 | 12 | D | How did others like it do? | Outside view and the rival's reply. Check: 5 cases. | `number` with `estimate` (a base rate from a `document` table of similar ventures, made by a generator); `choose` what the rival will do; slips `inside-view`, `rival-ignored`, `surface-analogy`. | ST12, ST13 |
 | 13 | D | A bet you can afford | Unknowable market: means at hand, affordable loss, partners; known kind of project: lesson 12. Check: 6 cases, which way of judging fits. | `pair` (known kind vs new market); `choose` the move; slip `bet-too-big`. | ST14 (reconciled with ST12, a judgement call) |
 | E | | **The whole review** | | | |
-| 14 | E | Run the six questions | One case through all six, then a drawn check across every strand (the real-world test). | several asks in one item (the six in order, nothing given away before the last, X2); check `draw` from all strands, n 10, pass as above. | P25, D6, D7 whole task; ST17 few principles |
+| 14 | E | Run the six questions | One case through all six, then a check of ten new whole decisions across every lesson (the real-world test). | several asks in one item (the six in order, nothing given away before the last, X2); check: ten new cases, each a whole decision ending in the move, pass as above. | P25, D6, D7 whole task; ST17 few principles |
 
 ## Judgement calls made while building lessons 1 to 5 (2026-10-23, after the two reviews)
 
@@ -94,6 +94,24 @@ Subject lists (worded once, P5): `verdict` per lesson as below; `slip`: `goal-as
   (ST19: the customer-profitability literature makes losing customers pay before dropping them); if not, keep it and cut
   its loss when the core's customers buy it with the core or find the business through it; else let it go. The second
   test is ours (judgement call): it follows from judging a line by what would stop if it stopped.
+
+## Judgement calls made after the reviews of all fourteen lessons (2026-10-23, fixes-l1-14.md)
+
+- **Lesson 6** decides by Porter's own test (ST2): does the new work pull against what the position needs? A pull with one
+  side dropped is a trade-off, a pull with both kept a straddle, and an addition with no pull fits (a third verdict, `fits`),
+  so lesson 1's and lesson 9's additions that drop nothing are not straddles.
+- **Lesson 8's barriers** are "the common answers", not the whole list: a fourth, customers who would lose by leaving
+  (switching costs, trust built over years), comes from ST9's sources; scale and network are named as others.
+- **Lesson 10** adds a plan that chooses both parts whose way to win does not fit its customers (`misfit`), and a plan
+  judged alone (`chooses`): the two parts are one choice (ST10).
+- **Lesson 11** weighs which condition is least likely to hold (a fact against, then talk, then evidence), not which one
+  lacks a proof word (ST11: the conditions the team most doubts).
+- **Lessons 12 and 13** start from the BLS survival record (ST20): about half of new US establishments are open after five
+  years. Lesson 13 asks first whether anyone can see people buying it yet (record, or try it small), and second, for every
+  bet, what can be lost: the stake stays within the affordable loss either way (ST14 as a general habit, ST12's wide class).
+- **Lesson 14's check** is ten fixed new whole decisions (k14), not a draw from the lessons' items, since every lesson item
+  had been answered with feedback before; each costly error can be made in at least two of them; three more (r14) are held
+  back for the review.
 
 ## Engine gaps (both optional; no lesson is blocked)
 
