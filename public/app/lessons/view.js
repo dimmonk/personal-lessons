@@ -467,6 +467,7 @@ const SAY = {
   placeWater: 'Now tap the water it touches, or tap Landlocked.',
   placeBorderAsk: name => `What borders ${name}?`,
   placeUndo: 'Undo',
+  placeReady: 'Tap Answer to send it. Tap the map again to move your pin, or tap Undo.',
   placeLandlocked: 'Landlocked',
   placeNextTo: name => `A place next to ${name}`,
   placeWaterLabel: 'Water',

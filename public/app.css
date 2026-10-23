@@ -4,7 +4,11 @@
   --divider:#241F19; --rule:#2E2820; --border:#3A3226; --disabled:#4A4438;
   --label:#6E6656; --dim:#A89E8D; --bodydim:#C9C1B2; --body:#E4DED2; --text:#F3EEE4;
   --green:#57C48E; --coral:#F0907E;
-  --water:#1B2730; --water-lit:#3E6F8C;
+  /* a map (lesson standard 3.9), set as cartographers set a reference map: warm land over cool, darker water so the land reads as the figure
+     (Imhof's warm-cool contrast; figure-ground in Dent's and Brewer's design texts), blue rivers, borders darker than the land, and one strong
+     highlight that is neither land nor water nor a subject's colour, so a lit place stands out on any map in any subject */
+  --map-water:#0E1C27; --map-land:#6F6858; --map-edge:#14120F; --map-river:#5C9CC8;
+  --map-lit:#F4B73F; --map-water-lit:#3584BC; --map-water-text:#86BCE2;
   --wrong-bg:#1F1512; --wrong-text:#D6C9C0;
   /* the subjects' colours, one each in turn (app/state.js); --accent is the open subject's */
   --a1:#DFA83E; --a2:#57C48E; --a3:#62AFEE; --a4:#C39BF0; --a5:#F0907E;
@@ -21,7 +25,8 @@
   --divider:#E7E0D3; --rule:#DCD3C3; --border:#C4B9A5; --disabled:#ADA392;
   --label:#6C6250; --dim:#62594B; --bodydim:#463F35; --body:#2B2620; --text:#1A1713;
   --green:#1C7A4D; --coral:#B0432B;
-  --water:#CFDFE8; --water-lit:#7FA9C6;
+  --map-water:#A8C9DE; --map-land:#F1EBDD; --map-edge:#8A8070; --map-river:#4A8BBE;
+  --map-lit:#D46E14; --map-water-lit:#2F78B0; --map-water-text:#1D5A8A;
   --wrong-bg:#F5E4DE; --wrong-text:#4A3A33;
   --a1:#93620C; --a2:#1C7A4D; --a3:#22649F; --a4:#7447AE; --a5:#B0432B;
 }
@@ -571,59 +576,61 @@ table.ownsum td:last-child{white-space:normal}
 
 /* ---------- a map: the blank map, what is lit, where you tapped (lesson standard 3.9) ---------- */
 .block-map{display:flex;flex-direction:column;gap:8px;margin:0}
-.mapframe{position:relative;overflow:hidden;background:var(--water);border:1px solid var(--rule)}
+.mapframe{position:relative;overflow:hidden;background:var(--map-water);border:1px solid var(--rule)}
 .mapsvg{display:block;width:100%;height:auto;max-height:68vh;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab}
 .mapsvg:active{cursor:grabbing}
-/* On a phone a map that asks something is only as tall as leaves what goes with it above the bar at the foot of the screen, with no scroll: the box and the
-   button that name a lit place under the map, and the line of help, the zoom buttons and Landlocked of a place asked on the map. */
-@media(max-width:520px){
-  .item .mapsvg{max-height:max(240px,calc(100vh - 548px));max-height:max(240px,calc(100dvh - 548px))}
-  .placeask .mapsvg{max-height:max(240px,calc(100vh - 572px));max-height:max(240px,calc(100dvh - 572px))}
-}
-/* A screen with one map, wide enough and tall enough (a Fold opened out, a tablet, a laptop): the map stands beside what goes with it instead of under
-   it, so the map, the question and Next are all on the screen at once. Everything else keeps to a column on the left; the bar at the foot spans both.
-   Measured on the column the screen gets (the rail taken off), so it follows a fold, an unfold or a turn of the device as it happens; a phone turned on
-   its side is too short for it and keeps the map above. A screen of several maps (a key, .blocks.maps) is not this: on a wide screen its maps stand side by side (.blocks.figs). */
-@media(min-height:600px) and (min-aspect-ratio:3/4){
-  @container main (min-width:720px){
-    .pane:has(.block-map):not(:has(.blocks.maps)){--textcol:clamp(260px,34cqw,380px);max-width:none;position:relative}
-    .pane:has(.block-map):not(:has(.blocks.maps))>:not(.actbar){width:var(--textcol)}
-    .pane:has(.block-map):not(:has(.blocks.maps)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 24px);right:var(--gut);margin:0}
-    .pane:has(.block-map):not(:has(.blocks.maps)) .mapsvg{max-height:max(280px,calc(100vh - 272px));max-height:max(280px,calc(100dvh - 272px))}
-  }
-}
-.map-water{fill:var(--water)}
-.map-frame{fill:none;stroke:var(--disabled);stroke-width:1;vector-effect:non-scaling-stroke}
-.mp{fill:var(--rule);stroke:var(--dim);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.mp-continent{stroke:var(--rule)}
-.mp-lake{fill:var(--water)}
-.mp-river{fill:none;stroke:var(--dim);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}
+/* A screen with one map gives the map all the room it can (map-run.js, mapFit): the map's height is set to what the screen has left once the question,
+   what goes under the map and the bar at the foot are on it, so the map, the question and Next are all on the screen at once. Where the screen is wide
+   enough (a Fold opened out, a tablet, a laptop) the map may instead stand beside what goes with it, on the right, and it does so only when that draws
+   this map larger than across the width: a wide map (the world, the United States) goes across, a tall one (South America) beside. Everything else then
+   keeps to a column on the left; the bar at the foot spans both. A screen of several maps (a key, .blocks.maps) is not this: its maps keep their own
+   height, and on a wide screen they stand side by side (.blocks.figs). */
+.block-map.fit .mapsvg{height:var(--maph);max-height:none}
+.pane.mapfit{max-width:1100px}
+.pane.mapbeside{--textcol:clamp(210px,28cqw,340px);max-width:none;position:relative}
+.pane.mapbeside>:not(.actbar){width:var(--textcol)}
+.pane.mapbeside .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 20px);right:var(--gut);margin:0}
+/* in the narrow column beside a map, the verdict stands over the answer it names */
+.pane.mapbeside .mark{flex-wrap:wrap;row-gap:4px}
+.pane.mapbeside .mark .ans{flex-basis:100%}
+.map-water{fill:var(--map-water)}
+.map-frame{fill:none;stroke:var(--map-edge);stroke-width:1;vector-effect:non-scaling-stroke}
+.mp{fill:var(--map-land);stroke:var(--map-edge);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.mp-continent{stroke:var(--map-land)}
+.mp-lake{fill:var(--map-water)}
+.mp-river{fill:none;stroke:var(--map-river);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}
 .mp-ocean,.mp-sea,.mp-strait,.mp-range,.mp-desert,.mp-region{fill:none;stroke:none}
-.mp-dot{fill:var(--rule);stroke:var(--text);stroke-width:1.2px}
-.mp.lit{fill:var(--accent);fill-opacity:.9;stroke:var(--text)}
-.mp-ocean.lit,.mp-sea.lit,.mp-strait.lit,.mp-lake.lit{fill:var(--water-lit);fill-opacity:1;stroke:var(--text)}
-.mp-range.lit,.mp-desert.lit,.mp-region.lit{fill-opacity:.55;stroke:var(--accent)}
-.mp-river.lit,.mp-coast.lit,.mp-canal.lit{fill:none;stroke:var(--accent);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}
+.mp-dot{fill:var(--map-land);stroke:var(--text);stroke-width:1.2px}
+.mp.lit{fill:var(--map-lit);fill-opacity:1;stroke:var(--map-edge)}
+.mp-ocean.lit,.mp-sea.lit,.mp-strait.lit,.mp-lake.lit{fill:var(--map-water-lit);fill-opacity:1;stroke:var(--map-edge)}
+.mp-range.lit,.mp-desert.lit,.mp-region.lit{fill-opacity:.55;stroke:var(--map-lit)}
+.mp-river.lit,.mp-coast.lit,.mp-canal.lit{fill:none;stroke:var(--map-lit);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}
 .mp-coast,.mp-canal{fill:none;stroke:none}
-.mp-dot.lit{fill:var(--accent);stroke:var(--text)}
-.mp.lit.near{fill-opacity:.38}
-.mp.focus{fill:var(--accent);fill-opacity:1;stroke:var(--text);stroke-width:2.2px}
+.mp-dot.lit{fill:var(--map-lit);stroke:var(--text)}
+.mp.lit.near{fill-opacity:.45}
+.mp.focus{fill:var(--map-lit);fill-opacity:1;stroke:var(--text);stroke-width:2.2px}
 .ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-linejoin:round;pointer-events:none}
 .ml-lead,.ml-auto{stroke:var(--text);stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none}
 .ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal,.ml-coast,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
-.mk-ring{fill:none;stroke:var(--text);stroke-width:2px;vector-effect:non-scaling-stroke}
+/* water is named in blue italic, as on a reference map */
+.ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal{fill:var(--map-water-text)}
+.mk-ring{fill:none;stroke:var(--text);stroke-width:2.5px;vector-effect:non-scaling-stroke}
 .mk-dot{fill:var(--text)}
 .mk-right .mk-ring{stroke:var(--green)}
 .mk-right .mk-dot{fill:var(--green)}
 .mk-wrong .mk-ring{stroke:var(--coral)}
 .mk-wrong .mk-dot{fill:var(--coral)}
-.mapzoom{display:flex;justify-content:flex-end;gap:6px}
+.mapzoom{position:absolute;top:8px;right:8px;display:flex;flex-direction:column;gap:6px}
 .mapzoom button{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--raised);border:1px solid var(--border);color:var(--text);font-size:20px;line-height:1}
 .mapzoom button:hover{border-color:var(--text)}
-.mapzoom .opt{flex:1 1 0;width:auto;min-width:0;min-height:44px;padding:0 14px;font-size:14.5px;line-height:1.3;justify-content:center;text-align:center}
-.mapzoom .opt:hover{border-color:var(--text)}
+.mapopts{display:flex;gap:6px;min-height:44px}
+.mapopts .opt{flex:1 1 0;width:auto;min-width:0;min-height:44px;padding:0 14px;font-size:14.5px;line-height:1.3;justify-content:center;text-align:center}
+.mapopts .opt:hover{border-color:var(--text)}
+.mapopts .opt.send:not([disabled]){background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
 .placeask .block-map{margin-top:10px}
 .placeask .holdline{display:block;min-height:3em}
+/* where the line of help never takes two lines, it holds one */
+@container main (min-width:600px){ .placeask .holdline{min-height:1.5em} }
 .block-flags{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0;padding:12px 16px;list-style:none;background:var(--raised)}
 .flagbig{display:block;flex:0 0 auto;font-size:64px;line-height:1.1;min-width:80px;text-align:center}
 .flagbig .flagart{display:block;width:80px;height:auto;margin:0 auto}

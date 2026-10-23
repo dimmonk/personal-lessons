@@ -41,7 +41,8 @@ function mapLabelsHtml(map, ids, geom){
 }
 const mapMarkHtml = m => `<g class="mk mk-${esc(m.state || 'neutral')}" data-mark><circle class="mk-ring" cx="${mapNum(m.x)}" cy="${mapNum(m.y)}" r="${MAP_PX.mark}" data-px="${MAP_PX.mark}"></circle>
   <circle class="mk-dot" cx="${mapNum(m.x)}" cy="${mapNum(m.y)}" r="${MAP_PX.markDot}" data-px="${MAP_PX.markDot}"></circle></g>`;
-const mapZoomHtml = (beside = '') => `<div class="mapzoom">${beside}<button type="button" data-map-zoom="in" aria-label="${esc(SAY.zoomIn)}">+</button><button type="button" data-map-zoom="out" aria-label="${esc(SAY.zoomOut)}">&minus;</button>
+// the zoom buttons stand on the map's corner, as on any map on a screen, so they take no height from it
+const mapZoomHtml = () => `<div class="mapzoom"><button type="button" data-map-zoom="in" aria-label="${esc(SAY.zoomIn)}">+</button><button type="button" data-map-zoom="out" aria-label="${esc(SAY.zoomOut)}">&minus;</button>
   <button type="button" data-map-zoom="reset" aria-label="${esc(SAY.zoomReset)}">${SVG('<path d="M5 9V5h4M15 5h4v4M19 15v4h-4M9 19H5v-4"/>', 18)}</button></div>`;
 
 // the places a map names: `true` is every kind the region labels, a list is those places
@@ -66,7 +67,7 @@ function mapHtml(map, o = {}){
       <rect class="map-water" x="0" y="0" width="${width}" height="${height}"></rect>
       ${water.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${blank.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${frames}
       ${over.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${dots.map(dotHtml).join('')}${mapLabelsHtml(map, names, geom)}${(o.marks || []).map(mapMarkHtml).join('')}
-    </svg></div>${mapZoomHtml(o.beside)}</figure>`;
+    </svg>${mapZoomHtml()}</div>${o.opts ? `<div class="mapopts">${o.beside || ''}</div>` : ''}</figure>`;
 }
 // the `map` block of a question or a teaching screen. A lit place is named on the map, as well as any names the block asks for, so the picture says
 // what it shows; only while a question asks the learner to name it (`ctx.nameAsked`, itemHtml) is its name kept off the map
@@ -104,21 +105,25 @@ function placeTapsOf(map, ask, answer, marked){
   if(placeTapOk(w)) taps.push({ x: w[0], y: w[1], state: marked ? (on(placeWaterRightOf(map, ask.of), w) ? 'right' : 'wrong') : 'neutral' });
   return taps;
 }
-// st: { answer, many: { n }, marks, locked }. A tap on the map answers it (place-run.js); a neighbor and its water takes a tap on a neighbor, then a
-// tap on the water or the button "Landlocked"; Undo takes the neighbor's tap back while the water is still to come.
+// what is pinned (place-run.js), as the answer it makes, or null while it is not whole
+const placePinned = (ask, pins) => ask.mode !== 'neighbor-water' ? pins.t || null : pins.n && pins.w !== undefined ? { n: pins.n, w: pins.w } : null;
+// st: { answer, many: the pins (place-run.js), marks, locked }. A tap on the map puts a pin; a neighbor and its water takes a pin on a neighbor, then one
+// on the water or the button "Landlocked". Undo takes the last pin back, and Answer sends the pins once they are whole.
 function placeHtml(data, ask, st, ctx){
-  const map = mapOf(ask.map), answered = st.answer !== undefined, nw = ask.mode === 'neighbor-water', first = nw && !answered && st.many ? st.many.n : null;
-  const open = !answered && !st.marks && !st.locked, marked = !!st.marks;
-  const answer = answered ? st.answer : first ? { n: first } : undefined;
-  // the line of help holds two lines of room for as long as it is there, so the map does not move when the line changes after the first tap
-  const hint = !open ? '' : `<span class="forline holdline">${esc(nw ? (first ? SAY.placeWater : SAY.placeNeighbor) : SAY.placeOne)}</span>`;
-  const picked = nw && answered && st.answer.w === PLACE_NONE, waterNone = nw && placeWaterOf(map, ask.of).length === 0;
-  // Undo and Landlocked stand in the row of the zoom buttons, under the map: one row, not two, so they are on the screen with the map
-  const undo = open && first ? `<button type="button" class="opt" data-place-undo>${esc(SAY.placeUndo)}</button>` : '';
-  const landlocked = nw && (first || answered) ? `<button type="button" class="opt${picked ? ' sel' : ''}${marked && waterNone ? ' right' : ''}${marked && picked && !waterNone ? ' wrong' : ''}" data-place-landlocked
+  const map = mapOf(ask.map), answered = st.answer !== undefined, nw = ask.mode === 'neighbor-water';
+  const open = !answered && !st.marks && !st.locked, marked = !!st.marks, pins = open && st.many ? st.many : {};
+  const answer = answered ? st.answer : nw ? (pins.n ? pins : undefined) : pins.t, whole = !!placePinned(ask, pins);
+  // the line of help holds room for as long as it is there, so the map does not move when the line changes after a tap
+  const say = whole ? SAY.placeReady : nw ? (pins.n ? SAY.placeWater : SAY.placeNeighbor) : SAY.placeOne;
+  const hint = !open ? '' : `<span class="forline holdline">${esc(say)}</span>`;
+  const water = answered ? st.answer.w : pins.w, picked = nw && water === PLACE_NONE, waterNone = nw && placeWaterOf(map, ask.of).length === 0;
+  // Undo, Landlocked and Answer stand in one row under the map, held from the start of the question so the map does not move when they come
+  const undo = open && (pins.t || pins.n) ? `<button type="button" class="opt" data-place-undo>${esc(SAY.placeUndo)}</button>` : '';
+  const landlocked = nw && (pins.n || answered) ? `<button type="button" class="opt${picked ? ' sel' : ''}${marked && waterNone ? ' right' : ''}${marked && picked && !waterNone ? ' wrong' : ''}" data-place-landlocked
     ${open ? '' : 'disabled'} aria-pressed="${picked}">${esc(SAY.placeLandlocked)}</button>` : '';
+  const send = open ? `<button type="button" class="opt send" data-place-answer ${whole ? '' : 'disabled'}>${esc(SAY.answerBtn)}</button>` : '';
   const view = mapHtml(map, { scope: `${(ctx && ctx.scope) || ''}|${ask.id}`, ask: open ? ask.id : null, marks: placeTapsOf(map, ask, answer, marked), lit: marked ? placeLitIds(map, ask, answer) : [],
-    labels: marked ? placeLabelIds(map, ask, answer) : [], focus: marked && nw ? [ask.of] : [], beside: undo + landlocked });
+    labels: marked ? placeLabelIds(map, ask, answer) : [], focus: marked && nw ? [ask.of] : [], opts: true, beside: undo + landlocked + send });
   return `<div class="stepopen prompt placeask" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${hint}${view}</div>`;
 }
 // the map of a worked question: the right place lit and the tap shown at its label point, under a line that says it is done for the learner (the map

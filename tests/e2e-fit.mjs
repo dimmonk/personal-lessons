@@ -36,6 +36,8 @@ const screenOf = (page, x, y) => page.evaluate(([x, y]) => {
   return [s.x, s.y];
 }, [x, y]);
 const tapUnit = async (page, [x, y]) => { const [px, py] = await screenOf(page, x, y); await page.mouse.click(px, py); };
+// a tap puts a pin; Answer sends the pins
+const answer = page => page.locator('[data-place-answer]').click();
 const thePlace = page => page.evaluate(() => Q.list[Q.at].item.values.place);
 // the places of western Europe, from the page itself: a point inside a neighbor of this country, and one on the water it touches and one it does not
 const aim = (page, place) => page.evaluate(place => {
@@ -61,6 +63,7 @@ async function aBorderOfASea(page) {
     if (at.water.length) return place;
     await tapUnit(page, at.neighbor);
     await page.locator('[data-place-landlocked]').click();
+    await answer(page);
     await page.locator('#qNext').click();
   }
   return null;
@@ -76,7 +79,8 @@ export async function fitChecks(env, c) {
     const place = await aBorderOfASea(page);
     c.check(place !== null, `${size.width}px: no neighbor-and-water question of a country on a sea in Geography's lesson 16`);
     if (place) {
-      const at = await aim(page, place), before = await rectOf(page, '[data-map-ask]');
+      const at = await aim(page, place), before = await rectOf(page, '[data-map-ask]'), send = await rectOf(page, '[data-place-answer]'), bar0 = await rectOf(page, '.actbar');
+      c.check(send && bar0 && send.top >= 0 && send.bottom <= bar0.top - CLEAR, `${size.width}x${size.height}: the button Answer is not under the map, on the screen, before the first tap`);
       await tapUnit(page, at.neighbor);
       const after = await rectOf(page, '[data-map-ask]'), landlocked = await rectOf(page, '[data-place-landlocked]'), bar = await rectOf(page, '.actbar');
       c.check(before && after && Math.abs(before.top - after.top) < 1 && Math.abs(before.height - after.height) < 1,
@@ -86,6 +90,7 @@ export async function fitChecks(env, c) {
           `${size.width}x${size.height}: Landlocked is at ${landlocked && Math.round(landlocked.top)} to ${landlocked && Math.round(landlocked.bottom)} px, the bar of Next from ${bar && Math.round(bar.top)}: it is not on the screen without scrolling`);
         c.check(await page.locator('#qNext').isVisible() && bar.bottom <= size.height + 1, `${size.width}x${size.height}: Next is not on the screen`);
         await tapUnit(page, at.right || at.wrong);
+        await answer(page);
         const done = await page.evaluate(() => Q.cur.done);
         c.check(done, `${size.width}x${size.height}: the water tapped did not answer the question`);
       }
@@ -122,6 +127,7 @@ export async function fitChecks(env, c) {
     const asked = await thePlace(page);
     await page.locator(MAP).scrollIntoViewIfNeeded();
     await tapUnit(page, point);
+    await answer(page);
     const text = await env.screenText(page), score = await page.evaluate(() => Q.cur.score && Q.cur.score.ok);
     // asked for Luxembourg, or for Germany (the country the tap is inside, which the small radius never takes a tap from), it is right; asked for any other
     // place, it is a miss named Luxembourg
@@ -142,6 +148,7 @@ export async function fitChecks(env, c) {
       const at = await aim(page, place);
       await tapUnit(page, at.neighbor);
       await tapUnit(page, at.wrong);
+      await answer(page);
       const shown = await page.evaluate(() => {
         const map = FC.maps['europe-west'], litIds = [...document.querySelectorAll('.item .mp.lit')].map(e => e.dataset.place);
         const water = litIds.filter(id => ['sea', 'ocean', 'strait'].includes(mapPlace(map, id).kind));

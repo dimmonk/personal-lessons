@@ -18,6 +18,11 @@ const screenOf = (page, x, y) => page.evaluate(([x, y]) => {
   return [s.x, s.y];
 }, [x, y]);
 const viewBox = page => page.evaluate(() => document.querySelector('[data-map-ask] .mapsvg, .block-map .mapsvg').getAttribute('viewBox').split(' ').map(Number));
+// the map shows the part its view holds with a margin of water round it (map-run.js, MAP_MARGIN), so a view of 300 units shows 324
+const SHOWN = units => units * 1.08;
+const near = (a, b) => Math.abs(a - b) < 0.5;
+// a tap puts a pin; Answer sends the pins
+const answer = page => page.locator('[data-place-answer]').click();
 const tapAt = async (page, x, y) => { await page.locator(MAP).scrollIntoViewIfNeeded(); const [px, py] = await screenOf(page, x, y); await page.mouse.click(px, py); };
 const lit = page => page.locator('.item .mp.lit').evaluateAll(els => els.map(e => e.dataset.place));
 // how tall a name is on the screen in pixels (its size in units of the map times the pixels each unit takes), and where it and a dot are on the screen
@@ -60,10 +65,10 @@ export async function X46(env) {
   const dot = await centreOf(page, '.bfig:nth-child(2 of .bfig) .block-map .mp-dot[data-place="crumb"]'), name = await centreOf(page, '.bfig:nth-child(2 of .bfig) .block-map text.ml[data-dx="-40"]');
   c.check(Math.hypot(dot[0] - name[0], dot[1] - name[1]) > 30 && await page.locator('.bfig:nth-child(2 of .bfig) .block-map line.ml-lead').count() === 1, 'the name of a microstate is not set off its dot on a line to it');
   const home = (await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number);
-  c.check(Math.abs(home[2] - 100) < 0.5, `a map with a view of zoom 3 opens ${home[2]} units across, not 100`);
+  c.check(near(home[2], SHOWN(100)), `a map with a view of zoom 3 opens ${home[2]} units across, not ${SHOWN(100)}`);
   await page.locator('.block-map').nth(1).locator('[data-map-zoom="in"]').click();
   await page.locator('.block-map').nth(1).locator('[data-map-zoom="reset"]').click();
-  c.check(Math.abs((await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number)[2] - 100) < 0.5, 'the button for the whole map does not go back to the part the map opened on');
+  c.check(Math.abs((await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number)[2] - SHOWN(100)) < 0.5, 'the button for the whole map does not go back to the part the map opened on');
   const key = await page.locator('.flagkey li').allTextContents();
   c.check(key.length === 3 && key[0].includes('Alder') && key[1].includes('Birch') && key[2].includes('Cedar'), `the flags with their names are ${JSON.stringify(key)}`);
   await env.inspect(c, page, 'the labelled map');
@@ -82,26 +87,35 @@ export async function X46(env) {
   c.check(await page.locator('[data-feedback]').count() === 0 && await page.locator('#qNext').isDisabled(), 'feedback is on the page, or Next is open, before the answer');
   await env.inspect(c, page, 'a question with a blank map');
   const full = await viewBox(page);
-  c.check(full[2] === 300 && full[3] === 200, `the map does not start whole (${full.join(' ')})`);
+  c.check(near(full[2], SHOWN(300)) && near(full[3], SHOWN(200)), `the map does not start whole (${full.join(' ')})`);
 
   // a pinch zooms and is not a tap
   await pinch(page);
   const zoomed = await viewBox(page);
-  c.check(zoomed[2] < 300 && (await look(page)).done === false && await page.locator('[data-feedback]').count() === 0 && Object.keys((await look(page)).a).length === 0, `a pinch ${zoomed[2] < 300 ? 'was counted as a tap' : 'did not zoom the map'}`);
+  c.check(zoomed[2] < SHOWN(300) && (await look(page)).done === false && await page.locator('[data-feedback]').count() === 0 && Object.keys((await look(page)).a).length === 0 && await page.locator('.item .mk-neutral').count() === 0, `a pinch ${zoomed[2] < SHOWN(300) ? 'was counted as a tap' : 'did not zoom the map'}`);
   // a drag moves the map and is not a tap
   const [sx, sy] = await screenOf(page, 150, 100);
   await page.mouse.move(sx, sy); await page.mouse.down(); await page.mouse.move(sx + 25, sy + 5, { steps: 4 }); await page.mouse.move(sx + 60, sy + 10, { steps: 4 }); await page.mouse.up();
   const dragged = await viewBox(page);
-  c.check(dragged[0] !== zoomed[0] && Object.keys((await look(page)).a).length === 0 && await page.locator('[data-feedback]').count() === 0, `a drag ${dragged[0] === zoomed[0] ? 'did not move the map' : 'was counted as a tap'}`);
+  c.check(dragged[0] !== zoomed[0] && Object.keys((await look(page)).a).length === 0 && await page.locator('.item .mk-neutral').count() === 0 && await page.locator('[data-feedback]').count() === 0, `a drag ${dragged[0] === zoomed[0] ? 'did not move the map' : 'was counted as a tap'}`);
   // the buttons zoom and show the whole map again
   await page.locator('[data-map-ask] [data-map-zoom="reset"]').click();
-  c.check((await viewBox(page))[2] === 300, 'the button for the whole map does not show it');
+  c.check(near((await viewBox(page))[2], SHOWN(300)), 'the button for the whole map does not show it');
   await page.locator('[data-map-ask] [data-map-zoom="in"]').click();
-  c.check((await viewBox(page))[2] < 300, 'the zoom button does not zoom in');
+  c.check((await viewBox(page))[2] < SHOWN(300), 'the zoom button does not zoom in');
   await page.locator('[data-map-ask] [data-map-zoom="reset"]').click();
 
+  // a tap puts a pin and answers nothing; a second tap moves the pin, so a misplaced tap is put right before it counts
+  await tapAt(page, 215, 70);   // Birch
+  c.check(!(await look(page)).done && Object.keys((await look(page)).a).length === 0 && await page.locator('.item .mk-neutral').count() === 1 && await page.locator('[data-place-answer]:not([disabled])').count() === 1,
+    'a tap on the map answered the question, or did not put a pin and offer Answer');
+  await page.locator('[data-place-undo]').click();
+  c.check(await page.locator('.item .mk-neutral').count() === 0 && !(await look(page)).done, 'Undo does not take the pin back');
+  await tapAt(page, 215, 70);
   // a tap in the wrong country: scored, the right place lit, the tap marked, what it was on said, the slip named
-  await tapAt(page, 85, 35);   // Alder: not Birch, and Alder names a slip
+  await tapAt(page, 85, 35);   // Alder: not Birch, and Alder names a slip; the pin moves from Birch to Alder
+  c.check(!(await look(page)).done && await page.locator('.item .mk-neutral').count() === 1, 'a second tap did not move the pin');
+  await answer(page);
   let now = await look(page);
   c.check(now.done && now.r.where === 'next-door', `a tap on Alder when Birch was asked scored ${now.r && now.r.where}, not the slip next-door`);
   c.check(JSON.stringify(await lit(page)) === '["birch"]' && await page.locator('.item .mk-wrong').count() === 1, `after the answer the lit places are ${JSON.stringify(await lit(page))}, and ${await page.locator('.item .mk-wrong').count()} tap is marked wrong`);
@@ -119,6 +133,7 @@ export async function X46(env) {
   // Cedar: a tap inside the hole of Alder is Cedar, not Alder
   c.check((await look(page)).key === 't-cedar', 'the second question is not the tap on Cedar');
   await tapAt(page, 85, 70);
+  await answer(page);
   now = await look(page);
   c.check(now.r.where === 'ok' && JSON.stringify(await lit(page)) === '["cedar"]' && await page.locator('.item .mk-right').count() === 1, `a tap in the hole of Alder, asked for Cedar, scored ${now.r && now.r.where} and lit ${JSON.stringify(await lit(page))}`);
   const rightNames = await page.locator('.item .mapsvg text').allTextContents();
@@ -136,8 +151,9 @@ export async function X46(env) {
   c.check((await look(page)).key === 't-speck', 'the third question is not the tap on Speck');
   await page.locator('[data-map-ask] [data-map-zoom="in"]').click();
   const zoomIn = await viewBox(page);
-  c.check(zoomIn[2] < 200 && zoomIn[2] > 150, `a tap on the zoom button leaves the map ${zoomIn[2]} units across, not about 190`);
+  c.check(zoomIn[2] < SHOWN(200) && zoomIn[2] > SHOWN(150), `a tap on the zoom button leaves the map ${zoomIn[2]} units across, not about ${Math.round(SHOWN(190))}`);
   await tapAt(page, 201, 141);   // on the dot, from a zoomed map: the tap must be read on the map as it is drawn now
+  await answer(page);
   now = await look(page);
   const stored = now.a.where;
   c.check(now.r.where === 'ok' && Array.isArray(stored) && stored.length === 3 && stored[2] > 1.5 && Math.abs(stored[0] - 201) < 3 && Math.abs(stored[1] - 141) < 3, `a tap on the dot of Speck from a zoomed map scored ${now.r && now.r.where} and was stored as ${JSON.stringify(stored)}`);
@@ -146,6 +162,7 @@ export async function X46(env) {
   // the sea: the land under the sea's outline is not the sea
   c.check((await look(page)).key === 't-sea', 'the fourth question is not the tap on the sea');
   await tapAt(page, 258, 50);   // on the circle of Crumb, in Birch: inside the outline of the sea, which covers the whole map, and still not the sea
+  await answer(page);
   now = await look(page);
   c.check(now.done && now.r.where === 'no' && JSON.stringify(await lit(page)) === '["sea"]', `a tap on land, asked for the sea, scored ${now.r && now.r.where}`);
   c.check(/You tapped: Crumb\./.test(await env.screenText(page)), `a tap on the circle of Crumb is named ${(await env.screenText(page)).match(/You tapped: [^.]*/)}, not Crumb`);
@@ -156,10 +173,12 @@ export async function X46(env) {
   now = await look(page);
   c.check(now.redo && now.key === 't-birch', 'the missed tap does not come back');
   await tapAt(page, 215, 70);
+  await answer(page);
   c.check((await look(page)).r.where === 'ok', 'a tap in Birch, asked for Birch, did not score right');
   await next(page);
   c.check((await look(page)).redo && (await look(page)).key === 't-sea', 'the missed tap on the sea does not come back');
   await tapAt(page, 150, 190);
+  await answer(page);
   c.check((await look(page)).r.where === 'ok' && JSON.stringify(await lit(page)) === '["sea"]', 'a tap on the water, asked for the sea, did not score right');
   await next(page);
 
@@ -180,6 +199,8 @@ export async function X46(env) {
     'Undo does not take the neighbor\'s tap back');
   await tapAt(page, 215, 70);   // Birch again
   await tapAt(page, 150, 190);   // the sea
+  c.check(!(await look(page)).done && await page.locator('.item .mk-neutral').count() === 2, 'the tap on the water answered the question before Answer, or is not pinned');
+  await answer(page);
   now = await look(page);
   c.check(now.done && now.r.borders === 'ok', `a neighbor and the sea of Alder scored ${now.r && now.r.borders}`);
   c.check(JSON.stringify((await lit(page)).sort()) === '["birch","cedar","sea"]' && await page.locator('.item .mk-right').count() === 2, `after the answer the lit places are ${JSON.stringify(await lit(page))}, and ${await page.locator('.item .mk-right').count()} taps are marked right`);
@@ -189,6 +210,7 @@ export async function X46(env) {
   c.check((await look(page)).key === 'b-cedar', 'the second question is not the neighbors of Cedar');
   await tapAt(page, 30, 30);   // Alder, around Cedar
   await page.locator('[data-place-landlocked]').click();
+  await answer(page);
   now = await look(page);
   c.check(now.done && now.r.borders === 'ok' && JSON.stringify(now.a.borders.w) === '"none"', `Landlocked for Cedar scored ${now.r && now.r.borders} and was stored as ${JSON.stringify(now.a.borders)}`);
   c.check(/Landlocked\./.test(await env.screenText(page)) && await page.locator('.item .opt.sel.right').count() === 1, 'the answer for Cedar does not say Landlocked, or the button is not marked right');
@@ -207,10 +229,12 @@ export async function X46(env) {
   await env.goOn(page);   // the check's first screen
   c.check((await look(page)).key === 'c-tap', 'the first question of the check is not the tap on Birch');
   await tapAt(page, 215, 70);
+  await answer(page);
   c.check((await look(page)).done && await page.locator('[data-feedback]').count() === 0 && (await lit(page)).length === 0 && await page.locator('.item .mk-neutral').count() === 1 && await page.locator('.item .mk-right, .item .mk-wrong').count() === 0, 'a check shows what was tapped lit or marked right or wrong before its end');
   await next(page);
   await tapAt(page, 30, 30);   // Alder, next to Birch
   await page.locator('[data-place-landlocked]').click();   // Birch touches the sea: wrong
+  await answer(page);
   await next(page);
   await page.locator('input[data-recall="name"]').fill('Alder');
   await page.locator('[data-recall-answer="name"]').click();
@@ -239,6 +263,7 @@ export async function X46(env) {
     await tapAt(wide.page, 215, 70);
     await env.inspect(c, wide.page, `${width}px a question with the first tap made`);
     await tapAt(wide.page, 150, 190);
+    await answer(wide.page);
     await env.inspect(c, wide.page, `${width}px the feedback of a neighbor and its water`);
     await wide.context.close();
   }

@@ -10,9 +10,17 @@
 
 const MAP_TAP_SLOP = 8;
 const MAP_STEP = 1.6;
+const MAP_MARGIN = 0.04;        // the water shown round the map, a share of the part shown on each side
+const MAP_EDGE_IN = 0.5;        // how far inside the map's edge a tap on the water round it is taken, in units of the map
+const MAP_BESIDE_MIN = { width: 720, height: 480 };   // the column the screen gives (the rail taken off) and the screen's height where a map may stand beside
+const MAP_BESIDE_GAIN = 1.05;   // beside only when it draws the map this much larger than across the width
+const MAP_FLOOR = 0.35;         // however much goes with it, a map that only shows is never shorter than this share of the screen (or its own height across the width)
+const MAP_MIN = 160;            // the least height in pixels a map that asks something is given, however much goes with it
+const MAP_ROOM_GAP = 24;        // the least space between the map's screen and the bar at the foot
 let MAP_VIEW = {};
+let MAP_FIT = {};   // the layout fitted to a map on a screen of one size: `${scope}|${width}|${height}` -> { beside, h }
 let MAP_GESTURE = null;   // { el, svg, pointers: Map(id -> { x, y }), view0, start, moved, multi, pinch }
-const mapViewReset = () => { MAP_VIEW = {}; };
+const mapViewReset = () => { MAP_VIEW = {}; MAP_FIT = {}; };
 
 /* ---------- where things are ---------- */
 const mapDims = el => [Number(el.dataset.w), Number(el.dataset.h)];
@@ -25,9 +33,12 @@ function mapClamp(view, [w, h]){
   const k = Math.max(1, Math.min(PLACE_ZOOM_MAX, view.k)), vw = w / k, vh = h / k;
   return { k, cx: Math.max(vw / 2, Math.min(w - vw / 2, view.cx)), cy: Math.max(vh / 2, Math.min(h - vh / 2, view.cy)) };
 }
-// the pixels the svg's box gives each unit of the map, and where the picture starts inside the box (the map is centred when the box is wider or taller)
+// the pixels the svg's box gives each unit of the map, and where the picture starts inside the box (the map is centred when the box is wider or taller).
+// What is shown is the part of the map the view holds with a margin of water round it (MAP_MARGIN of that part on each side), so a place on the map's
+// edge (the Arctic Ocean, Antarctica) stands off the frame with room to tap it, at every zoom.
 function mapScreen(svg, el, view){
-  const [w, h] = mapDims(el), box = svg.getBoundingClientRect(), vw = w / view.k, vh = h / view.k, s = Math.min(box.width / vw, box.height / vh) || 1;
+  const [w, h] = mapDims(el), box = svg.getBoundingClientRect(), grow = 1 + 2 * MAP_MARGIN, vw = w / view.k * grow, vh = h / view.k * grow;
+  const s = Math.min(box.width / vw, box.height / vh) || 1;
   return { box, s, ox: (box.width - s * vw) / 2, oy: (box.height - s * vh) / 2, vx: view.cx - vw / 2, vy: view.cy - vh / 2, vw, vh };
 }
 const mapUnitAt = (screen, px, py) => [screen.vx + (px - screen.box.left - screen.ox) / screen.s, screen.vy + (py - screen.box.top - screen.oy) / screen.s];
@@ -87,7 +98,52 @@ function mapSetView(el, view){
   MAP_VIEW = { ...MAP_VIEW, [el.dataset.scope]: next };
   mapApply(el, next);
 }
-const mapSync = () => document.querySelectorAll('#screen [data-map]').forEach(el => mapApply(el, mapViewNow(el)));
+const mapSync = () => document.querySelectorAll('#screen [data-map]').forEach(el => { mapFit(el); mapApply(el, mapViewNow(el)); });
+
+/* ---------- the room a map is given ---------- */
+// A screen of one map gives it the most room it can (app.css, .block-map.fit): its height is what the screen has left above the bar at the foot once
+// what is above and under the map is on it, and on a screen wide enough it stands beside the rest instead (.pane.mapbeside) when that draws it larger.
+// The screen's height is the one with the browser's bars showing (the root's clientHeight), so the map does not jump as the bars come and go. Worked
+// out once for a question on a screen of one size and kept, so the map does not move when the screen is painted again for the answer.
+function mapFit(el){
+  const pane = el.closest('.pane');
+  if(!pane || pane.querySelectorAll('[data-map]').length !== 1) return;
+  const key = `${el.dataset.scope}|${document.documentElement.clientWidth}|${document.documentElement.clientHeight}`;
+  const fit = MAP_FIT[key] || mapFitMeasure(pane, el);
+  MAP_FIT = { ...MAP_FIT, [key]: fit };
+  mapFitShow(pane, el, fit);
+}
+function mapFitShow(pane, el, fit){
+  pane.classList.add('mapfit');
+  pane.classList.toggle('mapbeside', !!(fit && fit.beside));
+  el.classList.toggle('fit', !!fit);
+  if(fit) el.style.setProperty('--maph', `${fit.h}px`); else el.style.removeProperty('--maph');
+}
+// the two layouts tried in turn, and the one that draws the map larger on the screen as it stands kept
+function mapFitMeasure(pane, el){
+  const main = pane.closest('.main'), screenH = document.documentElement.clientHeight;
+  const across = mapFitTry(pane, el, false, screenH);
+  if(!main || main.clientWidth < MAP_BESIDE_MIN.width || screenH < MAP_BESIDE_MIN.height) return across;
+  const beside = mapFitTry(pane, el, true, screenH);
+  return beside.s > across.s * MAP_BESIDE_GAIN ? beside : across;
+}
+function mapFitTry(pane, el, beside, screenH){
+  mapFitShow(pane, el, beside ? { beside: true } : null);
+  const frame = el.querySelector('.mapframe'), [w, h] = mapDims(el), width = frame.clientWidth, full = width * h / w;
+  // a map that asks something always leaves its question, its row and Next on the screen; a map that only shows keeps a floor and lets the page scroll
+  const fits = Math.min(full, mapFitRoom(pane, el, frame, beside, screenH)), tall = el.dataset.mapAsk ? Math.max(fits, Math.min(full, MAP_MIN)) : Math.max(fits, Math.min(full, screenH * MAP_FLOOR));
+  return { beside, h: Math.round(tall), s: fits / h };
+}
+// the height the map's screen can take: from its top to the bar at the foot (and the tab bar, where there is one), less what has to stand under it,
+// which beside is the row under it (Undo and Landlocked) and across is everything after it in the page
+function mapFitRoom(pane, el, frame, beside, screenH){
+  const bar = pane.querySelector('.actbar'), tabs = document.querySelector('.tabbar');
+  const foot = (bar ? bar.offsetHeight : 0) + (tabs && tabs.offsetParent ? tabs.offsetHeight : 0);
+  const top = frame.getBoundingClientRect().top + scrollY, bottom = frame.getBoundingClientRect().bottom;
+  const below = beside ? el.getBoundingClientRect().bottom - bottom
+    : Math.max(0, ...[...pane.children].filter(c => c !== bar).map(c => c.getBoundingClientRect().bottom)) - bottom;
+  return screenH - foot - top - below - MAP_ROOM_GAP;
+}
 
 /* ---------- zoom ---------- */
 // the view after zooming by `factor` with the point at screen (px, py) staying where it is
@@ -148,7 +204,9 @@ function mapUp(e){
   }
   MAP_GESTURE = null;
   if(e.type !== 'pointerup' || g.moved || g.multi) return;
-  const screen = mapScreen(g.svg, g.el, mapViewNow(g.el)), [x, y] = mapUnitAt(screen, e.clientX, e.clientY), k = mapViewNow(g.el).k;
+  // a tap on the water round the map is a tap on the edge of the map next to it: the water at an edge runs on past it (the Arctic Ocean, the Southern Ocean)
+  const screen = mapScreen(g.svg, g.el, mapViewNow(g.el)), [w, h] = mapDims(g.el), [ux, uy] = mapUnitAt(screen, e.clientX, e.clientY), k = mapViewNow(g.el).k;
+  const x = Math.max(MAP_EDGE_IN, Math.min(w - MAP_EDGE_IN, ux)), y = Math.max(MAP_EDGE_IN, Math.min(h - MAP_EDGE_IN, uy));
   mapTapped(g.el, Math.round(x * 10) / 10, Math.round(y * 10) / 10, Math.round(k * 100) / 100);
 }
 function mapWheel(e){

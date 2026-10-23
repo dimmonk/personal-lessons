@@ -245,7 +245,7 @@ dot, is named from its state lit), and its `forms` keeps it to some of its group
 | `text` | a box under a `spoken` question, and "Not yet" | types words | matches an accepted answer (section 3.7); with `model`, never scored | every accepted answer, and the item's `reason` |
 | `order` | `steps` to put in order | taps `right.length` of them; with a step that belongs in no order, taps those it would do and Answer | the whole order, or `scored: 'first'` | the right order and `then` |
 | `exchange` | a call or chat whose turns follow the replies | picks a reply each turn | right if it reaches an `ok` end | the pushing lines marked, and where it could have ended |
-| `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" in the row of the zoom buttons once a neighbor is tapped | taps the map: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
+| `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" in the row under the map once a neighbor is tapped | taps the map, then Answer: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
 | `sing` | the pitch strip (section 3.8) | sings after the target plays | section 3.8 | the result in words |
 
 - **A verdict** is a `choose` drawing on the subject's `verdict` list, so its words are typed once and are the same in
@@ -339,7 +339,10 @@ no right or no wrong end; V74 refuses an exchange in which nobody pushes, or no 
 `map` is a region of the map data (`FC.maps`, 3.11) and `right` the places of it that are right; a list is any one of them. The
 item's blocks hold the question (a prose block with the name, or a `flags` block with the flag and no name), never the answer: a `map` block of the same region
 that has the right place lit is refused (V74). The learner taps the map; a tap is a tap only when one finger went down and up
-without moving more than 8 pixels and no second finger touched (pinch, drag and the zoom buttons never count). The answer is
+without moving more than 8 pixels and no second finger touched (pinch, drag and the zoom buttons never count). A tap puts a pin
+and answers nothing: another tap moves the pin, Undo takes it back, and the button Answer sends it, so a misplaced tap is put right
+before it counts (as a choice of several is changed before Answer). A tap on the water shown round the map is taken on the map's edge
+next to it, so a place on the edge (the Arctic Ocean, Antarctica) can be tapped. The answer is
 stored as the three numbers `[x, y, k]`: the point in units of the map and the zoom it was made at (1 to 8).
 - *What a tap is on*: inside a place's outline, an outline being rings in which a point is inside when it is inside an odd number
   of them (so the country in the hole of another is not the other); a sea, an ocean, a lake, a range and a desert have no holes, a
@@ -360,8 +363,8 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   same tap is the sea (`placeShoreAt` in place.js).
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
 - *A neighbor and its water*: its question block reads "What borders <place>?" (a place group's border question is made with
-  `SAY.placeBorderAsk`), never the bare name, so it never reads as a name to tap. Two taps in order, kept in `Q.cur.many[askId]` until the second, and Undo (beside Landlocked, under the map) takes
-  the first back while the second is still to come. The first must be inside a
+  `SAY.placeBorderAsk`), never the bare name, so it never reads as a name to tap. Two pins in order, kept in `Q.cur.many[askId]` until Answer sends them; a further tap moves the water's pin, and Undo (beside Landlocked
+  and Answer, under the map) takes the last pin back. The first must be inside a
   neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water at all.
   **One water rule for every map** (decided 2026-10-18): a place's water is its seas, its oceans and the big lakes that lie on it or against its shore (the Great Lakes, Lake Victoria,
   Lake Tanganyika, Lake Malawi, the Caspian Sea), so Ontario is on the Great Lakes and Uganda on Lake Victoria; "Landlocked" is right only for a place that touches none of them (Rwanda on
@@ -378,7 +381,7 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it `of` is filled in full and every neighbor of it
   lit as a lighter tint (`focus` and `near`, so the place asked about is never read as one of its neighbors), the water it touches and the water the
   learner tapped are lit (no other water), each of them named on the map (`of`, every neighbor and the lit water, each once: the map has no other
-  names), the taps marked. Landlocked stands in the row of the zoom buttons, under the map.
+  names), the taps marked. Landlocked stands in the row under the map, held from the start of the question.
 - *Feedback* (section 4.1): the mark, "You tapped: <place>" (or that the tap was on no place) with the slip's name, the right
   place lit on the same map, named on it, and the tap marked beside it: a map is the picture, so a lit place always says what it is on the map
   itself, after a right tap as after a miss, and the name is learned with where it is. In a check nothing is lit or marked until the end (X23). A worked
@@ -526,10 +529,14 @@ no name, for a view with no pictures.
   (`map-run.js`), by two fingers, by the buttons under it (zoom in, zoom out, the whole map) and by ctrl and the wheel; its zoom is
   kept across a screen painted again and reset when the question or step changes. An item's `figure` may be a map (a picture added to
   the feedback: the true map after a trap item).
-  On a phone (up to 520 px wide) a map that asks something is only as tall as the screen leaves room for what goes with it, with no scroll at 390 x 844 (X47): a
-  place asked on the map holds two lines for its line of help for as long as it is shown (the map does not move when the line changes after the first tap), then the map, then
-  one row with Landlocked and the zoom buttons; a lit place named from memory has its box and its button under a taller map. A map's frame is the color of water, so the
-  bars either side of a map that is taller than wide read as sea; the border between two countries is `--dim` on the country's `--rule`, over 3 to 1 (X46).
+  A screen of one map gives the map all the room it can: the map is as tall as the screen leaves once what goes with it and the bar of Next are on it, with no scroll
+  (X47 at 390 x 844 and 360 x 800; a map that only shows is never under 35% of the screen's height, and the page may scroll), worked out once per question so it does not move when the screen is painted for the answer. On a screen
+  720 px wide or more (a Fold opened out, a tablet, a laptop) the map stands beside the question instead when that draws it larger: a map about as tall as wide, or
+  taller, goes beside; a wide one (the world, the United States) goes across, under the question (X48, the map drawn on a fifth of the screen or more, the bar of Next and the browser's bars counted in the screen). The zoom buttons
+  stand on the map's top right corner, and a margin of water (4% of what is shown, on each side) stands round the map at every zoom. A place asked on the map holds room for its line of help (two lines on a phone, one on a wider screen) and the row
+  of Undo, Answer and (for a neighbor and its water) Landlocked under the map from the start. The map's colors are its own, as on a reference map: warm light land over darker
+  blue water, blue rivers and blue italic water names, borders darker than the land (over 3 to 1, X46), and one amber highlight (`--map-lit`) that is neither land,
+  water nor a subject's color. A map's frame is the color of water, so the bars either side of a map read as sea.
 - **Speech** starts only on a tap: "Hear the question" reads the first question, and each next question is read when
   the learner taps Next. Only a voice that is on the phone and in English is used; with none, the words are shown with
   one line saying so. "Hear it again" replays; leaving a screen or the page going to the background stops it. There is

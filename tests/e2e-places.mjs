@@ -28,17 +28,20 @@ const queue = page => page.evaluate(() => Q.list.map(i => ({ key: i.key, redo: !
 // answers the question in front of the learner: all right, or all wrong
 async function answer(page, right = true) {
   const { place, form } = await look(page);
-  if (form === 'tap' || form === 'flag') await tapAt(page, right ? AT[place] : AT[place === 'birch' ? 'alder' : 'birch']);
-  else if (form === 'name') {
+  if (form === 'name') {
     await page.locator('input[data-recall="name"]').fill(right ? (place === 'sea' ? 'The sea' : place) : 'zzz');
     await page.locator('[data-recall-answer="name"]').click();
-  } else if (right) {
+    return;
+  }
+  if (form === 'tap' || form === 'flag') await tapAt(page, right ? AT[place] : AT[place === 'birch' ? 'alder' : 'birch']);
+  else if (right) {
     await tapAt(page, NEXT_TO[place]);
     if (place === 'cedar') await page.locator('[data-place-landlocked]').click(); else await tapAt(page, AT.sea);
   } else {
     await tapAt(page, AT.sea);
     await page.locator('[data-place-landlocked]').click();
   }
+  await page.locator('[data-place-answer]').click();   // a tap puts a pin; Answer sends the pins
 }
 // runs the questions in front of the learner to the end of the group, every one right except the numbered ones (counted from the first)
 async function runGroup(page, { miss = [] } = {}) {
