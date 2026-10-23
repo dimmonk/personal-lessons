@@ -152,7 +152,7 @@ what it teaches, its check, and the A+ objectives it covers.
 
 ## Build notes
 
-- Subject id `it-support`, field `work` (a new shelf, "Work", for job subjects; the owner's later lanes go there too).
+- Subject id `it-support`, named "IT Help Desk" on screen (the app keeps "support" off the screen as one of its own machinery words), field `work` (a new shelf, "Work", for job subjects; the owner's later lanes go there too).
 - Strands: one per lesson topic; recall lessons have one strand per fact group so the weekly review brings each back on its own.
 - Built a unit at a time; each lesson passes the learner review and the research check before it is `live` (build-subject 6).
 - Not built: an exam-date countdown for the review (the civics interview rounds are civics-only in the engine); the weekly review

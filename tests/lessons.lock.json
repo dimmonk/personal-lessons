@@ -17,6 +17,10 @@
       "rev": 8,
       "fp": "sha256:8f331b9c467abf83fb8297c7bf030dec568a1e9a15c891ab7c66a29f67a5f0e8"
     },
+    "it-support": {
+      "rev": 1,
+      "fp": "sha256:d4115d1a0c7b0f293b283011ccb67ffc78ba41d62d0ecfe0a2fb19c64dcbffef"
+    },
     "math": {
       "rev": 10,
       "fp": "sha256:cc8f572ea9462f8063a3a1c59c94b68a9a6d3ac67cbdaf827eb66aa649723978"
