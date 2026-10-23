@@ -36,7 +36,13 @@ Sustainable Strategic Position Requires Trade-offs". Read. Strong.
   imitated."
 - The look-alike error, **straddling**, p. 44: "The straddler seeks to match the benefits of a successful position while
   maintaining its existing position." Worked case: Continental Lite copied Southwest on some routes while staying
-  full-service, kept travel agents and a mixed fleet, and lost (p. 44-45).
+  full-service, kept travel agents and a mixed fleet, and lost (p. 44-45). Added 2026-10-23 (research review, defect 1):
+  on the Lite routes Continental did cut meals and first class, raised departures, lowered fares and shortened turns at the
+  gate, but kept the travel agents, the mixed fleet, baggage checking and seat assignments the rest of the airline needed,
+  so it paid for both ways; its losses ran to hundreds of millions of dollars (Porter p. 44-45, as the reviewer read it;
+  the 1995 press confirms the meals were cut). Porter's test is that the straddler's activities **conflict** with each
+  other (p. 44: "more of one thing necessitates less of another"), not that it gives nothing up; lesson 6 asks whether the
+  new work pulls against the old (judgement call on the plain wording).
 - p. 45: companies that try "to be all things to all customers ... risk confusion in the trenches as employees attempt
   to make day-to-day operating decisions without a clear framework."
 
@@ -56,7 +62,9 @@ are Porter's).
 - p. 51, "The Growth Trap": "Among all other influences, the desire to grow has perhaps the most perverse effect on
   strategy. Trade-offs and limits appear to constrain growth."
 - p. 51-52: Maytag grew from $684 million (1985) to $3.4 billion (1994) by extending its line and buying brands, while
-  return on sales fell from 8%-12% to under 1% (1989-1995). "Profits fall, but more revenue is seen as the answer."
+  return on sales fell from 8%-12% in the 1970s and 1980s to an average of under 1% for 1989-1995 (corrected 2026-10-23
+  after the research review: under 1% is the 1989-1995 average, not the 1995 figure). "Profits fall, but more revenue is
+  seen as the answer."
 - p. 51, box "Reconnecting with Strategy", the questions an established firm asks first: "Which of our product or
   service varieties are the most distinctive? ... the most profitable? Which of our customers are the most satisfied?
   Which customers, channels, or purchase occasions are the most profitable? Which of the activities in our value chain
@@ -167,6 +175,15 @@ competitive advantage: value, rareness, imitability, and substitutability."
   capital) and a **barrier** that stops rivals from copying it. The benefit-and-barrier pair is the same test as Barney's
   and Porter's fit (ST3) in plainer words, which is why the plan uses it: "what do you get, and what stops a rival from
   getting it too?"
+- Added 2026-10-23 (research review, defect 9). Helmer names seven powers: scale economies, network economies,
+  counter-positioning, switching costs, branding, cornered resource and process power; switching costs are the loss a
+  customer takes by moving to a rival, and branding's barrier is the long time it takes to build a reputation (**via
+  summaries**, limited). Barney (1991) gives as reasons a resource is hard to copy unique history (path dependence),
+  causal ambiguity and social complexity, such as reputation and culture (**via summaries of the paper's body**, moderate).
+  Lesson 8 keeps four common answers for an owner-run business (only we have it, which is a cornered resource; fit,
+  ST3; what customers would lose by leaving, their setup and records or trust built over years, which joins switching
+  costs and a reputation; or nothing) and says the list is not complete (scale and networks named as others). Joining
+  switching costs and reputation into one answer is a **judgement call** to keep the choice short.
 
 ## C. Choosing
 
