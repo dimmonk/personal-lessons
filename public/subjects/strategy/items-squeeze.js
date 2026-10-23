@@ -163,7 +163,7 @@
         ["c3", "There are two pastry shops in the valley, and neither cuts prices.", "rivals", "Two shops that do not cut prices: rivals are calm."],
         ["c2", "Only one dairy delivers butter up here.", "suppliers"]],
       settles: "c2", right: "suppliers",
-      reason: "Only one dairy delivers butter up the mountain, so the shops cannot buy elsewhere and pay what it asks: the supplier takes the money."
+      reason: "Only one dairy delivers butter up the mountain, so the shops cannot buy elsewhere and pay what it charges: the supplier takes the money."
     }),
     squeeze({
       id: "q-nails", source: "Midtown Business Weekly · Trade report", headline: "Nail salons: price war on Second Avenue",
@@ -211,7 +211,7 @@
         ["c3", "A new shop under the franchise needs the franchise owner’s say-so, and none has opened in town in four years.", "entrants", "No newcomers open, so they are not the problem."],
         ["c1", "Each shop’s contract makes it buy its bread, meat and paper goods from the franchise owner, which sets the prices and raised them 15% this year.", "suppliers"]],
       settles: "c1", right: "suppliers",
-      reason: "Each shop must buy its supplies from the franchise owner at the prices it sets, and it raised them 15%: the supplier takes the money."
+      reason: "Each shop must buy its supplies from the franchise owner at the prices it chooses, and it raised them 15%: the supplier takes the money."
     }),
     squeeze({
       id: "k-coffee", source: "Elm Street Business Weekly · Trade report", headline: "Cafes on Elm Street: a year of cheaper lattes",

@@ -78,7 +78,7 @@
       misfit: "a2",
       fix: { right: "Pay each groomer by the day",
         others: [["Add a second van for quick wash-and-go jobs", "serve-everyone", OTHER],
-          ["Keep pay by the dog, and set up a quiet room at a shop for the most nervous dogs", null, "A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too."]] },
+          ["Keep pay by the dog, and fit out a quiet room at a shop for the most nervous dogs", null, "A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too."]] },
       reason: "Calm grooming needs time, and the home visits, the first meeting and the same groomer all serve it. Pay by the dog pushes groomers to hurry; pay by the day fits."
     }),
     // a look-alike on one cafe: one list with an activity that does not fit, one where a costly one fits

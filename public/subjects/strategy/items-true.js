@@ -68,9 +68,9 @@
         ["c1", "The planners plan enough weddings: their calendars show about 150 a year between them.", "The planners plan enough weddings", "backed"],
         ["c2", "The planners would send couples to us: they said over coffee that they would be glad to.", "The planners would send couples", "talk"],
         ["c3", "Our bakers can make three more cakes a week: they made that many every week last June.", "The bakers can make three more a week", "backed"],
-        ["c4", "The planners would do it with no fee: the bakery they use now pays them 10% of every cake.", "The planners would ask no fee", "against"]],
+        ["c4", "The planners would do it with no fee: the bakery they use now pays them 10% of every cake.", "The planners would take no fee", "against"]],
       right: "c4",
-      write: "Phone each planner this week and ask whether they would send couples with no fee, and if not, what fee they would want.",
+      write: "Phone each planner this week to find out whether they would send couples with no fee, and if not, what fee they would want.",
       steps: [
         { id: "conds", does: "Weigh what backs each condition.", working: "The weddings: counted on the calendars. The bakers: done last June. The planners sending couples: only said over coffee, which costs nothing. No fee: the bakery they use now pays them 10%, a fact pointing the other way." },
         { id: "first", does: "Test first the one least likely to hold.", working: "Two are in doubt, but the fee has a fact against it, so it is the least likely. If it fails, the move fails, whatever else holds.", ask: "first" }],
@@ -198,7 +198,7 @@
       id: "k11-secondsite", who: "Jill’s daycare", decision: "how to take more children next year.",
       moves: "a second daycare by the other hospital, a bigger building here, a night room.",
       test: "put the question to the other hospital’s nurses: would they move their children, and how many?",
-      extra: "Ask friends and parents whether they like each move",
+      extra: "Poll friends and parents on whether they like each move",
       reason: "Decision, moves, what would have to be true, the condition least likely to hold, a cheap test, then the choice. Asking friends whether they like the moves gathers talk, which tests nothing."
     }),
     cond({
@@ -221,7 +221,7 @@
         ["c3", "The union’s newsletter would tell workers about us: nobody has asked its editor.", "The newsletter would mention us", "extra"],
         ["c4", "Its workers will buy tacos at lunch: a food cart sold lunch at those gates for a year, and closed last spring.", "The workers will buy at lunch", "against"]],
       right: "c4",
-      reason: "The parking is agreed and the cousin has two years on the truck; the newsletter would only help. A cart at those gates closed after a year, a fact against the workers buying: test that first."
+      reason: "The parking is agreed and the cousin has two years on the truck; the newsletter would only help. A cart at that factory closed after a year, a fact against the workers buying: test that first."
     }),
     next({
       id: "k11-compare", from: "Jill’s memo after two tests", detail: "Written in October",

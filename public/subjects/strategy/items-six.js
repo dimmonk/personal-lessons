@@ -249,7 +249,7 @@
         ["f5", "Prices posted at the door, above a day visit, paid before treatment.", "Fits: night care costs more to run, and owners in an emergency pay for it."]])],
     [{ id: "line", kind: "tap", prompt: "Tap the activity that does not fit the position.", in: "notes", right: ["f4"], none: "Every activity fits" },
      fromList("barrier", "What stops a day clinic copying the night clinic?", "barrier", null, "fit",
-      { "only-us": "Nothing in the list is the only one of its kind; it is the whole set that is hard to copy.", switching: "Owners in an emergency go where the door is open; they keep nothing here that holds them.",
+      { "only-us": "Nothing in the list is the only one of its kind; it is the whole group that is hard to copy.", switching: "Owners in an emergency go where the door is open; they keep nothing here that holds them.",
         nothing: "A day clinic would have to staff every night, keep a surgery ready and stop sending its own calls: it would have to change how it runs." },
       { nothing: "copyable-as-lasting" })],
     ["f4"], "Cheap weekday mornings serve another customer, at the hours the night staff sleep: they do not fit. The rest fit together, so a day clinic would have to copy all of them and change how it runs."),
@@ -277,7 +277,7 @@
        ["That the city lets the van park on the street", "The permit came last week: it already holds."]]),
      pick("test", "How should he test it?", "Rent a van for two weeks and count the dogs done each day",
       [["Write the full plan with five years of numbers first", "Those numbers would rest on six dogs a day, the condition most in doubt.", "plan-first"],
-       ["Ask the van’s seller to put the six dogs in writing", "In writing it is still the seller’s word; a count of his own costs little.", "talk-as-evidence"]])],
+       ["Get the van’s seller to put the six dogs in writing", "In writing it is still the seller’s word; a count of his own costs little.", "talk-as-evidence"]])],
     ["b3", "b4"], "Six dogs at 70 minutes each plus 20 minutes of driving is about nine hours: a fact against the seller’s word. The deposits and the permit already hold. Test the six dogs first, cheaply, with a rented van."),
 
     owner("k14-taqueria", [note("Lupe’s page of numbers for a second taqueria", "Written in July", [
@@ -306,7 +306,7 @@
       barrier: "only-us",
       plans: ["Play for workers on a 30-minute break; win with five tacos in two minutes at the factory", "Sell burgers cheaper than the chains", "headon"],
       judge: "outside",
-      reason: "Carlos runs as well as any truck, and the chains took his customers: a strategy problem. The fast tacos earn the most, and only he can park at the gates. The plan that chooses plays for workers on a short break; food trucks have a record to start from, and the second truck is within what he can lose."
+      reason: "Carlos runs as well as any truck, and the chains took his customers: a strategy problem. The fast tacos earn the most, and only he can park at the factory. The plan that chooses plays for workers on a short break; food trucks have a record to start from, and the second truck is within what he can lose."
     }),
     owner("r14-rival", [note("Sam’s memo on a price cut", "Coffee cart at the train station, written in September", [
       ["m1", "The idea: cut our latte from $5 to $4 to win more commuters."],
@@ -318,7 +318,7 @@
        ["Close its cafe in the station", "Nothing in the memo says the cafe loses money; matching costs it little."]]),
      pick("move", "What should Sam do?", "Keep $5, and lean on the local beans commuters come for",
       [["Cut to $4 and hope the chain is slow to notice the cart’s new price", "It has matched every cut before; Sam would be left at $4 with the same share.", "rival-ignored"],
-       ["Cut to $3 so the chain cannot follow", "A chain that sets prices for 300 cafes can follow lower than a cart can.", "rival-ignored"]])],
+       ["Cut to $3 so the chain cannot follow", "A chain that prices 300 cafes can follow lower than a cart can.", "rival-ignored"]])],
     ["m2", "m3"], "The cut takes the chain’s own commuters, and it can follow without changing how it runs: it will answer. Sam’s difference is the local beans, which the chain would have to change how it buys to copy."),
     owner("r14-wall", [note("Nadia’s idea for her climbing gym", "Written in August", [
       ["w1", "A climbing wall on a trailer, for school fairs and town festivals."],

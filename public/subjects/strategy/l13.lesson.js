@@ -15,7 +15,7 @@ FC.lesson("strategy", {
     { title: "Can anyone see who would buy?",
       show: [
         { kind: "prose", text: [
-          "First question: can anyone see yet whether people would buy it? A second shop, a branch, a new truck at a factory gate: people already buy these, and many like them have opened. Start from how they did, as in the tables of others like it.",
+          "First question: can anyone see yet whether people would buy it? A second shop, a branch, a new truck outside a factory: people already buy these, and many like them have opened. Start from how they did, as in the tables of others like it.",
           "Something these customers have never been offered is different. The wider record (about half of new US businesses are still open after five years) is only a rough start: no table can say whether anyone here wants this. Try it small, with what you already have and partners who share the cost, and learn who buys.",
           "Second question, for every bet: what can you afford to lose? That is the most you could lose and still keep the business and your household going. The stake, what you would lose if it fails, stays within it, however good the record. Even a good record loses some.",
           "So size the bet. If the whole project fits within what you can lose and the record is sound, go ahead in full. If it costs more, put less at risk: rent instead of buy, start with a part, take a partner who pays a share. If no version fits, not now.",

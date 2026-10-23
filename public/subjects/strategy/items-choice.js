@@ -179,7 +179,7 @@
       id: "q10-tailor", who: "Paula’s tailoring shop",
       lines: ["Brides and grooms in the county who need their wedding clothes altered.", "Fittings at their home in the evening, and every job finished within ten days, are why they will come to us.", "Everyday hems and zips stop, so the evenings stay free."],
       right: "chooses",
-      reason: "The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a set finish date, and drops everyday jobs: it chooses."
+      reason: "The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a fixed finish date, and drops everyday jobs: it chooses."
     }),
 
     // ----- the check -----

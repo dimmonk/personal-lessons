@@ -10,8 +10,8 @@ FC.lesson("strategy", {
   id: "l6", part: "6", title: "What you say no to", rev: 1, status: "draft",
   history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: a real trade-off told apart from a straddle by one question, does the new work pull against the old, and which side goes? An addition with no pull fits and is neither (after the reviews, docs/subjects/strategy/fixes-l1-14.md)." }],
   why: [
-    "When a rival does well, the easy move is to offer what it offers too, and keep everything you already do. It feels safe: nobody is turned away.",
-    "Strategists see it as the usual way a good position is lost. Here you learn to tell when new work pulls against the old, and to tell a real choice from a move that tries to be two businesses at once."
+    "When a rival does well, the easy move is to offer what it offers too and keep everything else. It feels safe.",
+    "Strategists see it as the usual way a good position is lost. Here you learn to tell when new work pulls against the old, and a real choice from a move that tries to be two businesses at once."
   ],
   flow: [
     { title: "Does the new work pull against the old?",
@@ -23,7 +23,7 @@ FC.lesson("strategy", {
           "A pull, and the business drops one side: a real trade-off. It serves the side it kept better, whatever the side it dropped was worth.",
           "A pull, and the business keeps both: a straddle. It pays for both ways and serves neither fully. Trying to serve every kind of customer at once is the same mistake. Trimming a piece here and there while still serving both is still a straddle.",
           "What does not decide it: whether the move copies a rival (a business can copy a rival and still choose), how much the dropped side was worth, and early sales from the new offer.",
-          "This lesson asks only what kind of move it is, not whether it is wise. Lesson 5’s numbers and the lessons on betting judge that.",
+          "Here the only question is what kind of move it is, not whether it is wise. Lesson 5’s numbers and the lessons on betting judge that.",
           "Why it matters: a rival can copy anything you add without giving something up. What you chose not to do is what a rival would have to give up to copy you."] },
         { kind: "prose", tone: "wrong", text: [
           "“Why turn anyone away? We will offer both and keep everyone.”",
@@ -33,7 +33,7 @@ FC.lesson("strategy", {
       show: [
         { kind: "pair",
           a: { kind: "prose", text: "Southwest Airlines chose not to serve meals or assign seats, and to make little use of travel agents, so its planes could turn around fast and fly cheaply and often. Its choices fit together, and it did well." },
-          b: { kind: "prose", text: "Continental, a full-service airline, started Continental Lite to copy Southwest on some routes. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily." },
+          b: { kind: "prose", text: "Continental, a full-service airline, started Continental Lite to copy Southwest on some of its flights. It cut meals and first class on those flights and added flights at lower fares, but kept the travel agents, the mix of planes, baggage checking and seat assignments it needed for the rest of the airline. It lost heavily." },
           compare: "Both cut something. Southwest dropped one side of the pull. Continental cut a few pieces but kept running both ways at once, so it paid for both and matched Southwest on neither cost nor service: a straddle." }
       ] },
     { title: "Two moves for one bakery",
@@ -45,7 +45,7 @@ FC.lesson("strategy", {
       ] },
     { worked: "w6-gym" },
     { set: { items: [["p6-florist", "p6-autoshop"], ["p6-printshop", "p6-printshop2"], "p6-printshop3"], order: "listed", support: { shown: true } } },
-    { set: { items: ["q6-tacos", "q6-bikes", "q6-diner", "q6-movers", "q6-daycare", "q6-pool"], order: "shuffle", mix: { from: ["l1", "l2", "l3", "l4", "l5"], share: 0.25 } } }
+    { set: { items: ["q6-tacos", "q6-bikes", "q6-diner", "q6-movers", "q6-daycare", "q6-pool", "r6-cafe"], order: "shuffle", mix: { from: ["l1", "l2", "l3", "l4", "l5"], share: 0.25 } } }
   ],
   check: {
     items: ["k6-bookshop", "k6-plumber", "k6-salon", "k6-tutors", "k6-hardware", "k6-grooming"],

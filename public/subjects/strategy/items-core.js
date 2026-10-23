@@ -86,11 +86,11 @@
       distinct: "Haircuts keep all six chairs busy every day and bring in the most; clients come from across town for our color work.",
       fact: "Nail clients are mostly walk-ins who never book a cut or color." }),
     core({ id: "q-moves", who: "Bea’s moving company", kind: "product", coreId: "b2", lines: [["b3", "Storage by the month", 25000, 15000], ["b4", "Piano moves", 10000, 14000], ["b1", "House moves for families", 120000, 90000], ["b2", "Office moves", 60000, 34000]],
-      loser: "b4", tied: false, canFix: true, fixable: "Piano movers in the area charge twice our price, and callers who ask about the piano book anyway.",
+      loser: "b4", tied: false, canFix: true, fixable: "Piano movers in the area charge twice our price, and callers who phone about the piano book anyway.",
       distinct: "Every mover in the area does house moves the same way; offices pick us because we move them over a single weekend, which no other mover here does.",
       fact: "Piano moves come from people who call only about the piano." }),
     core({ id: "q-trays", who: "Priya’s cafe", kind: "channel", lines: [["b1", "The counter", 90000, 70000], ["b2", "Catering orders by phone", 40000, 16000], ["b3", "The delivery app", 30000, 33000], ["b4", "Stall at the Saturday farmers market", 12000, 8000]],
-      loser: "b3", tied: true, canFix: false, fixable: "The app sets the menu price shown to its users and keeps its 30% of every order.",
+      loser: "b3", tied: true, canFix: false, fixable: "The app fixes the menu price shown to its users and keeps its 30% of every order.",
       distinct: "Offices order our catering for the pastries we bake ourselves, which no other cafe near the towers does. Each order is counted once, under the way it came in.",
       fact: "Most of the offices that phone in catering first tried us through the delivery app." }),
 
@@ -101,7 +101,7 @@
 
     // ----- the check -----
     core({ id: "k-garage", who: "Ed’s auto repair shop", kind: "product", lines: [["b1", "Oil changes and filters", 70000, 62000], ["b2", "Brake and engine work", 80000, 40000], ["b3", "Tire sales and fitting", 50000, 42000], ["b4", "Car wash", 10000, 13000]],
-      loser: "b4", tied: false, canFix: false, fixable: "The car wash on Route 9 charges less than our wash costs us to run.",
+      loser: "b4", tied: false, canFix: false, fixable: "The car wash on the highway charges less than our wash costs us to run.",
       distinct: "Oil changes bring a new customer through the door most days; drivers come to Ed for brake and engine work because he finds faults the dealers miss.",
       fact: "Car wash customers come only for the wash." }),
     core({ id: "k-flowers", who: "June’s flower shop", kind: "customer", lines: [["b4", "Hotel lobbies", 15000, 20000], ["b1", "Walk-in shoppers", 70000, 60000], ["b3", "Funeral homes", 30000, 20000], ["b2", "Wedding couples", 45000, 18000]],
@@ -113,7 +113,7 @@
       distinct: "People call Ray first in an emergency because he answers at night, which the other plumbers in town do not.",
       fact: "The customers on monthly drain cleaning are the ones who call us first in an emergency." }),
     core({ id: "k-lunches", who: "Sam’s food truck", kind: "channel", coreId: "b3", lines: [["b4", "Late-night stops", 12000, 15000], ["b3", "Private parties", 30000, 14000], ["b1", "Weekday office lunches", 70000, 45000], ["b2", "Weekend festivals", 50000, 42000]],
-      loser: "b4", tied: false, canFix: false, fixable: "The city’s night permit and the generator cost the same however many we sell, and the late crowd stops coming when prices rise.",
+      loser: "b4", tied: false, canFix: false, fixable: "The city’s night permit and the power hookup cost the same however many we sell, and the late crowd stops coming when prices rise.",
       distinct: "At the office park we sell tacos beside five other taco trucks, at the same price; party hosts book us for our smoked brisket, which no other truck in town makes.",
       fact: "The late-night crowd is not the party crowd: different people, different nights." }),
 

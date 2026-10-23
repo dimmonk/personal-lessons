@@ -227,7 +227,7 @@
         ["c4", "Send each parent a short progress note every Friday.", STEP],
         ["c5", "Stop selling the recorded lesson packs.", STEP]],
       challenge: "c1", verdict: "strategy", deciding: ["c1", "c2"],
-      reason: "The first line says what is in the way: free videos took the market for recorded lessons. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy."
+      reason: "The first line says what is in the way: free videos took the market for recorded classes. A tutor who checks the student’s own work is one way past it, and the homework, the Friday notes and dropping the packs all fit it, so it is a strategy."
     }),
     kernel({
       id: "k-diner", from: "Carlos’s plan for his diner", detail: "Written in January",

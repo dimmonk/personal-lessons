@@ -63,7 +63,7 @@
       moves: [
         ["small", "Bake dog cakes on free Mondays and sell them at Eve’s desk, within $2,000", true],
         ["shop", "Borrow $90,000 for a dog-cake shop: owners have asked for them", "A few owners asking is talk, not buying, and $90,000 is far more than Dana can lose.", "bet-too-big"],
-        ["friends", "Ask friends and customers whether they like the idea, then decide on the shop", "People say yes to an idea that costs them nothing. Only selling some cakes shows who would pay.", "talk-as-evidence"]],
+        ["friends", "Find out from friends and customers whether they like the idea, then decide on the shop", "People say yes to an idea that costs them nothing. Only selling some cakes shows who would pay.", "talk-as-evidence"]],
       deciding: ["c2", "c3", "c4"],
       reason: "Nobody here has been offered dog cakes, so nobody can see who would buy. Dana starts with free ovens and Eve’s desk as a partner, inside the $2,000 she can lose."
     }),
@@ -123,11 +123,11 @@
         ["c3", "Food trucks at factory gates are common; the county lists 30 that opened in five years, and 19 are still running."]],
       judge: "outside",
       moves: [
-        ["table", "Try it with a folding table at that gate for a summer first", "People already buy lunch at factory gates, and the record says how trucks go; a summer at a table would only delay."],
+        ["table", "Try it with a folding table outside that factory for a summer first", "People already buy lunch outside factories, and the record says how trucks go; a summer at a table would only delay."],
         ["buy", "Start from how the 30 trucks did, and buy the used truck: the whole $40,000 is within what he can lose", true],
         ["own", "Go by his own forecast: his tacos are better than most", "Most owners in the record thought their food was better. Start from how the 30 did.", "inside-view"]],
       deciding: ["c2", "c3"],
-      reason: "Trucks at factory gates are common, and the record of 30 is sound. The whole $40,000 is within the $50,000 Carlos can lose, so buying the truck is the right size of bet."
+      reason: "Trucks outside factories are common, and the record of 30 is sound. The whole $40,000 is within the $50,000 Carlos can lose, so buying the truck is the right size of bet."
     }),
     bet({
       id: "q13-raceroom", from: "Leo’s idea, with its numbers", detail: "Written in November",
@@ -201,7 +201,7 @@
       moves: [
         ["both", "Judge the gym by the county’s record, and try dog mornings once a week before building anything for dogs", true],
         ["build", "Build the $70,000 dog area now: small gyms have a sound record", "The record is of gyms, not of dogs on the floor; nobody has seen members pay for that part, and $70,000 is far more than Ben can lose.", "bet-too-big"],
-        ["unknown", "Treat the whole idea as unknown, and set the county’s record aside", "The gym part has a record of many like it: use it. Only the dogs are unknown."]],
+        ["unknown", "Treat the whole idea as unknown, and put the county’s record aside", "The gym part has a record of many like it: use it. Only the dogs are unknown."]],
       deciding: ["c2", "c3", "c4"],
       reason: "The gym is a kind of business with a record: judge that part from it. The dogs are new, so nobody can see whether members would pay: try dog mornings within the $8,000 Ben can lose before building for them."
     }),
@@ -262,7 +262,7 @@
       moves: [
         ["kitchen", "Borrow $100,000 for the kitchen: meal kits sell everywhere", "Other kits selling does not show that anyone would pay for these, and $100,000 is far more than Carlos can lose.", "bet-too-big"],
         ["small", "Make kits in the half-empty freezer, ship them with the friend’s van, and stay within $2,000", true],
-        ["ask", "Ask the workers’ families and old friends whether they like the idea, and build the kitchen if most say yes", "Families saying they like it cost them nothing. Only selling some boxes shows who would pay.", "talk-as-evidence"]],
+        ["ask", "Poll the workers’ families and old friends on whether they like the idea, and build the kitchen if most say yes", "Families saying they like it cost them nothing. Only selling some boxes shows who would pay.", "talk-as-evidence"]],
       deciding: ["c2", "c3", "c4"],
       reason: "Nobody has offered these tacos by mail, so nobody can see who would pay. Carlos starts from his recipes, freezer and a partner’s van, inside the $2,000 he can lose."
     }),

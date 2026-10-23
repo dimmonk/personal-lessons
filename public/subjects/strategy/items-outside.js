@@ -248,7 +248,7 @@
         ["alike", "The 85 diners and breakfast places opened in the state in five years, and how many still are", "alike"],
         ["hotels", "The 40 highway motels that opened in the state in five years, which serve the same drivers at the same exits", "other"],
         ["uncle", "Sam’s uncle’s diner, open for thirty years", "few"]],
-      reason: "The forecast starts from many ventures alike in what decides it: the state’s new diners and breakfast places. One uncle’s diner is a single case, and motels win or fail for other reasons."
+      reason: "The forecast starts from many ventures alike in what decides it: the state’s new diners and breakfast places. One uncle’s diner is a single story, and motels win or fail for other reasons."
     }),
 
     // ----- held back for the review -----

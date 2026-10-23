@@ -231,7 +231,7 @@
         ["c1", "Our garden design customers want one crew that knows their garden."],
         ["c2", "We turn down cheap weekly mowing for new customers, so each crew keeps its own gardens."]],
       verdict: "tradeoff", deciding: ["c2"],
-      reason: "Mowing routes and one crew per garden pull on the same crews’ days, and Luis drops the mowing: a real trade-off."
+      reason: "Mowing rounds and one crew per garden pull on the same crews’ days, and Luis drops the mowing: a real trade-off."
     }),
     story({
       id: "r6-cafe", from: "Priya’s plan for her cafe", detail: "Written in May",
