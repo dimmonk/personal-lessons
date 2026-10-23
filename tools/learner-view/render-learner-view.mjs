@@ -111,7 +111,7 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   return text;
 }
 // a message as it arrives: who it is from and when, then each line (a thread names whose line it is; the other person's at the left, yours at the right)
-const MESSAGE_NAMES = { friend: 'A message from a friend about someone', thread: 'A text thread you are in', note: 'Your own note, written after an argument',
+const MESSAGE_NAMES = { friend: 'A message from a friend about someone', thread: 'A text thread you are in', note: 'A written note',
   sms: 'A text message', email: 'An email', popup: 'A pop-up on a screen', chat: 'A chat, with its history', call: 'An incoming call, the caller\'s words as a transcript', banner: 'A banner over another task' };
 function messageLines(block, deciding) {
   const mark = seg => deciding.includes(seg.id) ? `**${seg.text}**` : seg.text;

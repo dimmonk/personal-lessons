@@ -183,7 +183,8 @@ function ownWorkShare(sheet, ctx){
 // earns after its direct cost, largest first, and its share of what all the lines of the kind earn together, losses taken off (lesson 5's share,
 // research ST19: it can pass 100%). The line that earns the most is named, with the question only the learner can answer, whether customers come
 // for it rather than to a rival (ST4, ST8: the core is the most distinctive and the most profitable); each line that loses money is flagged with
-// lesson 5's question, whether the core's customers buy it along with the core. Reads the business, the subject's list lineKind, nothing else.
+// lesson 5's two questions, whether a price or cost change could make it pay, and if not whether the core's customers buy it with the core or
+// find you through it (research ST19). Reads the business, the subject's list lineKind, nothing else.
 const ownEarns = line => ownRound(line.revenue - line.cost);
 const ownSigned = value => value < 0 ? `−${ownWhole(-value)}` : ownWhole(value);
 function ownCoreOf(lines){

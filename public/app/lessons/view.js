@@ -311,7 +311,7 @@ const SAY = {
   bizLoses: 'Loses money',
   bizAll: 'All these lines',
   bizTopLine: (name, pct) => `${name} earns the most of these lines: ${pct}% of what they earn together. If customers come to you for it rather than to a rival, it is your core: keep and grow it before anything else. If every rival sells it the same way, look for the line they come to you for.`,
-  bizLosing: (name, money) => `${name} loses ${money} a year after its direct cost. Do the customers of your core buy it along with the core? Then keep it, but fix its price or cost. If nothing ties it to the core, think about letting it go.`,
+  bizLosing: (name, money) => `${name} loses ${money} a year after its direct cost. First: could a higher price or a cheaper way to serve it make it pay? Then fix it. If not, do your core’s customers buy it with the core, or find you through it? Then keep it and cut its loss. If neither, think about letting it go.`,
   bizNoneEarn: 'Together these lines do not cover their direct costs.',
   bizSection: 'Your business lines and dates',
   bizHeading: 'Your lines',
