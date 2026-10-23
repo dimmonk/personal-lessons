@@ -95,7 +95,7 @@
       move: "run a second grooming van in the next town.",
       conds: [
         ["c1", "Owners there will pay our price: I am sure of it, though the shops there charge $20 less.", "Owners there will pay our price", "against"],
-        ["c2", "There are enough nervous dogs there: the vet there gave us a list of 60 owners who asked her for a groomer.", "There are enough nervous dogs", "backed"],
+        ["c2", "There are enough nervous dogs there: the vet there gave us a list of 60 owners who asked her for a groomer.", "There are enough nervous dogs in that town", "backed"],
         ["c3", "The bank will lend for the van: it approved the loan last week.", "The bank will lend", "backed"]],
       right: "c1",
       reason: "The owners are on a list and the loan is approved. Rosa being sure is not evidence, and the shops there charge $20 less, a fact against her price: test the price first."
@@ -157,7 +157,7 @@
       id: "q11-statewide", from: "Kim’s memo on a move", detail: "Written in November",
       move: "tutor students for the state math exams online, across the state.",
       conds: [
-        ["c1", "Our tutors can teach well online: two have done it for a year, with the same exam results.", "The tutors can teach well online", "backed"],
+        ["c1", "Our tutors can teach well online: two have done it for a year, with the same exam results.", "The tutors can teach as well online", "backed"],
         ["c2", "The past papers can be shared online: they are already on our computers.", "The past papers can be shared", "backed"],
         ["c3", "Families will pay the same for online sessions: our families like the idea.", "Families will pay the same online", "talk"]],
       right: "c3",
@@ -172,7 +172,7 @@
       prompt: "The test failed. What should Leo do next?",
       options: [
         ["drop", "Drop the dealer move, or change it so it no longer needs that margin, and turn to the next move", true],
-        ["plan", "Write the full plan anyway: two of the three conditions held", "Every condition has to hold; one that failed sinks the move however many others held.", "plan-first"],
+        ["plan", "Write the full plan anyway: two of the three conditions held, and twenty racers have paid deposits", "Every condition has to hold; one that failed sinks the move however many others held.", "plan-first"],
         ["go", "Go ahead: the racers’ deposits show the demand is there", "Demand was never the doubt. The margin was, and the test showed it is not there."]],
       deciding: ["c3"],
       reason: "The margin was the condition least likely to hold, and the test showed it does not: the move fails as it stands. Leo drops it, or changes it so it no longer needs that margin, and turns to the next move."
@@ -188,7 +188,7 @@
       options: [
         ["plan", "Write the five-year plan now: the hardest test passed", "One condition still rests on talk; a plan now would rest on it too.", "plan-first"],
         ["teachers", "Test the next least likely condition: quote the three teachers $40 and see who books", true],
-        ["choose", "Choose the move now: people came", "People coming was one condition. Whether teachers would pay $40 is still untested."]],
+        ["choose", "Choose the move now and start the classes: 25 people came to a quiet street at 7 p.m.", "People coming was one condition. Whether teachers would pay $40 is still untested."]],
       deciding: ["c4"],
       reason: "The test held, so the move survives so far. The teachers paying $40 rests only on their asking, so it is now the least likely to hold: test it next, then choose."
     }),

@@ -88,7 +88,7 @@
           traps: [{ slip: "counted-wrong-group", value: 38.1, then: "That is the share that closed. Count the ones still open over all that opened." }] },
         { id: "start", kind: "choose", prompt: "Where should Mark’s forecast for the new gym start?", shuffle: true, options: [
           { id: "table", text: "Near 61.9%, the share of others like it still open, moved only for a real difference", ok: true },
-          { id: "plan", text: "Near 100%, as the plan says: Mark knows this business better than any table does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and 38.1% of them closed within three years. Start from how they did." },
+          { id: "plan", text: "Near 100%, as the plan says: Mark knows this business better than any table of other gyms does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and 38.1% of them closed within three years. Start from how they did." },
           { id: "best", text: "Near 100%, like the one gym in town that Mark knows did well", slip: "surface-analogy", then: "One success that looks alike says little; the table shows how many like it did. Start from the share." }] }],
       steps: [
         { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "About 9 of 14, 10 of 16, 7 of 12: each year more than half, roughly six in ten.", ask: "est" },
@@ -183,7 +183,7 @@
       records: [
         ["alike", "The 120 bike shops that opened in the state in five years, and how many are still open", "alike"],
         ["friends", "The two bike shops Leo’s friends opened, both still open", "few"],
-        ["cars", "The 300 car dealers that opened in the state in five years", "other"]],
+        ["cars", "The 300 car dealers that opened in the state in the same five years, and how many of them are still open", "other"]],
       reason: "The forecast starts from many ventures alike in what makes them work or fail: the state’s 120 new bike shops. Two friends’ shops are too few to say how most go, and car dealers live or die for other reasons."
     }),
     adjust({
@@ -196,7 +196,7 @@
       options: [
         ["move", "Above 62%, but well short of certain: 150 paid deposits are a fact the others did not have", "move"],
         ["stay", "At 62% exactly: only the record counts", "stay"],
-        ["plan", "Near 100%, as the plan says", "plan"]],
+        ["plan", "Near 100%, as the plan says: Mark knows gyms better than anyone, and 150 people have already paid", "plan"]],
       reason: "The record starts it at 62%. Money paid by 150 people is a real difference, so the forecast moves up from there, but not to a certainty: Mark being sure is what every owner in the record had."
     }),
 
@@ -245,8 +245,8 @@
       id: "k12-record", from: "Sam’s page of numbers for a second diner", detail: "Written in May",
       lines: [["c1", "A second diner by the highway, open from 5 a.m. for drivers and shift workers."]],
       records: [
-        ["alike", "The 85 diners and small breakfast places that opened in the state in five years, and how many are still open", "alike"],
-        ["hotels", "The 40 highway motels that opened in the state in five years", "other"],
+        ["alike", "The 85 diners and breakfast places opened in the state in five years, and how many still are", "alike"],
+        ["hotels", "The 40 highway motels that opened in the state in five years, which serve the same drivers at the same exits", "other"],
         ["uncle", "Sam’s uncle’s diner, open for thirty years", "few"]],
       reason: "The forecast starts from many ventures alike in what decides it: the state’s new diners and breakfast places. One uncle’s diner is a single case, and motels win or fail for other reasons."
     }),
