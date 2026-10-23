@@ -68,6 +68,12 @@ FC.subject('strategy', {
       { id: "cost", text: "A lower cost than rivals have" },
       { id: "none", text: "Neither: it gives nothing a rival lacks" }
     ],
+    // lesson 8: what stops a rival getting the same (research ST9: rare and hard to copy, no ready substitute; ST3: fit)
+    barrier: [
+      { id: "only-us", text: "Only we have it, and a rival cannot get or make one" },
+      { id: "fit", text: "It rests on many activities that fit together: a rival would have to copy them all" },
+      { id: "nothing", text: "Nothing: a rival can buy it, copy it, or get the same result another way" }
+    ],
     // lesson 10: the six ways a plan fails to choose (research ST10)
     trap: [
       { id: "doall", text: "Do it all: everything is a priority" },
@@ -103,6 +109,7 @@ FC.subject('strategy', {
       { id: "loser-counted", text: "took a losing line off the total that shares are counted from" },
       { id: "growth-for-growth", text: "grew for the sake of growing" },
       { id: "serve-everyone", text: "tried to serve everyone, or to copy a rival while keeping your own way" },
+      { id: "copyable-as-lasting", text: "took something a rival can buy or copy for an advantage that lasts" },
       { id: "missed-tradeoff", text: "took a real choice of what not to do for a straddle" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
       { id: "rival-ignored", text: "forgot that rivals will answer" },
