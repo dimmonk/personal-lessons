@@ -60,7 +60,7 @@ A written note: "Luis’s plan for his landscaping crew", Written in the fall.
 > **So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer.**
 > Buy two plows for the trucks we already have.
 > Sell one contract that covers mowing in summer and snow in winter.
-> Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again.
+> Pay the crew a wage all year round, because the snow work now fills their winter weeks.
 
 Help on screen: the words that decide it are marked.
 
@@ -71,7 +71,7 @@ Help on screen: the words that decide it are marked.
 - "So we keep the crews busy all year: snow removal for the same homes and offices we mow for in summer." — if tapped: note: That is the approach to the challenge.
 - "Buy two plows for the trucks we already have." — if tapped: note: That is a step to take, not what is in the way.
 - "Sell one contract that covers mowing in summer and snow in winter." — if tapped: note: That is a step to take, not what is in the way.
-- "Pay the crew a wage all year round, because a crew paid through the winter is still ours in April and does not need training again." — if tapped: note: That is a step to take, not what is in the way.
+- "Pay the crew a wage all year round, because the snow work now fills their winter weeks." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
@@ -177,7 +177,7 @@ A written note: "Ray’s plan for his plumbing business", Written in the spring.
 > **We lose about one job in four because we cannot reach emergency calls the same day.**
 > **Start selling water heaters online.**
 > Sponsor the high school football team.
-> Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022.
+> Raise prices 5%, because every other plumber in town already charges more than we do.
 
 Help on screen: the words that decide it are marked.
 
@@ -187,7 +187,7 @@ Help on screen: the words that decide it are marked.
 - "We lose about one job in four because we cannot reach emergency calls the same day." (right)
 - "Start selling water heaters online." — if tapped: note: That is a step to take, not what is in the way.
 - "Sponsor the high school football team." — if tapped: note: That is a step to take, not what is in the way.
-- "Raise prices 5%, because the parts we buy cost more this year and we have not raised our prices since 2022." — if tapped: note: That is a step to take, not what is in the way.
+- "Raise prices 5%, because every other plumber in town already charges more than we do." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.
 
 **What is this plan?**
@@ -420,14 +420,14 @@ After the answer: the deciding words are marked. Reason: Four steps, and no line
 A written note: "Mike’s plan for his car wash", Written in April.
 
 > Add a coffee stand by the exit.
-> Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain.
+> Buy new brushes, because the maker sells them at a third off in April.
 > Start a TikTok page.
 > Rainy weeks bring no cars, but full wages.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Add a coffee stand by the exit." — if tapped: note: That is a step to take, not what is in the way.
-- "Buy new brushes, because the old ones leave streaks on dark cars and customers have started to complain." — if tapped: note: That is a step to take, not what is in the way.
+- "Buy new brushes, because the maker sells them at a third off in April." — if tapped: note: That is a step to take, not what is in the way.
 - "Start a TikTok page." — if tapped: note: That is a step to take, not what is in the way.
 - "Rainy weeks bring no cars, but full wages." (right)
 - A button: "No line says what is in the way" — if chosen: One of the lines is the answer: it is marked above.

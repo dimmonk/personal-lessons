@@ -72,7 +72,7 @@ Help on screen: the words that decide it are marked.
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Hire tutors who have taught or graded these exams, and pay them more (right)
-- Keep cheap tutors busy with reading and science sessions too — if chosen: That serves another kind of customer, which pulls against the position.
+- Keep the cheapest tutors, and add a second practice exam each term — if chosen: A second practice exam serves the exams, but the cheap tutors who go over it still do not know them.
 - Hire top math graduates at the lowest rate, whatever their exam experience — if chosen: Strong math is not the same as knowing these exams, which is what parents pay for and what the past papers and reports lean on.
 
 After the answer: the deciding words are marked. Reason: Parents pay for tutors who know the exams, and the past papers, reports and practice exam all lean on such tutors. Hiring the cheapest tutor of any subject pulls against that; tutors who have taught or graded these exams fit.
@@ -100,9 +100,9 @@ Help on screen: the words that decide it are marked.
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
-- Pay each groomer by the day (right)
-- Add a second van for quick wash-and-go jobs — if chosen: That serves another kind of customer, which pulls against the position.
-- Keep pay by the dog, and fit out a quiet room at a shop for the most nervous dogs — if chosen: A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too.
+- Pay each groomer by the day, so nobody gains by rushing an old or nervous dog (right)
+- Keep pay by the dog, as shops do, at a higher rate — if chosen: That is the trade’s usual way, done harder; it pulls against the position just as before.
+- Keep pay by the dog, and add a quiet room at a shop for the most nervous dogs — if chosen: A quiet room brings the dog to a shop, which the home visits exist to avoid; pay by the day helps the home visits and the same groomer too.
 
 After the answer: the deciding words are marked. Reason: Calm grooming needs time, and the home visits, the first meeting and the same groomer all serve it. Pay by the dog pushes groomers to hurry; pay by the day fits.
 
@@ -186,7 +186,7 @@ A written note: "How Leo’s bike shop runs it: the list of what we do", This ye
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Stock the parts and wheels racers want, fitted by the mechanics (right)
-- Use the floor for kids’ bikes, which sell all year — if chosen: That serves another kind of customer, which pulls against the position.
+- Sell last year’s bikes at deeper discounts, as big stores do — if chosen: That is the trade’s usual way, done harder; it pulls against the position just as before.
 - Rent the floor to someone else’s cafe — if chosen: The rent helps the books, but it serves none of the fitting and tuning racers pay for; parts and wheels the mechanics fit help both.
 
 After the answer: the deciding words are marked. Reason: Racers pay for fitting and tuning, and the fitting room, the racing mechanics and the race-weekend repairs serve them. A floor of last year’s bikes serves shoppers after a bargain; parts and wheels racers want fit.
@@ -233,8 +233,8 @@ A written note: "How Omar’s print shop runs it: the list of what we do", This 
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
-- Print each job as soon as it comes in (right)
-- Take walk-in jobs to fill the evening batch — if chosen: That serves another kind of customer, which pulls against the position.
+- Print each firm’s job as soon as it comes in, whatever the hour (right)
+- Keep the evening batch, and add a second driver — if chosen: A second driver cannot help papers that wait for the evening batch; printing each job as it comes in helps the free press and the driver too.
 - Run two batches a day, at noon and in the evening — if chosen: Two batches still make a rush order wait for the next one; the firms pay for papers the same day.
 
 After the answer: the deciding words are marked. Reason: Firms pay for papers the same day, and the free press, the driver and the direct line serve that. One evening batch is cheap but makes papers wait; printing each job as it comes in fits.
@@ -372,8 +372,8 @@ A written note: "How Carlos’s taco truck runs it: the list of what we do", Thi
 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
-- Make five fillings ahead, so tacos are filled in seconds (right)
-- Add salads and wraps for the office workers nearby — if chosen: That serves another kind of customer, which pulls against the position.
+- Make five fillings ahead each morning, so tacos are filled in seconds (right)
+- Keep twelve toppings made to order, with a second cook — if chosen: Two cooks still make each taco to order from twelve choices, and pay a second wage; five fillings made ahead are quicker and help the text orders.
 - Keep twelve toppings, and have workers text the order ahead — if chosen: Text orders help, but twelve toppings made to order still slow the noon line; five fillings made ahead help the text orders and the exact prices too.
 
 After the answer: the deciding words are marked. Reason: Workers have a short break, and parking at the factory, the text orders and the exact-change prices all save time. Twelve toppings made to order slow every taco; five fillings made ahead fit.
@@ -400,7 +400,7 @@ A written note: "How Ben’s repair shop runs it: the list of what we do", This 
 **What would fit the position instead?**
 (the options come in an order that depends on the seed of the question)
 - Keep parts for older models, from salvage yards and old dealer stock (right)
-- Stock this year’s parts and add an oil-change lane for new cars — if chosen: That serves another kind of customer, which pulls against the position.
+- Keep this year’s parts, and hire a third mechanic trained on older engines — if chosen: A third mechanic still has no parts to fit; parts for older models help the mechanics and the manuals.
 - Stock this year’s parts, and order them faster than the dealers — if chosen: That is the trade’s usual way, done harder; it pulls against the position just as before.
 
 After the answer: the deciding words are marked. Reason: Owners of older cars need parts and know-how for them, and the trained mechanics, the plain advice and the old manuals serve that. Parts for this year’s models do not; parts for older models fit.

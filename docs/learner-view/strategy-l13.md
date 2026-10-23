@@ -91,8 +91,8 @@ Help on screen: the words that decide it are marked.
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
 - Hire the firm for $120,000, so the app is polished and ready for every student from the first day — if chosen: That risks $120,000 on students nobody has seen use it, forty times what Kim can lose.
-- Have the former student build a first version, within $3,000, and watch who uses it (right)
-- Pay for a forecast of how many students would use it, then decide — if chosen: No forecast can see what students do with an app they have never had; a first version shows it.
+- Have the former student build a first version for a share of sales, and watch who uses it (right)
+- Pay $2,000 for a forecast of how many students would use it, then decide — if chosen: It fits what Kim can lose, but no forecast can see what students do with an app they have never had; a first version shows it.
 
 After the answer: the deciding words are marked. Reason: Nobody can see yet whether students here would use it. Kim starts from her papers and a partner paid from sales, inside the $3,000 she can lose.
 
@@ -162,7 +162,7 @@ A written note: "Carlos’s idea, with its numbers", Written in October.
 
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
-- Try it with a folding table outside that factory for a summer first — if chosen: People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season.
+- Try it with a folding table outside that factory for a summer first, about $3,000 — if chosen: People already buy lunch outside factories, and the record says how trucks go; a summer at a table adds little and costs a season.
 - Start from how the 30 trucks did, and buy the used truck: the whole $40,000 is within what he can lose (right)
 - Go by his own forecast: his tacos are better than most — if chosen: Most owners in the record thought their food was better. Start from how the 30 did.
 
@@ -185,7 +185,7 @@ A written note: "Leo’s idea, with its numbers", Written in November.
 (the options come in an order that depends on the seed of the question)
 - Fit out the full room from savings: that way nothing is borrowed — if chosen: Savings lost are still lost: $60,000 is far more than the $2,500 Leo can lose.
 - Go by the city rooms: they do well, so racers here will come — if chosen: In the cities racers already pay for rooms; nobody knows whether racers here would. That is the thing to find out.
-- Put the lent trainers in the empty fitting room, within $2,500, and see who pays (right)
+- Put the lent trainers in the empty fitting room, and see who pays (right)
 
 After the answer: the deciding words are marked. Reason: Racers here have never been offered such a room, so nobody can see who would pay. Leo starts from the empty room and lent trainers, inside the $2,500 he can lose.
 
@@ -315,9 +315,9 @@ A written note: "Nina’s idea, with its numbers", Written in May.
 
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
-- Show new books live with the camera she has, tell the society’s members, and stay within $1,500 (right)
+- Show new books live with the camera she has, and let the society tell its members (right)
 - Build the studio and website for $50,000 first, so the club looks right to collectors from the very first show — if chosen: That risks $50,000 on collectors nobody has seen pay, far more than Nina can lose.
-- Hire a firm to forecast how many collectors would join, then decide — if chosen: No forecast can see what collectors do with an offer they have never had; a first month of shows will.
+- Pay a firm $1,200 to forecast how many collectors would join, then decide — if chosen: It fits what Nina can lose, but no forecast can see what collectors do with an offer they have never had; a first month of shows will.
 
 After the answer: the deciding words are marked. Reason: Collectors have never been offered this, so nobody can see who would pay. Nina starts from her camera and the society as a partner, inside the $1,500 she can lose.
 
@@ -335,7 +335,7 @@ A written note: "Omar’s idea, with its numbers", Written in June.
 
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
-- Run a print stall at a market there for a summer first, to see whether people buy printing — if chosen: People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales.
+- Run a print stall at a market there for a summer first, about $8,000, to see whether people buy printing — if chosen: People already buy printing, and the record says how new shops go; the whole $60,000 is within what Omar can lose, so a summer stall adds little and costs a season of the shop’s sales.
 - Go by his own forecast: his shop runs better than most — if chosen: Most owners in the record thought so too. Start from how the others did.
 - Start from the state’s record and open the shop: the whole $60,000 is within what he can lose (right)
 
@@ -357,7 +357,7 @@ A written note: "Carlos’s idea, with its numbers", Written in July.
 **What should the owner do?**
 (the options come in an order that depends on the seed of the question)
 - Borrow $100,000 for the kitchen: meal kits sell everywhere — if chosen: Other kits selling does not show that anyone would pay for these, and $100,000 is far more than Carlos can lose.
-- Make kits in the half-empty freezer, ship them with the friend’s van, and stay within $2,000 (right)
+- Make kits in the half-empty freezer, ship them with the friend’s van, and see who orders (right)
 - Poll the workers’ families and old friends on whether they like the idea, and build the kitchen if most say yes — if chosen: Families saying they like it cost them nothing. Only selling some boxes shows who would pay.
 
 After the answer: the deciding words are marked. Reason: Nobody has offered these tacos by mail, so nobody can see who would pay. Carlos starts from his recipes, freezer and a partner’s van, inside the $2,000 he can lose.

@@ -212,13 +212,13 @@ A written note: "Ben’s garage: the plan for the year", A draft.
 Help on screen: the words that decide it are marked.
 
 **Does this plan make a real choice? If not, what is wrong with it?**
-- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
+- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value: it chooses.
 - Nothing: it chooses where to play and a way to win that fits (right)
 
 After the answer: the deciding words are marked. Reason: The plan names its customers, owners of old cars, and a way to win that they value, mechanics who know those cars and the parts for them, and it drops oil changes: it chooses.
@@ -416,19 +416,18 @@ A written note: "Paula’s tailoring shop: the plan for the year", A draft.
 
 > Brides and grooms in the county who need their wedding clothes altered.
 > Fittings at their home in the evening, and every job finished within ten days, are why they will come to us.
-> Everyday hems and zips stop, so the evenings stay free.
 
 **Does this plan make a real choice? If not, what is wrong with it?**
-- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
+- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value: it chooses.
 - Nothing: it chooses where to play and a way to win that fits (right)
 
-After the answer: the deciding words are marked. Reason: The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a fixed finish date, and drops everyday jobs: it chooses.
+After the answer: the deciding words are marked. Reason: The plan names its customers, couples with wedding clothes, and a way to win that they value, fittings at home and a fixed finish date: it chooses, even without naming what it stops.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -526,7 +525,7 @@ After the answer: the deciding words are marked. Reason: Plan 1 chooses small re
 A written note: "Dan’s pool-cleaning firm: plan 1 for the year", A draft.
 
 > Owners of holiday homes who are away for months at a time.
-> We win them with the lowest price per visit, booked by phone each time the owner wants one.
+> We win them with the lowest price per visit; the owner must be home, or phone us, to let each visit happen.
 
 A written note: "Dan’s pool-cleaning firm: plan 2 for the year", A draft.
 
@@ -546,7 +545,7 @@ A written note: "Dan’s pool-cleaning firm: plan 2 for the year", A draft.
 - Copycat: the plan every business in the trade has — if chosen: It is not just the trade’s usual way. This plan does choose its customers, but its way to win is not what those customers value: the two do not fit.
 - No trap, but the way to win does not fit those customers (right)
 
-After the answer: the deciding words are marked. Reason: Both plans play for owners who are away for months. Plan 2 looks after the pool while they are gone; Plan 1 needs a phone call for each visit from owners who are not there: the two parts do not fit.
+After the answer: the deciding words are marked. Reason: Both plans play for owners who are away for months. Plan 2 looks after the pool while they are gone; Plan 1 needs the owner home, or on the phone, for every visit, from owners who are away: the two parts do not fit.
 
 #### Check question 19
 
@@ -554,6 +553,7 @@ A written note: "Nina’s bookshop: the plan for the year", A draft.
 
 > Our customers: children, students, retirees, collectors, tourists and book clubs, every one of them.
 > There is a shelf for each, so nobody leaves without a book.
+> We close the reading corner to make room for more shelves.
 
 **Does this plan make a real choice? If not, what is wrong with it?**
 - Do it all: everything is a priority — if chosen: It does not pile up priorities. This plan reaches for every kind of customer at once: something for everyone.
@@ -565,7 +565,7 @@ A written note: "Nina’s bookshop: the plan for the year", A draft.
 - No trap, but the way to win does not fit those customers — if chosen: A misfit chooses its customers and wins with the wrong thing; this plan goes wrong before that. This plan reaches for every kind of customer at once: something for everyone.
 - Nothing: it chooses where to play and a way to win that fits — if chosen: This plan reaches for every kind of customer at once: something for everyone.
 
-After the answer: the deciding words are marked. Reason: The plan names every kind of reader at once and no reason any of them would pick Nina over where they buy now: something for everyone.
+After the answer: the deciding words are marked. Reason: The plan names every kind of reader at once and no reason any of them would pick Nina over where they buy now: something for everyone. Closing the reading corner drops a corner, not a kind of customer.
 
 #### Check question 20
 
@@ -576,13 +576,13 @@ A written note: "Kate’s pet-sitting service: the plan for the year", A draft.
 > We turn down dog walking, which would take the sitters’ mornings.
 
 **Does this plan make a real choice? If not, what is wrong with it?**
-- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
-- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value, and says what it drops: it chooses.
+- Do it all: everything is a priority — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Head-on: taking on the strongest rival first, at its own game — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Many fronts: fighting several rivals at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Something for everyone: every kind of customer at once — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- A dream: a mission that never says where or how — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- Copycat: the plan every business in the trade has — if chosen: This plan names its customers and a way to win that they value: it chooses.
+- No trap, but the way to win does not fit those customers — if chosen: This plan names its customers and a way to win that they value: it chooses.
 - Nothing: it chooses where to play and a way to win that fits (right)
 
 After the answer: the deciding words are marked. Reason: The plan names its customers, cat owners who travel, and a way to win that they value, the same sitter and a photo each visit, and drops dog walking: it chooses.
