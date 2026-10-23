@@ -1,6 +1,6 @@
 # IT Help Desk: The mock exam
 
-Revision 1, draft (the screen carries the draft line). Part: The mock exam. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 1, live. Part: The mock exam. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -12,7 +12,7 @@ Here you see how the real exams run, warm up on four mixed questions, and then s
 The A+ certificate takes two exams. Each has up to 90 questions and lasts 90 minutes. Most questions are multiple choice, and a few are performance-based: you do a task on a simulated computer or network, such as fixing a setting on a screen. The first exam is graded out of 900 and needs 675 to pass. The second needs 700. Those are scaled scores from 100 to 900, not a share of the questions you got right.
 Each exam is split into domains, and each domain has a weight, the share of the exam it makes up. The first exam: mobile devices 13 percent, networking 23, hardware 25, virtualization and cloud 11, hardware and network troubleshooting 28. The second: operating systems 28, security 28, software troubleshooting 23, operational procedures 21. How a help desk works a ticket counts in the last of these.
 The mock keeps those weights in 40 questions: mobile devices 3, networking 5, hardware 5, virtualization and cloud 2, hardware and network troubleshooting 5, operating systems 6, security 5, software troubleshooting 5, operational procedures 4. The answers show only at the end, as in the real exam. You need 32 right, 80 percent. That mark is our own and sits above the real ones, because our questions are easier to guess than the real ones.
-Two limits. The mock has no performance-based tasks. And its questions are ones you met along the way, so a good score shows what you remember, not how the real exam will word things. If you miss the pass mark, it comes back in 28 days with questions you have not yet seen coming first.
+Two limits. The mock has no performance-based tasks. And its questions are ones you met along the way, so a good score shows what you remember, not how the real exam will word things. The mock comes back once, 28 days later, whether or not you passed, with questions you have not yet seen coming first.
 
 ## Step 2: Questions
 
@@ -87,7 +87,7 @@ Then a screen: you can stop here, your place is kept.
 To pass:
 - At least 32 right
 
-The questions are drawn at random, the same run drawing the same, exactly so many from each group of topics: 3 of the topics mobile-parts, mobile-ports, mobile-connect; 5 of the topics addressing, net-devices, net-types, net-tools, servers, ports-web, ports-mail, ports-files, ports-admin, wifi, short-range; 5 of the topics drives, raid, net-cables, fiber, peripheral, connectors, display, power, board, cpu, firmware, memory, cooling, print-care; 2 of the topics virtual, cloud; 5 of the topics drive-fix, boot, print-path, online, wifi-fix, mobile-hw-fix; 6 of the topics win-tools, win-consoles, win-settings, net-settings, net-commands, cmd-net, cmd-disk, cmd-files, cmd-admin, mac, mac-care, linux-files, linux-admin, linux-net, editions, filesystems, install-types, app-reqs, cloud-tools; 5 of the topics access-physical, access-logical, win-security, ad-policy, hardening, wifi-security, soho, mobile-secure, malware-kinds, attacks, malware-removal, destruction, browser-security; 5 of the topics win-boot-fix, win-run-fix, mobile-app-fix, mobile-sec-fix; 4 of the topics kind, story, changed, known, half, one, finish, upset, change, backup, safety, evidence, policy, scripts, remote, ai; what no earlier run of this check asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:
+The questions are drawn at random, the same run drawing the same, exactly so many from each group of topics: 3 of the topics mobile-parts, mobile-ports, mobile-connect; 5 of the topics addressing, net-devices, net-types, net-tools, servers, ports-web, ports-mail, ports-files, ports-admin, wifi, short-range; 5 of the topics drives, raid, net-cables, fiber, peripheral, connectors, display, power, board, cpu, firmware, memory, cooling, print-care; 2 of the topics virtual, cloud; 5 of the topics drive-fix, boot, print-path, online, wifi-fix, mobile-hw-fix, display-fix; 6 of the topics win-tools, win-consoles, win-settings, net-settings, net-commands, cmd-net, cmd-disk, cmd-files, cmd-admin, mac, mac-care, linux-files, linux-admin, linux-net, editions, filesystems, install-types, app-reqs, cloud-tools; 5 of the topics access-physical, access-logical, win-security, ad-policy, hardening, wifi-security, soho, mobile-secure, malware-kinds, attacks, malware-removal, destruction, browser-security; 5 of the topics win-boot-fix, win-run-fix, mobile-app-fix, mobile-sec-fix; 4 of the topics kind, story, changed, known, half, one, finish, upset, change, backup, safety, evidence, policy, scripts, remote, ai; what no earlier run of this check asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:
 
 #### Question in the draw: l18-p-ram
 
@@ -3372,35 +3372,6 @@ A chat, with its history: "Idris, Sales", Chat with the help desk.
 
 After the answer: the deciding words are marked. Reason: Apple’s small reversible 8-pin plug on phones before USB-C is Lightning.
 
-#### Question in the draw: l12-w-room
-
-A chat, with its history: "Dina, Training", Chat with the help desk.
-
-> (Dina, Training, at the left) The projector in room 4 says No signal. I plugged my laptop in with the HDMI cable on the table and nothing shows. I start in ten minutes.
-
-A plain table, "What is in room 4":
-
-> Part  |  What it has  (the column heads)
-> Projector inputs  |  HDMI 1, HDMI 2, VGA
-> Cable on the table  |  An HDMI cable, plugged into HDMI 2
-> Dina’s laptop  |  Two USB-C ports and no HDMI port. The left port is marked with a small screen symbol; the right port has no mark. An adapter from USB-C to HDMI is in the right port.
-
-**You press Source and the projector is already on HDMI 2. You swap in an HDMI cable you know works. It still says No signal. What does that show?**
-(the options come in an order that depends on the seed of the question)
-- The cable is not the cause of the No signal. (right)
-- The input source is the cause. — if chosen: Source showed HDMI 2, the input the cable is in, so the input was already cleared.
-- The projector is the broken part. — if chosen: Nothing has been tested on the projector itself. A second cable that gives the same result only clears the cable.
-- The laptop is the broken part. — if chosen: Nothing has been tested on the laptop yet. The swap cleared the cable and nothing else.
-
-After the answer: the deciding words are marked. Reason: The projector has an HDMI input and the cable plugs into it, so the setup can work. Source showed the right input, and a cable known to work gave the same No signal, so the input and the cable were cleared. The last thing left was the adapter’s USB-C port, and only one of the two carries video.
-The working:
-- Write down every cause along the signal path that fits “No signal”.: The projector listens to a different input than the one the cable is in; the cable; the adapter, or a laptop port that does not carry video; the laptop is not sending a picture.
-- Check that the parts can do the job at all.: The adapter turns USB-C into HDMI, and an HDMI cable carries picture and sound. The projector has an HDMI input. The parts match. One thing is unknown: whether the right-hand USB-C port carries video, because only the left one is marked.
-- Run the cheapest cut first.: Press Source on the remote: one button. It shows HDMI 2, the input the cable is in. The input is ruled out.
-- Name your favorite cause and test it with a part known to work.: The cable: the last one in this room was bad. Swap in a cable known to work. It costs a minute.
-- Test the next link, one change.: Move the adapter to the left USB-C port, the one with the screen symbol. The picture appears. The right port was for charging and data only.
-- Look at the result.: The first guess was ruled out at the cost of a minute. The cheapest check came first and ruled out the input; the fault was the port, found by moving one thing.
-
 #### Question in the draw: l12-s-photo
 
 A chat, with its history: "Mira, Marketing", Chat with the help desk.
@@ -3414,114 +3385,6 @@ A chat, with its history: "Mira, Marketing", Chat with the help desk.
 - VA, the one with the deepest blacks — if chosen: A VA panel has the deepest blacks of the three, but its colors shift from the side more than IPS.
 
 After the answer: the deciding words are marked. Reason: The need is true color from the side. IPS is the LCD panel made for that. TN is the fastest and cheapest, VA has the deepest blacks.
-
-#### Question in the draw: l12-d-call
-
-Hank in Sales calls the help desk about the projector in room 6. You answer.
-
-**Hank calls about the projector. What do you say?**
-- An incoming call from "Hank, Sales" (Incoming call · 9:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes." [pushes: They want the biggest step before anything was tried.]
-  - reply "I will put in an order for a new projector today.": the call ends (not this one): Nothing has been checked yet. An order costs money and days, and the first check costs one button. [slip: replaced a part before the cheap check]
-  - reply "Swap the cable, then call me back.": the call ends (not this one): A cable swap is cheap but is not the cheapest cut, and it leaves Hank alone with a guess. The Source button is faster and names the link. [slip: ran a test that does not split what works from what does not]
-  - reply "Press the Source button on the projector’s remote and read me the input it shows.": goes on to turn 2, where the pressure comes back
-- turn 2, the other side says: "It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken." [pushes: They still want it replaced.]
-  - reply "It cannot be broken if the input menu comes up.": the call ends (not this one): The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give them a next step instead. [slip: argued with the user or brushed off what they said]
-  - reply "Twice in a week is annoying, and I will note it. The projector is listening to VGA while the cable is in HDMI 1. Choose HDMI 1 and tell me what you see.": the call ends (right): The projector listens to one input and it was on the wrong one; choosing the right one costs a button. Their worry is heard and noted, and the plan stays with the cheap check.
-  - reply "Understood, I will order one now.": the call ends (not this one): The projector was on the wrong input. Ordering a new one hides a one-button fix and lets the same mistake happen again. [slip: replaced a part before the cheap check]
-- After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
-
-After the answer: Reason: No signal sits on the input first. The cheapest cut is to read which input the projector listens to, and when the user pushes for a replacement, you keep to the check, say you heard the complaint, and give the next step.
-
-#### Question in the draw: l12-d-dark
-
-A chat, with its history: "Aiden, Sales", Chat with the help desk.
-
-> (Aiden, Sales, at the left) My laptop screen is black, but if I hold a flashlight close to it I can just see my desktop.
-
-**What is the likely cause?**
-(the options come in an order that depends on the seed of the question)
-- The backlight or its inverter, the light behind the picture, has failed (right)
-- Dead pixels, a patch of dots that no longer light — if chosen: Dead pixels are tiny dots. The whole screen is dark here.
-- The wrong input source is chosen for the screen — if chosen: A laptop’s own screen has no input to choose, and the flashlight shows a picture is being made.
-- Burn-in from an old image left on too long — if chosen: Burn-in leaves a faint ghost of an old image on a lit screen. The screen here is not lit.
-
-After the answer: the deciding words are marked. Reason: The flashlight shows the desktop is on the panel, so the computer is sending a picture. What is missing is the light behind it: the backlight or what powers it. On older LCD screens that power part is the inverter, a small board that makes the high voltage a tube lamp needs.
-
-#### Question in the draw: l12-d-tintmon
-
-A chat, with its history: "Beatrix, Design", Chat with the help desk.
-
-> (Beatrix, Design, at the left) My second monitor shows a pink tint all over. I reseated the cable at both ends and it is still pink.
-
-A plain table, "What you tried":
-
-> Test  |  Result  (the column heads)
-> A cable known to work, same computer  |  Still pink
-> The same monitor on a different computer  |  Still pink
-> The monitor’s own color settings reset to the factory default  |  Still pink
-> A different monitor on Beatrix’s computer  |  Normal colors
-
-**What do you do?**
-(the options come in an order that depends on the seed of the question)
-- Replace the monitor, or send it for repair (right)
-- Try a third cable — if chosen: Two cables are already ruled out. A third repeats a test that has answered.
-- Reinstall the graphics driver on Beatrix’s computer — if chosen: A different monitor looks normal on their computer, and this monitor is pink on another computer. The computer is cleared.
-- Reseat the cable and swap the computer at the same time — if chosen: Two changes together would not say which one matters, and the table already points at the monitor.
-
-After the answer: the deciding words are marked. Reason: A tint is usually the cable, so the cable comes first. Here the tests already cleared the cable and the computer: the pink follows the monitor. When the earlier tests point at a part, replacing it is right.
-
-#### Question in the draw: l12-d-lamp
-
-A chat, with its history: "Caspian, Training", Chat with the help desk.
-
-> (Caspian, Training, at the left) The room 3 projector powers on and the fan runs, but there is no picture, not even the projector’s menu. The menu worked fine last week.
-
-A plain table, "What the projector shows":
-
-> Check  |  Result  (the column heads)
-> Lamp warning light on the projector  |  On
-> Lamp hours  |  5,040 of 5,000
-> The projector’s own menu (not the laptop’s picture)  |  Dark
-
-**What do you do?**
-(the options come in an order that depends on the seed of the question)
-- Replace the projector lamp (right)
-- Press Source until it finds an input — if chosen: The input does not matter: the projector’s own menu is dark too.
-- Reseat the HDMI cable at both ends — if chosen: The cable carries the picture to the projector. The menu comes from inside the projector and is dark as well.
-- Wait ten minutes for it to cool and try again — if chosen: Nothing points at overheating, and the hours are used up. Waiting gives the same result.
-
-After the answer: the deciding words are marked. Reason: The fan runs and the menu is dark, so the cable and the input are not in question. The lamp warning light and the hours say the lamp is spent. Here the replacement is the right first step.
-
-#### Question in the draw: l12-d-pixel
-
-A chat, with its history: "Delphine, Purchasing", Chat with the help desk.
-
-> (Delphine, Purchasing, at the left) There is a tiny dot near the middle of my new monitor that stays bright green. It stays there on every color and window.
-
-**What is it?**
-(the options come in an order that depends on the seed of the question)
-- A stuck pixel in the panel (right)
-- Burn-in from a still image — if chosen: Burn-in is a faint ghost of an old image that was on the screen a long time, not one bright dot.
-- A loose cable at the back — if chosen: A loose cable spoils the whole picture, with flicker or a tint, not one dot.
-- A resolution that is too high — if chosen: A wrong resolution makes the picture fuzzy or the wrong size, not one fixed dot.
-
-After the answer: the deciding words are marked. Reason: A single dot that does not change with the picture is the panel’s own: a dead pixel stays dark and a stuck pixel stays one color. A cable or a setting would change the whole picture.
-
-#### Question in the draw: l12-d-flash
-
-A chat, with its history: "Emeric, Finance", Chat with the help desk.
-
-> (Emeric, Finance, at the left) My monitor flashes on and off every few seconds. Yesterday I changed its refresh rate from 60 Hz to 144 Hz to see if it looked smoother.
-
-**What do you do first?**
-(the options come in an order that depends on the seed of the question)
-- Put the refresh rate back to 60 Hz, what it was (right)
-- Reseat the cable at both ends — if chosen: A cheap check, but the flashing began right after the setting change, so it will probably not split anything.
-- Put the refresh rate back and swap the cable — if chosen: Two changes at once: if the flashing stops, nobody knows which one fixed it.
-- Order a new monitor because it keeps flashing on and off — if chosen: The flashing began with a settings change. Undo that first.
-
-After the answer: the deciding words are marked. Reason: The flashing started right after the refresh rate was changed. Refresh rate is how many times a second the screen is redrawn, and one the monitor cannot handle makes it flash. Undo the change before looking at a part.
 
 #### Question in the draw: l12-g-ppi
 
@@ -3537,34 +3400,6 @@ A chat, with its history: "Honor, Records", Chat with the help desk.
 
 After the answer: the deciding words are marked. Reason: Resolution is how many pixels there are. Pixel density is how many fit in an inch. The same 1920 by 1080 on a 13 inch screen is denser, so sharper, than on a 17 inch screen.
 
-#### Question in the draw: l12-g-touch
-
-A chat, with its history: "Ignacio, Field team", Chat with the help desk.
-
-> (Ignacio, Field team, at the left) I dropped my tablet and the glass is cracked. The picture is fine, but nothing happens when I touch the bottom third of the screen.
-
-**What is the likely cause?**
-(the options come in an order that depends on the seed of the question)
-- The digitizer, the touch-sensing layer (right)
-- The backlight behind the glass has failed — if chosen: A failed backlight would darken the screen. The picture is fine.
-- A wrong input source on the tablet — if chosen: A tablet’s own screen has no input source to choose.
-
-After the answer: the deciding words are marked. Reason: The picture is fine, so the display and its light work. Only touch is lost in one area after a drop, which is the digitizer layer that senses touch.
-
-#### Question in the draw: l12-d-dim
-
-A chat, with its history: "Yvette, Training", Chat with the help desk.
-
-> (Yvette, Training, at the left) The room 2 projector picture has been getting dimmer for months. Its menu says: Lamp 4,950 of 5,000 hours.
-
-**What is the likely cause?**
-(the options come in an order that depends on the seed of the question)
-- The lamp is nearly worn out (right)
-- The projector is on the wrong input — if chosen: A wrong input shows No signal, not a dim picture.
-- Burn-in from a still image — if chosen: Burn-in leaves a ghost of an old image, not a dim picture.
-
-After the answer: the deciding words are marked. Reason: The menu shows the lamp at 4,950 of its 5,000 hours, and a slow dimming is what a lamp near the end of its life does.
-
 #### Question in the draw: l12-r-mini
 
 A salesperson says a new monitor has “a backlight made of thousands of tiny LEDs in zones that can dim separately”.
@@ -3576,34 +3411,6 @@ A salesperson says a new monitor has “a backlight made of thousands of tiny LE
 - TN — if chosen: TN is a kind of LCD panel with a fast response. It says nothing about the backlight’s zones.
 
 After the answer: Reason: Mini-LED is an LCD whose backlight is thousands of tiny LEDs in separate zones. An OLED has no backlight at all.
-
-#### Question in the draw: l12-d-trap
-
-A chat, with its history: "Zephyr, Training", Chat with the help desk.
-
-> (Zephyr, Training, at the left) The projector sits on a low cart and points up at the screen. The picture comes out wider at the top than the bottom, like a trapezoid.
-
-**What do you check first?**
-(the options come in an order that depends on the seed of the question)
-- Square the projector, or adjust keystone (right)
-- Replace the lamp with a new one — if chosen: A lamp that is wearing out dims the picture. It does not change its shape.
-- Change the input source on the remote — if chosen: A wrong input shows No signal. The picture here is showing.
-
-After the answer: the deciding words are marked. Reason: A picture wider at the top than the bottom comes from a projector pointing up at an angle. The first check is the angle and the keystone setting, not a part.
-
-#### Question in the draw: l12-r-fuzzy
-
-A chat, with its history: "Amos, Training", Chat with the help desk.
-
-> (Amos, Training, at the left) The projector picture is soft and blurry at the edges of the text. The laptop is set to the projector’s own resolution.
-
-**What do you check?**
-(the options come in an order that depends on the seed of the question)
-- Turn the projector’s focus ring (right)
-- Switch the laptop to a lower resolution — if chosen: The resolution is already native; a lower one would only stretch the picture.
-- Replace the HDMI cable — if chosen: A bad cable gives flicker or a tint, not a soft focus.
-
-After the answer: the deciding words are marked. Reason: Fuzzy has two causes: not native resolution, or focus. The first is cleared, so turn the focus ring.
 
 #### Question in the draw: l12-r-gamut
 
@@ -3619,64 +3426,19 @@ A chat, with its history: "Blythe, Studio", Chat with the help desk.
 
 After the answer: the deciding words are marked. Reason: The range of colors a screen can show is its color gamut. Pixel density is sharpness and refresh rate is how often the picture is redrawn.
 
-#### Question in the draw: l12-r-aspect
+#### Question in the draw: l12-r-refresh
 
-A chat, with its history: "Corin, Training", Chat with the help desk.
+A chat, with its history: "Ysolde, Marketing", Chat with the help desk.
 
-> (Corin, Training, at the left) The picture on the projector looks stretched, like everyone is wide. The projector has the right focus and no shape problem.
+> (Ysolde, Marketing, at the left) Moving windows look jerky on my new monitor next to the smooth one beside it. The cable and resolution are the same. The box says 60 Hz on mine and 144 Hz on the other. What is that number?
 
-**What do you check?**
+**What does the number measure?**
 (the options come in an order that depends on the seed of the question)
-- The aspect ratio and the resolution the laptop sends (right)
-- The lamp hours — if chosen: A tired lamp dims the picture. It does not stretch it.
-- The keystone setting — if chosen: Keystone fixes a trapezoid from an angle, not a stretch.
+- Refresh rate, how many times a second the picture is redrawn (right)
+- Pixel density, how many pixels fit in each inch — if chosen: Pixel density is about sharpness, and it is counted in pixels per inch, not hertz.
+- Color gamut, how wide a range of colors it shows — if chosen: Color gamut is the range of colors. It does not change how smooth motion looks.
 
-After the answer: the deciding words are marked. Reason: A wrong size or stretch is a resolution or aspect ratio mismatch. Aspect ratio is the shape of the picture, wide 16 by 9 or squarer 4 by 3.
-
-#### Question in the draw: l12-k-hot
-
-A chat, with its history: "Jana, Training", Chat with the help desk.
-
-> (Jana, Training, at the left) The room 5 projector shuts off by itself after about 20 minutes, then works after a rest. The fan gets loud before it goes.
-
-**What do you check first?**
-(the options come in an order that depends on the seed of the question)
-- The vents and the dust filter (right)
-- The lamp hours in the menu — if chosen: A cheap look, but a tired lamp dims the picture. It does not shut the projector down.
-- Replace the lamp with a new one — if chosen: Nothing says the lamp is spent, and a spent lamp gives no image rather than a shutdown.
-- The resolution on the laptop — if chosen: Resolution changes the size and sharpness of the picture, not the power.
-
-After the answer: the deciding words are marked. Reason: A projector that shuts off after a while, with a loud fan first, is overheating. Dust and blocked vents are the cheap thing to check.
-
-#### Question in the draw: l12-k-native
-
-A chat, with its history: "Henry, HR", Chat with the help desk.
-
-> (Henry, HR, at the left) My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.
-
-**What do you check first?**
-(the options come in an order that depends on the seed of the question)
-- Switch Windows to native resolution (right)
-- Replace the cable with a brand new one — if chosen: The picture shows, and the setting is plainly wrong. Fix the setting first.
-- Turn the refresh rate down to 30 Hz — if chosen: Refresh rate is how often the picture is redrawn. It does not blur text.
-- Order a new monitor this afternoon — if chosen: Nothing shows the monitor is at fault, and the setting is cheap to fix.
-
-After the answer: the deciding words are marked. Reason: The monitor’s native resolution is 3840 by 2160 and Windows sends 1280 by 720, which the panel stretches. Switch it to native.
-
-#### Question in the draw: l12-k-burn
-
-A chat, with its history: "Lior, Lobby", Chat with the help desk.
-
-> (Lior, Lobby, at the left) Our lobby OLED TV has shown the same schedule board all day for months. Now a faint outline of the board stays on the screen even when it shows a video.
-
-**What is it?**
-(the options come in an order that depends on the seed of the question)
-- Burn-in (right)
-- Dead pixels — if chosen: Dead pixels are single dots. This is an outline of the board.
-- A loose cable — if chosen: A loose cable flickers or tints the whole picture.
-- The wrong input source — if chosen: A wrong input shows No signal.
-
-After the answer: the deciding words are marked. Reason: Months of one static image left an outline in an OLED screen. That is burn-in. A screen saver and changing content help prevent it, and it often cannot be undone.
+After the answer: the deciding words are marked. Reason: Hertz on a monitor is its refresh rate: 144 Hz redraws the picture 144 times a second, 60 Hz only 60, so motion on the 60 Hz screen looks less smooth.
 
 #### Question in the draw: l10-w-shutoff
 
@@ -6786,6 +6548,272 @@ A plain table, "Port check":
 
 After the answer: the deciding words are marked. Reason: A physically damaged port is a hardware fault: cables are ruled out, the lint check is done and the contacts are bent. Repair the port, with the data backed up first. Wireless charging works as a stopgap.
 
+#### Question in the draw: l12-w-room
+
+A chat, with its history: "Dina, Training", Chat with the help desk.
+
+> (Dina, Training, at the left) The projector in room 4 says No signal. I plugged my laptop in with the HDMI cable on the table and nothing shows. I start in ten minutes.
+
+A plain table, "What is in room 4":
+
+> Part  |  What it has  (the column heads)
+> Projector inputs  |  HDMI 1, HDMI 2, VGA
+> Cable on the table  |  An HDMI cable, plugged into HDMI 2
+> Dina’s laptop  |  Two USB-C ports and no HDMI port. The left port is marked with a small screen symbol; the right port has no mark. An adapter from USB-C to HDMI is in the right port.
+
+**You press Source and the projector is already on HDMI 2. You swap in an HDMI cable you know works. It still says No signal. What does that show?**
+(the options come in an order that depends on the seed of the question)
+- The cable is not the cause of the No signal. (right)
+- The input source is the cause. — if chosen: Source showed HDMI 2, the input the cable is in, so the input was already cleared.
+- The projector is the broken part. — if chosen: Nothing has been tested on the projector itself. A second cable that gives the same result only clears the cable.
+- The laptop is the broken part. — if chosen: Nothing has been tested on the laptop yet. The swap cleared the cable and nothing else.
+
+After the answer: the deciding words are marked. Reason: The projector has an HDMI input and the cable plugs into it, so the setup can work. Source showed the right input, and a cable known to work gave the same No signal, so the input and the cable were cleared. The last thing left was the adapter’s USB-C port, and only one of the two carries video.
+The working:
+- Write down every cause along the signal path that fits “No signal”.: The projector listens to a different input than the one the cable is in; the cable; the adapter, or a laptop port that does not carry video; the laptop is not sending a picture.
+- Check that the parts can do the job at all.: The adapter turns USB-C into HDMI, and an HDMI cable carries picture and sound. The projector has an HDMI input. The parts match. One thing is unknown: whether the right-hand USB-C port carries video, because only the left one is marked.
+- Run the cheapest cut first.: Press Source on the remote: one button. It shows HDMI 2, the input the cable is in. The input is ruled out.
+- Name your favorite cause and test it with a part known to work.: The cable: the last one in this room was bad. Swap in a cable known to work. It costs a minute.
+- Test the next link, one change.: Move the adapter to the left USB-C port, the one with the screen symbol. The picture appears. The right port was for charging and data only.
+- Look at the result.: The first guess was ruled out at the cost of a minute. The cheapest check came first and ruled out the input; the fault was the port, found by moving one thing.
+
+#### Question in the draw: l12-d-call
+
+Hank in Sales calls the help desk about the projector in room 6. You answer.
+
+**Hank calls about the projector. What do you say?**
+- An incoming call from "Hank, Sales" (Incoming call · 9:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
+- turn 1, the other side says: "The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes." [pushes: They want the biggest step before anything was tried.]
+  - reply "I will put in an order for a new projector today.": the call ends (not this one): Nothing has been checked yet. An order costs money and days, and the first check costs one button. [slip: replaced a part before the cheap check]
+  - reply "Swap the cable, then call me back.": the call ends (not this one): A cable swap is cheap but is not the cheapest cut, and it leaves Hank alone with a guess. The Source button is faster and names the link. [slip: ran a test that does not split what works from what does not]
+  - reply "Press the Source button on the projector’s remote and read me the input it shows.": goes on to turn 2, where the pressure comes back
+- turn 2, the other side says: "It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken." [pushes: They still want it replaced.]
+  - reply "It cannot be broken if the input menu comes up.": the call ends (not this one): The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give them a next step instead. [slip: argued with the user or brushed off what they said]
+  - reply "Twice in a week is annoying, and I will note it. The projector is listening to VGA while the cable is in HDMI 1. Choose HDMI 1 and tell me what you see.": the call ends (right): The projector listens to one input and it was on the wrong one; choosing the right one costs a button. Their worry is heard and noted, and the plan stays with the cheap check.
+  - reply "Understood, I will order one now.": the call ends (not this one): The projector was on the wrong input. Ordering a new one hides a one-button fix and lets the same mistake happen again. [slip: replaced a part before the cheap check]
+- After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
+
+After the answer: Reason: No signal sits on the input first. The cheapest cut is to read which input the projector listens to, and when the user pushes for a replacement, you keep to the check, say you heard the complaint, and give the next step.
+
+#### Question in the draw: l12-d-dark
+
+A chat, with its history: "Aiden, Sales", Chat with the help desk.
+
+> (Aiden, Sales, at the left) My laptop screen is black, but if I hold a flashlight close to it I can just see my desktop.
+
+**What is the likely cause?**
+(the options come in an order that depends on the seed of the question)
+- The backlight or its inverter, the light behind the picture, has failed (right)
+- Dead pixels, a patch of dots that no longer light — if chosen: Dead pixels are tiny dots. The whole screen is dark here.
+- The wrong input source is chosen for the screen — if chosen: A laptop’s own screen has no input to choose, and the flashlight shows a picture is being made.
+- Burn-in from an old image left on too long — if chosen: Burn-in leaves a faint ghost of an old image on a lit screen. The screen here is not lit.
+
+After the answer: the deciding words are marked. Reason: The flashlight shows the desktop is on the panel, so the computer is sending a picture. What is missing is the light behind it: the backlight or what powers it. On older LCD screens that power part is the inverter, a small board that makes the high voltage a tube lamp needs.
+
+#### Question in the draw: l12-d-tintmon
+
+A chat, with its history: "Beatrix, Design", Chat with the help desk.
+
+> (Beatrix, Design, at the left) My second monitor shows a pink tint all over. I reseated the cable at both ends and it is still pink.
+
+A plain table, "What you tried":
+
+> Test  |  Result  (the column heads)
+> A cable known to work, same computer  |  Still pink
+> The same monitor on a different computer  |  Still pink
+> The monitor’s own color settings reset to the factory default  |  Still pink
+> A different monitor on Beatrix’s computer  |  Normal colors
+
+**What do you do?**
+(the options come in an order that depends on the seed of the question)
+- Replace the monitor, or send it for repair (right)
+- Try a third cable — if chosen: Two cables are already ruled out. A third repeats a test that has answered.
+- Reinstall the graphics driver on Beatrix’s computer — if chosen: A different monitor looks normal on their computer, and this monitor is pink on another computer. The computer is cleared.
+- Reseat the cable and swap the computer at the same time — if chosen: Two changes together would not say which one matters, and the table already points at the monitor.
+
+After the answer: the deciding words are marked. Reason: A tint is usually the cable, so the cable comes first. Here the tests already cleared the cable and the computer: the pink follows the monitor. When the earlier tests point at a part, replacing it is right.
+
+#### Question in the draw: l12-d-lamp
+
+A chat, with its history: "Caspian, Training", Chat with the help desk.
+
+> (Caspian, Training, at the left) The room 3 projector powers on and the fan runs, but there is no picture, not even the projector’s menu. The menu worked fine last week.
+
+A plain table, "What the projector shows":
+
+> Check  |  Result  (the column heads)
+> Lamp warning light on the projector  |  On
+> Lamp hours  |  5,040 of 5,000
+> The projector’s own menu (not the laptop’s picture)  |  Dark
+
+**What do you do?**
+(the options come in an order that depends on the seed of the question)
+- Replace the projector lamp (right)
+- Press Source until it finds an input — if chosen: The input does not matter: the projector’s own menu is dark too.
+- Reseat the HDMI cable at both ends — if chosen: The cable carries the picture to the projector. The menu comes from inside the projector and is dark as well.
+- Wait ten minutes for it to cool and try again — if chosen: Nothing points at overheating, and the hours are used up. Waiting gives the same result.
+
+After the answer: the deciding words are marked. Reason: The fan runs and the menu is dark, so the cable and the input are not in question. The lamp warning light and the hours say the lamp is spent. Here the replacement is the right first step.
+
+#### Question in the draw: l12-d-pixel
+
+A chat, with its history: "Delphine, Purchasing", Chat with the help desk.
+
+> (Delphine, Purchasing, at the left) There is a tiny dot near the middle of my new monitor that stays bright green. It stays there on every color and window.
+
+**What is it?**
+(the options come in an order that depends on the seed of the question)
+- A stuck pixel in the panel (right)
+- Burn-in from a still image — if chosen: Burn-in is a faint ghost of an old image that was on the screen a long time, not one bright dot.
+- A loose cable at the back — if chosen: A loose cable spoils the whole picture, with flicker or a tint, not one dot.
+- A resolution that is too high — if chosen: A wrong resolution makes the picture fuzzy or the wrong size, not one fixed dot.
+
+After the answer: the deciding words are marked. Reason: A single dot that does not change with the picture is the panel’s own: a dead pixel stays dark and a stuck pixel stays one color. A cable or a setting would change the whole picture.
+
+#### Question in the draw: l12-d-flash
+
+A chat, with its history: "Emeric, Finance", Chat with the help desk.
+
+> (Emeric, Finance, at the left) My monitor flashes on and off every few seconds. Yesterday I changed its refresh rate from 60 Hz to 144 Hz to see if it looked smoother.
+
+**What do you do first?**
+(the options come in an order that depends on the seed of the question)
+- Put the refresh rate back to 60 Hz, what it was (right)
+- Reseat the cable at both ends — if chosen: A cheap check, but the flashing began right after the setting change, so it will probably not split anything.
+- Put the refresh rate back and swap the cable — if chosen: Two changes at once: if the flashing stops, nobody knows which one fixed it.
+- Order a new monitor because it keeps flashing on and off — if chosen: The flashing began with a settings change. Undo that first.
+
+After the answer: the deciding words are marked. Reason: The flashing started right after the refresh rate was changed. Refresh rate is how many times a second the screen is redrawn, and one the monitor cannot handle makes it flash. Undo the change before looking at a part.
+
+#### Question in the draw: l12-g-touch
+
+A chat, with its history: "Ignacio, Field team", Chat with the help desk.
+
+> (Ignacio, Field team, at the left) I dropped my tablet and the glass is cracked. The picture is fine, but nothing happens when I touch the bottom third of the screen.
+
+**What is the likely cause?**
+(the options come in an order that depends on the seed of the question)
+- The digitizer, the touch-sensing layer (right)
+- The backlight behind the glass has failed — if chosen: A failed backlight would darken the screen. The picture is fine.
+- A wrong input source on the tablet — if chosen: A tablet’s own screen has no input source to choose.
+
+After the answer: the deciding words are marked. Reason: The picture is fine, so the display and its light work. Only touch is lost in one area after a drop, which is the digitizer layer that senses touch.
+
+#### Question in the draw: l12-d-dim
+
+A chat, with its history: "Yvette, Training", Chat with the help desk.
+
+> (Yvette, Training, at the left) The room 2 projector picture has been getting dimmer for months. Its menu says: Lamp 4,950 of 5,000 hours.
+
+**What is the likely cause?**
+(the options come in an order that depends on the seed of the question)
+- The lamp is nearly worn out (right)
+- The projector is on the wrong input — if chosen: A wrong input shows No signal, not a dim picture.
+- Burn-in from a still image — if chosen: Burn-in leaves a ghost of an old image, not a dim picture.
+
+After the answer: the deciding words are marked. Reason: The menu shows the lamp at 4,950 of its 5,000 hours, and a slow dimming is what a lamp near the end of its life does.
+
+#### Question in the draw: l12-d-trap
+
+A chat, with its history: "Zephyr, Training", Chat with the help desk.
+
+> (Zephyr, Training, at the left) The projector sits on a low cart and points up at the screen. The picture comes out wider at the top than the bottom, like a trapezoid.
+
+**What do you check first?**
+(the options come in an order that depends on the seed of the question)
+- Square the projector, or adjust keystone (right)
+- Replace the lamp with a new one — if chosen: A lamp that is wearing out dims the picture. It does not change its shape.
+- Change the input source on the remote — if chosen: A wrong input shows No signal. The picture here is showing.
+
+After the answer: the deciding words are marked. Reason: A picture wider at the top than the bottom comes from a projector pointing up at an angle. The first check is the angle and the keystone setting, not a part.
+
+#### Question in the draw: l12-r-fuzzy
+
+A chat, with its history: "Amos, Training", Chat with the help desk.
+
+> (Amos, Training, at the left) The projector picture is soft and blurry at the edges of the text. The laptop is set to the projector’s own resolution.
+
+**What do you check?**
+(the options come in an order that depends on the seed of the question)
+- Turn the projector’s focus ring (right)
+- Switch the laptop to a lower resolution — if chosen: The resolution is already native; a lower one would only stretch the picture.
+- Replace the HDMI cable — if chosen: A bad cable gives flicker or a tint, not a soft focus.
+
+After the answer: the deciding words are marked. Reason: Fuzzy has two causes: not native resolution, or focus. The first is cleared, so turn the focus ring.
+
+#### Question in the draw: l12-r-aspect
+
+A chat, with its history: "Corin, Training", Chat with the help desk.
+
+> (Corin, Training, at the left) The picture on the projector looks stretched, like everyone is wide. The projector has the right focus and no shape problem.
+
+**What do you check?**
+(the options come in an order that depends on the seed of the question)
+- The aspect ratio and the resolution the laptop sends (right)
+- The lamp hours — if chosen: A tired lamp dims the picture. It does not stretch it.
+- The keystone setting — if chosen: Keystone fixes a trapezoid from an angle, not a stretch.
+
+After the answer: the deciding words are marked. Reason: A wrong size or stretch is a resolution or aspect ratio mismatch. Aspect ratio is the shape of the picture, wide 16 by 9 or squarer 4 by 3.
+
+#### Question in the draw: l12-r-sound
+
+A chat, with its history: "Fennick, Training", Chat with the help desk.
+
+> (Fennick, Training, at the left) The projector shows my laptop fine over HDMI, but the video has no sound in the room. The laptop’s own speakers play it when I unplug the cable.
+
+**What do you check first?**
+(the options come in an order that depends on the seed of the question)
+- The laptop’s sound output: pick the projector as the playback device (right)
+- Replace the HDMI cable with a new one — if chosen: The picture comes through the same cable, so the cable is carrying signal; check where the sound is sent first.
+- Replace the projector’s lamp with a new one — if chosen: The lamp makes the picture. It has nothing to do with sound.
+
+After the answer: the deciding words are marked. Reason: Picture through HDMI with no sound points at where the laptop sends its audio. Choosing the projector as the playback device is the first, free check.
+
+#### Question in the draw: l12-k-hot
+
+A chat, with its history: "Jana, Training", Chat with the help desk.
+
+> (Jana, Training, at the left) The room 5 projector shuts off by itself after about 20 minutes, then works after a rest. The fan gets loud before it goes.
+
+**What do you check first?**
+(the options come in an order that depends on the seed of the question)
+- The vents and the dust filter (right)
+- The lamp hours in the menu — if chosen: A cheap look, but a tired lamp dims the picture. It does not shut the projector down.
+- Replace the lamp with a new one — if chosen: Nothing says the lamp is spent, and a spent lamp gives no image rather than a shutdown.
+- The resolution on the laptop — if chosen: Resolution changes the size and sharpness of the picture, not the power.
+
+After the answer: the deciding words are marked. Reason: A projector that shuts off after a while, with a loud fan first, is overheating. Dust and blocked vents are the cheap thing to check.
+
+#### Question in the draw: l12-k-native
+
+A chat, with its history: "Henry, HR", Chat with the help desk.
+
+> (Henry, HR, at the left) My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.
+
+**What do you check first?**
+(the options come in an order that depends on the seed of the question)
+- Switch Windows to native resolution (right)
+- Replace the cable with a brand new one — if chosen: The picture shows, and the setting is plainly wrong. Fix the setting first.
+- Turn the refresh rate down to 30 Hz — if chosen: Refresh rate is how often the picture is redrawn. It does not blur text.
+- Order a new monitor this afternoon — if chosen: Nothing shows the monitor is at fault, and the setting is cheap to fix.
+
+After the answer: the deciding words are marked. Reason: The monitor’s native resolution is 3840 by 2160 and Windows sends 1280 by 720, which the panel stretches. Switch it to native.
+
+#### Question in the draw: l12-k-burn
+
+A chat, with its history: "Lior, Lobby", Chat with the help desk.
+
+> (Lior, Lobby, at the left) Our lobby OLED TV has shown the same schedule board all day for months. Now a faint outline of the board stays on the screen even when it shows a video.
+
+**What is it?**
+(the options come in an order that depends on the seed of the question)
+- Burn-in (right)
+- Dead pixels — if chosen: Dead pixels are single dots. This is an outline of the board.
+- A loose cable — if chosen: A loose cable flickers or tints the whole picture.
+- The wrong input source — if chosen: A wrong input shows No signal.
+
+After the answer: the deciding words are marked. Reason: Months of one static image left an outline in an OLED screen. That is burn-in. A screen saver and changing content help prevent it, and it often cannot be undone.
+
 #### Question in the draw: l20-w-dean
 
 A chat, with its history: "Dean, Design", Chat with the help desk.
@@ -7335,10 +7363,10 @@ A chat, with its history: "Sandro, Marketing", Chat with the help desk.
 
 **What does fast startup do, and where is it?**
 (the options come in an order that depends on the seed of the question)
-- A shutdown that keeps part of Windows saved to speed the next start, under “Choose what the power buttons do” in Power Options (right)
+- A shutdown that keeps part of Windows saved to speed the next start, chosen in Power Options (right)
 - Hibernate, which saves open work to the drive and powers off, chosen in Power Options — if chosen: Hibernate keeps your open work for the next start. Fast startup keeps part of Windows, and a Shut down still closes your programs.
 - The High performance power plan, which makes every start quicker, chosen in Power Options — if chosen: A power plan controls speed and sleep. Fast startup is its own switch, and it is why a fault saved at Shut down comes back.
-- A Task Manager Startup tab choice that makes programs open faster, turned off there — if chosen: Fast startup is about Windows itself, not about the programs on the Startup tab.
+- A Task Manager Startup tab choice that makes programs open faster, chosen in Task Manager — if chosen: Fast startup is about Windows itself, not about the programs on the Startup tab.
 
 After the answer: the deciding words are marked. Reason: With fast startup on, Shut down keeps part of Windows saved, so a fault stored there survives a shutdown. Restart does a full start. The choice is in Power Options.
 
@@ -7458,9 +7486,9 @@ After the answer: the deciding words are marked. Reason: The Type column says Ap
 
 #### Question in the draw: l20-k-hib
 
-A chat, with its history: "Erica, Travel", Chat with the help desk.
+A chat, with its history: "Odalys, Travel", Chat with the help desk.
 
-> (Erica, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
+> (Odalys, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
 
 **Which power state fits?**
 (the options come in an order that depends on the seed of the question)
@@ -8844,7 +8872,7 @@ A chat, with its history: "Isidro, Operations", Chat with the help desk.
 
 > (Isidro, Operations, at the left) My boss is taking a company MacBook abroad. If it is lost, nobody must be able to read what is on its drive. Windows has BitLocker for this.
 
-**What does that on a Mac?**
+**What do you use on a Mac for that job?**
 (the options come in an order that depends on the seed of the question)
 - FileVault, which encrypts the whole startup drive (right)
 - Disk Utility, which erases, partitions and checks drives — if chosen: Disk Utility looks after drives. It does not protect what is on them.
@@ -8857,7 +8885,7 @@ After the answer: the deciding words are marked. Reason: Making a lost laptop’
 
 A chat, with its history: "Rohan, Finance", Chat with the help desk.
 
-> (Rohan, Finance, at the left) An external drive shows up gray in Finder and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
+> (Rohan, Finance, at the left) An external drive shows up gray in Disk Utility and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
 
 **What do I do first?**
 (the options come in an order that depends on the seed of the question)
@@ -8876,7 +8904,7 @@ A chat, with its history: "Homer, IT", Chat with the help desk.
 
 **What is Rapid Security Response, as the exam names it?**
 (the options come in an order that depends on the seed of the question)
-- Apple’s quick security update, sent between the big updates; current Macs call it Background Security Improvements (right)
+- Apple’s quick security update, sent between the big updates (right)
 - A tool that finds and removes viruses on the Mac — if chosen: That is antivirus. Rapid Security Response installs fixes from Apple.
 - A copy of the whole Mac kept on an external drive — if chosen: That is a backup, which Time Machine makes.
 - A way to lock the Mac from far away when it is stolen — if chosen: It is about security fixes, not about locking a lost Mac.
@@ -17523,10 +17551,10 @@ A plain table, "From the desk’s change rules":
 
 **Which type of change is this?**
 (the options come in an order that depends on the seed of the question)
-- A normal change: not routine, and nothing is down (right)
-- An emergency change, because Mr. Okafor wants it done tonight — if chosen: Wanting it tonight does not make it an emergency. The rule is an outage or an attack happening now, and neither is on the ticket.
-- A standard change, because it only takes ten minutes — if chosen: Standard means a routine change with a pre-approved written procedure. How long it takes does not decide the type.
-- Not a change, because the server keeps working — if chosen: A firmware update can stop the server, which is why it is a change. What matters is the risk to people’s work.
+- A normal change (right)
+- An emergency change — if chosen: Wanting it tonight does not make it an emergency. The rule is an outage or an attack happening now, and neither is on the ticket.
+- A standard change — if chosen: Standard means a routine change with a pre-approved written procedure. How long it takes does not decide the type.
+- Not a change — if chosen: A firmware update can stop the server, which is why it is a change. What matters is the risk to people’s work.
 
 After the answer: the deciding words are marked. Reason: The type comes from the desk’s rule, not from the wish for tonight. Nothing was down, so it is a normal change: a request form, rollback and backup plans, a test, board approval, the maintenance window, a peer review and the users’ acceptance.
 The working:
@@ -17544,10 +17572,10 @@ A chat, with its history: "Rosalind, Operations", Chat with the help desk.
 
 **Which type of change is the monthly update?**
 (the options come in an order that depends on the seed of the question)
-- A standard change, being routine and pre-approved (right)
-- A normal change, so it goes to the board every month — if chosen: Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.
-- An emergency change, because 40 PCs are involved — if chosen: Emergency means an outage or an attack happening now. The number of PCs does not decide it.
-- Not a change, because the PCs keep working during it — if chosen: Updates can break a PC, so they are changes. A routine one is a standard change.
+- A standard change (right)
+- A normal change — if chosen: Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.
+- An emergency change — if chosen: Emergency means an outage or an attack happening now. The number of PCs does not decide it.
+- Not a change — if chosen: Updates can break a PC, so they are changes. A routine one is a standard change.
 
 After the answer: the deciding words are marked. Reason: Routine, written down and approved ahead of time is what makes a change standard. Normal needs the whole process each time, and emergency is for an outage or an attack now.
 
@@ -17661,8 +17689,8 @@ A chat, with its history: "Pauline, Warehouse", Chat with the help desk.
 (the options come in an order that depends on the seed of the question)
 - Sunday’s full and Wednesday night’s backup only (right)
 - Sunday’s full and the Monday, Tuesday and Wednesday backups — if chosen: That is how an incremental restore goes. These nightly backups each hold everything since Sunday, so Wednesday’s already includes the earlier days.
-- Wednesday night’s backup alone, since it is the newest — if chosen: Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.
-- Sunday’s full alone, since it is the only full one — if chosen: That brings back Sunday’s files and loses the changes from Monday to Wednesday.
+- Wednesday night’s backup alone — if chosen: Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.
+- Sunday’s full alone — if chosen: That brings back Sunday’s files and loses the changes from Monday to Wednesday.
 
 After the answer: the deciding words are marked. Reason: A backup of everything changed since the last full is a differential. A restore needs the last full and the latest differential, and no more.
 
@@ -17756,8 +17784,8 @@ A chat, with its history: "Stephen, Systems", Chat with the help desk.
 (the options come in an order that depends on the seed of the question)
 - Sunday’s full and the nightly backups from Monday to Thursday, in order (right)
 - Sunday’s full and Thursday night’s backup, which holds all the changes — if chosen: That is how a differential restore goes. Thursday’s here holds only Thursday’s changes, so the other nights are needed too.
-- Thursday night’s backup alone, since it is the newest one made — if chosen: Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
-- Sunday’s full alone, because a full backup is the complete copy — if chosen: That brings back Sunday’s files and loses every change made from Monday to Thursday.
+- Thursday night’s backup alone — if chosen: Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
+- Sunday’s full alone — if chosen: That brings back Sunday’s files and loses every change made from Monday to Thursday.
 
 After the answer: the deciding words are marked. Reason: Nightly copies of only what changed since the last backup are incremental. A restore needs the last full and every incremental after it, in order.
 
@@ -17786,8 +17814,8 @@ A chat, with its history: "Tamara, Accounts", Chat with the help desk.
 (the options come in an order that depends on the seed of the question)
 - Saturday’s full and the Sunday, Monday and Tuesday backups (right)
 - Saturday’s full and only Tuesday night’s backup, the latest one — if chosen: That is how a differential restore goes. These nightly copies hold just one night of changes each.
-- Tuesday night’s backup alone, since it is the newest copy made — if chosen: Tuesday’s copy holds only Tuesday’s changes.
-- Saturday’s full alone, since a full backup holds everything — if chosen: The full holds the files as they were on Saturday. The changes since then are in the nightly copies.
+- Tuesday night’s backup alone — if chosen: Tuesday’s copy holds only Tuesday’s changes.
+- Saturday’s full alone — if chosen: The full holds the files as they were on Saturday. The changes since then are in the nightly copies.
 
 After the answer: the deciding words are marked. Reason: A backup of what changed since the last backup of any kind is incremental. Its restore needs the last full plus every incremental, in order.
 
@@ -17845,7 +17873,7 @@ A chat, with its history: "Bob, Archive", Chat with the help desk.
 **Which part of the environment needs controlling?**
 (the options come in an order that depends on the seed of the question)
 - Humidity: air that is too dry builds up static charge (right)
-- Dust: the shelves need cleaning, because dust causes the shocks — if chosen: Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.
+- Dust: the shelves need cleaning — if chosen: Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.
 - Surges: a spike on the power line is burning out the modules — if chosen: A power surge does not give people shocks from metal shelves. Static in dry air does.
 - Temperature: the room must be made as warm as possible — if chosen: Heat does not cure static, and it shortens the life of parts.
 
@@ -17860,7 +17888,7 @@ A chat, with its history: "Darius, Facilities", Chat with the help desk.
 **What is the first thing to do?**
 (the options come in an order that depends on the seed of the question)
 - Leave the room, warn people, and call emergency services (right)
-- Pour the water on the strip, since it is a small fire — if chosen: Water on an electrical fire can carry current to the person. It is never used on one.
+- Pour the water on the strip — if chosen: Water on an electrical fire can carry current to the person. It is never used on one.
 - Unplug the rack’s other cables, one by one, to save the servers — if chosen: Reaching into a smoking, sparking rack risks shock and burns, and it leaves the fire growing.
 - Put on goggles and a mask, then carry the servers out — if chosen: Goggles and a mask protect against dust. They do not make a fire safe to work around.
 
@@ -17889,7 +17917,7 @@ A chat, with its history: "Wade, Server room", Chat with the help desk.
 - With the rack switched off and unplugged, blow it out with compressed air, fans held still, goggles on (right)
 - Blow it out with compressed air while the rack keeps running, fans left free to spin — if chosen: Air can spin a fan far faster than it is built for, and the equipment is switched off and unplugged before any cleaning.
 - Spray cleaner on the fans and let them dry themselves on power — if chosen: Liquid on a running fan can short it, and the cleaner can damage the parts.
-- Leave it, because dust only matters for how the room looks — if chosen: Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.
+- Leave it — if chosen: Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.
 
 After the answer: the deciding words are marked. Reason: Dust is cleaned with compressed air (fans held still, goggles and mask) or an ESD-safe vacuum, never with liquid on live parts.
 
@@ -17904,7 +17932,7 @@ A chat, with its history: "Ora, Stockroom", Chat with the help desk.
 - Bend the knees, keep the back straight, hold it close or use a cart (right)
 - Bend over from the waist and lift quickly so the strain is over fast — if chosen: Lifting with a bent back is how backs are injured. The legs should do the work.
 - Twist at the waist to swing it onto the shelf in one movement — if chosen: Twisting under a load strains the back. Turn the feet, not the waist.
-- Put on an ESD strap first, since a battery box can hold a charge — if chosen: The strap guards parts from static. It does nothing for the weight of the load.
+- Put on an ESD strap first — if chosen: The strap guards parts from static. It does nothing for the weight of the load.
 
 After the answer: the deciding words are marked. Reason: A heavy load is lifted with the knees bent, the back straight and the load close, or moved with a cart or a second person.
 
@@ -17919,7 +17947,7 @@ A chat, with its history: "George, Facilities", Chat with the help desk.
 - Bend the knees, keep the back straight, and use a cart or a helper (right)
 - Bend at the waist and lift with the back, to move it fast — if chosen: Lifting with the back is how backs get hurt.
 - Hold it at arm’s length so that it stays well away from the body — if chosen: A load held away from the body strains the back more. Keep it close.
-- Lift it alone in one go, because 60 pounds is not that heavy — if chosen: A load that heavy gets a cart or a helper, not a guess about how strong one person is.
+- Lift it alone in one go — if chosen: A load that heavy gets a cart or a helper, not a guess about how strong one person is.
 
 After the answer: the deciding words are marked. Reason: Lifting is done with the legs, the back straight and the load close, and heavy things get a cart or a second person.
 
@@ -18127,9 +18155,9 @@ After the answer: the deciding words are marked. Reason: Two parties each protec
 
 #### Question in the draw: l28-g-drm
 
-A chat, with its history: "Luke, Studio", Chat with the help desk.
+A chat, with its history: "Thaddeus, Studio", Chat with the help desk.
 
-> (Luke, Studio, at the left) A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.
+> (Thaddeus, Studio, at the left) A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.
 
 **What is the protection called?**
 (the options come in an order that depends on the seed of the question)
@@ -18448,10 +18476,10 @@ A chat, with its history: "Ellis, Customer service", Chat with the help desk.
 
 **What do you do about Ellis’s paste?**
 (the options come in an order that depends on the seed of the question)
-- Report the paste to the manager and stop it, since a public service may keep typed text, even card data (right)
-- Tell Ellis the chatbot deletes everything once the window is closed, so nothing more is needed — if chosen: A public service makes no such promise. The text may be kept.
-- Tell Ellis to run the reply through a plagiarism check, since that is the risk with AI text — if chosen: Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.
-- Tell Ellis to keep using the tool, since the answer was good — if chosen: A good answer does not make the service safe. What matters is who keeps what is typed.
+- Tell the manager about the paste and stop using the chatbot for customer details (right)
+- Tell Ellis the chatbot deletes everything when the window is closed — if chosen: A public service makes no such promise. The text may be kept.
+- Tell Ellis to run the reply through a plagiarism check before it is sent — if chosen: Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.
+- Tell Ellis the tool is fine to keep using for replies like this one — if chosen: A good answer does not make the service safe. What matters is who keeps what is typed.
 
 After the answer: the deciding words are marked. Reason: Private and regulated data stays out of a public AI service, whatever the quality of the answer, and a leak that already happened is reported to management.
 

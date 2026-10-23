@@ -8,7 +8,7 @@
 // Strands: access-physical, access-logical, win-security, ad-policy, hardening. One worked ticket (Priya cannot save in the Budget share); a first group of four with help; a second of six; a third of six
 // mixed with lessons 7 and 8; the check: eight new questions, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l25', part: 'access', title: 'Accounts and access', rev: 2, status: 'draft',
+  id: 'l25', part: 'access', title: 'Accounts and access', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the chain of access: who you are, what you are allowed, the policy over it, with the physical door in front; MFA kinds, NTFS against share permissions, UAC, BitLocker, Active Directory, Group Policy and hardening; exam facts asked from memory and as tickets).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Priya started in Finance on Monday. Priya chats the desk: every file in the Budget folder on the shared drive opens, but every time Priya saves, Windows says there is no permission. Resetting the password would feel like the obvious move. It would change nothing, because the password is not what is wrong.',

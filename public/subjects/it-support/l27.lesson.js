@@ -6,7 +6,7 @@
 // Strands: change, backup, safety, evidence. Two worked tickets; a first group of five with the help shown; a second of seven; a third of six mixed with lessons 25 and 26; the check: six new questions,
 // 5 of 6 to pass. Three reserve questions for each strand.
 FC.lesson('it-support', {
-  id: 'l27', part: 'procedures', title: 'Changes, backups, safety and evidence', rev: 2, status: 'draft',
+  id: 'l27', part: 'procedures', title: 'Changes, backups, safety and evidence', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, split from the first draft of lesson 27 (change management, backup kinds and 3-2-1, safety and the environment, evidence and chain of custody; each taught by the decision it answers on a ticket, then asked from memory and as a choice).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'It is Friday at 4:30. A manager writes: “Please update the firmware (the built-in software of the hardware) on the accounting server tonight. It only takes ten minutes.” A technician who does it alone, with no approval, no copy of the data and no way back, can stop payroll on Monday. The desk has rules for what to get approved, copy, wear and keep.',

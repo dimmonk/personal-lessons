@@ -23,7 +23,7 @@
   FC.items('it-support', [
     // ----- the worked ticket: the cheapest cut first, a favorite cause ruled out by a swap, then the next link -----
     item({
-      id: 'l12-w-room', strand: DI,
+      id: 'l12-w-room', strand: 'display-fix',
       blocks: [
         msg('chat', 'Dina, Training', 'Chat with the help desk', [['d1', 'The projector in room 4 says No signal. I plugged my laptop in with the HDMI cable on the table and nothing shows. I start in ten minutes.']]),
         table('What is in room 4', ['Part', 'What it has'], [
@@ -140,7 +140,7 @@
 
     // ----- group 3: display tickets along the signal path, cut with the cheapest check -----
     item({
-      id: 'l12-d-call', strand: DI,
+      id: 'l12-d-call', strand: 'display-fix',
       blocks: [note('Hank in Sales calls the help desk about the projector in room 6. You answer.')],
       asks: [{ id: 'a', kind: 'exchange', prompt: 'Hank calls about the projector. What do you say?', form: 'call', from: 'Hank, Sales', detail: 'Incoming call · 9:40 AM', start: 'one',
         turns: {
@@ -163,7 +163,7 @@
           order2: { ok: false, slip: PART, then: 'The projector was on the wrong input. Ordering a new one hides a one-button fix and lets the same mistake happen again.' } } }],
       reason: 'No signal sits on the input first. The cheapest cut is to read which input the projector listens to, and when the user pushes for a replacement, you keep to the check, say you heard the complaint, and give the next step.' }),
     item({
-      id: 'l12-d-dark', strand: DI,
+      id: 'l12-d-dark', strand: 'display-fix',
       blocks: [msg('chat', 'Aiden, Sales', 'Chat with the help desk', [['i1', 'My laptop screen is black, but if I hold a flashlight close to it I can just see my desktop.']])],
       asks: [ask('What is the likely cause?', [
         ['The backlight or its inverter, the light behind the picture, has failed', true, 'The picture is there and nothing lights it, so the light behind the panel is the fault.'],
@@ -173,7 +173,7 @@
       deciding: ['i1'],
       reason: 'The flashlight shows the desktop is on the panel, so the computer is sending a picture. What is missing is the light behind it: the backlight or what powers it. On older LCD screens that power part is the inverter, a small board that makes the high voltage a tube lamp needs.' }),
     item({
-      id: 'l12-d-tintmon', strand: DI,
+      id: 'l12-d-tintmon', strand: 'display-fix',
       blocks: [
         msg('chat', 'Beatrix, Design', 'Chat with the help desk', [['n1', 'My second monitor shows a pink tint all over. I reseated the cable at both ends and it is still pink.']]),
         table('What you tried', ['Test', 'Result'], [
@@ -189,7 +189,7 @@
       deciding: ['n1', 't1', 't2', 't3', 't4'],
       reason: 'A tint is usually the cable, so the cable comes first. Here the tests already cleared the cable and the computer: the pink follows the monitor. When the earlier tests point at a part, replacing it is right.' }),
     item({
-      id: 'l12-d-lamp', strand: DI,
+      id: 'l12-d-lamp', strand: 'display-fix',
       blocks: [
         msg('chat', 'Caspian, Training', 'Chat with the help desk', [['r1', 'The room 3 projector powers on and the fan runs, but there is no picture, not even the projector’s menu. The menu worked fine last week.']]),
         table('What the projector shows', ['Check', 'Result'], [
@@ -204,7 +204,7 @@
       deciding: ['r1', 't1', 't2'],
       reason: 'The fan runs and the menu is dark, so the cable and the input are not in question. The lamp warning light and the hours say the lamp is spent. Here the replacement is the right first step.' }),
     item({
-      id: 'l12-d-pixel', strand: DI,
+      id: 'l12-d-pixel', strand: 'display-fix',
       blocks: [msg('chat', 'Delphine, Purchasing', 'Chat with the help desk', [['m1', 'There is a tiny dot near the middle of my new monitor that stays bright green. It stays there on every color and window.']])],
       asks: [ask('What is it?', [
         ['A stuck pixel in the panel', true, 'One dot that stays on one color is a pixel fault. A stuck one sometimes clears with a pixel-exercise tool; if not, a new monitor may be covered by its warranty.'],
@@ -214,7 +214,7 @@
       deciding: ['m1'],
       reason: 'A single dot that does not change with the picture is the panel’s own: a dead pixel stays dark and a stuck pixel stays one color. A cable or a setting would change the whole picture.' }),
     item({
-      id: 'l12-d-flash', strand: DI,
+      id: 'l12-d-flash', strand: 'display-fix',
       blocks: [msg('chat', 'Emeric, Finance', 'Chat with the help desk', [['p1', 'My monitor flashes on and off every few seconds. Yesterday I changed its refresh rate from 60 Hz to 144 Hz to see if it looked smoother.']])],
       asks: [ask('What do you do first?', [
         ['Put the refresh rate back to 60 Hz, what it was', true, 'A refresh rate the monitor cannot handle makes it flash. Putting it back is free and undoes the one change.'],
@@ -256,7 +256,7 @@
       deciding: ['s1'],
       reason: 'Resolution is how many pixels there are. Pixel density is how many fit in an inch. The same 1920 by 1080 on a 13 inch screen is denser, so sharper, than on a 17 inch screen.' }),
     item({
-      id: 'l12-g-touch', strand: DI,
+      id: 'l12-g-touch', strand: 'display-fix',
       blocks: [msg('chat', 'Ignacio, Field team', 'Chat with the help desk', [['w1', 'I dropped my tablet and the glass is cracked. The picture is fine, but nothing happens when I touch the bottom third of the screen.']])],
       asks: [ask('What is the likely cause?', [
         ['The digitizer, the touch-sensing layer', true, 'The digitizer turns where a finger lands into a position. The picture is fine, so the display is working.'],
@@ -418,7 +418,7 @@
       reason: 'Micro USB is the small flat trapezoid and mini USB the bigger one, both for older devices. Lightning is Apple’s reversible plug.' }),
     // display
     item({
-      id: 'l12-d-dim', strand: DI,
+      id: 'l12-d-dim', strand: 'display-fix',
       blocks: [msg('chat', 'Yvette, Training', 'Chat with the help desk', [['b1', 'The room 2 projector picture has been getting dimmer for months. Its menu says: Lamp 4,950 of 5,000 hours.']])],
       asks: [ask('What is the likely cause?', [
         ['The lamp is nearly worn out', true, 'A projector lamp dims as its hours run out.'],
@@ -435,7 +435,7 @@
         ['TN', LOOK, 'TN is a kind of LCD panel with a fast response. It says nothing about the backlight’s zones.']])],
       reason: 'Mini-LED is an LCD whose backlight is thousands of tiny LEDs in separate zones. An OLED has no backlight at all.' }),
     item({
-      id: 'l12-d-trap', strand: DI,
+      id: 'l12-d-trap', strand: 'display-fix',
       blocks: [msg('chat', 'Zephyr, Training', 'Chat with the help desk', [['o1', 'The projector sits on a low cart and points up at the screen. The picture comes out wider at the top than the bottom, like a trapezoid.']])],
       asks: [ask('What do you check first?', [
         ['Square the projector, or adjust keystone', true, 'Keystone is the trapezoid you get when the projector points at an angle. Squaring it, or the keystone setting, corrects it.'],
@@ -444,7 +444,7 @@
       deciding: ['o1'],
       reason: 'A picture wider at the top than the bottom comes from a projector pointing up at an angle. The first check is the angle and the keystone setting, not a part.' }),
     item({
-      id: 'l12-r-fuzzy', strand: DI,
+      id: 'l12-r-fuzzy', strand: 'display-fix',
       blocks: [msg('chat', 'Amos, Training', 'Chat with the help desk', [['c1', 'The projector picture is soft and blurry at the edges of the text. The laptop is set to the projector’s own resolution.']])],
       asks: [ask('What do you check?', [
         ['Turn the projector’s focus ring', true, 'The resolution is already right, so the lens focus is next.'],
@@ -462,7 +462,7 @@
       deciding: ['m1'],
       reason: 'The range of colors a screen can show is its color gamut. Pixel density is sharpness and refresh rate is how often the picture is redrawn.' }),
     item({
-      id: 'l12-r-aspect', strand: DI,
+      id: 'l12-r-aspect', strand: 'display-fix',
       blocks: [msg('chat', 'Corin, Training', 'Chat with the help desk', [['g1', 'The picture on the projector looks stretched, like everyone is wide. The projector has the right focus and no shape problem.']])],
       asks: [ask('What do you check?', [
         ['The aspect ratio and the resolution the laptop sends', true, 'A stretched look means the shape of the picture does not match what the projector expects.'],
@@ -470,5 +470,24 @@
         ['The keystone setting', CAUSE, 'Keystone fixes a trapezoid from an angle, not a stretch.']])],
       deciding: ['g1'],
       reason: 'A wrong size or stretch is a resolution or aspect ratio mismatch. Aspect ratio is the shape of the picture, wide 16 by 9 or squarer 4 by 3.' })
+,
+    item({
+      id: 'l12-r-refresh', strand: DI,
+      blocks: [msg('chat', 'Ysolde, Marketing', 'Chat with the help desk', [['m1', 'Moving windows look jerky on my new monitor next to the smooth one beside it. The cable and resolution are the same. The box says 60 Hz on mine and 144 Hz on the other. What is that number?']])],
+      asks: [ask('What does the number measure?', [
+        ['Refresh rate, how many times a second the picture is redrawn', true, 'A higher refresh rate redraws the picture more often, so motion looks smoother.'],
+        ['Pixel density, how many pixels fit in each inch', LOOK, 'Pixel density is about sharpness, and it is counted in pixels per inch, not hertz.'],
+        ['Color gamut, how wide a range of colors it shows', LOOK, 'Color gamut is the range of colors. It does not change how smooth motion looks.']])],
+      deciding: ['m1'],
+      reason: 'Hertz on a monitor is its refresh rate: 144 Hz redraws the picture 144 times a second, 60 Hz only 60, so motion on the 60 Hz screen looks less smooth.' }),
+    item({
+      id: 'l12-r-sound', strand: 'display-fix',
+      blocks: [msg('chat', 'Fennick, Training', 'Chat with the help desk', [['g1', 'The projector shows my laptop fine over HDMI, but the video has no sound in the room. The laptop’s own speakers play it when I unplug the cable.']])],
+      asks: [ask('What do you check first?', [
+        ['The laptop’s sound output: pick the projector as the playback device', true, 'With HDMI in, Windows may still send sound to the wrong device; choosing the right output is the cheapest check.'],
+        ['Replace the HDMI cable with a new one', NOSPLIT, 'The picture comes through the same cable, so the cable is carrying signal; check where the sound is sent first.'],
+        ['Replace the projector’s lamp with a new one', PART, 'The lamp makes the picture. It has nothing to do with sound.']])],
+      deciding: ['g1'],
+      reason: 'Picture through HDMI with no sound points at where the laptop sends its audio. Choosing the projector as the playback device is the first, free check.' })
   ]);
 })();

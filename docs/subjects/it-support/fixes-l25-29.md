@@ -27,3 +27,14 @@ Facts checked: NTFS Write adds and saves but cannot delete, Modify can (albusbit
 - Names: 497 name-and-lesson clashes renamed (800 occurrences) so every first name is used in one lesson only (kept where it appears most); a re-scan finds no first name in two lessons. New names are ordinary and appear nowhere else in the subject.
 - Pronouns: about 1,150 he/she/his/her/him/hers/himself/herself replaced with they/their/them/theirs/themself (verbs adjusted); none remain in the subject files. A few sentences with two people use the name instead.
 - Checks: `node --check` on every edited file and `node tools/option-lengths.mjs it-support` (all ✓). Validator, lock and renderer not run; the lock will need regenerating.
+
+## Final round (from review-final-l18-30.md)
+Checks: `node --check` on every it-support file; `node tools/option-lengths.mjs it-support` all pass. Validator, lock and renderer not run (the lock needs regenerating).
+- N1 (l27) and N2 (l29), ruling 20: every since/because tail removed from wrong options (about 30 options in items-l27*, items-l29*); the l27 type options and the "normal/standard change" right options shortened to match; l29 wrong options lengthened with plain detail (no reasons) so the right option is not the longest. Also l28-q-ai: wrong options carried tails only on wrong; all four now plain.
+- M3: new strand `display-fix` (Core 1 5.3 symptoms: 15 items in items-l12*, ids w-room, d-*, g-touch, r-fuzzy, r-aspect, k-hot, k-native, k-burn); `display` keeps kinds and numbers (3.1). subject.js and l30's troubleshooting group updated; draw counts still 3,5,5,2,5,6,5,5,4.
+- M2: l30 screen says the mock comes back once, 28 days later, pass or not.
+- M5: Erica (l20) keeps Compliance, Travel is now Odalys; Luke (l28) keeps IT contractor, Studio is now Thaddeus.
+- M6: l24 RSR right option shortened (new term moved to feedback); l20 fast startup options all say where they are chosen; l28 AI options rebalanced.
+- M7: l24 item 12 prompt fixed; the unmounted drive shows gray in Disk Utility.
+- M8: l29 recap names the chains as lessons 18 and 25 teach them; l26 malware-removal screen says the ten steps are as listed in CompTIA's objectives.
+- Not done: M4, M9, M10, M11 (not in the request).

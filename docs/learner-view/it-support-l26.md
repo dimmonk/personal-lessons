@@ -1,6 +1,6 @@
 # IT Help Desk: Malware and attacks
 
-Revision 2, draft (the screen carries the draft line). Part: Malware and attacks. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Malware and attacks. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -101,7 +101,7 @@ A plain table, "The sign, the usual cause, the cheapest test":
 
 ## Step 7: The ten steps of malware removal, and why each sits where it does
 
-System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on.
+System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on. The ten steps are as listed in CompTIA’s objectives.
 
 A plain table, "Contain it (1 to 4), clean it (5 to 7), keep it clean (8 to 10)":
 

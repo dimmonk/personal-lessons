@@ -8,7 +8,7 @@
 // Strands: win-tools, win-consoles, win-settings. One worked ticket (Dean: the memory that is not the limit); a first group of four with the question marked; a second of twenty;
 // a third of three mixed with lessons 5 and 9; the check: eight new questions, no help, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l20', part: 'tools', title: 'Which Windows tool for the job', rev: 2, status: 'draft',
+  id: 'l20', part: 'tools', title: 'Which Windows tool for the job', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (Task Manager’s tabs, the eight consoles and six more tools by the question each answers; Control Panel and Settings areas, Power Options and File Explorer Options; run names asked from memory).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Dean says the laptop has been slow since Monday and the fan is loud. Dean is sure it needs more memory. Windows has a tool that shows in ten seconds whether memory is the problem, and another that names the program using the processor.',

@@ -28,7 +28,7 @@
         ['With the rack switched off and unplugged, blow it out with compressed air, fans held still, goggles on', true, 'Power comes off first. Compressed air does it, with the fan held so it does not spin, and goggles and a mask against the dust. An ESD-safe vacuum works too.'],
         ['Blow it out with compressed air while the rack keeps running, fans left free to spin', GEAR, 'Air can spin a fan far faster than it is built for, and the equipment is switched off and unplugged before any cleaning.'],
         ['Spray cleaner on the fans and let them dry themselves on power', GEAR, 'Liquid on a running fan can short it, and the cleaner can damage the parts.'],
-        ['Leave it, because dust only matters for how the room looks', GEAR, 'Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.']],
+        ['Leave it', GEAR, 'Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.']],
       'Dust is cleaned with compressed air (fans held still, goggles and mask) or an ESD-safe vacuum, never with liquid on live parts.'),
     chat('l27-k-evidence', 'evidence', 'Chiara, Security', 'I made an exact copy of a suspect drive for an investigation. A lawyer will want proof later that the copy is identical to the original.',
       'How is that proven?', [
@@ -41,15 +41,15 @@
       'Which backups does the restore need?', [
         ['Sunday’s full and the nightly backups from Monday to Thursday, in order', true, 'Each night holds only that day’s changes, so these are incremental backups. A restore needs the last full and every incremental after it, in order.'],
         ['Sunday’s full and Thursday night’s backup, which holds all the changes', BACK, 'That is how a differential restore goes. Thursday’s here holds only Thursday’s changes, so the other nights are needed too.'],
-        ['Thursday night’s backup alone, since it is the newest one made', BACK, 'Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.'],
-        ['Sunday’s full alone, because a full backup is the complete copy', BACK, 'That brings back Sunday’s files and loses every change made from Monday to Thursday.']],
+        ['Thursday night’s backup alone', BACK, 'Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.'],
+        ['Sunday’s full alone', BACK, 'That brings back Sunday’s files and loses every change made from Monday to Thursday.']],
       'Nightly copies of only what changed since the last backup are incremental. A restore needs the last full and every incremental after it, in order.'),
     chat('l27-k-lift', 'safety', 'Ora, Stockroom', 'I have to move a heavy UPS (a battery box) from the floor to a shelf in the server room. I am on my own today, and it is awkward to hold.',
       'What is the safe way to move it?', [
         ['Bend the knees, keep the back straight, hold it close or use a cart', true, 'Lifting technique protects the back: bend the knees, keep the back straight and hold the load close. A cart or a second person helps with a heavy load.'],
         ['Bend over from the waist and lift quickly so the strain is over fast', GEAR, 'Lifting with a bent back is how backs are injured. The legs should do the work.'],
         ['Twist at the waist to swing it onto the shelf in one movement', GEAR, 'Twisting under a load strains the back. Turn the feet, not the waist.'],
-        ['Put on an ESD strap first, since a battery box can hold a charge', GEAR, 'The strap guards parts from static. It does nothing for the weight of the load.']],
+        ['Put on an ESD strap first', GEAR, 'The strap guards parts from static. It does nothing for the weight of the load.']],
       'A heavy load is lifted with the knees bent, the back straight and the load close, or moved with a cart or a second person.'),
   ]);
 })();

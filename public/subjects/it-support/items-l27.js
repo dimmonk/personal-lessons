@@ -27,10 +27,10 @@
           ['r4', 'Server changes happen in the maintenance window, Saturday 10 p.m. to 2 a.m.'],
           ['r5', 'No written procedure covers firmware updates.']])],
       asks: [ask('Which type of change is this?', [
-        ['A normal change: not routine, and nothing is down', true, 'Nothing is down and no attack is under way, so it is not an emergency, and no written procedure covers it, so it is not standard. It takes the whole process.'],
-        ['An emergency change, because Mr. Okafor wants it done tonight', TYPE, 'Wanting it tonight does not make it an emergency. The rule is an outage or an attack happening now, and neither is on the ticket.'],
-        ['A standard change, because it only takes ten minutes', TYPE, 'Standard means a routine change with a pre-approved written procedure. How long it takes does not decide the type.'],
-        ['Not a change, because the server keeps working', TYPE, 'A firmware update can stop the server, which is why it is a change. What matters is the risk to people’s work.']])],
+        ['A normal change', true, 'Nothing is down and no attack is under way, so it is not an emergency, and no written procedure covers it, so it is not standard. It takes the whole process.'],
+        ['An emergency change', TYPE, 'Wanting it tonight does not make it an emergency. The rule is an outage or an attack happening now, and neither is on the ticket.'],
+        ['A standard change', TYPE, 'Standard means a routine change with a pre-approved written procedure. How long it takes does not decide the type.'],
+        ['Not a change', TYPE, 'A firmware update can stop the server, which is why it is a change. What matters is the risk to people’s work.']])],
       steps: [
         { id: 'guess', does: 'Name the favorite type and check it against the desk’s own rule.', working: 'The first guess is emergency, because Mr. Okafor said “tonight”. The rule needs one answer: is there an outage or an attack now? No. Emergency is ruled out.', ask: 'a' },
         { id: 'form', does: 'Write the request form.', working: 'Purpose: current firmware, fixes a fault the maker listed. Scope: the accounting server only. Type: normal. Affected systems: accounting and payroll. Risk: a failed update could stop payroll, so the risk level is high.' },
@@ -61,17 +61,17 @@
       reason: 'The first guess, clean it up, would have deleted evidence. Prohibited content or a crime found on a drive means: stop, leave it alone, inform management, document everything, keep the chain of custody, and let the copy be examined while the original stays unchanged.' }),
     chat('l27-p-type', 'change', 'Rosalind, Operations', 'Every month the 40 reception PCs get the same Windows updates, by the desk’s written procedure. The change board approved that procedure once, for good, last year.',
       'Which type of change is the monthly update?', [
-        ['A standard change, being routine and pre-approved', true, 'A routine change with a written procedure that was approved ahead of time is a standard change. It does not go to the board each month.'],
-        ['A normal change, so it goes to the board every month', TYPE, 'Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.'],
-        ['An emergency change, because 40 PCs are involved', TYPE, 'Emergency means an outage or an attack happening now. The number of PCs does not decide it.'],
-        ['Not a change, because the PCs keep working during it', TYPE, 'Updates can break a PC, so they are changes. A routine one is a standard change.']],
+        ['A standard change', true, 'A routine change with a written procedure that was approved ahead of time is a standard change. It does not go to the board each month.'],
+        ['A normal change', TYPE, 'Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.'],
+        ['An emergency change', TYPE, 'Emergency means an outage or an attack happening now. The number of PCs does not decide it.'],
+        ['Not a change', TYPE, 'Updates can break a PC, so they are changes. A routine one is a standard change.']],
       'Routine, written down and approved ahead of time is what makes a change standard. Normal needs the whole process each time, and emergency is for an outage or an attack now.'),
     chat('l27-p-backup', 'backup', 'Pauline, Warehouse', 'The file server gets a full backup on Sunday. Each night after that, it copies everything that changed since Sunday. It crashed on Thursday morning.',
       'Which backups does the restore need?', [
         ['Sunday’s full and Wednesday night’s backup only', true, 'Each night copies everything changed since the last full, so it is a differential backup. Wednesday’s holds Monday’s, Tuesday’s and Wednesday’s changes, so two backups are enough.'],
         ['Sunday’s full and the Monday, Tuesday and Wednesday backups', BACK, 'That is how an incremental restore goes. These nightly backups each hold everything since Sunday, so Wednesday’s already includes the earlier days.'],
-        ['Wednesday night’s backup alone, since it is the newest', BACK, 'Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.'],
-        ['Sunday’s full alone, since it is the only full one', BACK, 'That brings back Sunday’s files and loses the changes from Monday to Wednesday.']],
+        ['Wednesday night’s backup alone', BACK, 'Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.'],
+        ['Sunday’s full alone', BACK, 'That brings back Sunday’s files and loses the changes from Monday to Wednesday.']],
       'A backup of everything changed since the last full is a differential. A restore needs the last full and the latest differential, and no more.'),
     chat('l27-p-esd', 'safety', 'Tim, Field tech', 'I am about to swap the memory in a desktop. I have an ESD wrist strap. The side panel is off and I am deciding where to clip the strap.',
       'Where does the strap go, and what comes first?', [
@@ -108,7 +108,7 @@
     chat('l27-q-humid', 'safety', 'Bob, Archive', 'In the dry winter air of the archive room, people get small static shocks from the metal shelves, and two memory modules have failed in the PCs there.',
       'Which part of the environment needs controlling?', [
         ['Humidity: air that is too dry builds up static charge', true, 'Very dry air builds static, which can damage chips. Humidity is kept in range.'],
-        ['Dust: the shelves need cleaning, because dust causes the shocks', PWR, 'Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.'],
+        ['Dust: the shelves need cleaning', PWR, 'Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.'],
         ['Surges: a spike on the power line is burning out the modules', PWR, 'A power surge does not give people shocks from metal shelves. Static in dry air does.'],
         ['Temperature: the room must be made as warm as possible', PWR, 'Heat does not cure static, and it shortens the life of parts.']],
       'Too dry raises static, too humid brings moisture and corrosion. Humidity is one of the things the room controls.'),
@@ -131,7 +131,7 @@
     chat('l27-g-fire', 'safety', 'Darius, Facilities', 'A power strip behind the server rack is smoking and sparking, and a small flame has started. A water extinguisher hangs by the door.',
       'What is the first thing to do?', [
         ['Leave the room, warn people, and call emergency services', true, 'Electrical fires are not put out with water. The safe move is to get out, warn others and call for help.'],
-        ['Pour the water on the strip, since it is a small fire', GEAR, 'Water on an electrical fire can carry current to the person. It is never used on one.'],
+        ['Pour the water on the strip', GEAR, 'Water on an electrical fire can carry current to the person. It is never used on one.'],
         ['Unplug the rack’s other cables, one by one, to save the servers', GEAR, 'Reaching into a smoking, sparking rack risks shock and burns, and it leaves the fire growing.'],
         ['Put on goggles and a mask, then carry the servers out', GEAR, 'Goggles and a mask protect against dust. They do not make a fire safe to work around.']],
       'Fire safety: never water on an electrical fire; leave, warn and call emergency services.'),

@@ -1,6 +1,6 @@
 # IT Help Desk: Changes, backups, safety and evidence
 
-Revision 2, draft (the screen carries the draft line). Part: Changes, backups, safety and evidence. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Changes, backups, safety and evidence. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -100,10 +100,10 @@ A plain table, "From the desk’s change rules":
 Before the working, the learner may commit to a choice (not scored, not stored):
 **Which type of change is this?**
 (the options come in an order that depends on the seed of the question)
-- A normal change: not routine, and nothing is down
-- An emergency change, because Mr. Okafor wants it done tonight
-- A standard change, because it only takes ten minutes
-- Not a change, because the server keeps working
+- A normal change
+- An emergency change
+- A standard change
+- Not a change
 
 The working, one step at a time:
 1. Name the favorite type and check it against the desk’s own rule.: The first guess is emergency, because Mr. Okafor said “tonight”. The rule needs one answer: is there an outage or an attack now? No. Emergency is ruled out.
@@ -112,7 +112,7 @@ The working, one step at a time:
 1. Pick the time.: Not tonight. The change board must approve, and servers change only in the maintenance window: the coming Saturday. The year-end change freeze, if one were running, would block it altogether.
 1. After approval, do the work, get it checked, and get the users to accept it.: Implement it Saturday. A second technician reviews it (peer review). On Monday, Mr. Okafor confirms payroll runs (end-user acceptance). Write the note: the approval, the backup and the check. Then close the ticket.
 
-Then the answer: A normal change: not routine, and nothing is down. The type comes from the desk’s rule, not from the wish for tonight. Nothing was down, so it is a normal change: a request form, rollback and backup plans, a test, board approval, the maintenance window, a peer review and the users’ acceptance.
+Then the answer: A normal change. The type comes from the desk’s rule, not from the wish for tonight. Nothing was down, so it is a normal change: a request form, rollback and backup plans, a test, board approval, the maintenance window, a peer review and the users’ acceptance.
 
 ## Step 8: A worked example
 
@@ -157,10 +157,10 @@ Help on screen: the words that decide it are marked.
 
 **Which type of change is the monthly update?**
 (the options come in an order that depends on the seed of the question)
-- A standard change, being routine and pre-approved (right)
-- A normal change, so it goes to the board every month — if chosen: Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.
-- An emergency change, because 40 PCs are involved — if chosen: Emergency means an outage or an attack happening now. The number of PCs does not decide it.
-- Not a change, because the PCs keep working during it — if chosen: Updates can break a PC, so they are changes. A routine one is a standard change.
+- A standard change (right)
+- A normal change — if chosen: Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.
+- An emergency change — if chosen: Emergency means an outage or an attack happening now. The number of PCs does not decide it.
+- Not a change — if chosen: Updates can break a PC, so they are changes. A routine one is a standard change.
 
 After the answer: the deciding words are marked. Reason: Routine, written down and approved ahead of time is what makes a change standard. Normal needs the whole process each time, and emergency is for an outage or an attack now.
 
@@ -176,8 +176,8 @@ Help on screen: the words that decide it are marked.
 (the options come in an order that depends on the seed of the question)
 - Sunday’s full and Wednesday night’s backup only (right)
 - Sunday’s full and the Monday, Tuesday and Wednesday backups — if chosen: That is how an incremental restore goes. These nightly backups each hold everything since Sunday, so Wednesday’s already includes the earlier days.
-- Wednesday night’s backup alone, since it is the newest — if chosen: Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.
-- Sunday’s full alone, since it is the only full one — if chosen: That brings back Sunday’s files and loses the changes from Monday to Wednesday.
+- Wednesday night’s backup alone — if chosen: Wednesday’s holds only what changed since Sunday. Everything unchanged lives only in the full.
+- Sunday’s full alone — if chosen: That brings back Sunday’s files and loses the changes from Monday to Wednesday.
 
 After the answer: the deciding words are marked. Reason: A backup of everything changed since the last full is a differential. A restore needs the last full and the latest differential, and no more.
 
@@ -287,7 +287,7 @@ A chat, with its history: "Bob, Archive", Chat with the help desk.
 **Which part of the environment needs controlling?**
 (the options come in an order that depends on the seed of the question)
 - Humidity: air that is too dry builds up static charge (right)
-- Dust: the shelves need cleaning, because dust causes the shocks — if chosen: Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.
+- Dust: the shelves need cleaning — if chosen: Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.
 - Surges: a spike on the power line is burning out the modules — if chosen: A power surge does not give people shocks from metal shelves. Static in dry air does.
 - Temperature: the room must be made as warm as possible — if chosen: Heat does not cure static, and it shortens the life of parts.
 
@@ -329,7 +329,7 @@ A chat, with its history: "Darius, Facilities", Chat with the help desk.
 **What is the first thing to do?**
 (the options come in an order that depends on the seed of the question)
 - Leave the room, warn people, and call emergency services (right)
-- Pour the water on the strip, since it is a small fire — if chosen: Water on an electrical fire can carry current to the person. It is never used on one.
+- Pour the water on the strip — if chosen: Water on an electrical fire can carry current to the person. It is never used on one.
 - Unplug the rack’s other cables, one by one, to save the servers — if chosen: Reaching into a smoking, sparking rack risks shock and burns, and it leaves the fire growing.
 - Put on goggles and a mask, then carry the servers out — if chosen: Goggles and a mask protect against dust. They do not make a fire safe to work around.
 
@@ -471,8 +471,8 @@ A chat, with its history: "Stephen, Systems", Chat with the help desk.
 (the options come in an order that depends on the seed of the question)
 - Sunday’s full and the nightly backups from Monday to Thursday, in order (right)
 - Sunday’s full and Thursday night’s backup, which holds all the changes — if chosen: That is how a differential restore goes. Thursday’s here holds only Thursday’s changes, so the other nights are needed too.
-- Thursday night’s backup alone, since it is the newest one made — if chosen: Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
-- Sunday’s full alone, because a full backup is the complete copy — if chosen: That brings back Sunday’s files and loses every change made from Monday to Thursday.
+- Thursday night’s backup alone — if chosen: Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
+- Sunday’s full alone — if chosen: That brings back Sunday’s files and loses every change made from Monday to Thursday.
 
 After the answer: the deciding words are marked. Reason: Nightly copies of only what changed since the last backup are incremental. A restore needs the last full and every incremental after it, in order.
 
@@ -487,7 +487,7 @@ A chat, with its history: "Wade, Server room", Chat with the help desk.
 - With the rack switched off and unplugged, blow it out with compressed air, fans held still, goggles on (right)
 - Blow it out with compressed air while the rack keeps running, fans left free to spin — if chosen: Air can spin a fan far faster than it is built for, and the equipment is switched off and unplugged before any cleaning.
 - Spray cleaner on the fans and let them dry themselves on power — if chosen: Liquid on a running fan can short it, and the cleaner can damage the parts.
-- Leave it, because dust only matters for how the room looks — if chosen: Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.
+- Leave it — if chosen: Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.
 
 After the answer: the deciding words are marked. Reason: Dust is cleaned with compressed air (fans held still, goggles and mask) or an ESD-safe vacuum, never with liquid on live parts.
 
@@ -502,7 +502,7 @@ A chat, with its history: "Ora, Stockroom", Chat with the help desk.
 - Bend the knees, keep the back straight, hold it close or use a cart (right)
 - Bend over from the waist and lift quickly so the strain is over fast — if chosen: Lifting with a bent back is how backs are injured. The legs should do the work.
 - Twist at the waist to swing it onto the shelf in one movement — if chosen: Twisting under a load strains the back. Turn the feet, not the waist.
-- Put on an ESD strap first, since a battery box can hold a charge — if chosen: The strap guards parts from static. It does nothing for the weight of the load.
+- Put on an ESD strap first — if chosen: The strap guards parts from static. It does nothing for the weight of the load.
 
 After the answer: the deciding words are marked. Reason: A heavy load is lifted with the knees bent, the back straight and the load close, or moved with a cart or a second person.
 

@@ -76,7 +76,7 @@
         ['Disk Cleanup, to clear the Downloads folder of old files', TIDY, 'The file is a clue and should be looked at, not cleared. It may not even be a PDF.']])],
       deciding: ['p1', 'b3'],
       reason: 'The Type column says Application where a PDF would say a document type: the real ending, .exe, was hidden, and the name looked like a PDF. Showing extensions in File Explorer Options (View tab) shows the real name. A program named like a document is a warning sign, so do not open it again.' }),
-    T('l20-k-hib', SE, 'Erica, Travel', 'I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.',
+    T('l20-k-hib', SE, 'Odalys, Travel', 'I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.',
       'Which power state fits?', [
         ['Hibernate: saves the open work to the drive, then powers off', true, 'Hibernate writes what is in memory to the drive and uses no power, so the work comes back and the battery is not drained.'],
         ['Sleep: it keeps the open work in memory on a trickle of power', PWR, 'Sleep uses a little power all the time. Over a week the battery could run out, and unsaved work would be lost.'],

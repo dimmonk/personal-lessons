@@ -6,7 +6,7 @@
 // Strands: policy, scripts, remote, ai, virtual, cloud. One worked ticket; a first group of five with the help shown; a second of eight; a third of seven mixed with lessons 26 and 27; the check: six new questions,
 // one per strand, 5 of 6 to pass. Three reserve questions for each strand.
 FC.lesson('it-support', {
-  id: 'l28', part: 'rules', title: 'Policy, scripts, remote access, AI and the cloud', rev: 2, status: 'draft',
+  id: 'l28', part: 'rules', title: 'Policy, scripts, remote access, AI and the cloud', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, split from the first draft of lesson 27 (licenses and regulated data, scripts, remote access, AI, virtual machines and cloud models; each taught by the decision it answers on a ticket, then asked from memory and as a choice).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'It is 8 p.m. A user pastes a customer’s card details into a public AI chatbot. A new hire runs a script from a forum. A branch needs its Linux server restarted from home. Each is a small rule.',

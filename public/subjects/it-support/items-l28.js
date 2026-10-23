@@ -66,10 +66,10 @@
       'Scripts are read and tested on a safe machine before they reach a real one, and only from a trusted source.'),
     chat('l28-q-ai', 'ai', 'Ellis, Customer service', 'I pasted a customer’s name, address and card details into a public AI chatbot to help write a reply. The answer was good. Was that fine?',
       'What do you do about Ellis’s paste?', [
-        ['Report the paste to the manager and stop it, since a public service may keep typed text, even card data', true, 'A public AI service may keep and use what it receives. Card details are regulated data, and company policy keeps them out. The data has already gone out, so management is told (inform management).'],
-        ['Tell Ellis the chatbot deletes everything once the window is closed, so nothing more is needed', LEAK, 'A public service makes no such promise. The text may be kept.'],
-        ['Tell Ellis to run the reply through a plagiarism check, since that is the risk with AI text', LEAK, 'Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.'],
-        ['Tell Ellis to keep using the tool, since the answer was good', TRUST, 'A good answer does not make the service safe. What matters is who keeps what is typed.']],
+        ['Tell the manager about the paste and stop using the chatbot for customer details', true, 'A public AI service may keep and use what it receives. Card details are regulated data, and company policy keeps them out. The data has already gone out, so management is told (inform management).'],
+        ['Tell Ellis the chatbot deletes everything when the window is closed', LEAK, 'A public service makes no such promise. The text may be kept.'],
+        ['Tell Ellis to run the reply through a plagiarism check before it is sent', LEAK, 'Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.'],
+        ['Tell Ellis the tool is fine to keep using for replies like this one', TRUST, 'A good answer does not make the service safe. What matters is who keeps what is typed.']],
       'Private and regulated data stays out of a public AI service, whatever the quality of the answer, and a leak that already happened is reported to management.'),
     chat('l28-q-cloud', 'cloud', 'Brian, Office manager', 'We want email, calendars and documents in a browser. We do not want to run servers or look after an operating system.',
       'Which service level is this?', [
@@ -142,7 +142,7 @@
         ['A Type 2 hypervisor, a program running on an operating system', VIRT, 'A hypervisor type is about where the VM software runs, not about who gets the desktops.'],
         ['A sandbox, a sealed place to open suspicious files', VIRT, 'A sandbox is for safe testing. Agents use these desktops all day for work.']],
       'Desktops that run as VMs on servers and are used from any device are VDI.'),
-    chat('l28-g-drm', 'policy', 'Luke, Studio', 'A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.',
+    chat('l28-g-drm', 'policy', 'Thaddeus, Studio', 'A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.',
       'What is the protection called?', [
         ['DRM, digital rights management for content', true, 'DRM limits copying or playing of content you bought, which explains a film that plays on one device only.'],
         ['A EULA, the terms accepted when installing software', LIC, 'A EULA is an agreement a person accepts. The limit on the film is built into the file.'],

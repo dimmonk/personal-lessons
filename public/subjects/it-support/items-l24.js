@@ -126,7 +126,7 @@
         ['/etc/resolv.conf', LOOK, '/etc/resolv.conf lists the name servers the computer uses. It has nothing about drives.']],
       '/etc/fstab names the drives mounted at start-up. mount attaches one by hand; fstab does it every time the machine starts.'),
     chat('l24-g-fv', 'mac-care', 'Isidro, Operations', 'My boss is taking a company MacBook abroad. If it is lost, nobody must be able to read what is on its drive. Windows has BitLocker for this.',
-      'What does that on a Mac?', [
+      'What do you use on a Mac for that job?', [
         ['FileVault, which encrypts the whole startup drive', true, 'FileVault is the Mac’s BitLocker: the drive is scrambled, so a thief who removes it cannot read it.'],
         ['Disk Utility, which erases, partitions and checks drives', TOOL, 'Disk Utility looks after drives. It does not protect what is on them.'],
         ['Time Machine, which backs the Mac up to another drive', TOOL, 'A backup helps after a loss but does not stop anyone reading the lost Mac.'],
@@ -139,7 +139,7 @@
         ['mount, to attach the editor to the desktop', TOOL, 'mount attaches a drive to a folder. It installs nothing.'],
         ['A .dmg from the vendor’s site, opened by double-clicking', OS, 'A .dmg is a Mac file. Linux installs through apt or dnf.']],
       'Both apt and dnf install programs from a list kept by the distribution, the version of Linux in use. Ubuntu uses apt; Fedora uses dnf.'),
-    chat('l24-g-disk', 'mac-care', 'Rohan, Finance', 'An external drive shows up gray in Finder and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.',
+    chat('l24-g-disk', 'mac-care', 'Rohan, Finance', 'An external drive shows up gray in Disk Utility and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.',
       'What do I do first?', [
         ['In Disk Utility, try to mount the drive and copy off what can be read, then run First Aid', true, 'The files are the only copy, so what can be read comes off first. First Aid repairs a drive by rewriting it, so it comes after. Disk Utility is the Mac’s counterpart of chkdsk and Disk Management.'],
         ['Erase the drive in Disk Utility, then put the files back from it', NOBACK, 'Erase wipes what is on it. The files are not backed up, so an erase destroys the only copy.'],
@@ -150,7 +150,7 @@
       ['(etc) hosts'], 'It is /etc/hosts, the same job as the hosts file in Windows. /etc/resolv.conf is the other name file: it lists the name servers the computer uses.'),
     chat('l24-g-rsr', 'mac-care', 'Homer, IT', 'A security hole in Safari is in the news. The company says the Macs get a fix “today”, but the next big macOS update is weeks away.',
       'What is Rapid Security Response, as the exam names it?', [
-        ['Apple’s quick security update, sent between the big updates; current Macs call it Background Security Improvements', true, 'It brings a security fix quickly, without waiting for the next full macOS update.'],
+        ['Apple’s quick security update, sent between the big updates', true, 'It brings a security fix quickly, without waiting for the next full macOS update. Current Macs call it Background Security Improvements.'],
         ['A tool that finds and removes viruses on the Mac', LOOK, 'That is antivirus. Rapid Security Response installs fixes from Apple.'],
         ['A copy of the whole Mac kept on an external drive', LOOK, 'That is a backup, which Time Machine makes.'],
         ['A way to lock the Mac from far away when it is stolen', TOOL, 'It is about security fixes, not about locking a lost Mac.']],

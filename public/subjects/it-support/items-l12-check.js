@@ -53,7 +53,7 @@
       deciding: ['f1'],
       reason: 'Apple’s small reversible 8-pin plug on phones before USB-C is Lightning.' }),
     item({
-      id: 'l12-k-hot', strand: 'display',
+      id: 'l12-k-hot', strand: 'display-fix',
       blocks: [msg('chat', 'Jana, Training', 'Chat with the help desk', [['k1', 'The room 5 projector shuts off by itself after about 20 minutes, then works after a rest. The fan gets loud before it goes.']])],
       asks: [ask('What do you check first?', [
         ['The vents and the dust filter', true, 'Blocked vents or a dirty filter make a projector overheat and shut down.'],
@@ -63,7 +63,7 @@
       deciding: ['k1'],
       reason: 'A projector that shuts off after a while, with a loud fan first, is overheating. Dust and blocked vents are the cheap thing to check.' }),
     item({
-      id: 'l12-k-native', strand: 'display',
+      id: 'l12-k-native', strand: 'display-fix',
       blocks: [msg('chat', 'Henry, HR', 'Chat with the help desk', [['l1', 'My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.']])],
       asks: [ask('What do you check first?', [
         ['Switch Windows to native resolution', true, 'A picture not at the panel’s native resolution is stretched, which makes it fuzzy.'],
@@ -73,7 +73,7 @@
       deciding: ['l1'],
       reason: 'The monitor’s native resolution is 3840 by 2160 and Windows sends 1280 by 720, which the panel stretches. Switch it to native.' }),
     item({
-      id: 'l12-k-burn', strand: 'display',
+      id: 'l12-k-burn', strand: 'display-fix',
       blocks: [msg('chat', 'Lior, Lobby', 'Chat with the help desk', [['m1', 'Our lobby OLED TV has shown the same schedule board all day for months. Now a faint outline of the board stays on the screen even when it shows a video.']])],
       asks: [ask('What is it?', [
         ['Burn-in', true, 'Burn-in is a ghost of a static image left in the screen, most often on OLED.'],

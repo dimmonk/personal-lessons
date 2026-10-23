@@ -1,6 +1,6 @@
 # IT Help Desk: Policy, scripts, remote access, AI and the cloud
 
-Revision 2, draft (the screen carries the draft line). Part: Policy, scripts, remote access, AI and the cloud. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Policy, scripts, remote access, AI and the cloud. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -202,10 +202,10 @@ Help on screen: the words that decide it are marked.
 
 **What do you do about Ellis’s paste?**
 (the options come in an order that depends on the seed of the question)
-- Report the paste to the manager and stop it, since a public service may keep typed text, even card data (right)
-- Tell Ellis the chatbot deletes everything once the window is closed, so nothing more is needed — if chosen: A public service makes no such promise. The text may be kept.
-- Tell Ellis to run the reply through a plagiarism check, since that is the risk with AI text — if chosen: Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.
-- Tell Ellis to keep using the tool, since the answer was good — if chosen: A good answer does not make the service safe. What matters is who keeps what is typed.
+- Tell the manager about the paste and stop using the chatbot for customer details (right)
+- Tell Ellis the chatbot deletes everything when the window is closed — if chosen: A public service makes no such promise. The text may be kept.
+- Tell Ellis to run the reply through a plagiarism check before it is sent — if chosen: Plagiarism is about passing off work as your own. It has nothing to do with where customer data goes.
+- Tell Ellis the tool is fine to keep using for replies like this one — if chosen: A good answer does not make the service safe. What matters is who keeps what is typed.
 
 After the answer: the deciding words are marked. Reason: Private and regulated data stays out of a public AI service, whatever the quality of the answer, and a leak that already happened is reported to management.
 
@@ -404,9 +404,9 @@ After the answer: the deciding words are marked. Reason: Desktops that run as VM
 
 #### Item 19
 
-A chat, with its history: "Luke, Studio", Chat with the help desk.
+A chat, with its history: "Thaddeus, Studio", Chat with the help desk.
 
-> (Luke, Studio, at the left) A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.
+> (Thaddeus, Studio, at the left) A film I bought from an online store plays on my laptop but not on my tablet. The store says the film is protected so that it cannot be freely copied.
 
 **What is the protection called?**
 (the options come in an order that depends on the seed of the question)

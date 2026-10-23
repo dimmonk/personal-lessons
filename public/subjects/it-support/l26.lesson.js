@@ -11,7 +11,7 @@
 // Strands: malware-kinds, attacks, malware-removal, destruction, browser-security. One worked ticket (Rory's slow laptop); a first group of five with help; a second of eleven; a third of ten mixed with lessons 5 and 23; the
 // check: eight new questions, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l26', part: 'malware', title: 'Malware and attacks', rev: 2, status: 'draft',
+  id: 'l26', part: 'malware', title: 'Malware and attacks', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the kinds of malware and the tools against them, social engineering and attacks, the ten removal steps in order with the reason for each place, wiping and destroying drives, browser security settings, and the signs on a PC and in a browser).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'At 9:05 a user writes that every file in their Documents folder now ends in .locked and a note wants $800. At 9:20 another says a man from “the bank” phoned and wants the code just texted to them. At 9:40 a third says their laptop is slow and the fan never stops. Each ticket gives you only a sign.',
@@ -88,7 +88,7 @@ FC.lesson('it-support', {
         { id: 'p8', cells: ['Searches sent elsewhere (redirection)', 'Malware, a bad extension, or a changed proxy', 'Try another browser'] },
         { id: 'p9', cells: ['A slow browser', 'Too many extensions, or a cryptominer', 'What uses the processor in Task Manager?'] }] }] },
     { title: 'The ten steps of malware removal, and why each sits where it does',
-      show: [{ kind: 'prose', text: ['System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on.'] },
+      show: [{ kind: 'prose', text: ['System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on. The ten steps are as listed in CompTIA’s objectives.'] },
       { kind: 'document', form: 'table', title: 'Contain it (1 to 4), clean it (5 to 7), keep it clean (8 to 10)', head: ['Step', 'Why it sits here'], rows: [
         { id: 'r1', cells: ['1. Investigate and verify the symptoms', 'Be sure it is malware before you disrupt the user'] },
         { id: 'r2', cells: ['2. Quarantine the infected computer', 'Cut it off so it cannot spread or send data out'] },

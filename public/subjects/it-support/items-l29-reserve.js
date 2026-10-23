@@ -17,7 +17,7 @@
     chat('l29-r-renew', 'Brigid, Reception', 'You fixed my Wi-Fi by running a renew command a minute ago. I have a visitor waiting, so just close the ticket.',
       'What is the next move?', [
         ['Have Brigid open the failed page, and close the ticket once it loads', true, 'The fix counts when the user has checked it works for them, and the ticket says what happens next.'],
-        ['Close the ticket now, since the command ran without any error', EARLY, 'A command that ran is not proof the user can work. The user confirms, then it closes.'],
+        ['Close the ticket now', EARLY, 'A command that ran is not proof the user can work. The user confirms, then it closes.'],
         ['Leave it open and call Brigid again tomorrow morning to check', BRUSH, 'The user is ready to check now, and a visitor is waiting. Waiting a day does not help.'],
         ['Run the same command again on the laptop to be safe', FIXED, 'It repeats a change that already worked and still leaves the user unasked.']],
       'The user checks that the fix works for them before the ticket is closed.'),
@@ -43,14 +43,14 @@
     chat('l29-r-newhire', 'Tobiah, Operations', 'A new hire starts Monday in my team. Please get them an account and a laptop. I am their manager.',
       'What kind of ticket is this, and what comes first?', [
         ['A request: follow the desk’s new-hire steps, starting with the approved form', true, 'It is a routine request with a fixed procedure. The steps written for it come first, including who has approved it.'],
-        ['An incident: make the account right now, since the start day is Monday', WKIND, 'Nothing is broken. A fixed procedure covers it, and the start day only decides when the steps must be done.'],
+        ['An incident: make the account right now', WKIND, 'Nothing is broken. A fixed procedure covers it, and the start day only decides when the steps must be done.'],
         ['A problem: look for the cause behind all the new hires this year', WKIND, 'A problem is the cause behind things that keep happening. This ticket is a single new hire.'],
         ['Make the account from the manager’s message alone, then fetch a laptop', NOID, 'The message is the only record that the request is real. The desk’s own steps confirm it before access is made.']],
       'A routine request with a fixed procedure is a request, worked through the desk’s steps, with the approval checked.'),
     chat('l29-r-raid', 'Linnea, Server team', 'The file server’s RAID 5 shows one drive as failed, but everyone can still open their files. Should I wait until the weekend?',
       'What do you tell Linnea?', [
         ['Check that a recent backup exists, then replace the failed drive and let it rebuild', true, 'The array still works, but with one drive gone it has no room for a second failure. RAID is not a backup, so the backup is checked before the swap.'],
-        ['Wait until the weekend, since all the files still open', ALARM, 'A RAID 5 with a failed drive has lost its protection. A second failed drive loses the data.'],
+        ['Wait until the weekend', ALARM, 'A RAID 5 with a failed drive has lost its protection. A second failed drive loses the data.'],
         ['Create the array again from the four drives and copy the files back', REBUILT, 'Creating the array again can erase the data that is still on the drives.'],
         ['Restart the server to see whether the failed drive comes back by itself', NOSPLIT, 'A restart does not repair a failed drive, and it adds risk to a server that has no spare protection left.']],
       'A failed RAID 5 drive is replaced soon, after the backup is checked, because the array can survive no second failure.'),

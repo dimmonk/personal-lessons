@@ -1,6 +1,6 @@
 # IT Help Desk: The whole ticket
 
-Revision 2, draft (the screen carries the draft line). Part: The whole ticket. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: The whole ticket. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -10,7 +10,7 @@ Here you do the job as it will be. First a recap of the nine moves and the chain
 ## Step 1: The nine moves, and the chains, by name
 
 Every ticket gets the same nine moves, in order: sort it, get their words and search what the desk knows, find out what changed and protect their data, try the known fix with a limit, cut it in half with the cheapest test, change one thing at a time, check it works for them and say what happens next, hand it on with everything you found, and write it up.
-Each system has a chain, and the cheapest test splits it. The boot chain: power, the start-up test, firmware, the boot drive, Windows, sign-in. The print path: app, queue, driver, printer, paper. The connection chain: link, address, gateway, name lookup, service. Wireless and phones: radio, connection, account, app. Windows: the tool that shows the fault, then its fix. Security: account, password, permission, and the ten steps to remove malware in order, beginning with verify, then quarantine. The desk: change, backup, evidence, policy.
+Each system has a chain, and the cheapest test splits it. The boot chain: power, the start-up test, firmware, the boot drive, Windows, sign-in. The print path: app, queue, driver, printer, paper. The connection chain: link, address, gateway, name lookup, service. Phone Bluetooth: on, pairing mode, found, PIN, test. Phone data: switch, line, plan, account, sync. Windows: the tool that shows the fault, then its fix. Access: who you are, what you are allowed, the policy over both, the door in front. Malware: the ten removal steps in order, beginning with verify, then quarantine. The desk: change, backup, evidence, policy.
 Reading a ticket: the first move is usually sort it or get the story. Once the ticket shows a symptom, the next move is a test that splits a chain, or protecting data that has no other copy. A part swapped first or a reinstall is never the start, and neither is a reset of a computer that works. An account whose password may be stolen is different: confirm who is asking by a record the desk holds, such as the number on file, then change the password at once.
 A ticket closes in one order: the user confirms it works, you write the note, then you close it. A change to something many people use gets approval, a written way back and a backup before it is made.
 
@@ -27,9 +27,9 @@ A chat, with its history: "Oksana, Design", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Print the printer’s own test page from its panel and look for the streak (right)
-- Reinstall the printer driver on the computer and print the report again — if chosen: Two programs gave the same streak, so the driver is an unlikely link. The streak is marked on the paper by the printer.
+- Reinstall the printer driver on the computer, restart it, and print the report again — if chosen: Two programs gave the same streak, so the driver is an unlikely link. The streak is marked on the paper by the printer.
 - Clear the print queue and restart the Print Spooler on the computer — if chosen: The pages do come out, so the queue works. The fault shows up after the job leaves the computer.
-- Replace the whole printer with the spare from the storeroom today — if chosen: A swap is a costly way to learn what a test page would show for free.
+- Replace the whole printer with the spare from the storeroom and move the cables across — if chosen: A swap is a costly way to learn what a test page would show for free.
 
 After the answer: the deciding words are marked. Reason: A test page printed from the printer’s own panel splits the printer from everything before it on the print path.
 
@@ -57,8 +57,8 @@ A chat, with its history: "Ulises, Finance", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Open the Startup tab in Task Manager and look at what loads at sign-in (right)
-- Reinstall Windows on the PC and put the programs back afterwards — if chosen: A reinstall is the biggest step. Smaller ways back come first, and the files are at risk.
-- Add more memory to the PC, since a slow start means it runs short — if chosen: The teammates have the same memory and start fast. A part is not the first move.
+- Reinstall Windows on the PC and put the programs back afterwards one by one — if chosen: A reinstall is the biggest step. Smaller ways back come first, and the files are at risk.
+- Add more memory to the PC and see whether it starts any faster — if chosen: The teammates have the same memory and start fast. A part is not the first move.
 - Run a registry cleaner to tidy up whatever has built up since Monday — if chosen: A cleaner changes the PC before anyone has looked at what is wrong with it.
 
 After the answer: the deciding words are marked. Reason: The same model starting fast elsewhere points to software on this PC; the Startup tab in Task Manager shows what loads.
@@ -72,9 +72,9 @@ A chat, with its history: "Valeria, Sales", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Check the data and battery usage lists, and remove the app that came from the website (right)
-- Tell Valeria the carrier is overcharging and request a bigger data plan — if chosen: The plan was used up by something. A bigger plan would only let it run longer.
-- Reset the phone to factory settings and configure it from scratch — if chosen: A reset wipes the phone before the cheaper steps, and the data on it may have no other copy.
-- Install a second security app, using the link on the same website — if chosen: That trusts the same site that gave the first app. Nothing says it is safe.
+- Tell Valeria the carrier is overcharging and request a bigger data plan on the account — if chosen: The plan was used up by something. A bigger plan would only let it run longer.
+- Reset the phone to factory settings and configure it from scratch with a new account — if chosen: A reset wipes the phone before the cheaper steps, and the data on it may have no other copy.
+- Install a second security app, using the link on the same website the first came from — if chosen: That trusts the same site that gave the first app. Nothing says it is safe.
 
 After the answer: the deciding words are marked. Reason: An app from outside the store plus heat, battery and data signs is checked in the usage lists, then removed.
 
@@ -87,8 +87,8 @@ A chat, with its history: "Zaid, Estimating", Chat with the help desk.
 **What do you configure?**
 (the options come in an order that depends on the seed of the question)
 - Have Zaid join the company VPN first, then open Remote Desktop to the office PC (right)
-- Open the Remote Desktop port on the office router so Zaid can connect directly — if chosen: Remote Desktop open to the internet is a door anyone can try. It belongs behind a VPN.
-- Configure SSH on the office PC so Zaid can type commands to it from home — if chosen: SSH gives typed commands on a Linux machine. Zaid needs the Windows desktop.
+- Open the Remote Desktop port on the office router so Zaid can connect straight from home — if chosen: Remote Desktop open to the internet is a door anyone can try. It belongs behind a VPN.
+- Configure SSH on the office PC so Zaid can type commands to it from home tomorrow — if chosen: SSH gives typed commands on a Linux machine. Zaid needs the Windows desktop.
 - Have Zaid install a free screen-sharing app found by a web search — if chosen: Only tools the company allows are used, and a program from a search result has not been checked.
 
 After the answer: the deciding words are marked. Reason: A Windows desktop from home is reached with Remote Desktop, through the company VPN.
@@ -102,7 +102,7 @@ A chat, with its history: "Isolde, Design", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Take out the new memory stick and start the computer again (right)
-- Replace the motherboard, since a black screen with beeps means the board — if chosen: The beeps appeared right after the new stick went in. A board is the last part to swap.
+- Replace the motherboard — if chosen: The beeps appeared right after the new stick went in. A board is the last part to swap.
 - Reinstall Windows from a USB stick and try the new memory afterwards — if chosen: The computer fails before Windows starts, so Windows is not the suspect. A reinstall also risks the files.
 - Update the firmware on the motherboard and start the computer again — if chosen: A computer that does not start cannot take an update, and the step does not split anything.
 
@@ -128,7 +128,7 @@ A chat, with its history: "Odell, Front office", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Push the monitor cable in firmly at both ends and check the port (right)
-- Replace the power supply, since the fans spin but nothing shows — if chosen: The fans spin and the light is green, so the power link works. Swapping a part first skips the cheap check.
+- Replace the power supply — if chosen: The fans spin and the light is green, so the power link works. Swapping a part first skips the cheap check.
 - Reinstall Windows from the recovery drive to rule out a bad install — if chosen: No picture appears even before Windows starts, so Windows is not yet the suspect. A reinstall also puts the files at risk.
 - Update the monitor driver in Device Manager and restart the PC — if chosen: A driver needs a working picture to be changed, and the step does not split the monitor side from the PC side.
 
@@ -165,8 +165,8 @@ A chat, with its history: "Thandi, Accounts", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Stop the Print Spooler on that PC, clear the stuck job and start it again (right)
-- Replace the toner cartridge in the printer, since the page never comes out — if chosen: The printer works for the coworkers, so the toner is not the cause.
-- Restart the shared printer in the supply room, since a job is stuck — if chosen: Everyone else is printing on it. Only one PC’s queue is stuck, so the shared printer is left alone.
+- Replace the toner cartridge in the printer and print the report again — if chosen: The printer works for the coworkers, so the toner is not the cause.
+- Restart the shared printer in the supply room and send the report again — if chosen: Everyone else is printing on it. Only one PC’s queue is stuck, so the shared printer is left alone.
 - Tell Thandi the queue will clear by itself, and close the ticket — if chosen: Nothing has been fixed and nobody has checked that the report prints. The ticket closes after the user confirms.
 
 After the answer: the deciding words are marked. Reason: A queue stuck on one PC while others print is fixed by clearing that queue and restarting the Print Spooler.
@@ -180,7 +180,7 @@ A chat, with its history: "Calder, Sales", Chat with the help desk.
 **What is the cheapest test to start with?**
 (the options come in an order that depends on the seed of the question)
 - Open the battery usage list in Settings and see which app uses most (right)
-- Order a new battery for the phone, since it is two years old — if chosen: A battery may turn out to be the cause, but the usage list is free and could rule it out first.
+- Order a new battery for the phone from the company supplier — if chosen: A battery may turn out to be the cause, but the usage list is free and could rule it out first.
 - Reset the phone to factory settings and start again from scratch — if chosen: A reset wipes the phone before anyone knows the cause, and the data on it may have no other copy.
 - Buy a faster charger so the phone fills sooner in the morning — if chosen: A charger changes how fast it fills, not how fast it drains.
 
@@ -197,7 +197,7 @@ An email: "Fabian, Estimating", Email to the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Copy the quotes off with a rescue USB stick before any repair (right)
-- Run the startup repair now, since it is meant to keep the files — if chosen: A repair is a change to a drive that may be failing, and the quotes are the only copy.
+- Run the startup repair now — if chosen: A repair is a change to a drive that may be failing, and the quotes are the only copy.
 - Reinstall Windows to get the laptop going again quickly today — if chosen: A reinstall can erase the quotes, and nobody knows yet why the system is not found.
 - Order a new drive for the laptop and swap it in this afternoon — if chosen: It may turn out to be the drive, but a part is not the first move when the only copy of the quotes is on it.
 
@@ -233,8 +233,8 @@ A chat, with its history: "Essie, HR", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Check it is Essie with the number on file, then reset the password, end the sessions and report it (right)
-- Reset the password and end all the sessions now, since the chat says it is Essie, then report the email to security — if chosen: Anyone can type a name into a chat. The desk confirms who is asking by a record it holds, such as the number on file, before it resets anything.
-- Tell Essie it is fine to carry on, since the page closed and nothing else happened on the PC — if chosen: A page that closes is how a fake page ends. The password was still sent.
+- Reset the password and end all the sessions now — if chosen: Anyone can type a name into a chat. The desk confirms who is asking by a record it holds, such as the number on file, before it resets anything.
+- Tell Essie it is fine to carry on — if chosen: A page that closes is how a fake page ends. The password was still sent.
 - Scan the PC for malware and wait for the result, then close the ticket once the scan comes back clean — if chosen: A scan does not change the password that was sent, and the ticket closes only after the user confirms.
 
 After the answer: the deciding words are marked. Reason: Phishing that got a password is handled by confirming who is asking, then changing the password at once and reporting it.
@@ -248,9 +248,9 @@ A chat, with its history: "Garrick, Support", Chat with the help desk.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Check which group may open the folder and add Garrick’s account to it (right)
-- Give Everyone full control of the Pricing folder so it opens — if chosen: That opens the folder to every account. Least privilege gives only what the job needs.
-- Make Garrick’s account a local administrator of the PC — if chosen: Administrator rights on one PC do not open a shared folder, and give far more than the job needs.
-- Copy the Pricing folder onto Garrick’s Desktop so it is at hand — if chosen: A copy goes out of date and skips the folder’s permissions.
+- Give Everyone full control of the Pricing folder so it opens for Garrick today — if chosen: That opens the folder to every account. Least privilege gives only what the job needs.
+- Make Garrick’s account a local administrator of the PC and try the folder again — if chosen: Administrator rights on one PC do not open a shared folder, and give far more than the job needs.
+- Copy the Pricing folder onto Garrick’s Desktop so it is at hand each day — if chosen: A copy goes out of date and skips the folder’s permissions.
 
 After the answer: the deciding words are marked. Reason: A shared folder is opened through the group that has the permission, with only the access the job needs.
 
@@ -278,7 +278,7 @@ A chat, with its history: "Wilhelm, Server team", Chat with the help desk.
 **What do you tell Wilhelm?**
 (the options come in an order that depends on the seed of the question)
 - Hold it until it has a written undo plan and approval (right)
-- Go ahead, since being careful is enough for a patch like this — if chosen: Being careful is not a change process. Without an undo plan, a bad patch has no way back.
+- Go ahead — if chosen: Being careful is not a change process. Without an undo plan, a bad patch has no way back.
 - Move it to 2 a.m., when fewer people are on, and skip the approval — if chosen: A quieter hour helps, but the approval and the undo plan are still missing.
 - Patch it tomorrow as planned and back up the server after the patch — if chosen: The backup has to exist before the change. After a bad patch, there is nothing safe to go back to.
 

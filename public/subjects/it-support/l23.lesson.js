@@ -7,7 +7,7 @@
 // no OS found, slow profile load, time drift), 1.4 and 1.5 (the tools and sfc), Core 1 5.1/5.2 (boot symptoms). Plan: lesson 23. One worked ticket (Dara: the memory Dara blames, ruled out by the stop code;
 // the driver found in the log); a first group of four with the deciding words marked; a second of twelve; a third of three mixed with lessons 9 and 5; the check: six new tickets, no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l23', part: 'windows-fix', title: 'Windows problems', rev: 2, status: 'draft',
+  id: 'l23', part: 'windows-fix', title: 'Windows problems', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the twelve Windows signs placed on the boot chain or the running system; the ways back; the cuts safe mode, clean boot and a test profile; the right tool for each).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Dara says their computer blue-screens and restarts, and they are sure the memory is going. But the blue screen names what failed, and the log shows what was installed the evening before.',

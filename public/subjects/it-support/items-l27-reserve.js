@@ -41,8 +41,8 @@
       'What does the restore need?', [
         ['Saturday’s full and the Sunday, Monday and Tuesday backups', true, 'Each night copies only what changed since the last backup, so this is incremental. The restore needs the full and every night after it.'],
         ['Saturday’s full and only Tuesday night’s backup, the latest one', BACK, 'That is how a differential restore goes. These nightly copies hold just one night of changes each.'],
-        ['Tuesday night’s backup alone, since it is the newest copy made', BACK, 'Tuesday’s copy holds only Tuesday’s changes.'],
-        ['Saturday’s full alone, since a full backup holds everything', BACK, 'The full holds the files as they were on Saturday. The changes since then are in the nightly copies.']],
+        ['Tuesday night’s backup alone', BACK, 'Tuesday’s copy holds only Tuesday’s changes.'],
+        ['Saturday’s full alone', BACK, 'The full holds the files as they were on Saturday. The changes since then are in the nightly copies.']],
       'A backup of what changed since the last backup of any kind is incremental. Its restore needs the last full plus every incremental, in order.'),
     chat('l27-r-backup-3', 'backup', 'Gregor, Owner', 'We have run nightly backups for two years. The program says “success” every morning. Nobody has ever tried to get a file back from it.',
       'What should the desk do?', [
@@ -56,7 +56,7 @@
         ['Bend the knees, keep the back straight, and use a cart or a helper', true, 'Lifting technique protects the back: legs do the work, the load stays close, and a heavy load gets a cart or a second person.'],
         ['Bend at the waist and lift with the back, to move it fast', GEAR, 'Lifting with the back is how backs get hurt.'],
         ['Hold it at arm’s length so that it stays well away from the body', GEAR, 'A load held away from the body strains the back more. Keep it close.'],
-        ['Lift it alone in one go, because 60 pounds is not that heavy', GEAR, 'A load that heavy gets a cart or a helper, not a guess about how strong one person is.']],
+        ['Lift it alone in one go', GEAR, 'A load that heavy gets a cart or a helper, not a guess about how strong one person is.']],
       'Lifting is done with the legs, the back straight and the load close, and heavy things get a cart or a second person.'),
     chat('l27-r-safety-2', 'safety', 'Marek, Reception', 'Three new printers were plugged in using long cables that run across the hallway floor to the one wall outlet. Someone has already tripped.',
       'Which safety practice fixes it?', [

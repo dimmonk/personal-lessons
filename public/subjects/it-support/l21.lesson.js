@@ -10,7 +10,7 @@
 // first guess, copying first and a read-only check come before any repair); a first group of four with the deciding words marked; a second of fifteen; a third of five
 // mixed with lesson 14; the check: eight new questions, no help, 7 of 8 to pass. Strands: cmd-net, cmd-disk, cmd-files, cmd-admin.
 FC.lesson('it-support', {
-  id: 'l21', part: 'commands', title: 'Windows at the command line', rev: 2, status: 'draft',
+  id: 'l21', part: 'commands', title: 'Windows at the command line', rev: 2, status: "live",
   history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the Windows command-line tools by the job each does: navigation, disk, files, network, information and management; the commands that destroy data).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Rubina in Accounting says the D: drive, where last year’s invoices are, will not open. Rubina’s cousin says to type format D: and start clean. Format would erase every invoice.',

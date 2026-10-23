@@ -1,6 +1,6 @@
 # IT Help Desk: Which Windows tool for the job
 
-Revision 2, draft (the screen carries the draft line). Part: Which Windows tool for the job. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Which Windows tool for the job. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -279,10 +279,10 @@ A chat, with its history: "Sandro, Marketing", Chat with the help desk.
 
 **What does fast startup do, and where is it?**
 (the options come in an order that depends on the seed of the question)
-- A shutdown that keeps part of Windows saved to speed the next start, under “Choose what the power buttons do” in Power Options (right)
+- A shutdown that keeps part of Windows saved to speed the next start, chosen in Power Options (right)
 - Hibernate, which saves open work to the drive and powers off, chosen in Power Options — if chosen: Hibernate keeps your open work for the next start. Fast startup keeps part of Windows, and a Shut down still closes your programs.
 - The High performance power plan, which makes every start quicker, chosen in Power Options — if chosen: A power plan controls speed and sleep. Fast startup is its own switch, and it is why a fault saved at Shut down comes back.
-- A Task Manager Startup tab choice that makes programs open faster, turned off there — if chosen: Fast startup is about Windows itself, not about the programs on the Startup tab.
+- A Task Manager Startup tab choice that makes programs open faster, chosen in Task Manager — if chosen: Fast startup is about Windows itself, not about the programs on the Startup tab.
 
 After the answer: the deciding words are marked. Reason: With fast startup on, Shut down keeps part of Windows saved, so a fault stored there survives a shutdown. Restart does a full start. The choice is in Power Options.
 
@@ -736,9 +736,9 @@ After the answer: the deciding words are marked. Reason: The Type column says Ap
 
 #### Check question 35
 
-A chat, with its history: "Erica, Travel", Chat with the help desk.
+A chat, with its history: "Odalys, Travel", Chat with the help desk.
 
-> (Erica, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
+> (Odalys, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
 
 **Which power state fits?**
 (the options come in an order that depends on the seed of the question)

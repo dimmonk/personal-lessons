@@ -163,10 +163,10 @@
     // ----- group 2: settings -----
     T('l20-s-fast', SE, 'Sandro, Marketing', 'After the update I shut the laptop down every night, but a wrong display setting keeps coming back until I choose Restart. The vendor’s note says it may be “fast startup”.',
       'What does fast startup do, and where is it?', [
-        ['A shutdown that keeps part of Windows saved to speed the next start, under “Choose what the power buttons do” in Power Options', true, 'With fast startup on, Shut down saves the core of Windows, so the next start loads it and not everything afresh. Restart does a full start. The switch is under “Choose what the power buttons do” in Power Options.'],
+        ['A shutdown that keeps part of Windows saved to speed the next start, chosen in Power Options', true, 'With fast startup on, Shut down saves the core of Windows, so the next start loads it and not everything afresh. Restart does a full start. The switch is under “Choose what the power buttons do” in Power Options.'],
         ['Hibernate, which saves open work to the drive and powers off, chosen in Power Options', PWR, 'Hibernate keeps your open work for the next start. Fast startup keeps part of Windows, and a Shut down still closes your programs.'],
         ['The High performance power plan, which makes every start quicker, chosen in Power Options', PWR, 'A power plan controls speed and sleep. Fast startup is its own switch, and it is why a fault saved at Shut down comes back.'],
-        ['A Task Manager Startup tab choice that makes programs open faster, turned off there', AREA, 'Fast startup is about Windows itself, not about the programs on the Startup tab.']],
+        ['A Task Manager Startup tab choice that makes programs open faster, chosen in Task Manager', AREA, 'Fast startup is about Windows itself, not about the programs on the Startup tab.']],
       'With fast startup on, Shut down keeps part of Windows saved, so a fault stored there survives a shutdown. Restart does a full start. The choice is in Power Options.'),
     T('l20-s-usb', SE, 'Ria, Design', 'My laptop’s USB mouse freezes if I leave it alone for a minute, and it takes a second or two to wake when I move it. The mouse is fine on my other computer.',
       'Which Power Options setting powers down idle USB devices?', [

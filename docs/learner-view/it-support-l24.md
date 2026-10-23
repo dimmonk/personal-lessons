@@ -1,6 +1,6 @@
 # IT Help Desk: Mac and Linux
 
-Revision 2, draft (the screen carries the draft line). Part: Mac and Linux. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Mac and Linux. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -359,7 +359,7 @@ A chat, with its history: "Isidro, Operations", Chat with the help desk.
 
 > (Isidro, Operations, at the left) My boss is taking a company MacBook abroad. If it is lost, nobody must be able to read what is on its drive. Windows has BitLocker for this.
 
-**What does that on a Mac?**
+**What do you use on a Mac for that job?**
 (the options come in an order that depends on the seed of the question)
 - FileVault, which encrypts the whole startup drive (right)
 - Disk Utility, which erases, partitions and checks drives — if chosen: Disk Utility looks after drives. It does not protect what is on them.
@@ -387,7 +387,7 @@ After the answer: the deciding words are marked. Reason: Both apt and dnf instal
 
 A chat, with its history: "Rohan, Finance", Chat with the help desk.
 
-> (Rohan, Finance, at the left) An external drive shows up gray in Finder and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
+> (Rohan, Finance, at the left) An external drive shows up gray in Disk Utility and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
 
 **What do I do first?**
 (the options come in an order that depends on the seed of the question)
@@ -419,7 +419,7 @@ A chat, with its history: "Homer, IT", Chat with the help desk.
 
 **What is Rapid Security Response, as the exam names it?**
 (the options come in an order that depends on the seed of the question)
-- Apple’s quick security update, sent between the big updates; current Macs call it Background Security Improvements (right)
+- Apple’s quick security update, sent between the big updates (right)
 - A tool that finds and removes viruses on the Mac — if chosen: That is antivirus. Rapid Security Response installs fixes from Apple.
 - A copy of the whole Mac kept on an external drive — if chosen: That is a backup, which Time Machine makes.
 - A way to lock the Mac from far away when it is stolen — if chosen: It is about security fixes, not about locking a lost Mac.
