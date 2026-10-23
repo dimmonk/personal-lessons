@@ -659,6 +659,10 @@
       "rev": 1,
       "fp": "sha256:7920e7b13ab24175e2bb7521d61821cd08b6fcd3df70f25408343bf6fa108270"
     },
+    "strategy/l4": {
+      "rev": 1,
+      "fp": "sha256:b414772c882ee19a478aec7b2aa79ff66a511847d5dbe4e1310924c7f7140a19"
+    },
     "wealth/l1": {
       "rev": 1,
       "fp": "sha256:31d4a81d28d397c2638fa0db3170bcc979891214a6b24f0c1235b301d6510ca8"
