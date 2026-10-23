@@ -187,7 +187,7 @@
     choice({
       id: "k10-detail", who: "Ali’s car-detailing shop", first: "good", fault: "copycat",
       good: ["Owners of new luxury cars in the county, who will not let a car wash touch the paint.", "Hand work by two detailers, done in the owner’s own garage while they are at work."],
-      bad: ["Do what the big car-wash chains do: a monthly pass, an app and a free vacuum.", "Run all of it more smoothly than they do."],
+      bad: ["Do what every car wash in the county does: a monthly pass, an app and a free vacuum.", "Run all of it more smoothly than they do."],
       goodWhy: "Plan 1 picks customers and a way to win them; Plan 2 does what every car wash does, a little more smoothly.",
       reason: "Plan 1 chooses owners of new luxury cars and wins with what they value. Plan 2 is the trade’s usual way, run better: copycat."
     }),

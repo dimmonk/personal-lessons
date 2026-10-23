@@ -138,7 +138,7 @@
         ["c2", "record", "Cafes built for people working from home have opened in many cities, and a trade group lists how they did."],
         ["c3", "barrier", "Any cafe could put plugs at its tables and sell a day pass next month."],
         ["c4", "challenge", "The office towers went to three days a week, so the room is empty on Mondays and Fridays."],
-        ["c5", "money", "Day passes for people working from home earn the most on those days, and no other cafe on the street sells them yet."],
+        ["c5", "money", "Day passes for people working from home earn the cafe more than anything else it sells, and no other cafe on the street sells them yet."],
         ["c6", "bet", "The bet: booths for calls in the back room, $12,000, paid back within a year if the passes hold up."]],
       money: [["passes", "Day passes for people working from home", true], ["lunch", "Lunch on Tuesday to Thursday, when the room is full", false, "A full room is not the same as the most earned; the passes earn the most.", "sales-not-profit"], ["beans", "Bags of coffee beans", false, "The plan gives the beans no part in what the cafe earns."]],
       barrier: "nothing",

@@ -458,7 +458,7 @@ A plain table, "June’s flower shop: last year, by customer":
 > Walk-in shoppers  |  $70,000  |  $60,000
 > Funeral homes  |  $30,000  |  $20,000
 > Wedding couples  |  $45,000  |  $18,000
-> (The hotels’ contracts fix our price for three more years.)
+> (The hotels’ contracts fix our price for three more years, and the flowers named in the contract cost what they cost.)
 > (The hotels whose lobbies we do send us most of our wedding couples.)
 > (Couples who book June say they looked at every florist in town and found nobody else who arranges flowers her way.)
 
@@ -484,7 +484,7 @@ After the answer: the deciding words are marked. Reason: Wedding couples is what
 The working:
 - Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.: Hotel lobbies: −$5,000; Walk-in shoppers: $10,000; Funeral homes: $10,000; Wedding couples: $27,000. Wedding couples earns the most, though Walk-in shoppers brings in more, and it is what customers come here for.
 - Divide what the core earns by what all the lines earn together, losses taken off.: $27,000 ÷ $42,000 = 64.3%. The loss on Hotel lobbies is taken off the total.
-- Decide on the line that loses money: could a price or cost change make it pay? If not, does it bring the core’s customers or come with the core?: The hotels’ contracts fix our price for three more years. The hotels whose lobbies we do send us most of our wedding couples. So: no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss.
+- Decide on the line that loses money: could a price or cost change make it pay? If not, does it bring the core’s customers or come with the core?: The hotels’ contracts fix our price for three more years, and the flowers named in the contract cost what they cost. The hotels whose lobbies we do send us most of our wedding couples. So: no change would make it pay, but it brings the core’s customers or comes with the core: keep it and cut its loss.
 
 #### Check question 11
 

@@ -115,7 +115,7 @@
       distinct: "Oil changes bring a new customer through the door most days; drivers come to Ed for brake and engine work because he finds faults the dealers miss.",
       fact: "Car wash customers come only for the wash." }),
     core({ id: "k-flowers", who: "June’s flower shop", kind: "customer", lines: [["b4", "Hotel lobbies", 15000, 20000], ["b1", "Walk-in shoppers", 70000, 60000], ["b3", "Funeral homes", 30000, 20000], ["b2", "Wedding couples", 45000, 18000]],
-      loser: "b4", tied: true, canFix: false, fixable: "The hotels’ contracts fix our price for three more years.",
+      loser: "b4", tied: true, canFix: false, fixable: "The hotels’ contracts fix our price for three more years, and the flowers named in the contract cost what they cost.",
       distinct: "Couples who book June say they looked at every florist in town and found nobody else who arranges flowers her way.",
       fact: "The hotels whose lobbies we do send us most of our wedding couples." }),
     core({ id: "k-pipes", who: "Ray’s plumbing business", kind: "product", lines: [["b1", "Emergency calls, day or night", 60000, 30000], ["b2", "New bathrooms", 100000, 88000], ["b3", "Water heaters put in", 40000, 32000], ["b4", "Drain cleaning by the month", 15000, 19000]],

@@ -159,7 +159,7 @@ A written note: "Priya’s plan for the year ahead", Written in April.
 > Cafes built for people working from home have opened in many cities, and a trade group lists how they did.
 > Any cafe could put plugs at its tables and sell a day pass next month.
 > The office towers went to three days a week, so the room is empty on Mondays and Fridays.
-> Day passes for people working from home earn the most on those days, and no other cafe on the street sells them yet.
+> Day passes for people working from home earn the cafe more than anything else it sells, and no other cafe on the street sells them yet.
 > The bet: booths for calls in the back room, $12,000, paid back within a year if the passes hold up.
 
 **1. What does this business need?**
@@ -172,7 +172,7 @@ A written note: "Priya’s plan for the year ahead", Written in April.
 - "Cafes built for people working from home have opened in many cities, and a trade group lists how they did." — if tapped: note: That line answers question 6: how to judge the bet.
 - "Any cafe could put plugs at its tables and sell a day pass next month." — if tapped: note: That line answers question 4: what stops a rival copying.
 - "The office towers went to three days a week, so the room is empty on Mondays and Fridays." (right)
-- "Day passes for people working from home earn the most on those days, and no other cafe on the street sells them yet." — if tapped: note: That line answers question 3: where the money comes from.
+- "Day passes for people working from home earn the cafe more than anything else it sells, and no other cafe on the street sells them yet." — if tapped: note: That line answers question 3: where the money comes from.
 - "The bet: booths for calls in the back room, $12,000, paid back within a year if the passes hold up." — if tapped: note: That line names the bet itself. What is in the way is what hurt the business, and why.
 
 **3. Where does the money come from?**

@@ -773,7 +773,7 @@
     },
     "strategy/l10": {
       "rev": 1,
-      "fp": "sha256:c8b8c1238bf222a505faeaed11fb33db6a9a876b91b4e00ef6d311d62f560b6c"
+      "fp": "sha256:50c989f278b44a7d68ffc4d1c65f3ca6e600175b225c8a3ab43d3fea3a306e78"
     },
     "strategy/l11": {
       "rev": 1,
@@ -789,7 +789,7 @@
     },
     "strategy/l14": {
       "rev": 1,
-      "fp": "sha256:007190448f03540809e7c52d2c216a465c96c62e5f03fb9ce7b40be3c9ed577f"
+      "fp": "sha256:c0c1e2c75795c9814842fec9659cd1398834eb932f90fef75d172c997f66abc0"
     },
     "strategy/l2": {
       "rev": 1,
@@ -805,7 +805,7 @@
     },
     "strategy/l5": {
       "rev": 1,
-      "fp": "sha256:64fb42d96cc9bff8bac134f1cf68abc964dc094a8541fd176248d1a678ebd63b"
+      "fp": "sha256:1618389decacb1eb787feaff5fee430381a0292fd80429347236d290b9bbe372"
     },
     "strategy/l6": {
       "rev": 1,

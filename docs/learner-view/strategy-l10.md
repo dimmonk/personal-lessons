@@ -448,7 +448,7 @@ A written note: "Ali’s car-detailing shop: plan 1 for the year", A draft.
 
 A written note: "Ali’s car-detailing shop: plan 2 for the year", A draft.
 
-> Do what the big car-wash chains do: a monthly pass, an app and a free vacuum.
+> Do what every car wash in the county does: a monthly pass, an app and a free vacuum.
 > Run all of it more smoothly than they do.
 
 **Which plan makes a real choice of where to play and how to win?**
