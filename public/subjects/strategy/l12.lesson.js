@@ -17,13 +17,13 @@ FC.lesson("strategy", {
       show: [
         { kind: "prose", text: [
           "First, find the record: many ventures like this one, alike in what makes them work or fail (the same kind of business, for the same kind of customer), and see what share of them worked. Not the two you happen to know, and not many of another kind. Across the US, about six in ten new shops and offices are still open three years after opening, and about half after five.",
-          "Start your forecast from that share. Move from it only for a real difference: a fact the others did not have, such as customers who have already paid. Being sure, knowing the trade or working hard is not one: the owners in the record had those too. A real difference moves the forecast part of the way, never to the plan’s own number.",
+          "Start your forecast from that share. Move from it only for a real difference: a fact the others did not have, such as customers who have already paid. Being sure, a convincing plan or friends saying they would come is not one: most owners in the record had those too. Years in the same trade count, but for little: owners who have them last a little more often. A real difference moves the forecast part of the way, never to the plan’s own number.",
           "Second, work out how the rival will answer. It answers when your move takes customers it serves and it can follow without changing how it runs. It lets the move go when those customers are not its own, or following would cost it its own way of running. What it did in the past is a clue, not the test.",
           "Third, when someone says “it worked for them”, find the reason it worked there, and check that the reason is true here. Looking alike is not enough.",
           "Why it matters: owners who judge a plan by its own story expect too much, and a rival’s answer can take the gain away in weeks."] },
         { kind: "prose", tone: "wrong", text: [
           "“Our plan is solid and we know this business, so it will work.”",
-          "Every owner in the record had a plan and knew the business, and the record shows how many made it. Start from that, and plan for the rival’s answer."] }
+          "Most owners in the record had a plan and were sure of it, and the record shows how many made it. Knowing the business moves that a little, not to a sure thing; and plan for the rival’s answer."] }
       ] },
     { worked: "w12-gyms" },
     { set: { items: [["p12-cheaper", "p12-early"], ["p12-pass", "p12-pass2"], { gen: "g-base", n: 1 }], order: "listed", support: { shown: true } } },

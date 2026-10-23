@@ -65,7 +65,7 @@
         ["c1", "We keep the books for about 60 small businesses.", BACK],
         ["c2", "This year 9 clients left us, and every one gave the same reason: our monthly reports came late and had mistakes.", "That is the problem. Find the line that shows whether rivals do the same work better."],
         ["c3", "The two firms they moved to do the same work for the same fee and send their reports on time."],
-        ["c4", "We still type the numbers in by hand; both of those firms pull them straight from the bank.", "That is how the gap arose. Find the line that shows rivals doing the same work better."]],
+        ["c4", "We still type every number in by hand.", "That is how the gap arose. Find the line that shows rivals doing the same work better."]],
       settles: "c3", verdict: "run-better",
       reason: "The firms the clients moved to do the same work for the same fee, only on time. Closing that gap is running it better."
     }),

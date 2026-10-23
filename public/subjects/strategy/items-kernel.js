@@ -191,11 +191,10 @@
       lines: [
         ["c4", "We have built kitchens in this county for eleven years, and last year we finished 48 of them with a crew of nine.", BACKGROUND],
         ["c1", "This year we break $1 million in sales.", TARGET],
-        ["c5", "We have built kitchens in this county for twelve years.", BACKGROUND],
         ["c2", "Be the first name people think of for kitchens in the county.", WISH],
         ["c3", "Every job done on time, every time.", WISH]],
       challenge: null, verdict: "goal", deciding: ["c1", "c2"],
-      reason: "A target, two wishes and two lines of background about the firm, and no line says what is in the way of the target. It is a goal."
+      reason: "A target, two wishes and a line of background about the firm, and no line says what is in the way of the target. It is a goal."
     }),
     kernel({
       id: "k-dentist", from: "Dr. Patel’s plan for her dental office", detail: "Written in June",

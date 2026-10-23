@@ -247,6 +247,15 @@ business settings.
 - Lovallo, Clarke & Camerer (2012), "Robust analogizing and the outside view", *SMJ* 33(5), 496-512, **abstract read**:
   with private-equity investors, forming a reference class of many analogies beat relying on the few the decision maker
   already knew; with film revenues, similarity-based forecasting beat regression. Moderate (two studies).
+- Owner experience and the record (added 2026-10-23, round-3 research review, defect 8): Dahl, M. S. & Reichstein, T. (2007),
+  "Are You Experienced? Prior Experience and the Survival of New Organizations", *Industry and Innovation* 14(5), 497-511,
+  **abstract read** (IDEAS/RePEc): with register data on the whole Danish labour market, 1980-2000, "spin-offs from a surviving
+  parent and to a lesser degree industry-specific experience positively affects the likelihood of survival". Delmar, F. &
+  Shane, S. (2006), "Does experience matter?", *Strategic Organization* 4(3), 215-247, **via summaries** (223 Swedish ventures:
+  founding-team experience improves survival and sales). Moderate. Teaching consequence: years in the same trade are a small
+  real difference from the record, not a non-difference and never a reason to jump to the plan's number; being sure, a
+  convincing plan and friendly words stay non-differences (ST12's inside view). The record itself includes first-time founders,
+  so "every owner in the record knew the business" is not said.
 - Novice error: judging a plan by how convincing its story is, and assuming rivals will not answer.
 
 **ST20. The base rate for a new US business: about six in ten new establishments are still open three years after they

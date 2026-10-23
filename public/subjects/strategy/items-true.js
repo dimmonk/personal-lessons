@@ -70,7 +70,7 @@
         ["c3", "Our bakers can make three more cakes a week: they made that many every week last June.", "The bakers can make three more a week", "backed"],
         ["c4", "The planners would do it with no fee: the bakery they use now pays them 10% of every cake.", "The planners would take no fee", "against"]],
       right: "c4",
-      write: "Phone each planner this week to find out whether they would send couples with no fee, and if not, what fee they would want.",
+      write: "Phone each planner this week, offer a written deal with no fee, and count who signs it.",
       steps: [
         { id: "conds", does: "Weigh what backs each condition.", working: "The weddings: counted on the calendars. The bakers: done last June. The planners sending couples: only said over coffee, which costs nothing. No fee: the bakery they use now pays them 10%, a fact pointing the other way." },
         { id: "first", does: "Test first the one least likely to hold.", working: "Two are in doubt, but the fee has a fact against it, so it is the least likely. If it fails, the move fails, whatever else holds.", ask: "first" }],
@@ -197,7 +197,7 @@
     order({
       id: "k11-secondsite", who: "Jill’s daycare", decision: "how to take more children next year.",
       moves: "a second daycare by the other hospital, a bigger building here, a night room.",
-      test: "put the question to the other hospital’s nurses: would they move their children, and how many?",
+      test: "offer the other hospital’s nurses a place held for a deposit, and count who pays.",
       extra: "Poll friends and parents on whether they like each move",
       reason: "Decision, moves, what would have to be true, the condition least likely to hold, a cheap test, then the choice. Asking friends whether they like the moves gathers talk, which tests nothing."
     }),

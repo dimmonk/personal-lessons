@@ -443,3 +443,35 @@ validator, the lock, the tests, the browser checks and the learner-view renderer
   not a lasting position, and of the two plans only the first chooses.
 - **D14 ("goal taken for a strategy" makeable once).** Ben's heating check now offers "Aim to win eight of the next ten bids, and
   push the crews to reach it", tagged `goal-as-strategy`, so it can be made in two of the ten (k14-salon, k14-hvac).
+
+## Round 3 (2026-10-23)
+
+Fixes to the eight defects of `review-research-l1-14-round3.md`. Nothing run but `node --check` and `tools/option-lengths.mjs`
+(the validator, lock, tests and learner views are left to the lead).
+
+- **Defect 1 (L1, Lena: eleven and twelve years).** The round-2 line ("twelve years") is gone; the longer background line stays,
+  and the reason says "a line of background".
+- **Defect 2 (L2, bookkeeping: the cause line also compared with rivals).** Now only the cause: "We still type every number in by
+  hand." Every other running-problem story checked: the only line comparing with rivals is the settling one (the tax and cafe
+  stories' decoys are the two pulls-both-ways stories, by design).
+- **Defect 3 (L3, "shrinks" feedback said customers would pay more).** At the root: a verdict `grows-suppliers` (marked right as
+  "grows") whose "shrinks" feedback says nothing was added to the work and the suppliers' end moved down. The cleaners' week, the
+  mill's order and the tutors' hours use it; the four customer-end "grows" moves keep the old line, which is true of them.
+- **Defect 4 (L5, the part above 100%).** Step 1 and the generated working now say the share passes 100% when the losing lines lose
+  more than the other lines earn; the reason's dollar figure was already right. No other line in the subject or the own-business
+  form states it.
+- **Defect 5 (L6, Kim: the pull not stated).** A line states it ("Our tutors’ hours are full: every hour on reading or science is an
+  hour the exam students cannot book."), the deciding lines are it and the drop, and c3 reads "their students’ families go
+  elsewhere". Every other trade-off and straddle in lesson 6 states its pull in a line.
+- **Defect 6 (L11, the marked test gathers talk).** Jill's test is now a deposit held and counted. The same mistake was in the
+  worked memo's model test ("phone each planner to find out whether they would..."): now a written no-fee deal offered and the
+  signatures counted. The other tests (a free class counted, a drive timed, two weeks open and counted) already gather evidence.
+- **Defect 7 (L12, the estimate accepted the closed share).** Both estimates (the worked table and the made tables) have
+  `tol: { abs: 10 }` and the closed share as a trap (`counted-wrong-group`); the engine lets the nearer of answer and trap decide.
+  The made shares lie between about 52.6% and 70%, so the closed share is always at least 5 points and over 4% away.
+- **Defect 8 (L12, experience treated as no difference).** The literature says otherwise (Dahl & Reichstein 2007: industry
+  experience raises new-firm survival, modestly; Delmar & Shane 2006 likewise), now in the research note under ST12. Step 1: being
+  sure, a convincing plan or friends' words are no difference; years in the trade count, but for little. The wrong-idea card, the
+  generated and worked "Near 100%" feedback and the adjust feedback say "most owners ... sure of their plan", never "every owner
+  knew the business". Grace's check case replaces her twelve years with her certainty, so its marked answer (stay near 58%) rests on
+  non-differences only; the gym with 150 deposits stays the real-difference case.

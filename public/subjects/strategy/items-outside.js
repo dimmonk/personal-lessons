@@ -6,8 +6,9 @@
 // of running (lesson 6's trade-off seen from the other side). (3) "It worked for them": find the reason it worked there, and check that reason
 // holds here, not the look of it. Two more ways to go wrong with the record: starting from the wrong record (a few ventures you happen to know,
 // or many of another kind, rather than many alike in what makes them work or fail; Lovallo, Clarke & Camerer in ST12), and moving off it for a
-// difference that is not real (being sure, knowing the trade: every owner in the record had those) or not moving for one that is (customers who
-// have already paid). The made tables sit near the national record (ST20). Owner-run businesses, invented.
+// difference that is not real (being sure, a convincing plan, friendly words: most owners in the record had those) or not moving for one that is
+// (customers who have already paid). Years in the same trade are a small real difference (research ST12: industry experience raises new-firm
+// survival a little), never a reason to jump to the plan's number. The made tables sit near the national record (ST20). Owner-run businesses, invented.
 (() => {
   const ANSWER = ["answer", "ignore"], LIKE = ["holds", "surface"];
   const RIVAL_OPTS = [{ id: "answer", text: "It will answer: expect it to match the move within weeks" }, { id: "ignore", text: "It will most likely let the move go" }];
@@ -59,9 +60,9 @@
   // "plan" jumps to the plan's own number; `real` says whether the note holds a real difference
   function adjust({ id, from, detail, lines, real, options, deciding, reason }) {
     const THEN = {
-      move: "Nothing in the note is a fact the others lacked: every owner in the record was sure and knew the trade. Stay near the record.",
+      move: "Nothing in the note is a fact the others lacked: most owners in the record were sure and had a plan. Stay near the record.",
       stay: "The note holds a fact the others did not have, so the forecast moves part of the way from the record, not all of it.",
-      plan: real ? "The difference is real, but it moves the forecast part of the way, not to the plan’s own number." : "Being sure is what every owner in the record had. Start near the record."
+      plan: real ? "The difference is real, but it moves the forecast part of the way, not to the plan’s own number." : "Being sure is what most owners in the record were. Start near the record."
     };
     const right = real ? "move" : "stay";
     return {
@@ -83,12 +84,13 @@
         { kind: "document", form: "table", title: "New gyms in the county, and how many were still open three years later", head: ["Year opened", "Opened", "Still open after three years"],
           rows: [{ id: "y1", cells: ["2019", "14", "9"] }, { id: "y2", cells: ["2020", "16", "10"] }, { id: "y3", cells: ["2021", "12", "7"] }] }],
       asks: [
-        { id: "est", kind: "number", prompt: "Roughly, what share of them were still open after three years?", frame: "__%", answer: 61.9, estimate: true },
+        { id: "est", kind: "number", prompt: "Roughly, what share of them were still open after three years?", frame: "__%", answer: 61.9, estimate: true, tol: { abs: 10 },
+          traps: [{ slip: "counted-wrong-group", value: 38.1, then: "That is near the share that closed. Count the ones still open over all that opened." }] },
         { id: "share", kind: "number", prompt: "Now work it out: what share were still open after three years?", frame: "__%", answer: 61.9, tol: { abs: 1 },
           traps: [{ slip: "counted-wrong-group", value: 38.1, then: "That is the share that closed. Count the ones still open over all that opened." }] },
         { id: "start", kind: "choose", prompt: "Where should Mark’s forecast for the new gym start?", shuffle: true, options: [
           { id: "table", text: "Near 61.9%, the share of others like it still open, moved only for a real difference", ok: true },
-          { id: "plan", text: "Near 100%, as the plan says: Mark knows this business better than any table of other gyms does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and 38.1% of them closed within three years. Start from how they did." },
+          { id: "plan", text: "Near 100%, as the plan says: Mark knows this business better than any table of other gyms does", slip: "inside-view", then: "Knowing the trade moves a forecast a little, not to 100%, and 38.1% of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did." },
           { id: "best", text: "Near 100%, like the one gym in town that Mark knows did well", slip: "surface-analogy", then: "One success that looks alike says little; the table shows how many like it did. Start from the share." }] }],
       steps: [
         { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "About 9 of 14, 10 of 16, 7 of 12: each year more than half, roughly six in ten.", ask: "est" },
@@ -197,7 +199,7 @@
         ["move", "Above 62%, but well short of certain: 150 paid deposits are a fact the others did not have", "move"],
         ["stay", "At 62% exactly: only the record counts", "stay"],
         ["plan", "Near 100%, as the plan says: Mark knows gyms better than anyone, and 150 people have already paid", "plan"]],
-      reason: "The record starts it at 62%. Money paid by 150 people is a real difference, so the forecast moves up from there, but not to a certainty: Mark being sure is what every owner in the record had."
+      reason: "The record starts it at 62%. Money paid by 150 people is a real difference, so the forecast moves up from there, but not to a certainty: Mark being sure is what most owners in the record were."
     }),
 
     // ----- the check -----
@@ -231,15 +233,15 @@
     adjust({
       id: "k12-sure", from: "Grace’s page of numbers for a second salon", detail: "Written in April",
       lines: [
-        ["c1", "Grace has run her salon for twelve years and says the second will do even better than the first."],
+        ["c1", "Grace says her second salon will do even better than her first, and she has never been so sure of anything."],
         ["c2", "Of the new salons in the county, 58% were still open three years later."],
         ["c3", "Her clients say they would try the new one, and her plan shows it full by spring."]],
       real: false, deciding: ["c2"],
       options: [
-        ["move", "Well above 58%: twelve years in the trade and her clients’ word count for a lot", "move"],
+        ["move", "Well above 58%: Grace is that sure, and her clients’ word counts for a lot", "move"],
         ["stay", "Near 58%: nothing here is a fact the others lacked", "stay"],
         ["plan", "Near 100%, as the plan says", "plan"]],
-      reason: "The record starts it at 58%. Years in the trade, being sure and friendly clients’ words are what most owners in the record had too, so they are not a real difference: the forecast stays near 58%."
+      reason: "The record starts it at 58%. Being sure, a plan that shows it full and friendly clients’ words are what most owners in the record had too, so they are not a real difference: the forecast stays near 58%."
     }),
     record({
       id: "k12-record", from: "Sam’s page of numbers for a second diner", detail: "Written in May",

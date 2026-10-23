@@ -38,12 +38,13 @@
           { id: "y2", cells: ["2020", "{openB}", "{keptB}"] },
           { id: "y3", cells: ["2021", "{openC}", "{keptC}"] }] }],
     asks: [
-      { id: "est", kind: "number", prompt: "Roughly, what share of them were still open after three years?", frame: "__%", answer: "share", estimate: true },
+      { id: "est", kind: "number", prompt: "Roughly, what share of them were still open after three years?", frame: "__%", answer: "share", estimate: true, tol: { abs: 10 },
+        traps: [{ slip: "counted-wrong-group", value: "closed", then: "That is near the share that closed. Count the ones still open over all that opened." }] },
       { id: "share", kind: "number", prompt: "Now work it out: what share were still open after three years?", frame: "__%", answer: "share", tol: { abs: 1 },
         traps: [{ slip: "counted-wrong-group", value: "closed", then: "That is the share that closed. Count the ones still open over all that opened." }] },
       { id: "start", kind: "choose", prompt: "Where should {who}’s forecast for the new {one} start?", shuffle: true, options: [
         { id: "table", text: "Near {shareText}, the share of others like it still open, moved only for a real difference", ok: true },
-        { id: "plan", text: "Near 100%, as the plan says: {who} knows this business better than any table does", slip: "inside-view", then: "Every owner in the table knew the business and had a plan, and {closedText} of them closed within three years. Start from how they did." },
+        { id: "plan", text: "Near 100%, as the plan says: {who} knows this business better than any table does", slip: "inside-view", then: "Knowing the trade moves a forecast a little, not to 100%, and {closedText} of the owners in the table, most of them sure of their plan, closed within three years. Start from how they did." },
         { id: "best", text: "Near 50%: a new {one} either makes it or it does not", then: "Even odds is a guess; the table says how many like it did. Start from the share it gives." }] }],
     steps: [
       { id: "est", does: "Read the table roughly: about how many of each year’s openings were still open?", working: "Each year more than half, but far from all of them.", ask: "est" },

@@ -193,9 +193,10 @@
       lines: [
         ["c1", "The exam-prep chain in the city tutors only for the state math exams, and it is full."],
         ["c2", "We will do the same and tutor only for those exams, with tutors who have graded them."],
-        ["c3", "Our reading, science and college-entrance tutors go part-time elsewhere, and so do their families."]],
-      verdict: "tradeoff", deciding: ["c2", "c3"],
-      reason: "Tutors who know one exam deeply and tutors for every subject pull on the same hours and hiring, and Kim drops every other subject. She copies the chain, but she gives up one side: a real trade-off."
+        ["c4", "Our tutors’ hours are full: every hour on reading or science is an hour the exam students cannot book."],
+        ["c3", "Our reading, science and college-entrance tutors leave for other work, and their students’ families go elsewhere."]],
+      verdict: "tradeoff", deciding: ["c4", "c3"],
+      reason: "Every hour on another subject is an hour the exam students cannot book, and Kim drops every other subject. She copies the chain, but she gives up one side: a real trade-off."
     }),
     story({
       id: "k6-hardware", from: "Tom’s plan for his hardware store", detail: "Written in April",
