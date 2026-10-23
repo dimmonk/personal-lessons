@@ -10,15 +10,15 @@ Strategists start a trade’s story by finding which of those takes the money. H
 ## Step 1: Who takes the money, and why
 
 Five forces can take the profit out of a trade. Read the facts for the one that takes the most.
-Buyers: a few big customers buy most of what you sell, or can switch at will, so they push the price down.
+Buyers: a few big customers buy most of what you sell, or can switch at will, so they push the price down. A middleman that brings you your customers, such as a delivery app or a chain store, counts as a buyer: it takes its cut between you and the people who use what you make.
 Suppliers: you depend on a few suppliers you cannot replace, so they push their price up.
 Newcomers: starting up is cheap and easy, so new businesses keep arriving and cut prices to win customers.
 Substitutes: another way to meet the same need (a phone instead of a printed photo) caps what customers will pay, or takes them away.
 Rivals: many businesses alike, already there, fight on price.
-Find the line that shows who takes the money, and why. Then name that one force and dig into it; a list of all five tells you nothing. Why it matters: you can only defend against the force that is actually taking your profit.
+Find the line that shows who takes the money, and why. Often more than one force presses: then compare how much each takes (a 30% cut of every order against a 4% rise in food prices) and name the bigger one. Dig into that force; a list of all five tells you nothing. Why it matters: you can only defend against the force that is actually taking your profit.
 
 A wrong idea, marked wrong: “This trade is growing 30% a year, so it is a great business to be in.”
-The right line: Growth says nothing about who takes the profit. When starting up is easy, fast growth draws newcomers who cut prices, and the growth goes to them. Judge a trade by who takes the money.
+The right line: Growth says nothing about who takes the profit. When starting up is easy, fast growth draws newcomers who cut prices, and the growth goes to them. When starting up is hard, the growth can stay with the businesses already there. Judge a trade by who takes the money.
 
 ## Step 2: A worked example
 
@@ -34,50 +34,33 @@ The working, one step at a time:
 
 Then the answer: Most prescriptions are paid for by three big insurance plans, which decide what they pay per prescription; a pharmacy that refuses their rate loses those customers. / Buyers: customers who can push the price down. Three insurance plans pay for most prescriptions and decide the rate, and a pharmacy cannot refuse it: the buyers take the money. The other forces are weak here, so the buyers are the one to dig into.
 
-## Step 3: Questions
+## Step 3: The same force in two trades
 
-5 questions, listed, with help (shown). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+| A | B |
+|---|---|
+| Pharmacies: three insurance plans pay for most prescriptions and decide the rate; a pharmacy that refuses it loses those customers. | A sign maker: one hardware chain buys 70% of its signs, and each year names the price it will pay or goes elsewhere. |
+
+Compare: Medicine and signs look nothing alike, but the force is the same: a few big buyers take most of the output and decide the price. That is what to look for, whatever the trade sells.
+
+## Step 4: Questions
+
+6 questions, listed, with help (shown), with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 1
-
-A report summary, from "Trade report" (marked "Report summary"):
-
-> # Heavy trucks: who makes the money
->
-> A handful of makers build heavy trucks; a new maker would need huge factories to start. Steel and parts come from many suppliers. **Big fleets buy many trucks at a time, and they use that clout to push the makers on price.**
-
-Help on screen: the words that decide it are marked.
-
-**Tap the line that shows who takes the money.**
-- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "A handful of makers build heavy trucks; a new maker would need huge factories to start." — if tapped: note: Starting up needs huge factories, so newcomers are few.
-- "Steel and parts come from many suppliers." — if tapped: note: Parts come from many suppliers, so none has much hold.
-- "Big fleets buy many trucks at a time, and they use that clout to push the makers on price." (right)
-
-**Which force squeezes the profit most?**
-- Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Parts come from many suppliers, so none has much hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: Starting up needs huge factories, so newcomers are few.
-- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
-- Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
-
-After the answer: the deciding words are marked. Reason: Fleets buying many trucks at a time push the makers on price: the buyers take the money. Paccar’s answer was to sell to drivers who own their own truck, who have little such clout, and it earns a higher price for it.
-
-#### Item 2
 
 A report summary, from "Brookfield Business Weekly · Trade report" (marked "Report summary"):
 
 > # Yoga studios: a boom year
 >
-> Studio memberships in town grew 30% last year. **A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students.** Teachers are easy to find and paid by the class.
+> Studio memberships in town grew 30% last year. Teachers are easy to find and paid by the class. **A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students.**
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Studio memberships in town grew 30% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students." (right)
+- "Studio memberships in town grew 30% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
 - "Teachers are easy to find and paid by the class." — if tapped: note: Teachers are easy to find, so suppliers have little hold.
+- "A teacher can open a studio by renting an empty shop and buying mats, and four new studios opened this year, each starting with low prices to win students." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
@@ -86,84 +69,140 @@ Help on screen: the words that decide it are marked.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Mia says: “Yoga is growing 30% a year, so a studio is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Mia says: “Yoga is growing 30% a year, so a studio is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: Opening a studio takes little more than a shop and mats, so newcomers keep arriving and cutting prices: they take the money. The 30% growth is what draws them.
+After the answer: the deciding words are marked. Reason: Opening a studio takes little more than a shop and mats, so newcomers keep arriving and cutting prices: they take the money. The 30% growth is what draws them, and it goes to them.
 
-#### Item 3
+#### Item 2
 
-A report summary, from "Tri-County Business News · Trade report" (marked "Report summary"):
+A report summary, from "Metro Business Journal · Trade report" (marked "Report summary"):
 
-> # Hearing aid shops face rising costs
+> # Elevator repair: a building boom
 >
-> Customers pick a shop for its fitting and advice, and few compare prices. **Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year.** A new shop needs a licensed fitter, and only two opened in the region in five years.
+> Elevator repair work in the city grew 25% last year as new towers went up. A repair firm needs mechanics with a state license that takes four years of training on the job, and no new firm has opened in eight years. **Parts for each brand of elevator come only from the company that built it, which decides its own price.** The three firms in the city are booked months ahead, and none cuts its price.
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Customers pick a shop for its fitting and advice, and few compare prices." — if tapped: note: Customers choose on advice and rarely compare prices, so buyers have little hold.
-- "Three companies make almost all hearing aids; they decide the price a shop pays, and raised it 15% this year." (right)
-- "A new shop needs a licensed fitter, and only two opened in the region in five years." — if tapped: note: Few new shops open, so newcomers are few.
+- "Elevator repair work in the city grew 25% last year as new towers went up." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "A repair firm needs mechanics with a state license that takes four years of training on the job, and no new firm has opened in eight years." — if tapped: note: Starting up is hard, so newcomers are not what takes the money.
+- "Parts for each brand of elevator come only from the company that built it, which decides its own price." (right)
+- "The three firms in the city are booked months ahead, and none cuts its price." — if tapped: note: Three busy firms that do not cut prices: rivals are calm.
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Customers choose on advice and rarely compare prices, so buyers have little hold.
+- Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
 - Suppliers: the ones you buy from can push their price up (right)
-- Newcomers: it is easy for new businesses to start up — if chosen: Few new shops open, so newcomers are few.
+- Newcomers: it is easy for new businesses to start up — if chosen: Starting up is hard, so newcomers are not what takes the money.
+- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
+- Rivals: the businesses already there fight on price — if chosen: Three busy firms that do not cut prices: rivals are calm.
+
+**Ben says: “Elevator repair grew 25% last year, so it is a great business to be in.” Who will the growth go to?**
+(the options come in an order that depends on the seed of the question)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers — if chosen: Starting up here is hard, so no newcomers arrive to take the growth: it stays with the businesses already there.
+- The businesses already there: starting up is hard, so no newcomers come for it (right)
+
+After the answer: the deciding words are marked. Reason: Each brand’s parts come only from its builder, which decides the price: the suppliers take the most. But starting up takes years of licensed training, so the growth stays with the three firms already there.
+
+#### Item 3
+
+A report summary, from "Trade report" (marked "Report summary"):
+
+> # Heavy trucks: who makes the money
+>
+> The truck makers fight hard on price, hardest when the economy slows and orders dry up. One maker, Paccar, chose to sell mainly to drivers who own their own truck: each buys one at a time, cares more about the truck than the last dollar, and pays about 10% more. **Big fleets and leasing companies buy many trucks at a time and use that clout to push the makers hard on price.**
+
+Help on screen: the words that decide it are marked.
+
+**Tap the line that shows the force Paccar stepped around.**
+- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "The truck makers fight hard on price, hardest when the economy slows and orders dry up." — if tapped: note: Rivals do fight hard here, but every maker faces that alike; Paccar’s choice of customer was aimed at another force.
+- "One maker, Paccar, chose to sell mainly to drivers who own their own truck: each buys one at a time, cares more about the truck than the last dollar, and pays about 10% more." — if tapped: note: That is Paccar’s answer. Find the line that shows the force it answers.
+- "Big fleets and leasing companies buy many trucks at a time and use that clout to push the makers hard on price." (right)
+
+**Several forces press on truck makers. Which one did Paccar step around by choosing its customers?**
+- Buyers: customers who can push the price down (right)
+- Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
+- Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
+- Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
+- Rivals: the businesses already there fight on price — if chosen: Rivals do fight hard here, but every maker faces that alike; Paccar’s choice of customer was aimed at another force.
+
+After the answer: the deciding words are marked. Reason: Big fleets and leasing companies use their buying clout to push makers on price, and the makers fight each other hard as well. Paccar chose drivers who own their own truck, buyers with little clout who care less about price, so it found the place where the buyer force is weakest, and earns about 10% more.
+
+#### Item 4
+
+A report summary, from "Tri-County Business News · Trade report" (marked "Report summary"):
+
+> # Pool services and the price of chlorine
+>
+> **Only one wholesaler in the county sells pool chlorine in bulk, and it raised its price 30% this year.** Homeowners sign up for the whole summer and rarely switch; the pool service has a key to the yard. Opening a pool service takes a state license and a truck of gear, and few new ones start.
+
+Help on screen: the words that decide it are marked.
+
+**Tap the line that shows who takes the money.**
+- Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "Only one wholesaler in the county sells pool chlorine in bulk, and it raised its price 30% this year." (right)
+- "Homeowners sign up for the whole summer and rarely switch; the pool service has a key to the yard." — if tapped: note: Homeowners rarely switch, so buyers have little pull here.
+- "Opening a pool service takes a state license and a truck of gear, and few new ones start." — if tapped: note: Few new services start, so newcomers are not what takes the money.
+
+**Which force squeezes the profit most?**
+- Buyers: customers who can push the price down — if chosen: Homeowners rarely switch, so buyers have little pull here.
+- Suppliers: the ones you buy from can push their price up (right)
+- Newcomers: it is easy for new businesses to start up — if chosen: Few new services start, so newcomers are not what takes the money.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: Three makers supply nearly every hearing aid and raised their price 15%, and a shop has nowhere else to buy: the suppliers take the money. The other forces are weak here.
+After the answer: the deciding words are marked. Reason: The only bulk chlorine seller in the county raised its price 30%, and a pool service has nowhere else to buy: the supplier takes the money. The other forces are weak here.
 
-#### Item 4
+#### Item 5
 
 A report summary, from "Lakeview Business Review · Trade report" (marked "Report summary"):
 
 > # Photo printing shops: fewer orders every year
 >
-> There are only two photo printing shops left in the city. **People now look at their photos on their phones and print almost none.** Paper and ink come from many suppliers.
+> There are only two photo printing shops left in the city. Paper and ink are cheap and easy to buy. **People now look at their photos on their phones and print almost none.**
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "There are only two photo printing shops left in the city." — if tapped: note: Only two shops are left, so rivals are not the problem.
+- "Paper and ink are cheap and easy to buy." — if tapped: note: Paper and ink are easy to buy, so suppliers have little hold.
 - "People now look at their photos on their phones and print almost none." (right)
-- "Paper and ink come from many suppliers." — if tapped: note: Paper and ink come from many suppliers, so they have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Paper and ink come from many suppliers, so they have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Paper and ink are easy to buy, so suppliers have little hold.
 - Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
 - Substitutes: another way to meet the same need (right)
 - Rivals: the businesses already there fight on price — if chosen: Only two shops are left, so rivals are not the problem.
 
 After the answer: the deciding words are marked. Reason: Phones meet the same need, looking at photos, without a print: a substitute caps what a shop can sell and charge. The other forces are weak here.
 
-#### Item 5
+#### Item 6
 
 A report summary, from "Eastside Business Weekly · Trade report" (marked "Report summary"):
 
 > # Car washes on Main Street
 >
-> Six car washes stand within a mile of each other on Main Street, all with the same machines and the same three washes. **Each spring one cuts its price, and the rest match it within a week.** Soap and machines come from many suppliers. No new car wash has opened in years: the land on Main Street is too costly.
+> Main Street has six car washes within a mile, all with the same machines and the same three washes. No new car wash has opened in years: the land on Main Street is too costly. **Each spring one cuts its price, and the rest match it within a week.** Soap and machines can be bought from any of several dealers.
 
 Help on screen: the words that decide it are marked.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Six car washes stand within a mile of each other on Main Street, all with the same machines and the same three washes." — if tapped: That is not the sentence.
+- "Main Street has six car washes within a mile, all with the same machines and the same three washes." — if tapped: note: That says how many there are and how alike, not yet whether they fight on price.
+- "No new car wash has opened in years: the land on Main Street is too costly." — if tapped: note: Nobody new can find land, so newcomers are not the problem.
 - "Each spring one cuts its price, and the rest match it within a week." (right)
-- "Soap and machines come from many suppliers." — if tapped: note: Supplies come from many suppliers, so they have little hold.
-- "No new car wash has opened in years: the land on Main Street is too costly." — if tapped: note: No newcomers can find land, so newcomers are not the problem.
+- "Soap and machines can be bought from any of several dealers." — if tapped: note: Several dealers sell the supplies, so suppliers have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Supplies come from many suppliers, so they have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers can find land, so newcomers are not the problem.
+- Suppliers: the ones you buy from can push their price up — if chosen: Several dealers sell the supplies, so suppliers have little hold.
+- Newcomers: it is easy for new businesses to start up — if chosen: Nobody new can find land, so newcomers are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price (right)
 
@@ -171,97 +210,97 @@ After the answer: the deciding words are marked. Reason: Six washes alike match 
 
 Then a screen: you can stop here, your place is kept.
 
-## Step 4: Questions
+## Step 5: Questions
 
 5 questions, shuffle, with about 25% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Item 6
+#### Item 7
 
 A report summary, from "Downtown Business Journal · Trade report" (marked "Report summary"):
 
 > # Takeout restaurants and the delivery apps
 >
-> Most takeout orders in town now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first. Food comes from several wholesalers that compete for each restaurant. Only one new takeout place opened this year.
+> Food prices from the wholesalers rose 4% this year. Most takeout orders now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first. Only one new takeout place opened this year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Most takeout orders in town now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first." (right)
-- "Food comes from several wholesalers that compete for each restaurant." — if tapped: note: Wholesalers compete for the restaurants, so suppliers have little hold.
-- "Only one new takeout place opened this year." — if tapped: note: Few newcomers open, so they are not the problem.
+- "Food prices from the wholesalers rose 4% this year." — if tapped: note: Food costs rose 4%, a real squeeze, but far smaller than the apps’ 30% of every order.
+- "Most takeout orders now come through two delivery apps, which keep 30% of each order and decide which restaurants diners see first." (right)
+- "Only one new takeout place opened this year." — if tapped: note: One new place a year is not what takes the money.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Wholesalers compete for the restaurants, so suppliers have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: Few newcomers open, so they are not the problem.
+- Suppliers: the ones you buy from can push their price up — if chosen: Food costs rose 4%, a real squeeze, but far smaller than the apps’ 30% of every order.
+- Newcomers: it is easy for new businesses to start up — if chosen: One new place a year is not what takes the money.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: Two apps bring most of the orders, keep 30% and decide who is seen: they are the buyer every restaurant depends on, and they take the money.
+After the answer: the deciding words are marked. Reason: The apps bring most of the orders and keep 30% of each: as the middleman between the restaurant and its diners they count as buyers, and they take far more than the 4% rise in food costs.
 
-#### Item 7
+#### Item 8
 
 A report summary, from "Westfield Business Report · Trade report" (marked "Report summary"):
 
 > # Coin laundries: steady decline
 >
-> There are three coin laundries in town, and their prices have not changed in years. Most new apartments now come with their own washer and dryer. Machines and soap come from many suppliers.
+> Most new apartments now come with their own washer and dryer. There are three coin laundries in town, and their prices have not changed in years. Any of several dealers will sell a laundry its machines and soap.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "There are three coin laundries in town, and their prices have not changed in years." — if tapped: note: Three laundries hold steady prices, so rivals are calm.
 - "Most new apartments now come with their own washer and dryer." (right)
-- "Machines and soap come from many suppliers." — if tapped: note: Supplies come from many suppliers, so they have little hold.
+- "There are three coin laundries in town, and their prices have not changed in years." — if tapped: note: Three laundries hold steady prices, so rivals are calm.
+- "Any of several dealers will sell a laundry its machines and soap." — if tapped: note: Several dealers compete to sell supplies, so suppliers have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Supplies come from many suppliers, so they have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Several dealers compete to sell supplies, so suppliers have little hold.
 - Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
 - Substitutes: another way to meet the same need (right)
 - Rivals: the businesses already there fight on price — if chosen: Three laundries hold steady prices, so rivals are calm.
 
 After the answer: the deciding words are marked. Reason: A washer in the apartment meets the same need without the laundry: that substitute takes the customers. The other forces are weak here.
 
-#### Item 8
+#### Item 9
 
 A report summary, from "Northside Business Weekly · Trade report" (marked "Report summary"):
 
 > # Dog walking: more dogs, more walkers
 >
-> Demand for dog walking in the city grew 20% last year. Dog owners book through phone apps and can switch walkers with one tap. Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.
+> Demand for dog walking in the city grew 20% last year. Owners stick with a walker they trust and rarely switch. Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Demand for dog walking in the city grew 20% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "Dog owners book through phone apps and can switch walkers with one tap." — if tapped: note: Owners can switch, but the report shows walkers arriving faster than owners push.
+- "Demand for dog walking in the city grew 20% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Owners stick with a walker they trust and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
 - "Anyone with a phone can sign up to walk dogs; 300 new walkers joined this year, and the going rate fell from $25 to $18 a walk." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: Owners can switch, but the report shows walkers arriving faster than owners push.
+- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
 - Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Leo says: “Dog walking grew 20% last year, so it is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Leo says: “Dog walking grew 20% last year, so it is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them.
+After the answer: the deciding words are marked. Reason: Anyone with a phone can start, 300 newcomers joined, and the rate fell from $25 to $18: newcomers take the money. The growth is what drew them, and it goes to them.
 
-#### Item 9
+#### Item 10
 
 A report summary, from "Mountain Business Journal · Trade report" (marked "Report summary"):
 
 > # Pastry shops squeezed on butter
 >
-> Customers come back for the pastries and pay what the shops charge. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year. There are two pastry shops in the valley, and neither cuts prices.
+> Customers come back for the pastries and pay what the shops charge. There are two pastry shops in the valley, and neither cuts prices. One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Customers come back for the pastries and pay what the shops charge." — if tapped: note: Customers pay what is asked, so buyers have little hold.
-- "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year." (right)
 - "There are two pastry shops in the valley, and neither cuts prices." — if tapped: note: Two shops that do not cut prices: rivals are calm.
+- "One dairy is the only one that delivers butter this far up the mountain, and it raised its price 40% this year." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: Customers pay what is asked, so buyers have little hold.
@@ -272,19 +311,19 @@ A report summary, from "Mountain Business Journal · Trade report" (marked "Repo
 
 After the answer: the deciding words are marked. Reason: The only dairy that delivers up there raised butter 40%, and the shops cannot buy elsewhere: the supplier takes the money.
 
-#### Item 10
+#### Item 11
 
 A report summary, from "Midtown Business Weekly · Trade report" (marked "Report summary"):
 
 > # Nail salons: price war on Second Avenue
 >
-> Fifteen nail salons now stand within two blocks, with the same menu. Polish and supplies come from many wholesalers. Every month one salon cuts its price, and the others match it.
+> Every month one salon cuts its price, and the others match it. Fifteen nail salons now stand within two blocks, with the same menu. Polish and supplies come from many wholesalers.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Fifteen nail salons now stand within two blocks, with the same menu." — if tapped: That is not the sentence.
-- "Polish and supplies come from many wholesalers." — if tapped: note: Supplies come from many wholesalers, so they have little hold.
 - "Every month one salon cuts its price, and the others match it." (right)
+- "Fifteen nail salons now stand within two blocks, with the same menu." — if tapped: note: That says how many there are; the line that settles it shows them fighting on price.
+- "Polish and supplies come from many wholesalers." — if tapped: note: Supplies come from many wholesalers, so they have little hold.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
@@ -305,18 +344,18 @@ To pass:
 - At least 5 right
 - None took a fast-growing market for a good one
 
-#### Check question 11
+#### Check question 12
 
 A report summary, from "County Business Journal · Trade report" (marked "Report summary"):
 
 > # School bus companies bid again
 >
-> Buses and drivers are easy to find in the county. One school district buys all the bus service in the county; every three years it takes bids and picks the lowest. No new bus company has started here in years.
+> One school district buys all the bus service in the county; every three years it takes bids and picks the lowest. Buses and drivers are easy to find in the county. No new bus company has started here in years.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Buses and drivers are easy to find in the county." — if tapped: note: Buses and drivers are easy to find, so suppliers have little hold.
 - "One school district buys all the bus service in the county; every three years it takes bids and picks the lowest." (right)
+- "Buses and drivers are easy to find in the county." — if tapped: note: Buses and drivers are easy to find, so suppliers have little hold.
 - "No new bus company has started here in years." — if tapped: note: No newcomers start, so they are not the problem.
 
 **Which force squeezes the profit most?**
@@ -328,46 +367,46 @@ A report summary, from "County Business Journal · Trade report" (marked "Report
 
 After the answer: the deciding words are marked. Reason: One district buys all the service and takes the lowest bid: the buyer takes the money. The other forces are weak here.
 
-#### Check question 12
+#### Check question 13
 
-A report summary, from "Sunbelt Business Report · Trade report" (marked "Report summary"):
+A report summary, from "Lakeshore Business Report · Trade report" (marked "Report summary"):
 
-> # Solar installers: the fastest-growing trade in the state
+> # Mobile car detailing: the fastest-growing trade in the county
 >
-> Home solar installs in the state grew 40% last year. Panels come from many makers, and their prices keep falling. Anyone with an electrician’s license and a van can start, and nine new installers opened this year, each bidding low to win jobs.
+> Detailing jobs booked in the county grew 40% last year. Car owners who find a detailer they like book the same one again and rarely switch. Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Home solar installs in the state grew 40% last year." — if tapped: note: That is growth. It says nothing about who takes the profit.
-- "Panels come from many makers, and their prices keep falling." — if tapped: note: Panels come from many makers, so suppliers have little hold.
-- "Anyone with an electrician’s license and a van can start, and nine new installers opened this year, each bidding low to win jobs." (right)
+- "Detailing jobs booked in the county grew 40% last year." — if tapped: note: That is growth. It says nothing yet about who takes the profit.
+- "Car owners who find a detailer they like book the same one again and rarely switch." — if tapped: note: Owners rarely switch, so buyers have little pull here.
+- "Anyone with a van, a pressure washer and a phone can start; eleven new detailers began this year, each charging less to win jobs." (right)
 
 **Which force squeezes the profit most?**
-- Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Panels come from many makers, so suppliers have little hold.
+- Buyers: customers who can push the price down — if chosen: Owners rarely switch, so buyers have little pull here.
+- Suppliers: the ones you buy from can push their price up — if chosen: The report gives no sign that this force takes much of the money here.
 - Newcomers: it is easy for new businesses to start up (right)
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-**Rosa says: “Solar grew 40% last year, so it is a great business to be in.” Is that enough to call it a good trade to be in?**
+**Rosa says: “Detailing grew 40% last year, so it is a great business to be in.” Who will the growth go to?**
 (the options come in an order that depends on the seed of the question)
-- Yes: a trade that grows that fast is a good one — if chosen: Growth says nothing about who takes the profit, and when starting up is easy it draws newcomers who cut prices.
-- No: first see who takes the profit (right)
+- Newcomers: starting up is easy, so they arrive and cut prices to win the new customers (right)
+- The businesses already there: starting up is hard, so no newcomers come for it — if chosen: Starting up here is easy, so the growth draws newcomers who cut prices, and it goes to them.
 
-After the answer: the deciding words are marked. Reason: A license and a van are enough to start, and nine newcomers bid low: newcomers take the money. The growth is what drew them.
+After the answer: the deciding words are marked. Reason: A van, a pressure washer and a phone are enough to start, and eleven newcomers charge less: newcomers take the money. The growth is what drew them, and it goes to them.
 
-#### Check question 13
+#### Check question 14
 
 A report summary, from "Harbor Business News · Trade report" (marked "Report summary"):
 
 > # Travel agents: fewer bookings
 >
-> Travelers now book their own flights and hotels online in a few minutes. There are only three travel agents left in town. No new agency has opened in ten years.
+> There are only three travel agents left in town. Travelers now book their own flights and hotels online in a few minutes. No new agency has opened in ten years.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Travelers now book their own flights and hotels online in a few minutes." (right)
 - "There are only three travel agents left in town." — if tapped: note: Only three are left, so rivals are not the problem.
+- "Travelers now book their own flights and hotels online in a few minutes." (right)
 - "No new agency has opened in ten years." — if tapped: note: No newcomers open, so they are not the problem.
 
 **Which force squeezes the profit most?**
@@ -379,19 +418,19 @@ A report summary, from "Harbor Business News · Trade report" (marked "Report su
 
 After the answer: the deciding words are marked. Reason: Booking online meets the same need without an agent: the substitute takes the customers. The other forces are weak here.
 
-#### Check question 14
+#### Check question 15
 
 A report summary, from "State Business Journal · Trade report" (marked "Report summary"):
 
 > # Car dealers and the maker
 >
-> A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them. Buyers shop around, but each dealer is the only one for its brand in its town. A new dealer needs the maker’s say-so, and none has opened in years.
+> Buyers shop around, but each dealer is the only one for its brand in its town. A new dealer needs the maker’s say-so, and none has opened in years. A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them." (right)
 - "Buyers shop around, but each dealer is the only one for its brand in its town." — if tapped: note: Each dealer is the only one for its brand nearby, so buyers have limited hold.
 - "A new dealer needs the maker’s say-so, and none has opened in years." — if tapped: note: No newcomers open, so they are not the problem.
+- "A dealer can sell only one maker’s brand, and the maker decides how many cars each dealer gets and what the dealer pays for them." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: Each dealer is the only one for its brand nearby, so buyers have limited hold.
@@ -402,51 +441,51 @@ A report summary, from "State Business Journal · Trade report" (marked "Report 
 
 After the answer: the deciding words are marked. Reason: The maker decides how many cars a dealer gets and what it pays, and the dealer can sell no other brand: the supplier takes the money.
 
-#### Check question 15
+#### Check question 16
 
-A report summary, from "Interstate Business Weekly · Trade report" (marked "Report summary"):
+A report summary, from "Elm Street Business Weekly · Trade report" (marked "Report summary"):
 
-> # Gas stations at Exit 12
+> # Cafes on Elm Street: a year of cheaper lattes
 >
-> Fuel comes from several wholesalers. Five gas stations stand at Exit 12, selling the same fuel, with prices on big signs. When one lowers its price, the others match it within the hour.
+> Bean prices rose 10% this year, which adds about 3 cents to a $4 cup. Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others. No new cafe has opened on Elm Street in three years; the leases are all taken.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Fuel comes from several wholesalers." — if tapped: note: Several wholesalers compete, so suppliers have little hold.
-- "Five gas stations stand at Exit 12, selling the same fuel, with prices on big signs." — if tapped: That is not the sentence.
-- "When one lowers its price, the others match it within the hour." (right)
+- "Bean prices rose 10% this year, which adds about 3 cents to a $4 cup." — if tapped: note: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
+- "Six cafes on Elm Street sell the same drinks, and this year they cut a latte from $4 to $3.25, each matching the others." (right)
+- "No new cafe has opened on Elm Street in three years; the leases are all taken." — if tapped: note: No newcomers can get a lease, so they are not the problem.
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down — if chosen: The report gives no sign that this force takes much of the money here.
-- Suppliers: the ones you buy from can push their price up — if chosen: Several wholesalers compete, so suppliers have little hold.
-- Newcomers: it is easy for new businesses to start up — if chosen: The report gives no sign that this force takes much of the money here.
+- Suppliers: the ones you buy from can push their price up — if chosen: Beans cost more, but 3 cents a cup is small beside a 75-cent price cut.
+- Newcomers: it is easy for new businesses to start up — if chosen: No newcomers can get a lease, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price (right)
 
-After the answer: the deciding words are marked. Reason: Five stations with the same fuel match every cut within the hour: the rivals already there fight away the profit.
+After the answer: the deciding words are marked. Reason: The six cafes cut a latte by 75 cents, matching each other, while dearer beans add only 3 cents a cup: the rivals take far more than the suppliers.
 
-#### Check question 16
+#### Check question 17
 
 A report summary, from "River Valley Business Journal · Trade report" (marked "Report summary"):
 
 > # Box makers and the supermarket chain
 >
-> Cardboard comes from several mills. One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price. A new box maker needs costly machines, and none has opened in years.
+> Cardboard from the mills rose 2% this year. No box maker has opened in the valley in years: the machines cost millions. One supermarket chain buys about 80% of the valley’s boxes, and this year it pushed the price down 8%, as it does every year.
 
 **Tap the line that shows who takes the money.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Cardboard comes from several mills." — if tapped: note: Several mills compete, so suppliers have little hold.
-- "One supermarket chain buys about 80% of the boxes the valley’s box makers make, and pushes each year for a lower price." (right)
-- "A new box maker needs costly machines, and none has opened in years." — if tapped: note: No newcomers open, so they are not the problem.
+- "Cardboard from the mills rose 2% this year." — if tapped: note: Cardboard rose 2%, small beside the 8% the chain took off the price.
+- "No box maker has opened in the valley in years: the machines cost millions." — if tapped: note: No newcomers open, so they are not the problem.
+- "One supermarket chain buys about 80% of the valley’s boxes, and this year it pushed the price down 8%, as it does every year." (right)
 
 **Which force squeezes the profit most?**
 - Buyers: customers who can push the price down (right)
-- Suppliers: the ones you buy from can push their price up — if chosen: Several mills compete, so suppliers have little hold.
+- Suppliers: the ones you buy from can push their price up — if chosen: Cardboard rose 2%, small beside the 8% the chain took off the price.
 - Newcomers: it is easy for new businesses to start up — if chosen: No newcomers open, so they are not the problem.
 - Substitutes: another way to meet the same need — if chosen: The report gives no sign that this force takes much of the money here.
 - Rivals: the businesses already there fight on price — if chosen: The report gives no sign that this force takes much of the money here.
 
-After the answer: the deciding words are marked. Reason: One chain buys 80% of the boxes and pushes the price down each year: the buyer takes the money.
+After the answer: the deciding words are marked. Reason: One chain buys 80% of the boxes and pushed the price down 8%, while cardboard rose only 2%: the buyer takes far more than the suppliers.
 
 ## The result
 

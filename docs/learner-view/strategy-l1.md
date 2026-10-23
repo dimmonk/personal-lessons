@@ -5,7 +5,7 @@ Revision 1, draft (the screen carries the draft line). Part: Goal, wish, or stra
 ## The why
 
 Have an owner tell you their strategy and you often hear a number: “grow 20% this year.” That is where they want to be, not how they will get there.
-People who teach strategy test a plan with one question first: does it say what is in the way? Here you learn to read any plan, your own included, for that line, and to tell a strategy from a goal or a to-do list.
+One of the field’s best-known teachers tests a plan with one question first: does it say what is in the way? Here you learn to read any plan, your own included, for that line, and to tell a strategy from a goal or a to-do list.
 
 ## Step 1: The three parts of a strategy
 
@@ -14,9 +14,11 @@ The challenge: what is in the way, and why. “Since the supermarket opened its 
 One approach to it: the one way past that challenge. “We stop selling bread on price and sell what the supermarket cannot make: cakes to order.”
 Steps that follow from the approach: each one serves it. “Move a baker to cakes. Show the cakes in the window.”
 Read a plan in that order. First look for the challenge.
-No challenge named? Then a plan that is only a target or a wish (“$1 million in sales”, “the best gym in town”) is a goal. A plan that lists steps is a to-do list, even with a target on top.
+No challenge named? Then a plan that is only a target or a wish is a goal: a target is a number to reach (“$1 million in sales”); a wish is a quality you hope for (“the best gym in town”, “a great experience for every member”). A mission or a vision, a company’s statement of what it stands for, is a wish too.
+A step is something you can put on a calendar or buy: “Buy two plows”, “Open on Sundays”. A plan that lists steps with no challenge named is a to-do list, even with a target on top, and even with a line like “So we push harder on sales”: an approach to nothing.
 A challenge named, but the steps go off in different directions and none of them gets past it? That is a to-do list too.
-A challenge, one approach, and steps that serve it: that is a strategy. Why it matters: a target tells your team where to end up, but only the challenge tells them what to work on.
+A challenge, one approach, and steps that serve it: that is a strategy. All three must be there; a challenge and an approach with no steps yet is a strategy not finished. Why it matters: a target tells your team where to end up, but only the challenge tells them what to work on.
+One limit: if the challenge is only that the business does the same work worse than its rivals (food comes out late, bills have mistakes), a plan to fix it is a plan to run the business better, not a strategy; telling the two apart comes next. Every plan here faces a challenge from rivals or the market.
 
 A wrong idea, marked wrong: “My strategy is to grow sales 20% this year.”
 The right line: That is a goal. It says where you want to be. A strategy starts from what stands in the way of the 20%, picks one way past it, and lists the steps that serve that way.
@@ -138,6 +140,7 @@ After the answer: the deciding words are marked. Reason: No line says what is in
 Your own note, written after an argument: "Ann’s plan for her gift shop", Written in January.
 
 > **Goal for the year: sales up 20%.**
+> So we push harder on getting our name out.
 > **Start an Instagram page.**
 > Sell gift cards.
 > **Open on Sundays.**
@@ -149,6 +152,7 @@ Help on screen: the words that decide it are marked.
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Goal for the year: sales up 20%." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
+- "So we push harder on getting our name out." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - "Start an Instagram page." — if tapped: note: That is a step to take, not what is in the way.
 - "Sell gift cards." — if tapped: note: That is a step to take, not what is in the way.
 - "Open on Sundays." — if tapped: note: That is a step to take, not what is in the way.
@@ -161,7 +165,7 @@ Help on screen: the words that decide it are marked.
 - A to-do list (right)
 - A strategy — if chosen: No line says what is in the way, so the steps have nothing to answer.
 
-After the answer: the deciding words are marked. Reason: It lists five steps under a target, but no line says what is in the way of more sales. With no challenge for them to answer, it is a to-do list.
+After the answer: the deciding words are marked. Reason: It lists five steps under a target, and “push harder” is an approach to nothing: no line says what is in the way of more sales. It is a to-do list.
 
 #### Item 5
 
@@ -227,16 +231,16 @@ After the answer: the deciding words are marked. Reason: It is a mission, a wish
 
 Your own note, written after an argument: "Omar’s plan for his print shop", Written in September.
 
-> Online printers now sell business cards and flyers for less than our paper costs us.
-> So we stop chasing small, simple orders and become the shop local businesses call for rush jobs and tricky ones.
+> Online printers undercut us on cards and flyers.
+> Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders.
 > Promise same-day printing on orders in by 10 a.m.
 > Have one person check every file before it prints, so tricky jobs come out right.
 > Drop our cut-price business card deal.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Online printers now sell business cards and flyers for less than our paper costs us." (right)
-- "So we stop chasing small, simple orders and become the shop local businesses call for rush jobs and tricky ones." — if tapped: note: That is the approach to the challenge.
+- "Online printers undercut us on cards and flyers." (right)
+- "Our answer: become the shop local businesses call for rush jobs and tricky ones, and stop chasing small, simple orders." — if tapped: note: That is the approach to the challenge.
 - "Promise same-day printing on orders in by 10 a.m." — if tapped: note: That is a step to take, not what is in the way.
 - "Have one person check every file before it prints, so tricky jobs come out right." — if tapped: note: That is a step to take, not what is in the way.
 - "Drop our cut-price business card deal." — if tapped: note: That is a step to take, not what is in the way.
@@ -247,7 +251,7 @@ Your own note, written after an argument: "Omar’s plan for his print shop", Wr
 - A to-do list — if chosen: The steps are not a loose list: each follows from the one approach to the challenge.
 - A strategy (right)
 
-After the answer: the deciding words are marked. Reason: The first line says what is in the way: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
+After the answer: the deciding words are marked. Reason: The first line says what is in the way, in six words: online printers beat Omar on price for simple orders. Becoming the shop for rush and tricky jobs is one way past it, and same-day printing, the file check and dropping the card deal all serve it, so it is a strategy.
 
 #### Item 8
 
@@ -282,12 +286,14 @@ Your own note, written after an argument: "Ruth’s plan for her day care", Writ
 > Our vision: the best start in life for every child.
 > Double the number of children we care for by 2028.
 > Be known as the warmest day care in the county.
+> So we put the children first in everything we do.
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Our vision: the best start in life for every child." — if tapped: note: That is a wish. It says nothing about what stands in the way.
 - "Double the number of children we care for by 2028." — if tapped: note: That is a target: where the owner wants to be, not what is in the way.
 - "Be known as the warmest day care in the county." — if tapped: note: That is a wish. It says nothing about what stands in the way.
+- "So we put the children first in everything we do." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - A button: "No line says what is in the way" (right)
 
 **What is this plan?**
@@ -295,7 +301,7 @@ Your own note, written after an argument: "Ruth’s plan for her day care", Writ
 - A to-do list — if chosen: It lists no real steps; it only says where the owner wants to be.
 - A strategy — if chosen: No line says what is in the way, so there is nothing for a plan to get past.
 
-After the answer: the deciding words are marked. Reason: A vision, a target and a wish: no line says what stands in the way of doubling, and nothing says what to do. It is a goal.
+After the answer: the deciding words are marked. Reason: A vision, a target and two wishes: no line says what stands in the way of doubling, and nothing says what to do. It is a goal.
 
 #### Item 10
 
@@ -337,7 +343,7 @@ Your own note, written after an argument: "Joe’s plan for his hardware store",
 
 > Open at 6 a.m. for the contractors.
 > The home center across town carries more stock than we do and sells it all for less.
-> So we stop chasing weekend shoppers and serve the people who need one part fast and advice with it: contractors and neighbors in the middle of a repair.
+> From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers.
 > Keep staff on the floor who can tell you which part you need.
 > Close the garden section, which the home center does better.
 
@@ -345,7 +351,7 @@ Your own note, written after an argument: "Joe’s plan for his hardware store",
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Open at 6 a.m. for the contractors." — if tapped: note: That is a step to take, not what is in the way.
 - "The home center across town carries more stock than we do and sells it all for less." (right)
-- "So we stop chasing weekend shoppers and serve the people who need one part fast and advice with it: contractors and neighbors in the middle of a repair." — if tapped: note: That is the approach to the challenge.
+- "From now on we serve the people who need one part fast and advice with it, contractors and neighbors in the middle of a repair, not weekend shoppers." — if tapped: note: That is the approach to the challenge.
 - "Keep staff on the floor who can tell you which part you need." — if tapped: note: That is a step to take, not what is in the way.
 - "Close the garden section, which the home center does better." — if tapped: note: That is a step to take, not what is in the way.
 - A button: "No line says what is in the way" — if chosen: The text does give one. It is marked above.
@@ -383,6 +389,7 @@ After the answer: the deciding words are marked. Reason: A target and two wishes
 
 Your own note, written after an argument: "Dr. Patel’s plan for her dental office", Written in June.
 
+> This year we focus on families with young children.
 > Get more five-star reviews online.
 > Buy a new X-ray machine.
 > Offer teeth whitening.
@@ -390,6 +397,7 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
+- "This year we focus on families with young children." — if tapped: note: That sounds like an approach, but no line says what is in the way, so it answers nothing.
 - "Get more five-star reviews online." — if tapped: note: That is a step to take, not what is in the way.
 - "Buy a new X-ray machine." — if tapped: note: That is a step to take, not what is in the way.
 - "Offer teeth whitening." — if tapped: note: That is a step to take, not what is in the way.
@@ -401,7 +409,7 @@ Your own note, written after an argument: "Dr. Patel’s plan for her dental off
 - A to-do list (right)
 - A strategy — if chosen: No line says what is in the way, so the steps have nothing to answer.
 
-After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve. It is a to-do list.
+After the answer: the deciding words are marked. Reason: Four steps, and no line says what problem they are meant to solve; the focus on families answers nothing named. It is a to-do list.
 
 #### Check question 14
 
@@ -431,7 +439,7 @@ After the answer: the deciding words are marked. Reason: The last line names a r
 
 Your own note, written after an argument: "Kim’s plan for her tutoring business", Written in August.
 
-> Free videos online now teach the same math lessons we used to sell as recorded packs.
+> Free videos now teach what our recorded packs did.
 > So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going.
 > Start every session with the student’s homework.
 > Send each parent a short progress note every Friday.
@@ -439,7 +447,7 @@ Your own note, written after an argument: "Kim’s plan for her tutoring busines
 
 **Tap the line that says what is in the way.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Free videos online now teach the same math lessons we used to sell as recorded packs." (right)
+- "Free videos now teach what our recorded packs did." (right)
 - "So we sell what a video cannot give: a tutor who checks the student’s own work every week and tells the parent how it is going." — if tapped: note: That is the approach to the challenge.
 - "Start every session with the student’s homework." — if tapped: note: That is a step to take, not what is in the way.
 - "Send each parent a short progress note every Friday." — if tapped: note: That is a step to take, not what is in the way.

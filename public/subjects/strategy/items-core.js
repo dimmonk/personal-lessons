@@ -33,14 +33,14 @@
         { id: "share", kind: "number", prompt: `What share of what all these lines earn together, losses taken off, comes from ${theCore.name}?`, frame: "__%", answer: share, tol: { abs: 1 },
           traps: [
             { slip: "sales-not-profit", value: ofSales, then: "That is its share of the sales. The share that counts is of what the lines earn after their direct costs." },
-            { slip: "loss-left-out", value: onlyEarning, then: `That leaves out ${lost.name}’s loss. Take it off the total: the share then shows what the losing line costs the rest.` }] },
+            { slip: "loss-left-out", value: onlyEarning, then: `That leaves out the loss on ${lost.name}. Take it off the total: the share then shows what the losing line costs the rest.` }] },
         { id: "verdict", kind: "choose", prompt: `What should the owner do with ${lost.name}, which loses money?`, from: "verdict", only: ["fix", "let-go"], right: tied ? "fix" : "let-go",
           then: tied ? { "let-go": "The notes say the core’s customers buy it along with the core, so dropping it would cost the core too. Fix its price or cost." }
             : { fix: "The notes say nothing ties it to the core, so fixing it keeps a loss the core does not need. Let it go." } }],
       steps: [
         { id: "core", does: "Take each line’s direct cost from what it brought in. Then find the line customers come here for, and check it earns the most.",
           working: `${rows.map(r => `${r.name}: ${money(r.earns)}`).join("; ")}. ${plain ? `${top.name} earns the most, but rivals sell it the same way; ${theCore.name} is what customers come here for` : `${theCore.name} earns the most${biggest.rid !== theCore.rid ? `, though ${biggest.name} brings in more` : ""}, and it is what customers come here for`}.`, ask: "core" },
-        { id: "share", does: "Divide what the core earns by what all the lines earn together, losses taken off.", working: `${money(theCore.earns)} ÷ ${money(net)} = ${pct(share)}. ${lost.name}’s loss is taken off the total.`, ask: "share" },
+        { id: "share", does: "Divide what the core earns by what all the lines earn together, losses taken off.", working: `${money(theCore.earns)} ÷ ${money(net)} = ${pct(share)}. The loss on ${lost.name} is taken off the total.`, ask: "share" },
         { id: "verdict", does: "Decide on the line that loses money: do the core’s customers buy it along with the core?", working: `${fact} So ${tied ? "keep it, but fix its price or cost" : "let it go"}.`, ask: "verdict" }],
       deciding: [theCore.rid, lost.rid, ...(plain ? [top.rid] : [])],
       reason: `${theCore.name} is what customers come here for and earns ${money(theCore.earns)}, ${pct(share)} of what the lines earn together${plain ? `; ${top.name} earns more, but rivals sell it the same way` : biggest.rid !== theCore.rid ? `, more than ${biggest.name} with its bigger sales` : ""}: that is the core. ${lost.name} loses ${money(-lost.earns)}, and ${tied ? "the core’s customers buy it too, so fix its price or cost" : "nothing ties it to the core, so let it go"}.`
@@ -59,7 +59,7 @@
       fact: "Tree work comes mostly from one-off calls by people who are not our garden design clients." }),
     core({ id: "p-printers", who: "Omar’s print shop", kind: "customer", lines: [["b1", "Walk-in customers", 70000, 62000], ["b3", "The school district", 35000, 21000], ["b4", "Six restaurants", 18000, 22000], ["b2", "Three law firms", 50000, 22000]],
       loser: "b4", tied: false, distinct: "The law firms use us because we print court papers to the court’s rules overnight, which no other shop in town does.",
-      fact: "The restaurants buy nothing from us but their menus, and the law firms never eat there on our account." }),
+      fact: "The restaurants buy nothing from us but their menus, and none of them sends us any other work." }),
     core({ id: "p-tutors", who: "Kim’s tutoring business", kind: "product", lines: [["b1", "Sessions at the family’s home", 60000, 30000], ["b2", "Online sessions", 40000, 16000], ["b3", "Group classes at the library", 25000, 29000], ["b4", "Summer camp", 30000, 24000]],
       loser: "b3", tied: true, distinct: "Families tell us they pick us because the tutor comes to the house; no other tutoring service in town does.",
       fact: "Most families who book sessions at home found us through the library classes, and keep their child in both." }),
