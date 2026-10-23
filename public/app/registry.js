@@ -15,7 +15,8 @@
     { id: 'numbers', name: 'Numbers & Money' },
     { id: 'business', name: 'Business' },
     { id: 'world', name: 'World' },
-    { id: 'skills', name: 'Skills' }
+    { id: 'skills', name: 'Skills' },
+    { id: 'work', name: 'Work' }
   ];
   let subjects = Object.freeze({});
   let maps = Object.freeze({});   // the regions of public/maps/, by id (lesson standard 3.9, the map block and the place ask)
