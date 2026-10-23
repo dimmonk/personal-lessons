@@ -111,6 +111,7 @@ FC.subject('strategy', {
       { id: "serve-everyone", text: "tried to serve everyone, or to copy a rival while keeping your own way" },
       { id: "copyable-as-lasting", text: "took something a rival can buy or copy for an advantage that lasts" },
       { id: "missed-tradeoff", text: "took a real choice of what not to do for a straddle" },
+      { id: "counted-wrong-group", text: "counted the wrong group in the table" },
       { id: "inside-view", text: "trusted the plan's own story over how similar bets turned out" },
       { id: "rival-ignored", text: "forgot that rivals will answer" },
       { id: "surface-analogy", text: "copied a success that only looks alike" },
