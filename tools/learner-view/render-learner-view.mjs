@@ -432,8 +432,9 @@ export function renderLesson(loaded, subjectId, lessonId) {
     Object.keys(draw.split).forEach(form => { const pair = e.placePairs(gen).find(p => p.form === form && e.placeAllowedForms(gen, p.place, draw.only || {}).includes(form)); out.push(...questionLines(e, data, { key: e.placeKey(gen.id, pair.place), item: e.itemFromGen(gen, e.placeSeedOf(gen, pair.place, form)), seed: e.placeSeedOf(gen, pair.place, form) }, null, `Question in the draw: ${form}`)); });
   }
   else if (e.checkIsDrawn(check)) {
-    out.push(`The questions are drawn at random from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them), the same run drawing the same; what no earlier ${check.retest ? 'run of this check' : 'check'} asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:`, '');
-    check.items.draw.strands.flatMap(id => Object.values(subject.items).filter(i => i.strand === id)).forEach(i => out.push(...questionLines(e, data, { key: i.id, item: i }, null, `Question in the draw: ${i.id}`)));
+    const groups = check.items.draw.map(g => `${g.n} of the topics ${g.strands.join(', ')}`).join('; ');
+    out.push(`The questions are drawn at random, the same run drawing the same, exactly so many from each group of topics: ${groups}; what no earlier ${check.retest ? 'run of this check' : 'check'} asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:`, '');
+    check.items.draw.flatMap(g => g.strands).flatMap(id => Object.values(subject.items).filter(i => i.strand === id)).forEach(i => out.push(...questionLines(e, data, { key: i.id, item: i }, null, `Question in the draw: ${i.id}`)));
   }
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));
   else e.flatRefs(check.items).forEach(ref => {
@@ -441,7 +442,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
     for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`));
   });
   // a compared facet is shown only when the check's questions carry two or more of its values (panel.js facetSplits): a check of questions with no level shows none
-  const checkDefs = e.checkIsDrawn(check) ? ('strands' in check.items.draw ? Object.values(subject.items).filter(i => check.items.draw.strands.includes(i.strand)) : [])
+  const checkDefs = e.checkIsDrawn(check) ? (Array.isArray(check.items.draw) ? Object.values(subject.items).filter(i => check.items.draw.some(g => g.strands.includes(i.strand))) : [])
     : e.flatRefs(check.items).map(r => subject.items[e.refId(r)]).filter(Boolean);
   const compared = Object.entries(subject.meta.facets).filter(([id, f]) => f.compare && new Set(checkDefs.map(d => (d.facets || {})[id]).filter(Boolean)).size > 1).map(([, f]) => f);
   if (baseline) {

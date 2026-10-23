@@ -65,3 +65,8 @@ finding crosses lessons, the ruling below decides it, so every lesson says the s
     be recovered); a drive leaving the company is wiped with a full overwrite (`format` without `/q` writes zeros, `clean all`) or
     destroyed (lesson 26's disposal rules).
 22. **People**: each name has one job across the subject, and lessons refer to people by name or "they", never a guessed pronoun.
+23. **The final test is two lessons** (research review of l25-29): lesson 29 "The whole ticket" has the ten mixed tickets as its
+    graded check (pass 8 of 10, and none that touches data before protecting it or closes before the user confirms); lesson 30
+    "The mock exam" draws 40 questions weighted by the A+ domain weights: Core 1 mobile 3, networking 5, hardware 5,
+    virtualization and cloud 2, hardware and network troubleshooting 5; Core 2 operating systems 6, security 5, software
+    troubleshooting 5, operational procedures 4 (unit 1's ticket and communication strands count here, A+ Core 2 4.1 and 4.7).

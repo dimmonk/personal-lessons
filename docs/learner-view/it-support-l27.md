@@ -1,10 +1,10 @@
 # IT Help Desk: Changes, backups, safety and evidence
 
-Revision 1, draft (the screen carries the draft line). Part: Changes, backups, safety and evidence. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Changes, backups, safety and evidence. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-It is Friday at 4:30. A manager writes: “Please update the firmware on the accounting server tonight. It only takes ten minutes.” A technician who does it alone, with no approval, no copy of the data and no way back, can stop payroll on Monday. The desk has rules for what to get approved, copy, wear and keep.
+It is Friday at 4:30. A manager writes: “Please update the firmware (the built-in software of the hardware) on the accounting server tonight. It only takes ten minutes.” A technician who does it alone, with no approval, no copy of the data and no way back, can stop payroll on Monday. The desk has rules for what to get approved, copy, wear and keep.
 Here are four small groups of those rules. Each answers a question from a ticket: who must approve this change, which backup restores fastest, what do I wear and do before I open this, what do I do with this drive. You read each rule once, watch it used, then answer from memory and as a choice.
 
 ## Step 1: Changes: who approves, and what must be ready
@@ -41,11 +41,11 @@ Onsite copies restore fast but burn with the building; offsite copies survive it
 A plain table, "The hazard and what answers it":
 
 > Hazard  |  What to use or do  (the column heads)
-> Static (ESD): a spark you cannot feel can kill a chip  |  An ESD strap on your wrist clipped to bare metal, or an ESD mat; keep spare parts in antistatic bags
+> Static (ESD): a spark you cannot feel can kill a chip  |  An ESD strap on your wrist clipped to bare metal of the computer’s frame, which keeps you and the frame at the same charge; or an ESD mat; keep spare parts in antistatic bags
 > Shock  |  Disconnect power before a repair; use grounded outlets (equipment grounding) and never cut off the third pin
 > A heavy load  |  Lifting technique: bend the knees, back straight, load close; use a cart or a second person
 > Tripping  |  Cable management: tie cables together and keep them out of walkways
-> Fire  |  Know where the extinguisher is and its kind; never water on an electrical fire; leave and call emergency services
+> Fire  |  Know where the fire extinguisher is and what kind it is; never water on an electrical fire; leave and call emergency services
 > Dust, chips and toner  |  Safety goggles for the eyes; an air filter mask for the lungs
 
 Do not wear an ESD strap inside a power supply or an old CRT (tube) monitor: they hold a charge that can shock you. Government safety regulations apply as well.
@@ -57,21 +57,21 @@ A plain table, "The environment and its controls":
 > Problem  |  What it does  |  Control  (the column heads)
 > Heat  |  Parts overheat, slow down and fail  |  A cool room; ventilation: leave vents and fans clear, with space around the equipment
 > Humidity too high or too low  |  Too humid: moisture and corrosion. Too dry: static  |  Keep the humidity in range
-> Dust  |  Clogs fans and heat sinks (metal fins that carry heat off a chip), so parts run hot  |  Compressed air (hold the fan still, wear goggles) or an ESD-safe vacuum
+> Dust  |  Clogs fans and heat sinks (metal fins that carry heat off a chip), so parts run hot  |  With the equipment switched off and unplugged: compressed air (hold the fan still, wear goggles) or an ESD-safe vacuum
 > Power surge: a spike above normal voltage  |  Burns out parts  |  A surge suppressor
-> Under-voltage: a brownout, where voltage sags  |  Crashes and damage  |  A UPS (uninterruptible power supply), a battery box that also evens out the voltage
+> Under-voltage: a brownout, where voltage sags  |  Crashes and damage  |  A UPS (uninterruptible power supply), a battery box; most also even out the voltage
 > Power loss: a blackout  |  Unsaved work and open files are lost  |  A UPS gives minutes to save and shut down; a surge suppressor cannot keep power on
 
 An MSDS (material safety data sheet, now often called an SDS) comes with products such as batteries and toner. It says what is inside, the hazards, and how to handle, store and dispose of it. Batteries and toner do not go in the regular trash.
 
 ## Step 5: Evidence: you find something on a drive you were sent to repair
 
-Prohibited content (illegal files) or signs of a crime or attack: you stop repairing and start protecting evidence. Leave the computer as it is: delete nothing, clean nothing, run no scan. Tell your manager (inform management), who decides whether to call law enforcement. Write down what you saw, when, and everything you touched (incident documentation).
+Prohibited content (illegal files) or signs of a crime or attack: you stop repairing and start protecting evidence. Leave the computer as it is, and do not power it off, because memory is lost when the power goes: delete nothing, clean nothing, run no scan. Tell your manager (inform management), who decides whether to call law enforcement. Write down what you saw, when, and everything you touched (incident documentation).
 
-A plain table, "Order of volatility: collect what disappears first":
+A plain table, "Order of volatility (simplified): collect what disappears first":
 
 > Order  |  What  |  Why this place  (the column heads)
-> 1  |  Memory (RAM) and the running state  |  Gone when the power is off
+> 1  |  Memory (RAM), the swap file and the running state  |  Gone when the power is off
 > 2  |  Files on the drive  |  Stay until something overwrites them
 > 3  |  Logs and backups kept elsewhere  |  Last to change
 
@@ -86,7 +86,7 @@ The right line: The same shortcut hides in every group here: a change with no ap
 
 A chat, with its history: "Mr. Okafor, Finance", Chat with the help desk.
 
-> (Mr. Okafor, Finance, at the left) Please update the firmware on the accounting server tonight. It only takes ten minutes, and payroll runs Monday morning.
+> (Mr. Okafor, Finance, at the left) Please update the firmware on the accounting server tonight. It only takes ten minutes, and payroll runs Monday morning. The server is working normally.
 
 A plain table, "From the desk’s change rules":
 
@@ -95,29 +95,30 @@ A plain table, "From the desk’s change rules":
 > An emergency change is only for an outage or an attack that is happening now.
 > Every other change to a server needs a request form, a rollback plan, a backup, a test, and the change board’s approval.
 > Server changes happen in the maintenance window, Saturday 10 p.m. to 2 a.m.
+> No written procedure covers firmware updates.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
 **Which type of change is this?**
 (the options come in an order that depends on the seed of the question)
 - A normal change: not routine, and nothing is down
-- An emergency change, because he wants it done tonight
+- An emergency change, because Mr. Okafor wants it done tonight
 - A standard change, because it only takes ten minutes
 - Not a change, because the server keeps working
 
 The working, one step at a time:
-1. Name the favorite type and check it against the desk’s own rule.: The first guess is emergency, because he said “tonight”. The rule needs one answer: is there an outage or an attack now? No. Emergency is ruled out.
+1. Name the favorite type and check it against the desk’s own rule.: The first guess is emergency, because Mr. Okafor said “tonight”. The rule needs one answer: is there an outage or an attack now? No. Emergency is ruled out.
 1. Write the request form.: Purpose: current firmware, fixes a fault the maker listed. Scope: the accounting server only. Type: normal. Affected systems: accounting and payroll. Risk: a failed update could stop payroll, so the risk level is high.
 1. Get the four things ready before the board sees it.: Rollback plan: keep the old firmware file and the steps to put it back. Backup plan: a full backup and a copy of the settings first. Sandbox testing: run the update on the spare server. Responsible staff: you do the work; the senior technician answers for it.
 1. Pick the time.: Not tonight. The change board must approve, and servers change only in the maintenance window: the coming Saturday. The year-end change freeze, if one were running, would block it altogether.
-1. After approval, do the work, get it checked, and get the users to accept it.: Implement it Saturday. A second technician reviews it (peer review). On Monday, Mr. Okafor confirms payroll runs (end-user acceptance), and the ticket is closed.
+1. After approval, do the work, get it checked, and get the users to accept it.: Implement it Saturday. A second technician reviews it (peer review). On Monday, Mr. Okafor confirms payroll runs (end-user acceptance). Write the note: the approval, the backup and the check. Then close the ticket.
 
 Then the answer: A normal change: not routine, and nothing is down. The type comes from the desk’s rule, not from the wish for tonight. Nothing was down, so it is a normal change: a request form, rollback and backup plans, a test, board approval, the maintenance window, a peer review and the users’ acceptance.
 
 ## Step 8: A worked example
 
-A chat, with its history: "Dana, HR", Chat with the help desk.
+A chat, with its history: "Cheryl, HR", Chat with the help desk.
 
-> (Dana, HR, at the left) My laptop is slow and the drive says it is almost full. Can you clean it up?
+> (Cheryl, HR, at the left) My laptop is slow and the drive says it is almost full. Can you clean it up?
 
 A plain table, "What you saw while checking the drive":
 
@@ -148,15 +149,15 @@ Then the answer: Stop, change nothing, and tell your manager what you saw. The f
 
 #### Item 1
 
-A chat, with its history: "Marco, Operations", Chat with the help desk.
+A chat, with its history: "Rosalind, Operations", Chat with the help desk.
 
-> (Marco, Operations, at the left) **Every month the 40 reception PCs get the same Windows updates, by the desk’s written procedure. The change board approved that procedure once, for good, last year.**
+> (Rosalind, Operations, at the left) **Every month the 40 reception PCs get the same Windows updates, by the desk’s written procedure. The change board approved that procedure once, for good, last year.**
 
 Help on screen: the words that decide it are marked.
 
 **Which type of change is the monthly update?**
 (the options come in an order that depends on the seed of the question)
-- A standard change, since it is routine and pre-approved (right)
+- A standard change, being routine and pre-approved (right)
 - A normal change, so it goes to the board every month — if chosen: Normal changes are the ones with no pre-approved procedure. This procedure was approved once, for good.
 - An emergency change, because 40 PCs are involved — if chosen: Emergency means an outage or an attack happening now. The number of PCs does not decide it.
 - Not a change, because the PCs keep working during it — if chosen: Updates can break a PC, so they are changes. A routine one is a standard change.
@@ -165,9 +166,9 @@ After the answer: the deciding words are marked. Reason: Routine, written down a
 
 #### Item 2
 
-A chat, with its history: "Lena, Warehouse", Chat with the help desk.
+A chat, with its history: "Pauline, Warehouse", Chat with the help desk.
 
-> (Lena, Warehouse, at the left) **The file server gets a full backup on Sunday. Each night after that, it copies everything that changed since Sunday. It crashed on Thursday morning.**
+> (Pauline, Warehouse, at the left) **The file server gets a full backup on Sunday. Each night after that, it copies everything that changed since Sunday. It crashed on Thursday morning.**
 
 Help on screen: the words that decide it are marked.
 
@@ -190,9 +191,9 @@ Help on screen: the words that decide it are marked.
 
 **Where does the strap go, and what comes first?**
 (the options come in an order that depends on the seed of the question)
-- On bare metal of the computer’s frame, after the power cord is unplugged (right)
-- On the memory stick itself, so both stay at the same charge — if chosen: The strap goes to bare metal that is grounded, not to the part. Clipped to the stick, it drains nothing away.
-- On any plastic panel, as long as the strap touches his skin — if chosen: Plastic does not carry static away. The clip needs bare metal.
+- On bare metal of the frame, once the power cord is unplugged (right)
+- On the memory stick itself, so both stay at the same charge — if chosen: The strap goes to bare metal of the frame, not to the part. Clipped to the stick, it equalizes nothing.
+- On any plastic panel, as long as the strap touches Tim’s skin — if chosen: Plastic does not carry static away. The clip needs bare metal.
 - On the power cord’s plug, with the computer still switched on — if chosen: Working inside a computer that is switched on risks shock, and the strap is no substitute for unplugging it.
 
 After the answer: the deciding words are marked. Reason: An ESD strap clips to bare metal of the frame, and power is disconnected before any repair.
@@ -201,7 +202,7 @@ After the answer: the deciding words are marked. Reason: An ESD strap clips to b
 
 A chat, with its history: "Gail, Clinic", Chat with the help desk.
 
-> (Gail, Clinic, at the left) **The power flickered for two seconds and the reception computer restarted. The patient notes she was typing were lost. Nothing was damaged.**
+> (Gail, Clinic, at the left) **The power flickered for two seconds and the reception computer restarted. The patient notes I was typing were lost. Nothing was damaged.**
 
 Help on screen: the words that decide it are marked.
 
@@ -216,9 +217,9 @@ After the answer: the deciding words are marked. Reason: A short loss of power t
 
 #### Item 5
 
-A chat, with its history: "Sam, Security", Chat with the help desk.
+A chat, with its history: "Audrey, Security", Chat with the help desk.
 
-> (Sam, Security, at the left) **I made an exact copy of the drive from the Reyes laptop and gave the original to Legal. I did not write down who took it, or when.**
+> (Audrey, Security, at the left) **I made an exact copy of the drive from the Reyes laptop and gave the original to Legal. I did not write down who took it, or when.**
 
 Help on screen: the words that decide it are marked.
 
@@ -227,7 +228,7 @@ Help on screen: the words that decide it are marked.
 - The chain of custody: who held the evidence, and when (right)
 - The order of volatility: which evidence to collect first — if chosen: The order of volatility says what to collect first. It is a plan for collecting, not a record of who held the evidence.
 - The rollback plan: the steps to undo a change that failed — if chosen: A rollback plan belongs to change management. This is an evidence ticket.
-- The acceptable use policy: what staff may do on company computers — if chosen: The AUP says what staff may do. It does not record who held a drive.
+- A change freeze: a time when no changes are allowed — if chosen: A change freeze blocks changes for a period. It does not record who held a drive.
 
 After the answer: the deciding words are marked. Reason: The written record of who held the evidence, when and where is the chain of custody.
 
@@ -241,7 +242,7 @@ Then a screen: you can stop here, your place is kept.
 
 A question the phone reads aloud, never by itself: a button "Hear the question" (then "Hear it again") reads it with a voice on the phone when the learner taps, and once they have tapped the next question in the run is read when they tap Next. A phone with no voice of its own shows the words and says so. Its words: **In the last week of December, the accounting team is closing the books, and the rule says no changes to their systems until January.**
 
-**What is a period like this called? Type the two words.**
+**What is a period like this called? Type the name.**
 - One box and "Answer" (shut until something is typed; Enter sends it), and "Not yet", which answers with nothing and shows the answers. "Not sure? Tap Not yet to see the answers." Nothing is marked before the answer.
 - What counts as the same: capital letters, punctuation, "a", "an", "the" and "and" do not matter; a number in words is the number ("twenty-seven" is 27); words in brackets are optional; one small misspelling in the whole answer is forgiven (a word that is one letter off, in words of four letters or more); parts of an answer said in any order. A word left out or added, or another word, is a miss.
 - After: the mark (Right, Not this one, or "Not yet") with "You said: …", then the accepted answers, every one, the one given marked "You gave this one" (and "Words in brackets are optional." when some words are in brackets). After a miss with something typed: "If what you said means the same, say so. It counts this time, and the question comes back later to be sure." with the button "My answer means the same". It counts right in that sitting (shown as "Counted on your word"), is logged and listed under the result and in the results, and is not a good day for the schedule, so the question comes back.
@@ -253,24 +254,24 @@ After the answer: Reason: A period when no changes are allowed is a change freez
 
 #### Item 7
 
-A chat, with its history: "Hugo, Systems", Chat with the help desk.
+A chat, with its history: "Kiana, Systems", Chat with the help desk.
 
-> (Hugo, Systems, at the left) The nightly backup has a 30-minute window and little disk space. A slow restore is fine with us, because the server rarely fails.
+> (Kiana, Systems, at the left) The nightly backup has a 30-minute window and the backup disk has little space. A slow restore is fine with us, because the server rarely fails.
 
 **Which backup kind fits?**
 (the options come in an order that depends on the seed of the question)
 - Incremental: only what changed since the last backup (right)
 - Full: a complete copy of everything, every single night — if chosen: A full copy every night is the slowest and biggest to make, so it breaks the window and the disk space.
 - Differential: everything changed since the last full backup — if chosen: A differential grows a little every night, so it takes more time and space than an incremental.
-- Synthetic full: a full built on the backup server — if chosen: A synthetic full is built on the backup server. It is light on the computer but is a full copy, so it takes the most space.
+- Synthetic full: a full built on the backup server — if chosen: A synthetic full is a complete copy, so it takes the most room on a small backup disk.
 
 After the answer: the deciding words are marked. Reason: Fastest and smallest to make is incremental. The cost is the restore, which needs the last full plus every incremental in order.
 
 #### Item 8
 
-The question, read aloud as above: **The 3-2-1 rule says to keep 3 copies of the data on 2 kinds of media, with some number of them somewhere else, away from the building.**
+The question, read aloud as above: **The 3-2-1 backup rule says how many copies to keep, how many kinds of media to use, and how many copies to keep away from the building.**
 
-**How many copies are kept offsite? Type the number.**
+**How many copies are kept away from the building? Type the number.**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
   - 1
@@ -286,7 +287,7 @@ A chat, with its history: "Bob, Archive", Chat with the help desk.
 **Which part of the environment needs controlling?**
 (the options come in an order that depends on the seed of the question)
 - Humidity: air that is too dry builds up static charge (right)
-- Ventilation: the PCs need their vents blocked to keep dust out — if chosen: Blocking vents makes parts hotter. Vents are kept clear.
+- Dust: the shelves need cleaning, because dust causes the shocks — if chosen: Dust clogs fans and heat sinks. It does not give people shocks from metal shelves; dry air does.
 - Surges: a spike on the power line is burning out the modules — if chosen: A power surge does not give people shocks from metal shelves. Static in dry air does.
 - Temperature: the room must be made as warm as possible — if chosen: Heat does not cure static, and it shortens the life of parts.
 
@@ -306,9 +307,9 @@ After the answer: Reason: It is the full backup. Incremental and differential ba
 
 #### Item 11
 
-A chat, with its history: "Ruth, Security", Chat with the help desk.
+A chat, with its history: "Jamal, Security", Chat with the help desk.
 
-> (Ruth, Security, at the left) Attackers are using a hole in our VPN server right now, and people are being locked out. The patch is ready. The change board does not meet until Thursday.
+> (Jamal, Security, at the left) Attackers are using a hole in our VPN server (the entrance into the company network) right now, and people are being locked out. The patch is ready. The change board does not meet until Thursday.
 
 **How is this change handled?**
 (the options come in an order that depends on the seed of the question)
@@ -321,9 +322,9 @@ After the answer: the deciding words are marked. Reason: An outage or an attack 
 
 #### Item 12
 
-A chat, with its history: "Leo, Facilities", Chat with the help desk.
+A chat, with its history: "Darius, Facilities", Chat with the help desk.
 
-> (Leo, Facilities, at the left) A power strip behind the server rack is smoking and sparking, and a small flame has started. A water extinguisher hangs by the door.
+> (Darius, Facilities, at the left) A power strip behind the server rack is smoking and sparking, and a small flame has started. A water extinguisher hangs by the door.
 
 **What is the first thing to do?**
 (the options come in an order that depends on the seed of the question)
@@ -342,24 +343,24 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 13
 
-A chat, with its history: "Pia, Finance", Chat with the help desk.
+A chat, with its history: "Ramona, Finance", Chat with the help desk.
 
-> (Pia, Finance, at the left) A teammate saved the wrong version over the budget file yesterday. The backup has yesterday’s morning version. Before anything changes, I want to compare the two.
+> (Ramona, Finance, at the left) A teammate saved the wrong version over the budget file yesterday. The backup has yesterday’s morning version. Before anything changes, I want to compare the two.
 
 **How do you restore the file?**
 (the options come in an order that depends on the seed of the question)
 - To an alternate location, so both versions stay and can be compared (right)
 - In place, over the current file, to save the time of a copy — if chosen: Restoring in place overwrites the current file before anyone has compared them.
-- Delete the current file first, then restore the backup in its place — if chosen: Deleting first removes the version Pia wants to compare against.
+- Delete the current file first, then restore the backup in its place — if chosen: Deleting first removes the version Ramona wants to compare against.
 - Run a new full backup of the drive, and compare the files later — if chosen: A new backup copies the wrong version too, and does not bring back yesterday’s file.
 
 After the answer: the deciding words are marked. Reason: A restore to an alternate location keeps the current file, which is what a comparison needs. A restore in place overwrites it.
 
 #### Item 14
 
-The question, read aloud as above: **A computer is still running, and it holds evidence. Part of that evidence is on the drive and part is in memory, which is lost when the power goes off.**
+The question, read aloud as above: **A computer is still running, and it holds evidence in three places: in its memory, on its drive, and in logs kept on another server.**
 
-**Which is collected first? Type memory or drive.**
+**Which of the three is collected first? Type memory, drive or logs.**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
   - memory
@@ -376,18 +377,18 @@ A chat, with its history: "Eda, Systems", Chat with the help desk.
 
 **Which backup kind is that?**
 (the options come in an order that depends on the seed of the question)
-- A synthetic full backup (right)
-- A differential backup — if chosen: A differential copies what changed since the last full. It does not build a new full copy.
-- An incremental backup — if chosen: An incremental copies what changed since the last backup. It does not build a new full copy.
-- A full backup — if chosen: A full backup reads everything from the server again, which is the load Eda wants to avoid.
+- A synthetic full, built on the backup server from changes (right)
+- A differential backup, copying changes since the last full — if chosen: A differential copies what changed since the last full. It does not build a new full copy.
+- An incremental backup, copying changes since the last backup — if chosen: An incremental copies what changed since the last backup. It does not build a new full copy.
+- A full backup, copying everything from the server again — if chosen: A full backup reads everything from the server again, which is the load Eda wants to avoid.
 
 After the answer: the deciding words are marked. Reason: A new full built on the backup server from the last full plus the changes is a synthetic full.
 
 #### Item 16
 
-A chat, with its history: "Hui, Operations", Chat with the help desk.
+A chat, with its history: "Randall, Operations", Chat with the help desk.
 
-> (Hui, Operations, at the left) The request form says: “Only the two reception printers are changed. The network, the servers and the other printers are not part of this.”
+> (Randall, Operations, at the left) The request form says: “Only the two reception printers are changed. The network, the servers and the other printers are not part of this.”
 
 **Which part of the request form is that?**
 (the options come in an order that depends on the seed of the question)
@@ -416,7 +417,7 @@ After the answer: Reason: The exact copy is an image. It is checked with a hash,
 
 The question, read aloud as above: **A box of used toner cartridges and a swollen battery need disposing of. The sheet that comes with such products says what is inside, the hazards, and how to handle and dispose of them.**
 
-**What is the sheet called? Type the four letters.**
+**What is the sheet called? Type its short name.**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
   - msds
@@ -435,9 +436,9 @@ To pass:
 
 #### Check question 19
 
-A chat, with its history: "Tess, Network", Chat with the help desk.
+A chat, with its history: "Chidi, Network", Chat with the help desk.
 
-> (Tess, Network, at the left) I changed the branch firewall rules (the filter between networks) yesterday. Today the branch cannot reach the main office, and nobody wrote down any steps for undoing what I did.
+> (Chidi, Network, at the left) I changed the branch firewall rules (the filter between networks) yesterday. Today the branch cannot reach the main office, and nobody wrote down any steps for undoing what I did.
 
 **Which part of change management was missing?**
 (the options come in an order that depends on the seed of the question)
@@ -450,9 +451,9 @@ After the answer: the deciding words are marked. Reason: Steps for undoing a cha
 
 #### Check question 20
 
-The question, read aloud as above: **A rotation keeps daily copies (the son), weekly copies (the father) and monthly copies (the grandfather), each kept longer than the one before.**
+The question, read aloud as above: **A rotation keeps daily, weekly and monthly copies, each kept longer than the one before.**
 
-**What is the rotation called? Type the three letters.**
+**What is the rotation called? Type its short name.**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
   - gfs
@@ -462,16 +463,16 @@ After the answer: Reason: The rotation is GFS: grandfather, father, son.
 
 #### Check question 21
 
-A chat, with its history: "Rae, Systems", Chat with the help desk.
+A chat, with its history: "Stephen, Systems", Chat with the help desk.
 
-> (Rae, Systems, at the left) We make a full backup on Monday. Each night after that, we copy only what changed since the night before. The server failed on Thursday morning.
+> (Stephen, Systems, at the left) We make a full backup on Sunday. Each night after that, we copy only what changed since the night before. The server failed on Friday morning.
 
 **Which backups does the restore need?**
 (the options come in an order that depends on the seed of the question)
-- Monday’s full and the Monday, Tuesday and Wednesday night backups (right)
-- Monday’s full and Wednesday night’s backup, which holds all the changes — if chosen: That is how a differential restore goes. Wednesday’s here holds only Wednesday’s changes, so the other nights are needed too.
-- Wednesday night’s backup alone, since it is the newest one made — if chosen: Wednesday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
-- Monday’s full alone, because a full backup is the complete copy — if chosen: That brings back Monday’s files and loses every change made on Tuesday and Wednesday.
+- Sunday’s full and the nightly backups from Monday to Thursday, in order (right)
+- Sunday’s full and Thursday night’s backup, which holds all the changes — if chosen: That is how a differential restore goes. Thursday’s here holds only Thursday’s changes, so the other nights are needed too.
+- Thursday night’s backup alone, since it is the newest one made — if chosen: Thursday’s holds only one day of changes. Everything else lives in the full and the earlier nights.
+- Sunday’s full alone, because a full backup is the complete copy — if chosen: That brings back Sunday’s files and loses every change made from Monday to Thursday.
 
 After the answer: the deciding words are marked. Reason: Nightly copies of only what changed since the last backup are incremental. A restore needs the last full and every incremental after it, in order.
 
@@ -483,8 +484,8 @@ A chat, with its history: "Wade, Server room", Chat with the help desk.
 
 **How is the dust removed?**
 (the options come in an order that depends on the seed of the question)
-- Blow it out with compressed air, fans held still, goggles on (right)
-- Wipe the boards with a damp cloth while the rack is still running — if chosen: Moisture on live boards risks a short and a shock. Power is disconnected for any repair.
+- With the rack switched off and unplugged, blow it out with compressed air, fans held still, goggles on (right)
+- Blow it out with compressed air while the rack keeps running, fans left free to spin — if chosen: Air can spin a fan far faster than it is built for, and the equipment is switched off and unplugged before any cleaning.
 - Spray cleaner on the fans and let them dry themselves on power — if chosen: Liquid on a running fan can short it, and the cleaner can damage the parts.
 - Leave it, because dust only matters for how the room looks — if chosen: Dust clogs fans and heat sinks, so parts run hot and fail. It is a real problem.
 
@@ -498,18 +499,18 @@ A chat, with its history: "Ora, Stockroom", Chat with the help desk.
 
 **What is the safe way to move it?**
 (the options come in an order that depends on the seed of the question)
-- Bend the knees, keep the back straight and the load close, or use a cart (right)
+- Bend the knees, keep the back straight, hold it close or use a cart (right)
 - Bend over from the waist and lift quickly so the strain is over fast — if chosen: Lifting with a bent back is how backs are injured. The legs should do the work.
-- Lift it by the power cord so that both hands are free to steer it — if chosen: A cord is not a handle. It can tear out, and the load drops.
+- Twist at the waist to swing it onto the shelf in one movement — if chosen: Twisting under a load strains the back. Turn the feet, not the waist.
 - Put on an ESD strap first, since a battery box can hold a charge — if chosen: The strap guards parts from static. It does nothing for the weight of the load.
 
 After the answer: the deciding words are marked. Reason: A heavy load is lifted with the knees bent, the back straight and the load close, or moved with a cart or a second person.
 
 #### Check question 24
 
-A chat, with its history: "Wes, Security", Chat with the help desk.
+A chat, with its history: "Chiara, Security", Chat with the help desk.
 
-> (Wes, Security, at the left) I made an exact copy of a suspect drive for an investigation. A lawyer will want proof later that the copy is identical to the original.
+> (Chiara, Security, at the left) I made an exact copy of a suspect drive for an investigation. A lawyer will want proof later that the copy is identical to the original.
 
 **How is that proven?**
 (the options come in an order that depends on the seed of the question)

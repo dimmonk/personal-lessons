@@ -6,7 +6,7 @@ FC.lesson('interview', {
   why: 'The real interview is spoken, with no options and no help. This is the same.',
   flow: [{ title: 'Before you start', show: [{ kind: 'prose', text: 'Listen to each question, say your answer out loud, then type it.' }] }],
   check: {
-    items: { draw: { strands: ['form', 'law', 'amend', 'branches', 'oath', 'declare', 'senate', 'term', 'house', 'power', 'senator', 'governor', 'capital'], n: 5 } },
+    items: { draw: [{ strands: ['form', 'law', 'amend', 'branches', 'oath', 'declare'], n: 3 }, { strands: ['senate', 'term', 'house', 'power', 'senator', 'governor', 'capital'], n: 2 }] },
     spoken: true, retest: 7, feedback: 'at-end', pass: [{ right: { min: 4 } }]
   }
 });

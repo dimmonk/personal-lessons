@@ -25,7 +25,7 @@
     item({
       id: 'l14-k-gwping', strand: ON,
       blocks: [
-        chat('Sol, Planning', 's1', 'Nothing opens, not the websites and not the shared drive.'),
+        chat('Archie, Planning', 's1', 'Nothing opens, not the websites and not the shared drive.'),
         cfg('a', 'C:\\> ipconfig', [['IPv4 Address', '192.168.1.77'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.1']]),
         ping('b', '192.168.1.1', 'Pinging 192.168.1.1 with 32 bytes of data:', [LOST, LOST, LOST, LOST], 4)],
       asks: [ask('What does this show?', [
@@ -38,7 +38,7 @@
     item({
       id: 'l14-k-renew', strand: AD,
       blocks: [
-        chat('Tess, Design', 't1', 'My laptop joined the office Wi-Fi but says limited and nothing loads. My phone on the same Wi-Fi is fine.'),
+        chat('Barbara, Design', 't1', 'My laptop joined the office Wi-Fi but says limited and nothing loads. My phone on the same Wi-Fi is fine.'),
         cfg('a', 'C:\\> ipconfig (the Wi-Fi adapter)', [['Autoconfiguration IPv4 Address', '169.254.77.5'], ['Subnet Mask', '255.255.0.0'], ['Default Gateway', '(empty)']])],
       asks: [ask('Which test comes next?', [
         ['Run ipconfig /renew, so the laptop requests an address again', true, 'It costs nothing and changes nothing else. The phone shows that the server is giving out addresses.'],
@@ -62,7 +62,7 @@
     item({
       id: 'l14-k-pathping', strand: NC,
       blocks: [
-        chat('Vik, Sales', 'v1', 'Video calls to our customer in Denver keep breaking up, but other sites are fine.'),
+        chat('Octavia, Sales', 'v1', 'Video calls to our customer in Denver keep breaking up, but other sites are fine.'),
         table('C:\\> pathping www.example.com (the statistics, shortened)', ['Hop', 'RTT', 'Source to Here: lost/sent', 'This Node/Link: lost/sent', 'Address'], [['a1', '0', '-', '-', '-', 'DESK-0417 [192.168.1.42]'], ['a2', '1', '1ms', '0/100 = 0%', '0/100 = 0%', '192.168.1.1'], ['a3', '2', '9ms', '0/100 = 0%', '0/100 = 0%', '198.51.100.1'], ['a4', '3', '14ms', '31/100 = 31%', '31/100 = 31%', '198.51.100.9'], ['a5', '4', '16ms', '33/100 = 33%', '2/100 = 2%', '203.0.113.20']]),
         { kind: 'prose', text: 'This desk’s rule: a fault past the office router is reported to the internet provider, with the output.' }],
       asks: [ask('Where does the loss start, and what does it show?', [
@@ -74,7 +74,7 @@
       reason: 'pathping lists the hops like tracert, then counts lost packets at each. Loss that begins at one hop and continues on every hop after it marks a real fault at or past that router, and the output goes to the provider as it is. Loss at one hop alone, with clean hops after it, is a router that answers slowly, not a fault.' }),
     item({
       id: 'l14-k-home', strand: NS,
-      blocks: [chat('Wes, New starter', 'w1', 'My manager says to join my new laptop to the company domain, but the option to join one is not in Settings. The laptop is Windows 11 Home.')],
+      blocks: [chat('Raquel, New starter', 'w1', 'My manager says to join my new laptop to the company domain, but the option to join one is not in Settings. The laptop is Windows 11 Home.')],
       asks: [ask('Why is the option missing?', [
         ['Windows Home cannot join a domain; Pro or Enterprise can', true, 'Domain join is one of the features that separates Pro and Enterprise from Home.'],
         ['The laptop is in a workgroup, which blocks domains', CAUSE, 'A workgroup is the default for a computer that has joined no domain. It does not block joining one.'],
@@ -85,22 +85,22 @@
     item({
       id: 'l14-k-gate', strand: AD,
       blocks: [
-        chat('Zoe, Frontdesk', 'z1', 'The shared drive opens, but no website does. I typed in my own address settings last week to fix a printer.'),
-        cfg('a', 'C:\\> ipconfig /all on Zoe’s computer', [['DHCP Enabled', 'No'], ['IPv4 Address', '192.168.1.50'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.254']]),
-        cfg('b', 'C:\\> ipconfig /all on the computer next to hers', [['DHCP Enabled', 'Yes'], ['IPv4 Address', '192.168.1.71'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.1']]),
+        chat('Valentina, Frontdesk', 'z1', 'The shared drive opens, but no website does. I typed in my own address settings last week to fix a printer.'),
+        cfg('a', 'C:\\> ipconfig /all on Valentina’s computer', [['DHCP Enabled', 'No'], ['IPv4 Address', '192.168.1.50'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.254']]),
+        cfg('b', 'C:\\> ipconfig /all on the computer next to theirs', [['DHCP Enabled', 'Yes'], ['IPv4 Address', '192.168.1.71'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.1']]),
         out('c', 'C:\\> ping 192.168.1.254', ['Pinging 192.168.1.254 with 32 bytes of data:', 'Reply from 192.168.1.50: Destination host unreachable.', 'Reply from 192.168.1.50: Destination host unreachable.', 'Reply from 192.168.1.50: Destination host unreachable.', 'Reply from 192.168.1.50: Destination host unreachable.', loss(0)])],
       asks: [ask('What is the fault?', [
-        ['The gateway typed in by hand is not the router’s address', true, 'Nothing answers at 192.168.1.254. Her neighbor’s gateway is 192.168.1.1, and local things like the shared drive work without a gateway.'],
-        ['DHCP gave her a bad lease that has not yet run out', MISREAD, 'DHCP Enabled says No, so the numbers were typed in.'],
-        ['The subnet mask is wrong and does not match the network', CAUSE, 'Her mask matches her neighbor’s, 255.255.255.0.'],
-        ['The cable is faulty, so part of the traffic is lost on the way', LINK, 'The shared drive opens and the message came from her own address, so the link works.']])],
+        ['The gateway typed in by hand is not the router’s address', true, 'Nothing answers at 192.168.1.254. Their neighbor’s gateway is 192.168.1.1, and local things like the shared drive work without a gateway.'],
+        ['DHCP gave them a bad lease that has not yet run out', MISREAD, 'DHCP Enabled says No, so the numbers were typed in.'],
+        ['The subnet mask is wrong and does not match the network', CAUSE, 'Their mask matches their neighbor’s, 255.255.255.0.'],
+        ['The cable is faulty, so part of the traffic is lost on the way', LINK, 'The shared drive opens and the message came from their own address, so the link works.']])],
       deciding: ['a1', 'a4', 'b4', 'c2'],
-      reason: 'Computers on the same local network reach each other directly, so the shared drive works. Anything outside needs the gateway, and the one she typed in matches no device. A static address means every number is typed by hand and must match the router. Setting the adapter back to automatic is one change.' }),
+      reason: 'Computers on the same local network reach each other directly, so the shared drive works. Anything outside needs the gateway, and the one they typed in matches no device. A static address means every number is typed by hand and must match the router. Setting the adapter back to automatic is one change.' }),
 
     // ----- reserve: the connection chain and its symptoms -----
     item({
       id: 'l14-r-flap', strand: ON,
-      blocks: [chat('Bo, Network team', 'b1', 'The switch log shows port 14 going up and down every few seconds. One desk computer is plugged into it.')],
+      blocks: [chat('Evan, Network team', 'b1', 'The switch log shows port 14 going up and down every few seconds. One desk computer is plugged into it.')],
       asks: [ask('Which test comes first?', [
         ['Swap the cable for one known to work', true, 'A cable known to work is the cheapest cut, and a swap changes one thing.'],
         ['Restart the whole switch', RESET, 'It drops every port, and the cause is probably one cable.'],
@@ -120,7 +120,7 @@
       reason: 'Latency is the delay for a packet (a small piece of data) to arrive; jitter is delay that varies. Either makes choppy calls over the network (VoIP). Poor call quality that comes and goes with the load is jitter, often with some lost packets. The line is shared, so the cure is found by looking at what uses it.' }),
     item({
       id: 'l14-r-drops', strand: ON,
-      blocks: [chat('Ned, Operations', 'n1', 'Every few hours the whole office loses the internet for a minute or two. The file server never drops.')],
+      blocks: [chat('Selim, Operations', 'n1', 'Every few hours the whole office loses the internet for a minute or two. The file server never drops.')],
       asks: [ask('Which link, and what do you do?', [
         ['Past the router, the line out: leave a ping to 8.8.8.8 running', true, 'The server is inside the office and never drops, so the office network is fine. A ping left running catches the moments.'],
         ['Each person’s Wi-Fi card, so replace them one by one until it stops', LINK, 'Everyone drops at once, and the server inside never does.'],
@@ -143,10 +143,10 @@
     item({
       id: 'l14-r-vpn', strand: AD,
       blocks: [chat('Isa, Remote', 'i1', 'From home the intranet site (the company’s own internal website) and the shared drives will not open, but ordinary websites do. What should I do?')],
-      asks: [ask('What do you tell her?', [
+      asks: [ask('What do you tell them?', [
         ['Connect the VPN, which reaches the internal sites', true, 'A VPN is an encrypted tunnel to the company network. With it on, the computer is treated as if it were plugged in at the office.'],
-        ['Type in a static address from the office range to reach them', STATIC, 'An address from the office range does nothing at her home, where the router hands out the addresses.'],
-        ['Switch the home network to Public to hide her computer', SETTING, 'It would hide her computer and reach nothing at the office.'],
+        ['Type in a static address from the office range to reach them', STATIC, 'An address from the office range does nothing at their home, where the router hands out the addresses.'],
+        ['Switch the home network to Public to hide their computer', SETTING, 'It would hide their computer and reach nothing at the office.'],
         ['Flush the DNS cache and try the sites again', NOSPLIT, 'Websites open, so names work. The internal sites sit behind the tunnel.']])],
       deciding: ['i1'],
       reason: 'Internal sites and drives sit inside the company network. Ordinary sites work from home, so the connection is fine, and the VPN is what reaches the rest.' }),
@@ -166,13 +166,13 @@
       asks: [ask('Why?', [
         ['The hotspot is marked metered, so updates wait', true, 'A metered connection tells Windows the data is limited, so large updates wait.'],
         ['The hotspot has no DNS, so downloads cannot start', CAUSE, 'Web pages open, so names are being looked up.'],
-        ['Her address is private, which blocks updates from the web', MIXED, 'Private addresses are what almost every network uses, and updates work on them.'],
-        ['Her computer gave itself a 169.254 address', MIXED, 'Pages open, so she has a real address.']])],
+        ['Their address is private, which blocks updates from the web', MIXED, 'Private addresses are what almost every network uses, and updates work on them.'],
+        ['Their computer gave itself a 169.254 address', MIXED, 'Pages open, so they have a real address.']])],
       deciding: ['p1'],
       reason: 'Windows holds back large downloads on a metered connection, to save data. It is a setting on the connection, and it can be turned off if the plan allows.' }),
     item({
       id: 'l14-r-group', strand: NS,
-      blocks: [chat('Jo, Owner', 'j1', 'We are six people in one room with no server. We just want to share a folder with each other, each with our own sign-in on our own computer. What is that kind of setup called?')],
+      blocks: [chat('Jerome, Owner', 'j1', 'We are six people in one room with no server. We just want to share a folder with each other, each with our own sign-in on our own computer. What is that kind of setup called?')],
       asks: [ask('What is it called?', [
         ['A workgroup, with local accounts', true, 'A workgroup is a few computers, each with its own local accounts, sharing directly with no central sign-in.'],
         ['A domain, with a central server', MIXED, 'A domain needs a central server and one shared sign-in.'],
@@ -187,7 +187,7 @@
         cfg('a', 'The adapter’s IPv4 properties', [['Use the following IP address', 'Selected'], ['IP address', '192.168.0.20'], ['Default gateway', '192.168.0.1']])],
       asks: [ask('What is the one change?', [
         ['Put the adapter back on automatic addressing', true, 'The typed-in numbers belong to the home network. The office’s DHCP server will hand out the right ones.'],
-        ['Type in the office router’s address as the gateway only', STATIC, 'Her address would still be from the home network, and the mask and DNS would still be wrong.'],
+        ['Type in the office router’s address as the gateway only', STATIC, 'Their address would still be from the home network, and the mask and DNS would still be wrong.'],
         ['Run ipconfig /flushdns', NOSPLIT, 'It empties saved name answers. The trouble is the address.'],
         ['Mark the network Public', SETTING, 'It changes what is shared, not the address.']])],
       deciding: ['a1', 'a2'],
@@ -196,7 +196,7 @@
     item({
       id: 'l14-r-nic', strand: ON,
       blocks: [
-        chat('Wen, Legal', 'w1', 'My desktop still says there is no network. Yesterday you swapped the cable and moved me to another jack. A laptop works on the same cable and the same jack.'),
+        chat('Benita, Legal', 'w1', 'My desktop still says there is no network. Yesterday you swapped the cable and moved me to another jack. A laptop works on the same cable and the same jack.'),
         cfg('a', 'C:\\> ipconfig (the Ethernet adapter)', [['Media State', 'Media disconnected'], ['Adapter in Device Manager', 'Enabled, no errors']])],
       asks: [ask('What is the next step?', [
         ['Replace the desktop’s network adapter: the cable and the jack are cleared', true, 'The same cable and jack work for a laptop, so what is left on this side is the adapter inside the desktop.'],

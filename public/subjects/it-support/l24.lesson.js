@@ -7,10 +7,10 @@
 // The Windows counterparts in the tables are this lesson's teaching device; the exam pairs only some of them.
 // One worked ticket (Tomas's page that opens by number only); a first group of four with the counterpart named; a second of six; a third of six mixed with lessons 5 and 14; the check: eight new questions, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l24', part: 'mac-linux', title: 'Mac and Linux', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the Mac’s apps, folders, care and tools and Linux’s commands, files and start-up parts, each taught by its Windows counterpart; asked from memory and as "which tool for the job").' }],
+  id: 'l24', part: 'mac-linux', title: 'Mac and Linux', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the Mac’s apps, folders, care and tools and Linux’s commands, files and start-up parts, each taught by its Windows counterpart; asked from memory and as "which tool for the job").' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'A designer calls: the spreadsheet app on her Mac has frozen. Ten minutes later a server engineer wants to know which file tells Linux which name server to use. You have never used either, but nearly everything on a Mac or in Linux has a Windows counterpart.',
+    'A designer calls: the spreadsheet app on their Mac has frozen. Ten minutes later a server engineer wants to know which file tells Linux which name server to use. You have never used either, but nearly everything on a Mac or in Linux has a Windows counterpart.',
     'Here you learn each Mac tool and Linux command by the Windows tool it matches, as the A+ exam pairs them, then practice the names and jobs.'],
   flow: [
     { title: 'The same jobs under other names',

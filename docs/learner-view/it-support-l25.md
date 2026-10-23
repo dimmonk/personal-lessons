@@ -1,10 +1,10 @@
 # IT Help Desk: Accounts and access
 
-Revision 1, draft (the screen carries the draft line). Part: Accounts and access. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Accounts and access. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Priya started in Finance on Monday. She chats the desk: she can open every file in the Budget folder on the shared drive, but every time she saves, Windows says she does not have permission. Resetting her password would feel like the obvious move. It would change nothing, because her password is not what is wrong.
+Priya started in Finance on Monday. Priya chats the desk: every file in the Budget folder on the shared drive opens, but every time Priya saves, Windows says there is no permission. Resetting the password would feel like the obvious move. It would change nothing, because the password is not what is wrong.
 Here you learn the chain between a person and a file: who you are, what you are allowed, and the policy over both, with the door of the building in front. Each “access denied” ticket belongs on one link, and you find it before you change anything.
 
 ## Step 1: The chain of access
@@ -34,6 +34,7 @@ A plain table, "Accounts and ways to sign in":
 > Local account  |  On one PC only; no other PC knows it
 > Microsoft account  |  An email address; settings and OneDrive follow the person
 > Domain account  |  Made by the company in Active Directory; works on any PC joined to the domain
+> Username and password  |  The account name and its secret. Passwordless sign-in uses Windows Hello, a hardware token or an app instead of typing a password
 > PIN  |  A short code tied to one PC
 > Windows Hello  |  Face or fingerprint (or PIN) with no password
 > SSO (single sign-on)  |  One sign-in that opens many apps
@@ -87,18 +88,18 @@ A plain table, "Levels and more":
 
 ## Step 7: UAC and Run as administrator
 
-User Account Control, UAC, dims the screen and checks before anything needing administrator rights runs. An administrator clicks Yes; a standard user must type an administrator’s name and password. It is not a fault. Run as administrator, by right-clicking a program, starts it with full rights after that prompt. sfc /scannow needs it.
+User Account Control, UAC, dims the screen and checks before anything needing administrator rights runs. An administrator clicks Yes; a standard user must type an administrator’s name and password. It is not a fault. Run as administrator, by right-clicking a program, starts it with full rights after that prompt. sfc /scannow, a command that checks Windows’ own files, needs it.
 
 ## Step 8: Link 3: Active Directory and Group Policy
 
-A company keeps its accounts in one domain, run by a domain controller. Windows Home cannot join a domain; Pro and above can.
+A company keeps its accounts in one domain, run by a domain controller, a server that holds the accounts and checks every sign-in. Windows Home cannot join a domain; Pro and above can.
 
 A plain table, "Parts of Active Directory":
 
 > Part  |  What it does  (the column heads)
 > Domain join  |  Lets domain accounts sign in on a PC
 > OU (organizational unit)  |  A folder in the domain holding accounts and computers; moving one in puts it under that OU’s policies
-> Group Policy  |  Rules for an OU: password rules, blocked USB drives, locked settings
+> Group Policy  |  Rules mostly linked to OUs: password rules, blocked USB drives, locked settings
 > Login script  |  Runs at sign-in, for example to connect shared drives
 > Home folder, folder redirection  |  A personal folder on a server, so files follow the person to any PC
 
@@ -109,9 +110,9 @@ gpupdate /force applies policy now, and gpresult /r shows which policies applied
 A plain table, "Windows protections":
 
 > Protection  |  What it does  (the column heads)
-> Defender Antivirus  |  Looks for malware; its definitions (the list of known malware) must stay updated
-> Defender Firewall  |  Blocks or allows traffic by port and by program
-> BitLocker  |  Encrypts the Windows drive (Pro and above). The TPM chip holds the code; save the recovery key, since a changed board locks the data without it
+> Defender Antivirus  |  Looks for malware; its definitions (the list of known malware) must stay updated. It can be turned on or off in Windows Security: keep it on
+> Defender Firewall  |  Blocks or allows traffic by port (a numbered door that one kind of traffic uses) and by program
+> BitLocker  |  Encrypts the Windows drive (Pro and above). The TPM, a small security chip on the board, holds the code; save the recovery password, since a changed board locks the data without it
 > BitLocker To Go  |  The same for a USB stick, opened with a password
 > EFS  |  Encrypts single files for one account; if its certificate is lost, so are the files
 
@@ -127,13 +128,19 @@ A plain table, "Hardening steps":
 > Login times, account expiration  |  Use outside working hours or after a contractor’s end date
 > Disable Guest; change the default administrator name and password  |  An account anyone can use; attackers who know the factory login
 > Disable AutoRun, unused services  |  A USB program starting by itself; extra ways in
+> Encrypt data at rest, lock laptops, protect PII, use a password manager  |  A lost laptop or drive being read; personal data (PII) on shared drives; weak or reused passwords
 
 ## Step 11: Making everyone an administrator
 
-A wrong idea, marked wrong: “Nothing keeps being refused for Priya, so I will make her an administrator, or give Everyone Full Control on the folder.” It clears the ticket and breaks least privilege: anything she runs, or is tricked into running, now has full rights. Fix the link that failed: Modify for her group on that one folder.
-The right line: Another common shortcut: “reset the account because the caller says who they are”. Anyone can say a name. Check the caller by something the caller did not supply: the number on record, the manager looked up in the directory.
+A wrong idea, marked wrong: “Nothing keeps being refused for Priya, so I will make Priya an administrator, or give Everyone Full Control on the folder.” It clears the ticket and breaks least privilege: anything Priya runs, or is tricked into running, now has full rights.
+The right line: Fix the link that failed: Modify for the Finance group on that one folder.
 
-## Step 12: A worked example
+## Step 12: Resetting on the caller’s word
+
+A wrong idea, marked wrong: “The caller says who they are and sounds sure, so I will reset the account.” Anyone can say a name, and a number the caller reads out proves nothing, because the caller supplied it.
+The right line: Check the caller by something the caller did not supply: call the number on the directory record, or look up the manager in the directory.
+
+## Step 13: A worked example
 
 A chat, with its history: "Priya, Finance", Chat with the help desk.
 
@@ -159,38 +166,38 @@ A plain table, "From the desk’s rules":
 Before the working, the learner may commit to a choice (not scored, not stored):
 **Priya signs in and opens the files, but cannot save. Where does the fault sit?**
 (the options come in an order that depends on the seed of the question)
-- Link 2: what she is allowed, because the level on the folder is too low for saving
-- Link 1: who she is, because her password is wrong, so reset it
-- Link 3: the policy, because Group Policy blocks saving on her computer
-- Her computer is not on the domain, so join it again
+- Link 2: what Priya is allowed; the folder’s level is too low to save
+- Link 1: who Priya is, because the password is wrong, so reset it
+- Link 3: the policy, because Group Policy blocks saving on Priya’s computer
+- Priya’s computer is not on the domain, so join it to the domain again
 
 The working, one step at a time:
-1. Write down every place a “no permission” could sit.: Account and sign-in; the group she is in; the share level; the NTFS level; a policy; a Read-only label on one file.
-1. Name the favorite cause, her password, and test it with what she already did.: She signed in at 8:12 and opened the files. The account and the password work, so link 1 is cleared. Resetting the password would change nothing.
-1. Check link 2: her group.: She is in Finance, and Finance has both a share level and an NTFS level on the folder. That is why she can open the files.
-1. Read both layers; the more restrictive one wins.: The share gives Change. NTFS gives Read & execute. Across the network the lower one wins, so she gets Read & execute: she can open, not save. Saving needs Modify.
-1. Change one thing, with the owner’s approval, then check it.: Get the owner’s approval in the ticket, then raise the NTFS level for the Finance group to Modify, not Full Control, so no more access than the job needs. Priya saves a file and confirms. The note says which layer was low.
+1. Write down every place a “no permission” could sit.: Account and sign-in; the group Priya is in; the share level; the NTFS level; a policy; a Read-only label on one file.
+1. Name the favorite cause, the password, and test it with what Priya already did.: Priya signed in at 8:12 and opened the files. The account and the password work, so link 1 is cleared. Resetting the password would change nothing.
+1. Check link 2: Priya’s group.: Priya is in Finance, and Finance has both a share level and an NTFS level on the folder. That is why the files open.
+1. Read both layers; the more restrictive one wins.: The share gives Change. NTFS gives Read & execute. Across the network the lower one wins, so Priya gets Read & execute: the files open but do not save. Saving needs Write or Modify; Modify is the least that also deletes.
+1. Change one thing, with the owner’s approval, then check it.: Get the owner’s approval in the ticket, then raise the NTFS level for the Finance group to Modify, not Full Control, because the job needs Modify and no more. Priya saves a file and confirms. The note says which layer was low.
 
-Then the answer: Link 2: what she is allowed, because the level on the folder is too low for saving. She signed in and opened the files, so link 1 works. The share allows Change but the folder’s NTFS level is Read & execute, and the more restrictive layer wins. The fault is on link 2, and the fix is one level on one layer.
+Then the answer: Link 2: what Priya is allowed; the folder’s level is too low to save. Priya signed in and opened the files, so link 1 works. The share allows Change but the folder’s NTFS level is Read & execute, and the more restrictive layer wins. The fault is on link 2, and the fix is one level on one layer.
 
-## Step 13: Questions
+## Step 14: Questions
 
 4 questions, listed, with help (shown). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 1
 
-A chat, with its history: "Ravi, Facilities", Chat with the help desk.
+A chat, with its history: "Vesna, Facilities", Chat with the help desk.
 
-> (Ravi, Facilities, at the left) **Twice this week a person walked into the data room right behind an employee, before the door closed. We want a way in that lets only one person through at a time.**
+> (Vesna, Facilities, at the left) **Twice this week a person walked into the data room right behind an employee, before the door closed. We want a way in that lets only one person through at a time.**
 
 Help on screen: the words that decide it are marked.
 
 **Which measure stops that?**
 (the options come in an order that depends on the seed of the question)
-- An access control vestibule, with a second door that opens only after the first has shut (right)
-- Video surveillance on the door, so every visit is recorded — if chosen: A camera records who followed. It does not stop anyone from getting in.
+- An access control vestibule: a second door opens only after the first shuts (right)
+- Video surveillance on the data room door, recording every person who enters — if chosen: A camera records who followed. It does not stop anyone from getting in.
 - Bollards outside the entrance, so no vehicle gets near the door — if chosen: Bollards stop vehicles. A person on foot walks past them.
-- A badge reader that logs each badge held up to it — if chosen: A reader logs the badge, not the person behind it. Two people can still pass on one badge.
+- A badge reader on the door that logs every badge held up to it — if chosen: A reader logs the badge, not the person behind it. Two people can still pass on one badge.
 
 After the answer: the deciding words are marked. Reason: Following close behind is tailgating. A measure that stops it has to let one person through at a time, and that is the access control vestibule.
 
@@ -204,10 +211,10 @@ Help on screen: the words that decide it are marked.
 
 **Which second check is the code?**
 (the options come in an order that depends on the seed of the question)
-- An authenticator app, making a TOTP: a code made from the clock (right)
-- A hardware token, a small device that shows the code — if chosen: A token is a separate physical device. Omar uses an app on his phone.
-- An SMS code, sent to his number in a text message — if chosen: Nothing is sent to him. The app makes the code on the phone itself.
-- A voice call that reads out the code — if chosen: No call is made. The code comes from the app on the phone.
+- An authenticator app, whose TOTP code comes from the clock (right)
+- A hardware token, a small device that shows the code — if chosen: A token is a separate physical device. Omar uses an app on Omar’s phone.
+- An SMS code, sent to Omar’s phone number in a text message — if chosen: Nothing is sent to Omar. The app makes the code on the phone itself.
+- A voice call that reads the code out loud to Omar — if chosen: No call is made. The code comes from the app on the phone.
 
 After the answer: the deciding words are marked. Reason: A code from an app that changes about every thirty seconds is made from the clock: a TOTP, made by an authenticator app.
 
@@ -221,18 +228,18 @@ Help on screen: the words that decide it are marked.
 
 **Which link of the chain is the fault on?**
 (the options come in an order that depends on the seed of the question)
-- Link 2: her level on the folder is below the one that allows deleting (right)
-- Link 1: her sign-in is broken, so reset her password — if chosen: She signed in this morning and opened the folder. The sign-in works.
-- Link 3: a policy blocks her computer from the network — if chosen: She reaches the folder and adds files. A policy cutting her off would stop that too.
-- The door: she needs a badge before she can use the shared drive — if chosen: A badge opens a building. She is already working on the drive.
+- Link 2: Jo’s level on the folder is below the one that allows deleting (right)
+- Link 1: Jo’s sign-in is broken, so reset the password — if chosen: Jo signed in this morning and opened the folder. The sign-in works.
+- Link 3: a policy blocks Jo’s computer from the network — if chosen: Jo reaches the folder and adds files. A policy cutting Jo off would stop that too.
+- The door: Jo needs a badge before the shared drive can be used — if chosen: A badge opens a building. Jo is already working on the drive.
 
-After the answer: the deciding words are marked. Reason: She signed in and can open and add, so links 1 and 3 give her what she needs. The level on the folder decides whether she can also delete, and it is too low: link 2.
+After the answer: the deciding words are marked. Reason: Jo signed in and can open and add, so links 1 and 3 give Jo what is needed. The level on the folder (share or NTFS) decides whether Jo can also delete, and it is too low: link 2.
 
 #### Item 4
 
-A chat, with its history: "Eli, Marketing", Chat with the help desk.
+A chat, with its history: "Emre, Marketing", Chat with the help desk.
 
-> (Eli, Marketing, at the left) **Every time I install a program, the screen goes dark and a box wants an administrator’s name and password. My account is a standard user. Is my computer broken?**
+> (Emre, Marketing, at the left) **Every time I install a program, the screen goes dark and a box wants an administrator’s name and password. My account is a standard user. Is my computer broken?**
 
 Help on screen: the words that decide it are marked.
 
@@ -241,13 +248,13 @@ Help on screen: the words that decide it are marked.
 - User Account Control, making a standard user get an administrator to approve the install (right)
 - A virus warning from the antivirus, so scan the whole computer before installing anything else — if chosen: A virus warning names a threat. This box names no threat and only wants administrator rights.
 - The firewall blocking the program, so open its port — if chosen: The firewall controls network traffic. It does not call for an administrator before an install.
-- A damaged profile, so build him a new one — if chosen: A damaged profile shows errors and odd settings. A dark screen with a request for administrator rights is UAC.
+- A damaged profile, so build Emre a new one — if chosen: A damaged profile shows errors and odd settings. A dark screen with a request for administrator rights is UAC.
 
 After the answer: the deciding words are marked. Reason: A dimmed screen and a request for an administrator’s name and password is UAC. A standard user cannot approve it alone, and nothing is broken.
 
 Then a screen: you can stop here, your place is kept.
 
-## Step 14: Questions
+## Step 15: Questions
 
 13 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
@@ -259,11 +266,11 @@ A plain table, "The Archive folder":
 > Share permission  |  Full Control
 > NTFS permission  |  Read
 
-A chat, with its history: "Marcus, Staff", Chat with the help desk.
+A chat, with its history: "Rebecca, Staff", Chat with the help desk.
 
-> (Marcus, Staff, at the left) I am in Staff and I open the Archive folder through the shared drive on my laptop. What can I do in it?
+> (Rebecca, Staff, at the left) I am in Staff and I open the Archive folder through the shared drive on my laptop. What can I do in it?
 
-**What can Marcus do through the share?**
+**What can Rebecca do through the share?**
 (the options come in an order that depends on the seed of the question)
 - Read only, because the more restrictive layer wins (right)
 - Anything, because the share gives Full Control — if chosen: The share is one layer. The folder’s own NTFS level is Read, and the lower one wins.
@@ -274,24 +281,24 @@ After the answer: the deciding words are marked. Reason: A person reaching a fol
 
 #### Item 6
 
-A chat, with its history: "Sam, Legal", Chat with the help desk.
+A chat, with its history: "Barney, Legal", Chat with the help desk.
 
-> (Sam, Legal, at the left) I can save every file in the Contracts folder except one, the quarterly plan. It opens, but saving says the file is read-only. All the other files in the same folder save fine.
+> (Barney, Legal, at the left) I can save every file in the Contracts folder except one, the quarterly plan. It opens, but saving says the file is read-only. All the other files in the same folder save fine.
 
 **What is the cheapest check?**
 (the options come in an order that depends on the seed of the question)
-- Open that file’s properties and look at its Read-only attribute (right)
-- Move Sam into a different group and try again — if chosen: Group membership and folder permissions are the same for every file in the folder. The others save, so this is not it.
-- Reset Sam’s password in the directory — if chosen: His sign-in works, since the other files save.
+- Look at that file’s Read-only attribute in its properties (right)
+- Move Barney into a different group and try saving again — if chosen: Group membership and folder permissions are the same for every file in the folder. The others save, so this is not it.
+- Reset Barney’s password in the directory and have Barney sign in again — if chosen: Barney’s sign-in works, since the other files save.
 - Turn User Account Control off and restart the computer — if chosen: UAC prompts for administrator rights. It does not mark one file read-only.
 
 After the answer: the deciding words are marked. Reason: Same folder, same permissions, and only one file fails. A label on the file itself fits: the Read-only attribute, which stops saving whatever the permissions say.
 
 #### Item 7
 
-A chat, with its history: "Hana, Consulting", Chat with the help desk.
+A chat, with its history: "Phyllis, Consulting", Chat with the help desk.
 
-> (Hana, Consulting, at the left) I carry client files on a USB stick. If I lose it, I do not want anyone to read what is on it.
+> (Phyllis, Consulting, at the left) I carry client files on a USB stick. If I lose it, I do not want anyone to read what is on it.
 
 **Which protection fits?**
 (the options come in an order that depends on the seed of the question)
@@ -304,9 +311,9 @@ After the answer: the deciding words are marked. Reason: Encrypting a removable 
 
 #### Item 8
 
-A chat, with its history: "Nadia, Security", Chat with the help desk.
+A chat, with its history: "Marisol, Security", Chat with the help desk.
 
-> (Nadia, Security, at the left) Someone is guessing passwords for the same account all night. I want the account to stop taking tries after a few wrong ones.
+> (Marisol, Security, at the left) Someone is guessing passwords for the same account all night. I want the account to stop taking tries after a few wrong ones.
 
 **Which hardening step is this?**
 (the options come in an order that depends on the seed of the question)
@@ -319,9 +326,9 @@ After the answer: the deciding words are marked. Reason: Stopping a guesser mean
 
 #### Item 9
 
-A chat, with its history: "Lena, Reception", Chat with the help desk.
+A chat, with its history: "Hamish, Reception", Chat with the help desk.
 
-> (Lena, Reception, at the left) My USB drive is blocked on PC-12 at reception but works on PC-15 in the lab. It is the same sign-in on both.
+> (Hamish, Reception, at the left) My USB drive is blocked on PC-12 at reception but works on PC-15 in the lab. It is the same sign-in on both.
 
 A plain table, "Where each computer sits in the directory":
 
@@ -332,8 +339,8 @@ A plain table, "Where each computer sits in the directory":
 **Where does the difference come from?**
 (the options come in an order that depends on the seed of the question)
 - PC-12 sits in an OU that has a policy blocking USB drives, and PC-15 does not (right)
-- Her domain account is damaged on PC-12, so it must be rebuilt for that computer only — if chosen: Her sign-in works on both computers. The block is a rule on the computer, not on who she is.
-- Her folder permissions differ between the two PCs — if chosen: Folder permissions belong to a folder. They do not decide whether a USB drive is accepted.
+- Hamish’s domain account is damaged on PC-12, so it must be rebuilt for that computer only — if chosen: Hamish’s sign-in works on both computers. The block is a rule on the computer, not on who Hamish is.
+- Hamish’s folder permissions differ between the two PCs — if chosen: Folder permissions belong to a folder. They do not decide whether a USB drive is accepted.
 - PC-12 is missing BitLocker, which blocks USB drives — if chosen: BitLocker encrypts drives. Blocking USB storage is a Group Policy setting.
 
 After the answer: the deciding words are marked. Reason: The same account behaves differently on two computers, so look at link 3. The computers sit in different OUs, and only the Reception OU has the policy that blocks USB storage.
@@ -342,23 +349,23 @@ After the answer: the deciding words are marked. Reason: The same account behave
 
 A caller reaches the help desk. You answer.
 
-**Dana calls about a locked account. What do you say?**
-- An incoming call from "Dana, Finance" (Incoming call · 8:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "Hi, this is Dana in Finance. My account is locked and I have a meeting in five minutes. Please unlock it now." [pushes: She is in a hurry and is asking for an unlock.]
-  - reply "I can do that. First I need to check it is you: I will call the number on your directory record and unlock it once you answer there.": goes on to turn 2, where the pressure comes back
-  - reply "Of course, I will unlock it right now so you can get to your meeting.": the call ends (not this one): Anyone can say a name and a hurry. The unlock waits until the caller is checked by something she did not give. [slip: reset or unlocked an account before confirming who was asking]
-  - reply "Sure. Read me your employee number and I will unlock it when it matches.": the call ends (not this one): An employee number the caller reads out is something she supplied, and others can find it. The check has to come from a record the desk holds, such as a call to the number on file. [slip: reset or unlocked an account before confirming who was asking]
-- turn 2, the other side says: "That is my desk phone, yes. While you are in there, can you make me an administrator on the Finance share? It would save waiting." [pushes: She is verified, and now wants more access than an unlock.]
-  - reply "I will unlock you now. More access needs your manager’s approval on a ticket, and I will open it and tell you when it is done.": the call ends (right): The number on the directory record is something Dana did not supply, so it checks who she is. An unlock is one job; extra access is another, and it goes through the approval, so she keeps only what her job needs.
-  - reply "Done: you are now an administrator on the Finance share.": the call ends (not this one): Administrator rights on a share are far above what the job needs. Extra access goes through the manager’s approval in a ticket. [slip: gave more access than the job needs]
-  - reply "I have unlocked you. Nothing else I can do there.": the call ends (not this one): Dana asked for access and is left with no idea how to get it. The ticket and the approval are the way, and she needs to hear that. [slip: left the user not knowing what happens next and when]
+**Aurora calls about a locked account. What do you say?**
+- An incoming call from "Aurora, Finance" (Incoming call · 8:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
+- turn 1, the other side says: "Hi, this is Aurora in Finance. My account is locked and I have a meeting in five minutes. Please unlock it now." [pushes: Aurora is in a hurry and wants an unlock.]
+  - reply "I can help. First I will check it is you by calling the number on your directory record, then unlock it.": goes on to turn 2, where the pressure comes back
+  - reply "Of course, I understand the hurry, so I will unlock the account right now and you can get into your meeting without any delay.": the call ends (not this one): Anyone can say a name and a hurry. The unlock waits until the caller is checked by something Aurora did not give. [slip: reset or unlocked an account before confirming who was asking]
+  - reply "Sure. Read me your employee number and the name of your manager, and I will unlock the account as soon as both match what you tell me.": the call ends (not this one): An employee number the caller reads out is something Aurora supplied, and others can find it. The check has to come from a record the desk holds, such as a call to the number on file. [slip: reset or unlocked an account before confirming who was asking]
+- turn 2, the other side says: "That is my desk phone, yes. While you are in there, can you make me an administrator on the Finance share? It would save waiting." [pushes: Aurora is verified, and now wants more access than an unlock.]
+  - reply "I will unlock you now. More access needs your manager’s approval on a ticket, which I will open and update.": the call ends (right): The number on the directory record is something Aurora did not supply, so it checks who Aurora is. An unlock is one job; extra access is another, and it goes through the approval, so Aurora keeps only what the job needs.
+  - reply "Done: I have made you an administrator on the Finance share, so you will not have to wait for anyone.": the call ends (not this one): Administrator rights on a share are far above what the job needs. Extra access goes through the manager’s approval in a ticket. [slip: gave more access than the job needs]
+  - reply "Unlocked. For the Finance share, get a colleague on the team to add you to their group; that is quicker than a ticket.": the call ends (not this one): Access added by a colleague skips the approval. Extra access goes through the manager’s approval in a ticket, so there is a record and Aurora keeps only what the job needs. [slip: gave more access than the job needs]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 
-After the answer: Reason: Before an unlock the desk checks the caller by something she did not supply: here, a call to the number on the directory record. Extra access is a separate change that needs approval, because least privilege gives only what the job needs.
+After the answer: Reason: Before an unlock the desk checks the caller by something Aurora did not supply: here, a call to the number on the directory record. Extra access is a separate change that needs approval, because least privilege gives only what the job needs.
 
 #### Item 11
 
-A question the phone reads aloud, never by itself: a button "Hear the question" (then "Hear it again") reads it with a voice on the phone when the learner taps, and once they have tapped the next question in the run is read when they tap Next. A phone with no voice of its own shows the words and says so. Its words: **A stranger slips through a secure door by following close behind an employee before it shuts.**
+A question the phone reads aloud, never by itself: a button "Hear the question" (then "Hear it again") reads it with a voice on the phone when the learner taps, and once they have tapped the next question in the run is read when they tap Next. A phone with no voice of its own shows the words and says so. Its words: **A stranger gets through a secure door right after an employee, before it shuts.**
 
 **Type the one-word name for this.**
 - One box and "Answer" (shut until something is typed; Enter sends it), and "Not yet", which answers with nothing and shows the answers. "Not sure? Tap Not yet to see the answers." Nothing is marked before the answer.
@@ -374,7 +381,7 @@ After the answer: Reason: Following close behind someone through a door is tailg
 
 The question, read aloud as above: **A code that works once and is then useless, such as one sent in a text message.**
 
-**Type its short name, three letters.**
+**Type its short name.**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
   - otp
@@ -411,25 +418,25 @@ A chat, with its history: "Kai, Design", Chat with the help desk.
 
 **Why was the PIN refused?**
 (the options come in an order that depends on the seed of the question)
-- A PIN is tied to the one computer it was made on, so the studio PC does not know it (right)
-- His account was locked, because a PIN counts as a wrong password — if chosen: A locked account would be refused on his laptop too.
+- The PIN belongs to Kai’s laptop only, so the studio PC does not know it (right)
+- Kai’s account is locked, because the studio PC counted the PIN as a wrong password — if chosen: A locked account would be refused on Kai’s laptop too.
 - The studio PC needs a hardware token before any PIN works — if chosen: A token is a second check. Nothing in the ticket says one is required.
-- PINs expire after a day on a shared PC — if chosen: A PIN does not expire on a timer. It is tied to one PC.
+- The studio PC treats a PIN as a password, so Kai must make it longer — if chosen: A PIN is not a short password. It is tied to the one PC it was made on, so length is not the problem.
 
 After the answer: the deciding words are marked. Reason: A PIN is a short code tied to the one PC it was made on, so the same PIN means nothing on another PC.
 
 #### Item 16
 
-A chat, with its history: "Zed, Sales", Chat with the help desk.
+A chat, with its history: "Asma, Sales", Chat with the help desk.
 
-> (Zed, Sales, at the left) In the office my Documents folder shows my files on every PC I sit at, but they are not on the laptop itself. How does that work?
+> (Asma, Sales, at the left) In the office my Documents folder shows my files on every PC I sit at, but they are not on the laptop itself. How does that work?
 
 **Which feature is it?**
 (the options come in an order that depends on the seed of the question)
-- A home folder, or folder redirection, which keeps the files on a server (right)
+- A home folder or folder redirection, which keeps the files on a server (right)
 - EFS, which encrypts the files so any PC can open them — if chosen: EFS encrypts files for one account. It does not move them to a server.
 - A login script that copies the files to each PC at sign-in — if chosen: A login script runs a small program at sign-in, such as connecting drives. Here the files are kept on the server.
-- A local account, which stores the files on every PC — if chosen: A local account exists on one PC only, and its files stay there.
+- A local account, which stores a copy of the files on every PC — if chosen: A local account exists on one PC only, and its files stay there.
 
 After the answer: the deciding words are marked. Reason: A personal folder kept on a server, shown on any PC, is a home folder; redirecting Documents to the server does the same.
 
@@ -444,26 +451,26 @@ A chat, with its history: "Ira, Facilities", Chat with the help desk.
 - Windows Home cannot join a domain; Pro and above can (right)
 - The domain controller is down, so it should be restarted — if chosen: A domain controller that was down would give an error. The option itself is missing.
 - Group Policy blocks domain joins in that OU — if chosen: A policy applies to computers already in the domain. This one is not yet.
-- His account has no permission, so make him an administrator — if chosen: An administrator still sees no option on Home.
+- Ira’s account has no permission, so make Ira an administrator — if chosen: An administrator still sees no option on Home.
 
 After the answer: the deciding words are marked. Reason: The join option is missing because the edition is Home. Pro and above can join a domain.
 
 Then a screen: you can stop here, your place is kept.
 
-## Step 15: Questions
+## Step 16: Questions
 
 6 questions, shuffle, with about 30% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 18
 
-A chat, with its history: "Beth, HR", Chat with the help desk.
+A chat, with its history: "Andile, HR", Chat with the help desk.
 
-> (Beth, HR, at the left) Every morning I sign in to the payroll site, the benefits site and the training site, each with its own password. Surely there is a way to sign in once.
+> (Andile, HR, at the left) Every morning I sign in to the payroll site, the benefits site and the training site, each with its own password. Surely there is a way to sign in once.
 
 **Which feature lets one sign-in open all three?**
 (the options come in an order that depends on the seed of the question)
-- SSO, where the company’s sign-in service vouches for her to each site, using a standard such as SAML (right)
-- MFA, adding a second check such as a code from her phone to every one of the three separate sign-ins — if chosen: MFA makes each sign-in stronger. It adds a step; it does not remove the other sign-ins.
+- SSO, where the company’s sign-in service vouches for Andile to each site, using a standard such as SAML (right)
+- MFA, adding a second check such as a code from Andile’s phone to every one of the three separate sign-ins — if chosen: MFA makes each sign-in stronger. It adds a step; it does not remove the other sign-ins.
 - IAM, creating and removing accounts for the three sites — if chosen: IAM is the job of managing accounts and access. It does not join three sign-ins into one.
 - Zero Trust, checking every request from the three sites again — if chosen: Zero Trust is the idea of checking each request. It does not give one sign-in.
 
@@ -471,30 +478,30 @@ After the answer: the deciding words are marked. Reason: One sign-in that opens 
 
 #### Item 19
 
-A chat, with its history: "Tara, Audit", Chat with the help desk.
+A chat, with its history: "Tarek, Audit", Chat with the help desk.
 
-> (Tara, Audit, at the left) The audit found an account on our laptops that anyone can use with no personal settings, and it has limited rights. It is turned off on most machines but on for a few.
+> (Tarek, Audit, at the left) The audit found an account on our laptops that anyone can use with no personal settings, and it has limited rights. It is turned off on most machines but on for a few.
 
 **Which account is it, and what is the fix?**
 (the options come in an order that depends on the seed of the question)
 - The Guest account; disable it on the laptops where it is on (right)
 - The default Administrator account; rename it and change its password — if chosen: The default Administrator has full rights, not limited ones. The account in the audit is Guest.
-- A power user account; move it to the standard group — if chosen: A power user is a named person’s account with extra rights. The audit describes an account anyone can use.
+- A power user account; move it to the standard group — if chosen: Power user is an older group between standard user and administrator. The audit describes an account anyone can use.
 - A Microsoft account; remove the email address from it — if chosen: A Microsoft account belongs to a person with an email address. It is not an account anyone can use.
 
 After the answer: the deciding words are marked. Reason: An account anyone can use, with limited rights and no personal settings, is Guest. Hardening disables it so nobody can sign in with it.
 
 #### Item 20
 
-A chat, with its history: "Mina, Legal", Chat with the help desk.
+A chat, with its history: "Nicholas, Legal", Chat with the help desk.
 
-> (Mina, Legal, at the left) Last year I encrypted a folder of contracts with EFS under my account. IT rebuilt my profile this week and gave me a new account, and now I cannot open the folder.
+> (Nicholas, Legal, at the left) Last year I encrypted a folder of contracts with EFS under my account. IT rebuilt my profile this week and gave me a new account, and now I cannot open the folder.
 
 **What happened?**
 (the options come in an order that depends on the seed of the question)
 - EFS ties the files to the old account’s certificate, and the new account does not have it (right)
-- BitLocker has locked the whole drive since the profile rebuild, and it needs its recovery code — if chosen: BitLocker locks a drive at start-up, and the rest of her files open. This one folder was encrypted by EFS.
-- The share permission for the new account is Read only — if chosen: A low permission would let her open and read the files. She cannot open them at all.
+- BitLocker has locked the whole drive since the profile rebuild, and it needs its recovery password — if chosen: BitLocker locks a drive at start-up, and the rest of Nicholas’s files open. This one folder was encrypted by EFS.
+- The share permission for the new account is Read only — if chosen: A low permission would let Nicholas open and read the files. Nicholas cannot open them at all.
 - User Account Control is blocking the folder — if chosen: UAC calls for administrator rights. It does not encrypt or hide a folder.
 
 After the answer: the deciding words are marked. Reason: One folder cannot be opened after the account changed, and it was encrypted by that account: EFS. The certificate is needed, so it should have been backed up before the rebuild.
@@ -503,14 +510,14 @@ After the answer: the deciding words are marked. Reason: One folder cannot be op
 
 A chat, with its history: "Cole, Server team", Chat with the help desk.
 
-> (Cole, Server team, at the left) An engineer needs administrator rights on the billing server for one hour tonight to install a patch. We do not want him to keep them afterward.
+> (Cole, Server team, at the left) An engineer needs administrator rights on the billing server for one hour tonight to install a patch. We do not want them to keep them afterward.
 
 **Which approach fits?**
 (the options come in an order that depends on the seed of the question)
-- Just-in-time access through privileged access management: the rights last the hour, then are removed (right)
-- Make him a permanent administrator and trust him to be careful — if chosen: Permanent rights are far more than one hour of work needs.
-- Give him the default administrator password, written on a note — if chosen: A shared default password gives full rights to anyone who reads the note, and nothing is ever taken back.
-- Add his account to the Guest group for the night — if chosen: Guest has limited rights. It cannot install a patch.
+- Just-in-time access, which removes the rights after the hour (right)
+- Make them a permanent administrator and trust them to be careful — if chosen: Permanent rights are far more than one hour of work needs.
+- Give them the default administrator password, written on a note — if chosen: A shared default password gives full rights to anyone who reads the note, and nothing is ever taken back.
+- Add their account to the Guest group for the night so it is limited — if chosen: Guest has limited rights. It cannot install a patch.
 
 After the answer: the deciding words are marked. Reason: Rights for one task, then removed, is just-in-time access, which is what privileged access management does.
 
@@ -528,9 +535,9 @@ A plain table, "From the desk’s records":
 
 **Why is the sign-in rejected on one PC?**
 (the options come in an order that depends on the seed of the question)
-- The meeting-room PC is not on the domain, so it has no account for him (right)
-- His password expired overnight, on one PC only — if chosen: A password belongs to the account, not to a PC. It would fail on his desk PC too.
-- A Group Policy has locked his account out of that one computer, though not out of his desk PC — if chosen: A policy that blocked him would apply to computers in a domain. This PC is not in it.
+- The meeting-room PC is not on the domain, so it has no account for Raj (right)
+- Raj’s password expired overnight, on one PC only — if chosen: A password belongs to the account, not to a PC. It would fail on Raj’s desk PC too.
+- A Group Policy has locked Raj’s account out of that one computer, though not out of Raj’s desk PC — if chosen: A policy that blocked Raj would apply to computers in a domain. This PC is not in it.
 - The firewall on the meeting-room PC blocks the sign-in — if chosen: The firewall controls network traffic. It does not reject a name that the PC does not have an account for.
 
 After the answer: the deciding words are marked. Reason: The same sign-in works on one PC and not another, and the records show one is joined to the domain and one is not. The domain account is unknown to a PC outside the domain: link 1 differs per computer.
@@ -561,9 +568,9 @@ To pass:
 
 #### Check question 24
 
-A chat, with its history: "Ines, Pharmacy", Chat with the help desk.
+A chat, with its history: "Kathleen, Pharmacy", Chat with the help desk.
 
-> (Ines, Pharmacy, at the left) The door to our drug store room opens with a card. Staff lend their cards to each other, and we cannot tell who went in. We want the door to open only for the person themselves.
+> (Kathleen, Pharmacy, at the left) The door to our drug store room opens with a card. Staff lend their cards to each other, and we cannot tell who went in. We want the door to open only for the person themselves.
 
 **Which way of opening the door fits?**
 (the options come in an order that depends on the seed of the question)
@@ -578,22 +585,22 @@ After the answer: the deciding words are marked. Reason: Cards, fobs and phones 
 
 A chat, with its history: "Caller, by chat", Chat with the help desk.
 
-> (Caller, by chat, at the left) I am Chris Bell, the CFO’s assistant. The CFO is traveling and needs the password reset now. My employee number is 40718 and my manager is Lee Ward, who will confirm it.
+> (Caller, by chat, at the left) I am Chris Bell, the CFO’s assistant. The CFO is traveling and needs the password reset now. My employee number is 40718 and my manager is Olga Ward, who will confirm it.
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
 - Look Chris up in the directory and call the number on that record (right)
-- Check the employee number he gave against the directory — if chosen: He read out the number himself. Matching it proves he knows a number, not who he is.
-- Call Lee Ward on the number Chris gave you — if chosen: Anyone can give the number of a friend. The manager has to be looked up in the directory.
+- Check the employee number Chris gave against the directory records — if chosen: Chris read out the number personally. Matching it proves Chris knows a number, not who Chris is.
+- Call Olga Ward on the number Chris gave you and check whether Chris is genuine — if chosen: Anyone can give the number of a friend. The manager has to be looked up in the directory.
 - Reset it and force a new password at the next sign-in — if chosen: The reset still hands the account to whoever is typing. The check comes before it.
 
 After the answer: the deciding words are marked. Reason: Before a reset the desk checks the caller by something the caller did not supply: the directory record and the number on it. A number, a name or a manager the caller gives proves nothing.
 
 #### Check question 26
 
-A chat, with its history: "Pia, Compliance", Chat with the help desk.
+A chat, with its history: "Ismael, Compliance", Chat with the help desk.
 
-> (Pia, Compliance, at the left) Staff keep emailing spreadsheets with customer card numbers to their personal addresses. I want the system to spot the card numbers and stop the email leaving.
+> (Ismael, Compliance, at the left) Staff keep emailing spreadsheets with customer card numbers to their personal addresses. I want the system to spot the card numbers and stop the email leaving.
 
 **Which control is that?**
 (the options come in an order that depends on the seed of the question)
@@ -606,24 +613,24 @@ After the answer: the deciding words are marked. Reason: Spotting sensitive data
 
 #### Check question 27
 
-A chat, with its history: "Ana, Planning", Chat with the help desk.
+A chat, with its history: "Steven, Planning", Chat with the help desk.
 
-> (Ana, Planning, at the left) I have Modify on the Projects folder, but in its subfolder Budget I can only read. My manager says it should be the same.
+> (Steven, Planning, at the left) I have Modify on the Projects folder, but in its subfolder Budget I can only read. My manager says it should be the same.
 
 A plain table, "Security of the Budget subfolder":
 
 > Check  |  Value  (the column heads)
 > Inheritance from Projects  |  Turned off
-> Ana  |  Read
+> Steven  |  Read
 
-**Why can she only read in Budget?**
+**Why can Steven only read in Budget?**
 (the options come in an order that depends on the seed of the question)
 - Inheritance is off on Budget, so it keeps its own level and no longer takes Projects’ Modify (right)
-- Her sign-in works only on the Projects folder and is not accepted on its subfolder called Budget — if chosen: A sign-in belongs to the account and works for every folder she can reach.
+- Steven’s sign-in works only on the Projects folder and is not accepted on its subfolder called Budget — if chosen: A sign-in belongs to the account and works for every folder Steven can reach.
 - The share permission on Projects is lower than the NTFS level — if chosen: The ticket shows no share permission at all. The difference is inside the folder: Projects against Budget.
 - User Account Control is blocking the change in Budget — if chosen: UAC prompts for administrator rights on a change. It does not lower a permission.
 
-After the answer: the deciding words are marked. Reason: Permissions flow down from a folder to what is inside it, unless inheritance is turned off on the subfolder. Budget has it off and its own level for Ana is Read.
+After the answer: the deciding words are marked. Reason: Permissions flow down from a folder to what is inside it, unless inheritance is turned off on the subfolder. Budget has it off and its own level for Steven is Read.
 
 #### Check question 28
 
@@ -635,17 +642,22 @@ A plain table, "What the screen says":
 
 > Line  (the column heads)
 > BitLocker recovery
-> Enter the recovery key to unlock this drive.
-> Recovery key ID: 4F2A-9C10
+> Enter the recovery password to unlock this drive.
+> Recovery password ID: 4F2A-9C10
+
+A plain table, "From the desk’s records":
+
+> Laptop  |  Recovery password stored  (the column heads)
+> Gus’s laptop  |  Yes, in the directory under ID 4F2A-9C10
 
 **What gets Gus in?**
 (the options come in an order that depends on the seed of the question)
-- The recovery code saved when BitLocker was turned on, found with the ID on the screen (right)
-- His Windows sign-in password, typed in at that screen, since it is the same account as before — if chosen: BitLocker unlocks the drive before Windows loads. Windows’ own password is not what it wants.
-- A new PIN made in Windows Hello — if chosen: Windows Hello is for signing in once Windows runs. The drive is still locked.
-- A fresh install of Windows on the drive — if chosen: A reinstall wipes the data on the drive. The recovery code opens it with the data kept.
+- The recovery password stored in the directory, found by the ID on the screen (right)
+- Gus’s Windows sign-in password, typed in at that screen, since it is the same account as before — if chosen: BitLocker unlocks the drive before Windows loads. Windows’ own password is not what it wants.
+- A new PIN made in Windows Hello and typed in at that screen — if chosen: Windows Hello is for signing in once Windows runs. The drive is still locked.
+- Clear the TPM in the firmware settings to remove the lock — if chosen: Clearing the TPM removes the code it holds, and the drive then opens only with the recovery password. The stored password opens it with the data kept.
 
-After the answer: the deciding words are marked. Reason: BitLocker locks the drive and, after a hardware change, wants its recovery code. The code was saved when BitLocker was turned on, and the ID on the screen finds it. Without it the data stays locked.
+After the answer: the deciding words are marked. Reason: BitLocker locks the drive and, after a hardware change, wants its recovery password. The desk’s records show the password is stored in the directory, and the ID on the screen finds it. Without it the data stays locked.
 
 #### Check question 29
 
@@ -676,9 +688,9 @@ After the answer: the deciding words are marked. Reason: Start-up settings and t
 
 #### Check question 31
 
-A chat, with its history: "Vera, Imaging", Chat with the help desk.
+A chat, with its history: "Sophie, Imaging", Chat with the help desk.
 
-> (Vera, Imaging, at the left) The new PC image still has the standard Administrator account with the password it came with. Everyone who builds PCs knows that name and password.
+> (Sophie, Imaging, at the left) The new PC image still has the standard Administrator account with the password it came with. Everyone who builds PCs knows that name and password.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)

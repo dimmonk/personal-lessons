@@ -13,7 +13,7 @@
     LOCK = 'weak-screen-lock', CAP = 'ignored-cap', LINK = 'wrong-link';
 
   FC.items('it-support', [
-    chat('l18-k-battery', 'mobile-parts', 'Lena, Planning',
+    chat('l18-k-battery', 'mobile-parts', 'Edith, Planning',
       'My laptop shuts off about ten minutes after I unplug it. The battery screen says the battery is worn. The charger works and the laptop runs fine plugged in. The battery is inside the case.',
       'What is the right step?', [
         ['Power off, unplug the charger, disconnect the old battery, then replace it', true, 'Worn, and fine on the charger, points at the battery. The old one is disconnected before anything else, so no power reaches the board.'],
@@ -23,7 +23,7 @@
       'The deciding words are a worn battery that shuts the laptop off, and fine on the charger. The battery is the part, and every power source is disconnected before it is changed.'),
     recall('l18-k-lightning', 'mobile-ports', 'Lightning is a charging and data connector found on older iPhones and iPads. Which company made it?', ['Apple'],
       'Lightning is Apple’s own connector. Newer iPhones and iPads use USB-C, which is the standard shape on most other phones.'),
-    chat('l18-k-airplane', 'mobile-connect', 'Sid, Warehouse',
+    chat('l18-k-airplane', 'mobile-connect', 'Myra, Warehouse',
       'My phone shows Wi-Fi and the cellular bars gone, and the Bluetooth speaker is off, too. The little plane icon is lit. I have not touched any setting.',
       'What do you do first?', [
         ['Turn airplane mode off, then check each radio', true, 'Airplane mode turns off cellular, Wi-Fi and Bluetooth together. One switch explains all three, and turning it off is the cheapest test.'],
@@ -38,10 +38,10 @@
     chat('l18-k-wipe', 'mobile-secure', 'Ray, Sales',
       'I dropped my phone in the lake while fishing, so it is gone. It is my own phone, and the company only manages my work mail on it. I want to be sure nobody can read my work mail.',
       'What do you do?', [
-        ['Confirm it is Ray with the desk’s identity check, queue a selective wipe of the work data, change the password', true, 'The phone is Ray’s own, and the company manages only the work part. The selective wipe runs when the phone next reaches the company’s system, so the new password closes the account meanwhile.'],
-        ['Wipe the whole phone', POL, 'This is a personal phone. The company has no claim on Ray’s own data.'],
-        ['Do nothing for now and wait for the phone to turn up', CAUSE, 'It may be pulled out and dried. The work mail must be removed from it either way.'],
-        ['Mark it lost, wait a week for it to be found, and then see what is possible', 'waited-idle', 'A phone in a lake will not be found by a locator, and a week leaves the mail open.']],
+        ['Check Ray by the desk’s own check, queue a selective wipe of work data, change the password', true, 'The phone is Ray’s own, and the company manages only the work part. The selective wipe runs when the phone next reaches the company’s system, so the new password closes the account meanwhile.'],
+        ['Check the serial number Ray reads out, then wipe the whole phone when it next connects', POL, 'This is a personal phone, so the company has no claim on Ray’s own data. A number the caller supplies also proves nothing about who is calling.'],
+        ['Take the caller’s word that it is Ray, queue a selective wipe of work data, change the password', 'no-id-check', 'The wipe and the password are the right moves, but the caller must be confirmed by something the caller did not supply.'],
+        ['Mark it lost, wait a week to see whether it is found, and then decide what is possible', 'waited-idle', 'A phone in a lake will not be found by a locator, and a week leaves the mail open.']],
       'The deciding words are a personal phone and managed work mail only. After the identity check, a selective wipe takes the work data when the phone is next online, and a changed password closes the account at once.')
   ]);
 })();

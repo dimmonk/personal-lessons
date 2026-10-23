@@ -1,6 +1,6 @@
 # IT Help Desk: Which Windows tool for the job
 
-Revision 1, draft (the screen carries the draft line). Part: Which Windows tool for the job. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Which Windows tool for the job. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -169,9 +169,9 @@ Then the answer: Memory is mostly free and the processor is busy, so memory is n
 
 #### Item 1
 
-A chat, with its history: "Mia, Accounting", Chat with the help desk.
+A chat, with its history: "Dariusz, Accounting", Chat with the help desk.
 
-> (Mia, Accounting, at the left) **At start-up this morning a message flashed up saying a driver failed to load, and then everything seemed normal. I would like to know which driver, so I can tell you.**
+> (Dariusz, Accounting, at the left) **At start-up this morning a message flashed up saying a driver failed to load, and then everything seemed normal. I would like to know which driver, so I can tell you.**
 
 Help on screen: the words that decide it are marked.
 
@@ -186,9 +186,9 @@ After the answer: the deciding words are marked. Reason: Windows writes down wha
 
 #### Item 2
 
-A chat, with its history: "Raj, Warehouse", Chat with the help desk.
+A chat, with its history: "Joyce, Warehouse", Chat with the help desk.
 
-> (Raj, Warehouse, at the left) **The label printer worked yesterday. This morning it is not listed, and in Device Manager I saw a yellow triangle next to its name.**
+> (Joyce, Warehouse, at the left) **The label printer worked yesterday. This morning it is not listed, and in Device Manager I saw a yellow triangle next to its name.**
 
 Help on screen: the words that decide it are marked.
 
@@ -203,9 +203,9 @@ After the answer: the deciding words are marked. Reason: The question is which d
 
 #### Item 3
 
-A chat, with its history: "Nell, Finance", Chat with the help desk.
+A chat, with its history: "Brendan, Finance", Chat with the help desk.
 
-> (Nell, Finance, at the left) **I put a second drive in the desktop for the year-end files. It does not show up in File Explorer, but the BIOS (the first screen at power-on) lists it.**
+> (Brendan, Finance, at the left) **I put a second drive in the desktop for the year-end files. It does not show up in File Explorer, but the BIOS (the first screen at power-on) lists it.**
 
 Help on screen: the words that decide it are marked.
 
@@ -220,9 +220,9 @@ After the answer: the deciding words are marked. Reason: The firmware sees the d
 
 #### Item 4
 
-A chat, with its history: "Ola, Reception", Chat with the help desk.
+A chat, with its history: "Matthew, Reception", Chat with the help desk.
 
-> (Ola, Reception, at the left) **Our software guide says the settings file is in a folder called AppData in my user folder. I open my folder and there is no AppData. I can see everything else.**
+> (Matthew, Reception, at the left) **Our software guide says the settings file is in a folder called AppData in my user folder. I open my folder and there is no AppData. I can see everything else.**
 
 Help on screen: the words that decide it are marked.
 
@@ -243,9 +243,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Kit, Procurement", Chat with the help desk.
+A chat, with its history: "Marlon, Procurement", Chat with the help desk.
 
-> (Kit, Procurement, at the left) I am filling in a form for the insurer and it wants the computer’s model, how much memory is installed, the BIOS version and the Windows build. Where do I find all of that in one place?
+> (Marlon, Procurement, at the left) I am filling in a form for the insurer and it wants the computer’s model, how much memory is installed, the BIOS version and the Windows build. Where do I find all of that in one place?
 
 **Which tool gives that in one list?**
 (the options come in an order that depends on the seed of the question)
@@ -258,9 +258,9 @@ After the answer: the deciding words are marked. Reason: System Information answ
 
 #### Item 6
 
-A chat, with its history: "Tom, Operations", Chat with the help desk.
+A chat, with its history: "Oswald, Operations", Chat with the help desk.
 
-> (Tom, Operations, at the left) Every night at 2 AM I need a small script to copy the shift report to the shared drive. I do not want to be there to start it. What do I use?
+> (Oswald, Operations, at the left) Every night at 2 AM I need a small script to copy the shift report to the shared drive. I do not want to be there to start it. What do I use?
 
 **Which console runs a program at a chosen time?**
 (the options come in an order that depends on the seed of the question)
@@ -273,9 +273,9 @@ After the answer: the deciding words are marked. Reason: Task Scheduler answers 
 
 #### Item 7
 
-A chat, with its history: "Cy, Marketing", Chat with the help desk.
+A chat, with its history: "Sandro, Marketing", Chat with the help desk.
 
-> (Cy, Marketing, at the left) After the update I shut the laptop down every night, but a wrong display setting keeps coming back until I choose Restart. The vendor’s note says it may be “fast startup”.
+> (Sandro, Marketing, at the left) After the update I shut the laptop down every night, but a wrong display setting keeps coming back until I choose Restart. The vendor’s note says it may be “fast startup”.
 
 **What does fast startup do, and where is it?**
 (the options come in an order that depends on the seed of the question)
@@ -288,9 +288,9 @@ After the answer: the deciding words are marked. Reason: With fast startup on, S
 
 #### Item 8
 
-A chat, with its history: "Gus, Sales", Chat with the help desk.
+A chat, with its history: "Marian, Sales", Chat with the help desk.
 
-> (Gus, Sales, at the left) The C: drive says it has 2 GB free and Windows keeps warning me. I emptied nothing and I have no big files that I know of. Is there a quick way to clear the junk Windows keeps?
+> (Marian, Sales, at the left) The C: drive says it has 2 GB free and Windows keeps warning me. I emptied nothing and I have no big files that I know of. Is there a quick way to clear the junk Windows keeps?
 
 **Which tool clears temporary files and the Recycle Bin?**
 (the options come in an order that depends on the seed of the question)
@@ -318,9 +318,9 @@ After the answer: Reason: Event Viewer opens with eventvwr.msc. An easy way to r
 
 #### Item 10
 
-A chat, with its history: "Una, Compliance", Chat with the help desk.
+A chat, with its history: "Erica, Compliance", Chat with the help desk.
 
-> (Una, Compliance, at the left) My browser says the certificate for our new internal site is not trusted. Our security guide says to check whether the company’s certificate is in my personal certificates.
+> (Erica, Compliance, at the left) My browser says the certificate for our new internal site is not trusted. Our security guide says to check whether the company’s certificate is in my personal certificates.
 
 **Which console lists a person’s certificates?**
 (the options come in an order that depends on the seed of the question)
@@ -348,9 +348,9 @@ After the answer: the deciding words are marked. Reason: USB selective suspend l
 
 #### Item 12
 
-A chat, with its history: "Ben, IT", Chat with the help desk.
+A chat, with its history: "Orson, IT", Chat with the help desk.
 
-> (Ben, IT, at the left) The shared reception PC has 8 GB of memory and it is crawling at 9 AM. The front desk shows one person signed in, but I wonder if someone from last night stayed signed in too.
+> (Orson, IT, at the left) The shared reception PC has 8 GB of memory and it is crawling at 9 AM. The front desk shows one person signed in, but I wonder if someone from last night stayed signed in too.
 
 **Which Task Manager tab shows who is signed in and what each uses?**
 (the options come in an order that depends on the seed of the question)
@@ -363,9 +363,9 @@ After the answer: the deciding words are marked. Reason: The Users tab answers �
 
 #### Item 13
 
-A chat, with its history: "Dax, Workshop", Chat with the help desk.
+A chat, with its history: "Julian, Workshop", Chat with the help desk.
 
-> (Dax, Workshop, at the left) The workshop PC runs Windows 11 Pro and is not on a domain (it is a stand-alone computer). I need to add a new person as a local user and put them in the Users group, not Administrators.
+> (Julian, Workshop, at the left) The workshop PC runs Windows 11 Pro and is not on a domain (it is a stand-alone computer). I need to add a new person as a local user and put them in the Users group, not Administrators.
 
 **Which console manages the accounts on this one computer?**
 (the options come in an order that depends on the seed of the question)
@@ -391,9 +391,9 @@ After the answer: Reason: Disk Management opens with diskmgmt.msc: “disk” an
 
 #### Item 15
 
-A chat, with its history: "Fay, Admin", Chat with the help desk.
+A chat, with its history: "Serena, Admin", Chat with the help desk.
 
-> (Fay, Admin, at the left) I need to remove an old program, and I also want to turn on the Windows feature called Telnet Client. The desk’s guide says both are in one place in Control Panel.
+> (Serena, Admin, at the left) I need to remove an old program, and I also want to turn on the Windows feature called Telnet Client. The desk’s guide says both are in one place in Control Panel.
 
 **Which Control Panel area does both?**
 (the options come in an order that depends on the seed of the question)
@@ -406,9 +406,9 @@ After the answer: the deciding words are marked. Reason: Programs and Features a
 
 #### Item 16
 
-A chat, with its history: "Pam, Legal", Chat with the help desk.
+A chat, with its history: "Crystal, Legal", Chat with the help desk.
 
-> (Pam, Legal, at the left) The vendor’s guide for our scanner says to change one value in the registry to stop it from timing out. They gave me the exact path. I have never opened it.
+> (Crystal, Legal, at the left) The vendor’s guide for our scanner says to change one value in the registry to stop it from timing out. They gave me the exact path. I have never opened it.
 
 **What does the technician do before editing?**
 (the options come in an order that depends on the seed of the question)
@@ -451,9 +451,9 @@ After the answer: the deciding words are marked. Reason: The Privacy area of the
 
 #### Item 19
 
-A chat, with its history: "Ivy, HR", Chat with the help desk.
+A chat, with its history: "Nigel, HR", Chat with the help desk.
 
-> (Ivy, HR, at the left) I cannot print. The spooler (the background program that lines up print jobs) is stuck. A colleague told me to restart it, but I do not know where that is.
+> (Nigel, HR, at the left) I cannot print. The spooler (the background program that lines up print jobs) is stuck. A colleague told me to restart it, but I do not know where that is.
 
 **Where can a technician see and restart a background program?**
 (the options come in an order that depends on the seed of the question)
@@ -466,9 +466,9 @@ After the answer: the deciding words are marked. Reason: A service is a backgrou
 
 #### Item 20
 
-A chat, with its history: "Ned, Field team", Chat with the help desk.
+A chat, with its history: "Amy, Field team", Chat with the help desk.
 
-> (Ned, Field team, at the left) I am standing at a customer’s desk. I need to open Device Manager quickly. The customer shows me the Run box.
+> (Amy, Field team, at the left) I am standing at a customer’s desk. I need to open Device Manager quickly. The customer shows me the Run box.
 
 **Which name opens Device Manager?**
 (the options come in an order that depends on the seed of the question)
@@ -506,9 +506,9 @@ After the answer: Reason: System Information opens with msinfo32: “ms” for M
 
 #### Item 23
 
-A chat, with its history: "Moe, Records", Chat with the help desk.
+A chat, with its history: "Isabel, Records", Chat with the help desk.
 
-> (Moe, Records, at the left) Searching the Documents folder used to find my files in a second. Now it misses files I saved last week. I can open the folder and see them.
+> (Isabel, Records, at the left) Searching the Documents folder used to find my files in a second. Now it misses files I saved last week. I can open the folder and see them.
 
 **Which area controls which places Windows searches?**
 (the options come in an order that depends on the seed of the question)
@@ -521,9 +521,9 @@ After the answer: the deciding words are marked. Reason: Indexing Options answer
 
 #### Item 24
 
-A chat, with its history: "Eli, Travel", Chat with the help desk.
+A chat, with its history: "Raphael, Travel", Chat with the help desk.
 
-> (Eli, Travel, at the left) I flew in from London and my meetings show the wrong times. My laptop’s clock is an hour out and the calendar uses the wrong time zone. Where do I fix this in Settings?
+> (Raphael, Travel, at the left) I flew in from London and my meetings show the wrong times. My laptop’s clock is an hour out and the calendar uses the wrong time zone. Where do I fix this in Settings?
 
 **Which area of the Settings app holds the clock and region?**
 (the options come in an order that depends on the seed of the question)
@@ -562,16 +562,16 @@ After the answer: Reason: A slow computer is a live question, so Task Manager co
 
 #### Item 26
 
-A chat, with its history: "Ira, Lab", Chat with the help desk.
+A chat, with its history: "Sarah, Lab", Chat with the help desk.
 
-> (Ira, Lab, at the left) Since the update on Tuesday my USB scanner stopped working. It showed a yellow triangle in Device Manager as soon as I plugged it in. It worked last week.
+> (Sarah, Lab, at the left) Since the update on Tuesday my USB scanner stopped working. It showed a yellow triangle in Device Manager as soon as I plugged it in. It worked last week.
 
 A plain table, "Device Manager, Scanners":
 
 > Line  |  Value  (the column heads)
 > Device  |  Flatbed Scanner 200
 > Status  |  Yellow triangle: a problem
-> Driver date  |  Today, installed by the update
+> Driver date  |  Tuesday, installed by the update
 > Previous driver  |  Available to roll back to
 
 **What is the one change to try first?**
@@ -585,9 +585,9 @@ After the answer: the deciding words are marked. Reason: Device Manager answers 
 
 #### Item 27
 
-A chat, with its history: "Zoe, Finance", Chat with the help desk.
+A chat, with its history: "Aaron, Finance", Chat with the help desk.
 
-> (Zoe, Finance, at the left) When I close my laptop lid at my desk, it goes to sleep and drops the video call that I have on the big screen. I want the call to continue with the lid shut and the screen plugged in.
+> (Aaron, Finance, at the left) When I close my laptop lid at my desk, it goes to sleep and drops the video call that I have on the big screen. I want the call to continue with the lid shut and the screen plugged in.
 
 The laptop is plugged in to power and to the external screen.
 
@@ -598,7 +598,7 @@ The laptop is plugged in to power and to the external screen.
 - The Settings app, Devices, then the screen’s entry in the list — if chosen: The screen is fine. What closes the call is what the lid does.
 - Device Manager, disabling the lid sensor under the system devices — if chosen: The lid action is a choice Windows offers in Power Options. Turning off a device is a rough way to reach it.
 
-After the answer: the deciding words are marked. Reason: The lid action belongs to Power Options. It has its own choice for plugged in and for battery, so Zoe’s call can continue while plugged in and the laptop still sleeps on the move.
+After the answer: the deciding words are marked. Reason: The lid action belongs to Power Options. It has its own choice for plugged in and for battery, so Aaron’s call can continue while plugged in and the laptop still sleeps on the move.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -611,9 +611,9 @@ To pass:
 
 #### Check question 28
 
-A chat, with its history: "Hana, Billing", Chat with the help desk.
+A chat, with its history: "Zachary, Billing", Chat with the help desk.
 
-> (Hana, Billing, at the left) After I sign in, my laptop is unusable for about four minutes while things open and the fan runs. Once it settles it is fine.
+> (Zachary, Billing, at the left) After I sign in, my laptop is unusable for about four minutes while things open and the fan runs. Once it settles it is fine.
 
 A plain table, "Task Manager, Startup tab":
 
@@ -625,7 +625,7 @@ A plain table, "Task Manager, Startup tab":
 
 **What is the first change?**
 (the options come in an order that depends on the seed of the question)
-- Check with the backup’s owner, then disable BackupAgent at start and time the sign-in (right)
+- Disable BackupAgent at start, restart and time the sign-in (right)
 - Disable all four programs at start and restart the laptop — if chosen: If the sign-in speeds up, nobody knows which program was the cause, and the ones that were fine are off for no reason.
 - Run Disk Cleanup and Defragment and Optimize Drives, then sign in again — if chosen: Neither tool answers “what opens at sign-in?”, and the table already names the likely program.
 - End BackupAgent in the Processes tab after each sign-in — if chosen: Ending it after it has started works only until the next sign-in. The Startup tab stops it from starting.
@@ -634,9 +634,9 @@ After the answer: the deciding words are marked. Reason: A slow minutes after si
 
 #### Check question 29
 
-A chat, with its history: "Ken, Archive", Chat with the help desk.
+A chat, with its history: "Bianca, Archive", Chat with the help desk.
 
-> (Ken, Archive, at the left) My PC stalls every few minutes. Task Manager shows the disk at 100% and I can see which program is busy, but I cannot tell which file it is reading.
+> (Bianca, Archive, at the left) My PC stalls every few minutes. Task Manager shows the disk at 100% and I can see which program is busy, but I cannot tell which file it is reading.
 
 A plain table, "Task Manager, Performance tab":
 
@@ -656,9 +656,9 @@ After the answer: the deciding words are marked. Reason: The Performance tab tol
 
 #### Check question 30
 
-A chat, with its history: "Lou, Training", Chat with the help desk.
+A chat, with its history: "Clayton, Training", Chat with the help desk.
 
-> (Lou, Training, at the left) The training laptop only shows its fault in safe mode. I need it to start in safe mode on the next restart, but the screen at power-on goes by too quickly for me to press a key in time.
+> (Clayton, Training, at the left) The training laptop only shows its fault in safe mode. I need it to start in safe mode on the next restart, but the screen at power-on goes by too quickly for me to press a key in time.
 
 **Which tool can make Windows start in safe mode next time?**
 (the options come in an order that depends on the seed of the question)
@@ -671,9 +671,9 @@ After the answer: the deciding words are marked. Reason: System Configuration (m
 
 #### Check question 31
 
-A chat, with its history: "Joy, Server room", Chat with the help desk.
+A chat, with its history: "Caleb, Server room", Chat with the help desk.
 
-> (Joy, Server room, at the left) The file server restarted by itself last night around 3 AM. Nobody was there, and it is fine now. My boss wants to know what happened.
+> (Caleb, Server room, at the left) The file server restarted by itself last night around 3 AM. Nobody was there, and it is fine now. My boss wants to know what happened.
 
 **Where does the technician look first?**
 (the options come in an order that depends on the seed of the question)
@@ -686,9 +686,9 @@ After the answer: the deciding words are marked. Reason: Event Viewer answers �
 
 #### Check question 32
 
-A chat, with its history: "Gil, Clinic", Chat with the help desk.
+A chat, with its history: "Simon, Clinic", Chat with the help desk.
 
-> (Gil, Clinic, at the left) The front-desk PC runs Windows 11 Pro and is a stand-alone computer, not on the company network. The owner wants Windows to require passwords at least 12 characters long and to block USB sticks.
+> (Simon, Clinic, at the left) The front-desk PC runs Windows 11 Pro and is a stand-alone computer, not on the company network. The owner wants Windows to require passwords at least 12 characters long and to block USB sticks.
 
 **Which console holds rules like these for one computer?**
 (the options come in an order that depends on the seed of the question)
@@ -714,9 +714,9 @@ After the answer: Reason: Task Scheduler opens with taskschd.msc: “task” and
 
 #### Check question 34
 
-A chat, with its history: "Pat, Orders", Chat with the help desk.
+A chat, with its history: "Samuel, Orders", Chat with the help desk.
 
-> (Pat, Orders, at the left) I got an email with “invoice.pdf”. I double-clicked it, a black window flashed and nothing opened. The icon looked like a PDF.
+> (Samuel, Orders, at the left) I got an email with “invoice.pdf”. I double-clicked it, a black window flashed and nothing opened. The icon looked like a PDF.
 
 A plain table, "The file in the Downloads folder":
 
@@ -736,9 +736,9 @@ After the answer: the deciding words are marked. Reason: The Type column says Ap
 
 #### Check question 35
 
-A chat, with its history: "Una, Travel", Chat with the help desk.
+A chat, with its history: "Erica, Travel", Chat with the help desk.
 
-> (Una, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
+> (Erica, Travel, at the left) I am taking my laptop on a week-long trip with no charger until I get there. I want all my open documents back exactly as they are when I open it, and I do not want the battery to drain on the way. Hibernate is on in this laptop’s power menu.
 
 **Which power state fits?**
 (the options come in an order that depends on the seed of the question)

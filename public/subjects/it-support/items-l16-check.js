@@ -21,7 +21,7 @@
     say('l16-k-nic', 'net-devices', 'A switch tells devices apart by an address that the maker burned into each network card, written as 12 hexadecimal digits such as 3C:52:82:1A:9F:07. Name it.',
       ['MAC address', 'MAC', 'physical address', 'media access control address'],
       'The MAC address is burned into the network card and is written as 12 hexadecimal digits. A switch uses it to send each message to the right port; the IP address is handed out and can change.'),
-    chat('l16-k-dsl', 'net-types', 'Carl, Home office', 'My internet comes in on the telephone line through a box with an RJ11 cable. When I moved farther from town, it got slower. Which connection is it?',
+    chat('l16-k-dsl', 'net-types', 'Casper, Home office', 'My internet comes in on the telephone line through a box with an RJ11 cable. When I moved farther from town, it got slower. Which connection is it?',
       'Which connection?', [
         ['DSL', true, 'DSL comes over the telephone line and slows with distance from the provider’s equipment.'],
         ['Cable', CON, 'Cable internet comes on coax and is slowed by the neighbors, not by distance.'],
@@ -31,21 +31,21 @@
     say('l16-k-man', 'net-types', 'Give the short name of the kind of network that covers a city or a large campus.',
       ['MAN', 'metropolitan area network'],
       'A metropolitan area network, a MAN, covers a city or a large campus. A LAN covers a building and a WAN joins offices far apart.'),
-    chat('l16-k-punch', 'net-tools', 'Pat, Cabling crew', 'Twelve new jack cables have been pulled into the closet, and their loose wire ends hang at the back of the patch panel. Which tool seats them in the slots and trims them?',
+    chat('l16-k-punch', 'net-tools', 'Margot, Cabling crew', 'Twelve new jack cables have been pulled into the closet, and their loose wire ends hang at the back of the patch panel. Which tool seats them in the slots and trims them?',
       'Which tool?', [
         ['A punchdown tool', true, 'The punchdown tool seats the wires in the slots of a patch panel or block, and trims them.'],
         ['A crimper', TOOL, 'A crimper puts a plug on a cable end. A panel has slots, not plugs.'],
         ['A cable stripper', TOOL, 'A stripper takes the jacket off and does not seat the wires.'],
         ['A cable tester', TOOL, 'A cable tester checks the wires afterward and seats none.']],
       'Wire ends going into the slots of a panel are the punchdown tool’s job. The crimper makes plugs, the stripper takes jackets off, and the tester checks the result.'),
-    chat('l16-k-strip', 'net-tools', 'Dot, Cabling crew', 'Before I crimp a plug on a new cable I have to take the outer jacket off without nicking the wires inside. Which tool?',
+    chat('l16-k-strip', 'net-tools', 'Claudia, Cabling crew', 'Before I crimp a plug on a new cable I have to take the outer jacket off without nicking the wires inside. Which tool?',
       'Which tool?', [
         ['A cable stripper', true, 'A cable stripper cuts only the jacket, so the wires inside are not nicked.'],
         ['A punchdown tool', TOOL, 'A punchdown tool seats wires in slots. It does not strip a jacket.'],
         ['A toner probe', TOOL, 'A toner probe traces cables. It strips nothing.'],
         ['A cable tester', TOOL, 'A cable tester checks the wires afterward.']],
       'Removing the jacket without cutting the wires is the job of a cable stripper. The crimper and the tester come after it.'),
-    chat('l16-k-ntp', 'servers', 'Eli, Security', 'The logs from the file server and the firewall show times five minutes apart, and some sign-ins fail. Which server role, when it is missing or broken, lets the clocks drift like this?',
+    chat('l16-k-ntp', 'servers', 'Oscar, Security', 'The logs from the file server and the firewall show times five minutes apart, and some sign-ins fail. Which server role, when it is missing or broken, lets the clocks drift like this?',
       'Which role?', [
         ['NTP', true, 'NTP keeps every clock on the network the same, and sign-in checks can fail when clocks differ by about five minutes.'],
         ['Syslog', ROLE, 'Syslog collects the log messages. It keeps no clock in step.'],

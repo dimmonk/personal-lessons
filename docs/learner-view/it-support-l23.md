@@ -1,10 +1,10 @@
 # IT Help Desk: Windows problems
 
-Revision 1, draft (the screen carries the draft line). Part: Windows problems. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Windows problems. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Dara says her computer blue-screens and restarts, and she is sure the memory is going. But the blue screen names what failed, and the log shows what was installed the evening before.
+Dara says their computer blue-screens and restarts, and they are sure the memory is going. But the blue screen names what failed, and the log shows what was installed the evening before.
 Windows fails on the way up or after sign-in. Here you place each sign, then work it with what changed, a cut in half, and the tool that shows it.
 
 ## Step 1: Two places a Windows fault can sit
@@ -74,7 +74,7 @@ A plain table, "Which tool for which question":
 
 ## Step 5: Blue screens and slowness mean reinstall
 
-A wrong idea, marked wrong: “It blue-screens and is slow, so I will back up her files and reinstall Windows, and if that fails, order a new computer.”
+A wrong idea, marked wrong: “It blue-screens and is slow, so I will back up the files and reinstall Windows, and if that fails, order a new computer.”
 The right line: A reinstall costs a day and every program, and hides the cause: if a bad driver did it, the fault comes back. The stop code, the log and the cuts take minutes and change nothing. The ways back come first, smallest first.
 
 ## Step 6: A worked example
@@ -94,13 +94,13 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 **What does the blue screen say about Dara’s memory guess?**
 (the options come in an order that depends on the seed of the question)
 - It names a display driver, not memory, so memory has no evidence behind it yet
-- It confirms memory, because any blue screen on a computer means memory
-- It says nothing useful, so the memory should be tested before anything else
-- It points at the hard drive, since the files Windows needs sit there
+- It confirms memory, so the memory sticks are replaced first
+- It says nothing useful about memory, so the memory sticks should be tested before anything else
+- It points at the hard drive, where the files Windows needs are kept
 
 The working, one step at a time:
 1. Place the fault: loading or running?: It happens three times a day, mid-work, after sign-in. That is the running system, not the boot chain. The cheapest read is on the screen already.
-1. Name Dara’s favorite, and read the stop code before testing it.: Her guess is memory. The stop code names a display driver. Memory is not ruled out for good, but nothing points at it.
+1. Name Dara’s favorite, and read the stop code before testing it.: Their guess is memory. The stop code names a display driver. Memory is not ruled out for good, but nothing points at it.
 1. What changed? Dara says nothing, so let the computer’s log say.: Event Viewer, System log: on Monday at 5:10 PM a driver package for the display adapter was installed. A vendor updater did it by itself. The blue screens began the next morning.
 1. Cut in half: start in safe mode, which loads only basic drivers.: In safe mode the computer runs an hour with no crash. Windows and the hardware are fine, and the fault is in a driver that normal start-up loads. A clean hour in safe mode is only some evidence against memory, which can still fail there, but the stop code and the log agree.
 1. One change: in Device Manager, roll back the display driver, and nothing else. Restart normally.: The Driver tab offers Roll Back Driver. After it, no blue screen all afternoon. Had it failed, the next move was System Restore to a point before Monday.
@@ -129,7 +129,7 @@ Help on screen: the words that decide it are marked.
 **What is the first move?**
 (the options come in an order that depends on the seed of the question)
 - Open WinRE, start in safe mode, and roll back the display driver (right)
-- Reinstall Windows from a USB stick, since it cannot reach the desktop — if chosen: Nothing shows Windows itself is damaged. The code names one driver, and the ways back cost far less than a reinstall.
+- Reinstall Windows from a USB stick — if chosen: Nothing shows Windows itself is damaged. The code names one driver, and the ways back cost far less than a reinstall.
 - Take out the memory sticks and put them back, then start the laptop — if chosen: The stop code names a display driver. Reseating memory touches a part that nothing points at.
 - Restart the laptop a few more times to see whether it gets through — if chosen: It has failed the same way every time. Another try gives the same blue screen and tests nothing.
 
@@ -137,9 +137,9 @@ After the answer: the deciding words are marked. Reason: A blue screen at the Wi
 
 #### Item 2
 
-A chat, with its history: "Quinn, Warehouse", Chat with the help desk.
+A chat, with its history: "Edwin, Warehouse", Chat with the help desk.
 
-> (Quinn, Warehouse, at the left) **The screen says “Operating system not found” right after the logo. Nothing changed except a power cut last night, when the lights went out while I was working. All my files are on the company drive.**
+> (Edwin, Warehouse, at the left) **The screen says “Operating system not found” right after the logo. Nothing changed except a power cut last night, when the lights went out while I was working. All my files are on the company drive.**
 
 A plain table, "The firmware screen, and the drive check":
 
@@ -153,17 +153,17 @@ Help on screen: the words that decide it are marked.
 **What is the next step?**
 (the options come in an order that depends on the seed of the question)
 - Run Startup Repair from WinRE, using the install USB if WinRE will not open (right)
-- Order a new drive, since the computer says it cannot find the system it needs to run — if chosen: The drive is listed and passed its health check. The message is about the start-up files, not the drive.
+- Order a new drive and leave the laptop with the stores until it arrives — if chosen: The drive is listed and passed its health check. The message is about the start-up files, not the drive.
 - Change the boot order and put the network ahead of the drive — if chosen: The boot order is already right, with the drive first. Changing it tests nothing the table has not answered.
-- Wipe the drive and install Windows again, so the files are fresh — if chosen: A mended start-up needs a repair, not a wipe. A wipe costs Quinn’s programs and setup to fix something that Startup Repair may fix alone.
+- Wipe the drive and install Windows again, so the files are fresh — if chosen: A mended start-up needs a repair, not a wipe. A wipe costs Edwin’s programs and setup to fix something that Startup Repair may fix alone.
 
-After the answer: the deciding words are marked. Reason: No operating system found is the firmware not finding start-up files it can use. The drive is listed, first in the boot order and healthy, and the power cut explains damaged start-up files, so Startup Repair in WinRE is the smallest way back. Quinn’s files are on the company drive, so nothing needs copying first.
+After the answer: the deciding words are marked. Reason: No operating system found is the firmware not finding start-up files it can use. The drive is listed, first in the boot order and healthy, and the power cut explains damaged start-up files, so Startup Repair in WinRE is the smallest way back. Edwin’s files are on the company drive, so nothing needs copying first.
 
 #### Item 3
 
 A chat, with its history: "Rob, Shipping", Chat with the help desk.
 
-> (Rob, Shipping, at the left) **I sign in and wait about eight minutes before my desktop appears. Once it shows, everything is quick. A co-worker signed in on this same computer yesterday and was at his desktop in under a minute.**
+> (Rob, Shipping, at the left) **I sign in and wait about eight minutes before my desktop appears. Once it shows, everything is quick. A co-worker signed in on this same computer yesterday and got to the desktop in under a minute.**
 
 The chain: power, start-up self-test, firmware, the boot drive, Windows loading, sign-in and profile.
 
@@ -172,17 +172,17 @@ Help on screen: the words that decide it are marked.
 **Which link, and which cheap test?**
 (the options come in an order that depends on the seed of the question)
 - Link 6, the profile: sign in as a new test user and compare the time (right)
-- Link 4, the boot drive: run a full health scan on the whole drive today — if chosen: The same computer and drive are fast for his co-worker. The slow part is Rob’s sign-in.
+- Link 4, the boot drive: run a full health scan on the whole drive today — if chosen: The same computer and drive are fast for the co-worker. The slow part is Rob’s sign-in.
 - Link 5, Windows loading: uninstall the latest Windows update — if chosen: Windows loads fast for the co-worker on the same computer. An uninstall changes the whole computer to fix one person’s sign-in.
 - Link 3, firmware: reset the firmware settings to their defaults — if chosen: Firmware runs before sign-in and is the same for both users. It cannot explain a slow profile.
 
-After the answer: the deciding words are marked. Reason: One person slow and another quick on the same computer cuts the computer away and leaves the profile, link 6. A new test profile confirms it: quick means Rob’s profile is the cause. Back up his files before any repair.
+After the answer: the deciding words are marked. Reason: One person slow and another quick on the same computer cuts the computer away and leaves the profile, link 6. A new test profile confirms it: quick means Rob’s profile is the cause. Back up Rob’s files before any repair.
 
 #### Item 4
 
-A chat, with its history: "Sam, Bookkeeping", Chat with the help desk.
+A chat, with its history: "Mary, Bookkeeping", Chat with the help desk.
 
-> (Sam, Bookkeeping, at the left) My accounting program says it cannot connect to the database service. It worked yesterday, and I have not changed anything.
+> (Mary, Bookkeeping, at the left) My accounting program says it cannot connect to the database service. It worked yesterday, and I have not changed anything.
 
 A plain table, "The Services console, and the System log":
 
@@ -195,9 +195,9 @@ Help on screen: the words that decide it are marked.
 **What is the next move?**
 (the options come in an order that depends on the seed of the question)
 - Look at the Data Store service it depends on, and start that one first (right)
-- Start BookDB again until it stays running, since its type is Automatic — if chosen: It cannot stay running while the service it needs is stopped. The log has already said why.
-- Change BookDB’s startup type to Disabled and restart the computer — if chosen: Disabled stops it from ever starting, which is the opposite of what Sam needs.
-- Reinstall the accounting program, since it lost its database service — if chosen: The program is not damaged. The log names a stopped service, which costs nothing to look at.
+- Start BookDB again and keep restarting it until it stays running all day — if chosen: It cannot stay running while the service it needs is stopped. The log has already said why.
+- Change BookDB’s startup type to Disabled and restart the computer — if chosen: Disabled stops it from ever starting, which is the opposite of what Mary needs.
+- Reinstall the accounting program and its database from the company installer — if chosen: The program is not damaged. The log names a stopped service, which costs nothing to look at.
 
 After the answer: the deciding words are marked. Reason: A service that will not start is read in the Services console and the System log. The log names the cause: a service it depends on. The Dependencies tab shows the same chain, and starting the first service in it is one change.
 
@@ -209,9 +209,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Eli, Sales", Chat with the help desk.
+A chat, with its history: "Lydia, Sales", Chat with the help desk.
 
-> (Eli, Sales, at the left) My computer crawls every Monday morning between 9 and 11, and then it is fine. I think it needs more memory or a new drive.
+> (Lydia, Sales, at the left) My computer crawls every Monday morning between 9 and 11, and then it is fine. I think it needs more memory or a new drive.
 
 A plain table, "Task Manager, Monday 9:30 AM":
 
@@ -232,9 +232,9 @@ After the answer: the deciding words are marked. Reason: Degraded performance is
 
 #### Item 6
 
-A chat, with its history: "Kim, Marketing", Chat with the help desk.
+A chat, with its history: "Patricia, Marketing", Chat with the help desk.
 
-> (Kim, Marketing, at the left) A box says Windows is low on memory and I should close programs. It happens most afternoons. The computer has 16 GB.
+> (Patricia, Marketing, at the left) A box says Windows is low on memory and I should close programs. It happens most afternoons. The computer has 16 GB.
 
 A plain table, "Task Manager, Processes sorted by memory":
 
@@ -246,7 +246,7 @@ A plain table, "Task Manager, Processes sorted by memory":
 **What is the next step?**
 (the options come in an order that depends on the seed of the question)
 - Update Layout Studio and watch it again: one program keeps growing all day (right)
-- Close the browser tabs each afternoon, since tabs use a lot of memory — if chosen: The browser barely grows, from 2.9 to 3.1 GB. Closing tabs frees a small part of the problem.
+- Close the browser tabs each afternoon — if chosen: The browser barely grows, from 2.9 to 3.1 GB. Closing tabs frees a small part of the problem.
 - Order 32 GB of memory so that the warning stops for good — if chosen: More memory only delays the warning if one program keeps growing. The table points at the program first.
 - Raise the virtual memory (drive space used as extra memory) to its largest size and restart — if chosen: It hides the growth and leaves the program that causes it.
 
@@ -254,9 +254,9 @@ After the answer: the deciding words are marked. Reason: Task Manager shows memo
 
 #### Item 7
 
-A chat, with its history: "Lena, Engineering", Chat with the help desk.
+A chat, with its history: "Arlo, Engineering", Chat with the help desk.
 
-> (Lena, Engineering, at the left) My desktop switches itself off about once an hour while I run the big spreadsheets. There is no blue screen, it just goes dark. It is fine when idle. The fan roars before it goes, and boxes are stacked against the case.
+> (Arlo, Engineering, at the left) My desktop switches itself off about once an hour while I run the big spreadsheets. There is no blue screen, it just goes dark. It is fine when idle. The fan roars before it goes, and boxes are stacked against the case.
 
 A plain table, "Event Viewer, System log":
 
@@ -277,9 +277,9 @@ After the answer: the deciding words are marked. Reason: Many sudden shutdowns w
 
 #### Item 8
 
-A chat, with its history: "Tom, Accounts", Chat with the help desk.
+A chat, with its history: "Sabrina, Accounts", Chat with the help desk.
 
-> (Tom, Accounts, at the left) Tally Pro closes by itself when I open an invoice. Other programs are fine. My colleague Ana has the same on her computer.
+> (Sabrina, Accounts, at the left) Tally Pro closes by itself when I open an invoice. Other programs are fine. The same happens on my colleague Maxwell’s computer.
 
 A plain table, "Event Viewer, Application log":
 
@@ -290,17 +290,17 @@ A plain table, "Event Viewer, Application log":
 **Which move fits?**
 (the options come in an order that depends on the seed of the question)
 - Update or repair Tally Pro: two computers fail the same way and nothing else does (right)
-- Run sfc /scannow, since a program crashing means Windows is damaged — if chosen: Other programs are fine, and Ana’s computer fails the same way. Windows files are not the suspect.
-- Create a new profile for Tom, since only his program fails on his own computer — if chosen: Ana has the same fault on her own computer and profile. A profile cannot explain it.
-- Restore Tom’s computer to last week with System Restore, to be safe — if chosen: The log names the program’s own file. A restore is a big step that Ana’s computer would not share.
+- Run sfc /scannow and then restart the computer to see what changed — if chosen: Other programs are fine, and Maxwell’s computer fails the same way. Windows files are not the suspect.
+- Create a new profile for Sabrina and move Sabrina’s files over to it — if chosen: Maxwell’s computer and profile show the same fault. A profile cannot explain it.
+- Restore Sabrina’s computer to last week with System Restore, to be safe, and then try the program again — if chosen: The log names the program’s own file. A restore is a big step that Maxwell’s computer would not share.
 
 After the answer: the deciding words are marked. Reason: Applications crashing is cut by one program or all, and one user or all. One program on two computers is the program: the log names its own module. Update or repair it, and tell the desk, since others may have it.
 
 #### Item 9
 
-A chat, with its history: "Hana, Records", Chat with the help desk.
+A chat, with its history: "Katarina, Records", Chat with the help desk.
 
-> (Hana, Records, at the left) My scanner stopped working this morning. I plugged a webcam, a card reader and a label printer into the same hub last week.
+> (Katarina, Records, at the left) My scanner stopped working this morning. I plugged a webcam, a card reader and a label printer into the same hub last week.
 
 A plain table, "Device Manager":
 
@@ -311,25 +311,25 @@ A plain table, "Device Manager":
 **What is the cheapest cut?**
 (the options come in an order that depends on the seed of the question)
 - Unplug all the hub devices, then plug them in one at a time, testing after each (right)
-- Reinstall Windows, since the controller cannot be trusted any more — if chosen: A resource warning on one controller is not damage to Windows. Unplugging devices is free.
+- Reinstall Windows and add every device again from the start — if chosen: A resource warning on one controller is not damage to Windows. Unplugging devices is free.
 - Update every driver on the computer and replace the hub in the same visit on Friday — if chosen: Two changes at once, so nothing would show which one mattered.
-- Order a new motherboard, since the USB controller is built into it — if chosen: The warning is about too many devices on a controller, not a dead part. The cheap test comes first.
+- Order a new motherboard — if chosen: The warning is about too many devices on a controller, not a dead part. The cheap test comes first.
 
 After the answer: the deciding words are marked. Reason: A USB controller resource warning in Device Manager means the controller cannot serve what is plugged in. Unplug everything and add back one at a time: that is the cut. A powered hub or a driver update are the next steps if one device still fails.
 
 #### Item 10
 
-A chat, with its history: "Uma, Legal", Chat with the help desk.
+A chat, with its history: "Eugene, Legal", Chat with the help desk.
 
-> (Uma, Legal, at the left) My clock is exactly one hour behind since Sunday. It stays exactly one hour behind all day. It is 3 PM now and it shows 2 PM. Date and minutes are right, and it was fine last week.
+> (Eugene, Legal, at the left) My clock is exactly one hour behind since Sunday. It stays exactly one hour behind all day. It is 3 PM now and it shows 2 PM. Date and minutes are right, and it was fine last week.
 
 This computer is not on the company domain. It was off the whole weekend; the firmware battery is a month old and fine.
 
 **What do you check first?**
 (the options come in an order that depends on the seed of the question)
 - The time zone and daylight setting in Date and time, then press Sync now (right)
-- The small battery on the motherboard, since a clock error comes from that battery — if chosen: A dead battery gives dates like January 1 and a reset after power-off, not exactly one hour. The minutes are right.
-- Windows system files, with sfc /scannow, since the clock is part of Windows — if chosen: A damaged file would not leave the minutes exact and the hour off. A setting is the cheaper explanation.
+- The small battery on the motherboard, by swapping it for a new one — if chosen: A dead battery gives dates like January 1 and a reset after power-off, not exactly one hour. The minutes are right.
+- The Windows system files, with sfc /scannow from an administrator prompt — if chosen: A damaged file would not leave the minutes exact and the hour off. A setting is the cheaper explanation.
 - The Windows Time service, by changing its startup type to Disabled — if chosen: Disabling the service would stop the clock from being corrected at all. It would not fix an hour.
 
 After the answer: the deciding words are marked. Reason: Time drift has two homes. Wrong after being off and reset to an odd date is the battery on the motherboard (firmware). A clean hour off while running is the time zone or daylight setting, and Sync now contacts the time server.
@@ -346,7 +346,7 @@ The suite installed its own drivers and two background services as well. The ven
 (the options come in an order that depends on the seed of the question)
 - Use System Restore to the point before the install, and tell Iris it removes the suite (right)
 - Roll back one driver at a time until the stutter stops, then the next — if chosen: The suite installed drivers and services together. Rolling back one driver does not undo the rest.
-- Reinstall Windows and then the programs she needs, one by one, starting with the suite — if chosen: A restore point made just before the install is the smaller way back. A reinstall costs everything on the computer.
+- Reinstall Windows and then the programs they need, one by one, starting with the suite — if chosen: A restore point made just before the install is the smaller way back. A reinstall costs everything on the computer.
 - Tell Iris to uninstall the suite from Apps, restart, and check whether the stutter stops — if chosen: The vendor’s page says the uninstaller leaves the drivers and services, so the stutter would stay.
 
 After the answer: the deciding words are marked. Reason: When one install changed many things and a restore point from just before it exists, System Restore is the smallest way back that undoes them all. It leaves documents alone and removes programs installed after the point, which the user is told first.
@@ -361,9 +361,9 @@ Safe mode ran for an hour without a freeze. Windows itself and the hardware look
 
 **What is the next cut?**
 (the options come in an order that depends on the seed of the question)
-- Do a clean boot (msconfig for services, Task Manager for startup programs), then turn half back on (right)
-- Turn off all twelve startup programs for good and tell Jan it is fixed — if chosen: Twelve changes at once. Nothing shows which one mattered, and programs she needs are lost.
-- Run sfc /scannow, since a freeze after sign-in is a damaged Windows file — if chosen: Safe mode is fine, which points away from Windows’s own files. sfc does not split the added programs.
+- Do a clean boot (msconfig for services, Task Manager for startup), then turn half back on (right)
+- Turn off all twelve startup programs for good and tell Jan it is fixed — if chosen: Twelve changes at once. Nothing shows which one mattered, and programs they need are lost.
+- Run sfc /scannow from an administrator prompt, then restart and wait to see if the freeze comes back — if chosen: Safe mode is fine, which points away from Windows’s own files. sfc does not split the added programs.
 - Remove the memory sticks one at a time to find the one that freezes — if chosen: Nothing points at memory: safe mode ran an hour clean and the freeze waits ten minutes after sign-in. Pulling sticks tests a part the ticket gives no sign of.
 
 After the answer: the deciding words are marked. Reason: Fine in safe mode, frozen in normal start: the fault is in a driver, service or startup program that safe mode leaves out. A clean boot removes the added services and startup programs, and turning half back on, restart, keep halving finds the one.
@@ -379,17 +379,17 @@ WinRE opened by itself after failed starts. System Restore points exist from las
 **What do you do next?**
 (the options come in an order that depends on the seed of the question)
 - Copy Nia’s files out first (command prompt in WinRE), then try System Restore to last week (right)
-- Run Startup Repair a second time, since it may work on another try — if chosen: It has just failed. Running the same repair again tests nothing new.
-- Choose Reset this PC, since the laptop will not start after Startup Repair failed — if chosen: It would remove programs and may remove files, and her files exist nowhere else. Smaller ways back are left.
-- Order a new drive, since the laptop cannot repair itself — if chosen: Nothing has tested the drive. Failing Startup Repair does not mean a failed drive.
+- Run Startup Repair a second time, and then try System Restore if that fails again — if chosen: It has just failed. Running the same repair again tests nothing new.
+- Choose Reset this PC and keep the files when the reset offers it, then reinstall the programs — if chosen: It would remove programs and may remove files, and their files exist nowhere else. Smaller ways back are left.
+- Order a new drive and wait for it before trying anything else — if chosen: Nothing has tested the drive. Failing Startup Repair does not mean a failed drive.
 
 After the answer: the deciding words are marked. Reason: Boot issues are worked in order: copy files if they exist nowhere else, then the smallest way back that is left. Startup Repair failed once, so System Restore from WinRE is next. Reset and reinstall come last.
 
 #### Item 14
 
-A chat, with its history: "Zed, Procurement", Chat with the help desk.
+A chat, with its history: "Cindy, Procurement", Chat with the help desk.
 
-> (Zed, Procurement, at the left) Since yesterday the Start menu will not open, Settings crashes, and three different programs close by themselves. Nothing was installed. No blue screen.
+> (Cindy, Procurement, at the left) Since yesterday the Start menu will not open, Settings crashes, and three different programs close by themselves. Nothing was installed. No blue screen.
 
 A plain table, "Event Viewer, Application log":
 
@@ -425,11 +425,11 @@ Wes in Operations calls the help desk. You answer.
 
 **Wes calls about a blue screen. What do you say?**
 - An incoming call from "Wes, Operations" (Incoming call · 10:05 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My computer keeps blue-screening and restarting. It is a mess. Can you just wipe it and put Windows back on?" [pushes: He wants a reinstall and has given no details.]
-  - reply "Before I wipe anything: what does the blue screen say, and has anything been installed since it began?": goes on to turn 2, where the pressure comes back
-  - reply "Yes, bring it to the desk and I will wipe it and reinstall Windows today.": the call ends (not this one): Nothing has been tested. A reinstall costs a day and his programs, and may bring back the same fault. The stop code and what changed come first. [slip: reinstalled or reset Windows before trying the smaller ways back]
-  - reply "It is probably the memory. I will order a new stick for you.": the call ends (not this one): No test points at memory yet. Telling Wes a cause before knowing it sends both of you the wrong way. [slip: told the user a cause before knowing it]
-- turn 2, the other side says: "It says something about a stop code. I wrote down the name. And the printer program updated itself on Monday, I think." [pushes: He has given a stop code and a change, and still wants it fixed today.]
+- turn 1, the other side says: "My computer keeps blue-screening and restarting. It is a mess. Can you just wipe it and put Windows back on?" [pushes: Wes wants a reinstall and has given no details.]
+  - reply "What does the blue screen say, and has anything been installed or changed since it began?": goes on to turn 2, where the pressure comes back
+  - reply "Which model is the computer? Bring it to the desk and I will wipe it and reinstall Windows today.": the call ends (not this one): Nothing has been tested. A reinstall costs a day and Wes’s programs, and may bring back the same fault. The stop code and what changed come first. [slip: reinstalled or reset Windows before trying the smaller ways back]
+  - reply "It sounds like the memory, Wes, and sorry for the trouble. I will order a new stick and fit it tomorrow.": the call ends (not this one): No test points at memory yet. Telling Wes a cause before knowing it sends both of you the wrong way. [slip: told the user a cause before knowing it]
+- turn 2, the other side says: "It says something about a stop code. I wrote down the name. And the printer program updated itself on Monday, I think." [pushes: Wes has given a stop code and a change, and still wants it fixed today.]
   - reply "Read me the code. We start in safe mode and undo that update, and I call you at 2 PM to confirm.": the call ends (right): A stop code and a change from Monday point at one thing to undo. Safe mode and a roll back are the small way back, and the call at 2 PM confirms it held.
   - reply "Restart it a few more times, and I call you at 2 PM to see if it came back.": the call ends (not this one): Restarting repeats the same crash and tests nothing; the stop code and the Monday change are not used. [slip: ran a test that does not split what works from what does not]
   - reply "Then the printer program is the cause. I reinstall Windows tonight and call you at 8 AM.": the call ends (not this one): The update is one change, and a roll back undoes it. A reinstall would be the last step, and tonight is a guess. [slip: reinstalled or reset Windows before trying the smaller ways back]
@@ -445,47 +445,47 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 17
 
-A chat, with its history: "Ann, Purchasing", Chat with the help desk.
+A chat, with its history: "Lamar, Purchasing", Chat with the help desk.
 
-> (Ann, Purchasing, at the left) This morning I let Windows install an update, and I also installed a new label printer driver. Now my computer freezes every few minutes. Both changed today: the update ran first, the driver went on last, around noon.
+> (Lamar, Purchasing, at the left) This morning I let Windows install an update, and I also installed a new label printer driver. Now my computer freezes every few minutes. Both changed today: the update ran first, the driver went on last, around noon.
 
 Safe mode ran for an hour without a freeze.
 
 **How do you undo them?**
 (the options come in an order that depends on the seed of the question)
-- Roll back the printer driver alone and test; uninstall the update only if freezes remain (right)
-- Roll back the printer driver and uninstall the update together, then restart and test — if chosen: With both gone, a fix would not show which one caused it, and a change that was not needed stays out.
-- Run sfc /scannow, since freezes mean damaged Windows files — if chosen: Safe mode is fine, which points away from Windows’s own files, and two recent changes are the better suspects.
+- Roll back the printer driver alone and test, and uninstall the update only if freezes remain (right)
+- Roll back the printer driver and uninstall the update together, then restart and test both at once — if chosen: With both gone, a fix would not show which one caused it, and a change that was not needed stays out.
+- Run sfc /scannow from an administrator prompt, then test again — if chosen: Safe mode is fine, which points away from Windows’s own files, and two recent changes are the better suspects.
 - Reinstall Windows, which removes both changes in one step — if chosen: A reinstall removes everything, not just the two changes. Two small undos are left to try.
 
 After the answer: the deciding words are marked. Reason: One change at a time has no exception: you cannot tell which change did it if you undo both, and a change that was not the cause comes out for nothing. Undo one, test, then the other.
 
 #### Item 18
 
-A chat, with its history: "Ola, Reception", Chat with the help desk.
+A chat, with its history: "Sadia, Reception", Chat with the help desk.
 
-> (Ola, Reception, at the left) My computer takes ages to sign in and, when it does, my desktop is empty. My co-worker signed in on the same computer and it was fine. My photos and documents are in my profile and nowhere else.
+> (Sadia, Reception, at the left) My computer takes ages to sign in and, when it does, my desktop is empty. My co-worker signed in on the same computer and it was fine. My photos and documents are in my profile and nowhere else.
 
-A new test profile signs in fast and shows an empty desktop. The plan is to move Ola to a new profile.
+A new test profile signs in fast and shows an empty desktop. The plan is to move Sadia to a new profile.
 
 **What is the order of the work?**
 (the options come in an order that depends on the seed of the question)
-- Copy her Documents, Desktop and Pictures folders first, then move her to the new profile (right)
-- Delete the old profile folder, then let Windows build a new one for her — if chosen: Her photos and documents are only in that folder. Deleting it first loses them for good.
-- Move her to the new profile now and copy the files over if she wants them later on — if chosen: The old profile stays in place at first, but nothing protects the files, and she has no word of what happens next.
-- Reinstall Windows, which gives a clean profile and clears the slow sign-in — if chosen: The computer is fine for her co-worker. A reinstall fixes nothing that the new profile does not and erases more.
+- Copy their Documents, Desktop and Pictures folders first, then move them to the new profile (right)
+- Delete the old profile folder, then let Windows build a new one for them — if chosen: Their photos and documents are only in that folder. Deleting it first loses them for good.
+- Move them to the new profile now and copy the files over later if they request them — if chosen: The old profile stays in place at first, but nothing protects the files, and nobody has told them what happens next.
+- Reinstall Windows, which gives a clean profile and clears the slow sign-in — if chosen: The computer is fine for the co-worker. A reinstall fixes nothing that the new profile does not and erases more.
 
-After the answer: the deciding words are marked. Reason: The test profile showed the old profile is the fault. Her files are only there, so they are copied out before the profile is replaced: protect the data, then change one thing.
+After the answer: the deciding words are marked. Reason: The test profile showed the old profile is the fault. Their files are only there, so they are copied out before the profile is replaced: protect the data, then change one thing.
 
 #### Item 19
 
-A chat, with its history: "Ray, Facilities", Chat with the help desk.
+A chat, with its history: "Maria, Facilities", Chat with the help desk.
 
-> (Ray, Facilities, at the left) My laptop blue-screened twice this morning. There is a burning smell from the left side, the body is too hot to touch, and the base has started to bulge.
+> (Maria, Facilities, at the left) My laptop blue-screened twice this morning. There is a burning smell from the left side, the body is too hot to touch, and the base has started to bulge.
 
-**What do you tell Ray first?**
+**What do you tell Maria first?**
 (the options come in an order that depends on the seed of the question)
-- Shut it down, unplug it, take it off his desk and do not power it on again (right)
+- Shut it down, unplug it, take it off their desk and do not power it on again (right)
 - Run Event Viewer to read the stop code before the laptop restarts again — if chosen: The stop code is useful, but not before the laptop is safe. Powering it on again adds risk.
 - Start it in safe mode to see whether the blue screen comes back — if chosen: Starting it up once more keeps a hot, bulging battery running. The safety stop comes before the cut.
 - Let it cool for ten minutes, then plug it in again and watch the temperature — if chosen: A bulge and a burning smell are not a temperature problem that cooling fixes. Plugging it in feeds the battery.
@@ -516,9 +516,9 @@ A plain table, "The blue screen":
 **What is the smallest test?**
 (the options come in an order that depends on the seed of the question)
 - Take out the new memory stick alone and see whether the blue screens stop (right)
-- Roll back the display driver, since drivers are behind most blue screens in general — if chosen: No driver changed on Friday, and the code points toward memory. A roll back tests something nothing points at.
+- Roll back the display driver to the one from before the last update — if chosen: No driver changed on Friday, and the code points toward memory. A roll back tests something nothing points at.
 - Run sfc /scannow from a command prompt opened as administrator — if chosen: sfc checks Windows files. The code and the Friday change both point toward memory.
-- Reinstall Windows with the new stick in, so everything starts fresh — if chosen: Max wanted no wipe, and a reinstall with the same stick in would repeat the fault.
+- Reinstall Windows with the new stick in, so everything starts fresh and the blue screens stop — if chosen: Max wanted no wipe, and a reinstall with the same stick in would repeat the fault.
 
 After the answer: the deciding words are marked. Reason: A blue screen that began right after a new part was added is the what-changed move. The stop code points toward memory and the new stick is the only change, so removing it alone is one change that splits the cause. Reseating or swapping it comes after.
 
@@ -581,17 +581,17 @@ A plain table, "What the desk found":
 **What is the fix?**
 (the options come in an order that depends on the seed of the question)
 - Change the Windows Time startup type to Automatic, start it, and press Sync now (right)
-- Replace the firmware battery again, since a battery keeps the time — if chosen: The battery is a month old, and the clock holds its date while off. The service is what is stopped.
-- Keep correcting the clock by hand each Friday, and tell Fay to do it — if chosen: That is the workaround she already uses. It leaves the stopped service where it is.
-- Run sfc /scannow, since the clock settings belong to Windows — if chosen: The table already names the cause: a disabled service. sfc checks Windows files, which are not shown to be damaged.
+- Replace the firmware battery again and correct the clock once more — if chosen: The battery is a month old, and the clock holds its date while off. The service is what is stopped.
+- Keep correcting the clock by hand each Friday, and tell Fay to do the same on the other laptops — if chosen: That is the workaround Fay already uses. It leaves the stopped service where it is.
+- Run sfc /scannow and then restart the computer to see what changed — if chosen: The table already names the cause: a disabled service. sfc checks Windows files, which are not shown to be damaged.
 
 After the answer: the deciding words are marked. Reason: Time that drifts while the computer runs is Windows keeping time, not the firmware. The Services console shows the Windows Time service disabled, so the fix is its startup type, a start and a sync.
 
 #### Check question 24
 
-A chat, with its history: "Gus, Estimating", Chat with the help desk.
+A chat, with its history: "Norman, Estimating", Chat with the help desk.
 
-> (Gus, Estimating, at the left) Three programs close by themselves in the afternoons, and Windows warns that memory is low. My computer has 8 GB. A big new project started last month, so I have more open than before.
+> (Norman, Estimating, at the left) Three programs close by themselves in the afternoons, and Windows warns that memory is low. My computer has 8 GB. A big new project started last month, so I have more open than before.
 
 A plain table, "Task Manager, Performance and Processes, 3 PM":
 
@@ -613,9 +613,9 @@ After the answer: the deciding words are marked. Reason: Memory full from steady
 
 #### Check question 25
 
-A chat, with its history: "Ira, Training", Chat with the help desk.
+A chat, with its history: "Luna, Training", Chat with the help desk.
 
-> (Ira, Training, at the left) Since this morning my mouse, keyboard and headset all stopped working on the docking station. Windows installed a driver for the USB controller overnight.
+> (Luna, Training, at the left) Since this morning my mouse, keyboard and headset all stopped working on the docking station. Windows installed a driver for the USB controller overnight.
 
 A plain table, "Device Manager":
 
@@ -628,8 +628,8 @@ A plain table, "Device Manager":
 (the options come in an order that depends on the seed of the question)
 - Roll back the USB controller driver, restart, and test the devices (right)
 - Unplug everything and plug the devices back in one at a time — if chosen: A single mouse already fails, so adding devices one by one cannot split anything. The new driver is the change.
-- Replace the docking station, since the controller is failing — if chosen: The warning followed a driver install, and a roll back is free. A new dock comes after that.
-- Reinstall Windows, since the controller has no resources left — if chosen: A resource warning after a driver install is not damage to Windows. The roll back is the small way back.
+- Replace the docking station with a new one and test the devices — if chosen: The warning followed a driver install, and a roll back is free. A new dock comes after that.
+- Reinstall Windows and add the devices again from the start — if chosen: A resource warning after a driver install is not damage to Windows. The roll back is the small way back.
 
 After the answer: the deciding words are marked. Reason: The warning can come from too many devices or from the driver. One mouse failing rules out too many, and the new driver the night before is the change, so the Roll Back Driver button is the first and smallest way back.
 

@@ -17,7 +17,7 @@
     item({
       id: 'l21-k-netstat', strand: NET,
       blocks: [
-        chat('Ola, Security', 'o1', 'A manager saw a strange program send data out. One connection on this computer goes to 203.0.113.99. Which program is behind it?'),
+        chat('Dennis, Security', 'o1', 'A manager saw a strange program send data out. One connection on this computer goes to 203.0.113.99. Which program is behind it?'),
         out('a', 'C:\\> netstat -ano', ['  Proto  Local Address          Foreign Address        State           PID', '  TCP    192.168.1.42:50188     203.0.113.99:443       ESTABLISHED     5124', '  TCP    192.168.1.42:50201     203.0.113.20:443       ESTABLISHED     3380'])],
       asks: [ask('What is the next step to name the program?', [
         ['Look up process ID 5124 on Task Manager’s Details tab, the one on that line', true, 'netstat -ano prints the process ID of the program behind each connection. The Details tab of Task Manager turns that number into a program name.'],
@@ -31,18 +31,18 @@
     item({
       id: 'l21-k-diskpart', strand: DSK,
       blocks: [
-        chat('Bea, Depot', 'b1', 'The USB stick for installs held client contracts on its last job, and its owner agrees the contents can go. I ran select disk 2, the 58 GB one, then clean, and Windows now shows the stick as empty. Is it wiped for the next job?')],
+        chat('Osman, Depot', 'b1', 'The USB stick for installs held client contracts on its last job, and its owner agrees the contents can go. I ran select disk 2, the 58 GB one, then clean, and Windows now shows the stick as empty. Is it wiped for the next job?')],
       asks: [ask('Is the stick wiped?', [
-        ['Not fully: clean removed the partitions, and tools can still recover the contracts; clean all zeroes every sector', true, 'clean removes the way to find the files, not the files. For private data the disk is overwritten with clean all, or destroyed.'],
-        ['Yes: Windows sees nothing on it and nothing is left to recover', MIS, 'Windows sees nothing because the partition information is gone. The data is still on the disk until it is written over.'],
-        ['Not fully: run format E: /q, which overwrites the files', WIPED, 'A quick format also leaves the data in place. Only a format without /q, or clean all, writes zeros.'],
-        ['Yes, once the stick is unplugged and plugged in again', NOSPLIT, 'Plugging it in again changes nothing on the disk.']])],
+        ['Not fully: clean only removed the partitions, so tools can still recover the contracts', true, 'clean removes the way to find the files, not the files. For private data the disk is overwritten with clean all, or destroyed.'],
+        ['Yes: Windows sees nothing on it, so nothing is left to recover', MIS, 'Windows sees nothing because the partition information is gone. The data is still on the disk until it is written over.'],
+        ['Not fully: run format E: /q, which overwrites every file on the stick', WIPED, 'A quick format also leaves the data in place. Only a format without /q, or clean all, writes zeros.'],
+        ['Yes, once the stick is unplugged and plugged in again to refresh it', NOSPLIT, 'Plugging it in again changes nothing on the disk.']])],
       deciding: ['b1'],
       reason: 'clean removes the partitions from the selected disk, so Windows sees an empty disk, but the contracts can be recovered with tools. A real wipe is clean all (zeros every sector) or destroying the stick.' }),
     item({
       id: 'l21-k-chkdsk', strand: DSK,
       blocks: [
-        chat('Cy, Logistics', 'c1', 'One file on my D: drive will not open, but the other files do. I ran chkdsk D: and pasted what it said.'),
+        chat('Mirela, Logistics', 'c1', 'One file on my D: drive will not open, but the other files do. I ran chkdsk D: and pasted what it said.'),
         out('a', 'C:\\> chkdsk D:', ['The type of the file system is NTFS.', 'Stage 1: Examining basic file system structure ...', 'Windows has scanned the file system and found no problems.', 'No further action is required.'])],
       asks: [ask('What does this tell you, and what next?', [
         ['The file system is sound (bad sectors were not tested); test the file, its program and its permissions', true, 'No problems found means a file system repair has nothing to fix, so the cause is somewhere else. Plain chkdsk does not look for bad sectors; /r does.'],
@@ -53,10 +53,10 @@
       reason: '“Found no problems” is the all-clear for D:’s file system. One file that will not open while the rest do points at that file, the program opening it or the permissions on it, so test those next with the cheapest test.' }),
     item({
       id: 'l21-k-robo', strand: FIL,
-      blocks: [chat('Tia, Studio', 't1', 'I want my E: backup to hold everything in C:\\Work, including subfolders. A file I delete from C:\\Work must never disappear from E:\\Backup.')],
+      blocks: [chat('Raymond, Studio', 't1', 'I want my E: backup to hold everything in C:\\Work, including subfolders. A file I delete from C:\\Work must never disappear from E:\\Backup.')],
       asks: [ask('Which command fits?', [
         ['robocopy C:\\Work E:\\Backup /e', true, '/e copies every subfolder and removes nothing from the destination.'],
-        ['robocopy C:\\Work E:\\Backup /mir', WIPED, '/mir deletes from the backup whatever is no longer in C:\\Work, the opposite of Tia’s rule.'],
+        ['robocopy C:\\Work E:\\Backup /mir', WIPED, '/mir deletes from the backup whatever is no longer in C:\\Work, the opposite of Raymond’s rule.'],
         ['copy C:\\Work E:\\Backup', TOOL, 'copy takes the files of one folder, not the subfolders.'],
         ['rmdir /s E:\\Backup, then copy C:\\Work to it', WIPED, 'That deletes the old backup first, then copies. Nothing is kept from before.']])],
       deciding: ['t1'],
@@ -64,19 +64,19 @@
     item({
       id: 'l21-k-dirfree', strand: FIL,
       blocks: [
-        chat('Cara, Studio', 'c1', 'I need to put a 300 GB video backup on C:. Does it fit? I ran dir in the folder where I want to put it.'),
-        out('a', 'C:\\> dir C:\\Contracts', [' Directory of C:\\Contracts', '10/02/2026  09:14 AM    <DIR>          2026', '10/02/2026  09:15 AM            48,210 notes.txt', '               1 File(s)         48,210 bytes', '               1 Dir(s)  412,318,203,904 bytes free'])],
+        chat('Wyatt, Studio', 'c1', 'I need to put a 300 GB video backup on C:. Does it fit? I ran dir in the folder where I want to put it.'),
+        out('a', 'C:\\> dir C:\\Contracts', [' Directory of C:\\Contracts', '10/02/2026  09:14 AM    <DIR>          .', '10/02/2026  09:14 AM    <DIR>          ..', '10/02/2026  09:14 AM    <DIR>          2026', '10/02/2026  09:15 AM            48,210 notes.txt', '               1 File(s)         48,210 bytes', '               3 Dir(s)  412,318,203,904 bytes free'])],
       asks: [ask('Does it fit?', [
         ['Yes: the last line shows about 384 GB free on the drive', true, 'The last line of dir gives the free space on the drive, 412,318,203,904 bytes, which is 384 GB as Windows counts it.'],
-        ['No: the line before it shows only 48,210 bytes', MIS, '48,210 bytes is the size of the files in this folder. Free space is the line below it.'],
-        ['No: dir shows only one folder, so only one folder’s worth fits', MIS, 'The count of folders is what is inside C:\\Contracts. It does not limit the drive.'],
+        ['Yes: the line before it shows 48,210 bytes free, which is plenty', MIS, '48,210 bytes is the size of the files in this folder, not the free space. Free space is the last line.'],
+        ['No: dir counts only 1 file and 3 folders, so little more fits', MIS, 'The counts are what is inside C:\\Contracts. They do not limit the drive.'],
         ['It cannot be told from dir; run chkdsk to find the free space', TOOL, 'dir already prints the free space, and chkdsk checks a drive’s file system.']])],
-      deciding: ['a5'],
+      deciding: ['a7'],
       reason: 'dir ends with a count of the files and folders in that directory and the free space left on the drive. 412,318,203,904 bytes is 384 GB, more than the 300 GB backup needs.' }),
     item({
       id: 'l21-k-gpresult', strand: ADMIN,
       blocks: [
-        chat('Zed, Help desk', 'z1', 'The new Block USB Storage policy went out on October 23 at 10:00. A user says it is not blocking his laptop. I ran gpresult /r on it at noon the same day.'),
+        chat('Brenda, Help desk', 'z1', 'The new Block USB Storage policy went out on October 23 at 10:00. A user says it is not blocking their laptop. I ran gpresult /r on it at noon the same day.'),
         out('a', 'C:\\> gpresult /r', ['Last time Group Policy was applied: 10/21/2026 at 8:03:15 AM', 'COMPUTER SETTINGS', '    Applied Group Policy Objects', '        Default Domain Policy', '        Workstation Lockdown'])],
       asks: [ask('What does it show, and what next?', [
         ['It last refreshed two days ago, before the change; run gpupdate /force and look again', true, 'The new policy is not listed, and the last refresh was October 21. It has not yet picked up October 23’s change.'],

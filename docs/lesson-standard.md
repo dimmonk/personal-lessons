@@ -126,7 +126,7 @@ built, and cannot be practiced again. The results screen shows its line on its d
 ### 3.4 Checks and pass rules
 
 ```js
-Check = { items: [ItemRef] | { draw: { strands, n } | { gen, split: { [form]: n }, only?: { [form]: [placeId] } } },
+Check = { items: [ItemRef] | { draw: [{ strands, n }] | { gen, split: { [form]: n }, only?: { [form]: [placeId] } } },
           feedback: 'at-end' | 'after-each', pass: [PassRule],
           order?: 'listed' | 'shuffle', recall?: true, spoken?: true, seconds?: 15 | 20, retest?: days }
 PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, slip?, max?, of?: Text }
@@ -142,9 +142,12 @@ PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, s
 - None of a check's fixed items appears in the lesson's sets, unless the check says `recall: true` (V72): a recall check
   asks again only items the lesson's sets asked, each once. A drawn check cannot be a recall check (V70).
 - `order: 'shuffle'` hides a hint in an item's place; it applies to a retest of the check too.
-- A drawn check (`draw`) picks `n` items of the named strands at random, the same run drawing the same; items no
-  earlier check or retest of the lesson asked come first, and an item that reads the learner's own answers is left out
-  until they are entered. It is how a mock interview is built.
+- A drawn check (`draw: [{ strands, n }, ...]`) is a list of groups, each with its own strands and count, and holds exactly
+  `n` items from each group, picked at random, the same run drawing the same; so a mock exam keeps the weights of the real
+  one. Within a group, items no earlier check or retest of the lesson asked come first, and an item that reads the learner's
+  own answers is left out until they are entered. A group's `n` is at least 1 (V70) and no more than its strands can supply:
+  the items the lesson's own groups did not ask, unless a strand has a generator (V72); no strand is in two groups (V70). A
+  check of one group (Civics' mock interview: every question, `n: 20`) is a list of one. It is how a mock interview or exam is built.
 - **A check drawn from a place group** (`draw: { gen, split, only? }`) is as long as its split adds up to and holds exactly that many of
   each form (`tap`, `name`, `flag`, `border`, 3.5), whatever the draw. Within a form the places are drawn at random, the same run drawing
   the same, and the draw prefers (1) a place the draw has not used yet and (2) one the learner last met in another form (from the record,
@@ -969,7 +972,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V62 | No abstract or textbook word | "utilize" in a reason |
 | V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly (example sounds directly on a teaching screen only, inside `AUDIO_LIMITS`, labels distinct); a step on the sheet names a work the app has, and the sheet holds the groups, fields, limits and refs that work reads, and only account and fund kinds the app knows; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
 | V71 | Every lesson's `part` is a part of the subject record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order | a part with no lesson in a complete subject |
-| V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
+| V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's); a draw group asks no more than its strands can supply | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; a worked case is shown practice and counts as doing, at the same 200 words a minute; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
 | V74 | Every ask can be scored and explained (a place group: every question it can make): a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
 | V75 | Generators: no range that gives one value; on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item. A place group: on every (place, form) pair and 200 seeds the same seed the same question, the question is the pair the seed names, and a seed made for a pair names it | a trap that lands on the answer |
@@ -1199,6 +1202,13 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **2026-10-22, the retest of a check with sung tries** (Singing's plan: the tune test on two different days): a check with sung tries
   may carry `retest` (6.4); its sung tries are made again on new targets; V78 refuses a sung check's retest under one day. Singing's
   lesson 12 uses it (`retest: 7`). Checked in `tests/engine-pure.mjs`, with a seeded fault in `tests/lessons/controls-table.mjs`.
+
+- **2026-10-23, a drawn check is a list of groups** (the IT Help Desk mock exam, which must hold the real exam's weights): `draw` is
+  `[{ strands, n }, ...]`, and the check holds exactly `n` from each group (3.4); the old single `{ strands, n }` is gone, and Civics'
+  lesson 16 is a list of one group (`n: 20`). V70 refuses a group that draws none, a strand in two groups and a strand the subject
+  does not have; V72 refuses a group that draws more than its strands can supply. The place-group draw (`gen`, `split`) is unchanged.
+  Checked in `tests/engine-pure.mjs` and `tests/civics-pure.mjs`, X43 (`tests/e2e-interview.mjs`), and seeded faults in
+  `tests/lessons/controls-table.mjs` and `tests/e2e-controls.mjs`.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

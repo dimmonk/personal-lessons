@@ -1,17 +1,19 @@
 // IT Support: subject record (lesson standard 3.2). The plan is docs/subjects/it-support/plan.md; the research behind it is
 // docs/research/it-support.md (how support technicians work a ticket) and docs/research/it-support-aplus.md (the A+ exam map).
-// Twenty-nine parts in eight units: unit 1 teaches the way a help desk technician works any ticket (nine moves, plan "The way of
+// Thirty parts in eight units: unit 1 teaches the way a help desk technician works any ticket (nine moves, plan "The way of
 // thinking"); units 2 to 7 teach each system as a chain of what each part does, with the exam's facts asked from memory; unit 8 is
-// the whole ticket and a mock exam. Lists are worded once here and drawn on by every lesson.
+// the whole ticket (ten mixed tickets as a check) and a mock exam weighted by the exams' domains. Lists are worded once here and drawn on by every lesson.
 FC.subject('it-support', {
   name: "IT Help Desk",
   field: "work",
-  rev: 1,
+  rev: 2,
   standard: 2,
   complete: true,
   history: [
     { rev: 1, date: "2026-10-23",
-      change: "First version, built to the plan from the field's own research: the nine moves a help desk technician makes on a ticket, the kinds of ticket and their priority, and the parts of both A+ exams in eight units. Lessons are added unit by unit." }
+      change: "First version, built to the plan from the field's own research: the nine moves a help desk technician makes on a ticket, the kinds of ticket and their priority, and the parts of both A+ exams in eight units. Lessons are added unit by unit." },
+    { rev: 2, date: "2026-10-23",
+      change: "All thirty lessons built: the procedures lesson split in two, and the final test split into the whole ticket and a mock exam drawn by the A+ domain weights; the lists, topics and the exam's published objectives as references grow with them." }
   ],
   endResult: "Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.",
   parts: [
@@ -43,7 +45,8 @@ FC.subject('it-support', {
     { id: "malware", title: "Malware and attacks" },
     { id: "procedures", title: "Changes, backups, safety and evidence" },
     { id: "rules", title: "Policy, scripts, remote access, AI and the cloud" },
-    { id: "whole", title: "The whole ticket, and the mock exam" }
+    { id: "whole", title: "The whole ticket" },
+    { id: "mock", title: "The mock exam" }
   ],
   units: [
     { id: "ticket", title: "Working a ticket", parts: ["kind", "story", "changed", "known", "half", "one", "finish", "upset"] },
@@ -53,7 +56,7 @@ FC.subject('it-support', {
     { id: "os", title: "Operating systems", parts: ["tools", "commands", "install", "windows-fix", "mac-linux"] },
     { id: "security", title: "Security", parts: ["access", "malware"] },
     { id: "desk", title: "The desk's procedures", parts: ["procedures", "rules"] },
-    { id: "ready", title: "Ready for the job and the exam", parts: ["whole"] }
+    { id: "ready", title: "Ready for the job and the exam", parts: ["whole", "mock"] }
   ],
   lists: {
     // the three kinds of work at a desk (ITIL 4, IT10 and IT11)
@@ -314,7 +317,7 @@ FC.subject('it-support', {
     { id: "mac-care", title: "Mac care, company rules and settings" },
     { id: "linux-files", title: "Linux files, drives and config files" },
     { id: "linux-admin", title: "Linux root, programs and start-up" },
-    { id: "linux-net", title: "Linux network and information commands" },
+    { id: "linux-net", title: "Linux commands for the network, running programs, disk space and help" },
     { id: "editions", title: "Windows editions and what each has" },
     { id: "filesystems", title: "File systems and operating systems" },
     { id: "install-types", title: "Installing, upgrading and requirements for Windows" },

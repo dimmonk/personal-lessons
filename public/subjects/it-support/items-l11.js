@@ -27,16 +27,16 @@
       S("a3", "I think it just needs a cleanup."),
       S("a4", "It clicks even when I have nothing open.")])],
     steps: [
-      { id: "sort", does: "Sort it: something is broken now, and his files are at risk.", working: "It is an incident, and the files may be worth more than the computer. That decides what comes first." },
-      { id: "guess", does: "Write down the favorite cause, then find the test that can rule it out.", working: "Boris thinks it needs a cleanup. A full drive or too many programs makes a computer slow, but neither makes a click. His own line, that it clicks with nothing open, rules the cleanup out: a click with no program running is a part moving.", ask: "reply" },
-      { id: "copy", does: "Copy his files to another drive before anything else.", working: "A clicking hard drive has moving parts that are failing, and every hour it runs may be the last. Copy first. A cleanup, a repair tool or a reinstall all work the drive hard, and a reinstall wipes the files." },
-      { id: "fix", does: "Check the drive’s own report, replace it, restore the copy, and have Boris confirm.", working: "The drive’s S.M.A.R.T. report, its built-in self-check, says failing. You replace the drive, put his files back from the copy, and close the ticket only after he opens a customer file himself." }],
+      { id: "sort", does: "Sort it: something is broken now, and their files are at risk.", working: "It is an incident, and the files may be worth more than the computer. That decides what comes first." },
+      { id: "guess", does: "Write down the favorite cause, then find the test that can rule it out.", working: "Boris thinks it needs a cleanup. A full drive or too many programs makes a computer slow, but neither makes a click. Their own line, that it clicks with nothing open, rules the cleanup out: a click with no program running is a part moving.", ask: "reply" },
+      { id: "copy", does: "Copy their files to another drive before anything else.", working: "A clicking hard drive has moving parts that are failing, and every hour it runs may be the last. Copy first. A cleanup, a repair tool or a reinstall all work the drive hard, and a reinstall wipes the files." },
+      { id: "fix", does: "Check the drive’s own report, replace it, restore the copy, and have Boris confirm.", working: "The drive’s S.M.A.R.T. report, its built-in self-check, says failing. You replace the drive, put their files back from the copy, and close the ticket only after they open a customer file themself." }],
     asks: [{ id: "reply", kind: "choose", prompt: "What do you do first?", shuffle: true, options: [
-      ok("o1", "Copy his files to an external drive, then read the drive’s own report", "The copy runs slowly, but it finishes. The report says the drive is failing, and the files are safe."),
-      no("o2", "Run a disk cleanup first, as he suggests, then watch it", "software-first", "A cleanup frees space, but nothing about space makes a drive click. The drive keeps running, and may stop for good."),
+      ok("o1", "Copy their files to an external drive, then read the drive’s own report", "The copy runs slowly, but it finishes. The report says the drive is failing, and the files are safe."),
+      no("o2", "Run a disk cleanup first, as they suggest, then watch it", "software-first", "A cleanup frees space, but nothing about space makes a drive click. The drive keeps running, and may stop for good."),
       no("o3", "Reinstall Windows to start fresh, then restore later", "no-backup", "A reinstall wipes the drive, files included, and the drive is the thing that is failing.")] }],
     deciding: ["a2", "a4"],
-    reason: "He clicks even when nothing is open, so the cause is a part that moves, not a program. His customer files have no copy. The failing hard drive is the thing to protect before it is the thing to fix." };
+    reason: "They click even when nothing is open, so the cause is a part that moves, not a program. Their customer files have no copy. The failing hard drive is the thing to protect before it is the thing to fix." };
 
   // ----- the first group: help shown -----
   const group1 = [
@@ -60,7 +60,7 @@
       reason: "Two drives that must survive one failing is RAID 1, a mirror: each drive holds the same data. RAID 0 spreads the data and loses all of it when one drive fails." }),
     pick({ strand: F, id: "l11-p-click", blocks: [note("Message from Kasia", "Chat · 11:20 AM", [S("c1", "My laptop’s hard drive started to grind and click this morning. I have the whole budget file on it, and no copy.")])],
       prompt: "What is your first move?", deciding: ["c1"],
-      opts: [ok("o1", "Have her stop using it and copy the budget file to an external drive, or to the company share if she has access to one", "The file is safe before the drive gets any worse."),
+      opts: [ok("o1", "Have them stop using it and copy the budget file to an external drive, or to the company share if they have access to one", "The file is safe before the drive gets any worse."),
         no("o2", "Run the disk repair tool on it overnight", "no-backup", "A repair tool works the drive hard and may change files. A drive that grinds may not finish the job."),
         no("o3", "Defragment it (rearrange its files to sit together)", "software-first", "Defragmenting moves every file around on a drive that is already failing. It cannot fix a part that grinds.")],
       reason: "Grinding or clicking from a hard drive is the platters or the head failing. Copy the files off first, with as little use of the drive as you can, then deal with the drive." })
@@ -81,12 +81,12 @@
         { slip: "capacity-slip", value: 8, then: "8 TB is all four drives, which is RAID 0. RAID 5 gives up one drive’s worth of space for parity." },
         { slip: "capacity-slip", value: 4, then: "4 TB is what RAID 6 gives with four drives, and what RAID 10 gives, which is half the space. RAID 5 gives up only one drive’s worth." }] }],
       deciding: [], reason: "RAID 5 uses the space of all drives but one: three drives of 2 TB is 6 TB, and the fourth drive’s worth holds the parity." },
-    pick({ strand: R, id: "l11-q-six", blocks: [prose("Esme is building storage for her firm’s accounts. She has six drives. Losing the data would be a disaster, and when one drive fails she cannot always replace it the same day, so a second one might fail while she waits. Speed does not matter.")],
+    pick({ strand: R, id: "l11-q-six", blocks: [prose("Esme is building storage for their firm’s accounts. They have six drives. Losing the data would be a disaster, and when one drive fails they cannot always replace it the same day, so a second one might fail while they wait. Speed does not matter.")],
       prompt: "Which RAID level fits?", deciding: [],
       opts: [ok("o1", "RAID 6, which keeps two parity blocks", "Its two parity blocks let the array run, and rebuild, with two drives gone."),
         no("o2", "RAID 5, which survives one drive failing", "level-slip", "A second failure during the wait loses everything. RAID 5 holds only one."),
         no("o3", "RAID 0, because it keeps all the space", "level-slip", "RAID 0 survives nothing: one failure loses all the data.")],
-      reason: "She needs to survive two failures at the same time, and only RAID 6 of these does. It needs at least four drives, and she has six." }),
+      reason: "They need to survive two failures at the same time, and only RAID 6 of these does. It needs at least four drives, and they have six." }),
     pick({ strand: F, id: "l11-q-notfound", blocks: [table("Screen at start-up", ["Message"], [["r1", "No bootable device found. Press any key to restart."]]),
       prose("A desktop shows this when it starts. It worked yesterday, and no one has changed anything that they know of. The firmware is the built-in program that runs before Windows, and its setup screen shows which drives the computer can see.")],
       prompt: "What is your cheapest first test?", deciding: ["r1"],
@@ -116,7 +116,7 @@
         no("o4", "Check the warning again after a week, then decide", "no-backup", "Waiting leaves the only copy on a drive that has warned. The work is copied off first, whatever the check says later.")],
       reason: "RAID 0 only splits the data. It keeps no copy and no parity, so a warning on either drive means copy first. After a failure it is a new array and a restore. The levels that rebuild are 1, 5, 6 and 10." }),
     { id: "l11-r-order", strand: F, facets: {},
-      blocks: [prose("A user’s hard drive, the one Windows starts from, has a S.M.A.R.T. warning. It still works, but slowly, and the only copy of her files is on it. Put the work in order.")],
+      blocks: [prose("A user’s hard drive, the one Windows starts from, has a S.M.A.R.T. warning. It still works, but slowly, and the only copy of their files is on it. Put the work in order.")],
       asks: [{ id: "order", kind: "order", prompt: "Tap the steps in the order you do them.", steps: [
         { id: "replace", text: "Replace the drive" }, { id: "copy", text: "Copy the files to another drive" },
         { id: "confirm", text: "The user opens a file and says it works" }, { id: "windows", text: "Put Windows on the new drive" }, { id: "restore", text: "Put the files back on the new drive" },

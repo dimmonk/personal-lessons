@@ -123,9 +123,9 @@ const checkIsSung = check => checkHasSung(check) && flatRefs(check.items).every(
 const rightWord = check => checkIsSung(check) ? SING_RIGHT : 'right';
 // how many written questions and sung tries a check has: { written, sung }
 const checkParts = check => checkIsDrawn(check) ? { written: checkSize(check), sung: 0 } : flatRefs(check.items).reduce((n, r) => isSungRef(r) ? { ...n, sung: n.sung + refCount(r) } : { ...n, written: n.written + refCount(r) }, { written: 0, sung: 0 });
-// A drawn check (3.4) draws `n` questions of the named strands, or from one place group (`gen`) as many of each form as its `split` says
-const drawSize = draw => 'gen' in draw ? Object.values(draw.split).reduce((n, k) => n + k, 0) : draw.n;
-const drawStrands = (data, draw) => 'gen' in draw ? [(data.gens[draw.gen] || lessonFail(`unknown generator ${draw.gen}`)).strand] : draw.strands;
+// A drawn check (3.4) draws, from each group of strands it lists, exactly that group's `n` questions, or from one place group (`gen`) as many of each form as its `split` says
+const drawSize = draw => Array.isArray(draw) ? draw.reduce((n, g) => n + g.n, 0) : Object.values(draw.split).reduce((n, k) => n + k, 0);
+const drawStrands = (data, draw) => Array.isArray(draw) ? [...new Set(draw.flatMap(g => g.strands))] : [(data.gens[draw.gen] || lessonFail(`unknown generator ${draw.gen}`)).strand];
 function checkSize(check){
   return checkIsDrawn(check) ? drawSize(check.items.draw) : flatRefs(check.items).reduce((n, r) => n + refCount(r), 0);
 }

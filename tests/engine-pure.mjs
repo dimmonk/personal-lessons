@@ -223,7 +223,7 @@ function wholeCheck(app, run, wrong = []) {
 {
   const app = await fresh(), d = data(app);
   app.on('2026-10-01');
-  const draw = { strands: ['timing'], n: 3 };
+  const draw = [{ strands: ['timing'], n: 3 }];
   const first = app.drawInstances(d, 'fixture', draw, 'run1', []);
   check(first.length === 3 && new Set(first.map(i => i.key)).size === 3 && first.every(i => i.item.strand === 'timing'), 'a drawn check holds n different questions of the named topics');
   same(app.drawInstances(d, 'fixture', draw, 'run1', []).map(i => i.key), first.map(i => i.key), 'the same run draws the same questions');

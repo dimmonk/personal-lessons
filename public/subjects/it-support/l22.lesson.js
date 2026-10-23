@@ -6,10 +6,10 @@
 // ticket (Dev's laptop); a first group of four with the deciding words marked; a second of seven and a third of five with none; the check: eight new questions, no help, 7 of 8 to pass.
 // The plan gives no earlier lesson of this builder to mix in, so no group mixes; cross-builder mixing is added later.
 FC.lesson('it-support', {
-  id: 'l22', part: 'install', title: 'Installing and upgrading', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (operating systems and file systems; Windows editions, requirements and upgrade paths; installation kinds, boot methods and partitions; an app\'s requirements and how it is distributed; cloud office tools).' }],
+  id: 'l22', part: 'install', title: 'Installing and upgrading', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (operating systems and file systems; Windows editions, requirements and upgrade paths; installation kinds, boot methods and partitions; an app\'s requirements and how it is distributed; cloud office tools).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'Dev in Finance has a four-year-old laptop that runs fine. He has the memory and the disk, so he thinks it can take Windows 11.',
+    'Dev in Finance has a four-year-old laptop that runs fine. They have the memory and the disk, so they think it can take Windows 11.',
     'Here you learn operating systems, file systems, Windows editions and requirements, ways to install, what a program needs, and cloud office tools, so you can answer before anything is changed.'],
   flow: [
     { title: 'Operating systems and when they end',

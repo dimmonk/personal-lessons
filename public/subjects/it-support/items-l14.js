@@ -37,17 +37,17 @@
         chat('Odette, Billing', 'p1', 'Nothing loads on my computer. I think the internet is down for the whole office. I am plugged in with a cable, and the light by the cable is on.'),
         note('The chain from the cable to a website: the link, the address, the mask and gateway, the name lookup, the service.'),
         note('This desk’s rule: wall jacks and switch ports belong to the network team.')],
-      asks: [ask('Tom at the next desk says his websites load fine. What does that show?', [
-        ['The line out and the router work, so the fault is on Odette’s side of them.', true, 'Tom goes through the same router and the same line out, and it works for him.'],
-        ['The router needs a restart, since it is the one box every computer in the office shares.', RESET, 'Tom’s computer works through it, so it is not shown to be at fault, and a restart would knock the whole office offline for a minute.'],
-        ['Odette’s browser is broken, since her cable and the light by it both look fine.', CAUSE, 'Nothing has tested the browser. Her address and her name lookup are still on the list.']])],
+      asks: [ask('Elton at the next desk says their websites load fine. What does that show?', [
+        ['The line out and the router work, so the fault is on Odette’s side of them.', true, 'Elton goes through the same router and the same line out, and it works for Elton.'],
+        ['The router needs a restart, since it is the one box every computer in the office shares.', RESET, 'Elton’s computer works through it, so it is not shown to be at fault, and a restart would knock the whole office offline for a minute.'],
+        ['Odette’s browser is broken, since their cable and the light by it both look fine.', CAUSE, 'Nothing has tested the browser. Their address and their name lookup are still on the list.']])],
       steps: [
         { id: 'chain', does: 'Write the chain, so every cause has a place.', working: 'The link, the address, the mask and gateway, the name lookup, the service. “Nothing loads” could be any of the five.' },
-        { id: 'favorite', does: 'Name the favorite cause and cut with the cheapest test: another person on the same network.', working: 'The favorite is the office’s internet. Tom, at the next desk, loads sites fine. The office connection and the router are cleared, and the fault is somewhere on Odette’s side of them.', ask: 'a' },
+        { id: 'favorite', does: 'Name the favorite cause and cut with the cheapest test: another person on the same network.', working: 'The favorite is the office’s internet. Elton, at the next desk, loads sites fine. The office connection and the router are cleared, and the fault is somewhere on Odette’s side of them.', ask: 'a' },
         { id: 'ipconfig', does: 'Run ipconfig on Odette’s computer. It changes nothing.', working: 'The Ethernet adapter shows an IPv4 address of 169.254.31.77, a mask of 255.255.0.0 and an empty Default Gateway. The adapter is not “Media disconnected”, so link 1 is up. The computer made up its own address because no DHCP answer came: link 2 failed.' },
         { id: 'cable', does: 'Cut again: the cable against everything else. Swap in a cable known to work.', working: 'Same result, 169.254 again. The cable is ruled out.' },
-        { id: 'jack', does: 'Plug Odette’s computer into Tom’s cable, which works.', working: 'It gets 192.168.1.57 at once, with a gateway. Her computer and its settings are fine, and the fault is her wall jack or its port on the switch.' },
-        { id: 'next', does: 'Get her working, then hand on with what you found.', working: 'Odette works from a spare jack. The network team gets the jack number, the 169.254 address, the cable swap and the result on Tom’s cable. Restarting the router would have fixed nothing and cut off the office.' }],
+        { id: 'jack', does: 'Plug Odette’s computer into Elton’s cable, which works.', working: 'It gets 192.168.1.57 at once, with a gateway. Their computer and its settings are fine, and the fault is their wall jack or its port on the switch.' },
+        { id: 'next', does: 'Get their working, then hand on with what you found.', working: 'Odette works from a spare jack. The network team gets the jack number, the 169.254 address, the cable swap and the result on Elton’s cable. Restarting the router would have fixed nothing and cut off the office.' }],
       deciding: ['p1'],
       reason: 'The favorite cause was the office connection, and one person next door cleared it. ipconfig then showed a 169.254 address: the link was up and DHCP was not reached. Two cheap swaps, the cable and the jack, split the computer from the wall, and nothing was restarted that other people use.' }),
 
@@ -55,7 +55,7 @@
     item({
       id: 'l14-p-disc', strand: ON,
       blocks: [
-        chat('Wen, Legal', 'w1', 'My desktop says there is no network. It was fine yesterday. The cleaners were in last night.'),
+        chat('Benita, Legal', 'w1', 'My desktop says there is no network. It was fine yesterday. The cleaners were in last night.'),
         cfg('a', 'C:\\> ipconfig (the Ethernet adapter)', [['Media State', 'Media disconnected'], ['Connection-specific DNS Suffix', '(empty)']]),
         note('Chain: the link, the address, the mask and gateway, the name lookup, the service.')],
       asks: [ask('Which link failed?', [
@@ -68,7 +68,7 @@
     item({
       id: 'l14-p-apipa', strand: AD,
       blocks: [
-        chat('Hal, Sales', 'h1', 'Since I plugged my laptop in at the new desk, a yellow warning says limited connectivity and no page loads. The light by the cable is on.'),
+        chat('Tanya, Sales', 'h1', 'Since I plugged my laptop in at the new desk, a yellow warning says limited connectivity and no page loads. The light by the cable is on.'),
         cfg('a', 'C:\\> ipconfig (the Ethernet adapter)', [['Autoconfiguration IPv4 Address', '169.254.31.77'], ['Subnet Mask', '255.255.0.0'], ['Default Gateway', '(empty)']])],
       asks: [ask('Which link failed?', [
         ['The address: DHCP was not reached', true, 'An address starting 169.254 is one Windows made up for itself after asking for DHCP and getting no answer.'],
@@ -120,7 +120,7 @@
       reason: 'The scope is the range the server may hand out, and every address in it is leased. The fix is on the DHCP server: widen the scope, or shorten the lease so addresses of people who left come back sooner. Typing addresses into the laptops would hide the full scope and invite conflicts.' }),
     item({
       id: 'l14-s-private', strand: AD,
-      blocks: [chat('Ola, Network team', 'o1', 'A vendor sent us a list of the addresses they plan to put on the new cameras. We use private addresses inside the building. Which of these are private?')],
+      blocks: [chat('Ramiro, Network team', 'o1', 'A vendor sent us a list of the addresses they plan to put on the new cameras. We use private addresses inside the building. Which of these are private?')],
       asks: [ask('Pick every private address.', [
         ['172.20.14.9', true],
         ['192.168.40.2', true],
@@ -132,21 +132,21 @@
     item({
       id: 'l14-s-nslookup', strand: NC,
       blocks: [
-        chat('Dee, HR', 'd1', 'Websites will not load on my computer. The person next to me is fine. I can ping 8.8.8.8 and it answers.'),
-        cfg('a', 'C:\\> ipconfig /all on Dee’s computer', [['DHCP Enabled', 'No'], ['IPv4 Address', '192.168.1.64'], ['Default Gateway', '192.168.1.1'], ['DNS Servers', '192.168.1.5']]),
-        cfg('b', 'C:\\> ipconfig /all on the computer next to hers', [['DHCP Enabled', 'Yes'], ['IPv4 Address', '192.168.1.71'], ['Default Gateway', '192.168.1.1'], ['DNS Servers', '192.168.1.1']]),
+        chat('Alison, HR', 'd1', 'Websites will not load on my computer. The person next to me is fine. I can ping 8.8.8.8 and it answers.'),
+        cfg('a', 'C:\\> ipconfig /all on Alison’s computer', [['DHCP Enabled', 'No'], ['IPv4 Address', '192.168.1.64'], ['Default Gateway', '192.168.1.1'], ['DNS Servers', '192.168.1.5']]),
+        cfg('b', 'C:\\> ipconfig /all on the computer next to theirs', [['DHCP Enabled', 'Yes'], ['IPv4 Address', '192.168.1.71'], ['Default Gateway', '192.168.1.1'], ['DNS Servers', '192.168.1.1']]),
         out('c', 'C:\\> nslookup www.example.com', ['DNS request timed out.', '    timeout was 2 seconds.', 'Server:  UnKnown', 'Address:  192.168.1.5', 'DNS request timed out.', '*** Request to UnKnown timed-out'])],
       asks: [ask('What is the fault, and the cheapest fix?', [
-        ['A DNS address typed in by hand no longer answers: switch to automatic', true, 'The nslookup went to 192.168.1.5 and got no reply. Her neighbor, handed 192.168.1.1, gets through.'],
-        ['The gateway is wrong, so nothing she sends can leave the office at all', LINK, 'The ping to 8.8.8.8 went out through the gateway and came back.'],
-        ['The websites she wants are down, which is why the lookup timed out', LINK, 'No website was reached. The lookup of the name timed out first, and her neighbor gets through.'],
-        ['DHCP gave her a bad lease that has not yet expired', MISREAD, 'DHCP Enabled says No. Her numbers were typed in by hand, so no lease was handed out.']])],
+        ['A DNS address typed in by hand no longer answers: switch to automatic', true, 'The nslookup went to 192.168.1.5 and got no reply. Their neighbor, handed 192.168.1.1, gets through.'],
+        ['The gateway is wrong, so nothing they send can leave the office at all', LINK, 'The ping to 8.8.8.8 went out through the gateway and came back.'],
+        ['The websites they want are down, which is why the lookup timed out', LINK, 'No website was reached. The lookup of the name timed out first, and their neighbor gets through.'],
+        ['DHCP gave them a bad lease that has not yet expired', MISREAD, 'DHCP Enabled says No. Their numbers were typed in by hand, so no lease was handed out.']])],
       deciding: ['a1', 'a4', 'b4', 'c4'],
-      reason: 'Pings to a number work, so the link, address and gateway are fine. nslookup shows the DNS server it asked, 192.168.1.5, and that server does not answer. Her neighbor uses 192.168.1.1. A DNS address typed in long ago is the likely cause, and choosing “obtain DNS automatically” is one change that can be undone.' }),
+      reason: 'Pings to a number work, so the link, address and gateway are fine. nslookup shows the DNS server it asked, 192.168.1.5, and that server does not answer. Their neighbor uses 192.168.1.1. A DNS address typed in long ago is the likely cause, and choosing “obtain DNS automatically” is one change that can be undone.' }),
     item({
       id: 'l14-s-tracert', strand: NC,
       blocks: [
-        chat('Ken, IT manager', 'k1', 'The whole office lost the internet at 10:05. Pings to 8.8.8.8 time out as well. I ran tracert to a website.'),
+        chat('Vincent, IT manager', 'k1', 'The whole office lost the internet at 10:05. Pings to 8.8.8.8 time out as well. I ran tracert to a website.'),
         out('a', 'C:\\> tracert www.example.com', ['Tracing route to www.example.com [203.0.113.20] over a maximum of 30 hops:', '1   <1 ms   <1 ms   <1 ms  192.168.1.1', '2    9 ms    8 ms    9 ms  198.51.100.1', '3     *        *        *     Request timed out.', '4     *        *        *     Request timed out.', '5     *        *        *     Request timed out.', '(the same for hops 6 to 30)', 'Trace complete.']),
         note('This desk’s rule: a fault past the office router is reported to the internet provider, with the tracert output.')],
       asks: [ask('Where does the path break, and what do you do?', [
@@ -164,37 +164,37 @@
       asks: [ask('Where does this point, and what do you check?', [
         ['A proxy left on from the hotel: check Network and Internet, Proxy', true, 'The ping by name works, so the link, address, gateway and lookup work. The browser still sends its traffic to the old proxy.'],
         ['DNS is down, so names cannot be turned into numbers', LINK, 'The ping by name worked, so the name was turned into a number.'],
-        ['The Wi-Fi link is weak, so pages time out before they finish loading', LINK, 'Four replies came back and her co-worker is fine on the same Wi-Fi.'],
-        ['Run ipconfig /renew on her laptop and try a site again', 'no-split', 'The ping by name worked, so her address is fine. Asking for a new one cannot change a proxy setting.']])],
+        ['The Wi-Fi link is weak, so pages time out before they finish loading', LINK, 'Four replies came back and their co-worker is fine on the same Wi-Fi.'],
+        ['Run ipconfig /renew on their laptop and try a site again', 'no-split', 'The ping by name worked, so their address is fine. Asking for a new one cannot change a proxy setting.']])],
       deciding: ['m1', 'a2'],
-      reason: 'The ping by name worked, so links 1 to 4 are fine, and a co-worker is fine on the same Wi-Fi. What is left is the service link on her own computer. A proxy is a server her web traffic goes through, and one that was typed in for the hotel does not exist here.' }),
+      reason: 'The ping by name worked, so links 1 to 4 are fine, and a co-worker is fine on the same Wi-Fi. What is left is the service link on their own computer. A proxy is a server their web traffic goes through, and one that was typed in for the hotel does not exist here.' }),
     item({
       id: 'l14-x-call', strand: ON,
       blocks: [note('Ula in Marketing calls the help desk. You answer.')],
-      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ula calls about her internet. What do you say?', form: 'call', from: 'Ula, Marketing', detail: 'Incoming call · 9:10 AM', start: 'one',
+      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ula calls about their internet. What do you say?', form: 'call', from: 'Ula, Marketing', detail: 'Incoming call · 9:10 AM', start: 'one',
         turns: {
-          one: { lines: [L('u1', 'The internet is down. The woman next to me is fine, only mine. There is a yellow triangle on the little network picture by the clock. Please fix it.')], push: 'She wants it fixed now. She has not said how her computer is connected.',
+          one: { lines: [L('u1', 'The internet is down. The woman next to me is fine, only mine. There is a yellow triangle on the little network picture by the clock. Please fix it.')], push: 'They want it fixed now. They have not said how their computer is connected.',
             options: [{ id: 'sayback', text: 'So it is only your computer, and your neighbor is fine. Click the little network picture by the clock and read me the name next to it.', goto: 'two' },
               { id: 'near', text: 'Is anyone near you having the same trouble, or is it only your computer?', end: 'asked' },
               { id: 'router', text: 'I will restart the router for you now.', end: 'router' },
               { id: 'cmd', text: 'Open a command window and type ipconfig slash all, then read me the lines.', end: 'jargon' },
               { id: 'wifi', text: 'It is probably your Wi-Fi.', end: 'guess' },
               { id: 'laptop', text: 'I will arrange a new laptop for you.', end: 'new' }] },
-          two: { lines: [L('u2', 'It says Ethernet. I have a call at ten. Can you just fix it from there?')], push: 'She wants it fixed from your side before her call.',
+          two: { lines: [L('u2', 'It says Ethernet. I have a call at ten. Can you just fix it from there?')], push: 'They want it fixed from your side before their call.',
             options: [{ id: 'look', text: 'Not yet; it is one look. Check that the cable is pushed in at both ends and whether a light is on beside it, then tell me. I will keep this ticket open.', end: 'link' },
               { id: 'router2', text: 'Yes, let me restart the router, then.', end: 'router' },
               { id: 'driver', text: 'I will reinstall the network driver on your computer from here.', end: 'new' },
               { id: 'promise', text: 'It will be working before your call, I promise.', end: 'promise' }] }
         },
         ends: {
-          link: { ok: true, then: 'Her neighbor is fine, so the office connection and the router are cleared, and Ethernet means a cable, so link 1 is the cheapest next look. The yellow triangle only means Windows could not confirm internet; it does not say which link failed.' },
-          asked: { ok: false, slip: 'no-sayback', then: 'She had just told you: her neighbor is fine, only hers. Asking again shows her you were not listening. Say it back, then give her one thing to look at.' },
-          router: { ok: false, slip: RESET, then: 'Her neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office.' },
-          jargon: { ok: false, slip: 'jargon', then: 'She does not know what a command window is, and she is in a hurry. Give her something she can read off the screen.' },
-          guess: { ok: false, slip: 'guessed-cause', then: 'Nothing said how she is connected. A cause told to her before it is known can send both of you the wrong way.' },
+          link: { ok: true, then: 'Their neighbor is fine, so the office connection and the router are cleared, and Ethernet means a cable, so link 1 is the cheapest next look. The yellow triangle only means Windows could not confirm internet; it does not say which link failed.' },
+          asked: { ok: false, slip: 'no-sayback', then: 'They had just told you: their neighbor is fine, only theirs. Asking again shows them you were not listening. Say it back, then give them one thing to look at.' },
+          router: { ok: false, slip: RESET, then: 'Their neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office.' },
+          jargon: { ok: false, slip: 'jargon', then: 'They do not know what a command window is, and they are in a hurry. Give them something they can read off the screen.' },
+          guess: { ok: false, slip: 'guessed-cause', then: 'Nothing said how they are connected. A cause told to them before it is known can send both of you the wrong way.' },
           new: { ok: false, slip: PART, then: 'No test has been run, so a new laptop or a driver reinstall is a guess that costs time or money.' },
-          promise: { ok: false, slip: 'false-promise', then: 'Nothing is known yet, so the result is not in your hands. Give her the next look instead.' } } }],
-      reason: 'She gave the cut herself: only her computer is affected. Saying it back confirms it, and one thing she can read from the screen, how she is connected, picks the next cheap test. The yellow triangle means only that Windows could not confirm internet; the light, the name by the picture and ipconfig say which link.' }),
+          promise: { ok: false, slip: 'false-promise', then: 'Nothing is known yet, so the result is not in your hands. Give them the next look instead.' } } }],
+      reason: 'They gave the cut themself: only their computer is affected. Saying it back confirms it, and one thing they can read from the screen, how they are connected, picks the next cheap test. The yellow triangle means only that Windows could not confirm internet; the light, the name by the picture and ipconfig say which link.' }),
     say('l14-r-apipa', AD, 'What are the first two numbers of the address Windows gives itself when no DHCP server answers?', 'Type the two numbers.', ['169.254', '169.254.x.x', '169.254.0.0'],
       'Windows builds an address in the 169.254 range (APIPA, automatic private IP addressing), with mask 255.255.0.0 and no gateway, when it calls on DHCP and nothing answers. Seeing it means DHCP was not reached.'),
 
@@ -202,17 +202,17 @@
     // ----- more for the second group -----
     item({
       id: 'l14-s-slow', strand: ON,
-      blocks: [chat('Kai, Design', 'k1', 'My laptop is slow on Wi-Fi at the far desk. A computer on a cable next to me is fast. We open the same sites.')],
+      blocks: [chat('Halima, Design', 'k1', 'My laptop is slow on Wi-Fi at the far desk. A computer on a cable next to me is fast. We open the same sites.')],
       asks: [ask('Which test cuts the causes in half?', [
         ['Plug the same laptop into a cable and run the same download', true, 'Same laptop, same download, no radio link. If it is fast, the Wi-Fi at that desk is the cause.'],
-        ['Ping the website from the cabled computer next to him and read the times', 'no-split', 'That computer is already fast. Its times say nothing about what the radio link does for the laptop.'],
+        ['Ping the website from the cabled computer next to them and read the times', 'no-split', 'That computer is already fast. Its times say nothing about what the radio link does for the laptop.'],
         ['Restart the office router and then the laptop together', RESET, 'Two changes at once, and a restart that drops everyone, rule nothing out.'],
         ['Replace the laptop’s Wi-Fi card with a new one', PART, 'Nothing has shown the card at fault, and the cable test is free.']])],
       deciding: ['k1'],
       reason: 'Slow only over Wi-Fi at one desk points at the radio link: signal, distance or interference. A cable test with the same laptop splits the Wi-Fi from the laptop and the internet, and changes nothing.' }),
     item({
       id: 'l14-s-auth', strand: ON,
-      blocks: [chat('Lia, HR', 'l1', 'The office Wi-Fi password was changed on Monday. My laptop now says it cannot connect. My phone, which I joined with the new password, is fine.')],
+      blocks: [chat('Rachel, HR', 'l1', 'The office Wi-Fi password was changed on Monday. My laptop now says it cannot connect. My phone, which I joined with the new password, is fine.')],
       asks: [ask('What do you do?', [
         ['Forget the network on the laptop and join again with the new password', true, 'The laptop still holds the old password, and the Wi-Fi refuses it: an authentication failure on link 1.'],
         ['Run ipconfig /renew, then try the old password again', 'no-split', 'The laptop never got far enough to request an address, and the old password is still refused.'],
@@ -223,7 +223,7 @@
     item({
       id: 'l14-s-ipv6', strand: AD,
       blocks: [chat('Moe, Sales', 'm1', 'ipconfig shows an address starting fe80:: under my adapter. Is that the 169.254 problem again?')],
-      asks: [ask('What do you tell him?', [
+      asks: [ask('What do you tell them?', [
         ['No: fe80:: is the normal local IPv6 address; read the IPv4 lines', true, 'Every IPv6 computer makes a link-local address starting fe80::. It is normal, unlike 169.254.'],
         ['Yes: it also means DHCP was not reached, so check the link light', MIXED, 'A 169.254 address is the warning. fe80:: is made for the local network on purpose and always there.'],
         ['Yes: IPv6 has failed, so turn it off on the adapter', SETTING, 'Nothing has failed, and turning IPv6 off would not fix an IPv4 fault.'],
@@ -233,19 +233,19 @@
     item({
       id: 'l14-s-unreach', strand: NC,
       blocks: [
-        chat('Ben, Front desk', 'b1', 'I cannot print. IT told me the printer is at 192.168.1.80. My computer is 192.168.1.42.'),
+        chat('Byron, Front desk', 'b1', 'I cannot print. IT told me the printer is at 192.168.1.80. My computer is 192.168.1.42.'),
         ping('a', '192.168.1.80', 'Pinging 192.168.1.80 with 32 bytes of data:', ['Reply from 192.168.1.42: Destination host unreachable.', 'Reply from 192.168.1.42: Destination host unreachable.', 'Reply from 192.168.1.42: Destination host unreachable.', 'Reply from 192.168.1.42: Destination host unreachable.'], 0)],
       asks: [ask('What does it show?', [
-        ['Nothing on the local network answers at that address', true, 'The “reply” came from Ben’s own computer, saying it found no one at .80. The printer is off, or its address changed.'],
+        ['Nothing on the local network answers at that address', true, 'The “reply” came from Byron’s own computer, saying it found no one at .80. The printer is off, or its address changed.'],
         ['The internet connection is down for the whole office', LINK, 'The ping stayed inside the office network and never needed the internet.'],
-        ['The printer replied, so the fault is in the print queue', MISREAD, 'The reply line names 192.168.1.42, Ben’s own address, not the printer’s.'],
+        ['The printer replied, so the fault is in the print queue', MISREAD, 'The reply line names 192.168.1.42, Byron’s own address, not the printer’s.'],
         ['The name lookup failed, so the printer name is wrong', LINK, 'The ping was to a number, so no lookup was used.']])],
       deciding: ['a2'],
       reason: 'Destination host unreachable, from your own address, means there is no way to reach that address on the local network. Check that the printer is on and what address it now has, before anything on the computer is changed.' }),
     item({
       id: 'l14-s-alldown', strand: AD,
-      blocks: [chat('Gus, Office manager', 'g1', 'Everyone in the building has the yellow warning this morning, and every laptop shows a 169.254 address. The router’s lights look odd after last night’s power cut.'),
-        table('Gus’s network notes', ['Detail', 'Value'], [['t1', 'Where addresses come from (DHCP)', 'The router'], ['t2', 'Other DHCP servers', 'None']])],
+      blocks: [chat('Kasper, Office manager', 'g1', 'Everyone in the building has the yellow warning this morning, and every laptop shows a 169.254 address. The router’s lights look odd after last night’s power cut.'),
+        table('Kasper’s network notes', ['Detail', 'Value'], [['t1', 'Where addresses come from (DHCP)', 'The router'], ['t2', 'Other DHCP servers', 'None']])],
       asks: [ask('What do you do first?', [
         ['Restart the router, which runs DHCP; everyone is already down', true, 'The router hands out the addresses, and it did not recover from the power cut. Everyone is already offline, so a restart costs nobody anything.'],
         ['Type in a static address on each laptop so people can start work', STATIC, 'It hides a fault that sits in one box and creates dozens of hand-typed addresses to undo.'],
@@ -259,25 +259,25 @@
     // ----- group 3: mixed with lessons 5 and 9 -----
     item({
       id: 'l14-g-mapped', strand: NS,
-      blocks: [chat('Abe, Remote', 'a1', 'I am working from home today. My Z: drive in File Explorer has a red X and says it cannot connect. At the office it works.')],
+      blocks: [chat('Angela, Remote', 'a1', 'I am working from home today. My Z: drive in File Explorer has a red X and says it cannot connect. At the office it works.')],
       asks: [ask('What do you check first?', [
         ['Whether the VPN is on, since the drive lives inside the office', true, 'A mapped drive is a path to a shared folder on a server, and away from the office the VPN is what reaches it.'],
         ['Map the drive again with a different letter, in case Z: is stuck', SETTING, 'A new letter points at the same server, which still cannot be reached.'],
-        ['Run ipconfig /renew on his laptop to get a fresh address', 'no-split', 'His home address is working, since he is online. Asking for it again tells nothing about the path to the office server.'],
+        ['Run ipconfig /renew on their laptop to get a fresh address', 'no-split', 'Their home address is working, since they are online. Asking for it again tells nothing about the path to the office server.'],
         ['Turn on the metered connection so the drive reconnects', SETTING, 'Metered only holds back big downloads. It does not open a path to the server.']])],
       deciding: ['a1'],
       reason: 'A mapped drive is a drive letter for a network path such as \\\\fileserver\\Sales. The server sits inside the office network, so away from it the drive works only through the VPN. The red X says the path cannot be reached, which sends you to the VPN before anything else.' }),
     item({
       id: 'l14-g-public', strand: NS,
       blocks: [
-        chat('Cal, Sales', 'c1', 'I moved to the office’s new conference room Wi-Fi. Websites open fine, but I cannot see the shared printer or any of the other laptops. It worked at my old seat.'),
+        chat('Emil, Sales', 'c1', 'I moved to the office’s new conference room Wi-Fi. Websites open fine, but I cannot see the shared printer or any of the other laptops. It worked at my old seat.'),
         cfg('a', 'Windows network settings', [['Network profile', 'Public']]),
         note('This desk’s rule: the office’s own Wi-Fi networks use the Private profile.')],
       asks: [ask('What do you do?', [
         ['Change the profile to Private, as this desk’s rule says for the office’s own Wi-Fi', true, 'Public hides the computer and turns off sharing. Private is the setting for a network you trust, and the desk’s rule names this one.'],
         ['Turn off the firewall so that nothing blocks the printer', OPEN, 'That opens the computer to every network it joins, a café included. The profile is the setting that changes.'],
         ['Restart the office router and then the printer, one after the other', RESET, 'Websites work and the profile explains the missing printer. A restart would drop everyone.'],
-        ['Type in a static address from the conference room range', STATIC, 'His address is working, since websites open. A fixed one would not show the printer either.']])],
+        ['Type in a static address from the conference room range', STATIC, 'Their address is working, since websites open. A fixed one would not show the printer either.']])],
       deciding: ['a1'],
       reason: 'Windows wants to know whether a new network is public or private. Public, for a café or hotel, hides the computer and turns network discovery (the computer showing itself to others) and sharing off, so the printer and other laptops vanish while websites still work. This desk’s rule makes its own Wi-Fi Private.' }),
     item({
@@ -305,7 +305,7 @@
     item({
       id: 'l14-g-conflict', strand: AD,
       blocks: [
-        chat('Eli, Front desk', 'e1', 'The front desk printer keeps dropping off. A few times a day Windows on some computer says there is an IP address conflict. Last month we typed 192.168.1.130 into the printer by hand.'),
+        chat('Holly, Front desk', 'e1', 'The front desk printer keeps dropping off. A few times a day Windows on some computer says there is an IP address conflict. Last month we typed 192.168.1.130 into the printer by hand.'),
         table('The DHCP server’s list', ['Detail', 'Value'], [['t1', 'Scope', '192.168.1.100 to 192.168.1.199'], ['t2', 'Exclusions', 'None']])],
       asks: [ask('What fixes it for good?', [
         ['Exclude 192.168.1.130 from the scope so it is never handed out', true, 'The printer’s hand-typed address is inside the scope, so the server will hand .130 to a laptop sooner or later.'],
@@ -319,7 +319,7 @@
     item({
       id: 'l14-s-samenet', strand: AD,
       blocks: [
-        chat('Ben, Front desk', 'b1', 'We bought a new printer. I cannot print to it from my computer. Both of us are plugged into the same switch.'),
+        chat('Byron, Front desk', 'b1', 'We bought a new printer. I cannot print to it from my computer. Both of us are plugged into the same switch.'),
         table('What the computer and the printer show', ['Detail', 'Computer', 'Printer'], [['t1', 'IPv4 address', '192.168.1.42', '192.168.2.80'], ['t2', 'Subnet mask', '255.255.255.0', '255.255.255.0'], ['t3', 'How it got its address', 'DHCP', 'Typed in by hand']]),
         table('The DHCP server’s list', ['Detail', 'Value'], [['u1', 'Scope', '192.168.1.100 to 192.168.1.199'], ['u2', 'Free outside the scope', '192.168.1.80 (nothing uses it)']])],
       asks: [ask('What is the one change?', [
@@ -337,12 +337,12 @@
         cfg('b', 'C:\\> ipconfig on the neighbor’s computer', [['IPv4 Address', '192.168.1.71'], ['Subnet Mask', '255.255.255.0'], ['Default Gateway', '192.168.1.1']]),
         note('The payroll server is at 192.168.2.10. The router connects the two floors.')],
       asks: [ask('What explains it?', [
-        ['The mask he typed is too wide, so his computer treats 192.168.2.10 as local and never sends it to the gateway', true, 'With 255.255.0.0 only the first two numbers must match, and 192.168 matches. It looks for the server on its own floor. The neighbor’s 255.255.255.0 sends it through the gateway.'],
-        ['The gateway is typed wrong, because the shared drive on his floor opens', LINK, 'His gateway, 192.168.1.1, is the same as his neighbor’s, and the neighbor reaches the server.'],
-        ['His address is a duplicate of another computer’s', CAUSE, 'A duplicate would break the drive on his floor too, and Windows would warn him.'],
-        ['The payroll server is down for him but up for his neighbor', CAUSE, 'A server is not down for one person. What differs is the mask in his settings.']])],
+        ['The mask they typed is too wide, so their computer treats 192.168.2.10 as local and never sends it to the gateway', true, 'With 255.255.0.0 only the first two numbers must match, and 192.168 matches. It looks for the server on its own floor. The neighbor’s 255.255.255.0 sends it through the gateway.'],
+        ['The gateway is typed wrong, because the shared drive on their floor opens', LINK, 'Their gateway, 192.168.1.1, is the same as their neighbor’s, and the neighbor reaches the server.'],
+        ['Their address is a duplicate of another computer’s', CAUSE, 'A duplicate would break the drive on their floor too, and Windows would warn them.'],
+        ['The payroll server is down for them but up for their neighbor', CAUSE, 'A server is not down for one person. What differs is the mask in their settings.']])],
       deciding: ['a2', 'b2'],
-      reason: 'The mask tells a computer which addresses are on its own network. His 255.255.0.0 is wider than the office’s 255.255.255.0, so the server upstairs looks local and he sends to it directly, where nothing answers. Anything outside the local network goes through the gateway. Setting the adapter back to automatic, or typing the same mask as his neighbor, is one change.' }),
+      reason: 'The mask tells a computer which addresses are on its own network. Their 255.255.0.0 is wider than the office’s 255.255.255.0, so the server upstairs looks local and they send to it directly, where nothing answers. Anything outside the local network goes through the gateway. Setting the adapter back to automatic, or typing the same mask as their neighbor, is one change.' }),
     item({
       id: 'l14-s-spoof', strand: AD,
       blocks: [chat('Gina, Office manager', 'g1', 'A customer says they got an email that looked like it was from our domain asking them to pay a new bank account. We never sent it. Our domain has an SPF record already.')],
@@ -355,8 +355,8 @@
       reason: 'SPF lists who may send, DKIM adds a signature the receiver can check, and DMARC tells the receiver what to do when those checks fail. All three live in TXT records. The domain already has the first, so the missing piece is the instruction.' }),
     item({
       id: 'l14-s-cell', strand: NS,
-      blocks: [chat('Sam, Field sales', 's1', 'The hotel Wi-Fi is down tonight and I have a report due. My laptop has a SIM card in it from the company. In the network list I see only the hotel network.')],
-      asks: [ask('What do you tell him?', [
+      blocks: [chat('Eloise, Field sales', 's1', 'The hotel Wi-Fi is down tonight and I have a report due. My laptop has a SIM card in it from the company. In the network list I see only the hotel network.')],
+      asks: [ask('What do you tell them?', [
         ['Turn Cellular on in the network list or settings; it uses the SIM in the laptop', true, 'A laptop with a SIM has a cellular adapter (WWAN, a wireless wide area network). Windows lists it like Wi-Fi, and it needs no hotel network.'],
         ['Connect the VPN first, because it gives the laptop its own internet', SETTING, 'A VPN is a tunnel that rides on an internet connection that already works. It cannot make one.'],
         ['Type in a static address from the hotel’s range', STATIC, 'The hotel network is the one that is down. An address from its range gets nowhere.'],
@@ -365,12 +365,12 @@
       reason: 'Cellular is a third kind of connection beside wired and wireless: the laptop reaches the internet through its SIM. Once it is on, the same chain applies. Cellular data is often limited, so marking it metered tells Windows to hold back big downloads.' }),
     item({
       id: 'l14-g-exception', strand: NS,
-      blocks: [chat('Nia, Warehouse', 'n1', 'I installed the scanner program IT gave me. Other computers cannot reach it. A Windows box came up when I started it and I clicked Cancel. Websites and email are fine.')],
+      blocks: [chat('Noah, Warehouse', 'n1', 'I installed the scanner program IT gave me. Other computers cannot reach it. A Windows box came up when I started it and I clicked Cancel. Websites and email are fine.')],
       asks: [ask('What do you do?', [
         ['Add the scanner program as an exception in the Windows firewall, for the network profile in use', true, 'The firewall asked whether to let the program through, and Cancel kept it blocked. An exception for that one program is the single change that fits.'],
         ['Turn the Windows firewall off while the scanner is in use', OPEN, 'That opens every program on the computer. One exception for one program is enough.'],
-        ['Run ipconfig /release and /renew on her computer', NOSPLIT, 'Her address works, since websites and email do. The block is on the program.'],
-        ['Type in a static address for her computer so the scanner keeps one address', STATIC, 'Her address already works, since websites and email do. The block is on the program, not on the address.']])],
+        ['Run ipconfig /release and /renew on their computer', NOSPLIT, 'Their address works, since websites and email do. The block is on the program.'],
+        ['Type in a static address for their computer so the scanner keeps one address', STATIC, 'Their address already works, since websites and email do. The block is on the program, not on the address.']])],
       deciding: ['n1'],
       reason: 'The Windows firewall blocks incoming connections to a program unless an exception lets them through, and its rules are kept for each network profile. Websites and email work, so the chain is fine. Allowing the one program is the narrowest change.' })
   ]);

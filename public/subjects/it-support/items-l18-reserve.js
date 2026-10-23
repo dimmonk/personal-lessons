@@ -23,15 +23,15 @@
         ['Reinstall the call app on the laptop and test the picture again', NOSPLIT, 'The app works on the coworker’s laptop. The cover is on the hardware side of Bea’s laptop.'],
         ['Replace the laptop’s microphone', CAUSE, 'The microphone is not part of the black picture, and nothing points at it.']],
       'The deciding words are a closed cover and a black picture. A privacy cover blocks the lens, so opening it is the cheapest test.'),
-    chat('l18-r-drive', 'mobile-parts', 'Cal, Design',
+    chat('l18-r-drive', 'mobile-parts', 'Amelia, Design',
       'My laptop’s storage is full. The laptop has a small gum-stick shaped card on the board where the drive sits, with no cable, and no 2.5 inch drive bay. I bought a 2.5 inch SSD.',
       'What is the problem?', [
         ['The laptop takes an M.2 drive, which fits that small slot; a 2.5 inch drive has no bay', true, 'M.2 drives are the small gum-stick shape and plug straight into the board. A 2.5 inch drive needs a bay that this laptop does not have.'],
         ['The 2.5 inch drive is right, but the laptop needs a firmware update before it can accept it', WSHAPE, 'Firmware cannot make a bay appear. The drive is the wrong shape.'],
-        ['The M.2 drive is the old kind, and the new 2.5 inch drive was the better choice', LOOK, 'It is the reverse: M.2 is the small stick in Cal’s laptop. The 2.5 inch drive has no place to go.'],
+        ['The M.2 drive is the old kind, and the new 2.5 inch drive was the better choice', LOOK, 'It is the reverse: M.2 is the small stick in Amelia’s laptop. The 2.5 inch drive has no place to go.'],
         ['Nothing is wrong; plug the 2.5 inch drive in through the charger socket', PORT, 'The charger socket carries power into the laptop. It is not a data port for a drive.']],
       'The deciding words are the gum-stick slot with no cable, and no 2.5 inch bay. That is an M.2 slot, and a 2.5 inch drive has nowhere to go.'),
-    chat('l18-r-mic', 'mobile-parts', 'Eli, Training',
+    chat('l18-r-mic', 'mobile-parts', 'Polly, Training',
       'People cannot hear me on calls from my laptop. My headset works on a coworker’s laptop. In the sound settings, the laptop’s built-in microphone shows no movement when I speak.',
       'What is the cheapest test to split the built-in microphone from the call app?', [
         ['Record a few words in the laptop’s sound recorder, which uses no call app', true, 'If the recorder also shows nothing, the microphone or its settings are at fault. If it moves, the call app is.'],
@@ -51,7 +51,7 @@
       'The deciding words are a flat port, wider at the top, one way only. That is micro-USB. USB-C is the reversible oval Nell already holds.'),
     recall('l18-r-point', 'mobile-ports', 'Some laptops have a small rubber nub between the G, H and B letters on the keyboard that moves the pointer. What is it called? Two words.', ['track point', 'trackpoint', 'pointing stick'],
       'A track point, also called a pointing stick, moves the pointer by pressure. The trackpad is the flat touch panel under the keyboard, and a drawing pad is a separate pen tablet.'),
-    chat('l18-r-share', 'mobile-ports', 'Ivo, Field team',
+    chat('l18-r-share', 'mobile-ports', 'Perpetua, Field team',
       'There are four of us in a car park, and none of our laptops or tablets has cellular. One phone has data. We all need to be online for an hour.',
       'What do you turn on at the phone?', [
         ['A hotspot, so the phone becomes a Wi-Fi network that all four can join', true, 'A hotspot makes a Wi-Fi network from the phone’s data. Several devices can join it. USB tethering serves one computer.'],
@@ -61,7 +61,7 @@
       'The deciding words are four devices and one phone with data. A hotspot turns the phone into a Wi-Fi network, so several devices can join it at once.'),
 
     // ----- connections and company management -----
-    chat('l18-r-loc', 'mobile-connect', 'Kai, Delivery',
+    chat('l18-r-loc', 'mobile-connect', 'April, Delivery',
       'The map app on my work phone cannot find where I am. It says location is off. My signal and data are fine. The phone is a company phone and I have not changed anything.',
       'What do you check first?', [
         ['Turn location services on for the phone, and allow them for the map app', true, 'Location services use GPS, with nearby Wi-Fi and cell towers for a rough fix. The app needs them on and permission to use them.'],
@@ -77,9 +77,9 @@
         ['Turn on the hotspot on the new phone, to see if it gets service', SWITCH, 'The hotspot shares a connection that the phone already has. It cannot create service.'],
         ['Reset the new phone to factory settings and put the SIM in again', WIPE, 'A reset erases the new phone and costs more than moving a card back.']],
       'The cheapest cut puts the one SIM into the phone known to work. If the old phone gets service, the SIM is cleared and the new phone is at fault.'),
-    chat('l18-r-pin', 'mobile-connect', 'Omar, Fleet',
+    chat('l18-r-pin', 'mobile-connect', 'Gianna, Fleet',
       'I am pairing my phone with a new car. The phone found the car, and now both screens show a six-digit number. The car asks me to confirm.',
-      'What does Omar do?', [
+      'What does Gianna do?', [
         ['Check that the two numbers match, and then confirm on both screens', true, 'This is the PIN step of pairing. The matching numbers show the two devices are talking to each other and not to a stranger.'],
         ['Cancel and begin again', CAUSE, 'The number is part of pairing. It is the step, not a fault.'],
         ['Turn off Bluetooth on the phone, so that the number goes away', SWITCH, 'That ends the pairing and leaves the car unpaired.'],
@@ -95,7 +95,7 @@
         ['Tell each person that they may update if they have time this month', OPEN, 'Some will not. A flaw that takes over a phone needs a deadline.'],
         ['Turn off the phones’ location services, which removes the flaw', LINK, 'Location services have nothing to do with a flaw in the system software.']],
       'The deciding words are a flaw, a released fix and 200 phones. Patch management installs updates on a deadline, and MDM is the tool that enforces it.'),
-    chat('l18-r-filter', 'mobile-secure', 'Zed, Security',
+    chat('l18-r-filter', 'mobile-secure', 'Antonia, Security',
       'Our staff phones keep opening harmful websites from links in text messages. We want something on the phones that blocks whole categories of sites and also catches malware.',
       'What do you put on the phones?', [
         ['Endpoint security: an anti-malware app with content filtering', true, 'Endpoint security protects the device itself. Anti-malware catches harmful apps and files, and content filtering blocks categories of sites.'],

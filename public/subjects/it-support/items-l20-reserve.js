@@ -17,16 +17,16 @@
   const TL = 'win-tools', CO = 'win-consoles', SE = 'win-settings';
 
   FC.items('it-support', [
-    T('l20-r-defrag', TL, 'Abe, Reception', 'The reception desktop has an old spinning hard drive and it has taken longer and longer to open files over the years. Nothing is wrong with it otherwise.',
+    T('l20-r-defrag', TL, 'Angus, Reception', 'The reception desktop has an old spinning hard drive and it has taken longer and longer to open files over the years. Nothing is wrong with it otherwise.',
       'Which tool tidies how files sit on a spinning drive?', [
         ['Defragment and Optimize Drives (dfrgui), which joins up file pieces', true, 'On a spinning drive, files get broken into pieces over the years and the arm has to jump between them. Optimize Drives puts the pieces back together.'],
         ['Disk Management (diskmgmt.msc), which divides the drive into volumes', TOOL, 'It changes how the drive is divided and cannot tidy the files inside it.'],
         ['Registry Editor (regedit), to remove the old programs’ entries', BLIND, 'Registry entries are tiny and do not slow the drive. A wrong edit risks Windows.'],
         ['Event Viewer (eventvwr.msc), to look for entries from the drive', NOW, 'Nothing has failed. Files being slow to open is a layout matter, and no error is likely to be recorded.']],
       'Defragment and Optimize Drives (dfrgui) answers “are the files spread across a spinning drive?”. Disk Management changes volumes, Disk Cleanup frees space, and neither tidies the pieces.'),
-    T('l20-r-hang', TL, 'Bea, Studio', 'My spreadsheet window has gone white and says “Not responding”. I clicked a lot of times and nothing happened. I have been waiting for five minutes. I saved 10 minutes ago.',
+    T('l20-r-hang', TL, 'Florence, Studio', 'My spreadsheet window has gone white and says “Not responding”. I clicked a lot of times and nothing happened. I have been waiting for five minutes. I saved 10 minutes ago.',
       'What does the technician do?', [
-        ['In Task Manager’s Processes tab, select the spreadsheet and choose End task', true, 'A program that has stopped answering can be ended from the Processes tab. Bea saved 10 minutes ago, so the loss is small, and waiting longer has not helped in five minutes.'],
+        ['In Task Manager’s Processes tab, select the spreadsheet and choose End task', true, 'A program that has stopped answering can be ended from the Processes tab. Florence saved 10 minutes ago, so the loss is small, and waiting longer has not helped in five minutes.'],
         ['In Device Manager, update the keyboard and mouse drivers and try again', TOOL, 'The keyboard and mouse work. One program has stopped answering.'],
         ['In Event Viewer, read the Application log before touching the window', NOW, 'The log can wait and may help afterward. The window is frozen now and Task Manager can end it.'],
         ['In Task Scheduler, create a job that restarts the program every hour', TOOL, 'A timed restart is a different job, and it would not free this frozen window.']],
@@ -34,7 +34,7 @@
     item({
       id: 'l20-r-perf', strand: TL,
       blocks: [
-        chat('Cal, Admin', 'c1', 'The accounts PC freezes while a report builds. I think it needs a faster processor.'),
+        chat('Andre, Admin', 'c1', 'The accounts PC freezes while a report builds. I think it needs a faster processor.'),
         list('b', 'Task Manager, Performance tab, while the report builds', ['Line', 'Value'], [['CPU', '14%'], ['Memory', '6 of 16 GB'], ['Disk', '100%']])],
       asks: [ask('What do the lines show, and what comes next?', [
         ['The disk is the limit; open Resource Monitor’s Disk tab to find the program', true, 'The processor is mostly idle and the disk is at 100%, so the disk is the limit and a faster processor would not help. Resource Monitor names the program.'],
@@ -43,7 +43,7 @@
         ['Nothing is the limit, so the report itself must be broken and should be rebuilt', MISREAD, 'One line at 100% is a limit. The disk is where the wait is.']])],
       deciding: ['c1', 'b1', 'b3'],
       reason: 'The Performance tab shows which part is at its limit, and here it is the disk, not the favorite cause of the processor. The next question is which program, and that is Resource Monitor.' }),
-    T('l20-r-gpedit', CO, 'Dee, Studio', 'The studio PC runs Windows 11 Pro and is stand-alone. The owner wants Windows to lock the screen after 5 minutes of no use, for every user on it, with no way for them to change it.',
+    T('l20-r-gpedit', CO, 'Bridget, Studio', 'The studio PC runs Windows 11 Pro and is stand-alone. The owner wants Windows to lock the screen after 5 minutes of no use, for every user on it, with no way for them to change it.',
       'Where does a rule like this for one computer live?', [
         ['Local Group Policy Editor (gpedit.msc), in the computer’s rules for the lock', true, 'A rule for everyone on the computer that they cannot change is policy. Group policy on a stand-alone PC is edited with gpedit.msc.'],
         ['Task Manager, on the Users tab, signing each person out when they are idle', TOOL, 'The Users tab signs people out by hand. It makes no rule.'],
@@ -57,21 +57,21 @@
         ['Device Manager (devmgmt.msc), which lists the drive and its driver', TOOL, 'It lists the drive as a device and cannot divide it.'],
         ['Resource Monitor (resmon), which shows how the drive is used', TOOL, 'It shows activity. It cannot change how a drive is divided.']],
       'Disk Management is the console for drives, partitions and volumes. Shrink one volume and use the free space for another. Back up first: any change to partitions is risky.'),
-    T('l20-r-touch', CO, 'Gwen, Field team', 'The laptop’s touchpad keeps moving the cursor while I type, and I always use an external mouse. I want the touchpad off, but not removed.',
+    T('l20-r-touch', CO, 'Marvin, Field team', 'The laptop’s touchpad keeps moving the cursor while I type, and I always use an external mouse. I want the touchpad off, but not removed.',
       'Which console can turn a device off without removing it?', [
         ['Device Manager (devmgmt.msc): select the touchpad and choose Disable device', true, 'Device Manager lists the touchpad as a device and can disable it with one click, and enable it again later. One change, with a way back.'],
         ['Disk Management (diskmgmt.msc), by taking the touchpad offline', TOOL, 'Disk Management is for drives. A touchpad is not a drive.'],
-        ['Local Users and Groups (lusrmgr.msc), by removing Gwen from the group', TOOL, 'Groups decide what an account may do. The touchpad is hardware.'],
+        ['Local Users and Groups (lusrmgr.msc), by removing Marvin from the group', TOOL, 'Groups decide what an account may do. The touchpad is hardware.'],
         ['Certificate Manager (certmgr.msc), by revoking its certificate', TOOL, 'A touchpad has no certificate to revoke. Certificates are for sites and programs.']],
       'Device Manager lists the computer’s devices and can disable and enable them, update or roll back their drivers and show a warning. It is the console for hardware.'),
-    T('l20-r-ie', SE, 'Ray, Branch', 'Our old intranet site only works through the company’s proxy (a server that the browser goes through to reach sites). Pages time out. The desk’s guide says the proxy address has to be entered in Control Panel.',
+    T('l20-r-ie', SE, 'Roman, Branch', 'Our old intranet site only works through the company’s proxy (a server that the browser goes through to reach sites). Pages time out. The desk’s guide says the proxy address has to be entered in Control Panel.',
       'Which Control Panel area holds the proxy and browser security choices?', [
         ['Internet Options, with the proxy on Connections and zones on Security', true, 'Internet Options holds the browser-level choices: proxy, security zones, the home page and the privacy and advanced choices.'],
         ['Network and Sharing Center, which lists the computer’s connections', AREA, 'It shows connections and adapters. The proxy belongs to the browser settings.'],
         ['Windows Defender Firewall, which allows or blocks apps through the network', AREA, 'The firewall allows or blocks traffic. It has no field for a proxy address.'],
         ['Programs and Features, which uninstalls browsers', AREA, 'It adds or removes programs. The proxy is a setting, not a program.']],
       'Internet Options is the Control Panel area for browser choices: the proxy on the Connections tab and the security zones on the Security tab.'),
-    T('l20-r-fw', SE, 'Ivo, Sales', 'We installed a new chat program. It works on my laptop, but others on the office network cannot connect to the shared feature on my machine. Windows asked me to allow it and I clicked Cancel.',
+    T('l20-r-fw', SE, 'Bernard, Sales', 'We installed a new chat program. It works on my laptop, but others on the office network cannot connect to the shared feature on my machine. Windows asked me to allow it and I clicked Cancel.',
       'Where is an app allowed through the firewall?', [
         ['Windows Defender Firewall, “Allow an app or feature”, then tick the program', true, 'The firewall blocks incoming traffic for programs not allowed. The allow-list is in Windows Defender Firewall, and the program can be ticked there.'],
         ['Network and Sharing Center, then turning off sharing for the network', AREA, 'That area changes sharing and adapters. The program is blocked by the firewall.'],

@@ -210,8 +210,9 @@ const attempt = (run, context, ok, extra = {}) => ({ run, lesson: 'l1', rev: 1, 
   a.on('2026-10-01');
   const draw = d.lessons.l3.check.items.draw;
   const keys = run => a.drawInstances(d, 'interview', draw, run, [], 'l3').map(i => i.key);
-  const first = keys('m1');
+  const first = keys('m1'), groupA = draw[0].strands;
   check(first.length === 5 && new Set(first).size === 5, 'a mock interview holds five different questions');
+  check(Array.from({ length: 12 }, (_, k) => keys(`g${k}`)).every(list => list.filter(k => groupA.includes(k)).length === 3), 'and exactly the n of each group: three from the first, so two from the second');
   same(keys('m1'), first, 'the same run draws the same questions');
   check(new Set(Array.from({ length: 12 }, (_, k) => keys(`m${k}`).slice().sort().join())).size > 4, 'different runs draw different questions');
   check(first.every(k => !['senator', 'governor', 'capital'].includes(k)) && Array.from({ length: 12 }, (_, k) => keys(`m${k}`)).every(list => list.every(k => !['senator', 'governor', 'capital'].includes(k))),
@@ -368,8 +369,8 @@ const attempt = (run, context, ok, extra = {}) => ({ run, lesson: 'l1', rev: 1, 
   // lesson 16: the mock interview, drawn from all 128, read aloud, 16 of 20, again a week later; the answers that change are checked first
   {
     const l16 = civics.lessons.l16, draw = l16.check.items.draw;
-    same([...draw.strands].sort(), list.questions.map(q => `q${q.n}`).sort(), 'lesson 16 draws from every question of the list');
-    check(draw.n === 20 && l16.check.spoken === true && l16.check.retest === 7 && l16.check.feedback === 'at-end' && l16.check.pass[0].right.min === 16, 'lesson 16: 20 questions read aloud, 16 to pass, a second mock a week later');
+    same(draw.flatMap(g => g.strands).sort(), list.questions.map(q => `q${q.n}`).sort(), 'lesson 16 draws from every question of the list');
+    check(draw.length === 1 && draw[0].n === 20 && l16.check.spoken === true && l16.check.retest === 7 && l16.check.feedback === 'at-end' && l16.check.pass[0].right.min === 16, 'lesson 16: 20 questions read aloud, 16 to pass, a second mock a week later');
     check(!l16.flow.some(s => s.own) && l16.flow.some(s => s.show && s.show.some(b => b.kind === 'ref' && b.ref === 'updates')), 'lesson 16: the answers that change are checked on the page that posts them, and nothing holds the learner back from the mock');
     check(app.homeLessonOf(civics, 'q93').id === 'l12' && app.homeLessonOf(civics, 'q1').id === 'l9' && app.homeLessonOf(civics, 'q128').id === 'l15', 'a question missed in the mock names the lesson whose check holds it');
   }

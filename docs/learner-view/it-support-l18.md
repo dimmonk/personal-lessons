@@ -1,6 +1,6 @@
 # IT Help Desk: Phones, tablets and laptops
 
-Revision 1, draft (the screen carries the draft line). Part: Phones, tablets and laptops. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Phones, tablets and laptops. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -141,9 +141,9 @@ Then the answer: The earbuds work, so the fault is on Ana’s phone side of the 
 
 #### Item 1
 
-A chat, with its history: "Dev, Finance", Chat with the help desk.
+A chat, with its history: "Delia, Finance", Chat with the help desk.
 
-> (Dev, Finance, at the left) **You are adding memory to a laptop. It is switched off, the charger is in the wall and the battery is inside the laptop. The memory sticks are small ones that sit under a cover on the bottom.**
+> (Delia, Finance, at the left) **You are adding memory to a laptop. It is switched off, the charger is in the wall and the battery is inside the laptop. The memory sticks are small ones that sit under a cover on the bottom.**
 
 Help on screen: the words that decide it are marked.
 
@@ -158,13 +158,13 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 2
 
-A chat, with its history: "Gina, Marketing", Chat with the help desk.
+A chat, with its history: "Yaw, Marketing", Chat with the help desk.
 
-> (Gina, Marketing, at the left) **I need a charging cable for my new Android phone. The port is a small oval, and the plug goes in whichever way up I hold it. It is not an Apple phone.**
+> (Yaw, Marketing, at the left) **I need a charging cable for my new Android phone. The port is a small oval, and the plug goes in whichever way up I hold it. It is not an Apple phone.**
 
 Help on screen: the words that decide it are marked.
 
-**Which cable do you tell Gina to buy?**
+**Which cable do you tell Yaw to buy?**
 (the options come in an order that depends on the seed of the question)
 - USB-C (right)
 - Micro-USB — if chosen: Micro-USB is a flat, wider shape and goes in one way only. It is on older phones.
@@ -192,13 +192,13 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 4
 
-A chat, with its history: "Hal, Service manager", Chat with the help desk.
+A chat, with its history: "Leonard, Service manager", Chat with the help desk.
 
-> (Hal, Service manager, at the left) **My phone holds customer lists and my work email. Right now it unlocks with a swipe. A technician told me to pick a better screen lock.**
+> (Leonard, Service manager, at the left) **My phone holds customer lists and my work email. Right now it unlocks with a swipe. A technician told me to pick a better screen lock.**
 
 Help on screen: the words that decide it are marked.
 
-**Which screen lock do you tell Hal to choose?**
+**Which screen lock do you tell Leonard to choose?**
 (the options come in an order that depends on the seed of the question)
 - A six-digit PIN, with a fingerprint as a shortcut (right)
 - Keep the swipe, but add a picture as the lock screen so it is yours — if chosen: A picture changes how the screen looks, not who can open it.
@@ -234,9 +234,9 @@ After the answer: the deciding words are marked. Reason: It worked before the sc
 
 #### Item 6
 
-A chat, with its history: "Fran, Support", Chat with the help desk.
+A chat, with its history: "Charlie, Support", Chat with the help desk.
 
-> (Fran, Support, at the left) Four letters on my laptop’s keyboard have stopped working since I spilled coffee on it. I shut it down and unplugged it at once and left it to dry overnight. It starts today and everything else works.
+> (Charlie, Support, at the left) Four letters on my laptop’s keyboard have stopped working since I spilled coffee on it. I shut it down and unplugged it at once and left it to dry overnight. It starts today and everything else works.
 
 **What is the cheapest test to see whether the keyboard itself is the fault?**
 (the options come in an order that depends on the seed of the question)
@@ -264,9 +264,9 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 8
 
-A chat, with its history: "Dana, Design", Chat with the help desk.
+A chat, with its history: "Camilo, Design", Chat with the help desk.
 
-> (Dana, Design, at the left) I come in with my laptop and want one connection to give it power, two monitors, a wired network, and a slot for an extra drive. A friend said to get a port replicator.
+> (Camilo, Design, at the left) I come in with my laptop and want one connection to give it power, two monitors, a wired network, and a slot for an extra drive. A friend said to get a port replicator.
 
 **What do you recommend, and why?**
 (the options come in an order that depends on the seed of the question)
@@ -279,13 +279,13 @@ After the answer: the deciding words are marked. Reason: The slot for an extra d
 
 #### Item 9
 
-A chat, with its history: "Ines, HR", Chat with the help desk.
+A chat, with its history: "Dawn, HR", Chat with the help desk.
 
-> (Ines, HR, at the left) I changed my company password on Monday. Since then my phone shows no new mail, and the calendar is stuck. A banner says I must sign in again. The phone has full signal and Wi-Fi.
+> (Dawn, HR, at the left) I changed my company password on Monday. Since then my phone shows no new mail, and the calendar is stuck. A banner says I must sign in again. The phone has full signal and Wi-Fi.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Have Ines sign in again with the new password in the phone’s mail account (right)
+- Have Dawn sign in again with the new password in the phone’s mail account (right)
 - Turn on airplane mode for a minute, and then turn it off again — if chosen: Airplane mode restarts the radios. The radios work: signal and Wi-Fi are full.
 - Erase the phone and configure the work account again from the start — if chosen: That is the heaviest step and loses the local data. The banner points at one password.
 - Put the SIM card into a different phone to see if mail arrives there — if chosen: The mail does not depend on the SIM. It depends on the account being signed in.
@@ -294,9 +294,9 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 10
 
-A chat, with its history: "Tom, Sales rep", Chat with the help desk.
+A chat, with its history: "Jolene, Sales rep", Chat with the help desk.
 
-> (Tom, Sales rep, at the left) My phone plan has a 10 GB limit. By the 12th I have used 9 GB. The data list says 7 GB of it is my photos syncing to cloud storage.
+> (Jolene, Sales rep, at the left) My phone plan has a 10 GB limit. By the 12th I have used 9 GB. The data list says 7 GB of it is my photos syncing to cloud storage.
 
 **What do you change?**
 (the options come in an order that depends on the seed of the question)
@@ -386,9 +386,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 16
 
-A chat, with its history: "Pete, Operations", Chat with the help desk.
+A chat, with its history: "Giulia, Operations", Chat with the help desk.
 
-> (Pete, Operations, at the left) Marco is leaving the company today. Marco reads work mail on a personal phone, which the company manages only for the work apps; the company can remove those apps and their data and nothing else. Family photos are on it too.
+> (Giulia, Operations, at the left) Marco is leaving the company today. Marco reads work mail on a personal phone, which the company manages only for the work apps; the company can remove those apps and their data and nothing else. Family photos are on it too.
 
 **What do you do to the phone?**
 (the options come in an order that depends on the seed of the question)
@@ -422,10 +422,10 @@ A chat, with its history: "Cleo, Front desk", Chat with the help desk.
 
 **What do you tell Cleo?**
 (the options come in an order that depends on the seed of the question)
-- Wait for the timer, then enter the right PIN; more guesses add time (right)
-- Keep entering PINs until the timer clears — if chosen: A wrong try adds to the count and lengthens the wait. A policy may even erase the phone at a fixed limit.
-- Restart the phone to clear the lock — if chosen: A restart does not clear a log-in lock. The timer and the count stay.
-- Hand the phone to the desk to be wiped — if chosen: A wipe erases the phone. The lock clears by itself in an hour, and Cleo knows the PIN.
+- Wait for the timer, then enter the right PIN (right)
+- Keep entering PINs until the timer clears and the phone opens — if chosen: A wrong try adds to the count and lengthens the wait. A policy may even erase the phone at a fixed limit.
+- Restart the phone to clear the lock and the timer — if chosen: A restart does not clear a log-in lock. The timer and the count stay.
+- Hand the phone to the desk to be wiped and configured again — if chosen: A wipe erases the phone. The lock clears by itself in an hour, and Cleo knows the PIN.
 
 After the answer: the deciding words are marked. Reason: The deciding words are try again in one hour and I know my PIN. A failed-log-in limit slows or erases after too many wrong tries, so waiting and entering the right PIN is the cheap, safe step.
 
@@ -468,15 +468,15 @@ After the answer: the deciding words are marked. Reason: Three settings fall sho
 
 #### Item 20
 
-A chat, with its history: "Jo, Facilities", Chat with the help desk.
+A chat, with its history: "Gerald, Facilities", Chat with the help desk.
 
-> (Jo, Facilities, at the left) I bought memory for my laptop from the computer shop, and the sticks were long, like the ones in the office tower computers. I opened the laptop cover and the slot is much shorter.
+> (Gerald, Facilities, at the left) I bought memory for my laptop from the computer shop, and the sticks were long, like the ones in the office tower computers. I opened the laptop cover and the slot is much shorter.
 
-**What did Jo buy, and what does the laptop need?**
+**What did Gerald buy, and what does the laptop need?**
 (the options come in an order that depends on the seed of the question)
 - Tower memory (DIMM); a laptop needs the shorter SODIMM kind instead (right)
 - The right memory, but the laptop slot is faulty and must be replaced — if chosen: The slot is made short on purpose. The sticks are the wrong shape.
-- Laptop memory sticks (SODIMM); the tower needs the longer DIMM kind — if chosen: It is the other way round. The long sticks Jo holds are DIMM, for towers.
+- Laptop memory sticks (SODIMM); the tower needs the longer DIMM kind — if chosen: It is the other way round. The long sticks Gerald holds are DIMM, for towers.
 - Memory sticks that need only a firmware update before they will fit — if chosen: Firmware settings cannot change a stick’s length. The shape decides whether it fits.
 
 After the answer: the deciding words are marked. Reason: Long sticks like those in a tower are DIMM. A laptop takes the shorter SODIMM. The shape of the part decides what fits, whatever the settings.
@@ -514,9 +514,9 @@ To pass:
 
 #### Check question 23
 
-A chat, with its history: "Lena, Planning", Chat with the help desk.
+A chat, with its history: "Edith, Planning", Chat with the help desk.
 
-> (Lena, Planning, at the left) My laptop shuts off about ten minutes after I unplug it. The battery screen says the battery is worn. The charger works and the laptop runs fine plugged in. The battery is inside the case.
+> (Edith, Planning, at the left) My laptop shuts off about ten minutes after I unplug it. The battery screen says the battery is worn. The charger works and the laptop runs fine plugged in. The battery is inside the case.
 
 **What is the right step?**
 (the options come in an order that depends on the seed of the question)
@@ -540,9 +540,9 @@ After the answer: Reason: Lightning is Apple’s own connector. Newer iPhones an
 
 #### Check question 25
 
-A chat, with its history: "Sid, Warehouse", Chat with the help desk.
+A chat, with its history: "Myra, Warehouse", Chat with the help desk.
 
-> (Sid, Warehouse, at the left) My phone shows Wi-Fi and the cellular bars gone, and the Bluetooth speaker is off, too. The little plane icon is lit. I have not touched any setting.
+> (Myra, Warehouse, at the left) My phone shows Wi-Fi and the cellular bars gone, and the Bluetooth speaker is off, too. The little plane icon is lit. I have not touched any setting.
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
@@ -585,10 +585,10 @@ A chat, with its history: "Ray, Sales", Chat with the help desk.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Confirm it is Ray with the desk’s identity check, queue a selective wipe of the work data, change the password (right)
-- Wipe the whole phone — if chosen: This is a personal phone. The company has no claim on Ray’s own data.
-- Do nothing for now and wait for the phone to turn up — if chosen: It may be pulled out and dried. The work mail must be removed from it either way.
-- Mark it lost, wait a week for it to be found, and then see what is possible — if chosen: A phone in a lake will not be found by a locator, and a week leaves the mail open.
+- Check Ray by the desk’s own check, queue a selective wipe of work data, change the password (right)
+- Check the serial number Ray reads out, then wipe the whole phone when it next connects — if chosen: This is a personal phone, so the company has no claim on Ray’s own data. A number the caller supplies also proves nothing about who is calling.
+- Take the caller’s word that it is Ray, queue a selective wipe of work data, change the password — if chosen: The wipe and the password are the right moves, but the caller must be confirmed by something the caller did not supply.
+- Mark it lost, wait a week to see whether it is found, and then decide what is possible — if chosen: A phone in a lake will not be found by a locator, and a week leaves the mail open.
 
 After the answer: the deciding words are marked. Reason: The deciding words are a personal phone and managed work mail only. After the identity check, a selective wipe takes the work data when the phone is next online, and a changed password closes the account at once.
 

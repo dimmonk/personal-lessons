@@ -5,10 +5,10 @@
 // the lesson says so). Rulings 6 and 8 of rulings-l1-8.md. One worked ticket; a first group with the deciding words marked; a second with none; a third that mixes in lesson 7;
 // a check of five new calls and chats, no help.
 FC.lesson("it-support", {
-  id: "l8", part: "upset", title: "When the user is upset", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: do not argue, dismiss or judge; say what happens next and when; explain plainly; follow up at the time you gave." }],
+  id: "l8", part: "upset", title: "When the user is upset", rev: 2, status: "live",
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: do not argue, dismiss or judge; say what happens next and when; explain plainly; follow up at the time you gave." }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    "Rui writes: this is the third time this week his laptop has locked him out, nobody there knows what they are doing, and he has a client call at 2. Almost anything you could say first makes it worse: the earlier tickets were closed because he did not answer, or it is probably nothing.",
+    "Rui writes: this is the third time this week their laptop has locked them out, nobody there knows what they are doing, and they have a client call at 2. Almost anything you could say first makes it worse: the earlier tickets were closed because they did not answer, or it is probably nothing.",
     "You learn here what to say in the first minute with an upset user: show you heard them, say what happens next and when, and keep the time you gave, without promising a result you do not control."
   ],
   flow: [

@@ -1,10 +1,10 @@
 # IT Help Desk: Malware and attacks
 
-Revision 1, draft (the screen carries the draft line). Part: Malware and attacks. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Malware and attacks. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-At 9:05 a user writes that every file in her Documents folder now ends in .locked and a note wants $800. At 9:20 another says a man from “the bank” phoned and wants the code just texted to him. At 9:40 a third says his laptop is slow and the fan never stops. Each ticket gives you only a sign.
+At 9:05 a user writes that every file in their Documents folder now ends in .locked and a note wants $800. At 9:20 another says a man from “the bank” phoned and wants the code just texted to them. At 9:40 a third says their laptop is slow and the fan never stops. Each ticket gives you only a sign.
 Here you learn to work back from the sign to the kind of malware or attack, to run the ten steps that clean a computer in the order that keeps each step safe, and to wipe drives and configure browsers safely.
 
 ## Step 1: From the way in to the sign
@@ -42,6 +42,7 @@ A plain table, "What each one does":
 > XDR  |  The same across computers, email, network and cloud
 > User education  |  Teaches people to spot phishing before they click
 > Recovery environment  |  A small Windows to start from, so a scan runs from outside the infected one
+> Safe mode  |  Windows started with only what it needs, so most malware does not run while the scan works
 > Reinstalling the system  |  The last resort when it cannot be trusted
 
 ## Step 4: Tricking the person: social engineering
@@ -91,7 +92,7 @@ A plain table, "The sign, the usual cause, the cheapest test":
 > No network, others fine  |  Malware changed network settings, such as a proxy  |  Does a phone on the same network work?
 > Desktop alert: “You are infected”  |  A false antivirus alert from a web page  |  Does it come from the desk’s security program?
 > Files renamed, missing or locked  |  Ransomware or other malware  |  Look for a note; check the backup
-> Unwanted Windows notifications  |  A site the user allowed to send them  |  Which site? See the browser’s notification settings
+> Unwanted Windows notifications  |  Often a site the user allowed to send them  |  Which site? See the browser’s notification settings
 > Windows will not update  |  Malware blocking updates, or a plain failure  |  Do other PCs update?
 > Pop-ups on every page  |  Adware or a bad extension  |  Same in another browser?
 > A certificate warning  |  A fake site, someone on the path, or the PC’s clock  |  Every site, or one? Check the clock
@@ -100,35 +101,39 @@ A plain table, "The sign, the usual cause, the cheapest test":
 
 ## Step 7: The ten steps of malware removal, and why each sits where it does
 
+System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on.
+
 A plain table, "Contain it (1 to 4), clean it (5 to 7), keep it clean (8 to 10)":
 
 > Step  |  Why it sits here  (the column heads)
 > 1. Investigate and verify the symptoms  |  Be sure it is malware before you disrupt the user
 > 2. Quarantine the infected computer  |  Cut it off so it cannot spread or send data out
-> 3. Disable System Restore (Windows Home)  |  Old restore points may hold the malware; a scan cannot clean them
-> 4. Remediate the infected systems  |  Contained, so start the cleanup; steps 5 to 7 are how
+> 3. Disable System Restore  |  Old restore points may hold the malware; the usual reason given is that a scan cannot clean them
+> 4. Remediate the infected systems  |  Contained, so start the cleanup; steps 5 to 7 are how it is done
 > 5. Update the anti-malware software  |  A scanner only knows what it has been taught
 > 6. Scan and remove (safe mode, preinstallation environment)  |  Safe mode loads only what Windows needs; the preinstallation environment is a small Windows started from outside
-> 7. Reimage or reinstall  |  If the scan cannot clear it, put back a clean copy
+> 7. Reimage or reinstall  |  If the scan cannot clear it, put back a clean copy, once the user’s files are saved
 > 8. Schedule scans and run updates  |  Worth setting only once it is clean
 > 9. Enable System Restore and create a restore point  |  After the cleanup, so the saved state is clean
 > 10. Educate the end user  |  Last: the computer is safe, and the way in can be shown
 
 ## Step 8: Wiping and destroying drives
 
-A plain table, "Eight ways to deal with a drive":
+A plain table, "Ways to deal with a drive":
 
 > Method  |  What it does  |  Use it when  (the column heads)
 > Wipe (erase)  |  Overwrites all of the drive  |  It will be reused or given away
-> Low-level format  |  Writes over the whole drive  |  It will be reused
-> Standard format  |  Clears the list of files; data often recoverable  |  Never alone, when data matters
+> Low-level format (the A+ name)  |  A tool writes over every part of the drive  |  It will be reused
+> Quick (standard) format, Windows format /q or diskpart clean  |  Removes the way to find the files, not the files: the data can be recovered  |  Never alone, when data matters
+> Full format, Windows format without /q  |  Writes zeros over the whole drive  |  A hard drive that will be reused
+> Secure erase  |  The maker’s own erase command on an SSD; an overwrite can miss spare areas of the chips  |  An SSD that will be reused; if not, shred it
 > Drilling  |  Holes through the platters  |  It will not be reused
 > Shredding  |  A machine cuts the drive to pieces  |  It will not be reused
 > Degaussing  |  A strong magnet scrambles magnetic drives and tapes  |  Hard drives and tapes only, never SSDs
 > Incineration  |  Burning the drive  |  It will not be reused
 > Third-party vendor  |  Destroys or recycles for you and gives a certificate of destruction  |  You need proof, or have many drives
 
-Laws on health, money and customer records say how data must be destroyed, and environmental rules keep electronics out of the ordinary trash.
+A drive that leaves the company is wiped with a full overwrite, or destroyed. Laws on health, money and customer records say how data must be destroyed, and environmental rules keep electronics out of the ordinary trash.
 
 ## Step 9: Browser security settings
 
@@ -151,44 +156,44 @@ A plain table, "Twelve settings and what each is for":
 ## Step 10: Deleting the one file the alert names
 
 A wrong idea, marked wrong: “The alert names a file. Delete it, run a quick scan while the laptop stays online, and close the ticket.”
-The right line: This skips the first four steps. Nobody verified the alert, which may be fake. The laptop stays on the network, so malware can spread. A scan with System Restore on can miss copies in old restore points. The ticket closes before the user confirms. Work the ten steps in order.
+The right line: This skips the first four steps. Nobody verified the alert, which may be fake. The laptop stays on the network, so malware can spread. A scan with System Restore on can miss copies in old restore points, the usual reason given. The ticket closes before the user confirms. Work the ten steps in order.
 
 ## Step 11: A worked example
 
-A chat, with its history: "Priya, Accounting", Chat with the help desk.
+A chat, with its history: "Rory, Accounting", Chat with the help desk.
 
-> (Priya, Accounting, at the left) My laptop has crawled since Monday. The fan roars even when nothing is open and the battery dies in an hour. I put a free PDF converter on it last week, but that cannot matter.
+> (Rory, Accounting, at the left) My laptop has crawled since Monday. The fan roars even when nothing is open and the battery dies in an hour. I put a free PDF converter on it last week, but that cannot matter.
 
-A plain table, "Task Manager while Priya has nothing open":
+A plain table, "Task Manager while Rory has nothing open":
 
 > Program  |  Processor  |  Memory  (the column heads)
 > pdfconv-helper.exe  |  91%  |  120 MB
 > Chrome  |  4%  |  310 MB
 > All programs together  |  98%  |  38% of memory in use
 
-From the ticket record: last night’s backup of Priya’s laptop finished without errors. She has Windows Home.
+From the ticket record: last night’s backup of Rory’s laptop finished without errors.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
 **What does Task Manager show?**
 (the options come in an order that depends on the seed of the question)
-- One unknown program uses almost all the processor while memory is mostly free
-- The laptop is old, so more memory and a new drive are the cure
+- One unknown program uses almost all the processor; memory is mostly free
+- The laptop is old, so more memory and a new drive are the cure for the slowness
 - Chrome is the problem, so remove it and install it again
 - The numbers are normal, because no single program is at 100%
 
 The working, one step at a time:
 1. Write down every cause that fits “slow, hot, short battery, nothing open”.: Too little memory; a failing drive; Windows busy updating; a program using the processor; malware.
-1. Test the favorite cause with the cheapest check.: Priya thinks the laptop is just old. Task Manager takes seconds and changes nothing: memory is 38% in use, so memory is not the limit. One program, pdfconv-helper.exe, takes 91%.
-1. Work back from the signs to the kind.: A helper that came with a free converter is a Trojan: it looks useful and lets something else in. A busy processor, a loud fan and a short battery with nothing open are the signs of a cryptominer, which earns cryptocurrency for someone else on Priya’s power.
+1. Test the favorite cause with the cheapest check.: Rory thinks the laptop is just old. Task Manager takes seconds and changes nothing: memory is 38% in use, so memory is not the limit. One program, pdfconv-helper.exe, takes 91%.
+1. Work back from the signs to the kind.: A helper that came with a free converter is most likely a Trojan: it looks useful and lets something else in. The scan will confirm it. A busy processor, a loud fan and a short battery with nothing open are the signs of a cryptominer, which earns cryptocurrency for someone else on Rory’s power.
 1. Step 1: verify the symptoms.: Check where the file sits and that no Windows update explains the load. Nothing is deleted yet.
-1. Step 2: quarantine.: Her backup is from last night, so her files are safe. Take the laptop off the network: a miner reports to its owner and can spread, and cutting it off stops both.
-1. Step 3: disable System Restore.: She has Windows Home. Turning System Restore off clears the old restore points, which could hold a copy of the miner that a scan cannot clean.
-1. Steps 4 to 6: remediate, update, scan.: Fetch the newest anti-malware update on a clean computer and carry it over on a USB stick. Then scan in safe mode, where Windows loads only what it needs, so the miner does not run.
+1. Step 2: quarantine.: Rory’s backup is from last night, so Rory’s files are safe. Take the laptop off the network: a miner reports to its owner and can spread, and cutting it off stops both.
+1. Step 3: disable System Restore.: Turning System Restore off clears the old restore points, which could hold a copy of the miner that a scan, the usual reason given, cannot clean.
+1. Steps 4 to 6: remediate, update, scan.: Fetch the newest anti-malware update on a clean computer and bring it over on a USB stick that is scanned afterwards. Then scan in safe mode, where Windows loads only what it needs, so the miner does not run.
 1. Step 7: reimage, only if the scan fails.: Here the scan removes the helper and the miner. Had it kept coming back, you would erase the laptop and put back a clean image.
-1. Steps 8 to 10: keep it clean.: Schedule scans and run updates. Turn System Restore on and create a restore point of the clean laptop. Then show Priya how to download from the maker’s own site and check the hash.
-1. Confirm, write it up, then close.: Priya confirms the fan is quiet and the battery lasts. Write the note: the converter as the way in, the miner, the steps taken. Then close.
+1. Steps 8 to 10: keep it clean.: Schedule scans and run updates. Turn System Restore on and create a restore point of the clean laptop. Then show Rory how to download from the maker’s own site and check the hash.
+1. Confirm, write it up, then close.: Rory confirms the fan is quiet and the battery lasts. Write the note: the converter as the way in, the miner, the steps taken. Then close.
 
-Then the answer: One unknown program uses almost all the processor while memory is mostly free. A ticket gives a sign, not a name. Task Manager ruled out memory and showed one unknown program using the processor, which with the loud fan and short battery points to a cryptominer that came in with a Trojan. The ten steps then run in order: contain it, clean it, keep it clean.
+Then the answer: One unknown program uses almost all the processor; memory is mostly free. A ticket gives a sign, not a name. Task Manager ruled out memory and showed one unknown program using the processor, which with the loud fan and short battery points to a cryptominer that came in with a Trojan. The ten steps then run in order: contain it, clean it, keep it clean.
 
 ## Step 12: Questions
 
@@ -196,9 +201,9 @@ Then the answer: One unknown program uses almost all the processor while memory 
 
 #### Item 1
 
-A chat, with its history: "Dan, Operations", Chat with the help desk.
+A chat, with its history: "Hector, Operations", Chat with the help desk.
 
-> (Dan, Operations, at the left) **Every file in my Documents folder now ends in .locked and none will open. A note on the screen says I must pay $800 in cryptocurrency within three days to get a key.**
+> (Hector, Operations, at the left) **Every file in my Documents folder now ends in .locked and none will open. A note on the screen says I must pay $800 in cryptocurrency within three days to get a key.**
 
 Help on screen: the words that decide it are marked.
 
@@ -213,9 +218,9 @@ After the answer: the deciding words are marked. Reason: Files renamed and locke
 
 #### Item 2
 
-A chat, with its history: "Mara, HR", Chat with the help desk.
+A chat, with its history: "Bryan, HR", Chat with the help desk.
 
-> (Mara, HR, at the left) **A text message came to my work phone: “Your parcel is held, pay a $1.99 fee at this link.” I never ordered anything. The link looks odd.**
+> (Bryan, HR, at the left) **A text message came to my work phone: “Your parcel is held, pay a $1.99 fee at this link.” I never ordered anything. The link looks odd.**
 
 Help on screen: the words that decide it are marked.
 
@@ -230,16 +235,16 @@ After the answer: the deciding words are marked. Reason: A fake message sent by 
 
 #### Item 3
 
-A chat, with its history: "Ola, Sales", Chat with the help desk.
+A chat, with its history: "Katrina, Sales", Chat with the help desk.
 
-> (Ola, Sales, at the left) **A window popped up on my laptop saying “Your PC is infected, call this number now.” It will not close. My files all open fine and the laptop runs normally.**
+> (Katrina, Sales, at the left) **A window popped up on my laptop saying “Your PC is infected, call this number now.” It will not close. My files all open fine and the laptop runs normally.**
 
 Help on screen: the words that decide it are marked.
 
 **Which of the ten steps comes first?**
 (the options come in an order that depends on the seed of the question)
-- Investigate and verify the symptoms: find out whether the alert is real (right)
-- Quarantine the laptop by taking it off the network — if chosen: Quarantine is step 2. The laptop runs normally and the alert may be a fake one, so verify first.
+- Investigate and verify the symptoms: is the alert real? (right)
+- Quarantine the laptop by taking it off the network right away — if chosen: Quarantine is step 2. The laptop runs normally and the alert may be a fake one, so verify first.
 - Scan the laptop in safe mode and remove whatever it finds — if chosen: Scanning is step 6. It comes after the symptoms are verified and the laptop is contained.
 - Call the number on the window so the caller can fix it — if chosen: The window did not come from a security program the desk installed. Calling the number hands the problem to the people who made the alert.
 
@@ -247,20 +252,20 @@ After the answer: the deciding words are marked. Reason: The first step is to in
 
 #### Item 4
 
-A chat, with its history: "Lena, Office manager", Chat with the help desk.
+A chat, with its history: "Ella, Office manager", Chat with the help desk.
 
-> (Lena, Office manager, at the left) **We are giving twenty old laptops to a local school. Their drives hold staff files. The laptops work and the school needs them to run.**
+> (Ella, Office manager, at the left) **We are giving twenty old laptops to a local school. Their hard drives hold staff files. The laptops work and the school needs them to run.**
 
 Help on screen: the words that decide it are marked.
 
 **How should the drives be cleared?**
 (the options come in an order that depends on the seed of the question)
 - Wipe each drive, overwriting all of it so the old data cannot be read back (right)
-- Standard-format each drive, which clears the list of files but not the data — if chosen: A standard format clears the list of files and leaves the data on the drive, where it can often be recovered.
+- Quick-format each drive, which clears the list of files but not the data — if chosen: A quick (standard) format removes the way to find the files and leaves the data on the drive, where it can be recovered.
 - Shred each drive, cutting it into small pieces — if chosen: Shredding ruins the drive, and the school needs working laptops.
 - Degauss each drive with a strong magnet — if chosen: Degaussing makes a drive unusable, and the school needs working laptops.
 
-After the answer: the deciding words are marked. Reason: The laptops are to be reused, so the drives must work and the data must be unreadable. A wipe does both. A standard format leaves the data; shredding and degaussing ruin the drive.
+After the answer: the deciding words are marked. Reason: The laptops are to be reused, so the drives must work and the data must be unreadable. A wipe does both, and so does a full format, which writes zeros. A quick format leaves the data; shredding and degaussing ruin the drive.
 
 #### Item 5
 
@@ -289,12 +294,12 @@ Then a screen: you can stop here, your place is kept.
 
 A chat, with its history: "Reggie, Security desk", Chat with the help desk.
 
-> (Reggie, Security desk, at the left) The camera shows a man without a badge walking into the server area right behind Ana, who held the door open for him because his hands were full. He said nothing.
+> (Reggie, Security desk, at the left) The camera shows a man without a badge walking into the server area right behind Brooke, just before the door shut. Brooke did not notice them, and they said nothing.
 
 **What is this called?**
 (the options come in an order that depends on the seed of the question)
 - Tailgating, following an authorized person through a door (right)
-- Impersonation, pretending to be someone with a right to be there — if chosen: He said nothing and pretended nothing. He just came in behind her.
+- Impersonation, pretending to be someone with a right to be there — if chosen: The man said nothing and pretended nothing. They just came in behind Brooke.
 - Shoulder surfing, watching someone type or read a screen — if chosen: Shoulder surfing is watching a screen or keyboard. Nobody was watching one here.
 - Dumpster diving, searching the trash for papers with information — if chosen: Nothing was taken from the trash. A person walked through a door.
 
@@ -302,9 +307,9 @@ After the answer: the deciding words are marked. Reason: Following an authorized
 
 #### Item 7
 
-A chat, with its history: "Tessa, Accounts Payable", Chat with the help desk.
+A chat, with its history: "Melanie, Accounts Payable", Chat with the help desk.
 
-> (Tessa, Accounts Payable, at the left) An email from our usual supplier’s accounts address says their bank has changed and asks us to pay today’s invoice to a new account. We later found out a crook had taken over that mailbox.
+> (Melanie, Accounts Payable, at the left) An email from our usual supplier’s accounts address says their bank has changed and asks us to pay today’s invoice to a new account. We later found out a crook had taken over that mailbox.
 
 **What is this attack called?**
 (the options come in an order that depends on the seed of the question)
@@ -317,9 +322,9 @@ After the answer: the deciding words are marked. Reason: An email, real or faked
 
 #### Item 8
 
-A chat, with its history: "Hal, Facilities", Chat with the help desk.
+A chat, with its history: "Dalton, Facilities", Chat with the help desk.
 
-> (Hal, Facilities, at the left) We found a small plastic plug between the keyboard cable and the front-desk PC. Since it appeared, the receptionist’s email password has been used from another country.
+> (Dalton, Facilities, at the left) We found a small plastic plug between the keyboard cable and the front-desk PC. Since it appeared, the receptionist’s email password has been used from another country.
 
 **What was the plug?**
 (the options come in an order that depends on the seed of the question)
@@ -332,9 +337,9 @@ After the answer: the deciding words are marked. Reason: A plug that sits on the
 
 #### Item 9
 
-A chat, with its history: "Noor, IT", Chat with the help desk.
+A chat, with its history: "Sawyer, IT", Chat with the help desk.
 
-> (Noor, IT, at the left) A PC keeps sending odd traffic. Antivirus run from inside Windows finds nothing, and twice the antivirus was found switched off.
+> (Sawyer, IT, at the left) A PC keeps sending odd traffic. Antivirus run from inside Windows finds nothing, and twice the antivirus was found switched off.
 
 **Which kind is it likely to be, and where should the scan run from?**
 (the options come in an order that depends on the seed of the question)
@@ -347,7 +352,7 @@ After the answer: the deciding words are marked. Reason: Odd traffic, a clean sc
 
 #### Item 10
 
-A user’s Windows Home laptop is infected. You work the ten steps of the removal.
+A user’s Windows laptop is infected. You work the ten steps of the removal.
 
 **Put the ten steps in order.**
 - Tap the ten steps in the order you would do them. The steps are offered mixed (never already in the right order): "Investigate and verify the symptoms."; "Quarantine the infected computer."; "Disable System Restore."; "Remediate the infected computer."; "Update the anti-malware software."; "Scan and remove, in safe mode or from outside Windows."; "Reimage or reinstall, if the scan cannot clean it."; "Schedule scans and run updates."; "Enable System Restore and create a restore point."; "Educate the end user.". Each tapped step is numbered; "Start again" clears the taps; the answer is the order tapped once 10 are.
@@ -357,9 +362,9 @@ After the answer: Reason: The steps run in three parts: contain it (verify, quar
 
 #### Item 11
 
-A chat, with its history: "Pam, Service desk", Chat with the help desk.
+A chat, with its history: "Nicole, Service desk", Chat with the help desk.
 
-> (Pam, Service desk, at the left) A coworker says: “Just roll the infected laptop back to last Tuesday’s restore point. There is no need to turn System Restore off first.” The laptop runs Windows Home.
+> (Nicole, Service desk, at the left) A coworker says: “Just roll the infected laptop back to last Tuesday’s restore point. There is no need to turn System Restore off first.” The laptop runs Windows.
 
 **Why is System Restore turned off before the cleanup?**
 (the options come in an order that depends on the seed of the question)
@@ -368,18 +373,18 @@ A chat, with its history: "Pam, Service desk", Chat with the help desk.
 - A restore point cannot be made while any anti-malware program is running — if chosen: Restore points can be made while security software runs. The reason is the copies already saved.
 - System Restore makes the scan take much longer, so it is switched off to save time — if chosen: Saving time is not the reason. The stored copies are what could bring the malware back.
 
-After the answer: the deciding words are marked. Reason: Restore points saved before the cleanup may contain the malware. A scan cannot clean inside them and a rollback would restore the infection, so step 3 turns System Restore off and step 9 turns it on again.
+After the answer: the deciding words are marked. Reason: Restore points saved before the cleanup may contain the malware. The usual reason given is that a scan cannot clean inside them, and a rollback would restore the infection, so step 3 turns System Restore off and step 9 turns it on again.
 
 #### Item 12
 
-A chat, with its history: "Carl, Clinic manager", Chat with the help desk.
+A chat, with its history: "Mamadou, Clinic manager", Chat with the help desk.
 
-> (Carl, Clinic manager, at the left) Our clinic is closing. We have three hundred old drives holding patient records. The law says we must be able to prove they were destroyed.
+> (Mamadou, Clinic manager, at the left) Our clinic is closing. We have three hundred old drives holding patient records. The law says we must be able to prove they were destroyed.
 
 **What is the best way to handle them?**
 (the options come in an order that depends on the seed of the question)
 - Hire a vendor to destroy them and get a certificate of destruction (right)
-- Standard-format each drive and put them in the recycling bin on Friday — if chosen: A standard format leaves the data on the drive, and the bin leaves no proof of anything.
+- Quick-format each drive and put them in the recycling bin on Friday — if chosen: A quick format leaves the data on the drive, and the bin leaves no proof of anything.
 - Drill one hole through each drive and keep no record of the job — if chosen: Drilling destroys a drive, but with no record there is no proof, and proof is what the law requires.
 - Wipe each drive yourself and tell the owners it was done — if chosen: A wipe may be sound, but your word is not the proof the law requires. A certificate is.
 
@@ -394,7 +399,7 @@ A chat, with its history: "Abe, Warehouse", Chat with the help desk.
 **What do you try first?**
 (the options come in an order that depends on the seed of the question)
 - Correct the PC’s date and time, then reload a secure site (right)
-- Tell him to click Continue anyway on each site so he can work — if chosen: Clicking through a certificate warning takes him to a site the browser cannot vouch for, and it fixes nothing.
+- Tell Abe to click Continue anyway on each site so Abe can work — if chosen: Clicking through a certificate warning takes Abe to a site the browser cannot vouch for, and it fixes nothing.
 - Reinstall the browser to replace its certificates — if chosen: A reinstall is a big step before the cheap check of the clock, and the phone already shows the network is fine.
 - Turn off the PC’s firewall, which is blocking the sites — if chosen: A firewall that blocks does not show a certificate warning, and turning it off makes the PC less safe.
 
@@ -402,16 +407,16 @@ After the answer: the deciding words are marked. Reason: The phone works on the 
 
 #### Item 14
 
-A chat, with its history: "Gina, Marketing", Chat with the help desk.
+A chat, with its history: "Harper, Marketing", Chat with the help desk.
 
-> (Gina, Marketing, at the left) Little ad boxes pop up in the corner of my Windows screen all day, even when the browser is closed. They say “Win a prize.” They come from a site I opened last month and clicked Allow on.
+> (Harper, Marketing, at the left) Little ad boxes pop up in the corner of my Windows screen all day, even when the browser is closed. They say “Win a prize.” They come from a site I opened last month and clicked Allow on.
 
 **Where do you remove the cause?**
 (the options come in an order that depends on the seed of the question)
 - In the browser’s notification settings, removing that site’s permission (right)
 - In the browser’s pop-up blocker, switching it on for every site — if chosen: The pop-up blocker stops extra windows. These are notifications the site was allowed to send.
 - In Task Manager, ending Windows Explorer each time a new box appears on screen — if chosen: That clears the box once and leaves the permission, so the next one comes.
-- In Disk Management, wiping the system drive — if chosen: Wiping the drive is a huge step for a permission that can be removed in the browser.
+- In the browser, clearing the cache and cookies for every site — if chosen: Clearing the cache and cookies leaves the site’s notification permission in place, so the boxes keep coming.
 
 After the answer: the deciding words are marked. Reason: Unwanted notifications from a site the user once allowed are removed by taking that site’s permission away in the browser’s notification settings.
 
@@ -452,13 +457,13 @@ Then a screen: you can stop here, your place is kept.
 
 A chat, with its history: "Uma, Studio", Chat with the help desk.
 
-> (Uma, Studio, at the left) I installed a “free screen recorder” from an ad. It works, but since then my webcam light blinks on and my browser home page changed. I never agreed to anything else.
+> (Uma, Studio, at the left) I installed a “free screen recorder” from an ad. It records my screen just as advertised, but since then my webcam light blinks on at odd times.
 
 **Which kind of malware brought the rest in?**
 (the options come in an order that depends on the seed of the question)
 - A Trojan, software that looks useful and carries something else in (right)
-- A virus, which attaches itself to files and spreads when they are shared — if chosen: No file was shared. She installed a program from an ad.
-- A rootkit, which hides deep in the system — if chosen: A rootkit is about hiding. What brought the extras in was the program she chose to install.
+- A virus, which attaches itself to files and spreads when they are shared — if chosen: No file was shared. Uma installed a program from an ad.
+- A rootkit, which hides deep in the system — if chosen: A rootkit is about hiding. What brought the extras in was the program Uma chose to install.
 - A boot sector virus, which sits in the part of the drive that starts the computer — if chosen: Nothing is wrong at start-up, and the trouble began after an install.
 
 After the answer: the deciding words are marked. Reason: Software that works as advertised, and trouble that started with its install, is a Trojan carrying something else in.
@@ -471,8 +476,8 @@ A chat, with its history: "Luis, Server team", Chat with the help desk.
 
 **Which kind fits, and what can catch it?**
 (the options come in an order that depends on the seed of the question)
-- Fileless malware, which a tool that watches behavior, such as EDR, can catch (right)
-- A boot sector virus, which a scan from outside Windows will find — if chosen: A boot sector virus is a file-like thing in the start-up area, and nothing here happens at start-up.
+- Fileless malware, which a behavior-watching tool such as EDR can catch (right)
+- A boot sector virus, which a scan from outside Windows will find at start-up — if chosen: A boot sector virus sits in the start-up area of the drive and shows at start-up. Here PowerShell calls out while Windows runs.
 - Adware, which shows in the browser’s list of extensions — if chosen: Adware shows ads. PowerShell calling an outside address is not an ad.
 - A keylogger, which shows as a small plug on the keyboard cable — if chosen: A keylogger records typing. This is a program that keeps calling out.
 
@@ -480,14 +485,14 @@ After the answer: the deciding words are marked. Reason: A clean file scan, a bu
 
 #### Item 19
 
-A chat, with its history: "Rita, Owner of a twelve-person firm", Chat with the help desk.
+A chat, with its history: "Macy, Owner of a twelve-person firm", Chat with the help desk.
 
-> (Rita, Owner of a twelve-person firm, at the left) We have antivirus on every PC but no security staff. I want someone outside to watch for attacks around the clock and act on them for us.
+> (Macy, Owner of a twelve-person firm, at the left) We have antivirus on every PC but no security staff. I want someone outside to watch for attacks around the clock and act on them for us.
 
 **Which service is that?**
 (the options come in an order that depends on the seed of the question)
 - MDR, managed detection and response: an outside team watches and responds (right)
-- EDR on its own, software that records what each computer does — if chosen: EDR is the software. Someone on her own side would still have to read its alerts and act.
+- EDR on its own, software that records what each computer does — if chosen: EDR is the software. Someone on Macy’s own side would still have to read its alerts and act.
 - An email security gateway, which filters mail before it arrives — if chosen: A gateway filters mail only. It does not watch the computers or respond.
 - A software firewall, which blocks programs on one computer — if chosen: A firewall on one computer does not watch for attacks across the firm or act on them.
 
@@ -503,11 +508,11 @@ The question, read aloud as above: **A phishing message written for a company’
   - whaling
   - whale phishing
 
-After the answer: Reason: It is whaling: the big targets. Spear phishing is aimed at one person or a small group, and whaling is spear phishing aimed at senior leaders.
+After the answer: Reason: It is whaling: the big targets. Spear phishing is written for one person, and whaling is spear phishing aimed at senior leaders.
 
 #### Item 21
 
-The scan has removed the malware from a Windows Home laptop and the computer is clean. Tap the steps still to do, in order. Leave out any step that does not belong.
+The scan has removed the malware from a Windows laptop and the computer is clean. Tap the steps still to do, in order. Leave out any step that does not belong.
 
 **Tap the steps still to do, in order.**
 - Tap the steps you would do, in order, leaving out any that do not belong, then Answer. The steps are offered mixed (never already in the right order): "Schedule scans and run updates."; "Enable System Restore and create a restore point."; "Educate the end user."; "Disable System Restore.". Each tapped step is numbered; "Start again" clears the taps; the answer is the order tapped when "Answer" is pressed (the right order has 3, which the screen does not say).
@@ -517,18 +522,18 @@ After the answer: Reason: After the cleanup come the last three steps: schedule 
 
 #### Item 22
 
-A chat, with its history: "Pia, Facilities", Chat with the help desk.
+A chat, with its history: "Kiona, Facilities", Chat with the help desk.
 
-> (Pia, Facilities, at the left) We have a box of retired laptops with SSD drives, which store data in flash chips. A colleague wants to run them past the degausser we already own, then bin them.
+> (Kiona, Facilities, at the left) We have a box of retired laptops with SSD drives, which store data in flash chips. A colleague wants to run them past the degausser we already own, then bin them.
 
 **What do you do instead?**
 (the options come in an order that depends on the seed of the question)
 - Shred them, because a degausser works on magnetic drives, not SSDs (right)
 - Run them through the degausser, since it clears every kind of drive — if chosen: A degausser clears magnetic drives and tapes. An SSD would come out with its data intact.
-- Standard-format them and then bin them — if chosen: A standard format leaves the data on the drive, and the bin hands it to anyone.
+- Quick-format them and then bin them — if chosen: A quick format leaves the data on the drive, and the bin hands it to anyone.
 - Give them to staff as spare drives, untouched — if chosen: The drives still hold the old data, and anyone who plugs one in can read it.
 
-After the answer: the deciding words are marked. Reason: Degaussing needs a magnetic drive. An SSD stores data in flash chips, so it is shredded or wiped instead.
+After the answer: the deciding words are marked. Reason: Degaussing needs a magnetic drive. An SSD stores data in flash chips, so it is shredded, or erased with the maker’s secure-erase tool, instead.
 
 #### Item 23
 
@@ -538,10 +543,10 @@ A chat, with its history: "Joe, Sales", Chat with the help desk.
 
 **What does private browsing do?**
 (the options come in an order that depends on the seed of the question)
-- It saves no history or cookies here, but the network and the sites still see him (right)
-- It hides what he does from the company network and from the websites he visits — if chosen: Private browsing does not change what the network or the sites can see.
+- It saves no history here, but the network and the sites still see Joe (right)
+- It hides what Joe does from the company network and from the websites Joe visits — if chosen: Private browsing does not change what the network or the sites can see.
 - It blocks malware and fake sites from loading — if chosen: Private browsing has no protection against malware or fake sites.
-- It encrypts everything he types so that no one can read it — if chosen: Encrypting the connection is the job of a secure site, not of a private window.
+- It encrypts everything Joe types so that no one can read it — if chosen: Encrypting the connection is the job of a secure site, not of a private window.
 
 After the answer: the deciding words are marked. Reason: Private browsing leaves no history or cookies on this computer after the window closes. It does not hide anything from the network or the sites.
 
@@ -551,11 +556,11 @@ A chat, with its history: "Zed, Finance", Chat with the help desk.
 
 > (Zed, Finance, at the left) My password manager always fills in the bank’s sign-in page. Today it filled nothing, so I am about to type the password myself. The page looks the same as ever. I got there from an email link.
 
-**What do you tell him?**
+**What do you tell Zed?**
 (the options come in an order that depends on the seed of the question)
-- Stop: the manager did not recognize the address, so the page may be fake (right)
-- The manager is broken, so reinstall it and sign in again — if chosen: Reinstalling fixes nothing if the page is a fake, and he would type the password into it anyway.
-- It is fine, because the page looks the same as ever — if chosen: A fake page can look exactly the same. The manager’s check of the address is the better guide.
+- Stop: the manager did not know the address, so the page may be fake (right)
+- The manager is broken, so reinstall it and then sign in to the bank again — if chosen: Reinstalling fixes nothing if the page is a fake, and Zed would type the password into it anyway.
+- It is fine, because the page looks exactly the same as ever — if chosen: A fake page can look exactly the same. The manager’s check of the address is the better guide.
 - Type the password more slowly, since the manager was slow — if chosen: The manager was not slow. It did not fill because the address did not match.
 
 After the answer: the deciding words are marked. Reason: A password manager fills in only on the address it saved, so a page that gets no fill after an email link may be a fake. Stop and check the address.
@@ -578,20 +583,20 @@ After the answer: Reason: It is the certificate of destruction (or of recycling)
 
 Fiona in Purchasing calls the help desk. You answer.
 
-**Fiona calls about a phone call she took. What do you say?**
+**Fiona calls about a phone call Fiona took. What do you say?**
 - An incoming call from "Fiona, Purchasing" (Incoming call · 2:40 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "A man phoned from “IT” and sent me a link. I typed my password into the page. It is probably nothing. Can we skip making a ticket?" [pushes: She wants no ticket, though a stranger may now have her password.]
-  - reply "What did the page look like, and what time was this?": goes on to turn 2, where the pressure comes back
-  - reply "All right, no ticket. Tell me if anything odd happens.": the call ends (not this one): The password may already be in a stranger’s hands. Leaving it alone means no reset and no report. [slip: let a stolen password go as if it were nothing]
-  - reply "I will reset your password right now.": the call ends (not this one): The reset is right, but not before the desk confirms who is on the line with its own questions. A caller can be an impersonator. [slip: reset or unlocked an account before confirming who was asking]
-  - reply "Please change your own password when you have a moment this week.": the call ends (not this one): Waiting until “a moment this week” leaves a stolen password working for days. [slip: left the ticket waiting with nothing gathered]
-- turn 2, the other side says: "It looked like our sign-in page. It has been an hour and nothing has happened. Honestly, skip the ticket." [pushes: She still wants no ticket, though the password was typed into a page a stranger sent.]
-  - reply "A stranger sent that page, so the password is no longer only yours. I will check it is you with the desk’s own questions, then reset it and log this.": the call ends (right): A page sent by a stranger who phoned is vishing with a fake sign-in page. The password is in his hands, so it is reset the same day, after the desk confirms the caller with its own questions, and the report is logged for the security team.
-  - reply "If nothing has happened in an hour, you are probably safe.": the call ends (not this one): A stranger can use a stolen password at any time. An hour without trouble says nothing about the next hour. [slip: let a stolen password go as if it were nothing]
-  - reply "Then I will reset it now.": the call ends (not this one): The reset is right, but not before the desk confirms who is on the line with its own questions. A caller can be an impersonator. [slip: reset or unlocked an account before confirming who was asking]
+- turn 1, the other side says: "A man phoned from “IT” and sent me a link. I typed my password into the page. It is probably nothing. Can we skip making a ticket?" [pushes: Fiona wants no ticket, though a stranger may now have Fiona’s password.]
+  - reply "What did the page look like, and roughly what time did you type your password into it?": goes on to turn 2, where the pressure comes back
+  - reply "All right, no ticket then. Just tell me if anything odd happens on your account.": the call ends (not this one): The password may already be in a stranger’s hands. Leaving it alone means no reset and no report. [slip: let a stolen password go as if it were nothing]
+  - reply "I will reset your password right now and read you the new one over the phone.": the call ends (not this one): The reset is right, but not before the desk checks who is on the line by calling the number on record. A caller can be an impersonator. [slip: reset or unlocked an account before confirming who was asking]
+  - reply "Please change your own password yourself when you have a moment this week.": the call ends (not this one): Waiting until “a moment this week” leaves a stolen password working for days. [slip: left the ticket waiting with nothing gathered]
+- turn 2, the other side says: "It looked like our sign-in page. It has been an hour and nothing has happened. Honestly, skip the ticket." [pushes: Fiona still wants no ticket, though the password was typed into a page a stranger sent.]
+  - reply "A stranger sent that page, so the password is exposed. I will call the number on your record to check it is you, then reset it and log this.": the call ends (right): A page sent by a stranger who phoned is vishing with a fake sign-in page. The password is in their hands, so it is reset at once, after the desk calls the number on record to check who is on the line, and the incident is written up.
+  - reply "If nothing has happened in an hour, you are probably safe, so leave the password for now and tell me if anything odd shows up on your account.": the call ends (not this one): A stranger can use a stolen password at any time. An hour without trouble says nothing about the next hour. [slip: let a stolen password go as if it were nothing]
+  - reply "Then I will reset it right now and read you the new password over the phone so you can sign in right away.": the call ends (not this one): The reset is right, but not before the desk checks who is on the line by calling the number on record. A caller can be an impersonator. [slip: reset or unlocked an account before confirming who was asking]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 
-After the answer: Reason: Fiona typed her password into a page sent by a stranger who phoned. The password counts as stolen, so it is reset the same day after the desk confirms who is calling by its own questions, and the report is logged.
+After the answer: Reason: Fiona typed the password into a page sent by a stranger who phoned. The password counts as stolen, so it is reset at once after the desk calls the number on record to check who is calling, and the incident is written up.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -611,30 +616,30 @@ A chat, with its history: "Beth, Reception", Chat with the help desk.
 **Which kind of malware is this?**
 (the options come in an order that depends on the seed of the question)
 - Stalkerware, spyware placed to track one person (right)
-- Adware, which shows ads the user never asked for — if chosen: Adware shows ads. Nothing here is an ad, and it does not explain how he knows her movements.
-- A cryptominer, which earns money from the phone’s power — if chosen: A miner drains the battery and heats the phone. It does not tell anyone where she goes.
+- Adware, which shows ads the user never asked for — if chosen: Adware shows ads. Nothing here is an ad, and it does not explain how anyone knows where Beth goes.
+- A cryptominer, which earns money from the phone’s power — if chosen: A miner drains the battery and heats the phone. It does not tell anyone where Beth goes.
 - Ransomware, which locks files and demands payment — if chosen: Nothing is locked and nobody has asked for money.
 
-After the answer: the deciding words are marked. Reason: A hidden app plus someone who knows her movements and messages is stalkerware: spyware placed to track one person.
+After the answer: the deciding words are marked. Reason: A hidden app plus someone who knows Beth’s movements and messages is stalkerware: spyware placed to track one person. This is also a safety matter: the desk passes it to the security team and does not warn whoever placed the app.
 
 #### Check question 28
 
-A chat, with its history: "Sam, Sales", Chat with the help desk.
+A chat, with its history: "Rhys, Sales", Chat with the help desk.
 
-> (Sam, Sales, at the left) At the airport I joined “AirportFree-WiFi”. Then I saw a second network with exactly the same name. The one I joined asked me to sign in with my work email on a page I had never seen.
+> (Rhys, Sales, at the left) At the airport I joined “AirportFree-WiFi”. Then I saw a second network with exactly the same name. The one I joined asked me to sign in with my work email on a page I had never seen.
 
 **What attack is this likely to be?**
 (the options come in an order that depends on the seed of the question)
 - An evil twin, a fake network that copies the real one’s name (right)
 - A dictionary attack, trying common passwords from a list — if chosen: A dictionary attack guesses passwords at a sign-in. Nothing was guessed here.
-- A DoS attack, flooding one service until it cannot answer — if chosen: Sam’s connection worked. Nothing was flooded.
-- SQL injection, typing database commands into a web form — if chosen: SQL injection targets a website’s database. This is about the network he joined.
+- A DoS attack, flooding one service until it cannot answer — if chosen: Rhys’s connection worked. Nothing was flooded.
+- SQL injection, typing database commands into a web form — if chosen: SQL injection targets a website’s database. This is about the network Rhys joined.
 
 After the answer: the deciding words are marked. Reason: A second network with the real one’s name that wants a work sign-in is an evil twin. An on-path attacker can read what passes through it.
 
 #### Check question 29
 
-A Windows Home laptop is quarantined. You have verified the symptoms, turned System Restore off and started the cleanup. Put the next five steps in order.
+A Windows laptop is quarantined. You have verified the symptoms, turned System Restore off and started the cleanup. Put the next five steps in order.
 
 **Put the next five steps in order.**
 - Tap the five steps in the order you would do them. The steps are offered mixed (never already in the right order): "Update the anti-malware software."; "Scan and remove, using safe mode."; "Reimage or reinstall, if the scan cannot clean it."; "Schedule scans and run updates."; "Enable System Restore and create a restore point.". Each tapped step is numbered; "Start again" clears the taps; the answer is the order tapped once 5 are.
@@ -656,9 +661,9 @@ After the answer: Reason: It is vishing, phishing by voice. Smishing is by text 
 
 #### Check question 31
 
-A chat, with its history: "Omar, Facilities", Chat with the help desk.
+A chat, with its history: "Andy, Facilities", Chat with the help desk.
 
-> (Omar, Facilities, at the left) Our recycler lets us use their degausser, a machine with a very strong magnet. We have four kinds of storage to get rid of.
+> (Andy, Facilities, at the left) Our recycler lets us use their degausser, a machine with a very strong magnet. We have four kinds of storage to get rid of.
 
 **Which of these will the degausser actually clear?**
 (the options come in an order that depends on the seed of the question)
@@ -686,9 +691,9 @@ After the answer: the deciding words are marked. Reason: A page that shows the o
 
 #### Check question 33
 
-A chat, with its history: "Wes, Admin", Chat with the help desk.
+A chat, with its history: "Thelma, Admin", Chat with the help desk.
 
-> (Wes, Admin, at the left) Whenever I search from the address bar in Chrome, I land on a search site I never chose, full of ads. I have not tried another browser.
+> (Thelma, Admin, at the left) Whenever I search from the address bar in Chrome, I land on a search site I never chose, full of ads. I have not tried another browser.
 
 **Which test splits the causes at the least cost?**
 (the options come in an order that depends on the seed of the question)
@@ -701,9 +706,9 @@ After the answer: the deciding words are marked. Reason: Redirection can come fr
 
 #### Check question 34
 
-A chat, with its history: "Fran, Accountant", Chat with the help desk.
+A chat, with its history: "Salma, Accountant", Chat with the help desk.
 
-> (Fran, Accountant, at the left) Our accounting PC runs a Windows version whose maker stopped sending security fixes last year. Nothing is wrong yet, but our accounting software needs it.
+> (Salma, Accountant, at the left) Our accounting PC runs a Windows version whose maker stopped sending security fixes last year. Nothing is wrong yet, but our accounting software needs it.
 
 **What kind of weak spot is this?**
 (the options come in an order that depends on the seed of the question)

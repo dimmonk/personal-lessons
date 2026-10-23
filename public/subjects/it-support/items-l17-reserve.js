@@ -13,7 +13,7 @@
 
   FC.items('it-support', [
     // ----- bands, channels and standards -----
-    chat('l17-r-width', 'wifi', 'Pat, Facilities',
+    chat('l17-r-width', 'wifi', 'Karina, Facilities',
       'Our 2.4 GHz Wi-Fi is crowded, and a colleague says to set the channel width to 40 MHz to double the speed.',
       'What happens if you do?', [
         ['It leaves fewer clear channels and takes in more noise, so it can get slower', true, 'A wider channel uses more of a small band, so more neighbors overlap it.'],
@@ -23,7 +23,7 @@
       'Width is how wide a channel is: 20, 40, 80 or 160 MHz. Wider is faster only where there is room, and 2.4 GHz has room for little. It should stay at 20 MHz.'),
     recall('l17-r-n', 'wifi', 'Which Wi-Fi generation name goes with the 802.11n standard, the one that works on both 2.4 and 5 GHz?', ['Wi-Fi 4', 'WiFi 4'],
       '802.11n is Wi-Fi 4. It was the first standard to work on both 2.4 GHz and 5 GHz.'),
-    chat('l17-r-six', 'wifi', 'Ivy, Design',
+    chat('l17-r-six', 'wifi', 'Edmund, Design',
       'My new router has a 6 GHz name, but my three-year-old laptop does not see it. The laptop sees the 2.4 and 5 GHz names.',
       'Why not?', [
         ['The laptop’s radio is older than Wi-Fi 6E, the first generation that can use 6 GHz', true, 'Only Wi-Fi 6E and Wi-Fi 7 devices have the 6 GHz band.'],
@@ -33,7 +33,7 @@
       '6 GHz needs a Wi-Fi 6E or Wi-Fi 7 radio in the device. An older laptop sees only 2.4 and 5 GHz.'),
 
     // ----- Bluetooth, NFC and RFID -----
-    chat('l17-r-bt', 'short-range', 'Jo, New hire',
+    chat('l17-r-bt', 'short-range', 'Mateus, New hire',
       'I want my wireless headset to work with my laptop from my desk and when I walk a few meters away. I had to confirm a code on both when I first connected them.',
       'What is the radio called?', [
         ['Bluetooth', true, 'Bluetooth reaches several meters and joins two devices by pairing, which is the confirmed code.'],
@@ -47,7 +47,7 @@
       'RFID, radio frequency identification: the reader’s signal powers the tag, which sends back its number.'),
 
     // ----- wireless symptoms -----
-    chat('l17-r-tool', 'wifi-fix', 'Kai, Operations',
+    chat('l17-r-tool', 'wifi-fix', 'Tomoko, Operations',
       'The Wi-Fi in our building is slow in the evenings. Which tool shows me every network nearby and the channel each is on?',
       'Which tool is it?', [
         ['A Wi-Fi analyzer', true, 'A Wi-Fi analyzer lists nearby networks, their channels and their signal strengths.'],
@@ -55,7 +55,7 @@
         ['A toner probe, which traces the signal of each network around the building', LOOK, 'A toner probe finds a cable by tracing a tone along it.'],
         ['A speed test, which lists the networks it finds on its way', LOOK, 'A speed test measures one connection. It does not list the networks around you.']],
       'The tool that shows networks and channels in the air is a Wi-Fi analyzer. It lets you pick a lane that is free.'),
-    chat('l17-r-night', 'wifi-fix', 'Bo, Resident',
+    chat('l17-r-night', 'wifi-fix', 'Leandro, Resident',
       'The Wi-Fi in my apartment drops every few minutes, on every device. I moved the router to a free channel, then to 5 GHz, and it still drops. A router borrowed from the next office, put in the same spot, stays steady for an hour.',
       'What do you do next?', [
         ['Replace the router with a working one', true, 'Two changes of channel and band did not help, and a known-good router in the same spot is steady, so this router is the fault.'],
@@ -73,7 +73,7 @@
       'Everyone drops since the router went into a metal cabinet. Placement is the change, and metal blocks radio. Put it back in the open.'),
 
     // ----- WPA, sign-in methods -----
-    chat('l17-r-kerb', 'wifi-security', 'Dee, Accounts',
+    chat('l17-r-kerb', 'wifi-security', 'Candice, Accounts',
       'When I sign in to my Windows computer at work, I am not asked for my password again when I open the file server. What proves it is me?',
       'Which method does that?', [
         ['Kerberos, which gives tickets after one sign-in', true, 'Kerberos proves who you are once and hands out tickets for services, so passwords are not sent again.'],
@@ -85,15 +85,15 @@
       'Our bank site asks for more than a password when I sign in. I want to explain to the team which kinds of sign-in count as multifactor.',
       'Which pair is multifactor?', [
         ['A password and a code from an app on a phone', true, 'A password is known, a phone is held. Those are two kinds of factor.'],
-        ['A password and a PIN, which she types one after the other', LOOK, 'Both are things you know, so it is the same kind twice.'],
-        ['A password and a security question, answered from her memory', LOOK, 'Both are things you know, so it is the same kind twice.'],
+        ['A password and a PIN, which they type one after the other', LOOK, 'Both are things you know, so it is the same kind twice.'],
+        ['A password and a security question, answered from their memory', LOOK, 'Both are things you know, so it is the same kind twice.'],
         ['A fingerprint and a face scan on the same phone', LOOK, 'Both are things you are, so it is the same kind twice.']],
       'Multifactor takes two or more kinds: something you know, something you have, something you are. A password plus a PIN is one kind twice.'),
     recall('l17-r-tkip', 'wifi-security', 'Name the older, weak method of scrambling Wi-Fi traffic that the first WPA used and WPA2 replaced with AES. It has four letters.', ['TKIP'],
       'TKIP is the old method. WPA2 uses AES, which is the strong one.'),
 
     // ----- the small office router -----
-    chat('l17-r-pw', 'soho', 'Tia, Front office',
+    chat('l17-r-pw', 'soho', 'Troy, Front office',
       'The new router’s login is still admin and admin, the maker’s. It is only reachable from inside the office, so I think it is fine.',
       'What do you do about the login?', [
         ['Change the login to a strong password only the admin knows', true, 'The maker’s default login is published for the model. Anyone who gets onto the network, even a guest, can take over the router.'],
@@ -101,7 +101,7 @@
         ['Make it the same as the Wi-Fi password so there is only one to remember', OPEN, 'Everyone who knows the Wi-Fi password could then change the router.'],
         ['Write the default login on a label on the router so staff can find it', OPEN, 'A label tells every visitor the login too. The default is published for the model.']],
       'A default login is known to every attacker. Changing it is the first change on any router.'),
-    chat('l17-r-place', 'soho', 'Hal, Operations',
+    chat('l17-r-place', 'soho', 'Aoife, Operations',
       'We are placing the office router. Someone suggests the cabinet by the entrance, someone else a shelf at the back.',
       'Where do you put it?', [
         ['High and central, in a spot staff cannot reach to press reset', true, 'Central gives even coverage, away from metal and the microwave, and out of reach keeps people from resetting it.'],

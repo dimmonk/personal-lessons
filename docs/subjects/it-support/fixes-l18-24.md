@@ -54,3 +54,26 @@ Lesson 19
 - People: each name has one job inside lessons 18 and 19 (Ana, Bea, Cal, Eli, Hal, Ivo, Jo, Ray, Tess, Zed duplicates renamed to Finn, Kurt, Milo, Owen, Remy, Suki, Theo, Otis, Edna, Stan); no guessed pronouns left.
 
 Left: names still repeat with other jobs in other lessons of the subject (lead to settle).
+
+## Confirm round (lessons 18 to 21)
+
+`node --check` clean; option-lengths l18 to l21 all ✓. Validator, lock and renderer not run. No reading text grown.
+
+- l18-k-wipe: identity check now also appears on two wrong options done wrongly (caller's serial number, caller's word); all four about 85 to 95 characters. g-tries: right option cut to one clause, wrongs lengthened.
+- l19-k-leak, k-root, p-ads: Stan, Yun and Sam named in every option; wrong options are multi-step too (save files then change passwords on the same phone; remove the app, scan, stay rooted; and so on). s-compat now Version 13 offered 14; p-swell semicolon gone.
+- l20: g-drv driver date "Tuesday"; k-startup "check with the backup's owner" removed from the right option.
+- l21: s-netuser right option shortened, wrong options carry caller-supplied checks; k-diskpart right option 113 to 85 characters, others lengthened; k-dirfree has a wrong "Yes", dir output shows . and .. (3 Dir(s), deciding line a7); k-gpresult "his" to "their"; lesson "she says she is happy" to "Dana is happy".
+- Pronouns: grep for he/she/his/her/him in l18 to l21 lesson and items files returns zero.
+
+## Confirm round (lessons 22 to 24)
+
+`node --check` clean; option-lengths l22, l23, l24 all ✓. Validator, lock and renderer not run. No reading text grown.
+
+- Ruling 20: every "since" and "because" tail removed from options in l22 (27), l23 (26) and l24 (3); counts are now zero on right and wrong alike. Shortened wrong options were lengthened with plain steps (no reason clauses) so the right option stays the longest in 5, 4 and 8 of 24, 24 and 20.
+- l23-x-call turn 1: right option is a question of 88 characters, a wrong option is also a question ("Which model is the computer?"), and a wrong option is the longest polite statement.
+- Ruling 22: he/she/his/her/him for ticket people replaced by name or they/their in l22, l23 and l24 (lesson texts, intro, w-dns, k-corp, k-chmod); grep returns zero.
+- Minor: l22-k-n no longer says the Camera app is missing; semicolons on right-only options removed (p-gfx kept, k-n, g-two changed); l22 right options trimmed (w-eleven, p-gfx, s-rdp, g-dist, k-path).
+- Open item, strand labels: strand "linux-net" retitled in subject.js to "Linux commands for the network, running programs, disk space and help" so df, du, top, ps and man sit under a fitting label (the only edit outside l22 to l24).
+- Open item, l22 pattern tickets: the image, zero-touch, BitLocker (two tickets) and multiboot tickets now describe the situation instead of repeating the table phrase; their reasons name the described cue.
+
+Left: names repeat jobs across lessons (lead to settle); l22-p-domain decoys not touched.

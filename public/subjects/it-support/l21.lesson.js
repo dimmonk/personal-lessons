@@ -6,14 +6,14 @@
 // (protect the data before touching anything), IT9 (one change at a time); rulings-l1-8.md 6 and 11 (confirm who is asking before an account is turned on or reset).
 // Sources checked 2026-10-23: Microsoft diskpart clean reference (learn.microsoft.com/en-us/windows-server/administration/windows-commands/clean: clean overwrites only partition information, clean all zeroes every sector);
 // Microsoft copy reference (technet.microsoft.com/en-us/cc771997: /v verifies, /y suppresses the overwrite prompt); a full format writing zeros is KB 941961 as quoted by forums (Microsoft page not reached), per rulings-l1-8.md 21.
-// Output in the questions is invented: computer names, accounts and 192.168.x.x or 203.0.113.x addresses. One worked ticket (Dana's unreadable D: drive: format is the
+// Output in the questions is invented: computer names, accounts and 192.168.x.x or 203.0.113.x addresses. One worked ticket (Rubina's unreadable D: drive: format is the
 // first guess, copying first and a read-only check come before any repair); a first group of four with the deciding words marked; a second of fifteen; a third of five
 // mixed with lesson 14; the check: eight new questions, no help, 7 of 8 to pass. Strands: cmd-net, cmd-disk, cmd-files, cmd-admin.
 FC.lesson('it-support', {
-  id: 'l21', part: 'commands', title: 'Windows at the command line', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the Windows command-line tools by the job each does: navigation, disk, files, network, information and management; the commands that destroy data).' }],
+  id: 'l21', part: 'commands', title: 'Windows at the command line', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the Windows command-line tools by the job each does: navigation, disk, files, network, information and management; the commands that destroy data).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'Dana in Accounting says the D: drive, where last year’s invoices are, will not open. Dana’s cousin says to type format D: and start clean. Format would erase every invoice.',
+    'Rubina in Accounting says the D: drive, where last year’s invoices are, will not open. Rubina’s cousin says to type format D: and start clean. Format would erase every invoice.',
     'Here you learn the Windows commands the exam tests: the job each does, its switches, how to read what it prints, and which destroy data.'],
   flow: [
     { title: 'The command window',

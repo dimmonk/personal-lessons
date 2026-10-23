@@ -5,13 +5,16 @@
 // tools and settings are asked from memory), IT4 and IT8 (the worked ticket rules out the favorite cause, memory, with the cheapest test, Task Manager), IT11 (confirm with the user, write the note, then close) and IT17
 // (say the story back; rulings 6 and 11 of rulings-l1-8.md: confirm who is calling by the desk's own check before any reset). The ten steps are taught with the reason each sits where it does and asked as an `order`
 // question (a full run, a middle run and a tail with a step that does not belong). Plan: docs/subjects/it-support/plan.md, lesson 26.
-// Strands: malware-kinds, attacks, malware-removal, destruction, browser-security. One worked ticket (Priya's slow laptop); a first group of five with help; a second of eleven; a third of ten mixed with lessons 5 and 23; the
+// Facts checked 2026-10-23: Windows `format` without /q writes zeros to the whole disk, `format /q` does not (Microsoft KB 941961, learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/format-command-not-write-zeros-to-disk);
+// degaussing does not work on flash and SSDs need the maker's secure erase or destruction (NIST SP 800-88 Rev 1, summaries read). The ten steps are in the order of the A+ map's copy of the objectives; CompTIA's own page was not reached,
+// and the "why it sits here" column, the three-part grouping and the line on System Restore are this course's gloss. Pronouns: named ticket people are named or "they" (ruling 22).
+// Strands: malware-kinds, attacks, malware-removal, destruction, browser-security. One worked ticket (Rory's slow laptop); a first group of five with help; a second of eleven; a third of ten mixed with lessons 5 and 23; the
 // check: eight new questions, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l26', part: 'malware', title: 'Malware and attacks', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the kinds of malware and the tools against them, social engineering and attacks, the ten removal steps in order with the reason for each place, wiping and destroying drives, browser security settings, and the signs on a PC and in a browser).' }],
+  id: 'l26', part: 'malware', title: 'Malware and attacks', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the kinds of malware and the tools against them, social engineering and attacks, the ten removal steps in order with the reason for each place, wiping and destroying drives, browser security settings, and the signs on a PC and in a browser).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'At 9:05 a user writes that every file in her Documents folder now ends in .locked and a note wants $800. At 9:20 another says a man from “the bank” phoned and wants the code just texted to him. At 9:40 a third says his laptop is slow and the fan never stops. Each ticket gives you only a sign.',
+    'At 9:05 a user writes that every file in their Documents folder now ends in .locked and a note wants $800. At 9:20 another says a man from “the bank” phoned and wants the code just texted to them. At 9:40 a third says their laptop is slow and the fan never stops. Each ticket gives you only a sign.',
     'Here you learn to work back from the sign to the kind of malware or attack, to run the ten steps that clean a computer in the order that keeps each step safe, and to wipe drives and configure browsers safely.'],
   flow: [
     { title: 'From the way in to the sign',
@@ -41,6 +44,7 @@ FC.lesson('it-support', {
         { id: 't6', cells: ['XDR', 'The same across computers, email, network and cloud'] },
         { id: 't7', cells: ['User education', 'Teaches people to spot phishing before they click'] },
         { id: 't8', cells: ['Recovery environment', 'A small Windows to start from, so a scan runs from outside the infected one'] },
+        { id: 't10', cells: ['Safe mode', 'Windows started with only what it needs, so most malware does not run while the scan works'] },
         { id: 't9', cells: ['Reinstalling the system', 'The last resort when it cannot be trusted'] }] }] },
     { title: 'Tricking the person: social engineering',
       show: [{ kind: 'prose', text: ['Social engineering tricks a person instead of breaking a machine. Phishing is a message that pretends to be from someone trusted.'] },
@@ -77,36 +81,39 @@ FC.lesson('it-support', {
         { id: 'p1', cells: ['No network, others fine', 'Malware changed network settings, such as a proxy', 'Does a phone on the same network work?'] },
         { id: 'p2', cells: ['Desktop alert: “You are infected”', 'A false antivirus alert from a web page', 'Does it come from the desk’s security program?'] },
         { id: 'p3', cells: ['Files renamed, missing or locked', 'Ransomware or other malware', 'Look for a note; check the backup'] },
-        { id: 'p4', cells: ['Unwanted Windows notifications', 'A site the user allowed to send them', 'Which site? See the browser’s notification settings'] },
+        { id: 'p4', cells: ['Unwanted Windows notifications', 'Often a site the user allowed to send them', 'Which site? See the browser’s notification settings'] },
         { id: 'p5', cells: ['Windows will not update', 'Malware blocking updates, or a plain failure', 'Do other PCs update?'] },
         { id: 'p6', cells: ['Pop-ups on every page', 'Adware or a bad extension', 'Same in another browser?'] },
         { id: 'p7', cells: ['A certificate warning', 'A fake site, someone on the path, or the PC’s clock', 'Every site, or one? Check the clock'] },
         { id: 'p8', cells: ['Searches sent elsewhere (redirection)', 'Malware, a bad extension, or a changed proxy', 'Try another browser'] },
         { id: 'p9', cells: ['A slow browser', 'Too many extensions, or a cryptominer', 'What uses the processor in Task Manager?'] }] }] },
     { title: 'The ten steps of malware removal, and why each sits where it does',
-      show: [{ kind: 'document', form: 'table', title: 'Contain it (1 to 4), clean it (5 to 7), keep it clean (8 to 10)', head: ['Step', 'Why it sits here'], rows: [
+      show: [{ kind: 'prose', text: ['System Restore saves copies of important Windows files as restore points, so Windows can roll back to an earlier state. Two steps below turn it off and back on.'] },
+      { kind: 'document', form: 'table', title: 'Contain it (1 to 4), clean it (5 to 7), keep it clean (8 to 10)', head: ['Step', 'Why it sits here'], rows: [
         { id: 'r1', cells: ['1. Investigate and verify the symptoms', 'Be sure it is malware before you disrupt the user'] },
         { id: 'r2', cells: ['2. Quarantine the infected computer', 'Cut it off so it cannot spread or send data out'] },
-        { id: 'r3', cells: ['3. Disable System Restore (Windows Home)', 'Old restore points may hold the malware; a scan cannot clean them'] },
-        { id: 'r4', cells: ['4. Remediate the infected systems', 'Contained, so start the cleanup; steps 5 to 7 are how'] },
+        { id: 'r3', cells: ['3. Disable System Restore', 'Old restore points may hold the malware; the usual reason given is that a scan cannot clean them'] },
+        { id: 'r4', cells: ['4. Remediate the infected systems', 'Contained, so start the cleanup; steps 5 to 7 are how it is done'] },
         { id: 'r5', cells: ['5. Update the anti-malware software', 'A scanner only knows what it has been taught'] },
         { id: 'r6', cells: ['6. Scan and remove (safe mode, preinstallation environment)', 'Safe mode loads only what Windows needs; the preinstallation environment is a small Windows started from outside'] },
-        { id: 'r7', cells: ['7. Reimage or reinstall', 'If the scan cannot clear it, put back a clean copy'] },
+        { id: 'r7', cells: ['7. Reimage or reinstall', 'If the scan cannot clear it, put back a clean copy, once the user’s files are saved'] },
         { id: 'r8', cells: ['8. Schedule scans and run updates', 'Worth setting only once it is clean'] },
         { id: 'r9', cells: ['9. Enable System Restore and create a restore point', 'After the cleanup, so the saved state is clean'] },
         { id: 'r10', cells: ['10. Educate the end user', 'Last: the computer is safe, and the way in can be shown'] }] }] },
     { title: 'Wiping and destroying drives',
-      show: [{ kind: 'document', form: 'table', title: 'Eight ways to deal with a drive', head: ['Method', 'What it does', 'Use it when'], rows: [
+      show: [{ kind: 'document', form: 'table', title: 'Ways to deal with a drive', head: ['Method', 'What it does', 'Use it when'], rows: [
         { id: 'w1', cells: ['Wipe (erase)', 'Overwrites all of the drive', 'It will be reused or given away'] },
-        { id: 'w2', cells: ['Low-level format', 'Writes over the whole drive', 'It will be reused'] },
-        { id: 'w3', cells: ['Standard format', 'Clears the list of files; data often recoverable', 'Never alone, when data matters'] },
+        { id: 'w2', cells: ['Low-level format (the A+ name)', 'A tool writes over every part of the drive', 'It will be reused'] },
+        { id: 'w3', cells: ['Quick (standard) format, Windows format /q or diskpart clean', 'Removes the way to find the files, not the files: the data can be recovered', 'Never alone, when data matters'] },
+        { id: 'w9', cells: ['Full format, Windows format without /q', 'Writes zeros over the whole drive', 'A hard drive that will be reused'] },
+        { id: 'w10', cells: ['Secure erase', 'The maker’s own erase command on an SSD; an overwrite can miss spare areas of the chips', 'An SSD that will be reused; if not, shred it'] },
         { id: 'w4', cells: ['Drilling', 'Holes through the platters', 'It will not be reused'] },
         { id: 'w5', cells: ['Shredding', 'A machine cuts the drive to pieces', 'It will not be reused'] },
         { id: 'w6', cells: ['Degaussing', 'A strong magnet scrambles magnetic drives and tapes', 'Hard drives and tapes only, never SSDs'] },
         { id: 'w7', cells: ['Incineration', 'Burning the drive', 'It will not be reused'] },
         { id: 'w8', cells: ['Third-party vendor', 'Destroys or recycles for you and gives a certificate of destruction', 'You need proof, or have many drives'] }] },
       { kind: 'prose', text: [
-        'Laws on health, money and customer records say how data must be destroyed, and environmental rules keep electronics out of the ordinary trash.'] }] },
+        'A drive that leaves the company is wiped with a full overwrite, or destroyed. Laws on health, money and customer records say how data must be destroyed, and environmental rules keep electronics out of the ordinary trash.'] }] },
     { title: 'Browser security settings',
       show: [{ kind: 'document', form: 'table', title: 'Twelve settings and what each is for', head: ['Setting', 'What it does'], rows: [
         { id: 'b1', cells: ['Trusted sources and hashing', 'Download from the maker’s own site. A hash is a fingerprint of a file; if it matches the maker’s, the file is unchanged'] },
@@ -124,7 +131,7 @@ FC.lesson('it-support', {
     { title: 'Deleting the one file the alert names',
       show: [{ kind: 'prose', tone: 'wrong', text: [
         '“The alert names a file. Delete it, run a quick scan while the laptop stays online, and close the ticket.”',
-        'This skips the first four steps. Nobody verified the alert, which may be fake. The laptop stays on the network, so malware can spread. A scan with System Restore on can miss copies in old restore points. The ticket closes before the user confirms. Work the ten steps in order.'] }] },
+        'This skips the first four steps. Nobody verified the alert, which may be fake. The laptop stays on the network, so malware can spread. A scan with System Restore on can miss copies in old restore points, the usual reason given. The ticket closes before the user confirms. Work the ten steps in order.'] }] },
     { worked: 'l26-w-priya' },
     { set: { items: ['l26-p-ransom', 'l26-p-phish', 'l26-p-first', 'l26-p-wipe', 'l26-p-hash'], order: 'listed', support: { shown: true } } },
     { set: { items: ['l26-q-tailgate', 'l26-q-bec', 'l26-q-keylog', 'l26-q-root', 'l26-q-order', 'l26-q-restore', 'l26-q-vendor', 'l26-q-cert', 'l26-q-pop', 'l26-q-zero', 'l26-q-miner'], order: 'shuffle' } },

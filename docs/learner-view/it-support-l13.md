@@ -1,10 +1,10 @@
 # IT Help Desk: Printers
 
-Revision 1, live. Part: Printers. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Printers. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Galen in Accounts has sent an invoice to the printer by the kitchen four times, and nothing comes out. The printer’s screen says Ready. Between her program and the paper sit a queue, a driver, a link to the printer, the printer, and its paper and toner.
+Galen in Accounts has sent an invoice to the printer by the kitchen four times, and nothing comes out. The printer’s screen says Ready. Between their program and the paper sit a queue, a driver, a link to the printer, the printer, and its paper and toner.
 A new technician reinstalls something. A good one prints a test page from the printer’s own screen, and half the chain is cleared in a minute. Here you learn the print path, the seven steps inside a laser printer, and how each kind of printer is put in and looked after.
 
 ## Step 1: The print path
@@ -105,7 +105,7 @@ A chat, with its history: "Galen, Accounts", Chat with the help desk.
 
 > (Galen, Accounts, at the left) I sent the invoice to the printer by the kitchen four times and nothing comes out. The printer’s screen says Ready.
 
-The links you can list: the program Galen printed from, the print queue on her computer, the driver, her computer’s connection to the printer, the printer itself, and its paper and toner.
+The links you can list: the program Galen printed from, the print queue on their computer, the driver, their computer’s connection to the printer, the printer itself, and its paper and toner.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
 **Galen prints a test page from the printer’s own screen. It comes out sharp. What does that rule out?**
@@ -115,12 +115,12 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Nothing: a test page says little about a real job.
 
 The working, one step at a time:
-1. Write down the links of the print path before testing any.: The program, the queue, the driver, the connection from her computer, the printer, its paper and toner.
+1. Write down the links of the print path before testing any.: The program, the queue, the driver, the connection from their computer, the printer, its paper and toner.
 1. Name your favorite, and keep it as the first test, not the answer.: Out of toner: the last person to use it said the pages were faint.
 1. Run the cheapest test of the favorite: a test page from the printer’s own screen.: It comes out sharp. The printer, its paper and its toner are ruled out, and the favorite goes with them. Half the chain is gone.
-1. Cut what is left in half with another person.: Ruben prints the same invoice to the same printer from his computer, and it comes out. The printer and its network link are fine. Left: Galen’s program, her queue, her driver, and her own link to the printer (port, cable, address).
-1. Look at the queue, the list of jobs waiting on Galen’s computer.: Her computer shows the printer as Ready, not Offline, so her link is up. Four copies of the invoice wait. The first is marked Error, and a stuck job at the front holds back all the ones behind it.
-1. Now change one thing, and check it.: Cancel the four jobs, restart the print spooler (the Windows service that holds the queue), print once. It comes out. Then check with Galen that it works for her.
+1. Cut what is left in half with another person.: Ruben prints the same invoice to the same printer from their computer, and it comes out. The printer and its network link are fine. Left: Galen’s program, their queue, their driver, and their own link to the printer (port, cable, address).
+1. Look at the queue, the list of jobs waiting on Galen’s computer.: Their computer shows the printer as Ready, not Offline, so their link is up. Four copies of the invoice wait. The first is marked Error, and a stuck job at the front holds back all the ones behind it.
+1. Now change one thing, and check it.: Cancel the four jobs, restart the print spooler (the Windows service that holds the queue), print once. It comes out. Then check with Galen that it works for them.
 
 Then the answer: The printer, its paper and its toner. The printer’s own test page ruled out the printer, its paper and its toner, so the favorite (toner) was wrong. Ruben’s page ruled out the printer’s network link. The queue was the link left, and it showed the stuck job. Two cheap tests cut the chain; the fix came last.
 
@@ -149,9 +149,9 @@ After the answer: the deciding words are marked. Reason: The line is on the test
 
 #### Item 2
 
-A chat, with its history: "Aiden, Sales", Chat with the help desk.
+A chat, with its history: "Dominic, Sales", Chat with the help desk.
 
-> (Aiden, Sales, at the left) **Everything I print comes out as rows of strange symbols and letters. The printer’s own test page looks normal.**
+> (Dominic, Sales, at the left) **Everything I print comes out as rows of strange symbols and letters. The printer’s own test page looks normal.**
 
 The printer is new: the office bought it last week.
 
@@ -221,17 +221,17 @@ A plain table, "What you tried":
 
 > Test  |  Result  (the column heads)
 > A test page from the printer’s own screen  |  Prints fine
-> Gita prints the same file to that printer from her computer  |  Prints fine
-> Jonah prints it again from his computer  |  Nothing comes out
+> Gita prints the same file to that printer from their computer  |  Prints fine
+> Jonah prints it again from their computer  |  Nothing comes out
 
 **Where does this point?**
 (the options come in an order that depends on the seed of the question)
-- Jonah’s computer: his program, queue, driver or link (right)
+- Jonah’s computer: their program, queue, driver or link (right)
 - The printer on the third floor and its paper — if chosen: It printed a test page and Gita’s file.
 - The printer’s own link to the network — if chosen: Gita’s computer reaches the printer over the same link.
-- Gita’s computer, which prints differently from Jonah’s — if chosen: Gita’s file printed, so her side works. The one that fails is Jonah’s.
+- Gita’s computer, which prints differently from Jonah’s — if chosen: Gita’s file printed, so their side works. The one that fails is Jonah’s.
 
-After the answer: the deciding words are marked. Reason: The printer prints (its own page, and Gita’s file), so the printer, its paper and its network link are cleared. What is left is what only Jonah’s computer has: his program, his queue, his driver and his own link to the printer (port, cable, address).
+After the answer: the deciding words are marked. Reason: The printer prints (its own page, and Gita’s file), so the printer, its paper and its network link are cleared. What is left is what only Jonah’s computer has: their program, their queue, their driver and their own link to the printer (port, cable, address).
 
 #### Item 6
 
@@ -256,14 +256,14 @@ Lazar in Planning calls the help desk. You answer.
 
 **Lazar calls about the printer. What do you say?**
 - An incoming call from "Lazar, Planning" (Incoming call · 11:15 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "The printer is broken. I print and nothing happens. Please send somebody to swap it." [pushes: She wants the printer replaced before anything has been tested.]
+- turn 1, the other side says: "The printer is broken. I print and nothing happens. Please send somebody to swap it." [pushes: They want the printer replaced before anything has been tested.]
   - reply "I will send someone to swap the printer today.": the call ends (not this one): A swap costs a day, and nothing showed the printer was the cause. A test page from its own screen would have shown whether it was. [slip: worked on whatever was nearest instead of testing to split the causes]
   - reply "Before anyone is sent, let us try one thing: a test page from the printer’s own screen. It takes a minute.": goes on to turn 2, where the pressure comes back
   - reply "Let me reinstall the printer on your computer from here.": the call ends (not this one): That is a fix on the nearest cause. If it fails, you still do not know which side to look on. [slip: worked on whatever was nearest instead of testing to split the causes]
-- turn 2, the other side says: "It printed a page that says Test Page, and it looks fine. But I still want a new printer. This is the third time this month!" [pushes: She is frustrated and still wants the swap.]
+- turn 2, the other side says: "It printed a page that says Test Page, and it looks fine. But I still want a new printer. This is the third time this month!" [pushes: They are frustrated and still want the swap.]
   - reply "The printer works, so a new one would not fix this. Let me have a colleague print the same job, and then we look at the waiting jobs on your computer. I will note that it keeps happening.": the call ends (right): The test page came from inside the printer, so the printer, its paper and its toner work. The same job from a colleague’s computer is the next cut: it clears this computer or the printer’s network link. Noting the repeats lets someone look for the pattern.
-  - reply "Three times is too many. I will order a new printer today.": the call ends (not this one): The printer just printed a clean test page. A new one would cost money and fix nothing, however many times she has called. [slip: gave in to a demand the tests did not support]
-  - reply "Then the fault is on your computer, so it is not a printer matter.": the call ends (not this one): It may be, but telling her so and stopping leaves her with nothing. Look at the waiting jobs with her. [slip: blamed or judged the user]
+  - reply "Three times is too many. I will order a new printer today.": the call ends (not this one): The printer just printed a clean test page. A new one would cost money and fix nothing, however many times they have called. [slip: gave in to a demand the tests did not support]
+  - reply "Then the fault is on your computer, so it is not a printer matter.": the call ends (not this one): It may be, but telling them so and stopping leaves them with nothing. Look at the waiting jobs with them. [slip: blamed or judged the user]
   - reply "Try printing your file again.": the call ends (not this one): The same job gives the same answer and rules nothing out. [slip: ran a test that does not split what works from what does not]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 
@@ -291,7 +291,7 @@ A chat, with its history: "Mateo, Finance", Chat with the help desk.
 
 **Which printer feature fixes this?**
 (the options come in an order that depends on the seed of the question)
-- Secured print: the job waits in the printer until she signs in there. (right)
+- Secured print: the job waits in the printer until they sign in there. (right)
 - User authentication, so only signed-in people can send jobs to the printer. — if chosen: That limits who can send. Once Mateo’s pages print, they still sit in the tray for anyone.
 - The audit log, to record who sends each job. — if chosen: A log records who printed, afterward. The pages still sit in the tray for anyone.
 - Duplex printing, to use half as much paper. — if chosen: Duplex prints on both sides of the paper. It does not hold pages back.
@@ -576,7 +576,7 @@ After the answer: Reason: A fragile single page goes on the flatbed glass, which
 
 A technician has swapped the toner cartridge and holds the empty one. The bin by the printer is the ordinary rubbish.
 
-**Where does she find how to dispose of the used toner?**
+**Where does they find how to dispose of the used toner?**
 (the options come in an order that depends on the seed of the question)
 - In its safety data sheet (called MSDS on the exam). (right)
 - In the printer’s audit log. — if chosen: The audit log records who printed what, not how to dispose of toner.

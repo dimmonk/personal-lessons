@@ -2,13 +2,13 @@
 // self-test, firmware, the boot drive, Windows loading, sign-in and profile), with each Core 1 5.1/5.2 symptom placed on its link and the cheapest test,
 // "how far did it get?", that tells which side of a link the fault is on. It builds on lesson 5 (cut it in half) by cutting a chain instead of a list.
 // Research: docs/research/it-support.md IT4, IT5, IT8; docs/research/it-support-aplus.md Core 1 5.1, 5.2, 3.5 (BIOS/UEFI), Core 2 1.2 (boot methods), 3.1.
-// Plan: docs/subjects/it-support/plan.md, lesson 9. One worked ticket (Malik: the drive he blames sits past where it stopped); a first group of four with the
+// Plan: docs/subjects/it-support/plan.md, lesson 9. One worked ticket (Malik: the drive they blame sits past where it stopped); a first group of four with the
 // deciding words marked; a second of five; a third of three mixed with lessons 5 and 6; the check: six new questions, no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l9', part: 'boot', title: 'From the power button to the desktop', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the six links of the chain; each symptom on its link; how far did it get; the cheap test for each side of a link).' }],
+  id: 'l9', part: 'boot', title: 'From the power button to the desktop', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the six links of the chain; each symptom on its link; how far did it get; the cheap test for each side of a link).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Malik says his desktop will not start; he is sure the hard drive died. Instead of ordering a drive, you find out what happens when he pushes the button. Light on, fans spinning, no logo. That rules the drive out: the computer reaches it after four earlier steps, and his stopped before the third.',
+    'Malik says their desktop will not start; they are sure the hard drive died. Instead of ordering a drive, you find out what happens when they push the button. Light on, fans spinning, no logo. That rules the drive out: the computer reaches it after four earlier steps, and their stopped before the third.',
     'A computer starts as a chain, each step running only if the one before worked. Here you learn the six links, the symptom on each, and the cheap test for where it stopped.'],
   flow: [
     { title: 'The six links',

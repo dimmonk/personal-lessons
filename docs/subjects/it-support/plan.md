@@ -21,11 +21,16 @@ changed, try the known fix with a limit, then narrow it down with the cheapest t
 fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and you know every
 fact and scenario on both CompTIA A+ exams well enough to pass them.**
 
-**Real-world test** (pass mark ours, from IT21 and P26): (1) the job: 10 new tickets in their real form across all systems,
-mixed, no help; pass when the first move is right on 8 and no ticket loses a user's data or is closed without the user's
-confirmation (lesson 29's check, part one); (2) the exam: a 40-question mock drawn from every exam topic in proportion to
-the domain weights (A+ map section 1), pass at 80%, a margin over CompTIA's 675/700 of 900 because our questions are easier to
-guess than the real ones (judgement call).
+**Real-world test** (pass marks ours, from IT21 and P26), built as two checks: (1) the job, the check of lesson 29: 10 new tickets
+in their real form across all systems, mixed, no help; pass when the first move is right on 8 and none touches a user's data
+before it is protected or is closed before the user confirms (two slip rules, `no-backup` and `closed-early`); (2) the exam,
+the check of lesson 30: a mock of 40 questions drawn at random from the topics of lessons 1 to 28, weighted by the nine domain
+weights (A+ map sections 2 and 3: Core 1 mobile 3, networking 5, hardware 5, virtualization and cloud 2, hardware and network
+troubleshooting 5; Core 2 operating systems 6, security 5, software troubleshooting 5, operational procedures 4, where unit 1's
+ticket and communication topics count, C2 4.1 and 4.7), answers shown at the end, pass at 32 right (80%), retest in 28 days. The
+80% is a margin over CompTIA's 675/700 of 900 (scaled scores, not a share right) because our questions are easier to guess than
+the real ones (judgement call). The mock reuses questions the learner has met in the lessons and has no performance-based tasks;
+it measures memory of our questions, not the real exam, and lesson 30 says so.
 
 ## The way of thinking (IT-way, steps 1 to 9 of the research note)
 
@@ -82,7 +87,7 @@ with the answer explained after each, and come back in the weekly review (IT25, 
 
 ## Topics, parts and lessons
 
-29 lessons in 8 units. Weight follows the job (unit 1) and the exam's domain weights (A+ map section 1). Each line: the lesson,
+30 lessons in 8 units. Weight follows the job (unit 1) and the exam's domain weights (A+ map section 1). Each line: the lesson,
 what it teaches, its check, and the A+ objectives it covers.
 
 ### Unit 1, Working a ticket (the way of thinking; C2 4.1, 4.2 part, 4.7; IT1 to IT20)
@@ -148,8 +153,12 @@ what it teaches, its check, and the A+ objectives it covers.
     machines and cloud models. Check: 5 of 6. (C2 4.6, 4.8 to 4.10; C1 4.1, 4.2)
 
 ### Unit 8, Ready for the job and the exam
-29. **The whole ticket, and the mock exam**: tickets from every system, unlabelled, with every move; then a mock exam drawn from
-    every topic. Check: the real-world test above. (IT24, IT25)
+29. **The whole ticket**: a recap of the nine moves and the chains, six new tickets from every system, unlabelled, with every
+    move, then ten more as the check. Check: the real-world test (1) above, 8 of 10 with no `no-backup` and no `closed-early`.
+    Reserve: six more tickets. (IT24, IT25)
+30. **The mock exam**: how the real exams run (two exams of up to 90 questions in 90 minutes, pass 675 and 700 of 900), four
+    mixed questions, then a weighted mock. Check: the real-world test (2) above, 40 drawn questions in nine groups by domain
+    weight, 32 right, retest in 28 days. (IT21, IT24, IT25; A+ map sections 1 to 3)
 
 ## Build notes
 

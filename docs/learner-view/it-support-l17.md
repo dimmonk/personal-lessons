@@ -1,10 +1,10 @@
 # IT Help Desk: Wireless and the small office network
 
-Revision 1, live. Part: Wireless and the small office network. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Wireless and the small office network. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Marta starts in a new office on Monday. The router login is admin and admin, there is no Wi-Fi password, and the back room drops off twice an hour.
+Emily starts in a new office on Monday. The router login is admin and admin, there is no Wi-Fi password, and the back room drops off twice an hour.
 Here you learn Wi-Fi bands, security and router setup.
 
 ## Step 1: Three radio bands
@@ -134,7 +134,7 @@ Your own note, written after an argument: "Your notes", On the desk.
 > The router offers a 2.4 GHz name and a 5 GHz name, and Rosa’s laptop can use both. A wall jack in the room goes to the same switch as the office.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**You plug her laptop into the wall jack: a speed test gives 280 Mbps. On Wi-Fi in the same spot it gives 12 Mbps. What does that show?**
+**You plug their laptop into the wall jack: a speed test gives 280 Mbps. On Wi-Fi in the same spot it gives 12 Mbps. What does that show?**
 (the options come in an order that depends on the seed of the question)
 - The internet line is fine; the slow part is the Wi-Fi in this room.
 - The internet line is slow in the afternoons, and the Wi-Fi shows it first.
@@ -145,7 +145,7 @@ The working, one step at a time:
 1. Name the favorite cause and test it cheaply.: Rosa says the line. The cheapest cut is one cable: plug the laptop into the wall and run the same speed test.
 1. Drop the cause the test rules out.: The line and the router are fine at 280 Mbps. Everything before the radio link works, so look at the radio link.
 1. Test the next cause with a Wi-Fi analyzer.: The analyzer lists four networks on 2.4 GHz, ours included: three on channel 6 and one on channel 7. Our own is one of the three on channel 6, so those three share the same lane and take turns.
-1. Change one thing: leave the crowded band.: The router offers a 5 GHz name and her laptop can use it; 5 GHz has far more channels and fewer neighbors. She joins the 5 GHz name and the speed test gives 180 Mbps.
+1. Change one thing: leave the crowded band.: The router offers a 5 GHz name and their laptop can use it; 5 GHz has far more channels and fewer neighbors. They join the 5 GHz name and the speed test gives 180 Mbps.
 1. Check with Rosa and write it up.: The call stays smooth. The note says: slow in conference room, line fine by cable, 2.4 GHz channel 6 crowded, moved to 5 GHz.
 
 Then the answer: The internet line is fine; the slow part is the Wi-Fi in this room. Rosa blamed the line. One cable test split the path: fast by cable, slow on Wi-Fi, so the line was ruled out. The analyzer then showed four networks on channels 6 and 7, three of them on channel 6, so the cause was a crowded channel, fixed by one change of band.
@@ -156,9 +156,9 @@ Then the answer: The internet line is fine; the slow part is the Wi-Fi in this r
 
 #### Item 1
 
-A chat, with its history: "Ravi, Facilities", Chat with the help desk.
+A chat, with its history: "Layla, Facilities", Chat with the help desk.
 
-> (Ravi, Facilities, at the left) **The tax team sits at the far end of the floor behind two brick walls. The office router gives two Wi-Fi names, one on 2.4 GHz and one on 5 GHz. Their laptops show one bar on the 5 GHz name and three bars on the 2.4 GHz name.**
+> (Layla, Facilities, at the left) **The tax team sits at the far end of the floor behind two brick walls. The office router gives two Wi-Fi names, one on 2.4 GHz and one on 5 GHz. Their laptops show one bar on the 5 GHz name and three bars on the 2.4 GHz name.**
 
 Help on screen: the words that decide it are marked.
 
@@ -173,9 +173,9 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 2
 
-A chat, with its history: "Dan, Front desk", Chat with the help desk.
+A chat, with its history: "Seth, Front desk", Chat with the help desk.
 
-> (Dan, Front desk, at the left) **The Wi-Fi at the reception desk cuts out for a minute or two around noon and then comes back. The break room is on the other side of the wall, and people heat their lunch there. The laptop uses the router’s 2.4 GHz name. The router also has a 5 GHz name, and the laptop can use it.**
+> (Seth, Front desk, at the left) **The Wi-Fi at the reception desk cuts out for a minute or two around noon and then comes back. The break room is on the other side of the wall, and people heat their lunch there. The laptop uses the router’s 2.4 GHz name. The router also has a 5 GHz name, and the laptop can use it.**
 
 Help on screen: the words that decide it are marked.
 
@@ -190,9 +190,9 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Item 3
 
-A chat, with its history: "Una, Office manager", Chat with the help desk.
+A chat, with its history: "Mitchell, Office manager", Chat with the help desk.
 
-> (Una, Office manager, at the left) **We are setting up the Wi-Fi for a new office. Every laptop and phone we own is under two years old, and the maker’s list says each works with WPA3. The router’s menu offers WPA3, WPA2 with AES, WPA2 with TKIP and None.**
+> (Mitchell, Office manager, at the left) **We are setting up the Wi-Fi for a new office. Every laptop and phone we own is under two years old, and the maker’s list says each works with WPA3. The router’s menu offers WPA3, WPA2 with AES, WPA2 with TKIP and None.**
 
 Help on screen: the words that decide it are marked.
 
@@ -208,9 +208,9 @@ After the answer: the deciding words are marked. Reason: The rule is the stronge
 
 #### Item 4
 
-A chat, with its history: "Marta, Accounting", Chat with the help desk.
+A chat, with its history: "Emily, Accounting", Chat with the help desk.
 
-> (Marta, Accounting, at the left) We start in the new office on Monday. The router is plugged in and everything works. Can you check it is safe to use?
+> (Emily, Accounting, at the left) We start in the new office on Monday. The router is plugged in and everything works. Can you check it is safe to use?
 
 Your own note, written after an argument: "The new router", Its settings as it came out of the box.
 
@@ -245,9 +245,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Ola, Training", Chat with the help desk.
+A chat, with its history: "Karen, Training", Chat with the help desk.
 
-> (Ola, Training, at the left) The Wi-Fi in our building is slow. The analyzer shows neighbors on 2.4 GHz channels 1 and 6, and our router is on channel 3, which overlaps both.
+> (Karen, Training, at the left) The Wi-Fi in our building is slow. The analyzer shows neighbors on 2.4 GHz channels 1 and 6, and our router is on channel 3, which overlaps both.
 
 **Which channel do you move the router to?**
 (the options come in an order that depends on the seed of the question)
@@ -260,9 +260,9 @@ After the answer: the deciding words are marked. Reason: Two networks that overl
 
 #### Item 6
 
-A chat, with its history: "Hana, Retail", Chat with the help desk.
+A chat, with its history: "Esperanza, Retail", Chat with the help desk.
 
-> (Hana, Retail, at the left) The new card reader takes payment when a customer holds a phone against it, almost touching, with nothing to pair first. What kind of radio is that?
+> (Esperanza, Retail, at the left) The new card reader takes payment when a customer holds a phone against it, almost touching, with nothing to pair first. What kind of radio is that?
 
 **Which technology is it?**
 (the options come in an order that depends on the seed of the question)
@@ -275,11 +275,11 @@ After the answer: the deciding words are marked. Reason: A phone held almost tou
 
 #### Item 7
 
-A chat, with its history: "Gus, Warehouse", Chat with the help desk.
+A chat, with its history: "Itzel, Warehouse", Chat with the help desk.
 
-> (Gus, Warehouse, at the left) Everything online is slow at my desk, Wi-Fi and all. We pay for 300 Mbps. Is it the Wi-Fi?
+> (Itzel, Warehouse, at the left) Everything online is slow at my desk, Wi-Fi and all. We pay for 300 Mbps. Is it the Wi-Fi?
 
-A plain table, "Speed tests from Gus’s laptop, same time":
+A plain table, "Speed tests from Itzel’s laptop, same time":
 
 > Connection  |  Result  (the column heads)
 > Plugged into the wall jack by cable  |  14 Mbps
@@ -296,9 +296,9 @@ After the answer: the deciding words are marked. Reason: By cable and by Wi-Fi b
 
 #### Item 8
 
-A chat, with its history: "Leo, Warehouse", Chat with the help desk.
+A chat, with its history: "Isadora, Warehouse", Chat with the help desk.
 
-> (Leo, Warehouse, at the left) The router’s security menu lists WPA2 with AES, WPA2 with TKIP and WPA3 only. Most of our laptops are new, but the scanner guns and two old laptops can do WPA2 with AES and nothing newer.
+> (Isadora, Warehouse, at the left) The router’s security menu lists WPA2 with AES, WPA2 with TKIP and WPA3 only. Most of our laptops are new, but the scanner guns and two old laptops can do WPA2 with AES and nothing newer.
 
 **Which setting do you pick?**
 (the options come in an order that depends on the seed of the question)
@@ -311,9 +311,9 @@ After the answer: the deciding words are marked. Reason: The oldest devices only
 
 #### Item 9
 
-A chat, with its history: "Tia, Front office", Chat with the help desk.
+A chat, with its history: "Troy, Front office", Chat with the help desk.
 
-> (Tia, Front office, at the left) Visitors in the waiting room asked for Wi-Fi, so I gave them the office password. One of them could see our shared printer in his list.
+> (Troy, Front office, at the left) Visitors in the waiting room asked for Wi-Fi, so I gave them the office password. One of them could see our shared printer in their list.
 
 **What do you do instead?**
 (the options come in an order that depends on the seed of the question)
@@ -326,16 +326,16 @@ After the answer: the deciding words are marked. Reason: The visitors reached th
 
 #### Item 10
 
-A chat, with its history: "Ben, Facilities", Chat with the help desk.
+A chat, with its history: "Arthur, Facilities", Chat with the help desk.
 
-> (Ben, Facilities, at the left) I put a camera in the shop and I want to watch it from home. The camera is at 192.168.1.60 and sends its video on port 8080. Its password is already changed from the maker’s default, and we have no VPN.
+> (Arthur, Facilities, at the left) I put a camera in the shop and I want to watch it from home. The camera is at 192.168.1.60 and sends its video on port 8080. Its password is already changed from the maker’s default, and we have no VPN.
 
 **What do you change on the router?**
 (the options come in an order that depends on the seed of the question)
 - Forward port 8080 to the camera (right)
 - Forward every port to the camera, so that it works whatever it needs — if chosen: Only port 8080 is needed. Every port open makes the camera reachable on all of them from the internet.
 - Turn UPnP on so the camera opens whichever ports it needs by itself — if chosen: UPnP lets any program on the network open ports without asking, and malware does the same.
-- Turn the firewall off while he is watching the camera from home — if chosen: The firewall protects all the other computers. Only the one port needs a way through.
+- Turn the firewall off while they are watching the camera from home — if chosen: The firewall protects all the other computers. Only the one port needs a way through.
 
 After the answer: the deciding words are marked. Reason: The camera needs one door from the internet, port 8080, to one device. Port forwarding makes exactly that door. Its password is already changed, which matters because the door faces the internet; a VPN is safer where one exists. The camera’s address is then kept fixed so the door keeps pointing at it.
 
@@ -347,9 +347,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 11
 
-A chat, with its history: "Sam, Warehouse", Chat with the help desk.
+A chat, with its history: "Hannah, Warehouse", Chat with the help desk.
 
-> (Sam, Warehouse, at the left) Our scanner guns can only use 802.11g. The new router gives a 2.4 GHz name and a 5 GHz name.
+> (Hannah, Warehouse, at the left) Our scanner guns can only use 802.11g. The new router gives a 2.4 GHz name and a 5 GHz name.
 
 **Which name can the scanners join?**
 (the options come in an order that depends on the seed of the question)
@@ -362,24 +362,24 @@ After the answer: the deciding words are marked. Reason: The standard decides th
 
 #### Item 12
 
-A chat, with its history: "Eli, Sales", Chat with the help desk.
+A chat, with its history: "Shana, Sales", Chat with the help desk.
 
-> (Eli, Sales, at the left) Since the router was replaced last night I cannot join the Wi-Fi from my old tablet. It says authentication failed. I typed the password slowly, twice. My new phone joined fine. The router’s security page now shows only its newest type.
+> (Shana, Sales, at the left) Since the router was replaced last night I cannot join the Wi-Fi from my old tablet. It says authentication failed. I typed the password slowly, twice. My new phone joined fine. The router’s security page now shows only its newest type.
 
 **What is the likely cause?**
 (the options come in an order that depends on the seed of the question)
 - The tablet is too old to use the router’s security type, so the sign-in is refused (right)
 - The 2.4 GHz channel is crowded, so the tablet times out when it signs in — if chosen: Crowding makes Wi-Fi slow or patchy. It does not turn the sign-in away.
 - The tablet is too far from the router, and the weak signal makes it fail — if chosen: Distance gives a weak or dropping signal, not a refused sign-in. The message here is about authentication.
-- The password is wrong, so he should try typing it a third time more slowly — if chosen: He typed it twice and the phone joined with the same one. Typing it again changes nothing.
+- The password is wrong, so they should try typing it a third time more slowly — if chosen: They typed it twice and the phone joined with the same one. Typing it again changes nothing.
 
 After the answer: the deciding words are marked. Reason: The deciding words are authentication failed, an old tablet, a new phone that joins and a router with only its newest type. The one thing that differs is the security type the device can speak.
 
 #### Item 13
 
-A chat, with its history: "Mo, HR", Chat with the help desk.
+A chat, with its history: "Abigail, HR", Chat with the help desk.
 
-> (Mo, HR, at the left) We have 60 staff. Whenever someone leaves we change the Wi-Fi password and retype it on 59 devices. We want each person to sign in with their own account, so turning off an account turns off their Wi-Fi.
+> (Abigail, HR, at the left) We have 60 staff. Whenever someone leaves we change the Wi-Fi password and retype it on 59 devices. We want each person to sign in with their own account, so turning off an account turns off their Wi-Fi.
 
 **What do you put in?**
 (the options come in an order that depends on the seed of the question)
@@ -392,9 +392,9 @@ After the answer: the deciding words are marked. Reason: The wish is one account
 
 #### Item 14
 
-A chat, with its history: "Ana, Accounting", Chat with the help desk.
+A chat, with its history: "Henrietta, Accounting", Chat with the help desk.
 
-> (Ana, Accounting, at the left) My manager wants to turn off SSID broadcast, the setting that stops the router sending out the Wi-Fi’s name. She says nobody can see the network then, so we can skip the Wi-Fi password.
+> (Henrietta, Accounting, at the left) My manager wants to turn off SSID broadcast, the setting that stops the router sending out the Wi-Fi’s name. They say nobody can see the network then, so we can skip the Wi-Fi password.
 
 **What does turning off SSID broadcast do?**
 (the options come in an order that depends on the seed of the question)
@@ -407,9 +407,9 @@ After the answer: the deciding words are marked. Reason: SSID broadcast only ann
 
 #### Item 15
 
-A chat, with its history: "Kim, Web team", Chat with the help desk.
+A chat, with its history: "Preston, Web team", Chat with the help desk.
 
-> (Kim, Web team, at the left) We run a small web server that customers must reach from the internet. If it is ever hacked, I want the office computers to stay out of reach.
+> (Preston, Web team, at the left) We run a small web server that customers must reach from the internet. If it is ever hacked, I want the office computers to stay out of reach.
 
 **Where does the server go?**
 (the options come in an order that depends on the seed of the question)
@@ -445,9 +445,9 @@ After the answer: Reason: 802.11ax is Wi-Fi 6. The numbered names run: 802.11n i
 
 #### Check question 17
 
-A chat, with its history: "Joel, Warehouse", Chat with the help desk.
+A chat, with its history: "Nadir, Warehouse", Chat with the help desk.
 
-> (Joel, Warehouse, at the left) We put a cheap tag with no battery on every pallet. A reader at the dock door picks up all the tags on a pallet as the forklift drives through.
+> (Nadir, Warehouse, at the left) We put a cheap tag with no battery on every pallet. A reader at the dock door picks up all the tags on a pallet as the forklift drives through.
 
 **Which technology is that?**
 (the options come in an order that depends on the seed of the question)
@@ -475,9 +475,9 @@ After the answer: the deciding words are marked. Reason: It is fast close by and
 
 #### Check question 19
 
-A chat, with its history: "Sue, Network team", Chat with the help desk.
+A chat, with its history: "Kieran, Network team", Chat with the help desk.
 
-> (Sue, Network team, at the left) Our network admins sign in to the routers and switches. We want one central server that keeps who they are, what each may do and what each did as three separate jobs, and that decides which commands each admin may run.
+> (Kieran, Network team, at the left) Our network admins sign in to the routers and switches. We want one central server that keeps who they are, what each may do and what each did as three separate jobs, and that decides which commands each admin may run.
 
 **Which does that?**
 (the options come in an order that depends on the seed of the question)
@@ -490,24 +490,24 @@ After the answer: the deciding words are marked. Reason: The job is admins on ne
 
 #### Check question 20
 
-A chat, with its history: "Ned, Accounts", Chat with the help desk.
+A chat, with its history: "Lorena, Accounts", Chat with the help desk.
 
-> (Ned, Accounts, at the left) A user gave away her password in a phishing email (a fake message that tricks people). I want a change so that the password alone can no longer sign anyone in to her account.
+> (Lorena, Accounts, at the left) A user gave away their password in a phishing email (a fake message that tricks people). I want a change so that the password alone can no longer sign anyone in to their account.
 
 **Which change does that?**
 (the options come in an order that depends on the seed of the question)
-- Require a code from an app on her phone as well (right)
-- Make her password longer and have her change it every month — if chosen: It is still one factor, and the thief now knows the new one.
-- Switch the office Wi-Fi from TKIP to AES, so the traffic is scrambled better — if chosen: That changes how the Wi-Fi is scrambled, not how her account signs in.
-- Turn off SSID broadcast so the Wi-Fi name is not shown in the list — if chosen: That hides the Wi-Fi name. It has no effect on her account.
+- Require a code from an app on their phone as well (right)
+- Make their password longer and have them change it every month — if chosen: It is still one factor, and the thief now knows the new one.
+- Switch the office Wi-Fi from TKIP to AES, so the traffic is scrambled better — if chosen: That changes how the Wi-Fi is scrambled, not how their account signs in.
+- Turn off SSID broadcast so the Wi-Fi name is not shown in the list — if chosen: That hides the Wi-Fi name. It has no effect on their account.
 
 After the answer: the deciding words are marked. Reason: Multifactor means two or more of something you know, something you have and something you are. The stolen password is one; the phone code is a second that the thief lacks.
 
 #### Check question 21
 
-A chat, with its history: "Pat, IT", Chat with the help desk.
+A chat, with its history: "Karina, IT", Chat with the help desk.
 
-> (Pat, IT, at the left) A worm (self-spreading harmful software) on one laptop opened a port on the office router by itself, with no one asking. The router has a setting that lets programs and devices do that.
+> (Karina, IT, at the left) A worm (self-spreading harmful software) on one laptop opened a port on the office router by itself, with no one asking. The router has a setting that lets programs and devices do that.
 
 **What is the setting, and what do you do with it?**
 (the options come in an order that depends on the seed of the question)
@@ -520,9 +520,9 @@ After the answer: the deciding words are marked. Reason: The deciding words are 
 
 #### Check question 22
 
-A chat, with its history: "Wes, Operations", Chat with the help desk.
+A chat, with its history: "Hazel, Operations", Chat with the help desk.
 
-> (Wes, Operations, at the left) The maker’s site has an update for our router that fixes a flaw letting anyone on the internet take control of it. Ours is two updates behind. The office manager has approved the change for tonight.
+> (Hazel, Operations, at the left) The maker’s site has an update for our router that fixes a flaw letting anyone on the internet take control of it. Ours is two updates behind. The office manager has approved the change for tonight.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
@@ -535,9 +535,9 @@ After the answer: the deciding words are marked. Reason: A known flaw in the rou
 
 #### Check question 23
 
-A chat, with its history: "Lena, Owner", Chat with the help desk.
+A chat, with its history: "Trudy, Owner", Chat with the help desk.
 
-> (Lena, Owner, at the left) I want staff blocked from gambling and adult sites, whatever the address of the site is.
+> (Trudy, Owner, at the left) I want staff blocked from gambling and adult sites, whatever the address of the site is.
 
 **Which router setting does that?**
 (the options come in an order that depends on the seed of the question)

@@ -4,13 +4,14 @@
 // link before anything is changed. Research: IT4, IT5 and IT8 (a functional breakdown plus the cheapest test that splits it: signing in and opening the files clears link 1), IT9 (drop the cause the test
 // rules out), IT2 (protect the data: BitLocker and EFS need a way back in), IT25 to IT27 (the exam facts are asked from memory, spaced), IT28 and IT29 (worked ticket, then fading help); rulings 11 of
 // docs/subjects/it-support/rulings-l1-8.md (identity is checked by something the caller did not supply) and 6. Plan: docs/subjects/it-support/plan.md, lesson 25.
+// Facts checked 2026-10-23: NTFS Write adds and saves but cannot delete, Modify can (albusbit.com/blog/windows-permission-differences/); BitLocker Pro and above (Microsoft Support, Device Encryption).
 // Strands: access-physical, access-logical, win-security, ad-policy, hardening. One worked ticket (Priya cannot save in the Budget share); a first group of four with help; a second of six; a third of six
 // mixed with lessons 7 and 8; the check: eight new questions, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l25', part: 'access', title: 'Accounts and access', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the chain of access: who you are, what you are allowed, the policy over it, with the physical door in front; MFA kinds, NTFS against share permissions, UAC, BitLocker, Active Directory, Group Policy and hardening; exam facts asked from memory and as tickets).' }],
+  id: 'l25', part: 'access', title: 'Accounts and access', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the chain of access: who you are, what you are allowed, the policy over it, with the physical door in front; MFA kinds, NTFS against share permissions, UAC, BitLocker, Active Directory, Group Policy and hardening; exam facts asked from memory and as tickets).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'Priya started in Finance on Monday. She chats the desk: she can open every file in the Budget folder on the shared drive, but every time she saves, Windows says she does not have permission. Resetting her password would feel like the obvious move. It would change nothing, because her password is not what is wrong.',
+    'Priya started in Finance on Monday. Priya chats the desk: every file in the Budget folder on the shared drive opens, but every time Priya saves, Windows says there is no permission. Resetting the password would feel like the obvious move. It would change nothing, because the password is not what is wrong.',
     'Here you learn the chain between a person and a file: who you are, what you are allowed, and the policy over both, with the door of the building in front. Each “access denied” ticket belongs on one link, and you find it before you change anything.'],
   flow: [
     { title: 'The chain of access',
@@ -32,6 +33,7 @@ FC.lesson('it-support', {
         { id: 'a1', cells: ['Local account', 'On one PC only; no other PC knows it'] },
         { id: 'a2', cells: ['Microsoft account', 'An email address; settings and OneDrive follow the person'] },
         { id: 'a3', cells: ['Domain account', 'Made by the company in Active Directory; works on any PC joined to the domain'] },
+        { id: 's1', cells: ['Username and password', 'The account name and its secret. Passwordless sign-in uses Windows Hello, a hardware token or an app instead of typing a password'] },
         { id: 's2', cells: ['PIN', 'A short code tied to one PC'] },
         { id: 's3', cells: ['Windows Hello', 'Face or fingerprint (or PIN) with no password'] },
         { id: 's5', cells: ['SSO (single sign-on)', 'One sign-in that opens many apps'] }] }] },
@@ -69,23 +71,23 @@ FC.lesson('it-support', {
         { id: 'n4', cells: ['Attributes', 'Labels on one file. Read-only will not save, whatever the permissions say'] }] }] },
     { title: 'UAC and Run as administrator',
       show: [{ kind: 'prose', text: [
-        'User Account Control, UAC, dims the screen and checks before anything needing administrator rights runs. An administrator clicks Yes; a standard user must type an administrator’s name and password. It is not a fault. Run as administrator, by right-clicking a program, starts it with full rights after that prompt. sfc /scannow needs it.'] }] },
+        'User Account Control, UAC, dims the screen and checks before anything needing administrator rights runs. An administrator clicks Yes; a standard user must type an administrator’s name and password. It is not a fault. Run as administrator, by right-clicking a program, starts it with full rights after that prompt. sfc /scannow, a command that checks Windows’ own files, needs it.'] }] },
     { title: 'Link 3: Active Directory and Group Policy',
       show: [{ kind: 'prose', text: [
-        'A company keeps its accounts in one domain, run by a domain controller. Windows Home cannot join a domain; Pro and above can.'] },
+        'A company keeps its accounts in one domain, run by a domain controller, a server that holds the accounts and checks every sign-in. Windows Home cannot join a domain; Pro and above can.'] },
       { kind: 'document', form: 'table', title: 'Parts of Active Directory', head: ['Part', 'What it does'], rows: [
         { id: 'd1', cells: ['Domain join', 'Lets domain accounts sign in on a PC'] },
         { id: 'd2', cells: ['OU (organizational unit)', 'A folder in the domain holding accounts and computers; moving one in puts it under that OU’s policies'] },
-        { id: 'd4', cells: ['Group Policy', 'Rules for an OU: password rules, blocked USB drives, locked settings'] },
+        { id: 'd4', cells: ['Group Policy', 'Rules mostly linked to OUs: password rules, blocked USB drives, locked settings'] },
         { id: 'd5', cells: ['Login script', 'Runs at sign-in, for example to connect shared drives'] },
         { id: 'd6', cells: ['Home folder, folder redirection', 'A personal folder on a server, so files follow the person to any PC'] }] },
       { kind: 'prose', text: [
         'gpupdate /force applies policy now, and gpresult /r shows which policies applied.'] }] },
     { title: 'Protecting what is on the machine',
       show: [{ kind: 'document', form: 'table', title: 'Windows protections', head: ['Protection', 'What it does'], rows: [
-        { id: 'w1', cells: ['Defender Antivirus', 'Looks for malware; its definitions (the list of known malware) must stay updated'] },
-        { id: 'w2', cells: ['Defender Firewall', 'Blocks or allows traffic by port and by program'] },
-        { id: 'w3', cells: ['BitLocker', 'Encrypts the Windows drive (Pro and above). The TPM chip holds the code; save the recovery key, since a changed board locks the data without it'] },
+        { id: 'w1', cells: ['Defender Antivirus', 'Looks for malware; its definitions (the list of known malware) must stay updated. It can be turned on or off in Windows Security: keep it on'] },
+        { id: 'w2', cells: ['Defender Firewall', 'Blocks or allows traffic by port (a numbered door that one kind of traffic uses) and by program'] },
+        { id: 'w3', cells: ['BitLocker', 'Encrypts the Windows drive (Pro and above). The TPM, a small security chip on the board, holds the code; save the recovery password, since a changed board locks the data without it'] },
         { id: 'w4', cells: ['BitLocker To Go', 'The same for a USB stick, opened with a password'] },
         { id: 'w5', cells: ['EFS', 'Encrypts single files for one account; if its certificate is lost, so are the files'] }] }] },
     { title: 'Hardening a workstation',
@@ -96,12 +98,18 @@ FC.lesson('it-support', {
         { id: 'h4', cells: ['Failed-attempt lockout', 'Guessing: the account locks after a chosen number of wrong passwords'] },
         { id: 'h5', cells: ['Login times, account expiration', 'Use outside working hours or after a contractor’s end date'] },
         { id: 'h6', cells: ['Disable Guest; change the default administrator name and password', 'An account anyone can use; attackers who know the factory login'] },
-        { id: 'h8', cells: ['Disable AutoRun, unused services', 'A USB program starting by itself; extra ways in'] }] }] },
+        { id: 'h8', cells: ['Disable AutoRun, unused services', 'A USB program starting by itself; extra ways in'] },
+        { id: 'h9', cells: ['Encrypt data at rest, lock laptops, protect PII, use a password manager', 'A lost laptop or drive being read; personal data (PII) on shared drives; weak or reused passwords'] }] }] },
     { title: 'Making everyone an administrator',
       show: [{ kind: 'prose', tone: 'wrong', text: [
-        '“Nothing keeps being refused for Priya, so I will make her an administrator, or give Everyone Full Control on the folder.”',
-        'It clears the ticket and breaks least privilege: anything she runs, or is tricked into running, now has full rights. Fix the link that failed: Modify for her group on that one folder.',
-        'Another common shortcut: “reset the account because the caller says who they are”. Anyone can say a name. Check the caller by something the caller did not supply: the number on record, the manager looked up in the directory.'] }] },
+        '“Nothing keeps being refused for Priya, so I will make Priya an administrator, or give Everyone Full Control on the folder.”',
+        'It clears the ticket and breaks least privilege: anything Priya runs, or is tricked into running, now has full rights.',
+        'Fix the link that failed: Modify for the Finance group on that one folder.'] }] },
+    { title: 'Resetting on the caller’s word',
+      show: [{ kind: 'prose', tone: 'wrong', text: [
+        '“The caller says who they are and sounds sure, so I will reset the account.”',
+        'Anyone can say a name, and a number the caller reads out proves nothing, because the caller supplied it.',
+        'Check the caller by something the caller did not supply: call the number on the directory record, or look up the manager in the directory.'] }] },
     { worked: 'l25-w-priya' },
     { set: { items: ['l25-p-vest', 'l25-p-mfa', 'l25-p-delete', 'l25-p-uac'], order: 'listed', support: { shown: true } } },
     { set: { items: ['l25-q-both', 'l25-q-readonly', 'l25-q-togo', 'l25-q-lockout', 'l25-q-ou', 'l25-q-call', 'l25-q-tailgate', 'l25-q-otp', 'l25-q-gpupdate', 'l25-q-gpresult', 'l25-q-pin', 'l25-q-home', 'l25-q-home-edition'], order: 'shuffle' } },

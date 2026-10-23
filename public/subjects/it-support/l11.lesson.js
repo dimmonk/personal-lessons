@@ -4,13 +4,13 @@
 // flash drives, memory cards, optical drives) and 5.2 (LED status, grinding, clicking, bootable device not found, data loss or corruption, RAID failure,
 // S.M.A.R.T. failure, extended read and write times, low IOPS, missing drives in the OS, array missing, audible alarms). Research: docs/research/it-support.md IT2 and
 // IT17 (back up before touching anything), IT5 (each symptom on the link of the chain it belongs to). Strands: drives, raid, drive-fix.
-// One worked ticket (Boris: a favorite cause, a cleanup, ruled out by his own line); a first group of four with help shown; a second of five and a third of four with none; a check of
+// One worked ticket (Boris: a favorite cause, a cleanup, ruled out by their own line); a first group of four with help shown; a second of five and a third of four with none; a check of
 // eight new questions. The group of this builder's other lessons to mix in does not exist yet, so none is mixed; the other builders' lessons are added later.
 FC.lesson("it-support", {
-  id: "l11", part: "storage", title: "Storage and RAID", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: drive kinds, connections and shapes; RAID 0, 1, 5, 6, 10; removable and optical media; the drive symptoms with what each points to and the first move (copy the files first when a drive is failing)." }],
+  id: "l11", part: "storage", title: "Storage and RAID", rev: 2, status: "live",
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: drive kinds, connections and shapes; RAID 0, 1, 5, 6, 10; removable and optical media; the drive symptoms with what each points to and the first move (copy the files first when a drive is failing)." }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    "Boris writes that his computer has clicked since Monday and files take minutes to open. His customer files and photos are on it; his last copy is a year old. He wants a cleanup.",
+    "Boris writes that their computer has clicked since Monday and files take minutes to open. Their customer files and photos are on it; their last copy is a year old. They want a cleanup.",
     "You learn the kinds of drive, how each connects, and the RAID levels that join drives. Then what each symptom means, and why the first move on a failing drive is to copy the files off."
   ],
   flow: [

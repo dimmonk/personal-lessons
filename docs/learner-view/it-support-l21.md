@@ -1,10 +1,10 @@
 # IT Help Desk: Windows at the command line
 
-Revision 1, draft (the screen carries the draft line). Part: Windows at the command line. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Windows at the command line. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Dana in Accounting says the D: drive, where last year’s invoices are, will not open. Dana’s cousin says to type format D: and start clean. Format would erase every invoice.
+Rubina in Accounting says the D: drive, where last year’s invoices are, will not open. Rubina’s cousin says to type format D: and start clean. Format would erase every invoice.
 Here you learn the Windows commands the exam tests: the job each does, its switches, how to read what it prints, and which destroy data.
 
 ## Step 1: The command window
@@ -151,9 +151,9 @@ The right line: It clears the files too, and deletes from Command Prompt skip th
 
 ## Step 11: A worked example
 
-A chat, with its history: "Dana, Accounting", Chat with the help desk.
+A chat, with its history: "Rubina, Accounting", Chat with the help desk.
 
-> (Dana, Accounting, at the left) My D: drive, where all of last year’s invoices are, will not open. It says the file or directory is corrupted and unreadable. I have no other copy. My cousin says to just format it and start clean.
+> (Rubina, Accounting, at the left) My D: drive, where all of last year’s invoices are, will not open. It says the file or directory is corrupted and unreadable. I have no other copy. My cousin says to just format it and start clean.
 
 Commands you can use: robocopy, chkdsk, format. A working USB drive, E:, is plugged in with plenty of room.
 
@@ -163,14 +163,14 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Copy off what can still be read, to the working USB drive
 - Format D: so the drive is clean, then start the year’s invoices again
 - Run chkdsk D: /r first, which repairs the drive and recovers the data
-- Tell Dana the drive is dead and order a new one
+- Tell Rubina the drive is dead and order a new one
 
 The working, one step at a time:
-1. Take the story and the guess. Dana has the only copy, and Dana’s cousin’s guess is format.: Format erases the drive and is aimed at the files that matter most. The guess is put aside until the files are safe.
-1. Protect the data first: robocopy D:\ E:\Rescue /e /r:1 /w:1 in an administrator window.: robocopy copies every folder it can read, and with one retry and one second of waiting it does not stall on a bad file. The report says 1,904 files copied, 0 failed. A drive failing under the read would have shown failed files. System Volume Information and $RECYCLE.BIN may show as failures; they are not Dana’s files.
+1. Take the story and the guess. Rubina has the only copy, and Rubina’s cousin’s guess is format.: Format erases the drive and is aimed at the files that matter most. The guess is put aside until the files are safe.
+1. Protect the data first: robocopy D:\ E:\Rescue /e /r:1 /w:1 in an administrator window.: robocopy copies every folder it can read, and with one retry and one second of waiting it does not stall on a bad file. The report says 1,904 files copied, 0 failed. A drive failing under the read would have shown failed files. System Volume Information and $RECYCLE.BIN may show as failures; they are not Rubina’s files.
 1. Test the other favorite cause, a failing drive, with the cheapest read-only check: chkdsk D: with no switches.: It prints “Errors found. CHKDSK cannot continue in read-only mode.” The file system has errors, and every file still read, so the drive itself is not shown to be failing. Replacing it is not supported by anything seen.
 1. One change: chkdsk D: /f, in the administrator window.: chkdsk fixes the file system errors it found and reports it is done. Nothing else was changed at the same time.
-1. Check with Dana, then write it up.: D: opens and the invoices are there. Dana confirms. The note holds Dana’s words, the error text, the copy to E:, the read-only report and the /f repair; the rescue copy stays until she says she is happy.
+1. Check with Rubina, then write it up.: D: opens and the invoices are there. Rubina confirms. The note holds Rubina’s words, the error text, the copy to E:, the read-only report and the /f repair; the rescue copy stays until Rubina is happy.
 
 Then the answer: Copy off what can still be read, to the working USB drive. The only copy of the invoices was on the drive, so the files were protected before anything else, and the favorite fix, format, was kept out. A read-only chkdsk then showed file system errors rather than a failing drive, and a single /f repair, one change at a time, fixed them.
 
@@ -180,9 +180,9 @@ Then the answer: Copy off what can still be read, to the working USB drive. The 
 
 #### Item 1
 
-A chat, with its history: "Ravi, Operations", Chat with the help desk.
+A chat, with its history: "Marcel, Operations", Chat with the help desk.
 
-> (Ravi, Operations, at the left) My second drive, E:, keeps saying files are unreadable. I copied my work off it this morning.
+> (Marcel, Operations, at the left) My second drive, E:, keeps saying files are unreadable. I copied my work off it this morning.
 
 A plain table, "C:\> chkdsk E:":
 
@@ -204,9 +204,9 @@ After the answer: the deciding words are marked. Reason: Errors found in read-on
 
 #### Item 2
 
-A chat, with its history: "Lena, Sales", Chat with the help desk.
+A chat, with its history: "Elias, Sales", Chat with the help desk.
 
-> (Lena, Sales, at the left) **I need the Sales folder on the file server to show up as drive Z: on my laptop. The server is called fileserver and the shared folder is Sales.**
+> (Elias, Sales, at the left) **I need the Sales folder on the file server to show up as drive Z: on my laptop. The server is called fileserver and the shared folder is Sales.**
 
 Help on screen: the words that decide it are marked.
 
@@ -221,9 +221,9 @@ After the answer: the deciding words are marked. Reason: Mapping a drive letter 
 
 #### Item 3
 
-A chat, with its history: "Omar, Design", Chat with the help desk.
+A chat, with its history: "Jocelyn, Design", Chat with the help desk.
 
-> (Omar, Design, at the left) **Each evening I must copy my whole Projects folder, with all its subfolders, to the server share. The Wi-Fi drops now and then, and the copy I use gives me no list of what got there.**
+> (Jocelyn, Design, at the left) **Each evening I must copy my whole Projects folder, with all its subfolders, to the server share. The Wi-Fi drops now and then, and the copy I use gives me no list of what got there.**
 
 Help on screen: the words that decide it are marked.
 
@@ -238,9 +238,9 @@ After the answer: the deciding words are marked. Reason: The job is a whole fold
 
 #### Item 4
 
-A chat, with its history: "Tess, Reception", Chat with the help desk.
+A chat, with its history: "Scott, Reception", Chat with the help desk.
 
-> (Tess, Reception, at the left) **The help desk form wants the name of my computer. I have no idea where to find that.**
+> (Scott, Reception, at the left) **The help desk form wants the name of my computer. I have no idea where to find that.**
 
 Help on screen: the words that decide it are marked.
 
@@ -261,9 +261,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Mo, Intern", Chat with the help desk.
+A chat, with its history: "Joaquim, Intern", Chat with the help desk.
 
-> (Mo, Intern, at the left) A tech guide told me to type format D: to fix a drive that is slow. I typed it, and Windows now asks me a question. I have not answered.
+> (Joaquim, Intern, at the left) A tech guide told me to type format D: to fix a drive that is slow. I typed it, and Windows now asks me a question. I have not answered.
 
 A plain table, "C:\> format D:":
 
@@ -273,7 +273,7 @@ A plain table, "C:\> format D:":
 > DRIVE D: WILL BE LOST!
 > Proceed with Format (Y/N)?
 
-**What do you tell Mo?**
+**What do you tell Joaquim?**
 (the options come in an order that depends on the seed of the question)
 - Answer N and close the window; a format cannot be undone (right)
 - Answer Y; the warning is only Windows being extra careful — if chosen: The warning is exact: the format erases everything on D:.
@@ -284,9 +284,9 @@ After the answer: the deciding words are marked. Reason: The prompt says ALL DAT
 
 #### Item 6
 
-A chat, with its history: "Ned, Facilities", Chat with the help desk.
+A chat, with its history: "Maia, Facilities", Chat with the help desk.
 
-> (Ned, Facilities, at the left) Please clear the USB stick from the old training room so the next person gets an empty one. Its owner says nothing on it is needed. File Explorer shows the stick as 58 GB. It is plugged into a laptop with one internal drive.
+> (Maia, Facilities, at the left) Please clear the USB stick from the old training room so the next person gets an empty one. Its owner says nothing on it is needed. File Explorer shows the stick as 58 GB. It is plugged into a laptop with one internal drive.
 
 A plain table, "DISKPART> list disk":
 
@@ -307,9 +307,9 @@ After the answer: the deciding words are marked. Reason: clean removes the parti
 
 #### Item 7
 
-A chat, with its history: "Uma, Finance", Chat with the help desk.
+A chat, with its history: "Callum, Finance", Chat with the help desk.
 
-> (Uma, Finance, at the left) Windows said my computer’s main drive has errors. I ran chkdsk C: /f in an administrator window and it printed a question I do not understand.
+> (Callum, Finance, at the left) Windows said my computer’s main drive has errors. I ran chkdsk C: /f in an administrator window and it printed a question I do not understand.
 
 A plain table, "C:\> chkdsk C: /f":
 
@@ -320,7 +320,7 @@ A plain table, "C:\> chkdsk C: /f":
 > Would you like to schedule this volume to be checked
 > the next time the system restarts? (Y/N)
 
-**What does the question mean, and what do you tell Uma?**
+**What does the question mean, and what do you tell Callum?**
 (the options come in an order that depends on the seed of the question)
 - The drive is in use, so copy the important files off, answer Y and restart (right)
 - The drive is too damaged for chkdsk to read, so answer N and replace it — if chosen: Nothing here says the drive is damaged beyond repair. It only says the drive is in use.
@@ -331,9 +331,9 @@ After the answer: the deciding words are marked. Reason: “Cannot lock current 
 
 #### Item 8
 
-A chat, with its history: "Joy, Records", Chat with the help desk.
+A chat, with its history: "Celeste, Records", Chat with the help desk.
 
-> (Joy, Records, at the left) My laptop has been clicking and slow since this morning, and some files will not open. I have not backed anything up.
+> (Celeste, Records, at the left) My laptop has been clicking and slow since this morning, and some files will not open. I have not backed anything up.
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
@@ -346,9 +346,9 @@ After the answer: the deciding words are marked. Reason: Clicking and unreadable
 
 #### Item 9
 
-A chat, with its history: "Kofi, IT manager", Chat with the help desk.
+A chat, with its history: "Ricardo, IT manager", Chat with the help desk.
 
-> (Kofi, IT manager, at the left) A user’s Windows keeps crashing since an update. I ran sfc /scannow and pasted what it printed.
+> (Ricardo, IT manager, at the left) A user’s Windows keeps crashing since an update. I ran sfc /scannow and pasted what it printed.
 
 A plain table, "C:\Windows\system32> sfc /scannow":
 
@@ -395,9 +395,9 @@ After the answer: the deciding words are marked. Reason: gpresult /r lists the p
 
 #### Item 11
 
-A chat, with its history: "Gus, Web team", Chat with the help desk.
+A chat, with its history: "Rodney, Web team", Chat with the help desk.
 
-> (Gus, Web team, at the left) Staff say the web page on the server SRV2 will not open. I am on SRV2. Is the web service even waiting for visitors?
+> (Rodney, Web team, at the left) Staff say the web page on the server SRV2 will not open. I am on SRV2. Is the web service even waiting for visitors?
 
 A plain table, "C:\> netstat -an":
 
@@ -419,9 +419,9 @@ After the answer: the deciding words are marked. Reason: netstat -an lists each 
 
 #### Item 12
 
-A chat, with its history: "Rae, Sales", Chat with the help desk.
+A chat, with its history: "Nalini, Sales", Chat with the help desk.
 
-> (Rae, Sales, at the left) The Y: drive on my laptop shows a red X. Z: works fine.
+> (Nalini, Sales, at the left) The Y: drive on my laptop shows a red X. Z: works fine.
 
 A plain table, "C:\> net use":
 
@@ -442,9 +442,9 @@ After the answer: the deciding words are marked. Reason: Z: is OK and Y: is Unav
 
 #### Item 13
 
-A chat, with its history: "Cal, Facilities", Chat with the help desk.
+A chat, with its history: "Liam, Facilities", Chat with the help desk.
 
-> (Cal, Facilities, at the left) I typed rmdir C:\OldReports to clear it out and got an error. How do I make it go?
+> (Liam, Facilities, at the left) I typed rmdir C:\OldReports to clear it out and got an error. How do I make it go?
 
 A plain table, "C:\> rmdir C:\OldReports":
 
@@ -484,19 +484,19 @@ After the answer: the deciding words are marked. Reason: /mir copies and then de
 
 #### Item 15
 
-A chat, with its history: "Wes, Intern", Chat with the help desk.
+A chat, with its history: "Roland, Intern", Chat with the help desk.
 
-> (Wes, Intern, at the left) I am in C:\Users\wes. I typed cd D:\Data and the prompt still says C:. Where am I?
+> (Roland, Intern, at the left) I am in C:\Users\wes. I typed cd D:\Data and the prompt still says C:. Where am I?
 
 A plain table, "C:\Users\wes> cd D:\Data":
 
 > What the computer prints  (the column heads)
 > C:\Users\wes>
 
-**How does Wes get to D:\Data?**
+**How does Roland get to D:\Data?**
 (the options come in an order that depends on the seed of the question)
 - Type cd /d D:\Data to switch the drive too (right)
-- Type dir D:\Data, which takes Wes into the folder — if chosen: dir lists a folder. It never moves the prompt.
+- Type dir D:\Data, which takes Roland into the folder — if chosen: dir lists a folder. It never moves the prompt.
 - Type D:\Data on its own line — if chosen: A path alone is not a command. To switch drives, type the letter and a colon.
 - Type cd .. twice, to go up to the top of the tree — if chosen: Going up stays on C:, so it cannot reach D:.
 
@@ -520,25 +520,25 @@ A plain table, "C:\> net user fern":
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Confirm it is Fern by the desk’s own check, such as the number on file, and read the ticket history for why it is off (right)
-- Run net user fern /active:yes now; the output shows what is wrong — if chosen: The output shows what is wrong, not who is calling. The check comes first.
-- Run net user fern * and give Fern a new password over the phone — if chosen: A password reset for an unchecked caller is worse. The caller must be confirmed first.
-- Run net user fern /delete and make Fern a new account — if chosen: Deleting the account loses its identity, and the old files would not belong to the new one.
+- Confirm Fern by the number on file and read the ticket history for why it is off (right)
+- Request the employee number from Fern, and if it matches, run net user fern /active:yes — if chosen: A number the caller supplies proves nothing about who is calling. The check must use something the caller did not supply.
+- Run net user fern * and give Fern a new password once the old one is read out — if chosen: A password reset for an unchecked caller is worse. The caller must be confirmed first.
+- Run net user fern /delete, then make Fern a new account and move the files — if chosen: Deleting the account loses its identity, and the old files would not belong to the new one.
 
 After the answer: the deciding words are marked. Reason: The fault is plain: Account active: No. But before an unlock, a reset or access, the technician confirms the caller by something the caller did not supply, such as the number on file or the directory. Then net user fern /active:yes is one change.
 
 #### Item 17
 
-Rob in Purchasing calls the help desk. You answer.
+Guinevere in Purchasing calls the help desk. You answer.
 
-**Rob’s D: drive will not open. What do you say?**
-- An incoming call from "Rob, Purchasing" (Incoming call · 2:40 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My D: drive says it is unreadable. My nephew says just format it and the problem goes away." [pushes: Rob wants the quickest fix and has a plan ready.]
+**Guinevere’s D: drive will not open. What do you say?**
+- An incoming call from "Guinevere, Purchasing" (Incoming call · 2:40 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
+- turn 1, the other side says: "My D: drive says it is unreadable. My nephew says just format it and the problem goes away." [pushes: Guinevere wants the quickest fix and has a plan ready.]
   - reply "Is there a copy of what is on D: anywhere else?": goes on to turn 2, where the pressure comes back
   - reply "Your nephew is right. Type format D: and press Y.": the call ends (not this one): Format erases the drive, and it holds the only copy of two years of orders. [slip: ran a command that erases data before the data was safe or needed erasing]
   - reply "What exact error words does the drive show, and did it start after a power cut or a bump?": the call ends (not this one): The exact words are worth having later, but the question that decides the order is whether the files exist anywhere else. [slip: replaced a part before the cheap check]
   - reply "I am sorry, that must be worrying. Let me connect to your computer now and run chkdsk D: /r on it, and I will tell you what it finds.": the call ends (not this one): A repair run changes the drive, and a long scan of a damaged one can lose files. Nothing was copied off first. [slip: touched the machine before protecting data that has no other copy]
-- turn 2, the other side says: "No. It is all on D:. Two years of purchase orders." [pushes: Rob is worried now.]
+- turn 2, the other side says: "No. It is all on D:. Two years of purchase orders." [pushes: Guinevere is worried now.]
   - reply "I will copy off what can be read first, then run chkdsk with no switches.": the call ends (right): The only copy is protected before anything is changed, and the read-only check shows what is wrong without touching it.
   - reply "Then format will have to do after all.": the call ends (not this one): Format erases the drive, and it holds the only copy of two years of orders. [slip: ran a command that erases data before the data was safe or needed erasing]
   - reply "I understand, two years of orders is a lot to lose. We will run chkdsk /f first, which repairs a drive without erasing anything, and see whether the orders open.": the call ends (not this one): A repair run changes the drive, and a long scan of a damaged one can lose files. Nothing was copied off first. [slip: touched the machine before protecting data that has no other copy]
@@ -578,9 +578,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 20
 
-A chat, with its history: "Abe, Support", Chat with the help desk.
+A chat, with its history: "Beatriz, Support", Chat with the help desk.
 
-> (Abe, Support, at the left) The intranet site moved to a new server this morning. nslookup gives me the new address, but my browser still goes to the old one. Everyone else is fine.
+> (Beatriz, Support, at the left) The intranet site moved to a new server this morning. nslookup gives me the new address, but my browser still goes to the old one. Everyone else is fine.
 
 **Which command empties the saved name answers?**
 (the options come in an order that depends on the seed of the question)
@@ -593,9 +593,9 @@ After the answer: the deciding words are marked. Reason: The fresh lookup is rig
 
 #### Item 21
 
-A chat, with its history: "Ben, Marketing", Chat with the help desk.
+A chat, with its history: "Lemuel, Marketing", Chat with the help desk.
 
-> (Ben, Marketing, at the left) A guide gave me five commands to try. Which of them will refuse to run in my ordinary Command Prompt window?
+> (Lemuel, Marketing, at the left) A guide gave me five commands to try. Which of them will refuse to run in my ordinary Command Prompt window?
 
 **Pick every command that needs an administrator window.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
@@ -609,9 +609,9 @@ After the answer: Reason: sfc /scannow changes protected system files and diskpa
 
 #### Item 22
 
-A chat, with its history: "Lou, Intern", Chat with the help desk.
+A chat, with its history: "Gemma, Intern", Chat with the help desk.
 
-> (Lou, Intern, at the left) My guide lists commands. Which of these make files vanish with no Recycle Bin and no undo in Windows?
+> (Gemma, Intern, at the left) My guide lists commands. Which of these make files vanish with no Recycle Bin and no undo in Windows?
 
 **Pick every command that can.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
@@ -626,9 +626,9 @@ After the answer: Reason: format erases a drive, rmdir /s removes a folder and e
 
 #### Item 23
 
-A chat, with its history: "Hal, Sales", Chat with the help desk.
+A chat, with its history: "Nadine, Sales", Chat with the help desk.
 
-> (Hal, Sales, at the left) Since last night’s update, two of my programs crash on start. The drive is fine. I want Windows to check and repair its own files.
+> (Nadine, Sales, at the left) Since last night’s update, two of my programs crash on start. The drive is fine. I want Windows to check and repair its own files.
 
 **Which command does that, in an administrator window?**
 (the options come in an order that depends on the seed of the question)
@@ -641,9 +641,9 @@ After the answer: the deciding words are marked. Reason: The drive is fine and W
 
 #### Item 24
 
-A chat, with its history: "Nia, Legal", Chat with the help desk.
+A chat, with its history: "Imani, Legal", Chat with the help desk.
 
-> (Nia, Legal, at the left) I need a list of everything in C:\Contracts, including files someone marked hidden. Which command prints it?
+> (Imani, Legal, at the left) I need a list of everything in C:\Contracts, including files someone marked hidden. Which command prints it?
 
 **Which command?**
 (the options come in an order that depends on the seed of the question)
@@ -665,9 +665,9 @@ To pass:
 
 #### Check question 25
 
-A chat, with its history: "Ola, Security", Chat with the help desk.
+A chat, with its history: "Dennis, Security", Chat with the help desk.
 
-> (Ola, Security, at the left) A manager saw a strange program send data out. One connection on this computer goes to 203.0.113.99. Which program is behind it?
+> (Dennis, Security, at the left) A manager saw a strange program send data out. One connection on this computer goes to 203.0.113.99. Which program is behind it?
 
 A plain table, "C:\> netstat -ano":
 
@@ -698,24 +698,24 @@ After the answer: Reason: net use maps a drive letter to a shared folder: net us
 
 #### Check question 27
 
-A chat, with its history: "Bea, Depot", Chat with the help desk.
+A chat, with its history: "Osman, Depot", Chat with the help desk.
 
-> (Bea, Depot, at the left) The USB stick for installs held client contracts on its last job, and its owner agrees the contents can go. I ran select disk 2, the 58 GB one, then clean, and Windows now shows the stick as empty. Is it wiped for the next job?
+> (Osman, Depot, at the left) The USB stick for installs held client contracts on its last job, and its owner agrees the contents can go. I ran select disk 2, the 58 GB one, then clean, and Windows now shows the stick as empty. Is it wiped for the next job?
 
 **Is the stick wiped?**
 (the options come in an order that depends on the seed of the question)
-- Not fully: clean removed the partitions, and tools can still recover the contracts; clean all zeroes every sector (right)
-- Yes: Windows sees nothing on it and nothing is left to recover — if chosen: Windows sees nothing because the partition information is gone. The data is still on the disk until it is written over.
-- Not fully: run format E: /q, which overwrites the files — if chosen: A quick format also leaves the data in place. Only a format without /q, or clean all, writes zeros.
-- Yes, once the stick is unplugged and plugged in again — if chosen: Plugging it in again changes nothing on the disk.
+- Not fully: clean only removed the partitions, so tools can still recover the contracts (right)
+- Yes: Windows sees nothing on it, so nothing is left to recover — if chosen: Windows sees nothing because the partition information is gone. The data is still on the disk until it is written over.
+- Not fully: run format E: /q, which overwrites every file on the stick — if chosen: A quick format also leaves the data in place. Only a format without /q, or clean all, writes zeros.
+- Yes, once the stick is unplugged and plugged in again to refresh it — if chosen: Plugging it in again changes nothing on the disk.
 
 After the answer: the deciding words are marked. Reason: clean removes the partitions from the selected disk, so Windows sees an empty disk, but the contracts can be recovered with tools. A real wipe is clean all (zeros every sector) or destroying the stick.
 
 #### Check question 28
 
-A chat, with its history: "Cy, Logistics", Chat with the help desk.
+A chat, with its history: "Mirela, Logistics", Chat with the help desk.
 
-> (Cy, Logistics, at the left) One file on my D: drive will not open, but the other files do. I ran chkdsk D: and pasted what it said.
+> (Mirela, Logistics, at the left) One file on my D: drive will not open, but the other files do. I ran chkdsk D: and pasted what it said.
 
 A plain table, "C:\> chkdsk D:":
 
@@ -736,14 +736,14 @@ After the answer: the deciding words are marked. Reason: “Found no problems”
 
 #### Check question 29
 
-A chat, with its history: "Tia, Studio", Chat with the help desk.
+A chat, with its history: "Raymond, Studio", Chat with the help desk.
 
-> (Tia, Studio, at the left) I want my E: backup to hold everything in C:\Work, including subfolders. A file I delete from C:\Work must never disappear from E:\Backup.
+> (Raymond, Studio, at the left) I want my E: backup to hold everything in C:\Work, including subfolders. A file I delete from C:\Work must never disappear from E:\Backup.
 
 **Which command fits?**
 (the options come in an order that depends on the seed of the question)
 - robocopy C:\Work E:\Backup /e (right)
-- robocopy C:\Work E:\Backup /mir — if chosen: /mir deletes from the backup whatever is no longer in C:\Work, the opposite of Tia’s rule.
+- robocopy C:\Work E:\Backup /mir — if chosen: /mir deletes from the backup whatever is no longer in C:\Work, the opposite of Raymond’s rule.
 - copy C:\Work E:\Backup — if chosen: copy takes the files of one folder, not the subfolders.
 - rmdir /s E:\Backup, then copy C:\Work to it — if chosen: That deletes the old backup first, then copies. Nothing is kept from before.
 
@@ -751,33 +751,35 @@ After the answer: the deciding words are marked. Reason: The two needs are subfo
 
 #### Check question 30
 
-A chat, with its history: "Cara, Studio", Chat with the help desk.
+A chat, with its history: "Wyatt, Studio", Chat with the help desk.
 
-> (Cara, Studio, at the left) I need to put a 300 GB video backup on C:. Does it fit? I ran dir in the folder where I want to put it.
+> (Wyatt, Studio, at the left) I need to put a 300 GB video backup on C:. Does it fit? I ran dir in the folder where I want to put it.
 
 A plain table, "C:\> dir C:\Contracts":
 
 > What the computer prints  (the column heads)
 >  Directory of C:\Contracts
+> 10/02/2026  09:14 AM    <DIR>          .
+> 10/02/2026  09:14 AM    <DIR>          ..
 > 10/02/2026  09:14 AM    <DIR>          2026
 > 10/02/2026  09:15 AM            48,210 notes.txt
 >                1 File(s)         48,210 bytes
->                1 Dir(s)  412,318,203,904 bytes free
+>                3 Dir(s)  412,318,203,904 bytes free
 
 **Does it fit?**
 (the options come in an order that depends on the seed of the question)
 - Yes: the last line shows about 384 GB free on the drive (right)
-- No: the line before it shows only 48,210 bytes — if chosen: 48,210 bytes is the size of the files in this folder. Free space is the line below it.
-- No: dir shows only one folder, so only one folder’s worth fits — if chosen: The count of folders is what is inside C:\Contracts. It does not limit the drive.
+- Yes: the line before it shows 48,210 bytes free, which is plenty — if chosen: 48,210 bytes is the size of the files in this folder, not the free space. Free space is the last line.
+- No: dir counts only 1 file and 3 folders, so little more fits — if chosen: The counts are what is inside C:\Contracts. They do not limit the drive.
 - It cannot be told from dir; run chkdsk to find the free space — if chosen: dir already prints the free space, and chkdsk checks a drive’s file system.
 
 After the answer: the deciding words are marked. Reason: dir ends with a count of the files and folders in that directory and the free space left on the drive. 412,318,203,904 bytes is 384 GB, more than the 300 GB backup needs.
 
 #### Check question 31
 
-A chat, with its history: "Zed, Help desk", Chat with the help desk.
+A chat, with its history: "Brenda, Help desk", Chat with the help desk.
 
-> (Zed, Help desk, at the left) The new Block USB Storage policy went out on October 23 at 10:00. A user says it is not blocking his laptop. I ran gpresult /r on it at noon the same day.
+> (Brenda, Help desk, at the left) The new Block USB Storage policy went out on October 23 at 10:00. A user says it is not blocking their laptop. I ran gpresult /r on it at noon the same day.
 
 A plain table, "C:\> gpresult /r":
 

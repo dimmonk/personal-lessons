@@ -1,10 +1,10 @@
 # IT Help Desk: Cables, connectors and screens
 
-Revision 1, live. Part: Cables, connectors and screens. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Cables, connectors and screens. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Dina has ten minutes before class. The projector in room 4 says No signal. She has a cable, an adapter and a laptop with only USB-C ports, and no idea which part is wrong.
+Dina has ten minutes before class. The projector in room 4 says No signal. They have a cable, an adapter and a laptop with only USB-C ports, and no idea which part is wrong.
 A picture travels a path: the computer’s port, the cable and any adapter, the screen’s input, the panel. You learn what each cable and plug carries, how to choose one, and where on that path each screen problem sits, with its cheap check.
 
 ## Step 1: Start from the job
@@ -375,13 +375,13 @@ Hank in Sales calls the help desk about the projector in room 6. You answer.
 
 **Hank calls about the projector. What do you say?**
 - An incoming call from "Hank, Sales" (Incoming call · 9:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes." [pushes: He wants the biggest step before anything was tried.]
+- turn 1, the other side says: "The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes." [pushes: They want the biggest step before anything was tried.]
   - reply "I will put in an order for a new projector today.": the call ends (not this one): Nothing has been checked yet. An order costs money and days, and the first check costs one button. [slip: replaced a part before the cheap check]
   - reply "Swap the cable, then call me back.": the call ends (not this one): A cable swap is cheap but is not the cheapest cut, and it leaves Hank alone with a guess. The Source button is faster and names the link. [slip: ran a test that does not split what works from what does not]
   - reply "Press the Source button on the projector’s remote and read me the input it shows.": goes on to turn 2, where the pressure comes back
-- turn 2, the other side says: "It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken." [pushes: He still wants it replaced.]
-  - reply "It cannot be broken if the input menu comes up.": the call ends (not this one): The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give him a next step instead. [slip: argued with the user or brushed off what they said]
-  - reply "Twice in a week is annoying, and I will note it. The projector is listening to VGA while the cable is in HDMI 1. Choose HDMI 1 and tell me what you see.": the call ends (right): The projector listens to one input and it was on the wrong one; choosing the right one costs a button. His worry is heard and noted, and the plan stays with the cheap check.
+- turn 2, the other side says: "It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken." [pushes: They still want it replaced.]
+  - reply "It cannot be broken if the input menu comes up.": the call ends (not this one): The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give them a next step instead. [slip: argued with the user or brushed off what they said]
+  - reply "Twice in a week is annoying, and I will note it. The projector is listening to VGA while the cable is in HDMI 1. Choose HDMI 1 and tell me what you see.": the call ends (right): The projector listens to one input and it was on the wrong one; choosing the right one costs a button. Their worry is heard and noted, and the plan stays with the cheap check.
   - reply "Understood, I will order one now.": the call ends (not this one): The projector was on the wrong input. Ordering a new one hides a one-button fix and lets the same mistake happen again. [slip: replaced a part before the cheap check]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 
@@ -420,7 +420,7 @@ A plain table, "What you tried":
 (the options come in an order that depends on the seed of the question)
 - Replace the monitor, or send it for repair (right)
 - Try a third cable — if chosen: Two cables are already ruled out. A third repeats a test that has answered.
-- Reinstall the graphics driver on Beatrix’s computer — if chosen: A different monitor looks normal on her computer, and this monitor is pink on another computer. The computer is cleared.
+- Reinstall the graphics driver on Beatrix’s computer — if chosen: A different monitor looks normal on their computer, and this monitor is pink on another computer. The computer is cleared.
 - Reseat the cable and swap the computer at the same time — if chosen: Two changes together would not say which one matters, and the table already points at the monitor.
 
 After the answer: the deciding words are marked. Reason: A tint is usually the cable, so the cable comes first. Here the tests already cleared the cable and the computer: the pink follows the monitor. When the earlier tests point at a part, replacing it is right.
@@ -742,9 +742,9 @@ After the answer: the deciding words are marked. Reason: A projector that shuts 
 
 #### Check question 36
 
-A chat, with its history: "Lou, HR", Chat with the help desk.
+A chat, with its history: "Henry, HR", Chat with the help desk.
 
-> (Lou, HR, at the left) My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.
+> (Henry, HR, at the left) My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.
 
 **What do you check first?**
 (the options come in an order that depends on the seed of the question)

@@ -1,10 +1,10 @@
 # IT Help Desk: Mac and Linux
 
-Revision 1, draft (the screen carries the draft line). Part: Mac and Linux. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Mac and Linux. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-A designer calls: the spreadsheet app on her Mac has frozen. Ten minutes later a server engineer wants to know which file tells Linux which name server to use. You have never used either, but nearly everything on a Mac or in Linux has a Windows counterpart.
+A designer calls: the spreadsheet app on their Mac has frozen. Ten minutes later a server engineer wants to know which file tells Linux which name server to use. You have never used either, but nearly everything on a Mac or in Linux has a Windows counterpart.
 Here you learn each Mac tool and Linux command by the Windows tool it matches, as the A+ exam pairs them, then practice the names and jobs.
 
 ## Step 1: The same jobs under other names
@@ -151,7 +151,7 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 **Typing the number opens the page. What does that show?**
 (the options come in an order that depends on the seed of the question)
 - The link and the address work, so only the name lookup is failing.
-- The network is down for his machine, so check the cable first.
+- The network is down for their machine, so check the cable first.
 - The intranet server is broken, so wait for it to be fixed.
 - The browser is damaged, so remove it and install it again.
 
@@ -170,9 +170,9 @@ Then the answer: The link and the address work, so only the name lookup is faili
 
 #### Item 1
 
-A chat, with its history: "Kim, Accounts", Chat with the help desk.
+A chat, with its history: "Dorothy, Accounts", Chat with the help desk.
 
-> (Kim, Accounts, at the left) **The spreadsheet app on my Mac froze. The spinning wheel has been there for five minutes and nothing I click works. My email and browser are fine.**
+> (Dorothy, Accounts, at the left) **The spreadsheet app on my Mac froze. The spinning wheel has been there for five minutes and nothing I click works. My email and browser are fine.**
 
 Help on screen: the words that decide it are marked.
 
@@ -187,9 +187,9 @@ After the answer: the deciding words are marked. Reason: A frozen app on a Mac t
 
 #### Item 2
 
-A chat, with its history: "Joel, HR", Chat with the help desk.
+A chat, with its history: "Leticia, HR", Chat with the help desk.
 
-> (Joel, HR, at the left) **I saved a file called “Offer letter template” on my Mac last week and I cannot remember which folder. I only know its name.**
+> (Leticia, HR, at the left) **I saved a file called “Offer letter template” on my Mac last week and I cannot remember which folder. I only know its name.**
 
 Help on screen: the words that decide it are marked.
 
@@ -204,9 +204,9 @@ After the answer: the deciding words are marked. Reason: Finding a file from its
 
 #### Item 3
 
-A chat, with its history: "Dan, Server team", Chat with the help desk.
+A chat, with its history: "Evelyn, Server team", Chat with the help desk.
 
-> (Dan, Server team, at the left) **I have a terminal open on a Linux machine. I want to see which files are in the folder I am in. In Windows I would type dir.**
+> (Evelyn, Server team, at the left) **I have a terminal open on a Linux machine. I want to see which files are in the folder I am in. In Windows I would type dir.**
 
 Help on screen: the words that decide it are marked.
 
@@ -221,9 +221,9 @@ After the answer: the deciding words are marked. Reason: dir lists a folder in W
 
 #### Item 4
 
-A chat, with its history: "Ana, Build team", Chat with the help desk.
+A chat, with its history: "Jeanne, Build team", Chat with the help desk.
 
-> (Ana, Build team, at the left) **Our Linux build machine feels slow. On Windows I would open Task Manager and sort by CPU. What do I type in the terminal to watch the busiest programs live?**
+> (Jeanne, Build team, at the left) **Our Linux build machine feels slow. On Windows I would open Task Manager and sort by CPU. What do I type in the terminal to watch the busiest programs live?**
 
 Help on screen: the words that decide it are marked.
 
@@ -244,9 +244,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Rosa, Design", Chat with the help desk.
+A chat, with its history: "Yvonne, Design", Chat with the help desk.
 
-> (Rosa, Design, at the left) I saved over a logo file on my Mac on Tuesday and I need Monday’s copy. An external drive is plugged into the Mac and it has been backing the Mac up every hour.
+> (Yvonne, Design, at the left) I saved over a logo file on my Mac on Tuesday and I need Monday’s copy. An external drive is plugged into the Mac and it has been backing the Mac up every hour.
 
 **Which Mac tool brings back an older copy of a file?**
 (the options come in an order that depends on the seed of the question)
@@ -259,9 +259,9 @@ After the answer: the deciding words are marked. Reason: An older copy of a file
 
 #### Item 6
 
-A chat, with its history: "Omar, Purchasing", Chat with the help desk.
+A chat, with its history: "Lionel, Purchasing", Chat with the help desk.
 
-> (Omar, Purchasing, at the left) Since my Mac was rebuilt, the supplier’s portal asks for my login every time. The old Mac filled it in for me. I want to see which logins this Mac has saved.
+> (Lionel, Purchasing, at the left) Since my Mac was rebuilt, the supplier’s portal asks for my login every time. The old Mac filled it in for me. I want to see which logins this Mac has saved.
 
 **Which Mac tool stores saved logins?**
 (the options come in an order that depends on the seed of the question)
@@ -289,9 +289,9 @@ After the answer: the deciding words are marked. Reason: A .dmg opens like a dis
 
 #### Item 8
 
-A chat, with its history: "Ben, Support", Chat with the help desk.
+A chat, with its history: "Gloria, Support", Chat with the help desk.
 
-> (Ben, Support, at the left) On my Ubuntu laptop I typed apt install htop and it answered “Permission denied”. I was told never to stay logged in as root.
+> (Gloria, Support, at the left) On my Ubuntu laptop I typed apt install htop and it answered “Permission denied”. I was told never to stay logged in as root.
 
 **What is the right way to run that one command?**
 (the options come in an order that depends on the seed of the question)
@@ -304,9 +304,9 @@ After the answer: the deciding words are marked. Reason: Installing programs cha
 
 #### Item 9
 
-A chat, with its history: "Mia, Office manager", Chat with the help desk.
+A chat, with its history: "Meera, Office manager", Chat with the help desk.
 
-> (Mia, Office manager, at the left) The Linux file server says “No space left on device” when I save. I want to see how full each drive is.
+> (Meera, Office manager, at the left) The Linux file server says “No space left on device” when I save. I want to see how full each drive is.
 
 **Which command shows the free space on each drive?**
 (the options come in an order that depends on the seed of the question)
@@ -319,9 +319,9 @@ After the answer: the deciding words are marked. Reason: df shows how full each 
 
 #### Item 10
 
-A chat, with its history: "Hal, Web team", Chat with the help desk.
+A chat, with its history: "Gulnara, Web team", Chat with the help desk.
 
-> (Hal, Web team, at the left) Our site’s name stopped working this morning. On a Linux machine I want to ask DNS for the address behind www.example.com and see the answer, as nslookup does in Windows.
+> (Gulnara, Web team, at the left) Our site’s name stopped working this morning. On a Linux machine I want to ask DNS for the address behind www.example.com and see the answer, as nslookup does in Windows.
 
 **Which command looks up the address of a name in DNS?**
 (the options come in an order that depends on the seed of the question)
@@ -340,9 +340,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 11
 
-A chat, with its history: "Eli, Engineering", Chat with the help desk.
+A chat, with its history: "Pilar, Engineering", Chat with the help desk.
 
-> (Eli, Engineering, at the left) The second drive on my Linux workstation is missing after every restart, and I have to mount it by hand each morning. I want Linux to attach it by itself at start-up.
+> (Pilar, Engineering, at the left) The second drive on my Linux workstation is missing after every restart, and I have to mount it by hand each morning. I want Linux to attach it by itself at start-up.
 
 **Which file lists the drives to attach at start-up?**
 (the options come in an order that depends on the seed of the question)
@@ -355,9 +355,9 @@ After the answer: the deciding words are marked. Reason: /etc/fstab names the dr
 
 #### Item 12
 
-A chat, with its history: "Priya, Operations", Chat with the help desk.
+A chat, with its history: "Isidro, Operations", Chat with the help desk.
 
-> (Priya, Operations, at the left) My boss is taking a company MacBook abroad. If it is lost, nobody must be able to read what is on its drive. Windows has BitLocker for this.
+> (Isidro, Operations, at the left) My boss is taking a company MacBook abroad. If it is lost, nobody must be able to read what is on its drive. Windows has BitLocker for this.
 
 **What does that on a Mac?**
 (the options come in an order that depends on the seed of the question)
@@ -370,14 +370,14 @@ After the answer: the deciding words are marked. Reason: Making a lost laptop’
 
 #### Item 13
 
-A chat, with its history: "Wen, Design", Chat with the help desk.
+A chat, with its history: "Claire, Design", Chat with the help desk.
 
-> (Wen, Design, at the left) My new Ubuntu desktop needs the Vim text editor installed from the command line. A friend on Fedora says to use dnf.
+> (Claire, Design, at the left) My new Ubuntu desktop needs the Vim text editor installed from the command line. A friend on Fedora says to use dnf.
 
 **Which do I use on Ubuntu?**
 (the options come in an order that depends on the seed of the question)
-- apt, because Ubuntu takes its programs through apt (right)
-- dnf, because it is the one tool every Linux uses — if chosen: dnf belongs to Fedora and Red Hat. Ubuntu uses apt.
+- apt, the package tool that Ubuntu uses (right)
+- dnf, the one package tool that every Linux uses — if chosen: dnf belongs to Fedora and Red Hat. Ubuntu uses apt.
 - mount, to attach the editor to the desktop — if chosen: mount attaches a drive to a folder. It installs nothing.
 - A .dmg from the vendor’s site, opened by double-clicking — if chosen: A .dmg is a Mac file. Linux installs through apt or dnf.
 
@@ -385,16 +385,16 @@ After the answer: the deciding words are marked. Reason: Both apt and dnf instal
 
 #### Item 14
 
-A chat, with its history: "Sam, Finance", Chat with the help desk.
+A chat, with its history: "Rohan, Finance", Chat with the help desk.
 
-> (Sam, Finance, at the left) An external drive shows up gray in Finder and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
+> (Rohan, Finance, at the left) An external drive shows up gray in Finder and will not open. I need to check it for errors. On Windows I would use chkdsk. The files on it are not backed up anywhere.
 
 **What do I do first?**
 (the options come in an order that depends on the seed of the question)
 - In Disk Utility, try to mount the drive and copy off what can be read, then run First Aid (right)
 - Erase the drive in Disk Utility, then put the files back from it — if chosen: Erase wipes what is on it. The files are not backed up, so an erase destroys the only copy.
 - Restore the drive from Time Machine on the same screen — if chosen: The files on it are not backed up, so Time Machine holds nothing to restore.
-- Run First Aid at once, since it checks the drive and repairs it — if chosen: First Aid rewrites the drive, and nothing is copied off yet. The files are the only copy, so they come first.
+- Run First Aid at once to check and repair the drive — if chosen: First Aid rewrites the drive, and nothing is copied off yet. The files are the only copy, so they come first.
 
 After the answer: the deciding words are marked. Reason: A drive that will not open is checked with Disk Utility (First Aid), the counterpart of chkdsk. Because the drive will not open, copying may not work; whatever can be read is copied first, then First Aid, and an erase only once the files are copied or given up.
 
@@ -413,9 +413,9 @@ After the answer: Reason: It is /etc/hosts, the same job as the hosts file in Wi
 
 #### Item 16
 
-A chat, with its history: "Jo, IT", Chat with the help desk.
+A chat, with its history: "Homer, IT", Chat with the help desk.
 
-> (Jo, IT, at the left) A security hole in Safari is in the news. The company says the Macs get a fix “today”, but the next big macOS update is weeks away.
+> (Homer, IT, at the left) A security hole in Safari is in the news. The company says the Macs get a fix “today”, but the next big macOS update is weeks away.
 
 **What is Rapid Security Response, as the exam names it?**
 (the options come in an order that depends on the seed of the question)
@@ -437,9 +437,9 @@ To pass:
 
 #### Check question 17
 
-A chat, with its history: "Ruth, Sales", Chat with the help desk.
+A chat, with its history: "Pavan, Sales", Chat with the help desk.
 
-> (Ruth, Sales, at the left) I have fourteen windows open across three desktops on my Mac and I have lost the budget spreadsheet.
+> (Pavan, Sales, at the left) I have fourteen windows open across three desktops on my Mac and I have lost the budget spreadsheet.
 
 **What shows every open window and desktop on a Mac?**
 (the options come in an order that depends on the seed of the question)
@@ -474,14 +474,14 @@ After the answer: Reason: Time Machine is the Mac’s backup, the counterpart of
 
 #### Check question 20
 
-A chat, with its history: "Nia, Legal", Chat with the help desk.
+A chat, with its history: "Saul, Legal", Chat with the help desk.
 
-> (Nia, Legal, at the left) I tried to install a game from the App Store on my company Mac with my personal Apple ID. A message says the company does not allow this. The Mac works normally.
+> (Saul, Legal, at the left) I tried to install a game from the App Store on my company Mac with my personal Apple ID. A message says the company does not allow this. The Mac works normally.
 
 **What is going on?**
 (the options come in an order that depends on the seed of the question)
 - The company manages the Mac and limits what is installed and which Apple ID is used (right)
-- The App Store is broken on this Mac, so reinstall macOS to fix it — if chosen: The message names a company rule, and the Mac works normally. Reinstalling would erase her files to fix something that is not broken.
+- The App Store is broken on this Mac, so reinstall macOS to fix it — if chosen: The message names a company rule, and the Mac works normally. Reinstalling would erase their files to fix something that is not broken.
 - FileVault is switched on, so it blocks every new app from loading — if chosen: FileVault encrypts the drive. It does not decide which apps may be installed.
 - The Mac is out of date, so run the updates and try the game again — if chosen: An old macOS does not produce a message about company rules.
 
@@ -489,18 +489,18 @@ After the answer: the deciding words are marked. Reason: The message names a com
 
 #### Check question 21
 
-A chat, with its history: "Gus, Operations", Chat with the help desk.
+A chat, with its history: "Conrad, Operations", Chat with the help desk.
 
-> (Gus, Operations, at the left) I own the file backup.sh on a Linux machine, but when I type ./backup.sh it says “Permission denied”. The file is not marked as allowed to run.
+> (Conrad, Operations, at the left) I own the file backup.sh on a Linux machine, but when I type ./backup.sh it says “Permission denied”. The file is not marked as allowed to run.
 
 **Which command changes who may read, write or run a file?**
 (the options come in an order that depends on the seed of the question)
 - chmod, which changes the permissions of a file (right)
-- chown, which changes the person who owns a file — if chosen: chown changes the owner. Gus already owns the file; the permissions are what is wrong.
+- chown, which changes the person who owns a file — if chosen: chown changes the owner. Conrad already owns the file; the permissions are what is wrong.
 - mv, which moves a file or gives it a new name — if chosen: mv moves or renames the file. It does not change its permissions.
 - grep, which searches the text inside files for a word — if chosen: grep searches inside files. It changes nothing.
 
-After the answer: the deciding words are marked. Reason: chmod changes what a file allows (read, write, run); chown changes who owns it. The file is already his, so chmod is the fix.
+After the answer: the deciding words are marked. Reason: chmod changes what a file allows (read, write, run); chown changes who owns it. The file is already theirs, so chmod is the fix.
 
 #### Check question 22
 
@@ -515,9 +515,9 @@ After the answer: Reason: /etc/shadow holds the scrambled passwords and only roo
 
 #### Check question 23
 
-A chat, with its history: "Kai, Service desk", Chat with the help desk.
+A chat, with its history: "Whitney, Service desk", Chat with the help desk.
 
-> (Kai, Service desk, at the left) A Linux machine passes its start-up test and the firmware finds the boot drive, but nothing loads after that. I need to know which part comes next.
+> (Whitney, Service desk, at the left) A Linux machine passes its start-up test and the firmware finds the boot drive, but nothing loads after that. I need to know which part comes next.
 
 **Which part runs next and loads the kernel?**
 (the options come in an order that depends on the seed of the question)

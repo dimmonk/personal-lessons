@@ -1,10 +1,10 @@
 # IT Help Desk: Storage and RAID
 
-Revision 1, live. Part: Storage and RAID. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Storage and RAID. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Boris writes that his computer has clicked since Monday and files take minutes to open. His customer files and photos are on it; his last copy is a year old. He wants a cleanup.
+Boris writes that their computer has clicked since Monday and files take minutes to open. Their customer files and photos are on it; their last copy is a year old. They want a cleanup.
 You learn the kinds of drive, how each connects, and the RAID levels that join drives. Then what each symptom means, and why the first move on a failing drive is to copy the files off.
 
 ## Step 1: Two kinds of drive
@@ -107,17 +107,17 @@ An email: "Boris Lund, Operations", Email · 9:10 AM.
 Before the working, the learner may commit to a choice (not scored, not stored):
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
-- Copy his files to an external drive, then read the drive’s own report
-- Run a disk cleanup first, as he suggests, then watch it
+- Copy their files to an external drive, then read the drive’s own report
+- Run a disk cleanup first, as they suggest, then watch it
 - Reinstall Windows to start fresh, then restore later
 
 The working, one step at a time:
-1. Sort it: something is broken now, and his files are at risk.: It is an incident, and the files may be worth more than the computer. That decides what comes first.
-1. Write down the favorite cause, then find the test that can rule it out.: Boris thinks it needs a cleanup. A full drive or too many programs makes a computer slow, but neither makes a click. His own line, that it clicks with nothing open, rules the cleanup out: a click with no program running is a part moving.
-1. Copy his files to another drive before anything else.: A clicking hard drive has moving parts that are failing, and every hour it runs may be the last. Copy first. A cleanup, a repair tool or a reinstall all work the drive hard, and a reinstall wipes the files.
-1. Check the drive’s own report, replace it, restore the copy, and have Boris confirm.: The drive’s S.M.A.R.T. report, its built-in self-check, says failing. You replace the drive, put his files back from the copy, and close the ticket only after he opens a customer file himself.
+1. Sort it: something is broken now, and their files are at risk.: It is an incident, and the files may be worth more than the computer. That decides what comes first.
+1. Write down the favorite cause, then find the test that can rule it out.: Boris thinks it needs a cleanup. A full drive or too many programs makes a computer slow, but neither makes a click. Their own line, that it clicks with nothing open, rules the cleanup out: a click with no program running is a part moving.
+1. Copy their files to another drive before anything else.: A clicking hard drive has moving parts that are failing, and every hour it runs may be the last. Copy first. A cleanup, a repair tool or a reinstall all work the drive hard, and a reinstall wipes the files.
+1. Check the drive’s own report, replace it, restore the copy, and have Boris confirm.: The drive’s S.M.A.R.T. report, its built-in self-check, says failing. You replace the drive, put their files back from the copy, and close the ticket only after they open a customer file themself.
 
-Then the answer: Copy his files to an external drive, then read the drive’s own report. He clicks even when nothing is open, so the cause is a part that moves, not a program. His customer files have no copy. The failing hard drive is the thing to protect before it is the thing to fix.
+Then the answer: Copy their files to an external drive, then read the drive’s own report. They click even when nothing is open, so the cause is a part that moves, not a program. Their customer files have no copy. The failing hard drive is the thing to protect before it is the thing to fix.
 
 ## Step 10: Questions
 
@@ -173,7 +173,7 @@ Help on screen: the words that decide it are marked.
 
 **What is your first move?**
 (the options come in an order that depends on the seed of the question)
-- Have her stop using it and copy the budget file to an external drive, or to the company share if she has access to one (right)
+- Have them stop using it and copy the budget file to an external drive, or to the company share if they have access to one (right)
 - Run the disk repair tool on it overnight — if chosen: A repair tool works the drive hard and may change files. A drive that grinds may not finish the job.
 - Defragment it (rearrange its files to sit together) — if chosen: Defragmenting moves every file around on a drive that is already failing. It cannot fix a part that grinds.
 
@@ -216,7 +216,7 @@ After the answer: Reason: RAID 5 uses the space of all drives but one: three dri
 
 #### Item 7
 
-Esme is building storage for her firm’s accounts. She has six drives. Losing the data would be a disaster, and when one drive fails she cannot always replace it the same day, so a second one might fail while she waits. Speed does not matter.
+Esme is building storage for their firm’s accounts. They have six drives. Losing the data would be a disaster, and when one drive fails they cannot always replace it the same day, so a second one might fail while they wait. Speed does not matter.
 
 **Which RAID level fits?**
 (the options come in an order that depends on the seed of the question)
@@ -224,7 +224,7 @@ Esme is building storage for her firm’s accounts. She has six drives. Losing t
 - RAID 5, which survives one drive failing — if chosen: A second failure during the wait loses everything. RAID 5 holds only one.
 - RAID 0, because it keeps all the space — if chosen: RAID 0 survives nothing: one failure loses all the data.
 
-After the answer: Reason: She needs to survive two failures at the same time, and only RAID 6 of these does. It needs at least four drives, and she has six.
+After the answer: Reason: They need to survive two failures at the same time, and only RAID 6 of these does. It needs at least four drives, and they have six.
 
 #### Item 8
 
@@ -298,7 +298,7 @@ After the answer: the deciding words are marked. Reason: RAID 0 only splits the 
 
 #### Item 12
 
-A user’s hard drive, the one Windows starts from, has a S.M.A.R.T. warning. It still works, but slowly, and the only copy of her files is on it. Put the work in order.
+A user’s hard drive, the one Windows starts from, has a S.M.A.R.T. warning. It still works, but slowly, and the only copy of their files is on it. Put the work in order.
 
 **Tap the steps in the order you do them.**
 - Tap the seven steps in the order you would do them. The steps are offered mixed (never already in the right order): "Replace the drive"; "Copy the files to another drive"; "The user opens a file and says it works"; "Put Windows on the new drive"; "Put the files back on the new drive"; "Tell the user to stop saving work to the drive"; "Check that the firmware screen lists the new drive". Each tapped step is numbered; "Start again" clears the taps; the answer is the order tapped once 7 are.

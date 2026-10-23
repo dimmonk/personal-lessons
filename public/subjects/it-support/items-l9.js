@@ -32,9 +32,9 @@
         { id: 'chain', does: 'Write the chain, so every cause has a place.', working: 'Power, start-up self-test, firmware, boot drive, Windows loading, sign-in. A black screen could be any of the first three, or the screen itself.' },
         { id: 'favorite', does: 'Name the favorite and find which link it sits on.', working: 'A dead hard drive is the boot drive link, number 4. The computer would first have to get through links 1 to 3.' },
         { id: 'far', does: 'Find out how far it got, the cheapest test there is: it changes nothing.', working: 'Malik: front light on, fans spin, no logo, no words. Link 1 is fine. It never reached link 3, so link 4 cannot be where it stopped.', ask: 'a' },
-        { id: 'screen', does: 'Cut the two that are left: the screen against the computer.', working: 'Malik plugs his monitor into a co-worker’s computer. A picture shows. The monitor and cable are fine. The fault is inside his computer.' },
-        { id: 'beeps', does: 'Find out whether the computer gave a sign.', working: 'Malik: “Now that you mention it, it beeps in a pattern when I push the button.” The start-up self-test beeps when it finds a fault. The pattern means something different for each maker, so look it up for his computer.' },
-        { id: 'fix', does: 'Look it up, then make one change.', working: 'The motherboard maker’s manual says that pattern is a memory fault, so the memory sticks are the cause to test, one at a time. Malik switches off and unplugs it, then reseats one memory stick and tries: still the same beeps. He reseats the second stick and tries again: it starts. Only that second stick was loose, and the hard drive was never the problem.' }],
+        { id: 'screen', does: 'Cut the two that are left: the screen against the computer.', working: 'Malik plugs their monitor into a co-worker’s computer. A picture shows. The monitor and cable are fine. The fault is inside their computer.' },
+        { id: 'beeps', does: 'Find out whether the computer gave a sign.', working: 'Malik: “Now that you mention it, it beeps in a pattern when I push the button.” The start-up self-test beeps when it finds a fault. The pattern means something different for each maker, so look it up for their computer.' },
+        { id: 'fix', does: 'Look it up, then make one change.', working: 'The motherboard maker’s manual says that pattern is a memory fault, so the memory sticks are the cause to test, one at a time. Malik switches off and unplugs it, then reseats one memory stick and tries: still the same beeps. They reseat the second stick and try again: it starts. Only that second stick was loose, and the hard drive was never the problem.' }],
       deciding: ['m1'],
       reason: 'The favorite cause, the drive, sits on link 4, and the computer never got that far: no logo meant it stopped between power and firmware. “How far did it get?” ruled the drive out with one question. The beeps then said which part the self-test found at fault.' }),
 
@@ -92,7 +92,7 @@
     item({
       id: 'l9-s-clock',
       blocks: [
-        chat('Nora, HR', 'n1', 'Every morning my computer shows the wrong date and time, a few years back, and my files say they were made in the past. I fix the clock and it is wrong again tomorrow.'),
+        chat('Olivia, HR', 'n1', 'Every morning my computer shows the wrong date and time, a few years back, and my files say they were made in the past. I fix the clock and it is wrong again tomorrow.'),
         note('The firmware keeps the date, time and its settings in a small memory that a coin-sized battery on the motherboard keeps alive when the computer is off.')],
       asks: [ask('Which is the most likely cause?', [
         ['That small battery on the motherboard is dead.', true, 'It is the only thing that keeps the clock running while the computer is off. When it dies, the clock and firmware settings go back to their defaults at each start.'],
@@ -157,21 +157,21 @@
     item({
       id: 'l9-x-new',
       blocks: [note('Bram in Shipping calls the help desk. You answer.')],
-      asks: [{ id: 'a', kind: 'exchange', prompt: 'Bram calls about his desktop. What do you say?', form: 'call', from: 'Bram, Shipping', detail: 'Incoming call · 8:40 AM', start: 'one',
+      asks: [{ id: 'a', kind: 'exchange', prompt: 'Bram calls about their desktop. What do you say?', form: 'call', from: 'Bram, Shipping', detail: 'Incoming call · 8:40 AM', start: 'one',
         turns: {
-          one: { lines: [L('g1', 'My computer is dead. It is old. I need a new one today.')], push: 'He wants a replacement before anything has been tested.',
+          one: { lines: [L('g1', 'My computer is dead. It is old. I need a new one today.')], push: 'They want a replacement before anything has been tested.',
             options: [{ id: 'order', text: 'I will put in the order for a new computer today.', end: 'ordered' },
               { id: 'far', text: 'You need to work today and the computer will not run. Before I order anything, tell me what happens when you push the power button.', goto: 'two' },
               { id: 'plug', text: 'Is it plugged in? Check that first, and then call me back.', end: 'plug' },
               { id: 'restart', text: 'Unplug it, wait a minute, and plug it in again.', end: 'again' }] },
-          two: { lines: [L('g2', 'The light comes on and the fan spins. Then the screen just says “No signal.” But I am sure it is old. Just order it.')], push: 'He still wants the replacement, though the computer is clearly powering on.',
+          two: { lines: [L('g2', 'The light comes on and the fan spins. Then the screen just says “No signal.” But I am sure it is old. Just order it.')], push: 'They still want the replacement, though the computer is clearly powering on.',
             options: [{ id: 'screen', text: 'I hear you that it is old. Power works, so it may be only the cable or the monitor. I will check both and tell you today whether the computer needs replacing.', end: 'screen' },
               { id: 'order2', text: 'I hear you that it is old. All right: I will order the new computer today and tell you when it arrives.', end: 'ordered2' },
               { id: 'drive', text: 'I hear you that it is old. It sounds like the hard drive has died, so I will line up a new one and call you today.', end: 'drive' },
               { id: 'firm', text: 'I hear you that it is old. Let us open the firmware screen and see whether it lists the drive, and I will call you back today.', end: 'firm' }] }
         },
         ends: {
-          screen: { ok: true, then: 'The light and fan show power works, so the fault is further along. “No signal” is the screen not getting a picture, so the cable and monitor are the cheapest things to cut next. Telling him when he will hear back says what happens next.' },
+          screen: { ok: true, then: 'The light and fan show power works, so the fault is further along. “No signal” is the screen not getting a picture, so the cable and monitor are the cheapest things to cut next. Telling them when they will hear back says what happens next.' },
           ordered: { ok: false, slip: NEAR, then: 'Nothing showed the old computer was the cause. One question about the lights and fan would have shown how far it got.' },
           plug: { ok: false, slip: NOSPLIT, then: 'The plug is a cheap check, but it covers only link 1. Asking what happens at the power button covers all six links at once and tells you whether power is the link to look at.' },
           again: { ok: false, slip: NOSPLIT, then: 'Unplugging and plugging in is a repeat, not a test. If it fails again, you still do not know which link failed.' },
@@ -187,9 +187,9 @@
         chat('Kendra, Planning', 'r1', 'My laptop makes a clicking noise from the bottom and then Windows takes ages to start. Twice this week it said it could not find the operating system.'),
         note('You have a few minutes before you touch anything. The laptop still starts sometimes.')],
       asks: [ask('What do you do first?', [
-        ['Have Kendra copy her files off now, then look at the drive.', true, 'Clicking is a sign of a failing hard drive, and it may stop working at any start. The files come out first because the laptop may not start again.'],
-        ['Reinstall Windows to fix the slow start and the errors.', 'no-backup', 'A failing drive may not survive a reinstall, and a reinstall erases her files.'],
-        ['Tell her the noise is normal and to keep working.', IGN, 'The noise is the computer reporting what is failing. Ignoring it risks the files.'],
+        ['Have Kendra copy their files off now, then look at the drive.', true, 'Clicking is a sign of a failing hard drive, and it may stop working at any start. The files come out first because the laptop may not start again.'],
+        ['Reinstall Windows to fix the slow start and the errors.', 'no-backup', 'A failing drive may not survive a reinstall, and a reinstall erases their files.'],
+        ['Tell them the noise is normal and to keep working.', IGN, 'The noise is the computer reporting what is failing. Ignoring it risks the files.'],
         ['Run the maker’s drive test on the laptop, and copy the files after.', 'no-backup', 'The test reads the whole failing drive hard and may be the thing that makes it stop. The files come out before any test touches the drive.']])],
       deciding: ['r1'],
       reason: 'Clicking or grinding from a hard drive, slow starts and “operating system not found” say the drive (links 4 and 5) is failing, and the message is the firmware looking for it (links 3 and 4). A failing drive can stop for good, so the data comes out before any test or fix touches it, as in the earlier topic on protecting data.' }),
@@ -231,7 +231,7 @@
     item({
       id: 'l9-k-logo',
       blocks: [
-        chat('Keira, Records', 'l1', 'The computer shows the maker’s logo, then goes to a black screen with a blinking line and nothing else. It says nothing about a drive.'),
+        chat('Vaughn, Records', 'l1', 'The computer shows the maker’s logo, then goes to a black screen with a blinking line and nothing else. It says nothing about a drive.'),
         table('What you know', ['Link', 'Worked?'], [['t1', 'Power', 'Yes: lights and fans'], ['t2', 'Start-up self-test', 'Yes: the logo shows']])],
       asks: [ask('Which test comes next?', [
         ['Open the firmware screen: is the drive listed, and first?', true, 'It costs nothing and changes nothing, and it shows whether the firmware sees a drive and will look at it.'],
@@ -245,7 +245,7 @@
       blocks: [
         chat('Olwen, Planning', 'p1', 'I can sign in, but the screen then says it is “preparing” for ages and gives me a blank desktop with none of my icons or files. A co-worker signed in on my computer and has no trouble.')],
       asks: [ask('Where on the chain is the fault?', [
-        ['Sign-in and profile: the saved desktop and files', true, 'The co-worker has no trouble on the same computer, so links 1 to 5 work. It fails only for Olwen, and only after sign-in: her profile.'],
+        ['Sign-in and profile: the saved desktop and files', true, 'The co-worker has no trouble on the same computer, so links 1 to 5 work. It fails only for Olwen, and only after sign-in: their profile.'],
         ['Windows loading: the logo, dots and the blue screen', LINK, 'Windows loads fine for the co-worker on the same computer.'],
         ['The boot drive: where the start-up files sit', LINK, 'The computer starts and shows sign-in, so the drive was found.'],
         ['Power: the outlet, cable and power supply', LINK, 'The computer is on and shows a screen.']])],
@@ -265,26 +265,26 @@
     item({
       id: 'l9-k-call',
       blocks: [note('Ilsa in Records calls the help desk. You answer.')],
-      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ilsa calls about her desktop. What do you say?', form: 'call', from: 'Ilsa, Records', detail: 'Incoming call · 1:15 PM', start: 'one',
+      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ilsa calls about their desktop. What do you say?', form: 'call', from: 'Ilsa, Records', detail: 'Incoming call · 1:15 PM', start: 'one',
         turns: {
-          one: { lines: [L('i1', 'My computer will not work. It is stuck on a black screen with some white words. I do not know what they say. Can you just reinstall Windows?')], push: 'She wants the biggest fix before she has read the words.',
+          one: { lines: [L('i1', 'My computer will not work. It is stuck on a black screen with some white words. I do not know what they say. Can you just reinstall Windows?')], push: 'They want the biggest fix before they have read the words.',
             options: [{ id: 'reinstall', text: 'Yes, I will reinstall Windows for you now.', end: 'reinstall' },
               { id: 'read', text: 'So it is a black screen with white words on it. Please read me the words exactly as they are written.', goto: 'two' },
               { id: 'again', text: 'Turn it off and on again and call back.', end: 'again' },
               { id: 'plug', text: 'Is the monitor plugged in properly?', end: 'monitor' }] },
-          two: { lines: [L('i2', 'It says “Operating system not found.” It showed the maker’s logo first. My last computer was fixed with a reinstall, so just do that.')], push: 'She still wants it reinstalled.',
+          two: { lines: [L('i2', 'It says “Operating system not found.” It showed the maker’s logo first. My last computer was fixed with a reinstall, so just do that.')], push: 'They still want it reinstalled.',
             options: [{ id: 'list', text: 'The logo means power and the self-test worked. A reinstall would erase your files, and if the drive is missing it would not help. First I will look in the firmware screen to see whether the computer sees the drive.', end: 'list' },
               { id: 'reinstall2', text: 'I understand it worked last time. Then yes, I will put Windows on again for you now and call you when it is done.', end: 'reinstall2' },
               { id: 'virus', text: 'It is probably a virus.', end: 'virus' },
               { id: 'wait', text: 'Have you tried a different outlet for the computer?', end: 'outlet' }] }
         },
         ends: {
-          list: { ok: true, then: 'The logo says the first two links worked. Whether the firmware sees the drive splits a missing or failed drive from damaged start-up files, and it erases nothing. Holding the line politely, with the reason, keeps her files safe.' },
-          reinstall: { ok: false, slip: NEAR, then: 'A reinstall erases her files and nothing said Windows was the fault. The words on the screen had not been read yet.' },
-          again: { ok: false, slip: NOSPLIT, then: 'A restart repeats the failure, and rules nothing out. The message on the screen is the most useful thing she has.' },
-          monitor: { ok: false, slip: NOSPLIT, then: 'She can see words on the screen, so the monitor works. The question rules nothing out.' },
-          reinstall2: { ok: false, slip: NEAR, then: 'The message could mean the drive is missing or unreadable, and a reinstall would not fix that. It also erases her files.' },
-          virus: { ok: false, slip: 'guessed-cause', then: 'Nothing in “operating system not found” says a virus. Telling her a cause before knowing it can mislead her and the next person.' },
+          list: { ok: true, then: 'The logo says the first two links worked. Whether the firmware sees the drive splits a missing or failed drive from damaged start-up files, and it erases nothing. Holding the line politely, with the reason, keeps their files safe.' },
+          reinstall: { ok: false, slip: NEAR, then: 'A reinstall erases their files and nothing said Windows was the fault. The words on the screen had not been read yet.' },
+          again: { ok: false, slip: NOSPLIT, then: 'A restart repeats the failure, and rules nothing out. The message on the screen is the most useful thing they have.' },
+          monitor: { ok: false, slip: NOSPLIT, then: 'They can see words on the screen, so the monitor works. The question rules nothing out.' },
+          reinstall2: { ok: false, slip: NEAR, then: 'The message could mean the drive is missing or unreadable, and a reinstall would not fix that. It also erases their files.' },
+          virus: { ok: false, slip: 'guessed-cause', then: 'Nothing in “operating system not found” says a virus. Telling them a cause before knowing it can mislead them and the next person.' },
           outlet: { ok: false, slip: LINK, then: 'The computer has power: the logo and the message show it. Another outlet tests a link that already worked.' } } }],
       reason: 'Reading the words exactly is the cheapest test, and the maker’s logo says the first two links worked. The message places the fault on the boot drive, where the next cut is whether the firmware sees the drive, before any fix that erases files.' }),
     item({
@@ -314,7 +314,7 @@
       id: 'l9-r-noise',
       blocks: [chat('Tomasz, Finance', 'k1', 'My desktop makes a grinding noise from inside and the file I open takes a minute. A pop-up from the manufacturer’s tool said a drive health check failed.')],
       asks: [ask('What does this show, and what comes first?', [
-        ['A failing hard drive; get her files off first.', true, 'Grinding, slow reads and a failed S.M.A.R.T. check (the drive’s own health report) all say the drive is failing. It may stop at any start.'],
+        ['A failing hard drive; get their files off first.', true, 'Grinding, slow reads and a failed S.M.A.R.T. check (the drive’s own health report) all say the drive is failing. It may stop at any start.'],
         ['The power supply; replace it today and test it.', LINK, 'Nothing here is about power. A power fault shows as no start or random shutdowns.'],
         ['The monitor; replace the cable and try again.', LINK, 'The screen works. The noise and slow reads come from a drive.']])],
       deciding: ['k1'],
@@ -354,8 +354,8 @@
       blocks: [chat('Wanda, Legal', 'u1', 'My computer has become slow with everything I do, all day. It starts fine and signs me in fine. Nothing crashes. The fan runs loud.'),
         table('What you tried', ['Test', 'Result'], [['t1', 'Wanda signs in on a co-worker’s computer of the same make', 'Fast'], ['t2', 'Co-worker signs in on Wanda’s computer', 'Just as slow']])],
       asks: [ask('Where does this point?', [
-        ['Wanda’s computer, not her profile: memory, the drive or heat', true, 'The co-worker is slow on the same computer, so the computer is the cause. The profile goes with the person and is cleared.'],
-        ['Wanda’s profile, which holds her saved desktop and settings', KEPT, 'Wanda is fast on the other computer, so her profile is cleared.'],
+        ['Wanda’s computer, not their profile: memory, the drive or heat', true, 'The co-worker is slow on the same computer, so the computer is the cause. The profile goes with the person and is cleared.'],
+        ['Wanda’s profile, which holds their saved desktop and settings', KEPT, 'Wanda is fast on the other computer, so their profile is cleared.'],
         ['The start-up self-test, which checks memory and video first', LINK, 'The computer starts and signs in, so the self-test passed long ago.'],
         ['The power supply, which is not feeding the parts enough', LINK, 'A weak power supply stops the computer or shuts it down. It does not slow every program.']])],
       deciding: ['t1', 't2'],

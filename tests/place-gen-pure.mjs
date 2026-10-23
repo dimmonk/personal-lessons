@@ -101,7 +101,7 @@ async function suite(app) {
   check(scoreItem(subject, nameFrance, null, { name: 'france' }).ok === true && scoreItem(subject, nameFrance, null, { name: 'germany' }).ok === false, 'a lit place named is right with its name and wrong with another');
 
   /* ---------- the draw of a check ---------- */
-  same([drawSize(DRAW), drawSize({ strands: ['a'], n: 3 })], [12, 3], 'a drawn check is as long as its split, or its n');
+  same([drawSize(DRAW), drawSize([{ strands: ['a'], n: 3 }, { strands: ['b'], n: 4 }])], [12, 7], 'a drawn check is as long as its split, or the n of its groups added');
   const memoryNone = {};
   let sameSeed = true, differs = new Set();
   for (let k = 0; k < 200; k++) {

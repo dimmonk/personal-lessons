@@ -1,10 +1,10 @@
 # IT Help Desk: How a computer gets online
 
-Revision 1, live. Part: How a computer gets online. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: How a computer gets online. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Odette in Billing says nothing loads and the internet must be down. Between her computer and a website sit a cable or Wi-Fi, an address, the router, a name lookup and the website. Restarting the router cuts off everyone to test one of them.
+Odette in Billing says nothing loads and the internet must be down. Between their computer and a website sit a cable or Wi-Fi, an address, the router, a name lookup and the website. Restarting the router cuts off everyone to test one of them.
 A good technician types ipconfig and reads three lines. You learn the five links, the commands that cut them in half, and how to read their output.
 
 ## Step 1: Five links from the cable to the website
@@ -170,19 +170,19 @@ The chain from the cable to a website: the link, the address, the mask and gatew
 This desk’s rule: wall jacks and switch ports belong to the network team.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**Tom at the next desk says his websites load fine. What does that show?**
+**Elton at the next desk says their websites load fine. What does that show?**
 (the options come in an order that depends on the seed of the question)
 - The line out and the router work, so the fault is on Odette’s side of them.
 - The router needs a restart, since it is the one box every computer in the office shares.
-- Odette’s browser is broken, since her cable and the light by it both look fine.
+- Odette’s browser is broken, since their cable and the light by it both look fine.
 
 The working, one step at a time:
 1. Write the chain, so every cause has a place.: The link, the address, the mask and gateway, the name lookup, the service. “Nothing loads” could be any of the five.
-1. Name the favorite cause and cut with the cheapest test: another person on the same network.: The favorite is the office’s internet. Tom, at the next desk, loads sites fine. The office connection and the router are cleared, and the fault is somewhere on Odette’s side of them.
+1. Name the favorite cause and cut with the cheapest test: another person on the same network.: The favorite is the office’s internet. Elton, at the next desk, loads sites fine. The office connection and the router are cleared, and the fault is somewhere on Odette’s side of them.
 1. Run ipconfig on Odette’s computer. It changes nothing.: The Ethernet adapter shows an IPv4 address of 169.254.31.77, a mask of 255.255.0.0 and an empty Default Gateway. The adapter is not “Media disconnected”, so link 1 is up. The computer made up its own address because no DHCP answer came: link 2 failed.
 1. Cut again: the cable against everything else. Swap in a cable known to work.: Same result, 169.254 again. The cable is ruled out.
-1. Plug Odette’s computer into Tom’s cable, which works.: It gets 192.168.1.57 at once, with a gateway. Her computer and its settings are fine, and the fault is her wall jack or its port on the switch.
-1. Get her working, then hand on with what you found.: Odette works from a spare jack. The network team gets the jack number, the 169.254 address, the cable swap and the result on Tom’s cable. Restarting the router would have fixed nothing and cut off the office.
+1. Plug Odette’s computer into Elton’s cable, which works.: It gets 192.168.1.57 at once, with a gateway. Their computer and its settings are fine, and the fault is their wall jack or its port on the switch.
+1. Get their working, then hand on with what you found.: Odette works from a spare jack. The network team gets the jack number, the 169.254 address, the cable swap and the result on Elton’s cable. Restarting the router would have fixed nothing and cut off the office.
 
 Then the answer: The line out and the router work, so the fault is on Odette’s side of them. The favorite cause was the office connection, and one person next door cleared it. ipconfig then showed a 169.254 address: the link was up and DHCP was not reached. Two cheap swaps, the cable and the jack, split the computer from the wall, and nothing was restarted that other people use.
 
@@ -192,9 +192,9 @@ Then the answer: The line out and the router work, so the fault is on Odette’s
 
 #### Item 1
 
-A chat, with its history: "Wen, Legal", Chat with the help desk.
+A chat, with its history: "Benita, Legal", Chat with the help desk.
 
-> (Wen, Legal, at the left) My desktop says there is no network. It was fine yesterday. The cleaners were in last night.
+> (Benita, Legal, at the left) My desktop says there is no network. It was fine yesterday. The cleaners were in last night.
 
 A plain table, "C:\> ipconfig (the Ethernet adapter)":
 
@@ -217,9 +217,9 @@ After the answer: the deciding words are marked. Reason: Media disconnected mean
 
 #### Item 2
 
-A chat, with its history: "Hal, Sales", Chat with the help desk.
+A chat, with its history: "Tanya, Sales", Chat with the help desk.
 
-> (Hal, Sales, at the left) Since I plugged my laptop in at the new desk, a yellow warning says limited connectivity and no page loads. The light by the cable is on.
+> (Tanya, Sales, at the left) Since I plugged my laptop in at the new desk, a yellow warning says limited connectivity and no page loads. The light by the cable is on.
 
 A plain table, "C:\> ipconfig (the Ethernet adapter)":
 
@@ -346,9 +346,9 @@ After the answer: the deciding words are marked. Reason: The scope is the range 
 
 #### Item 6
 
-A chat, with its history: "Ola, Network team", Chat with the help desk.
+A chat, with its history: "Ramiro, Network team", Chat with the help desk.
 
-> (Ola, Network team, at the left) A vendor sent us a list of the addresses they plan to put on the new cameras. We use private addresses inside the building. Which of these are private?
+> (Ramiro, Network team, at the left) A vendor sent us a list of the addresses they plan to put on the new cameras. We use private addresses inside the building. Which of these are private?
 
 **Pick every private address.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
@@ -362,11 +362,11 @@ After the answer: Reason: The three private blocks are 10.0.0.0 to 10.255.255.25
 
 #### Item 7
 
-A chat, with its history: "Dee, HR", Chat with the help desk.
+A chat, with its history: "Alison, HR", Chat with the help desk.
 
-> (Dee, HR, at the left) Websites will not load on my computer. The person next to me is fine. I can ping 8.8.8.8 and it answers.
+> (Alison, HR, at the left) Websites will not load on my computer. The person next to me is fine. I can ping 8.8.8.8 and it answers.
 
-A plain table, "C:\> ipconfig /all on Dee’s computer":
+A plain table, "C:\> ipconfig /all on Alison’s computer":
 
 > Setting  |  Value  (the column heads)
 > DHCP Enabled  |  No
@@ -374,7 +374,7 @@ A plain table, "C:\> ipconfig /all on Dee’s computer":
 > Default Gateway  |  192.168.1.1
 > DNS Servers  |  192.168.1.5
 
-A plain table, "C:\> ipconfig /all on the computer next to hers":
+A plain table, "C:\> ipconfig /all on the computer next to theirs":
 
 > Setting  |  Value  (the column heads)
 > DHCP Enabled  |  Yes
@@ -395,17 +395,17 @@ A plain table, "C:\> nslookup www.example.com":
 **What is the fault, and the cheapest fix?**
 (the options come in an order that depends on the seed of the question)
 - A DNS address typed in by hand no longer answers: switch to automatic (right)
-- The gateway is wrong, so nothing she sends can leave the office at all — if chosen: The ping to 8.8.8.8 went out through the gateway and came back.
-- The websites she wants are down, which is why the lookup timed out — if chosen: No website was reached. The lookup of the name timed out first, and her neighbor gets through.
-- DHCP gave her a bad lease that has not yet expired — if chosen: DHCP Enabled says No. Her numbers were typed in by hand, so no lease was handed out.
+- The gateway is wrong, so nothing they send can leave the office at all — if chosen: The ping to 8.8.8.8 went out through the gateway and came back.
+- The websites they want are down, which is why the lookup timed out — if chosen: No website was reached. The lookup of the name timed out first, and their neighbor gets through.
+- DHCP gave them a bad lease that has not yet expired — if chosen: DHCP Enabled says No. Their numbers were typed in by hand, so no lease was handed out.
 
-After the answer: the deciding words are marked. Reason: Pings to a number work, so the link, address and gateway are fine. nslookup shows the DNS server it asked, 192.168.1.5, and that server does not answer. Her neighbor uses 192.168.1.1. A DNS address typed in long ago is the likely cause, and choosing “obtain DNS automatically” is one change that can be undone.
+After the answer: the deciding words are marked. Reason: Pings to a number work, so the link, address and gateway are fine. nslookup shows the DNS server it asked, 192.168.1.5, and that server does not answer. Their neighbor uses 192.168.1.1. A DNS address typed in long ago is the likely cause, and choosing “obtain DNS automatically” is one change that can be undone.
 
 #### Item 8
 
-A chat, with its history: "Ken, IT manager", Chat with the help desk.
+A chat, with its history: "Vincent, IT manager", Chat with the help desk.
 
-> (Ken, IT manager, at the left) The whole office lost the internet at 10:05. Pings to 8.8.8.8 time out as well. I ran tracert to a website.
+> (Vincent, IT manager, at the left) The whole office lost the internet at 10:05. Pings to 8.8.8.8 time out as well. I ran tracert to a website.
 
 A plain table, "C:\> tracert www.example.com":
 
@@ -450,32 +450,32 @@ A plain table, "C:\> ping www.example.com":
 (the options come in an order that depends on the seed of the question)
 - A proxy left on from the hotel: check Network and Internet, Proxy (right)
 - DNS is down, so names cannot be turned into numbers — if chosen: The ping by name worked, so the name was turned into a number.
-- The Wi-Fi link is weak, so pages time out before they finish loading — if chosen: Four replies came back and her co-worker is fine on the same Wi-Fi.
-- Run ipconfig /renew on her laptop and try a site again — if chosen: The ping by name worked, so her address is fine. Asking for a new one cannot change a proxy setting.
+- The Wi-Fi link is weak, so pages time out before they finish loading — if chosen: Four replies came back and their co-worker is fine on the same Wi-Fi.
+- Run ipconfig /renew on their laptop and try a site again — if chosen: The ping by name worked, so their address is fine. Asking for a new one cannot change a proxy setting.
 
-After the answer: the deciding words are marked. Reason: The ping by name worked, so links 1 to 4 are fine, and a co-worker is fine on the same Wi-Fi. What is left is the service link on her own computer. A proxy is a server her web traffic goes through, and one that was typed in for the hotel does not exist here.
+After the answer: the deciding words are marked. Reason: The ping by name worked, so links 1 to 4 are fine, and a co-worker is fine on the same Wi-Fi. What is left is the service link on their own computer. A proxy is a server their web traffic goes through, and one that was typed in for the hotel does not exist here.
 
 #### Item 10
 
 Ula in Marketing calls the help desk. You answer.
 
-**Ula calls about her internet. What do you say?**
+**Ula calls about their internet. What do you say?**
 - An incoming call from "Ula, Marketing" (Incoming call · 9:10 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "The internet is down. The woman next to me is fine, only mine. There is a yellow triangle on the little network picture by the clock. Please fix it." [pushes: She wants it fixed now. She has not said how her computer is connected.]
+- turn 1, the other side says: "The internet is down. The woman next to me is fine, only mine. There is a yellow triangle on the little network picture by the clock. Please fix it." [pushes: They want it fixed now. They have not said how their computer is connected.]
   - reply "So it is only your computer, and your neighbor is fine. Click the little network picture by the clock and read me the name next to it.": goes on to turn 2, where the pressure comes back
-  - reply "Is anyone near you having the same trouble, or is it only your computer?": the call ends (not this one): She had just told you: her neighbor is fine, only hers. Asking again shows her you were not listening. Say it back, then give her one thing to look at. [slip: did not say the story back to check it]
-  - reply "I will restart the router for you now.": the call ends (not this one): Her neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office. [slip: restarted or changed shared equipment that other people rely on]
-  - reply "Open a command window and type ipconfig slash all, then read me the lines.": the call ends (not this one): She does not know what a command window is, and she is in a hurry. Give her something she can read off the screen. [slip: used words the user may not know]
-  - reply "It is probably your Wi-Fi.": the call ends (not this one): Nothing said how she is connected. A cause told to her before it is known can send both of you the wrong way. [slip: told the user a cause before knowing it]
+  - reply "Is anyone near you having the same trouble, or is it only your computer?": the call ends (not this one): They had just told you: their neighbor is fine, only theirs. Asking again shows them you were not listening. Say it back, then give them one thing to look at. [slip: did not say the story back to check it]
+  - reply "I will restart the router for you now.": the call ends (not this one): Their neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office. [slip: restarted or changed shared equipment that other people rely on]
+  - reply "Open a command window and type ipconfig slash all, then read me the lines.": the call ends (not this one): They do not know what a command window is, and they are in a hurry. Give them something they can read off the screen. [slip: used words the user may not know]
+  - reply "It is probably your Wi-Fi.": the call ends (not this one): Nothing said how they are connected. A cause told to them before it is known can send both of you the wrong way. [slip: told the user a cause before knowing it]
   - reply "I will arrange a new laptop for you.": the call ends (not this one): No test has been run, so a new laptop or a driver reinstall is a guess that costs time or money. [slip: replaced a part before the cheap check]
-- turn 2, the other side says: "It says Ethernet. I have a call at ten. Can you just fix it from there?" [pushes: She wants it fixed from your side before her call.]
-  - reply "Not yet; it is one look. Check that the cable is pushed in at both ends and whether a light is on beside it, then tell me. I will keep this ticket open.": the call ends (right): Her neighbor is fine, so the office connection and the router are cleared, and Ethernet means a cable, so link 1 is the cheapest next look. The yellow triangle only means Windows could not confirm internet; it does not say which link failed.
-  - reply "Yes, let me restart the router, then.": the call ends (not this one): Her neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office. [slip: restarted or changed shared equipment that other people rely on]
+- turn 2, the other side says: "It says Ethernet. I have a call at ten. Can you just fix it from there?" [pushes: They want it fixed from your side before their call.]
+  - reply "Not yet; it is one look. Check that the cable is pushed in at both ends and whether a light is on beside it, then tell me. I will keep this ticket open.": the call ends (right): Their neighbor is fine, so the office connection and the router are cleared, and Ethernet means a cable, so link 1 is the cheapest next look. The yellow triangle only means Windows could not confirm internet; it does not say which link failed.
+  - reply "Yes, let me restart the router, then.": the call ends (not this one): Their neighbor is fine through the same router, so it is cleared, and a restart drops everyone in the office. [slip: restarted or changed shared equipment that other people rely on]
   - reply "I will reinstall the network driver on your computer from here.": the call ends (not this one): No test has been run, so a new laptop or a driver reinstall is a guess that costs time or money. [slip: replaced a part before the cheap check]
-  - reply "It will be working before your call, I promise.": the call ends (not this one): Nothing is known yet, so the result is not in your hands. Give her the next look instead. [slip: promised a result that was not in their hands]
+  - reply "It will be working before your call, I promise.": the call ends (not this one): Nothing is known yet, so the result is not in your hands. Give them the next look instead. [slip: promised a result that was not in their hands]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 
-After the answer: Reason: She gave the cut herself: only her computer is affected. Saying it back confirms it, and one thing she can read from the screen, how she is connected, picks the next cheap test. The yellow triangle means only that Windows could not confirm internet; the light, the name by the picture and ipconfig say which link.
+After the answer: Reason: They gave the cut themself: only their computer is affected. Saying it back confirms it, and one thing they can read from the screen, how they are connected, picks the next cheap test. The yellow triangle means only that Windows could not confirm internet; the light, the name by the picture and ipconfig say which link.
 
 #### Item 11
 
@@ -494,14 +494,14 @@ After the answer: Reason: Windows builds an address in the 169.254 range (APIPA,
 
 #### Item 12
 
-A chat, with its history: "Kai, Design", Chat with the help desk.
+A chat, with its history: "Halima, Design", Chat with the help desk.
 
-> (Kai, Design, at the left) My laptop is slow on Wi-Fi at the far desk. A computer on a cable next to me is fast. We open the same sites.
+> (Halima, Design, at the left) My laptop is slow on Wi-Fi at the far desk. A computer on a cable next to me is fast. We open the same sites.
 
 **Which test cuts the causes in half?**
 (the options come in an order that depends on the seed of the question)
 - Plug the same laptop into a cable and run the same download (right)
-- Ping the website from the cabled computer next to him and read the times — if chosen: That computer is already fast. Its times say nothing about what the radio link does for the laptop.
+- Ping the website from the cabled computer next to them and read the times — if chosen: That computer is already fast. Its times say nothing about what the radio link does for the laptop.
 - Restart the office router and then the laptop together — if chosen: Two changes at once, and a restart that drops everyone, rule nothing out.
 - Replace the laptop’s Wi-Fi card with a new one — if chosen: Nothing has shown the card at fault, and the cable test is free.
 
@@ -509,9 +509,9 @@ After the answer: the deciding words are marked. Reason: Slow only over Wi-Fi at
 
 #### Item 13
 
-A chat, with its history: "Lia, HR", Chat with the help desk.
+A chat, with its history: "Rachel, HR", Chat with the help desk.
 
-> (Lia, HR, at the left) The office Wi-Fi password was changed on Monday. My laptop now says it cannot connect. My phone, which I joined with the new password, is fine.
+> (Rachel, HR, at the left) The office Wi-Fi password was changed on Monday. My laptop now says it cannot connect. My phone, which I joined with the new password, is fine.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
@@ -528,7 +528,7 @@ A chat, with its history: "Moe, Sales", Chat with the help desk.
 
 > (Moe, Sales, at the left) ipconfig shows an address starting fe80:: under my adapter. Is that the 169.254 problem again?
 
-**What do you tell him?**
+**What do you tell them?**
 (the options come in an order that depends on the seed of the question)
 - No: fe80:: is the normal local IPv6 address; read the IPv4 lines (right)
 - Yes: it also means DHCP was not reached, so check the link light — if chosen: A 169.254 address is the warning. fe80:: is made for the local network on purpose and always there.
@@ -539,9 +539,9 @@ After the answer: the deciding words are marked. Reason: IPv6 addresses are 128 
 
 #### Item 15
 
-A chat, with its history: "Ben, Front desk", Chat with the help desk.
+A chat, with its history: "Byron, Front desk", Chat with the help desk.
 
-> (Ben, Front desk, at the left) I cannot print. IT told me the printer is at 192.168.1.80. My computer is 192.168.1.42.
+> (Byron, Front desk, at the left) I cannot print. IT told me the printer is at 192.168.1.80. My computer is 192.168.1.42.
 
 A plain table, "C:\> ping 192.168.1.80":
 
@@ -557,18 +557,18 @@ A plain table, "C:\> ping 192.168.1.80":
 (the options come in an order that depends on the seed of the question)
 - Nothing on the local network answers at that address (right)
 - The internet connection is down for the whole office — if chosen: The ping stayed inside the office network and never needed the internet.
-- The printer replied, so the fault is in the print queue — if chosen: The reply line names 192.168.1.42, Ben’s own address, not the printer’s.
+- The printer replied, so the fault is in the print queue — if chosen: The reply line names 192.168.1.42, Byron’s own address, not the printer’s.
 - The name lookup failed, so the printer name is wrong — if chosen: The ping was to a number, so no lookup was used.
 
 After the answer: the deciding words are marked. Reason: Destination host unreachable, from your own address, means there is no way to reach that address on the local network. Check that the printer is on and what address it now has, before anything on the computer is changed.
 
 #### Item 16
 
-A chat, with its history: "Gus, Office manager", Chat with the help desk.
+A chat, with its history: "Kasper, Office manager", Chat with the help desk.
 
-> (Gus, Office manager, at the left) Everyone in the building has the yellow warning this morning, and every laptop shows a 169.254 address. The router’s lights look odd after last night’s power cut.
+> (Kasper, Office manager, at the left) Everyone in the building has the yellow warning this morning, and every laptop shows a 169.254 address. The router’s lights look odd after last night’s power cut.
 
-A plain table, "Gus’s network notes":
+A plain table, "Kasper’s network notes":
 
 > Detail  |  Value  (the column heads)
 > Where addresses come from (DHCP)  |  The router
@@ -620,9 +620,9 @@ After the answer: Reason: SPF lists the sending servers. DKIM carries what check
 
 #### Item 20
 
-A chat, with its history: "Ben, Front desk", Chat with the help desk.
+A chat, with its history: "Byron, Front desk", Chat with the help desk.
 
-> (Ben, Front desk, at the left) We bought a new printer. I cannot print to it from my computer. Both of us are plugged into the same switch.
+> (Byron, Front desk, at the left) We bought a new printer. I cannot print to it from my computer. Both of us are plugged into the same switch.
 
 A plain table, "What the computer and the printer show":
 
@@ -670,12 +670,12 @@ The payroll server is at 192.168.2.10. The router connects the two floors.
 
 **What explains it?**
 (the options come in an order that depends on the seed of the question)
-- The mask he typed is too wide, so his computer treats 192.168.2.10 as local and never sends it to the gateway (right)
-- The gateway is typed wrong, because the shared drive on his floor opens — if chosen: His gateway, 192.168.1.1, is the same as his neighbor’s, and the neighbor reaches the server.
-- His address is a duplicate of another computer’s — if chosen: A duplicate would break the drive on his floor too, and Windows would warn him.
-- The payroll server is down for him but up for his neighbor — if chosen: A server is not down for one person. What differs is the mask in his settings.
+- The mask they typed is too wide, so their computer treats 192.168.2.10 as local and never sends it to the gateway (right)
+- The gateway is typed wrong, because the shared drive on their floor opens — if chosen: Their gateway, 192.168.1.1, is the same as their neighbor’s, and the neighbor reaches the server.
+- Their address is a duplicate of another computer’s — if chosen: A duplicate would break the drive on their floor too, and Windows would warn them.
+- The payroll server is down for them but up for their neighbor — if chosen: A server is not down for one person. What differs is the mask in their settings.
 
-After the answer: the deciding words are marked. Reason: The mask tells a computer which addresses are on its own network. His 255.255.0.0 is wider than the office’s 255.255.255.0, so the server upstairs looks local and he sends to it directly, where nothing answers. Anything outside the local network goes through the gateway. Setting the adapter back to automatic, or typing the same mask as his neighbor, is one change.
+After the answer: the deciding words are marked. Reason: The mask tells a computer which addresses are on its own network. Their 255.255.0.0 is wider than the office’s 255.255.255.0, so the server upstairs looks local and they send to it directly, where nothing answers. Anything outside the local network goes through the gateway. Setting the adapter back to automatic, or typing the same mask as their neighbor, is one change.
 
 #### Item 22
 
@@ -694,11 +694,11 @@ After the answer: the deciding words are marked. Reason: SPF lists who may send,
 
 #### Item 23
 
-A chat, with its history: "Sam, Field sales", Chat with the help desk.
+A chat, with its history: "Eloise, Field sales", Chat with the help desk.
 
-> (Sam, Field sales, at the left) The hotel Wi-Fi is down tonight and I have a report due. My laptop has a SIM card in it from the company. In the network list I see only the hotel network.
+> (Eloise, Field sales, at the left) The hotel Wi-Fi is down tonight and I have a report due. My laptop has a SIM card in it from the company. In the network list I see only the hotel network.
 
-**What do you tell him?**
+**What do you tell them?**
 (the options come in an order that depends on the seed of the question)
 - Turn Cellular on in the network list or settings; it uses the SIM in the laptop (right)
 - Connect the VPN first, because it gives the laptop its own internet — if chosen: A VPN is a tunnel that rides on an internet connection that already works. It cannot make one.
@@ -715,24 +715,24 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 24
 
-A chat, with its history: "Abe, Remote", Chat with the help desk.
+A chat, with its history: "Angela, Remote", Chat with the help desk.
 
-> (Abe, Remote, at the left) I am working from home today. My Z: drive in File Explorer has a red X and says it cannot connect. At the office it works.
+> (Angela, Remote, at the left) I am working from home today. My Z: drive in File Explorer has a red X and says it cannot connect. At the office it works.
 
 **What do you check first?**
 (the options come in an order that depends on the seed of the question)
 - Whether the VPN is on, since the drive lives inside the office (right)
 - Map the drive again with a different letter, in case Z: is stuck — if chosen: A new letter points at the same server, which still cannot be reached.
-- Run ipconfig /renew on his laptop to get a fresh address — if chosen: His home address is working, since he is online. Asking for it again tells nothing about the path to the office server.
+- Run ipconfig /renew on their laptop to get a fresh address — if chosen: Their home address is working, since they are online. Asking for it again tells nothing about the path to the office server.
 - Turn on the metered connection so the drive reconnects — if chosen: Metered only holds back big downloads. It does not open a path to the server.
 
 After the answer: the deciding words are marked. Reason: A mapped drive is a drive letter for a network path such as \\fileserver\Sales. The server sits inside the office network, so away from it the drive works only through the VPN. The red X says the path cannot be reached, which sends you to the VPN before anything else.
 
 #### Item 25
 
-A chat, with its history: "Cal, Sales", Chat with the help desk.
+A chat, with its history: "Emil, Sales", Chat with the help desk.
 
-> (Cal, Sales, at the left) I moved to the office’s new conference room Wi-Fi. Websites open fine, but I cannot see the shared printer or any of the other laptops. It worked at my old seat.
+> (Emil, Sales, at the left) I moved to the office’s new conference room Wi-Fi. Websites open fine, but I cannot see the shared printer or any of the other laptops. It worked at my old seat.
 
 A plain table, "Windows network settings":
 
@@ -746,7 +746,7 @@ This desk’s rule: the office’s own Wi-Fi networks use the Private profile.
 - Change the profile to Private, as this desk’s rule says for the office’s own Wi-Fi (right)
 - Turn off the firewall so that nothing blocks the printer — if chosen: That opens the computer to every network it joins, a café included. The profile is the setting that changes.
 - Restart the office router and then the printer, one after the other — if chosen: Websites work and the profile explains the missing printer. A restart would drop everyone.
-- Type in a static address from the conference room range — if chosen: His address is working, since websites open. A fixed one would not show the printer either.
+- Type in a static address from the conference room range — if chosen: Their address is working, since websites open. A fixed one would not show the printer either.
 
 After the answer: the deciding words are marked. Reason: Windows wants to know whether a new network is public or private. Public, for a café or hotel, hides the computer and turns network discovery (the computer showing itself to others) and sharing off, so the printer and other laptops vanish while websites still work. This desk’s rule makes its own Wi-Fi Private.
 
@@ -789,9 +789,9 @@ After the answer: the deciding words are marked. Reason: Intermittent wireless t
 
 #### Item 28
 
-A chat, with its history: "Eli, Front desk", Chat with the help desk.
+A chat, with its history: "Holly, Front desk", Chat with the help desk.
 
-> (Eli, Front desk, at the left) The front desk printer keeps dropping off. A few times a day Windows on some computer says there is an IP address conflict. Last month we typed 192.168.1.130 into the printer by hand.
+> (Holly, Front desk, at the left) The front desk printer keeps dropping off. A few times a day Windows on some computer says there is an IP address conflict. Last month we typed 192.168.1.130 into the printer by hand.
 
 A plain table, "The DHCP server’s list":
 
@@ -810,24 +810,24 @@ After the answer: the deciding words are marked. Reason: An address conflict is 
 
 #### Item 29
 
-A chat, with its history: "Nia, Warehouse", Chat with the help desk.
+A chat, with its history: "Noah, Warehouse", Chat with the help desk.
 
-> (Nia, Warehouse, at the left) I installed the scanner program IT gave me. Other computers cannot reach it. A Windows box came up when I started it and I clicked Cancel. Websites and email are fine.
+> (Noah, Warehouse, at the left) I installed the scanner program IT gave me. Other computers cannot reach it. A Windows box came up when I started it and I clicked Cancel. Websites and email are fine.
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
 - Add the scanner program as an exception in the Windows firewall, for the network profile in use (right)
 - Turn the Windows firewall off while the scanner is in use — if chosen: That opens every program on the computer. One exception for one program is enough.
-- Run ipconfig /release and /renew on her computer — if chosen: Her address works, since websites and email do. The block is on the program.
-- Type in a static address for her computer so the scanner keeps one address — if chosen: Her address already works, since websites and email do. The block is on the program, not on the address.
+- Run ipconfig /release and /renew on their computer — if chosen: Their address works, since websites and email do. The block is on the program.
+- Type in a static address for their computer so the scanner keeps one address — if chosen: Their address already works, since websites and email do. The block is on the program, not on the address.
 
 After the answer: the deciding words are marked. Reason: The Windows firewall blocks incoming connections to a program unless an exception lets them through, and its rules are kept for each network profile. Websites and email work, so the chain is fine. Allowing the one program is the narrowest change.
 
 #### Item 30
 
-A chat, with its history: "Wen, Legal", Chat with the help desk.
+A chat, with its history: "Benita, Legal", Chat with the help desk.
 
-> (Wen, Legal, at the left) My desktop still says there is no network. Yesterday you swapped the cable and moved me to another jack. A laptop works on the same cable and the same jack.
+> (Benita, Legal, at the left) My desktop still says there is no network. Yesterday you swapped the cable and moved me to another jack. A laptop works on the same cable and the same jack.
 
 A plain table, "C:\> ipconfig (the Ethernet adapter)":
 
@@ -850,11 +850,11 @@ A chat, with its history: "Isa, Remote", Chat with the help desk.
 
 > (Isa, Remote, at the left) From home the intranet site (the company’s own internal website) and the shared drives will not open, but ordinary websites do. What should I do?
 
-**What do you tell her?**
+**What do you tell them?**
 (the options come in an order that depends on the seed of the question)
 - Connect the VPN, which reaches the internal sites (right)
-- Type in a static address from the office range to reach them — if chosen: An address from the office range does nothing at her home, where the router hands out the addresses.
-- Switch the home network to Public to hide her computer — if chosen: It would hide her computer and reach nothing at the office.
+- Type in a static address from the office range to reach them — if chosen: An address from the office range does nothing at their home, where the router hands out the addresses.
+- Switch the home network to Public to hide their computer — if chosen: It would hide their computer and reach nothing at the office.
 - Flush the DNS cache and try the sites again — if chosen: Websites open, so names work. The internal sites sit behind the tunnel.
 
 After the answer: the deciding words are marked. Reason: Internal sites and drives sit inside the company network. Ordinary sites work from home, so the connection is fine, and the VPN is what reaches the rest.
@@ -870,9 +870,9 @@ To pass:
 
 #### Check question 32
 
-A chat, with its history: "Sol, Planning", Chat with the help desk.
+A chat, with its history: "Archie, Planning", Chat with the help desk.
 
-> (Sol, Planning, at the left) Nothing opens, not the websites and not the shared drive.
+> (Archie, Planning, at the left) Nothing opens, not the websites and not the shared drive.
 
 A plain table, "C:\> ipconfig":
 
@@ -902,9 +902,9 @@ After the answer: the deciding words are marked. Reason: The address looks good,
 
 #### Check question 33
 
-A chat, with its history: "Tess, Design", Chat with the help desk.
+A chat, with its history: "Barbara, Design", Chat with the help desk.
 
-> (Tess, Design, at the left) My laptop joined the office Wi-Fi but says limited and nothing loads. My phone on the same Wi-Fi is fine.
+> (Barbara, Design, at the left) My laptop joined the office Wi-Fi but says limited and nothing loads. My phone on the same Wi-Fi is fine.
 
 A plain table, "C:\> ipconfig (the Wi-Fi adapter)":
 
@@ -946,9 +946,9 @@ After the answer: the deciding words are marked. Reason: nslookup shows who answ
 
 #### Check question 35
 
-A chat, with its history: "Vik, Sales", Chat with the help desk.
+A chat, with its history: "Octavia, Sales", Chat with the help desk.
 
-> (Vik, Sales, at the left) Video calls to our customer in Denver keep breaking up, but other sites are fine.
+> (Octavia, Sales, at the left) Video calls to our customer in Denver keep breaking up, but other sites are fine.
 
 A plain table, "C:\> pathping www.example.com (the statistics, shortened)":
 
@@ -972,9 +972,9 @@ After the answer: the deciding words are marked. Reason: pathping lists the hops
 
 #### Check question 36
 
-A chat, with its history: "Wes, New starter", Chat with the help desk.
+A chat, with its history: "Raquel, New starter", Chat with the help desk.
 
-> (Wes, New starter, at the left) My manager says to join my new laptop to the company domain, but the option to join one is not in Settings. The laptop is Windows 11 Home.
+> (Raquel, New starter, at the left) My manager says to join my new laptop to the company domain, but the option to join one is not in Settings. The laptop is Windows 11 Home.
 
 **Why is the option missing?**
 (the options come in an order that depends on the seed of the question)
@@ -987,11 +987,11 @@ After the answer: the deciding words are marked. Reason: A domain is a company g
 
 #### Check question 37
 
-A chat, with its history: "Zoe, Frontdesk", Chat with the help desk.
+A chat, with its history: "Valentina, Frontdesk", Chat with the help desk.
 
-> (Zoe, Frontdesk, at the left) The shared drive opens, but no website does. I typed in my own address settings last week to fix a printer.
+> (Valentina, Frontdesk, at the left) The shared drive opens, but no website does. I typed in my own address settings last week to fix a printer.
 
-A plain table, "C:\> ipconfig /all on Zoe’s computer":
+A plain table, "C:\> ipconfig /all on Valentina’s computer":
 
 > Setting  |  Value  (the column heads)
 > DHCP Enabled  |  No
@@ -999,7 +999,7 @@ A plain table, "C:\> ipconfig /all on Zoe’s computer":
 > Subnet Mask  |  255.255.255.0
 > Default Gateway  |  192.168.1.254
 
-A plain table, "C:\> ipconfig /all on the computer next to hers":
+A plain table, "C:\> ipconfig /all on the computer next to theirs":
 
 > Setting  |  Value  (the column heads)
 > DHCP Enabled  |  Yes
@@ -1020,11 +1020,11 @@ A plain table, "C:\> ping 192.168.1.254":
 **What is the fault?**
 (the options come in an order that depends on the seed of the question)
 - The gateway typed in by hand is not the router’s address (right)
-- DHCP gave her a bad lease that has not yet run out — if chosen: DHCP Enabled says No, so the numbers were typed in.
-- The subnet mask is wrong and does not match the network — if chosen: Her mask matches her neighbor’s, 255.255.255.0.
-- The cable is faulty, so part of the traffic is lost on the way — if chosen: The shared drive opens and the message came from her own address, so the link works.
+- DHCP gave them a bad lease that has not yet run out — if chosen: DHCP Enabled says No, so the numbers were typed in.
+- The subnet mask is wrong and does not match the network — if chosen: Their mask matches their neighbor’s, 255.255.255.0.
+- The cable is faulty, so part of the traffic is lost on the way — if chosen: The shared drive opens and the message came from their own address, so the link works.
 
-After the answer: the deciding words are marked. Reason: Computers on the same local network reach each other directly, so the shared drive works. Anything outside needs the gateway, and the one she typed in matches no device. A static address means every number is typed by hand and must match the router. Setting the adapter back to automatic is one change.
+After the answer: the deciding words are marked. Reason: Computers on the same local network reach each other directly, so the shared drive works. Anything outside needs the gateway, and the one they typed in matches no device. A static address means every number is typed by hand and must match the router. Setting the adapter back to automatic is one change.
 
 ## The result
 

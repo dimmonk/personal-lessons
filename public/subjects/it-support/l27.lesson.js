@@ -2,13 +2,14 @@
 // (docs/research/it-support-aplus.md). These are recall objectives, so each group is taught by the decision it answers on a ticket (who must approve this change, which backup restores fastest, what to do
 // with this drive), then asked from memory and as a choice (IT25, IT26, IT27: self-quizzing with feedback, spaced, beats rereading; IT28, IT9: the worked tickets show a wrong first guess that one check rules out;
 // IT13 and IT14: hand on and write it up, for the evidence ticket). Plan: docs/subjects/it-support/plan.md, lesson 27; rulings-l1-8.md and rulings-l9-13.md.
+// Order of volatility is shown simplified (RFC 3227 lists registers and cache, memory, swap, disk, remote logs, backups). Pronouns: named ticket people are named or "they" (ruling 22).
 // Strands: change, backup, safety, evidence. Two worked tickets; a first group of five with the help shown; a second of seven; a third of six mixed with lessons 25 and 26; the check: six new questions,
 // 5 of 6 to pass. Three reserve questions for each strand.
 FC.lesson('it-support', {
-  id: 'l27', part: 'procedures', title: 'Changes, backups, safety and evidence', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, split from the first draft of lesson 27 (change management, backup kinds and 3-2-1, safety and the environment, evidence and chain of custody; each taught by the decision it answers on a ticket, then asked from memory and as a choice).' }],
+  id: 'l27', part: 'procedures', title: 'Changes, backups, safety and evidence', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, split from the first draft of lesson 27 (change management, backup kinds and 3-2-1, safety and the environment, evidence and chain of custody; each taught by the decision it answers on a ticket, then asked from memory and as a choice).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'It is Friday at 4:30. A manager writes: “Please update the firmware on the accounting server tonight. It only takes ten minutes.” A technician who does it alone, with no approval, no copy of the data and no way back, can stop payroll on Monday. The desk has rules for what to get approved, copy, wear and keep.',
+    'It is Friday at 4:30. A manager writes: “Please update the firmware (the built-in software of the hardware) on the accounting server tonight. It only takes ten minutes.” A technician who does it alone, with no approval, no copy of the data and no way back, can stop payroll on Monday. The desk has rules for what to get approved, copy, wear and keep.',
     'Here are four small groups of those rules. Each answers a question from a ticket: who must approve this change, which backup restores fastest, what do I wear and do before I open this, what do I do with this drive. You read each rule once, watch it used, then answer from memory and as a choice.'],
   flow: [
     { title: 'Changes: who approves, and what must be ready',
@@ -33,27 +34,27 @@ FC.lesson('it-support', {
         'Onsite copies restore fast but burn with the building; offsite copies survive it. GFS (grandfather, father, son) is a rotation of daily (son), weekly (father) and monthly (grandfather) copies, each kept longer. The 3-2-1 rule: 3 copies of the data (the original counts), on 2 kinds of media, 1 copy offsite.'] }] },
     { title: 'Safety: before you open it, lift it or plug it in',
       show: [{ kind: 'document', form: 'table', title: 'The hazard and what answers it', head: ['Hazard', 'What to use or do'], rows: [
-        { id: 's1', cells: ['Static (ESD): a spark you cannot feel can kill a chip', 'An ESD strap on your wrist clipped to bare metal, or an ESD mat; keep spare parts in antistatic bags'] },
+        { id: 's1', cells: ['Static (ESD): a spark you cannot feel can kill a chip', 'An ESD strap on your wrist clipped to bare metal of the computer’s frame, which keeps you and the frame at the same charge; or an ESD mat; keep spare parts in antistatic bags'] },
         { id: 's2', cells: ['Shock', 'Disconnect power before a repair; use grounded outlets (equipment grounding) and never cut off the third pin'] },
         { id: 's3', cells: ['A heavy load', 'Lifting technique: bend the knees, back straight, load close; use a cart or a second person'] },
         { id: 's4', cells: ['Tripping', 'Cable management: tie cables together and keep them out of walkways'] },
-        { id: 's5', cells: ['Fire', 'Know where the extinguisher is and its kind; never water on an electrical fire; leave and call emergency services'] },
+        { id: 's5', cells: ['Fire', 'Know where the fire extinguisher is and what kind it is; never water on an electrical fire; leave and call emergency services'] },
         { id: 's6', cells: ['Dust, chips and toner', 'Safety goggles for the eyes; an air filter mask for the lungs'] }] },
       { kind: 'prose', text: ['Do not wear an ESD strap inside a power supply or an old CRT (tube) monitor: they hold a charge that can shock you. Government safety regulations apply as well.'] }] },
     { title: 'The room: heat, dust, power and the data sheet',
       show: [{ kind: 'document', form: 'table', title: 'The environment and its controls', head: ['Problem', 'What it does', 'Control'], rows: [
         { id: 'e1', cells: ['Heat', 'Parts overheat, slow down and fail', 'A cool room; ventilation: leave vents and fans clear, with space around the equipment'] },
         { id: 'e2', cells: ['Humidity too high or too low', 'Too humid: moisture and corrosion. Too dry: static', 'Keep the humidity in range'] },
-        { id: 'e3', cells: ['Dust', 'Clogs fans and heat sinks (metal fins that carry heat off a chip), so parts run hot', 'Compressed air (hold the fan still, wear goggles) or an ESD-safe vacuum'] },
+        { id: 'e3', cells: ['Dust', 'Clogs fans and heat sinks (metal fins that carry heat off a chip), so parts run hot', 'With the equipment switched off and unplugged: compressed air (hold the fan still, wear goggles) or an ESD-safe vacuum'] },
         { id: 'e4', cells: ['Power surge: a spike above normal voltage', 'Burns out parts', 'A surge suppressor'] },
-        { id: 'e5', cells: ['Under-voltage: a brownout, where voltage sags', 'Crashes and damage', 'A UPS (uninterruptible power supply), a battery box that also evens out the voltage'] },
+        { id: 'e5', cells: ['Under-voltage: a brownout, where voltage sags', 'Crashes and damage', 'A UPS (uninterruptible power supply), a battery box; most also even out the voltage'] },
         { id: 'e6', cells: ['Power loss: a blackout', 'Unsaved work and open files are lost', 'A UPS gives minutes to save and shut down; a surge suppressor cannot keep power on'] }] },
       { kind: 'prose', text: ['An MSDS (material safety data sheet, now often called an SDS) comes with products such as batteries and toner. It says what is inside, the hazards, and how to handle, store and dispose of it. Batteries and toner do not go in the regular trash.'] }] },
     { title: 'Evidence: you find something on a drive you were sent to repair',
       show: [{ kind: 'prose', text: [
-        'Prohibited content (illegal files) or signs of a crime or attack: you stop repairing and start protecting evidence. Leave the computer as it is: delete nothing, clean nothing, run no scan. Tell your manager (inform management), who decides whether to call law enforcement. Write down what you saw, when, and everything you touched (incident documentation).'] },
-      { kind: 'document', form: 'table', title: 'Order of volatility: collect what disappears first', head: ['Order', 'What', 'Why this place'], rows: [
-        { id: 'v1', cells: ['1', 'Memory (RAM) and the running state', 'Gone when the power is off'] },
+        'Prohibited content (illegal files) or signs of a crime or attack: you stop repairing and start protecting evidence. Leave the computer as it is, and do not power it off, because memory is lost when the power goes: delete nothing, clean nothing, run no scan. Tell your manager (inform management), who decides whether to call law enforcement. Write down what you saw, when, and everything you touched (incident documentation).'] },
+      { kind: 'document', form: 'table', title: 'Order of volatility (simplified): collect what disappears first', head: ['Order', 'What', 'Why this place'], rows: [
+        { id: 'v1', cells: ['1', 'Memory (RAM), the swap file and the running state', 'Gone when the power is off'] },
         { id: 'v2', cells: ['2', 'Files on the drive', 'Stay until something overwrites them'] },
         { id: 'v3', cells: ['3', 'Logs and backups kept elsewhere', 'Last to change'] }] },
       { kind: 'prose', text: [

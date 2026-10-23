@@ -5,10 +5,10 @@
 // so a single door is left). Plan: docs/subjects/it-support/plan.md, lesson 15. Four strands, one per group, so the weekly review brings each group back on its own.
 // One worked ticket (Anita's Remote Desktop); a first group of four with the deciding words marked; a second of seven; a third of eight mixed with lesson 14 and 5; the check: twelve new questions, no help, 10 of 12 to pass. Review fixes: docs/subjects/it-support/fixes-l14-17.md.
 FC.lesson('it-support', {
-  id: 'l15', part: 'ports', title: 'Ports and protocols', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the fourteen port services by the job each does, in four kinds of job; TCP and UDP for every port; asked from memory both ways and as tickets).' }],
+  id: 'l15', part: 'ports', title: 'Ports and protocols', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the fourteen port services by the job each does, in four kinds of job; TCP and UDP for every port; asked from memory both ways and as tickets).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Anita works at the branch office. Since this morning Remote Desktop, the program that shows her the screen of her computer at head office, says it cannot connect. Web pages and email work fine. The firewall list shows one line changed: a number, 3389, is blocked.',
+    'Anita works at the branch office. Since this morning Remote Desktop, the program that shows them the screen of their computer at head office, says it cannot connect. Web pages and email work fine. The firewall list shows one line changed: a number, 3389, is blocked.',
     'A technician who knows what 3389 is for finds the fault in a minute. One who does not, reinstalls things. Here you learn the numbers on the A+ exam by the job each one does, so you remember them by meaning, and you practice them from memory the way the exam tests them.'],
   flow: [
     { title: 'A port is a numbered door',

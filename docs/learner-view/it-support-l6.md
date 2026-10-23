@@ -1,10 +1,10 @@
 # IT Help Desk: One change at a time
 
-Revision 1, live. Part: One change at a time. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: One change at a time. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Joy’s laptop will not join the office Wi-Fi. The Wi-Fi was down last week, so you are sure it is the router (the box that connects the office to the internet). You restart the router, update her Wi-Fi software and clear her saved networks (the Wi-Fi names and passwords her laptop remembers). The laptop joins. What fixed it? Nobody knows, and if it breaks again nobody knows what to do.
+Joy’s laptop will not join the office Wi-Fi. The Wi-Fi was down last week, so you are sure it is the router (the box that connects the office to the internet). You restart the router, update their Wi-Fi software and clear their saved networks (the Wi-Fi names and passwords their laptop remembers). The laptop joins. What fixed it? Nobody knows, and if it breaks again nobody knows what to do.
 You can cut a problem in half and still lose the answer by changing too much at once, or by staying with an idea the test already ruled out. Here you learn to change one thing, look, and cross off what the test rules out.
 
 ## Step 1: One change, then look
@@ -17,7 +17,7 @@ It costs a few minutes a round, and it keeps the cause known. The written note l
 
 A test rules a cause out when its result could not happen if that cause were the one. Joy’s phone joins the office Wi-Fi, so the office Wi-Fi is working: that cause is ruled out. Cross it off and take the next cause on the list.
 Which cause is next? Look at the causes still on the list and take the one with the cheapest test, as when you cut a list in half: the fewest minutes, and the easiest to put back. Ten seconds of looking at a switch comes before an hour of replacing a part.
-A cause stays on the list when no test has touched it. The phone never used Joy’s laptop, so her laptop and its own Wi-Fi settings stay. Cross off only what a result rules out. As with the splitting tests before it, this assumes one fault at a time: if two parts are bad, a part that did not help can still be bad.
+A cause stays on the list when no test has touched it. The phone never used Joy’s laptop, so their laptop and its own Wi-Fi settings stay. Cross off only what a result rules out. As with the splitting tests before it, this assumes one fault at a time: if two parts are bad, a part that did not help can still be bad.
 A part known to work is the clearest test, and a swap can be put back, so it is a test. Put it where the doubtful one was. If the problem stays, the old part is not the cause, even if you were sure it was: put the old part back and cross it off. If the problem goes, keep the new part: that swap is now your one change.
 
 ## Step 3: The idea that will not let go
@@ -196,7 +196,7 @@ A plain table, "Tests so far":
 
 > Test  |  Result  (the column heads)
 > A co-worker’s phone on the office Wi-Fi opens the news page  |  Opens
-> Ken tries a second browser on his laptop  |  Will not open
+> Ken tries a second browser on their laptop  |  Will not open
 
 **Which causes are still on the list? Pick every one.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
@@ -206,13 +206,13 @@ A plain table, "Tests so far":
 - The server that holds the news page — if chosen: The co-worker’s phone opened the page from that server, so it is crossed off.
 - The settings of the first browser Ken uses — if chosen: A second browser fails the same way, so the first browser’s own settings are crossed off.
 
-After the answer: the deciding words are marked. Reason: The phone opened the page, which rules out the Wi-Fi and the server. A second browser failed the same way, which rules out the first browser’s own settings. Ken’s account and his laptop’s own network settings are the causes no test has touched.
+After the answer: the deciding words are marked. Reason: The phone opened the page, which rules out the Wi-Fi and the server. A second browser failed the same way, which rules out the first browser’s own settings. Ken’s account and their laptop’s own network settings are the causes no test has touched.
 
 #### Item 7
 
-A chat, with its history: "Mo, Finance", Chat with the help desk.
+A chat, with its history: "Reza, Finance", Chat with the help desk.
 
-> (Mo, Finance, at the left) My laptop does not charge when it sits in its docking station.
+> (Reza, Finance, at the left) My laptop does not charge when it sits in its docking station.
 
 A docking station is a stand the laptop sits in. It gives the laptop power and connects it to screens and cables.
 
@@ -221,7 +221,7 @@ A plain table, "Causes on the list":
 > Cause  (the column heads)
 > The docking station’s power adapter
 > The docking station itself
-> Mo’s laptop
+> Reza’s laptop
 
 A plain table, "Test":
 
@@ -242,14 +242,14 @@ After the answer: the deciding words are marked. Reason: A part known to work, i
 
 Hana in Operations calls the help desk about a slow computer. You answer. On this desk, one change and a look at the speed takes about five minutes.
 
-**Hana calls about her slow computer. What do you say?**
+**Hana calls about their slow computer. What do you say?**
 - An incoming call from "Hana, Operations" (Incoming call · 1:40 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My computer is crawling. Just do everything: updates, cleanup, restart, all of it, at once. I have a deadline at 4." [pushes: She wants every fix at once.]
+- turn 1, the other side says: "My computer is crawling. Just do everything: updates, cleanup, restart, all of it, at once. I have a deadline at 4." [pushes: They want every fix at once.]
   - reply "I can do the updates and the cleanup together and leave the restart for later.": the call ends (not this one): Even two small changes together cannot be told apart if it works, and the one it did not need stays in. Neither is crossed off if it does not. [slip: changed more than one thing at once]
   - reply "Please call back tomorrow when it is quiet.": the call ends (not this one): Hana has a deadline at 4 and gets no help. One change then a look would have started right away. [slip: left the user not knowing what happens next and when]
   - reply "All right, I will do them all together now.": the call ends (not this one): If the computer speeds up, nobody will know which change did it, and changes it did not need stay in. If it does not, nothing is crossed off. [slip: changed more than one thing at once]
   - reply "I will make one change, then check whether it is faster, then the next.": goes on to turn 2, where the pressure comes back
-- turn 2, the other side says: "One at a time sounds slow. I do not have time." [pushes: She pushes again for the fast way.]
+- turn 2, the other side says: "One at a time sounds slow. I do not have time." [pushes: They push again for the fast way.]
   - reply "Fine, I will do three together.": the call ends (not this one): Three changes at once cannot be told apart if it works, and none is crossed off if it does not. [slip: changed more than one thing at once]
   - reply "One change takes about five minutes, then we look, so we know what helped and what to leave out.": the call ends (right): One change then a look: if the computer speeds up, you know what did it; if not, that change is crossed off and the next is tried. It can still end in a few minutes.
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
@@ -288,7 +288,7 @@ A plain table, "Test":
 - The mail app on Marcus’s phone — if chosen: The laptop does not use the phone’s mail app, so the result says nothing about it.
 - The phone’s connection to the internet — if chosen: The laptop does not use the phone’s connection, so the result says nothing about it.
 
-After the answer: the deciding words are marked. Reason: The laptop gets Marcus’s email, so his account and the mail service work and are crossed off. The mail app and the phone’s connection never took part in that test, so both stay on the list.
+After the answer: the deciding words are marked. Reason: The laptop gets Marcus’s email, so their account and the mail service work and are crossed off. The mail app and the phone’s connection never took part in that test, so both stay on the list.
 
 #### Item 10
 
@@ -313,16 +313,16 @@ After the answer: Reason: The Wi-Fi works for a co-worker, so it is crossed off.
 
 #### Item 11
 
-A chat, with its history: "Jun, Design", Chat with the help desk.
+A chat, with its history: "Emma, Design", Chat with the help desk.
 
-> (Jun, Design, at the left) My screen flickers.
+> (Emma, Design, at the left) My screen flickers.
 
 A plain table, "Causes on the list":
 
 > Cause  (the column heads)
 > The cable to the monitor
 > The monitor
-> Jun’s computer
+> Emma’s computer
 
 A plain table, "Test":
 
@@ -368,7 +368,7 @@ A plain table, "Tests so far":
 
 > Test  |  Result  (the column heads)
 > A co-worker opens the shared folder on their laptop  |  Opens
-> Lila opens a web page on her laptop  |  Opens
+> Lila opens a web page on their laptop  |  Opens
 
 **Which causes do these two results rule out? Pick every one.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
@@ -377,13 +377,13 @@ A plain table, "Tests so far":
 - Lila’s account — if chosen: The co-worker opened the folder as themselves, not as Lila, so Lila’s account is untested.
 - Lila’s laptop’s setup for the folder — if chosen: The web page tests the connection only, not how the laptop reaches the folder.
 
-After the answer: the deciding words are marked. Reason: The web page opening rules out the Wi-Fi. The co-worker opening the folder rules out the server. Neither test used Lila’s account or the way her laptop reaches the folder, so both stay on the list.
+After the answer: the deciding words are marked. Reason: The web page opening rules out the Wi-Fi. The co-worker opening the folder rules out the server. Neither test used Lila’s account or the way their laptop reaches the folder, so both stay on the list.
 
 #### Check question 13
 
-A chat, with its history: "Pat, Front desk", Chat with the help desk.
+A chat, with its history: "Lewis, Front desk", Chat with the help desk.
 
-> (Pat, Front desk, at the left) My desk phone is blank and gives no dial tone.
+> (Lewis, Front desk, at the left) My desk phone is blank and gives no dial tone.
 
 The desk phone gets its power and its calls through one network cable that runs to a network port in the wall.
 
@@ -410,9 +410,9 @@ After the answer: the deciding words are marked. Reason: A part known to work is
 
 #### Check question 14
 
-A chat, with its history: "Dee, Front desk", Chat with the help desk.
+A chat, with its history: "Cordelia, Front desk", Chat with the help desk.
 
-> (Dee, Front desk, at the left) The scanner will not send scans to my email. It worked last week, until I typed a new email address into the scanner on Monday.
+> (Cordelia, Front desk, at the left) The scanner will not send scans to my email. It worked last week, until I typed a new email address into the scanner on Monday.
 
 A plain table, "Causes on the list":
 
@@ -439,9 +439,9 @@ After the answer: the deciding words are marked. Reason: The scanner is connecte
 
 Toner is the powder a laser printer prints with; the cartridge holds it.
 
-A chat, with its history: "Uma, Technician", Note in the ticket.
+A chat, with its history: "Thomas, Technician", Note in the ticket.
 
-> (Uma, Technician, at the left) Printer printed gray streaks. I ran the printer’s cleaning routine and put in a new toner cartridge in the same visit. It prints clean now.
+> (Thomas, Technician, at the left) Printer printed gray streaks. I ran the printer’s cleaning routine and put in a new toner cartridge in the same visit. It prints clean now.
 
 **What can the ticket note say about the cause?**
 (the options come in an order that depends on the seed of the question)

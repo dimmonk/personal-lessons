@@ -7,8 +7,8 @@
 // ruled out by a second phone); a first group of four with the deciding words marked; a second of seven and a third of five with none; the check: six new questions,
 // no help, 5 of 6 to pass. The plan gives no earlier lesson of this builder to mix in, so no group mixes; cross-builder mixing is added later.
 FC.lesson('it-support', {
-  id: 'l18', part: 'mobile', title: 'Phones, tablets and laptops', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (laptop and phone parts and how to replace them safely; connectors, accessories and desk bases; the Bluetooth and mobile data chains; SIM, eSIM, location, sync and data caps; MDM, company and personal phones; securing a phone).' }],
+  id: 'l18', part: 'mobile', title: 'Phones, tablets and laptops', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (laptop and phone parts and how to replace them safely; connectors, accessories and desk bases; the Bluetooth and mobile data chains; SIM, eSIM, location, sync and data caps; MDM, company and personal phones; securing a phone).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Nadia in Sales calls from a taxi stand. Nadia left the work phone in a cab an hour ago. It holds customer lists and mail, and Nadia wants something done now.',
     'Here you learn what is inside a laptop and a phone, how they connect, how a company manages them, and how to lock one down, so you know which step comes first and which cannot be undone.'],

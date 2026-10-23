@@ -144,22 +144,22 @@
       blocks: [note('Hank in Sales calls the help desk about the projector in room 6. You answer.')],
       asks: [{ id: 'a', kind: 'exchange', prompt: 'Hank calls about the projector. What do you say?', form: 'call', from: 'Hank, Sales', detail: 'Incoming call · 9:40 AM', start: 'one',
         turns: {
-          one: { lines: [L('h1', 'The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes.')], push: 'He wants the biggest step before anything was tried.',
+          one: { lines: [L('h1', 'The projector in room 6 says No signal. Just order a new one, it is broken. I have a client in twenty minutes.')], push: 'They want the biggest step before anything was tried.',
             options: [
               { id: 'order', text: 'I will put in an order for a new projector today.', end: 'order' },
               { id: 'swap', text: 'Swap the cable, then call me back.', end: 'swap' },
               { id: 'source', text: 'Press the Source button on the projector’s remote and read me the input it shows.', goto: 'two' }] },
-          two: { lines: [L('h2', 'It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken.')], push: 'He still wants it replaced.',
+          two: { lines: [L('h2', 'It shows VGA. The cable is in HDMI 1. But it is the second time this week the projector has had a problem, and I am sure it is broken.')], push: 'They still want it replaced.',
             options: [
               { id: 'argue', text: 'It cannot be broken if the input menu comes up.', end: 'argue' },
               { id: 'hold', text: 'Twice in a week is annoying, and I will note it. The projector is listening to VGA while the cable is in HDMI 1. Choose HDMI 1 and tell me what you see.', end: 'hold' },
               { id: 'order2', text: 'Understood, I will order one now.', end: 'order2' }] }
         },
         ends: {
-          hold: { ok: true, then: 'The projector listens to one input and it was on the wrong one; choosing the right one costs a button. His worry is heard and noted, and the plan stays with the cheap check.' },
+          hold: { ok: true, then: 'The projector listens to one input and it was on the wrong one; choosing the right one costs a button. Their worry is heard and noted, and the plan stays with the cheap check.' },
           order: { ok: false, slip: PART, then: 'Nothing has been checked yet. An order costs money and days, and the first check costs one button.' },
           swap: { ok: false, slip: NOSPLIT, then: 'A cable swap is cheap but is not the cheapest cut, and it leaves Hank alone with a guess. The Source button is faster and names the link.' },
-          argue: { ok: false, slip: 'argued', then: 'The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give him a next step instead.' },
+          argue: { ok: false, slip: 'argued', then: 'The menu does not prove the projector is fine, and arguing leaves Hank no closer to a picture. Give them a next step instead.' },
           order2: { ok: false, slip: PART, then: 'The projector was on the wrong input. Ordering a new one hides a one-button fix and lets the same mistake happen again.' } } }],
       reason: 'No signal sits on the input first. The cheapest cut is to read which input the projector listens to, and when the user pushes for a replacement, you keep to the check, say you heard the complaint, and give the next step.' }),
     item({
@@ -184,7 +184,7 @@
       asks: [ask('What do you do?', [
         ['Replace the monitor, or send it for repair', true, 'Two cables, two computers and the monitor’s own reset gave the same pink, and a different monitor is fine. The fault travels with the monitor.'],
         ['Try a third cable', NOSPLIT, 'Two cables are already ruled out. A third repeats a test that has answered.'],
-        ['Reinstall the graphics driver on Beatrix’s computer', RULED, 'A different monitor looks normal on her computer, and this monitor is pink on another computer. The computer is cleared.'],
+        ['Reinstall the graphics driver on Beatrix’s computer', RULED, 'A different monitor looks normal on their computer, and this monitor is pink on another computer. The computer is cleared.'],
         ['Reseat the cable and swap the computer at the same time', TWO, 'Two changes together would not say which one matters, and the table already points at the monitor.']])],
       deciding: ['n1', 't1', 't2', 't3', 't4'],
       reason: 'A tint is usually the cable, so the cable comes first. Here the tests already cleared the cable and the computer: the pink follows the monitor. When the earlier tests point at a part, replacing it is right.' }),

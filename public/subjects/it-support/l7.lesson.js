@@ -5,10 +5,10 @@
 // meet expectations, offer repair or replacement options, follow up). Confirming who is asking before a reset is the desk’s own rule against impersonation (A+ Core 2 2.5 lists impersonation as an attack; it gives no procedure for the check). Rulings 1, 3, 6, 7, 8 of rulings-l1-8.md. One worked ticket whose first guess a second user's laptop rules out;
 // a first group with the deciding words marked; a second with none; a third of new tickets; a check of six new tickets, no help.
 FC.lesson("it-support", {
-  id: "l7", part: "finish", title: "Finishing: confirm, hand on, write it up", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: closing only when the user confirms, handing on with what they saw, what was tried and what each test showed, and the ticket note in four fields." }],
+  id: "l7", part: "finish", title: "Finishing: confirm, hand on, write it up", rev: 2, status: "live",
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: closing only when the user confirms, handing on with what they saw, what was tried and what each test showed, and the ticket note in four fields." }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    "You re-add Priya’s shared drive and it opens on your screen. You close the ticket. At 2:55 she writes: it still shows a red X on her laptop, and her work is due at 3.",
+    "You re-add Thabo’s shared drive and it opens on your screen. You close the ticket. At 2:55 they write: it still shows a red X on their laptop, and their work is due at 3.",
     "The last three moves: close only when the user says it works, hand it on when the desk’s rule says so with everything you found, and write the note the next technician can search for and use."
   ],
   flow: [
@@ -35,18 +35,18 @@ FC.lesson("it-support", {
           "Their words: what the user saw, as they said it, shortened but not relabelled; this course leaves out insults and keeps the facts (“since the update”, “only that spreadsheet”). The setup: the device, the system, the network and the account. What fixed it. What caused it, if you know; say so when it is a likely cause and not a proved one.",
           "Write complete thoughts, not necessarily full sentences. A ticket record also holds the user, the device, a category, how serious it is, your progress notes, and how it ended.",
           "An incident is one ticket: one person cannot do something. A problem is the cause behind tickets that keep coming, the same thing happening again and again. When it does, close this user’s ticket as usual and hand the pattern on with the tickets as evidence, so someone looks for the cause. How many repeats make a pattern is the desk’s rule. One outage that hits many people at once is not a problem; it is one incident with a big impact."] },
-        { kind: "message", form: "email", from: "Desk ticket", subject: "A ticket note", detail: "Priya Nair, the S: drive", lines: [
+        { kind: "message", form: "email", from: "Desk ticket", subject: "A ticket note", detail: "Thabo Nair, the S: drive", lines: [
           { id: "e1", text: "Their words: “red X on S:, cannot open the month-end folder.”" },
           { id: "e2", text: "Setup: Windows 11 laptop, office Wi-Fi, signed in as pnair." },
           { id: "e3", text: "Fixed by: disconnecting S: and connecting it again." },
-          { id: "e4", text: "Cause: not known; it began after her password change on Monday." }] }
+          { id: "e4", text: "Cause: not known; it began after their password change on Monday." }] }
       ] },
     { title: "The common mistake",
       show: [
         { kind: "prose", tone: "wrong", text: [
           "“It worked on my test, so I close it.”",
           "“I know what I did, so a note that says ‘fixed’ is enough.”",
-          "“She has not answered in a day, so I close it.”",
+          "“They have not answered in a day, so I close it.”",
           "Your test is not the user’s work, silence is not a yes, and “fixed” tells the next technician nothing. Have the user try it, follow up when they do not answer, then write their words, the setup, the fix and the cause."] }
       ] },
     { worked: "l7-w-drive" },

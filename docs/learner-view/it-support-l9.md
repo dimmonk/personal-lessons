@@ -1,10 +1,10 @@
 # IT Help Desk: From the power button to the desktop
 
-Revision 1, live. Part: From the power button to the desktop. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: From the power button to the desktop. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Malik says his desktop will not start; he is sure the hard drive died. Instead of ordering a drive, you find out what happens when he pushes the button. Light on, fans spinning, no logo. That rules the drive out: the computer reaches it after four earlier steps, and his stopped before the third.
+Malik says their desktop will not start; they are sure the hard drive died. Instead of ordering a drive, you find out what happens when they push the button. Light on, fans spinning, no logo. That rules the drive out: the computer reaches it after four earlier steps, and their stopped before the third.
 A computer starts as a chain, each step running only if the one before worked. Here you learn the six links, the symptom on each, and the cheap test for where it stopped.
 
 ## Step 1: The six links
@@ -66,9 +66,9 @@ The working, one step at a time:
 1. Write the chain, so every cause has a place.: Power, start-up self-test, firmware, boot drive, Windows loading, sign-in. A black screen could be any of the first three, or the screen itself.
 1. Name the favorite and find which link it sits on.: A dead hard drive is the boot drive link, number 4. The computer would first have to get through links 1 to 3.
 1. Find out how far it got, the cheapest test there is: it changes nothing.: Malik: front light on, fans spin, no logo, no words. Link 1 is fine. It never reached link 3, so link 4 cannot be where it stopped.
-1. Cut the two that are left: the screen against the computer.: Malik plugs his monitor into a co-worker’s computer. A picture shows. The monitor and cable are fine. The fault is inside his computer.
-1. Find out whether the computer gave a sign.: Malik: “Now that you mention it, it beeps in a pattern when I push the button.” The start-up self-test beeps when it finds a fault. The pattern means something different for each maker, so look it up for his computer.
-1. Look it up, then make one change.: The motherboard maker’s manual says that pattern is a memory fault, so the memory sticks are the cause to test, one at a time. Malik switches off and unplugs it, then reseats one memory stick and tries: still the same beeps. He reseats the second stick and tries again: it starts. Only that second stick was loose, and the hard drive was never the problem.
+1. Cut the two that are left: the screen against the computer.: Malik plugs their monitor into a co-worker’s computer. A picture shows. The monitor and cable are fine. The fault is inside their computer.
+1. Find out whether the computer gave a sign.: Malik: “Now that you mention it, it beeps in a pattern when I push the button.” The start-up self-test beeps when it finds a fault. The pattern means something different for each maker, so look it up for their computer.
+1. Look it up, then make one change.: The motherboard maker’s manual says that pattern is a memory fault, so the memory sticks are the cause to test, one at a time. Malik switches off and unplugs it, then reseats one memory stick and tries: still the same beeps. They reseat the second stick and try again: it starts. Only that second stick was loose, and the hard drive was never the problem.
 
 Then the answer: Before the logo: the self-test, or the screen itself. The favorite cause, the drive, sits on link 4, and the computer never got that far: no logo meant it stopped between power and firmware. “How far did it get?” ruled the drive out with one question. The beeps then said which part the self-test found at fault.
 
@@ -160,9 +160,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Nora, HR", Chat with the help desk.
+A chat, with its history: "Olivia, HR", Chat with the help desk.
 
-> (Nora, HR, at the left) Every morning my computer shows the wrong date and time, a few years back, and my files say they were made in the past. I fix the clock and it is wrong again tomorrow.
+> (Olivia, HR, at the left) Every morning my computer shows the wrong date and time, a few years back, and my files say they were made in the past. I fix the clock and it is wrong again tomorrow.
 
 The firmware keeps the date, time and its settings in a small memory that a coin-sized battery on the motherboard keeps alive when the computer is off.
 
@@ -264,15 +264,15 @@ After the answer: the deciding words are marked. Reason: Each test cut one side 
 
 Bram in Shipping calls the help desk. You answer.
 
-**Bram calls about his desktop. What do you say?**
+**Bram calls about their desktop. What do you say?**
 - An incoming call from "Bram, Shipping" (Incoming call · 8:40 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My computer is dead. It is old. I need a new one today." [pushes: He wants a replacement before anything has been tested.]
+- turn 1, the other side says: "My computer is dead. It is old. I need a new one today." [pushes: They want a replacement before anything has been tested.]
   - reply "I will put in the order for a new computer today.": the call ends (not this one): Nothing showed the old computer was the cause. One question about the lights and fan would have shown how far it got. [slip: worked on whatever was nearest instead of testing to split the causes]
   - reply "You need to work today and the computer will not run. Before I order anything, tell me what happens when you push the power button.": goes on to turn 2, where the pressure comes back
   - reply "Is it plugged in? Check that first, and then call me back.": the call ends (not this one): The plug is a cheap check, but it covers only link 1. Asking what happens at the power button covers all six links at once and tells you whether power is the link to look at. [slip: ran a test that does not split what works from what does not]
   - reply "Unplug it, wait a minute, and plug it in again.": the call ends (not this one): Unplugging and plugging in is a repeat, not a test. If it fails again, you still do not know which link failed. [slip: ran a test that does not split what works from what does not]
-- turn 2, the other side says: "The light comes on and the fan spins. Then the screen just says “No signal.” But I am sure it is old. Just order it." [pushes: He still wants the replacement, though the computer is clearly powering on.]
-  - reply "I hear you that it is old. Power works, so it may be only the cable or the monitor. I will check both and tell you today whether the computer needs replacing.": the call ends (right): The light and fan show power works, so the fault is further along. “No signal” is the screen not getting a picture, so the cable and monitor are the cheapest things to cut next. Telling him when he will hear back says what happens next.
+- turn 2, the other side says: "The light comes on and the fan spins. Then the screen just says “No signal.” But I am sure it is old. Just order it." [pushes: They still want the replacement, though the computer is clearly powering on.]
+  - reply "I hear you that it is old. Power works, so it may be only the cable or the monitor. I will check both and tell you today whether the computer needs replacing.": the call ends (right): The light and fan show power works, so the fault is further along. “No signal” is the screen not getting a picture, so the cable and monitor are the cheapest things to cut next. Telling them when they will hear back says what happens next.
   - reply "I hear you that it is old. All right: I will order the new computer today and tell you when it arrives.": the call ends (not this one): The computer powers on, so a new one is not shown to be needed. “No signal” could be the cable or the monitor. [slip: replaced a part before the cheap check]
   - reply "I hear you that it is old. It sounds like the hard drive has died, so I will line up a new one and call you today.": the call ends (not this one): A dead drive would show after the maker’s logo, as a message about a boot device. Bram has not got a picture at all, so the computer has not reached the drive. [slip: put the fault on the wrong link of the chain]
   - reply "I hear you that it is old. Let us open the firmware screen and see whether it lists the drive, and I will call you back today.": the call ends (not this one): There is no picture, so there is no firmware screen to open. The cable and monitor come first. [slip: put the fault on the wrong link of the chain]
@@ -296,9 +296,9 @@ You have a few minutes before you touch anything. The laptop still starts someti
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
-- Have Kendra copy her files off now, then look at the drive. (right)
-- Reinstall Windows to fix the slow start and the errors. — if chosen: A failing drive may not survive a reinstall, and a reinstall erases her files.
-- Tell her the noise is normal and to keep working. — if chosen: The noise is the computer reporting what is failing. Ignoring it risks the files.
+- Have Kendra copy their files off now, then look at the drive. (right)
+- Reinstall Windows to fix the slow start and the errors. — if chosen: A failing drive may not survive a reinstall, and a reinstall erases their files.
+- Tell them the noise is normal and to keep working. — if chosen: The noise is the computer reporting what is failing. Ignoring it risks the files.
 - Run the maker’s drive test on the laptop, and copy the files after. — if chosen: The test reads the whole failing drive hard and may be the thing that makes it stop. The files come out before any test touches the drive.
 
 After the answer: the deciding words are marked. Reason: Clicking or grinding from a hard drive, slow starts and “operating system not found” say the drive (links 4 and 5) is failing, and the message is the firmware looking for it (links 3 and 4). A failing drive can stop for good, so the data comes out before any test or fix touches it, as in the earlier topic on protecting data.
@@ -360,9 +360,9 @@ After the answer: the deciding words are marked. Reason: No light on the laptop 
 
 #### Check question 15
 
-A chat, with its history: "Keira, Records", Chat with the help desk.
+A chat, with its history: "Vaughn, Records", Chat with the help desk.
 
-> (Keira, Records, at the left) The computer shows the maker’s logo, then goes to a black screen with a blinking line and nothing else. It says nothing about a drive.
+> (Vaughn, Records, at the left) The computer shows the maker’s logo, then goes to a black screen with a blinking line and nothing else. It says nothing about a drive.
 
 A plain table, "What you know":
 
@@ -413,17 +413,17 @@ After the answer: the deciding words are marked. Reason: The beeps mean the star
 
 Ilsa in Records calls the help desk. You answer.
 
-**Ilsa calls about her desktop. What do you say?**
+**Ilsa calls about their desktop. What do you say?**
 - An incoming call from "Ilsa, Records" (Incoming call · 1:15 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My computer will not work. It is stuck on a black screen with some white words. I do not know what they say. Can you just reinstall Windows?" [pushes: She wants the biggest fix before she has read the words.]
-  - reply "Yes, I will reinstall Windows for you now.": the call ends (not this one): A reinstall erases her files and nothing said Windows was the fault. The words on the screen had not been read yet. [slip: worked on whatever was nearest instead of testing to split the causes]
+- turn 1, the other side says: "My computer will not work. It is stuck on a black screen with some white words. I do not know what they say. Can you just reinstall Windows?" [pushes: They want the biggest fix before they have read the words.]
+  - reply "Yes, I will reinstall Windows for you now.": the call ends (not this one): A reinstall erases their files and nothing said Windows was the fault. The words on the screen had not been read yet. [slip: worked on whatever was nearest instead of testing to split the causes]
   - reply "So it is a black screen with white words on it. Please read me the words exactly as they are written.": goes on to turn 2, where the pressure comes back
-  - reply "Turn it off and on again and call back.": the call ends (not this one): A restart repeats the failure, and rules nothing out. The message on the screen is the most useful thing she has. [slip: ran a test that does not split what works from what does not]
-  - reply "Is the monitor plugged in properly?": the call ends (not this one): She can see words on the screen, so the monitor works. The question rules nothing out. [slip: ran a test that does not split what works from what does not]
-- turn 2, the other side says: "It says “Operating system not found.” It showed the maker’s logo first. My last computer was fixed with a reinstall, so just do that." [pushes: She still wants it reinstalled.]
-  - reply "The logo means power and the self-test worked. A reinstall would erase your files, and if the drive is missing it would not help. First I will look in the firmware screen to see whether the computer sees the drive.": the call ends (right): The logo says the first two links worked. Whether the firmware sees the drive splits a missing or failed drive from damaged start-up files, and it erases nothing. Holding the line politely, with the reason, keeps her files safe.
-  - reply "I understand it worked last time. Then yes, I will put Windows on again for you now and call you when it is done.": the call ends (not this one): The message could mean the drive is missing or unreadable, and a reinstall would not fix that. It also erases her files. [slip: worked on whatever was nearest instead of testing to split the causes]
-  - reply "It is probably a virus.": the call ends (not this one): Nothing in “operating system not found” says a virus. Telling her a cause before knowing it can mislead her and the next person. [slip: told the user a cause before knowing it]
+  - reply "Turn it off and on again and call back.": the call ends (not this one): A restart repeats the failure, and rules nothing out. The message on the screen is the most useful thing they have. [slip: ran a test that does not split what works from what does not]
+  - reply "Is the monitor plugged in properly?": the call ends (not this one): They can see words on the screen, so the monitor works. The question rules nothing out. [slip: ran a test that does not split what works from what does not]
+- turn 2, the other side says: "It says “Operating system not found.” It showed the maker’s logo first. My last computer was fixed with a reinstall, so just do that." [pushes: They still want it reinstalled.]
+  - reply "The logo means power and the self-test worked. A reinstall would erase your files, and if the drive is missing it would not help. First I will look in the firmware screen to see whether the computer sees the drive.": the call ends (right): The logo says the first two links worked. Whether the firmware sees the drive splits a missing or failed drive from damaged start-up files, and it erases nothing. Holding the line politely, with the reason, keeps their files safe.
+  - reply "I understand it worked last time. Then yes, I will put Windows on again for you now and call you when it is done.": the call ends (not this one): The message could mean the drive is missing or unreadable, and a reinstall would not fix that. It also erases their files. [slip: worked on whatever was nearest instead of testing to split the causes]
+  - reply "It is probably a virus.": the call ends (not this one): Nothing in “operating system not found” says a virus. Telling them a cause before knowing it can mislead them and the next person. [slip: told the user a cause before knowing it]
   - reply "Have you tried a different outlet for the computer?": the call ends (not this one): The computer has power: the logo and the message show it. Another outlet tests a link that already worked. [slip: put the fault on the wrong link of the chain]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 

@@ -141,10 +141,10 @@
     item({
       id: 'l10-r-x64', strand: 'cpu',
       blocks: [msg('chat', 'Lars, Sales', 'Chat with the help desk', [['p1', 'I bought a program that only comes as a 64-bit program. My computer runs a 32-bit Windows. Will it run?']])],
-      asks: [ask('What do you tell her?', [
+      asks: [ask('What do you tell them?', [
         ['No; a 32-bit system cannot run it', true, 'A 64-bit system runs 32-bit and 64-bit programs. A 32-bit system runs only 32-bit ones.'],
         ['Yes; 64-bit programs run on any Windows system', PART, 'Only a 64-bit system can run a 64-bit program.'],
-        ['Yes, if she adds more memory to the computer', PART, 'Memory does not change what kind of programs the system can run.']])],
+        ['Yes, if they add more memory to the computer', PART, 'Memory does not change what kind of programs the system can run.']])],
       deciding: ['p1'],
       reason: 'The 32-bit (x86) system runs only 32-bit programs. A 64-bit (x64) system runs both, so the fix is a 64-bit system, if the processor can run one.' }),
     item({
@@ -202,7 +202,7 @@
     item({
       id: 'l10-r-igpu', strand: 'cpu',
       blocks: [msg('chat', 'Colm, Front Desk', 'Chat with the help desk', [['c1', 'The new office computer has no graphics card, but the monitor shows a picture from a port on the board. Is that normal?']])],
-      asks: [ask('What do you tell him?', [
+      asks: [ask('What do you tell them?', [
         ['Yes; the processor has graphics built in', true, 'Some processors carry integrated graphics, enough to draw a picture with no card.'],
         ['No; a computer cannot show a picture without a graphics card', PART, 'Integrated graphics are built into many processors, so a card is not needed for ordinary work.'],
         ['Yes; the power supply draws the picture', PART, 'The supply only gives power. The picture is drawn by the processor’s graphics or by a card.']])],

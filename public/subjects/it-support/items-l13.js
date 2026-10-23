@@ -23,18 +23,18 @@
       id: 'l13-w-stuck',
       blocks: [
         msg('chat', 'Galen, Accounts', 'Chat with the help desk', [['m1', 'I sent the invoice to the printer by the kitchen four times and nothing comes out. The printer’s screen says Ready.']]),
-        note('The links you can list: the program Galen printed from, the print queue on her computer, the driver, her computer’s connection to the printer, the printer itself, and its paper and toner.')],
+        note('The links you can list: the program Galen printed from, the print queue on their computer, the driver, their computer’s connection to the printer, the printer itself, and its paper and toner.')],
       asks: [ask('Galen prints a test page from the printer’s own screen. It comes out sharp. What does that rule out?', [
         ['The printer, its paper and its toner.', true, 'The test page starts inside the printer and uses nothing from Galen’s computer, so everything the printer prints with works.'],
         ['Galen’s print queue and driver.', LINK, 'The test page never touched them, so it says nothing about them either way.'],
         ['Nothing: a test page says little about a real job.', NOSPLIT, 'It shows the printer can print, which is a whole end of the chain.']])],
       steps: [
-        { id: 'links', does: 'Write down the links of the print path before testing any.', working: 'The program, the queue, the driver, the connection from her computer, the printer, its paper and toner.' },
+        { id: 'links', does: 'Write down the links of the print path before testing any.', working: 'The program, the queue, the driver, the connection from their computer, the printer, its paper and toner.' },
         { id: 'favorite', does: 'Name your favorite, and keep it as the first test, not the answer.', working: 'Out of toner: the last person to use it said the pages were faint.' },
         { id: 'panel', does: 'Run the cheapest test of the favorite: a test page from the printer’s own screen.', working: 'It comes out sharp. The printer, its paper and its toner are ruled out, and the favorite goes with them. Half the chain is gone.', ask: 'a' },
-        { id: 'other', does: 'Cut what is left in half with another person.', working: 'Ruben prints the same invoice to the same printer from his computer, and it comes out. The printer and its network link are fine. Left: Galen’s program, her queue, her driver, and her own link to the printer (port, cable, address).' },
-        { id: 'queue', does: 'Look at the queue, the list of jobs waiting on Galen’s computer.', working: 'Her computer shows the printer as Ready, not Offline, so her link is up. Four copies of the invoice wait. The first is marked Error, and a stuck job at the front holds back all the ones behind it.' },
-        { id: 'fix', does: 'Now change one thing, and check it.', working: 'Cancel the four jobs, restart the print spooler (the Windows service that holds the queue), print once. It comes out. Then check with Galen that it works for her.' }],
+        { id: 'other', does: 'Cut what is left in half with another person.', working: 'Ruben prints the same invoice to the same printer from their computer, and it comes out. The printer and its network link are fine. Left: Galen’s program, their queue, their driver, and their own link to the printer (port, cable, address).' },
+        { id: 'queue', does: 'Look at the queue, the list of jobs waiting on Galen’s computer.', working: 'Their computer shows the printer as Ready, not Offline, so their link is up. Four copies of the invoice wait. The first is marked Error, and a stuck job at the front holds back all the ones behind it.' },
+        { id: 'fix', does: 'Now change one thing, and check it.', working: 'Cancel the four jobs, restart the print spooler (the Windows service that holds the queue), print once. It comes out. Then check with Galen that it works for them.' }],
       deciding: ['m1'],
       reason: 'The printer’s own test page ruled out the printer, its paper and its toner, so the favorite (toner) was wrong. Ruben’s page ruled out the printer’s network link. The queue was the link left, and it showed the stuck job. Two cheap tests cut the chain; the fix came last.' }),
 
@@ -54,7 +54,7 @@
     path({
       id: 'l13-p-garble',
       blocks: [
-        msg('chat', 'Aiden, Sales', 'Chat with the help desk', [['i1', 'Everything I print comes out as rows of strange symbols and letters. The printer’s own test page looks normal.']]),
+        msg('chat', 'Dominic, Sales', 'Chat with the help desk', [['i1', 'Everything I print comes out as rows of strange symbols and letters. The printer’s own test page looks normal.']]),
         note('The printer is new: the office bought it last week.')],
       asks: [ask('Which link holds the fault?', [
         ['The driver, which sends the job in the wrong language.', true, 'The printer’s own test page is clean, so the printer works. Symbols instead of text mean the printer got the job in a language it cannot read, and the driver is what chooses it.'],
@@ -92,15 +92,15 @@
         msg('chat', 'Jonah, Purchasing', 'Chat with the help desk', [['m1', 'Nothing I print comes out of the printer on the third floor.']]),
         table('What you tried', ['Test', 'Result'], [
           ['t1', 'A test page from the printer’s own screen', 'Prints fine'],
-          ['t2', 'Gita prints the same file to that printer from her computer', 'Prints fine'],
-          ['t3', 'Jonah prints it again from his computer', 'Nothing comes out']])],
+          ['t2', 'Gita prints the same file to that printer from their computer', 'Prints fine'],
+          ['t3', 'Jonah prints it again from their computer', 'Nothing comes out']])],
       asks: [ask('Where does this point?', [
-        ['Jonah’s computer: his program, queue, driver or link', true, 'The printer works, Gita reaches it over the same network link, and only Jonah’s computer fails.'],
+        ['Jonah’s computer: their program, queue, driver or link', true, 'The printer works, Gita reaches it over the same network link, and only Jonah’s computer fails.'],
         ['The printer on the third floor and its paper', KEPT, 'It printed a test page and Gita’s file.'],
         ['The printer’s own link to the network', KEPT, 'Gita’s computer reaches the printer over the same link.'],
-        ['Gita’s computer, which prints differently from Jonah’s', SIDE, 'Gita’s file printed, so her side works. The one that fails is Jonah’s.']])],
+        ['Gita’s computer, which prints differently from Jonah’s', SIDE, 'Gita’s file printed, so their side works. The one that fails is Jonah’s.']])],
       deciding: ['t1', 't2', 't3'],
-      reason: 'The printer prints (its own page, and Gita’s file), so the printer, its paper and its network link are cleared. What is left is what only Jonah’s computer has: his program, his queue, his driver and his own link to the printer (port, cable, address).' }),
+      reason: 'The printer prints (its own page, and Gita’s file), so the printer, its paper and its network link are cleared. What is left is what only Jonah’s computer has: their program, their queue, their driver and their own link to the printer (port, cable, address).' }),
     path({
       id: 'l13-s-faded',
       blocks: [
@@ -117,11 +117,11 @@
       blocks: [note('Lazar in Planning calls the help desk. You answer.')],
       asks: [{ id: 'a', kind: 'exchange', prompt: 'Lazar calls about the printer. What do you say?', form: 'call', from: 'Lazar, Planning', detail: 'Incoming call · 11:15 AM', start: 'one',
         turns: {
-          one: { lines: [L('k1', 'The printer is broken. I print and nothing happens. Please send somebody to swap it.')], push: 'She wants the printer replaced before anything has been tested.',
+          one: { lines: [L('k1', 'The printer is broken. I print and nothing happens. Please send somebody to swap it.')], push: 'They want the printer replaced before anything has been tested.',
             options: [{ id: 'swap', text: 'I will send someone to swap the printer today.', end: 'swap' },
               { id: 'testpage', text: 'Before anyone is sent, let us try one thing: a test page from the printer’s own screen. It takes a minute.', goto: 'two' },
               { id: 'reinstall', text: 'Let me reinstall the printer on your computer from here.', end: 'reinstall' }] },
-          two: { lines: [L('k2', 'It printed a page that says Test Page, and it looks fine. But I still want a new printer. This is the third time this month!')], push: 'She is frustrated and still wants the swap.',
+          two: { lines: [L('k2', 'It printed a page that says Test Page, and it looks fine. But I still want a new printer. This is the third time this month!')], push: 'They are frustrated and still want the swap.',
             options: [{ id: 'queue', text: 'The printer works, so a new one would not fix this. Let me have a colleague print the same job, and then we look at the waiting jobs on your computer. I will note that it keeps happening.', end: 'queue' },
               { id: 'order', text: 'Three times is too many. I will order a new printer today.', end: 'order' },
               { id: 'user', text: 'Then the fault is on your computer, so it is not a printer matter.', end: 'user' },
@@ -131,8 +131,8 @@
           queue: { ok: true, then: 'The test page came from inside the printer, so the printer, its paper and its toner work. The same job from a colleague’s computer is the next cut: it clears this computer or the printer’s network link. Noting the repeats lets someone look for the pattern.' },
           swap: { ok: false, slip: NEAR, then: 'A swap costs a day, and nothing showed the printer was the cause. A test page from its own screen would have shown whether it was.' },
           reinstall: { ok: false, slip: NEAR, then: 'That is a fix on the nearest cause. If it fails, you still do not know which side to look on.' },
-          order: { ok: false, slip: GAVE, then: 'The printer just printed a clean test page. A new one would cost money and fix nothing, however many times she has called.' },
-          user: { ok: false, slip: BLAME, then: 'It may be, but telling her so and stopping leaves her with nothing. Look at the waiting jobs with her.' },
+          order: { ok: false, slip: GAVE, then: 'The printer just printed a clean test page. A new one would cost money and fix nothing, however many times they have called.' },
+          user: { ok: false, slip: BLAME, then: 'It may be, but telling them so and stopping leaves them with nothing. Look at the waiting jobs with them.' },
           again: { ok: false, slip: NOSPLIT, then: 'The same job gives the same answer and rules nothing out.' } } }],
       reason: 'A test page from the printer’s own screen is the cheapest test that splits the printer from everything before it. It printed, so the printer is cleared and the fault is on the way. A caller who is frustrated still gets the tested answer, said kindly.' }),
     path({
@@ -149,7 +149,7 @@
       id: 'l13-c-secure',
       blocks: [msg('chat', 'Mateo, Finance', 'Chat with the help desk', [['r1', 'I print payroll on the shared printer in the hall, and the pages sit in the tray until I walk there. Anyone could pick them up.']])],
       asks: [ask('Which printer feature fixes this?', [
-        ['Secured print: the job waits in the printer until she signs in there.', true, 'Nothing comes out until she is standing there to take it.'],
+        ['Secured print: the job waits in the printer until they sign in there.', true, 'Nothing comes out until they are standing there to take it.'],
         ['User authentication, so only signed-in people can send jobs to the printer.', OPEN, 'That limits who can send. Once Mateo’s pages print, they still sit in the tray for anyone.'],
         ['The audit log, to record who sends each job.', OPEN, 'A log records who printed, afterward. The pages still sit in the tray for anyone.'],
         ['Duplex printing, to use half as much paper.', CARE, 'Duplex prints on both sides of the paper. It does not hold pages back.']])],
@@ -292,7 +292,7 @@
       id: 'l13-r-conn',
       blocks: [
         msg('chat', 'Zora, Planning', 'Chat with the help desk', [['g1', 'Since I moved desks my printer says Offline. It is plugged in with a USB cable.']]),
-        table('What you tried', ['Test', 'Result'], [['t1', 'A test page from the printer’s own screen', 'Prints fine'], ['t2', 'Zora prints from his computer', 'Printer shown as Offline']])],
+        table('What you tried', ['Test', 'Result'], [['t1', 'A test page from the printer’s own screen', 'Prints fine'], ['t2', 'Zora prints from their computer', 'Printer shown as Offline']])],
       asks: [ask('Which test splits the connection from the rest?', [
         ['Try a USB cable that is known to work.', true, 'If it prints, the cable was the fault. If not, the cable is cleared; the port is next (try another port), then the driver.'],
         ['Replace the toner cartridge in the printer.', KEPT, 'The printer’s own test page printed, so the toner works.'],
@@ -435,7 +435,7 @@
     care({
       id: 'l13-c-msds',
       blocks: [note('A technician has swapped the toner cartridge and holds the empty one. The bin by the printer is the ordinary rubbish.')],
-      asks: [ask('Where does she find how to dispose of the used toner?', [
+      asks: [ask('Where does they find how to dispose of the used toner?', [
         ['In its safety data sheet (called MSDS on the exam).', true, 'Used toner is not household waste, and the safety data sheet says how to dispose of it.'],
         ['In the printer’s audit log.', CARE, 'The audit log records who printed what, not how to dispose of toner.'],
         ['In the driver’s settings on the computer.', CARE, 'The driver turns jobs into the printer’s language. It holds nothing about disposal.'],

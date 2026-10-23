@@ -1,10 +1,10 @@
 # IT Help Desk: The parts inside
 
-Revision 1, live. Part: The parts inside. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: The parts inside. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Odile’s desktop switches itself off seconds after she starts a game, a week after she put in a new graphics card. Is it the card, the heat, the memory, a setting? Each part has a job in the whole computer, and the job tells you where to look.
+Odile’s desktop switches itself off seconds after they start a game, a week after they put in a new graphics card. Is it the card, the heat, the memory, a setting? Each part has a job in the whole computer, and the job tells you where to look.
 Here you learn each part by what it does, plus the facts you will be asked for: power numbers, board sizes, sockets, firmware settings, memory and cooling.
 
 ## Step 1: A computer is a chain of jobs
@@ -260,8 +260,8 @@ A plain table, "About this computer":
 
 **What fixes it?**
 (the options come in an order that depends on the seed of the question)
-- Copy his files off first, then put on 64-bit Windows (right)
-- Put on 64-bit Windows over the old system now — if chosen: This is the right fix, but a new system can wipe the drive. His files are protected first.
+- Copy their files off first, then put on 64-bit Windows (right)
+- Put on 64-bit Windows over the old system now — if chosen: This is the right fix, but a new system can wipe the drive. Their files are protected first.
 - Buy more memory sticks and fit them in the computer — if chosen: The memory is already there. The 32-bit system cannot use more than about 4 GB.
 - Turn on dual channel in the firmware to free the memory — if chosen: Dual channel makes memory faster. It does not lift a 32-bit system’s limit.
 

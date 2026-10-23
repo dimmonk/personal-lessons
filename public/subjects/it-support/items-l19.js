@@ -50,7 +50,7 @@
       blocks: [
         chat('Finn, Front desk', 'a1', 'My tablet’s screen is lifting away from the frame at one edge and the back looks puffed up. It is on the charger right now so it will be full for the morning.')],
       asks: [ask('What do you tell Finn first?', [
-        ['Unplug it and stop using it; do not charge it until it is checked', true, 'A swollen battery is a safety problem. The cells are filling with gas, and charging or pressing on them can start a fire.'],
+        ['Unplug it and stop using it, and do not charge it until it is checked', true, 'A swollen battery is a safety problem. The cells are filling with gas, and charging or pressing on them can start a fire.'],
         ['Leave it on the charger until it is full, then bring it to the desk', UNSAFE, 'Charging a swollen battery adds heat and pressure. It is the one thing to stop at once.'],
         ['Press the screen back down gently so that it sits flat on the frame', UNSAFE, 'Pushing on a swollen battery can puncture it. The screen is lifting because of the battery under it.'],
         ['Restart the tablet to see whether the screen settles down again', NOSPLIT, 'A restart cannot shrink a swollen battery, and it keeps the tablet running while it is unsafe.']])],
@@ -59,11 +59,11 @@
     item({
       id: 'l19-p-touch', strand: HW,
       blocks: [
-        chat('Ben, Warehouse', 'b1', 'Since I dropped the phone, the picture is perfect but the screen answers touches in the wrong place. Tapping the top of the screen opens things near the middle.'),
+        chat('Astrid, Warehouse', 'b1', 'Since I dropped the phone, the picture is perfect but the screen answers touches in the wrong place. Tapping the top of the screen opens things near the middle.'),
         note('The five links: the body, the connections, the system, the app, what was installed.')],
       asks: [ask('Which link and which cheap test?', [
         ['The body: the touch layer. Try the home screen and two other apps', true, 'The picture is fine but touches land in the wrong place, which points at the digitizer, the layer that senses touch. The drop explains it.'],
-        ['The app: delete the app Ben was using and install it again from the store', LINK, 'It happens everywhere on the screen, not in one app, so one app is not the place to look.'],
+        ['The app: delete the app Astrid was using and install it again from the store', LINK, 'It happens everywhere on the screen, not in one app, so one app is not the place to look.'],
         ['What was installed: run a malware scan on the phone, then check its apps', CAUSE, 'Nothing is installed that is odd, and a drop followed by bad touches is physical.'],
         ['The system: install every waiting update, then restart the phone', NOSPLIT, 'An update does not mend a damaged touch layer, and it changes the phone before the test is done.']])],
       deciding: ['b1'],
@@ -83,13 +83,13 @@
     item({
       id: 'l19-p-ads', strand: SE,
       blocks: [
-        chat('Sam, Delivery', 's1', 'Since I got a free game last week, ads cover my screen even outside the game, and a box says my phone has a virus and I must tap to clean it. My data runs out in ten days now.'),
+        chat('Hyun, Delivery', 's1', 'Since I got a free game last week, ads cover my screen even outside the game, and a box says my phone has a virus and I must tap to clean it. My data runs out in ten days now.'),
         note('The game did not come from the phone’s official store. A friend sent a link.')],
       asks: [ask('Which link, and what first?', [
-        ['An app from outside the store: save Sam’s files, switch on airplane mode, then remove the game', true, 'Ads everywhere, a fake virus box and fast data use are the signs of a malicious app, and it came from outside the store. Save the files, cut it off the network, then remove it.'],
-        ['The system: install the waiting update and the next one, and see if the ads stop', NOSPLIT, 'An update will not remove an app Sam installed, and the phone stays online and leaking in the meantime.'],
-        ['The connections: forget the Wi-Fi network, rejoin it and test the ads', LINK, 'Ads that appear on every screen and a fast data use come from something on the phone, not from the way it joined the Wi-Fi.'],
-        ['The body: have the battery checked', LINK, 'Nothing about the hardware has been shown. The signs are a malicious app’s.']])],
+        ['An app from outside the store: save Hyun’s files, switch on airplane mode, then remove the game', true, 'Ads everywhere, a fake virus box and fast data use are the signs of a malicious app, and it came from outside the store. Save the files, cut it off the network, then remove it.'],
+        ['The system: save Hyun’s files, install the waiting update and the next one, and see if the ads stop', NOSPLIT, 'An update will not remove an app Hyun installed, and the phone stays online and leaking in the meantime.'],
+        ['The connections: note Hyun’s Wi-Fi name, forget the network, rejoin it and test the ads', LINK, 'Ads that appear on every screen and a fast data use come from something on the phone, not from the way it joined the Wi-Fi.'],
+        ['The body: have Hyun’s battery checked, then charge it to full and watch the ads', LINK, 'Nothing about the hardware has been shown. The signs are a malicious app’s.']])],
       deciding: ['s1'],
       reason: 'Many ads, a fake security warning and fast data use after installing an app from outside the store are the signs of a malicious app. Cut the phone off the network first, remove the app, then scan, change passwords from another device and report it.' }),
 
@@ -119,7 +119,7 @@
     item({
       id: 'l19-s-battery', strand: HW,
       blocks: [
-        chat('Rae, Dispatch', 'r1', 'My phone drops from 100% to dead in about two hours and shuts off at 30%. I turned off everything I could.'),
+        chat('Kyle, Dispatch', 'r1', 'My phone drops from 100% to dead in about two hours and shuts off at 30%. I turned off everything I could.'),
         list('b', 'Settings, Battery', ['Line', 'Value'], [['Battery health', 'Maximum capacity 68%'], ['Top user', 'Screen 31%, nothing unusual'], ['Phone age', '3 years']])],
       asks: [ask('What is the next step?', [
         ['Replace the battery: the health reading and the shutdowns both point at it', true, 'Tests already ruled out the apps, and the phone itself reports 68% capacity. Replacing the battery is the fix.'],
@@ -153,8 +153,8 @@
     item({
       id: 'l19-s-bt', strand: AP,
       blocks: [
-        chat('Dee, Service', 'd1', 'My Bluetooth headset worked fine until this morning. Now the phone says it is connected, but no sound plays through it.'),
-        list('b', 'Dee’s tests', ['Test', 'Result'], [['Headset with a laptop', 'Works'], ['Another Bluetooth speaker with the phone', 'Works'], ['Headset with the phone', 'Connected, no sound'], ['Headset picked as the sound output', 'Picked, still no sound']])],
+        chat('Craig, Service', 'd1', 'My Bluetooth headset worked fine until this morning. Now the phone says it is connected, but no sound plays through it.'),
+        list('b', 'Craig’s tests', ['Test', 'Result'], [['Headset with a laptop', 'Works'], ['Another Bluetooth speaker with the phone', 'Works'], ['Headset with the phone', 'Connected, no sound'], ['Headset picked as the sound output', 'Picked, still no sound']])],
       asks: [ask('What is the next change?', [
         ['Remove the headset from the phone’s Bluetooth list, then pair it again', true, 'Each device works with another, so neither is broken. The saved pairing between these two is what went wrong.'],
         ['Replace the headset', PART, 'The headset works with a laptop, so it is fine.'],
@@ -165,8 +165,8 @@
     item({
       id: 'l19-s-reboot', strand: AP,
       blocks: [
-        chat('Cy, Plant', 'c1', 'My Android phone restarts by itself three or four times a day, with no warning. It started about two weeks ago.'),
-        list('b', 'What Cy has tried', ['Test', 'Result'], [['Normal use', 'Restarts about 4 times a day'], ['Safe mode for two full days', 'No restarts'], ['Battery health', '94%']])],
+        chat('Martina, Plant', 'c1', 'My Android phone restarts by itself three or four times a day, with no warning. It started about two weeks ago.'),
+        list('b', 'What Martina has tried', ['Test', 'Result'], [['Normal use', 'Restarts about 4 times a day'], ['Safe mode for two full days', 'No restarts'], ['Battery health', '94%']])],
       asks: [ask('What does safe mode tell you?', [
         ['An app the user installed. Remove recent apps one at a time', true, 'Safe mode runs without the apps the user installed. No restarts there means the system and the battery are fine.'],
         ['The battery is faulty, so replace it before the next restart', PART, 'Battery health is 94% and the restarts stopped in safe mode, where the battery works exactly the same.'],
@@ -177,7 +177,7 @@
     item({
       id: 'l19-s-data', strand: SE,
       blocks: [
-        chat('Lou, Sales', 'l1', 'I got a text that I have used 90% of my data for the month, and it is only the 8th. I only use email and maps.'),
+        chat('Gordon, Sales', 'l1', 'I got a text that I have used 90% of my data for the month, and it is only the 8th. I only use email and maps.'),
         list('b', 'Settings, Mobile data (this month)', ['App', 'Data used'], [['Email', '0.4 GB'], ['Maps', '0.6 GB'], ['Weatherly (installed last week from a link in a text)', '9.1 GB']])],
       asks: [ask('What do you do first?', [
         ['Save the files, switch on airplane mode, then remove Weatherly', true, 'An app nobody asked for using 9 GB is a malicious app’s high network traffic. Cut it off the network first, then remove it.'],
@@ -188,7 +188,7 @@
       reason: 'High network traffic, a data-usage warning and an app installed from a link in a text are the signs of a malicious app. The per-app data list names it. Cut the network, remove the app, scan, change passwords from another device and report it.' }),
     item({
       id: 'l19-s-sideload', strand: SE,
-      blocks: [chat('Pam, IT', 'p1', 'A user in Sales wants a paid app for free. A website sells a file that the user installs by turning on “allow installs from unknown sources”. The user says it is just one app.')],
+      blocks: [chat('Esther, IT', 'p1', 'A user in Sales wants a paid app for free. A website sells a file that the user installs by turning on “allow installs from unknown sources”. The user says it is just one app.')],
       asks: [ask('What do you tell the user?', [
         ['No: the file skips the store’s checks, so use the store', true, 'Installing outside the official store skips the checks that catch malicious apps. An unchecked file can be one.'],
         ['It is fine, as long as the setting goes back off afterward', OPEN, 'The setting being off later does not undo what the one app was allowed to do while it was installed.'],
@@ -252,21 +252,21 @@
     item({
       id: 'l19-s-popups', strand: SE,
       blocks: [
-        chat('Hana, Sales', 'h1', 'Pop-up ads keep appearing in my phone’s browser with a message about winning a prize. Nothing has changed with my apps, and the data use is normal. It began after I visited a coupon site and tapped “Allow notifications”.')],
+        chat('Sonia, Sales', 'h1', 'Pop-up ads keep appearing in my phone’s browser with a message about winning a prize. Nothing has changed with my apps, and the data use is normal. It began after I visited a coupon site and tapped “Allow notifications”.')],
       asks: [ask('What is the likely cause, and the first change?', [
         ['The coupon site now sends notifications. Remove its permission', true, 'The ads come through the browser, no new apps exist and data use is normal. Allowing notifications gave the site a way to show them.'],
         ['A malicious app is hiding on the phone, so wipe the phone at once', WIPE, 'No new app, no data spike and nothing outside the browser. A wipe is far more than the signs show.'],
         ['The phone was rooted by the site, so take the phone off the network', CAUSE, 'Nothing shows the phone was rooted. The only sign is the browser’s ads.'],
-        ['The data plan is too small, so move Hana to a bigger plan', LINK, 'Data use is normal. A bigger plan changes nothing about what the site can send.']])],
+        ['The data plan is too small, so move Sonia to a bigger plan', LINK, 'Data use is normal. A bigger plan changes nothing about what the site can send.']])],
       deciding: ['h1'],
       reason: 'Many ads can be a malicious app, but here the signs are only in the browser and a site was allowed to send notifications. Remove that permission, then clear the browser’s data as the next change, and watch; if ads appear elsewhere, think of an app.' }),
     item({
       id: 'l19-s-compat', strand: AP,
       blocks: [
-        chat('Ian, Operations', 'i1', 'The store will not let me install the new work app. It says “This app requires Android 14 or later”. My phone is four years old.'),
-        list('b', 'What the phone shows', ['Line', 'Value'], [['Operating system', 'Version 11, with 14 offered as an update'], ['Storage', '71 GB free'], ['Wi-Fi', 'Fine']])],
+        chat('Tabitha, Operations', 'i1', 'The store will not let me install the new work app. It says “This app requires Android 14 or later”. My phone is four years old.'),
+        list('b', 'What the phone shows', ['Line', 'Value'], [['Operating system', 'Version 13, with 14 offered as an update'], ['Storage', '71 GB free'], ['Wi-Fi', 'Fine']])],
       asks: [ask('What is the next step?', [
-        ['Back up the phone, install the waiting system update, try the store again', true, 'There is room and the connection is fine. The app needs a newer OS than version 11, and an update is offered.'],
+        ['Back up the phone, install the waiting system update, try the store again', true, 'There is room and the connection is fine. The app needs a newer OS than version 13, and an update is offered.'],
         ['Delete photos to free space', CAUSE, 'There is 71 GB free, so storage is not the limit. The message names the operating system.'],
         ['Reset the network settings, then try to install the app from the store', LINK, 'The store reached the phone and gave a clear answer. The connection is not at fault.'],
         ['Install the app from a website file, which does not check the device', KEEP, 'That skips the store’s checks and may be a spoofed copy. The right change is the update.']])],

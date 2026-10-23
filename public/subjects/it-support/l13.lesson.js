@@ -6,10 +6,10 @@
 // rulings-l9-13.md 2, 3, 5, 6, 7. One worked ticket; a first group of four with the deciding words marked; a second of seven; a third of eight that mixes in
 // lesson 5; the seven steps are a teaching model that follows the A+ study guides (Professor Messer, laser printers; Microsoft Press, A+ Rapid Review: Printers), which agree on the order, and their defect lists are kept to the points the guides share; the check: six new tickets and questions with no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l13', part: 'printers', title: 'Printers', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the print path as a chain; each printer symptom on its link with the test that splits it; setup, security and care by kind of printer).' }],
+  id: 'l13', part: 'printers', title: 'Printers', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the print path as a chain; each printer symptom on its link with the test that splits it; setup, security and care by kind of printer).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Galen in Accounts has sent an invoice to the printer by the kitchen four times, and nothing comes out. The printer’s screen says Ready. Between her program and the paper sit a queue, a driver, a link to the printer, the printer, and its paper and toner.',
+    'Galen in Accounts has sent an invoice to the printer by the kitchen four times, and nothing comes out. The printer’s screen says Ready. Between their program and the paper sit a queue, a driver, a link to the printer, the printer, and its paper and toner.',
     'A new technician reinstalls something. A good one prints a test page from the printer’s own screen, and half the chain is cleared in a minute. Here you learn the print path, the seven steps inside a laser printer, and how each kind of printer is put in and looked after.'],
   flow: [
     { title: 'The print path',

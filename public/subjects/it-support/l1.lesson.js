@@ -9,8 +9,8 @@
 // first), one worked ticket whose first guess the table rules out, a first group with the deciding words marked, a second with none, two pairs of
 // look-alikes, and a check of six new tickets.
 FC.lesson("it-support", {
-  id: "l1", part: "kind", title: "What kind of ticket, and how soon", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the three kinds of ticket, the nine moves and what CompTIA says of them, and a priority read from a desk's table of impact and urgency." }],
+  id: "l1", part: "kind", title: "What kind of ticket, and how soon", rev: 2, status: "live",
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the three kinds of ticket, the nine moves and what CompTIA says of them, and a priority read from a desk's table of impact and urgency." }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
     "It is 8:20 on a Tuesday and three tickets are waiting. Billing cannot open the claims program, and the claims go out at noon. A new hire starts next Monday and needs a laptop. The wall screen in room 4B has lost its connection for the fifth time in five weeks.",
     "Which one do you open first, and what does each one need from you? Here you learn to sort a ticket by kind, and to give it a priority from the desk's own table."

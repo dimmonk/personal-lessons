@@ -1,10 +1,10 @@
 # IT Help Desk: What changed, and protect the data
 
-Revision 1, live. Part: What changed, and protect the data. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: What changed, and protect the data. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Petra’s email says her laptop is slow, Excel crashes, and she says she changed nothing. She wants you to wipe it, and the file she must send on Friday is on it.
+Petra’s email says their laptop is slow, Excel crashes, and they say they changed nothing. They want you to wipe it, and the file they must send on Friday is on it.
 A computer that worked and now does not has something different about it. Here you learn to find the difference, and to copy the user’s files before you touch anything that could lose them.
 
 ## Step 1: Find out what changed
@@ -14,8 +14,8 @@ Look for three kinds of change. What the user did: a new program or add-in (a sm
 Users often say “nothing changed”. That means nothing they noticed. When the records show no change either, you have found nothing yet; you put particulars to the user (“a new program, an update message, a new password?”) and find out when it last worked. Check what the desk’s records show too.
 A rule of thumb, not a law: when several people have the same fault from the same day, look at the company’s side first. When only one person has it, look at that person’s side first. In this course, a change made to one person’s account, such as a password reset or a new device handed to them, counts as that person’s side, even when the desk made it. And a change many people made themselves, such as the same program they all installed, is still the users’ side.
 
-A wrong idea, marked wrong: “She says nothing changed, so I will start fixing.”
-The right line: “Nothing” means nothing she noticed. Look at the records and put particulars to her first: the change is often there.
+A wrong idea, marked wrong: “They say nothing changed, so I will start fixing.”
+The right line: “Nothing” means nothing they noticed. Look at the records and put particulars to them first: the change is often there.
 
 ## Step 2: Copy the files before you touch anything
 
@@ -25,8 +25,8 @@ The hard drive (also called the disk) is the part inside the computer that holds
 CompTIA’s older exam wording said to back up “if applicable”: only when the step could lose something. (The current exams keep its six steps as a recommended method, not as an objective.) This course’s reading: if the records already show a recent backup, you do not make another; you open one file from it to check that it works, and then go on.
 Words these tickets use. Office is Microsoft’s group of programs, such as Word, Excel and Outlook; Outlook is its email program. A shared drive is a folder on a company server that many people open from their own computers.
 
-A wrong idea, marked wrong: “She asked for a wipe, so I will wipe it.”
-The right line: A wipe cannot be undone. Copy her files first, and check the copy opens.
+A wrong idea, marked wrong: “They asked for a wipe, so I will wipe it.”
+The right line: A wipe cannot be undone. Copy their files first, and check the copy opens.
 
 ## Step 3: When it comes and goes
 
@@ -50,23 +50,23 @@ A plain table, "What the desk’s records show for this laptop":
 > Record  |  What it says  (the column heads)
 > Windows updates, last 30 days  |  None installed
 > Programs added, last 30 days  |  PDF Toolbox add-in (an extra feature for Excel), installed Monday of last week
-> Backup of her files  |  None found
+> Backup of their files  |  None found
 
 Before the working, the learner may commit to a choice (not scored, not stored):
 **What changed on this laptop?**
 (the options come in an order that depends on the seed of the question)
 - A Windows update, which could slow a laptop down
 - A program added on Monday of last week
-- Nothing, since she says she changed nothing on her end
+- Nothing, since they say they changed nothing on their end
 
 The working, one step at a time:
-1. Read her words.: Slow since last week, Excel crashes on one file, she wants a wipe, and she says nothing changed.
+1. Read their words.: Slow since last week, Excel crashes on one file, they want a wipe, and they say nothing changed.
 1. Guess a change, and check it against the records.: First guess: a Windows update. The records show none in 30 days, so that guess is out.
 1. Look at what else changed.: A PDF add-in went on Monday of last week. That fits “since last week”, so it is the lead.
-1. Before you touch anything, protect her files.: A wipe would erase the month-end file and no backup exists. Copy her files, then open one from the copy.
-1. Then have her show you.: She opens the month-end file and Excel crashes while you watch. Now you can take the add-in out and see whether the crash is gone.
+1. Before you touch anything, protect their files.: A wipe would erase the month-end file and no backup exists. Copy their files, then open one from the copy.
+1. Then have them show you.: They open the month-end file and Excel crashes while you watch. Now you can take the add-in out and see whether the crash is gone.
 
-Then the answer: A program added on Monday of last week / Copy her files to the company storage first, then open one of them to check that the copy works. The records name a change she did not mention, the add-in. They also show no backup, and a wipe would erase the file she needs on Friday. Find the change, then copy the files, then fix.
+Then the answer: A program added on Monday of last week / Copy their files to the company storage first, then open one of them to check that the copy works. The records name a change they did not mention, the add-in. They also show no backup, and a wipe would erase the file they need on Friday. Find the change, then copy the files, then fix.
 
 ## Step 5: Questions
 
@@ -74,7 +74,7 @@ Then the answer: A program added on Monday of last week / Copy her files to the 
 
 #### Item 1
 
-An email: "Marcus Bell", Email · Monday 8:30 AM.
+An email: "Joseph Bell", Email · Monday 8:30 AM.
 
 > Subject: **Label printer dead**
 >
@@ -88,7 +88,7 @@ Help on screen: the words that decide it are marked.
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "Yesterday afternoon I plugged a new USB hub (a small box with extra sockets) under the desk so I could charge my phone." (right)
 - "Now the label printer has stopped working." — if tapped: note: This is what is wrong, not what changed.
-- "I need labels for the 10:30 shipments." — if tapped: note: This is how soon he needs it, not what changed.
+- "I need labels for the 10:30 shipments." — if tapped: note: This is how soon they need it, not what changed.
 
 After the answer: the deciding words are marked. Reason: The printer worked until a new USB hub went in under the desk. A new device is a change, so that is where you look first.
 
@@ -97,33 +97,33 @@ After the answer: the deciding words are marked. Reason: The printer worked unti
 A plain table, "Ticket 4471":
 
 > Field  |  Entry  (the column heads)
-> User  |  Dana Ortiz, billing
+> User  |  Michael Ortiz, billing
 > Problem  |  Outlook closes by itself several times a day
-> What changed  |  Dana added a calendar add-in last Thursday and removed it Friday; the problem is still there
+> What changed  |  Michael added a calendar add-in last Thursday and removed it Friday; the problem is still there
 > Next step, approved by the senior technician  |  Reset the laptop to its factory state (this erases everything on it)  <- marked after the answer
-> Backup of her files  |  None found  <- marked after the answer
+> Backup of their files  |  None found  <- marked after the answer
 
 Help on screen: the words that decide it are marked.
 
 **What do you do before the reset?**
 (the options come in an order that depends on the seed of the question)
-- Make a copy of her files on the company storage, and open one (right)
-- Start the reset; the senior technician has already approved it — if chosen: The approval is for the reset, not for losing her files. They are gone once it runs.
-- Put the question to Dana again about what changed on her laptop — if chosen: The ticket already says: a calendar add-in, added Thursday and removed Friday. The next move is protecting her files.
+- Make a copy of their files on the company storage, and open one (right)
+- Start the reset; the senior technician has already approved it — if chosen: The approval is for the reset, not for losing their files. They are gone once it runs.
+- Put the question to Michael again about what changed on their laptop — if chosen: The ticket already says: a calendar add-in, added Thursday and removed Friday. The next move is protecting their files.
 
 After the answer: the deciding words are marked. Reason: The next step erases everything on the laptop and the ticket shows no backup. Copy the files first, and check the copy opens.
 
 #### Item 3
 
-A chat, with its history: "Tom Ellery", Chat · Monday 8:40 AM.
+A chat, with its history: "Lorenzo Ellery", Chat · Monday 8:40 AM.
 
-> (Tom Ellery, at the left) I can’t open the shared drive. Nothing changed on my end, it just stopped.
+> (Lorenzo Ellery, at the left) I can’t open the shared drive. Nothing changed on my end, it just stopped.
 
 A plain table, "Tickets opened Monday":
 
 > User  |  Floor  |  Opened  |  Problem  (the column heads)
-> Tom Ellery  |  2  |  8:40 AM  |  Cannot open the shared drive
-> Alma Reyes  |  2  |  8:44 AM  |  Cannot open the shared drive  <- marked after the answer
+> Lorenzo Ellery  |  2  |  8:40 AM  |  Cannot open the shared drive
+> Levi Reyes  |  2  |  8:44 AM  |  Cannot open the shared drive  <- marked after the answer
 > Chen Wu  |  2  |  8:51 AM  |  Cannot open the shared drive  <- marked after the answer
 > Dale Frost  |  2  |  9:02 AM  |  Cannot open the shared drive  <- marked after the answer
 
@@ -134,28 +134,28 @@ A plain table, "The network team’s change log":
 
 Help on screen: the words that decide it are marked.
 
-**Tom says nothing changed on his end. What most likely changed?**
+**Lorenzo says nothing changed on their end. What most likely changed?**
 (the options come in an order that depends on the seed of the question)
 - Something the company did on its side: the floor 2 switch was replaced late on Sunday night (right)
-- Something on Tom’s own laptop, like a setting or an update that only he would see from his side of things — if chosen: Three other people on the floor have the same fault, so it is not only his laptop.
-- Nothing at all, because Tom would have noticed if something had changed — if chosen: He may be right about his own side. The log shows a change he could not see.
+- Something on Lorenzo’s own laptop, like a setting or an update that only they would see from their side of things — if chosen: Three other people on the floor have the same fault, so it is not only their laptop.
+- Nothing at all, because Lorenzo would have noticed if something had changed — if chosen: They may be right about their own side. The log shows a change they could not see.
 
 After the answer: the deciding words are marked. Reason: The same fault on the same floor since the same morning points at a change the company made. The log names one, so that is where you look. This is a rule of thumb, which the next questions test.
 
 #### Item 4
 
-An incoming call, the caller's words as a transcript: "Hana Ito", Phone call · Wednesday 2:05 PM.
+An incoming call, the caller's words as a transcript: "Francis Ito", Phone call · Wednesday 2:05 PM.
 
 > My screen goes black sometimes, and then it comes back.
 > **It did it twice this morning. I can’t say what I was doing.**
 
 Help on screen: the words that decide it are marked.
 
-**She cannot say what brings it on. What do you do?**
+**They cannot say what brings it on. What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Have her message you the time it happens, then match the times to the computer’s log (right)
-- Order her a new monitor right away, since the screen is the part that keeps going black on her — if chosen: Nothing yet says the monitor is at fault. A part bought on a guess is another guess.
-- Tell her to call back the next time it goes black, and close the ticket for now — if chosen: You would close with nothing gathered and nothing for her. Her notes and the log are what you can use now.
+- Have their message you the time it happens, then match the times to the computer’s log (right)
+- Order them a new monitor right away, since the screen is the part that keeps going black on them — if chosen: Nothing yet says the monitor is at fault. A part bought on a guess is another guess.
+- Tell them to call back the next time it goes black, and close the ticket for now — if chosen: You would close with nothing gathered and nothing for them. Their notes and the log are what you can use now.
 
 After the answer: the deciding words are marked. Reason: A fault that comes and goes gives no steps to follow. You collect what you can: the times it happens and the log, plus what changed. Then you narrow it down.
 
@@ -175,7 +175,7 @@ A chat, with its history: "Ali Rahman", Chat · Monday 9:20 AM.
 
 **Tap the line that tells you what changed.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
-- "Can you fix it before my 10:00 meeting?" — if tapped: note: This is how soon he needs it, not a change.
+- "Can you fix it before my 10:00 meeting?" — if tapped: note: This is how soon they need it, not a change.
 - "Outlook keeps asking me to sign in again and again. It started Saturday." — if tapped: note: This is the symptom, not a change.
 - "I changed my password Friday night, but I don’t think that matters." (right)
 
@@ -183,18 +183,18 @@ After the answer: the deciding words are marked. Reason: A password change the n
 
 #### Item 6
 
-Sam’s desktop is slow, but it starts and runs normally. You are choosing a fix.
+Penelope’s desktop is slow, but it starts and runs normally. You are choosing a fix.
 
-**Tap each step that could erase Sam’s saved files.** (choose every one that fits)
+**Tap each step that could erase Penelope’s saved files.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
-- Restart the computer — if chosen: A restart does not erase saved files; it loses only what Sam has not saved, so have him save first. His files do not need a copy.
+- Restart the computer — if chosen: A restart does not erase saved files; it loses only what Penelope has not saved, so have them save first. Their files do not need a copy.
 - Do a clean install of Windows (right)
-- Turn Wi-Fi off and on — if chosen: It changes a connection, not his files.
+- Turn Wi-Fi off and on — if chosen: It changes a connection, not their files.
 - Replace the hard drive (right)
-- Delete his user profile (the folder where Windows keeps his files and settings) so Windows builds a new one (right)
-- Plug his monitor into another port — if chosen: It changes a cable, not his files.
+- Delete their user profile (the folder where Windows keeps their files and settings) so Windows builds a new one (right)
+- Plug their monitor into another port — if chosen: It changes a cable, not their files.
 
-After the answer: Reason: The steps that erase, replace or remove where his files live need a copy first. A restart of a healthy computer or a cable move does not. Save open work before a restart.
+After the answer: Reason: The steps that erase, replace or remove where their files live need a copy first. A restart of a healthy computer or a cable move does not. Save open work before a restart.
 
 #### Item 7
 
@@ -209,23 +209,23 @@ A plain table, "What the desk’s records show for Victor’s computer":
 > Windows update installed  |  Tuesday 11:40 PM, restarted automatically
 > Programs added, last 30 days  |  None
 
-**He says nothing changed. What do you do?**
+**They say nothing changed. What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Check the desk’s records for changes, and put the update and the restart on Tuesday night to him (right)
-- Take his word that nothing changed, and start by looking for a fault inside the printer itself — if chosen: You skipped a change that the records show.
-- Tell him something must have changed and that he is forgetting what he did on Tuesday night — if chosen: Do not tell him he is wrong. Check the records and put particulars to him.
+- Check the desk’s records for changes, and put the update and the restart on Tuesday night to them (right)
+- Take their word that nothing changed, and start by looking for a fault inside the printer itself — if chosen: You skipped a change that the records show.
+- Tell them something must have changed and that they are forgetting what they did on Tuesday night — if chosen: Do not tell them they are wrong. Check the records and put particulars to them.
 
 After the answer: the deciding words are marked. Reason: Users often cannot see the change. The record shows an update and a restart the night before the fault, so that is where you start.
 
 #### Item 8
 
-An email: "Lin Zhou", Email · Wednesday 9:05 AM.
+An email: "Binta Zhou", Email · Wednesday 9:05 AM.
 
 > Subject: **Slow laptop**
 >
 > My laptop has been slow for about a week. I have not added or changed anything.
 
-A plain table, "What the desk’s records show for Lin’s laptop":
+A plain table, "What the desk’s records show for Binta’s laptop":
 
 > Record  |  What it says  (the column heads)
 > Windows updates, last 30 days  |  None installed
@@ -234,9 +234,9 @@ A plain table, "What the desk’s records show for Lin’s laptop":
 
 **The records show no change. What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Say nothing is found yet in the records, and put particulars to Lin about a week ago: a move, a new device, a new password (right)
+- Say nothing is found yet in the records, and put particulars to Binta about a week ago: a move, a new device, a new password (right)
 - Decide that the hard drive is failing, since nothing on the software side has changed in the records — if chosen: No record points at the drive. That is a guess dressed up as a finding.
-- Tell her that nothing has changed on her laptop and close the ticket as “no change found” for now — if chosen: The records show no change, but she still has a slow laptop and no one has asked her anything.
+- Tell them that nothing has changed on their laptop and close the ticket as “no change found” for now — if chosen: The records show no change, but they still have a slow laptop and no one has asked them anything.
 
 After the answer: the deciding words are marked. Reason: An empty record is not an answer. “Nothing found yet” sends you back to the user with particulars; it does not end the question.
 
@@ -248,15 +248,15 @@ A plain table, "Ticket 5190":
 > User  |  Kofi Mensah, shipping
 > Problem  |  Computer shows a hard drive warning and is very slow
 > Next step  |  Replace the hard drive and do a clean install of Windows
-> Backup of his files  |  The desk’s nightly backup ran today at 6:00 AM. He has saved no new files since yesterday.
+> Backup of their files  |  The desk’s nightly backup ran today at 6:00 AM. They have saved no new files since yesterday.
 
 **What do you do before the new drive goes in?**
 (the options come in an order that depends on the seed of the question)
 - Open one file from this morning’s backup to check that it works, then go on with the replacement (right)
 - Start the replacement; the nightly backup has surely done its job, so there is no need to look at it — if chosen: A backup you have not opened is not yet a backup you can rely on. Open one file first.
-- Copy all his files to the company storage again by hand before you do anything else with the drive — if chosen: The 6:00 AM backup already holds them, and he has saved nothing new. Open one file from it instead.
+- Copy all their files to the company storage again by hand before you do anything else with the drive — if chosen: The 6:00 AM backup already holds them, and they have saved nothing new. Open one file from it instead.
 
-After the answer: the deciding words are marked. Reason: CompTIA backs up “if applicable”. A recent backup already holds his files, so the step is to check that it opens, not to make another.
+After the answer: the deciding words are marked. Reason: CompTIA backs up “if applicable”. A recent backup already holds their files, so the step is to check that it opens, not to make another.
 
 #### Item 10
 
@@ -273,30 +273,30 @@ A plain table, "What the desk can see on Greg’s computer":
 
 **There is no way to make it freeze on demand. What do you do first?**
 (the options come in an order that depends on the seed of the question)
-- Put the log times to Greg and have him note the time of each freeze from now on (right)
-- Reinstall the printer driver (the small program that lets the computer talk to the printer) on his computer, since it only freezes when he prints — if chosen: It is a guess with nothing to say it is the cause, and a fault that comes and goes can look fixed by luck.
-- Tell him to restart the computer now and call back if it freezes on him again — if chosen: You have gathered nothing, and he is left with the fault.
+- Put the log times to Greg and have them note the time of each freeze from now on (right)
+- Reinstall the printer driver (the small program that lets the computer talk to the printer) on their computer, since it only freezes when they print — if chosen: It is a guess with nothing to say it is the cause, and a fault that comes and goes can look fixed by luck.
+- Tell them to restart the computer now and call back if it freezes on them again — if chosen: You have gathered nothing, and they are left with the fault.
 
-After the answer: the deciding words are marked. Reason: A fault that comes only some of the time gives no steps. You work from the log and his notes of the times, then narrow it down.
+After the answer: the deciding words are marked. Reason: A fault that comes only some of the time gives no steps. You work from the log and their notes of the times, then narrow it down.
 
 #### Item 11
 
-A chat, with its history: "Rosa Diaz", Chat · Tuesday 9:10 AM.
+A chat, with its history: "Dorian Diaz", Chat · Tuesday 9:10 AM.
 
-> (Rosa Diaz, at the left) The shared drive won’t open since I got back from leave. I haven’t done anything.
+> (Dorian Diaz, at the left) The shared drive won’t open since I got back from leave. I haven’t done anything.
 
 A plain table, "What the desk found":
 
 > Check  |  Result  (the column heads)
-> Shared drive from three other computers on Rosa’s floor  |  Opens normally
-> Rosa’s password  |  Reset by the desk on Monday, her first day back
+> Shared drive from three other computers on Dorian’s floor  |  Opens normally
+> Dorian’s password  |  Reset by the desk on Monday, their first day back
 
 **Where do you look for the change?**
 (the options come in an order that depends on the seed of the question)
-- At Rosa’s own side: her password reset on Monday and her laptop (right)
-- At the company: a change to the network — if chosen: Three other computers on her floor open the drive. A change to the network would have reached them too.
+- At Dorian’s own side: their password reset on Monday and their laptop (right)
+- At the company: a change to the network — if chosen: Three other computers on their floor open the drive. A change to the network would have reached them too.
 
-After the answer: the deciding words are marked. Reason: Others on the floor are fine, so the change is hers. As a rule of thumb, when many have the same fault from the same day, look at the company. When one does, look at her side.
+After the answer: the deciding words are marked. Reason: Others on the floor are fine, so the change is theirs. As a rule of thumb, when many have the same fault from the same day, look at the company. When one does, look at their side.
 
 #### Item 12
 
@@ -333,24 +333,24 @@ A plain table, "Ticket 5120":
 > User  |  Elena Park, accounting
 > Problem  |  Laptop clicks, freezes, and sometimes will not start
 > Next step  |  Swap in a new laptop and recycle this one
-> Files on the old laptop  |  Her Documents folder and Desktop
-> Backup of her files  |  None found
+> Files on the old laptop  |  Their Documents folder and Desktop
+> Backup of their files  |  None found
 
 **What do you do before the swap?**
 (the options come in an order that depends on the seed of the question)
-- Copy her files off the old laptop to the company storage, then open one file from the copy to check it (right)
-- Swap the laptop now, and sort out where her files go once she has settled in with the new one — if chosen: Later may be never: the old laptop is going to be recycled.
+- Copy their files off the old laptop to the company storage, then open one file from the copy to check it (right)
+- Swap the laptop now, and sort out where their files go once they have settled in with the new one — if chosen: Later may be never: the old laptop is going to be recycled.
 - Restart the old laptop once more to see whether it starts up before the swap — if chosen: It already clicks and freezes, so each start is a risk to the files. Copy them now.
 
-After the answer: the deciding words are marked. Reason: The old laptop is failing and is the only place her files live. Copy them first, with as few starts as it takes, and open one to check the copy.
+After the answer: the deciding words are marked. Reason: The old laptop is failing and is the only place their files live. Copy them first, with as few starts as it takes, and open one to check the copy.
 
 #### Item 14
 
-A chat, with its history: "Noor Haddad", Chat · Tuesday 1:15 PM.
+A chat, with its history: "Vasco Haddad", Chat · Tuesday 1:15 PM.
 
-> (Noor Haddad, at the left) I have a meeting at 2.
-> (Noor Haddad, at the left) My second monitor is blank.
-> (Noor Haddad, at the left) I moved to a new desk on Monday and plugged everything in myself.
+> (Vasco Haddad, at the left) I have a meeting at 2.
+> (Vasco Haddad, at the left) My second monitor is blank.
+> (Vasco Haddad, at the left) I moved to a new desk on Monday and plugged everything in myself.
 
 **Tap the line that tells you what changed.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
@@ -378,28 +378,28 @@ After the answer: the deciding words are marked. Reason: A new phone is a new de
 
 #### Item 16
 
-Lena has told you her story: since Monday she cannot print from the new laptop she was given on Friday. You have said her story back and searched the knowledge base, and nothing fits. You have not yet found out what changed, and you have not looked at the desk’s records.
+Umar has told you their story: since Monday they cannot print from the new laptop they were given on Friday. You have said their story back and searched the knowledge base, and nothing fits. You have not yet found out what changed, and you have not looked at the desk’s records.
 
 **Which move comes next?**
-- Get their words first, then search what the desk already knows — if chosen: You have her story, and the knowledge base is searched. The next move is finding what changed.
+- Get their words first, then search what the desk already knows — if chosen: You have their story, and the knowledge base is searched. The next move is finding what changed.
 - Find out what changed, and protect their data before touching anything (right)
-- Try the known fix, with a time limit — if chosen: A known fix comes after you know what changed and her files are safe.
+- Try the known fix, with a time limit — if chosen: A known fix comes after you know what changed and their files are safe.
 
-After the answer: Reason: The story is in and the knowledge base had nothing. Finding what changed comes next, with her data kept safe before anything is tried.
+After the answer: Reason: The story is in and the knowledge base had nothing. Finding what changed comes next, with their data kept safe before anything is tried.
 
 #### Item 17
 
-A chat, with its history: "Ravi Menon", Chat · Tuesday 9:30 AM.
+A chat, with its history: "Neville Menon", Chat · Tuesday 9:30 AM.
 
-> (Ravi Menon, at the left) My shared drive disappeared this morning.
+> (Neville Menon, at the left) My shared drive disappeared this morning.
 
 **What do you say next?**
 (the options come in an order that depends on the seed of the question)
 - When did it last work, and what is different since: a move, a new program, an update, a new password? (right)
 - Restart the computer first, since a restart might bring a missing drive back — if chosen: That is a fix tried before you know what changed.
-- Drives do not just disappear on their own, so what did you delete or change this morning? — if chosen: That blames him and tells you nothing. Put particulars to him in a friendly way.
+- Drives do not just disappear on their own, so what did you delete or change this morning? — if chosen: That blames them and tells you nothing. Put particulars to them in a friendly way.
 
-After the answer: the deciding words are marked. Reason: The question names the common changes and starts from the last time it worked. That finds the change without blaming him.
+After the answer: the deciding words are marked. Reason: The question names the common changes and starts from the last time it worked. That finds the change without blaming them.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -413,7 +413,7 @@ To pass:
 
 #### Check question 18
 
-An email: "Joy Tan", Email · Thursday 7:55 AM.
+An email: "Wesley Tan", Email · Thursday 7:55 AM.
 
 > Subject: **Screen flickers**
 >
@@ -427,71 +427,71 @@ An email: "Joy Tan", Email · Thursday 7:55 AM.
 - "On Tuesday evening I started using the new docking station (a box my laptop plugs into for screens and other devices) the office gave me." (right)
 - "I have a video call at 9." — if tapped: note: This is how soon, not a change.
 
-After the answer: the deciding words are marked. Reason: A new docking station is a new device, and the flicker began right after she started using it. That is the change to look at first.
+After the answer: the deciding words are marked. Reason: A new docking station is a new device, and the flicker began right after they started using it. That is the change to look at first.
 
 #### Check question 19
 
 A plain table, "Ticket 5188":
 
 > Field  |  Entry  (the column heads)
-> User  |  Omar Siddiqui, warehouse office
+> User  |  Magnus Siddiqui, warehouse office
 > Problem  |  Laptop is very slow and its battery no longer holds a charge
-> Next step  |  Give Omar a new laptop and send this one back to the supplier
+> Next step  |  Give Magnus a new laptop and send this one back to the supplier
 > Files on the computer  |  Order forms on the Desktop and in Documents
-> Backup of his files  |  None found
+> Backup of their files  |  None found
 
 **What do you do before the old laptop is sent back?**
 (the options come in an order that depends on the seed of the question)
-- Copy his order forms to the company storage first, then open one of them to check that the copy works (right)
-- Get the new laptop ready and send the old one back with the supplier’s next pickup, since swapping laptops is routine work for the desk — if chosen: His order forms are on the old laptop. Once it is gone, nobody can find them.
-- Reset the old laptop to its factory state, so that none of Omar’s data is left on it when it goes back — if chosen: A reset erases his order forms for good, and no copy exists.
+- Copy their order forms to the company storage first, then open one of them to check that the copy works (right)
+- Get the new laptop ready and send the old one back with the supplier’s next pickup, since swapping laptops is routine work for the desk — if chosen: Their order forms are on the old laptop. Once it is gone, nobody can find them.
+- Reset the old laptop to its factory state, so that none of Magnus’s data is left on it when it goes back — if chosen: A reset erases their order forms for good, and no copy exists.
 
 After the answer: the deciding words are marked. Reason: Sending the laptop back takes the order forms with it, and no backup exists. Copy the order forms first, and check the copy opens.
 
 #### Check question 20
 
-A chat, with its history: "Beth Cole", Chat · Wednesday 8:50 AM.
+A chat, with its history: "Kirsten Cole", Chat · Wednesday 8:50 AM.
 
-> (Beth Cole, at the left) I can connect to the Wi-Fi at reception but no web pages open. I haven’t changed anything.
+> (Kirsten Cole, at the left) I can connect to the Wi-Fi at reception but no web pages open. I haven’t changed anything.
 
 A plain table, "Tickets opened Wednesday":
 
 > User  |  Where  |  Problem  (the column heads)
-> Beth Cole  |  Reception  |  Wi-Fi connects, no web pages
+> Kirsten Cole  |  Reception  |  Wi-Fi connects, no web pages
 > Nils Vega  |  Reception  |  Wi-Fi connects, no web pages
-> Una Park  |  Reception  |  Wi-Fi connects, no web pages
+> Laura Park  |  Reception  |  Wi-Fi connects, no web pages
 
 A plain table, "The office manager’s note":
 
 > When  |  What  (the column heads)
 > Tuesday afternoon  |  Replaced the reception Wi-Fi router with a new one
 
-**Beth says she changed nothing. Where is the change?**
+**Kirsten says they changed nothing. Where is the change?**
 (the options come in an order that depends on the seed of the question)
 - The reception Wi-Fi router that the office manager replaced on Tuesday afternoon (right)
-- Something on Beth’s own laptop that only she would have been able to see from her side of things — if chosen: Two others at reception have the same fault, so it is not only her laptop.
-- Nothing, because Beth would know if something had changed on her side — if chosen: She is probably right about her side. The note shows a change she did not do.
+- Something on Kirsten’s own laptop that only they would have been able to see from their side of things — if chosen: Two others at reception have the same fault, so it is not only their laptop.
+- Nothing, because Kirsten would know if something had changed on their side — if chosen: They are probably right about their side. The note shows a change they did not do.
 
 After the answer: the deciding words are marked. Reason: The same fault for three people in one place from the same day points at a change the company made. The note names one, a new router.
 
 #### Check question 21
 
-A chat, with its history: "Fay Greer", Chat · Friday 3:20 PM.
+A chat, with its history: "Alina Greer", Chat · Friday 3:20 PM.
 
-> (Fay Greer, at the left) My spreadsheet closes by itself sometimes.
-> (Fay Greer, at the left) It happens once or twice a day, but I never see it coming.
+> (Alina Greer, at the left) My spreadsheet closes by itself sometimes.
+> (Alina Greer, at the left) It happens once or twice a day, but I never see it coming.
 
-A plain table, "The error log on Fay’s computer (the list of errors it keeps)":
+A plain table, "The error log on Alina’s computer (the list of errors it keeps)":
 
 > Time  |  Entry  (the column heads)
 > Wednesday 11:15 AM  |  Spreadsheet program stopped working
 > Thursday 9:48 AM  |  Spreadsheet program stopped working
 
-**She cannot say what brings it on. What do you do?**
+**They cannot say what brings it on. What do you do?**
 (the options come in an order that depends on the seed of the question)
-- Have her note the time each time it closes, then match her times to the entries in the error log (right)
+- Have them note the time each time it closes, then match their times to the entries in the error log (right)
 - Run the repair tool for Office (Microsoft’s group of programs, which includes the spreadsheet), since the spreadsheet keeps closing — if chosen: It is a guess with nothing to say it is the cause, and a fault that comes and goes can look fixed by luck.
-- Close the ticket until it happens again, since there is nothing to go on yet — if chosen: You would close with nothing gathered, when the log and her notes could already tell you more.
+- Close the ticket until it happens again, since there is nothing to go on yet — if chosen: You would close with nothing gathered, when the log and their notes could already tell you more.
 
 After the answer: the deciding words are marked. Reason: A fault that comes and goes gives no steps to follow. You work from the log and the user’s notes of the times, then narrow it down.
 
@@ -505,14 +505,14 @@ An incoming call, the caller's words as a transcript: "Ian Frost", Phone call ·
 A plain table, "What the desk’s records show for Ian’s computer":
 
 > Record  |  What it says  (the column heads)
-> Password  |  Reset by the desk on Tuesday afternoon, at his request
+> Password  |  Reset by the desk on Tuesday afternoon, at their request
 > Programs added, last 30 days  |  None
 
-**He says nothing changed. What do you do?**
+**They say nothing changed. What do you do?**
 (the options come in an order that depends on the seed of the question)
 - Check the records, then find out about the password reset (right)
-- Take his word that nothing changed, and start by looking at the shared drive’s own settings on the file server — if chosen: You skipped a change that the records show.
-- Tell him that he must have changed something on Monday or Tuesday and has simply forgotten what it was — if chosen: Do not argue with him. Check the records and put particulars to him.
+- Take their word that nothing changed, and start by looking at the shared drive’s own settings on the file server — if chosen: You skipped a change that the records show.
+- Tell them that they must have changed something on Monday or Tuesday and have simply forgotten what it was — if chosen: Do not argue with them. Check the records and put particulars to them.
 
 After the answer: the deciding words are marked. Reason: Users often cannot see a change. The record shows a password reset between the day it worked and the day it stopped.
 
@@ -526,13 +526,13 @@ A plain table, "What the desk’s records show for Pru’s computer":
 
 > Record  |  What it says  (the column heads)
 > Disk health  |  Warning: drive failing
-> Backup of her files  |  None found
+> Backup of their files  |  None found
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
-- Copy her files to the company storage while it is still running, then open one of them to check (right)
-- Restart it as she wants, since a restart loses nothing and gets her back to work — if chosen: On a healthy computer that is true. On a failing drive each start is a risk, and her files are not copied.
-- Run the drive’s repair tool first, and see whether the warning clears afterwards, before anything else — if chosen: A repair on a failing drive can make things worse, and her files are not safe yet.
+- Copy their files to the company storage while it is still running, then open one of them to check (right)
+- Restart it as they want, since a restart loses nothing and gets them back to work — if chosen: On a healthy computer that is true. On a failing drive each start is a risk, and their files are not copied.
+- Run the drive’s repair tool first, and see whether the warning clears afterwards, before anything else — if chosen: A repair on a failing drive can make things worse, and their files are not safe yet.
 
 After the answer: the deciding words are marked. Reason: The clicking and the disk warning say the drive is failing, so even a restart is a risk to the files. Copy them first, and check the copy opens.
 

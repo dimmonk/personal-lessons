@@ -45,28 +45,28 @@
       reason: 'The favorite cause was memory, and the Performance tab ruled it out in seconds. Processes named the program using the processor, and Startup showed why it came back. Each tab answered one question, and nothing was changed before the look.' }),
 
     // ----- group 1: the question marked; which tool answers it -----
-    T('l20-p-log', CO, 'Mia, Accounting', 'At start-up this morning a message flashed up saying a driver failed to load, and then everything seemed normal. I would like to know which driver, so I can tell you.',
+    T('l20-p-log', CO, 'Dariusz, Accounting', 'At start-up this morning a message flashed up saying a driver failed to load, and then everything seemed normal. I would like to know which driver, so I can tell you.',
       'Which tool shows what Windows recorded at start-up?', [
         ['Event Viewer, in the System log, which keeps what Windows recorded', true, 'Windows writes down what happened as it started, including a driver that failed. Event Viewer (eventvwr.msc) is where those records are read.'],
         ['Task Manager, and in it the Processes tab, which lists what is running', NOW, 'Task Manager shows what is running now. A driver that failed to load during start-up is a record of the past.'],
         ['Task Scheduler, which lists the jobs that run at chosen times', TOOL, 'Task Scheduler runs programs on a timetable. It does not keep a record of what failed.'],
         ['System Information, which lists the hardware the computer has in it', LOOK, 'System Information describes the computer as it is. The failed load is an event, and events are in Event Viewer.']],
       'Windows writes down what happened as it started, including a driver that failed to load. The question is about the past, so the tool is a record: Event Viewer, in the System log. Task Manager answers questions about now.'),
-    T('l20-p-driver', CO, 'Raj, Warehouse', 'The label printer worked yesterday. This morning it is not listed, and in Device Manager I saw a yellow triangle next to its name.',
+    T('l20-p-driver', CO, 'Joyce, Warehouse', 'The label printer worked yesterday. This morning it is not listed, and in Device Manager I saw a yellow triangle next to its name.',
       'Which tool lists devices and flags one with a problem?', [
         ['Device Manager, where a yellow triangle marks a device with a problem', true, 'The yellow triangle is Device Manager’s own warning that a device has a problem. From there you can look at the driver, update it or roll it back.'],
         ['Disk Management, which lists the drives and divides them into volumes', TOOL, 'Disk Management is for drives and the space on them. A label printer is not a drive.'],
         ['Local Users and Groups, which lists the accounts on the computer', TOOL, 'That console is for accounts. The yellow triangle is about a device.'],
         ['Registry Editor, which can show the printer’s entry as raw values', BLIND, 'It is a risky place to start. Device Manager shows the same device with a plain warning, and changes nothing until you do.']],
       'The question is which device has a problem, and Device Manager answers it with a yellow triangle on the device. From there the driver can be updated, rolled back or the device disabled, one change at a time.'),
-    T('l20-p-disk', CO, 'Nell, Finance', 'I put a second drive in the desktop for the year-end files. It does not show up in File Explorer, but the BIOS (the first screen at power-on) lists it.',
+    T('l20-p-disk', CO, 'Brendan, Finance', 'I put a second drive in the desktop for the year-end files. It does not show up in File Explorer, but the BIOS (the first screen at power-on) lists it.',
       'Which tool shows a drive that Windows has not prepared yet?', [
         ['Disk Management, which lists a new drive that has no volume yet', true, 'The firmware sees the drive, so the part is there. Disk Management (diskmgmt.msc) lists every drive, including one with no volume, and prepares it for use.'],
         ['Device Manager, then update the driver of the whole computer', NOSPLIT, 'Device Manager can show the drive as a device, but it cannot give it a letter or a format. Updating the whole computer changes more than the cheap look.'],
         ['Disk Cleanup, which clears out temporary files to make room', TIDY, 'Disk Cleanup removes files from a drive that is already in use. This drive has no volume yet.'],
         ['Resource Monitor, which shows which program is reading the disk', TOOL, 'Resource Monitor shows activity on drives in use. Nothing can be reading a drive with no volume.']],
       'The firmware sees the drive, so it is installed. Windows has not prepared it yet, and Disk Management is the console that lists a drive with no volume and gives it a letter and a format.'),
-    T('l20-p-hidden', SE, 'Ola, Reception', 'Our software guide says the settings file is in a folder called AppData in my user folder. I open my folder and there is no AppData. I can see everything else.',
+    T('l20-p-hidden', SE, 'Matthew, Reception', 'Our software guide says the settings file is in a folder called AppData in my user folder. I open my folder and there is no AppData. I can see everything else.',
       'Where does Windows hide this choice?', [
         ['File Explorer Options, View tab: show hidden files, folders and drives', true, 'AppData is a hidden folder, and Windows hides these by default. The View tab of File Explorer Options turns them on.'],
         ['Programs and Features, to see if the software installed all of its folders', AREA, 'That list shows which programs are installed, not which folders are visible.'],
@@ -75,35 +75,35 @@
       'The folder is hidden, and showing hidden files is a File Explorer Options choice on the View tab. The question is how File Explorer shows files, not which programs are installed or how search works.'),
 
     // ----- group 2: tools -----
-    T('l20-s-msinfo', TL, 'Kit, Procurement', 'I am filling in a form for the insurer and it wants the computer’s model, how much memory is installed, the BIOS version and the Windows build. Where do I find all of that in one place?',
+    T('l20-s-msinfo', TL, 'Marlon, Procurement', 'I am filling in a form for the insurer and it wants the computer’s model, how much memory is installed, the BIOS version and the Windows build. Where do I find all of that in one place?',
       'Which tool gives that in one list?', [
         ['System Information (msinfo32), which lists the hardware and the build', true, 'System Information is the summary: model, installed memory, firmware version and Windows build on one screen, and it can be saved as a file.'],
         ['Task Manager, whose Performance tab shows the memory and the processor', NOSPLIT, 'Task Manager gives live use and some hardware details, but not the model, the firmware version or the build in one place.'],
         ['Device Manager, which shows each device and the driver version it uses', TOOL, 'Device Manager lists devices and drivers. The form wants facts about the whole computer.'],
         ['Event Viewer, in which the System log keeps notes about the hardware', TOOL, 'Event Viewer holds records of what happened, not a list of what the computer is made of.']],
       'System Information answers “what is in this computer?” in one place: model, installed memory, firmware version and Windows build. Task Manager answers what is busy now.'),
-    T('l20-s-clean', TL, 'Gus, Sales', 'The C: drive says it has 2 GB free and Windows keeps warning me. I emptied nothing and I have no big files that I know of. Is there a quick way to clear the junk Windows keeps?',
+    T('l20-s-clean', TL, 'Marian, Sales', 'The C: drive says it has 2 GB free and Windows keeps warning me. I emptied nothing and I have no big files that I know of. Is there a quick way to clear the junk Windows keeps?',
       'Which tool clears temporary files and the Recycle Bin?', [
         ['Disk Cleanup (cleanmgr), which lists temporary files and the Recycle Bin', true, 'Disk Cleanup shows what it will remove and how much space each group frees, and lets you choose. It is built for exactly this.'],
         ['Defragment and Optimize Drives (dfrgui), which rearranges the files on the drive', TOOL, 'Optimizing arranges how files sit on the drive. It does not free any space.'],
         ['Registry Editor, to delete the entries that older programs left behind', BLIND, 'Registry entries take almost no space, and a wrong edit can break Windows. It does not fix a full drive.'],
         ['Disk Management, to shrink the drive and make a new volume from the room left', TOOL, 'Disk Management changes how the drive is divided. It cannot make room that is not free.']],
       'Disk Cleanup answers “how do I free space?” and shows how much each group of temporary files would free before it removes anything. Optimizing and Disk Management do not free space.'),
-    T('l20-s-reg', TL, 'Pam, Legal', 'The vendor’s guide for our scanner says to change one value in the registry to stop it from timing out. They gave me the exact path. I have never opened it.',
+    T('l20-s-reg', TL, 'Crystal, Legal', 'The vendor’s guide for our scanner says to change one value in the registry to stop it from timing out. They gave me the exact path. I have never opened it.',
       'What does the technician do before editing?', [
         ['Open regedit and export that branch of the registry first, then edit it', true, 'The registry holds Windows’ and programs’ settings, and a wrong edit can stop Windows from starting. The export is the way back, and the vendor’s exact path is the way in.'],
         ['Open regedit and change the value at once, then test the scanner afterward', BLIND, 'With no export there is no easy way back if the value is wrong. A backup costs a minute.'],
         ['Open Task Manager and look for the scanner’s process, then end it', TOOL, 'Ending a process does not change a stored value. The timeout is written in the registry.'],
         ['Open Programs and Features and reinstall the scanner program from scratch', TIDY, 'Reinstalling is a big step for a change the vendor has spelled out. It may not touch that value at all.']],
       'Regedit changes the registry, which has no undo. Export the part you will edit first, then make the one change the vendor gives and test. A written instruction and a backup make it safe. The registry has five top-level branches called hives; the two met most are HKEY_LOCAL_MACHINE (the computer’s settings) and HKEY_CURRENT_USER (the signed-in person’s).'),
-    T('l20-s-users', TL, 'Ben, IT', 'The shared reception PC has 8 GB of memory and it is crawling at 9 AM. The front desk shows one person signed in, but I wonder if someone from last night stayed signed in too.',
+    T('l20-s-users', TL, 'Orson, IT', 'The shared reception PC has 8 GB of memory and it is crawling at 9 AM. The front desk shows one person signed in, but I wonder if someone from last night stayed signed in too.',
       'Which Task Manager tab shows who is signed in and what each uses?', [
         ['The Users tab, which lists each signed-in person and what each one uses', true, 'The Users tab answers “who is signed in?” and shows each person’s share. A signed-in account that is left over can be signed out from there.'],
         ['The Startup tab, which lists the programs that open when Windows starts', NOSPLIT, 'Startup shows what opens at sign-in, not who is signed in.'],
         ['The Services tab, which lists the background programs and their state', NOSPLIT, 'Services lists background programs. They run for the computer as a whole and do not name the people signed in.'],
         ['The Performance tab, which graphs the processor and the memory over time', NOSPLIT, 'Performance shows the totals. It cannot say who is using them.']],
       'The Users tab answers “who is signed in, and what does each person use?”. The other tabs show programs and totals, not people.'),
-    T('l20-s-svc', TL, 'Ivy, HR', 'I cannot print. The spooler (the background program that lines up print jobs) is stuck. A colleague told me to restart it, but I do not know where that is.',
+    T('l20-s-svc', TL, 'Nigel, HR', 'I cannot print. The spooler (the background program that lines up print jobs) is stuck. A colleague told me to restart it, but I do not know where that is.',
       'Where can a technician see and restart a background program?', [
         ['Task Manager’s Services tab, where a service can be restarted', true, 'A service is a program that runs in the background with no window. The Services tab lists each one with its state, and has Restart in its menu.'],
         ['Task Manager’s Processes tab, then End task on the spooler', TOOL, 'The Processes tab lists the spooler as a running process, but a service is restarted from the Services tab. End task only closes it.'],
@@ -112,21 +112,21 @@
       'A service is a background program, and the Services tab is where it is started, stopped or restarted. The Processes tab lists it too and can end it, but a service is stopped and restarted from the Services tab, and restarting is not the same as ending a task.'),
 
     // ----- group 2: consoles -----
-    T('l20-s-sched', CO, 'Tom, Operations', 'Every night at 2 AM I need a small script to copy the shift report to the shared drive. I do not want to be there to start it. What do I use?',
+    T('l20-s-sched', CO, 'Oswald, Operations', 'Every night at 2 AM I need a small script to copy the shift report to the shared drive. I do not want to be there to start it. What do I use?',
       'Which console runs a program at a chosen time?', [
         ['Task Scheduler (taskschd.msc), which starts a program at a chosen time', true, 'Task Scheduler pairs a trigger (a time, a sign-in or an event) with an action (run a program). That is exactly the job.'],
         ['Services tab in Task Manager, which starts background programs by hand', TOOL, 'The Services tab starts and stops programs when someone clicks it. It has no clock.'],
         ['Performance Monitor (perfmon.msc), which records numbers over time', TOOL, 'It records performance counters for later reading. It does not run a script.'],
         ['Group Policy Editor (gpedit.msc), which holds rules for the computer', TOOL, 'It holds rules for how Windows behaves. A timed copy is a job to run, not a rule.']],
       'Task Scheduler answers “how do I run a program at a time, or when something happens?”. Its trigger and action are the two parts of a job.'),
-    T('l20-s-cert', CO, 'Una, Compliance', 'My browser says the certificate for our new internal site is not trusted. Our security guide says to check whether the company’s certificate is in my personal certificates.',
+    T('l20-s-cert', CO, 'Erica, Compliance', 'My browser says the certificate for our new internal site is not trusted. Our security guide says to check whether the company’s certificate is in my personal certificates.',
       'Which console lists a person’s certificates?', [
         ['Certificate Manager (certmgr.msc), which lists certificates for the user', true, 'A certificate is a digital ID that proves a site is who it says. Certificate Manager shows the ones stored for this user and which authorities are trusted.'],
         ['Local Users and Groups (lusrmgr.msc), which lists accounts and their groups', TOOL, 'It lists accounts and groups. A certificate is not an account.'],
         ['Device Manager (devmgmt.msc), which lists the computer’s devices', TOOL, 'It lists hardware. The certificate is stored data, not a device.'],
         ['Event Viewer (eventvwr.msc), which lists what Windows recorded', LOOK, 'It might hold a related error, but it is a record of events, not the place where certificates are stored.']],
       'Certificate Manager answers “which certificates are stored for this user?”. Certificates prove who a site or program is, and the other consoles hold accounts, devices or events.'),
-    T('l20-s-lusr', CO, 'Dax, Workshop', 'The workshop PC runs Windows 11 Pro and is not on a domain (it is a stand-alone computer). I need to add a new person as a local user and put them in the Users group, not Administrators.',
+    T('l20-s-lusr', CO, 'Julian, Workshop', 'The workshop PC runs Windows 11 Pro and is not on a domain (it is a stand-alone computer). I need to add a new person as a local user and put them in the Users group, not Administrators.',
       'Which console manages the accounts on this one computer?', [
         ['Local Users and Groups (lusrmgr.msc), which manages accounts and groups', true, 'It is the console for accounts and groups on this computer itself. Choosing Users, not Administrators, keeps their rights small.'],
         ['Certificate Manager (certmgr.msc), which stores digital IDs', TOOL, 'Certificates are digital IDs for sites and programs. They do not create people’s accounts.'],
@@ -146,7 +146,7 @@
       ['diskmgmt.msc', 'diskmgmt', 'diskmgmt msc'], 'Disk Management opens with diskmgmt.msc: “disk” and “management” shortened.'),
     item({
       id: 'l20-s-run-pick', strand: CO,
-      blocks: [chat('Ned, Field team', 'n1', 'I am standing at a customer’s desk. I need to open Device Manager quickly. The customer shows me the Run box.')],
+      blocks: [chat('Amy, Field team', 'n1', 'I am standing at a customer’s desk. I need to open Device Manager quickly. The customer shows me the Run box.')],
       asks: [ask('Which name opens Device Manager?', [
         ['devmgmt.msc', true, 'Device Manager is devmgmt.msc: “dev” for devices, “mgmt” for management.'],
         ['diskmgmt.msc', LOOK, 'That one is Disk Management. The names look alike, and only one holds the devices.'],
@@ -161,7 +161,7 @@
       ['msinfo32', 'msinfo32.exe'], 'System Information opens with msinfo32: “ms” for Microsoft, “info” for information, and 32 as part of the name.'),
 
     // ----- group 2: settings -----
-    T('l20-s-fast', SE, 'Cy, Marketing', 'After the update I shut the laptop down every night, but a wrong display setting keeps coming back until I choose Restart. The vendor’s note says it may be “fast startup”.',
+    T('l20-s-fast', SE, 'Sandro, Marketing', 'After the update I shut the laptop down every night, but a wrong display setting keeps coming back until I choose Restart. The vendor’s note says it may be “fast startup”.',
       'What does fast startup do, and where is it?', [
         ['A shutdown that keeps part of Windows saved to speed the next start, under “Choose what the power buttons do” in Power Options', true, 'With fast startup on, Shut down saves the core of Windows, so the next start loads it and not everything afresh. Restart does a full start. The switch is under “Choose what the power buttons do” in Power Options.'],
         ['Hibernate, which saves open work to the drive and powers off, chosen in Power Options', PWR, 'Hibernate keeps your open work for the next start. Fast startup keeps part of Windows, and a Shut down still closes your programs.'],
@@ -175,14 +175,14 @@
         ['The lid action, which picks what happens when the laptop is closed', PWR, 'The lid is open. This is about the mouse’s port.'],
         ['Switch to the High performance power plan in Power Options', TWO, 'A power plan changes many settings at once. This is one setting, and one change is tested alone.']],
       'USB selective suspend lets Windows cut power to an idle USB port, and a device on it wakes slowly. It is in the plan’s advanced settings under Power Options. One setting, changed alone.'),
-    T('l20-s-prog', SE, 'Fay, Admin', 'I need to remove an old program, and I also want to turn on the Windows feature called Telnet Client. The desk’s guide says both are in one place in Control Panel.',
+    T('l20-s-prog', SE, 'Serena, Admin', 'I need to remove an old program, and I also want to turn on the Windows feature called Telnet Client. The desk’s guide says both are in one place in Control Panel.',
       'Which Control Panel area does both?', [
         ['Programs and Features, which uninstalls programs and turns features on', true, 'Programs and Features lists installed programs for uninstalling or changing, and its side link turns optional Windows features on or off.'],
         ['Devices and Printers, which lists the hardware and the printers attached', AREA, 'It lists hardware. Programs and Windows features live elsewhere.'],
         ['Indexing Options, which controls which places the search looks in', AREA, 'It controls search. Programs and features are somewhere else.'],
         ['Network and Sharing Center, which shows the connections', AREA, 'It is for connections. Telnet Client is a program, not a connection setting.']],
       'Programs and Features answers “uninstall a program, or turn a Windows feature on or off?”. Devices, search and connections each have their own areas.'),
-    T('l20-s-index', SE, 'Moe, Records', 'Searching the Documents folder used to find my files in a second. Now it misses files I saved last week. I can open the folder and see them.',
+    T('l20-s-index', SE, 'Isabel, Records', 'Searching the Documents folder used to find my files in a second. Now it misses files I saved last week. I can open the folder and see them.',
       'Which area controls which places Windows searches?', [
         ['Indexing Options, which shows the places indexed and can rebuild them', true, 'Windows searches an index, a list it keeps up to date. The files exist but are missing from the list, and Rebuild in Indexing Options redoes it.'],
         ['Disk Cleanup, which clears out files that are no longer needed', TIDY, 'The files are fine and wanted. Clearing files would make them harder to find, not easier.'],
@@ -196,7 +196,7 @@
         ['The Settings app, in Accounts, to sign in to the call app again', AREA, 'Accounts holds sign-in options for Windows. Access to a camera is held in Privacy.'],
         ['The Settings app, in Time and Language, to match the call app’s region', AREA, 'Time and Language is for the clock and the region. The camera is not tied to either.']],
       'The Privacy area of the Settings app holds what each app may use, such as the camera and the microphone. The camera works elsewhere, so the device and its driver are fine.'),
-    T('l20-s-lang', SE, 'Eli, Travel', 'I flew in from London and my meetings show the wrong times. My laptop’s clock is an hour out and the calendar uses the wrong time zone. Where do I fix this in Settings?',
+    T('l20-s-lang', SE, 'Raphael, Travel', 'I flew in from London and my meetings show the wrong times. My laptop’s clock is an hour out and the calendar uses the wrong time zone. Where do I fix this in Settings?',
       'Which area of the Settings app holds the clock and region?', [
         ['Time and Language, with the date, time zone and region', true, 'Time and Language holds the date, time, time zone, region and language. The wrong zone is the fault.'],
         ['Network and Internet, where the Wi-Fi connection can change the clock', AREA, 'It holds Wi-Fi, VPN and proxy choices. The time zone lives with the clock.'],
@@ -235,8 +235,8 @@
     item({
       id: 'l20-g-drv', strand: CO,
       blocks: [
-        chat('Ira, Lab', 'i1', 'Since the update on Tuesday my USB scanner stopped working. It showed a yellow triangle in Device Manager as soon as I plugged it in. It worked last week.'),
-        list('b', 'Device Manager, Scanners', ['Line', 'Value'], [['Device', 'Flatbed Scanner 200'], ['Status', 'Yellow triangle: a problem'], ['Driver date', 'Today, installed by the update'], ['Previous driver', 'Available to roll back to']])],
+        chat('Sarah, Lab', 'i1', 'Since the update on Tuesday my USB scanner stopped working. It showed a yellow triangle in Device Manager as soon as I plugged it in. It worked last week.'),
+        list('b', 'Device Manager, Scanners', ['Line', 'Value'], [['Device', 'Flatbed Scanner 200'], ['Status', 'Yellow triangle: a problem'], ['Driver date', 'Tuesday, installed by the update'], ['Previous driver', 'Available to roll back to']])],
       asks: [ask('What is the one change to try first?', [
         ['Roll the driver back to the previous version, then test the scanner again', true, 'The fault began with the update, the driver is the new thing, and Device Manager can undo it with one click. Change one thing and test.'],
         ['Update the driver, reinstall the scanner program and unplug it, all together', TWO, 'Three changes at once: if the scanner works, nobody can say which one did it.'],
@@ -247,7 +247,7 @@
     item({
       id: 'l20-g-lid', strand: SE,
       blocks: [
-        chat('Zoe, Finance', 'z1', 'When I close my laptop lid at my desk, it goes to sleep and drops the video call that I have on the big screen. I want the call to continue with the lid shut and the screen plugged in.'),
+        chat('Aaron, Finance', 'z1', 'When I close my laptop lid at my desk, it goes to sleep and drops the video call that I have on the big screen. I want the call to continue with the lid shut and the screen plugged in.'),
         note('The laptop is plugged in to power and to the external screen.')],
       asks: [ask('Where does the technician change this?', [
         ['Power Options, the lid action, choosing do nothing when plugged in', true, 'Power Options has a lid action for battery and for power, each with its own choice: do nothing, sleep, hibernate or shut down.'],
@@ -255,6 +255,6 @@
         ['The Settings app, Devices, then the screen’s entry in the list', AREA, 'The screen is fine. What closes the call is what the lid does.'],
         ['Device Manager, disabling the lid sensor under the system devices', BLIND, 'The lid action is a choice Windows offers in Power Options. Turning off a device is a rough way to reach it.']])],
       deciding: ['z1'],
-      reason: 'The lid action belongs to Power Options. It has its own choice for plugged in and for battery, so Zoe’s call can continue while plugged in and the laptop still sleeps on the move.' })
+      reason: 'The lid action belongs to Power Options. It has its own choice for plugged in and for battery, so Aaron’s call can continue while plugged in and the laptop still sleeps on the move.' })
   ]);
 })();

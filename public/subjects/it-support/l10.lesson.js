@@ -5,10 +5,10 @@
 // One worked ticket (Odile's desktop that switches off); four groups (six, eight, seven mixed with the start-up topic, six); a check of eight new questions.
 // Review fixes (fixes-l9-13.md, Lesson 10): channels, power connectors, M.2 as a slot, one HSM wording, a number for wattage headroom, symptom table, boot-order wording of the start-up topic.
 FC.lesson('it-support', {
-  id: 'l10', part: 'parts', title: 'The parts inside', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: each part taught by its job in the whole computer; power supply, motherboard, processor, firmware settings, memory, cards and cooling asked from memory and as which part for the job.' }],
+  id: 'l10', part: 'parts', title: 'The parts inside', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: each part taught by its job in the whole computer; power supply, motherboard, processor, firmware settings, memory, cards and cooling asked from memory and as which part for the job.' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Odile’s desktop switches itself off seconds after she starts a game, a week after she put in a new graphics card. Is it the card, the heat, the memory, a setting? Each part has a job in the whole computer, and the job tells you where to look.',
+    'Odile’s desktop switches itself off seconds after they start a game, a week after they put in a new graphics card. Is it the card, the heat, the memory, a setting? Each part has a job in the whole computer, and the job tells you where to look.',
     'Here you learn each part by what it does, plus the facts you will be asked for: power numbers, board sizes, sockets, firmware settings, memory and cooling.'],
   flow: [
     { title: 'A computer is a chain of jobs',

@@ -2,13 +2,13 @@
 // (wireless symptoms), Core 2 2.3 (WPA2, WPA3, TKIP, AES, RADIUS, TACACS+, Kerberos, multifactor) and Core 2 2.10 (router, wireless and firewall settings) of the
 // A+ map (docs/research/it-support-aplus.md). The facts are recalled; the symptoms and the router task are tickets worked with the cheapest test (IT4, IT8: a cable
 // against Wi-Fi) and one change at a time (IT9). Plan: docs/subjects/it-support/plan.md, lesson 17. Judgement call: the standards are taught as bands and Wi-Fi names.
-// One worked ticket (Priya's conference room: a favorite cause ruled out by one cable); a first group with the deciding words marked; a second and a third with none;
+// One worked ticket (Ross's conference room: a favorite cause ruled out by one cable); a first group with the deciding words marked; a second and a third with none;
 // and the check: eight new questions, no help, 7 of 8 to pass. The third group mixes in lessons 5 and 9. Fixed after the first reviews (fixes-l14-17.md, Lesson 17).
 FC.lesson('it-support', {
-  id: 'l17', part: 'wireless', title: 'Wireless and the small office network', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (bands, channels and standards; Bluetooth, NFC and RFID; wireless symptoms; WPA2, WPA3 and the sign-in methods; setting up and securing a small office router).' }],
+  id: 'l17', part: 'wireless', title: 'Wireless and the small office network', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (bands, channels and standards; Bluetooth, NFC and RFID; wireless symptoms; WPA2, WPA3 and the sign-in methods; setting up and securing a small office router).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Marta starts in a new office on Monday. The router login is admin and admin, there is no Wi-Fi password, and the back room drops off twice an hour.',
+    'Emily starts in a new office on Monday. The router login is admin and admin, there is no Wi-Fi password, and the back room drops off twice an hour.',
     'Here you learn Wi-Fi bands, security and router setup.'],
   flow: [
     { title: 'Three radio bands',

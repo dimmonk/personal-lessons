@@ -279,6 +279,8 @@ const drawsIn = (page, runs) => page.evaluate(n => Array.from({ length: n }, (_,
 async function theDraw(env, c, page) {
   const draws = await drawsIn(page, 15);
   c.check(draws.every(list => list.length === 5 && new Set(list).size === 5), `a draw is not five different questions (${JSON.stringify(draws.find(l => l.length !== 5 || new Set(l).size !== 5))})`);
+  const groups = await page.evaluate(() => FC.get('interview').lessons.l3.check.items.draw.map(g => ({ strands: g.strands, n: g.n })));
+  c.check(draws.every(list => groups.every(g => list.filter(k => g.strands.includes(k)).length === g.n)), `a draw does not hold exactly the n of each group (${JSON.stringify(groups.map(g => g.n))}): ${JSON.stringify(draws.find(l => !groups.every(g => l.filter(k => g.strands.includes(k)).length === g.n)))}`);
   c.check(new Set(draws.map(l => [...l].sort().join())).size > 4, 'fifteen draws gave fewer than five different sets: the draw is not at random');
   c.check(draws.flat().every(k => !OWN_KEYS.includes(k)), `a question about the learner's own answers was drawn before the learner entered them (${draws.flat().filter(k => OWN_KEYS.includes(k))})`);
   c.check(JSON.stringify(await drawsIn(page, 15)) === JSON.stringify(draws), 'the same run does not draw the same questions');

@@ -1,10 +1,10 @@
 # IT Help Desk: The known fix, and when to stop
 
-Revision 1, live. Part: The known fix, and when to stop. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: The known fix, and when to stop. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Jo’s printer says offline. A technician who has seen this before tries the fix at once. A beginner tries things until one works, and an hour later still does not know why.
+Mildred’s printer says offline. A technician who has seen this before tries the fix at once. A beginner tries things until one works, and an hour later still does not know why.
 Here you learn what the experts do: try the fix that is already known, decide beforehand how long you will try, and stop guessing when the limit is reached.
 
 ## Step 1: Try the fix that is already known
@@ -33,12 +33,12 @@ Words these tickets use. A print queue is the list of documents waiting to print
 
 ## Step 4: A worked example
 
-A chat, with its history: "Jo Barrett", Chat · Tuesday 10:02 AM.
+A chat, with its history: "Mildred Barrett", Chat · Tuesday 10:02 AM.
 
-> (Jo Barrett, at the left) The second-floor printer says offline and my report won’t print.
-> (Jo Barrett, at the left) I’m on a Windows 11 PC. I already restarted it this morning.
+> (Mildred Barrett, at the left) The second-floor printer says offline and my report won’t print.
+> (Mildred Barrett, at the left) I’m on a Windows 11 PC. I already restarted it this morning.
 
-You have her story and what changed, and no step here can lose files. This desk has no rule about handing on.
+You have their story and what changed, and no step here can lose files. This desk has no rule about handing on.
 
 A plain table, "Knowledge base search: “printer offline”":
 
@@ -55,13 +55,13 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 - Which senior technician I will hand it to if the first try does not work out
 
 The working, one step at a time:
-1. Decide the limit before you try anything.: Jo cannot print, so I pick a short one: two tries or ten minutes. That is my own choice for this ticket; no book gives the number.
-1. Check what has already been tried.: A restart is a fair first try, but she already restarted her PC this morning with no change. That try is hers, not mine, so it is spent and I do not count it as one of my tries.
-1. Search the knowledge base with her words, and check what the article applies to.: Two articles say Offline. One is for a Mac. The other is for a Windows 11 PC, which is hers.
+1. Decide the limit before you try anything.: Mildred cannot print, so I pick a short one: two tries or ten minutes. That is my own choice for this ticket; no book gives the number.
+1. Check what has already been tried.: A restart is a fair first try, but they already restarted their PC this morning with no change. That try is theirs, not mine, so it is spent and I do not count it as one of my tries.
+1. Search the knowledge base with their words, and check what the article applies to.: Two articles say Offline. One is for a Mac. The other is for a Windows 11 PC, which is theirs.
 1. Follow the article exactly as written.: Printer off for 10 seconds and on, jobs canceled on the PC, a test page printed. It prints, about 7 minutes in: the first try worked.
 1. Say what you would have done at the limit.: Two tries or ten minutes with no fix means stopping, writing down the tries, and narrowing it down. No third guess.
 
-Then the answer: A number of tries and a number of minutes, picked now, whichever runs out first / Printer shows Offline, Windows 11 PC. The article is the known fix, and it applies to her symptom and her setup. The limit was decided first, so you knew when to stop and what to do if the fix failed.
+Then the answer: A number of tries and a number of minutes, picked now, whichever runs out first / Printer shows Offline, Windows 11 PC. The article is the known fix, and it applies to their symptom and their setup. The limit was decided first, so you knew when to stop and what to do if the fix failed.
 
 ## Step 5: Questions
 
@@ -69,11 +69,11 @@ Then the answer: A number of tries and a number of minutes, picked now, whicheve
 
 #### Item 1
 
-A chat, with its history: "Kim Rao", Chat · Wednesday 9:12 AM.
+A chat, with its history: "Trevor Rao", Chat · Wednesday 9:12 AM.
 
-> (Kim Rao, at the left) **My Mac keeps dropping off the office Wi-Fi every few minutes.**
+> (Trevor Rao, at the left) **My Mac keeps dropping off the office Wi-Fi every few minutes.**
 
-You have her story and what changed, and no step here can lose files.
+You have their story and what changed, and no step here can lose files.
 
 A plain table, "Knowledge base search: “wi-fi drops”":
 
@@ -88,13 +88,13 @@ Help on screen: the words that decide it are marked.
 (the options come in an order that depends on the seed of the question)
 - Wi-Fi drops every few minutes, Mac (right)
 - Wi-Fi drops every few minutes, Windows 11 PC — if chosen: The symptom matches, but the steps are for a Windows PC.
-- Wi-Fi password not accepted, Mac — if chosen: It is her Mac, but a different symptom: her Wi-Fi connects, then drops.
+- Wi-Fi password not accepted, Mac — if chosen: It is their Mac, but a different symptom: their Wi-Fi connects, then drops.
 
 After the answer: the deciding words are marked. Reason: The symptom and the setup both have to match. Only the first article covers drops on a Mac.
 
 #### Item 2
 
-Dev Rao says Excel is frozen. The knowledge base has an article for it. You are about to follow it. This desk has no rule about handing on.
+Hattie Rao says Excel is frozen. The knowledge base has an article for it. You are about to follow it. This desk has no rule about handing on.
 
 Help on screen: the words that decide it are marked.
 
@@ -132,7 +132,7 @@ After the answer: the deciding words are marked. Reason: Using an article is als
 A plain table, "Your tries so far (the limit you picked: two tries or ten minutes)":
 
 > What you did  |  Minutes  |  Result  (the column heads)
-> 1. Restarted her PC  |  3  |  No change  <- marked after the answer
+> 1. Restarted their PC  |  3  |  No change  <- marked after the answer
 > 2. Followed the article “Printer shows Offline”  |  6  |  Still offline  <- marked after the answer
 > Time used so far  |  9  |  Total
 
@@ -154,16 +154,16 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-A chat, with its history: "Nia Cole", Chat · Thursday 9:40 AM.
+A chat, with its history: "Hailey Cole", Chat · Thursday 9:40 AM.
 
-> (Nia Cole, at the left) Outlook keeps asking me for my password again and again.
-> (Nia Cole, at the left) I’m on a Windows 11 PC.
+> (Hailey Cole, at the left) Outlook keeps asking me for my password again and again.
+> (Hailey Cole, at the left) I’m on a Windows 11 PC.
 
-The knowledge base has an article “Outlook keeps asking for the password” for Windows PCs. You have her story and what changed, and no step in it can lose files. This desk has no rule about handing on.
+The knowledge base has an article “Outlook keeps asking for the password” for Windows PCs. You have their story and what changed, and no step in it can lose files. This desk has no rule about handing on.
 
 **What do you do first?**
 (the options come in an order that depends on the seed of the question)
-- Search the knowledge base with her words and follow the matching article, within a limit (right)
+- Search the knowledge base with their words and follow the matching article, within a limit (right)
 - Start testing causes: another account, another computer, a new profile, a repaired Office — if chosen: That is the work to do after the known fix fails. It takes longer than a few minutes.
 - Pass it to the senior technician right now, since they have seen this fault before — if chosen: The known fix costs a few minutes. If it fails you narrow the problem down; you hand on when the desk’s rule says so.
 
@@ -171,41 +171,41 @@ After the answer: the deciding words are marked. Reason: A symptom the desk has 
 
 #### Item 6
 
-Rita’s laptop will not connect to the Wi-Fi at her desk. Other people’s laptops connect fine.
+Davina’s laptop will not connect to the Wi-Fi at their desk. Other people’s laptops connect fine.
 
 **Which of these is cheap enough to try within a limit?**
 (the options come in an order that depends on the seed of the question)
 - Turn off the laptop’s Wi-Fi, wait a few seconds, and turn it back on (right)
-- Reset her laptop to its factory state, which clears every software fault — if chosen: It takes hours and erases her files. It is not a quick try.
+- Reset their laptop to its factory state, which clears every software fault — if chosen: It takes hours and erases their files. It is not a quick try.
 - Replace the Wi-Fi card (the part inside the laptop that connects to Wi-Fi) — if chosen: It means opening the laptop and costs far more than a few minutes.
 
 After the answer: Reason: A quick fix takes minutes, loses nothing and is easy to undo. Anything bigger is a plan, not a try.
 
 #### Item 7
 
-A plain table, "What Marco tried in 40 minutes":
+A plain table, "What Ugo tried in 40 minutes":
 
-> What he did  |  Result  (the column heads)
+> What they did  |  Result  (the column heads)
 > 1. Restarted the PC  |  Screen still flickers
 > 2. Pulled out and re-plugged the monitor cable  |  Still flickers
 > 3. Reinstalled the graphics driver (the program that runs the screen)  |  Still flickers
 > 4. Updated the app  |  Still flickers
 
-**The screen still flickers. What did the four failed tries tell him about the cause?**
+**The screen still flickers. What did the four failed tries tell them about the cause?**
 (the options come in an order that depends on the seed of the question)
 - Very little: each failed try rules out only itself (right)
 - That the cause must be the hardware, not the software — if chosen: Nothing in the four tries points at the hardware.
 - That a fifth guess is now much more likely to work — if chosen: Each failed guess made the next one no more likely.
 
-After the answer: the deciding words are marked. Reason: A guess that fails brings you no closer. Marco should have stopped at his limit and cut the problem in half.
+After the answer: the deciding words are marked. Reason: A guess that fails brings you no closer. Ugo should have stopped at their limit and cut the problem in half.
 
 #### Item 8
 
-A chat, with its history: "Omar Reid", Chat · Friday 1:05 PM.
+A chat, with its history: "Judith Reid", Chat · Friday 1:05 PM.
 
-> (Omar Reid, at the left) In Teams I can’t hear anyone when I use my headset. My laptop is Windows 11.
+> (Judith Reid, at the left) In Teams I can’t hear anyone when I use my headset. My laptop is Windows 11.
 
-You have his story and what changed, and no step here can lose files.
+You have their story and what changed, and no step here can lose files.
 
 A plain table, "Knowledge base search: “teams no sound”":
 
@@ -220,7 +220,7 @@ A plain table, "Knowledge base search: “teams no sound”":
 - Teams has no sound, the meeting room speakers — if chosen: Same symptom, but the steps are for a room’s speakers.
 - Teams has no sound, a phone — if chosen: Same symptom, but the steps are for a phone.
 
-After the answer: the deciding words are marked. Reason: Several articles share a symptom. The “applies to” line decides which one is his.
+After the answer: the deciding words are marked. Reason: Several articles share a symptom. The “applies to” line decides which one is theirs.
 
 #### Item 9
 
@@ -284,7 +284,7 @@ After the answer: the deciding words are marked. Reason: A step that removes whe
 
 #### Item 12
 
-Lena’s story is in. You found what changed, and her files are safe. The knowledge base has an article for exactly her symptom.
+Roxanne’s story is in. You found what changed, and their files are safe. The knowledge base has an article for exactly their symptom.
 
 **Which move comes next?**
 - Find out what changed, and protect their data before touching anything — if chosen: You already did that. The next move is the known fix.
@@ -318,17 +318,17 @@ After the answer: the deciding words are marked. Reason: The desk’s rule, not 
 
 #### Item 14
 
-A chat, with its history: "Quinn Hale", Chat · Monday 3:45 PM.
+A chat, with its history: "Veronica Hale", Chat · Monday 3:45 PM.
 
-> (Quinn Hale, at the left) My second monitor shows nothing since I moved desks on Friday.
+> (Veronica Hale, at the left) My second monitor shows nothing since I moved desks on Friday.
 
 The knowledge base has an article for this symptom.
 
-**You have her story and know what changed. What do you do next?**
+**You have their story and know what changed. What do you do next?**
 (the options come in an order that depends on the seed of the question)
 - Search the knowledge base for the symptom, and follow the article that fits, within a limit (right)
 - Swap in a different monitor to see whether the fault is in the monitor or in the laptop — if chosen: That is how you narrow a fault down. Try the known fix first.
-- Go back to her and check once more what changed, in case something was missed in the story — if chosen: You already know: the move on Friday.
+- Go back to them and check once more what changed, in case something was missed in the story — if chosen: You already know: the move on Friday.
 
 After the answer: the deciding words are marked. Reason: After the story and the change come the known fix and its limit. Narrowing it down is the step after.
 
@@ -344,11 +344,11 @@ To pass:
 
 #### Check question 15
 
-A chat, with its history: "Zed Ames", Chat · Monday 10:30 AM.
+A chat, with its history: "Regina Ames", Chat · Monday 10:30 AM.
 
-> (Zed Ames, at the left) My camera shows a black picture in Teams. I’m on a Windows 11 laptop.
+> (Regina Ames, at the left) My camera shows a black picture in Teams. I’m on a Windows 11 laptop.
 
-You have his story and what changed, and no step here can lose files.
+You have their story and what changed, and no step here can lose files.
 
 A plain table, "Knowledge base search: “teams camera”":
 
@@ -361,7 +361,7 @@ A plain table, "Knowledge base search: “teams camera”":
 (the options come in an order that depends on the seed of the question)
 - Teams video is black, Windows 11 laptop (right)
 - Teams cannot find the camera, Mac laptop — if chosen: It is for a Mac, and it is for a camera that is not found rather than a black picture.
-- Teams has no sound in calls, Windows 11 laptop — if chosen: It is his setup, but a different symptom: sound, not video.
+- Teams has no sound in calls, Windows 11 laptop — if chosen: It is their setup, but a different symptom: sound, not video.
 
 After the answer: the deciding words are marked. Reason: The symptom and the setup both have to match. Only the second article is about a black picture on a Windows 11 laptop.
 
@@ -416,13 +416,13 @@ After the answer: the deciding words are marked. Reason: The limit was tries or 
 
 #### Check question 19
 
-Jun’s printer shows “offline”. You restarted her PC, and the printer still shows “offline”.
+Vivian’s printer shows “offline”. You restarted their PC, and the printer still shows “offline”.
 
 **What does the failed restart tell you about the cause?**
 (the options come in an order that depends on the seed of the question)
 - Very little: only that a restart is not the fix (right)
-- That the problem is inside the printer itself — if chosen: A restart of her PC does not test the printer, so it shows nothing about it.
-- That she did something wrong before it went offline — if chosen: Nothing in the restart points at anything she did.
+- That the problem is inside the printer itself — if chosen: A restart of their PC does not test the printer, so it shows nothing about it.
+- That they did something wrong before it went offline — if chosen: Nothing in the restart points at anything they did.
 
 After the answer: Reason: A failed quick fix rules out only itself. To learn the cause you need a test that splits the possibilities, which is the next step after the limit.
 

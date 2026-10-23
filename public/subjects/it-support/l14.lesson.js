@@ -5,10 +5,10 @@
 // Core 2 1.5, 1.7. Plan: lesson 14. One worked ticket (Odette: the office connection ruled out by one question); a first group of four with the deciding words marked;
 // a second of nineteen; a third of six mixed with lessons 5 and 9; the check: six new tickets with command output, no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l14', part: 'online', title: 'How a computer gets online', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the five links of the connection chain; ipconfig and three pings to cut it; reading ping, nslookup, tracert and pathping; addressing, DNS records, VLAN, VPN; Windows client network settings).' }],
+  id: 'l14', part: 'online', title: 'How a computer gets online', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the five links of the connection chain; ipconfig and three pings to cut it; reading ping, nslookup, tracert and pathping; addressing, DNS records, VLAN, VPN; Windows client network settings).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Odette in Billing says nothing loads and the internet must be down. Between her computer and a website sit a cable or Wi-Fi, an address, the router, a name lookup and the website. Restarting the router cuts off everyone to test one of them.',
+    'Odette in Billing says nothing loads and the internet must be down. Between their computer and a website sit a cable or Wi-Fi, an address, the router, a name lookup and the website. Restarting the router cuts off everyone to test one of them.',
     'A good technician types ipconfig and reads three lines. You learn the five links, the commands that cut them in half, and how to read their output.'],
   flow: [
     { title: 'Five links from the cable to the website',

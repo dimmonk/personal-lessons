@@ -4,8 +4,10 @@
 // questions drawn at random from every question of the list, read aloud, answered aloud then typed, with nothing shown until the end; 16 to pass (ours,
 // above the real 12), and a second mock seven days later on questions the first did not ask (C4: the question is heard).
 FC.lesson("civics", {
-  id: "l16", part: "16", title: "The interview", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-22", change: "First version, built to the plan in docs/subjects/civics/plan.md. Not tried on a phone yet." }],
+  id: "l16", part: "16", title: "The interview", rev: 2, status: "live",
+  history: [
+    { rev: 1, date: "2026-10-22", change: "First version, built to the plan in docs/subjects/civics/plan.md. Not tried on a phone yet." },
+    { rev: 2, date: "2026-10-23", change: "The draw is written as a list of groups (one group of 20 from all 128 questions); the mock interview is the same." }],
   why: [
     "At the interview an officer puts up to 20 of the 128 questions to you aloud. You answer from memory, with no choices to pick from. Twelve right passes, and the officer stops once you have 12 right or 9 wrong.",
     "Here you take the same test: 20 questions drawn at random from all 128. Aim for 16, so a bad day still passes. A week later you take a second one, on other questions."
@@ -19,7 +21,7 @@ FC.lesson("civics", {
       ] }
   ],
   check: {
-    items: { draw: { strands: Array.from({ length: 128 }, (_, i) => "q" + (i + 1)), n: 20 } },
+    items: { draw: [{ strands: Array.from({ length: 128 }, (_, i) => "q" + (i + 1)), n: 20 }] },
     spoken: true, retest: 7, feedback: "at-end",
     pass: [{ right: { min: 16 } }]
   }

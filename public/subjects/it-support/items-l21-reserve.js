@@ -14,7 +14,7 @@
 
   FC.items('it-support', [
     // ----- cmd-net -----
-    chat('l21-r-netstat-pid', NET, 'Dev, Security',
+    chat('l21-r-netstat-pid', NET, 'Humphrey, Security',
       'The antivirus flagged a connection from this computer to 203.0.113.77 and I need the program behind it. I have the netstat output, but it only shows addresses.',
       'Which switch adds the process ID of each connection?', [
         ['netstat -ano, where the o adds the process ID', true, 'The process ID can then be looked up in Task Manager to name the program.'],
@@ -34,7 +34,7 @@
       'netstat lists the connections (ESTABLISHED) and the ports waiting for one (LISTENING). -a shows all, -n shows numbers, -o adds the process ID.'),
 
     // ----- cmd-disk -----
-    chat('l21-r-format-q', DSK, 'Gil, Depot',
+    chat('l21-r-format-q', DSK, 'Rudy, Depot',
       'I have to reformat a 4 GB USB stick for reuse. I typed format E: and it is taking a long while. A colleague says there is a faster switch.',
       'Which switch does a quick format?', [
         ['/q, which skips the full check of the drive', true, 'A quick format writes the new file system without scanning every sector.'],
@@ -44,7 +44,7 @@
       'format /q is the quick format: the drive looks empty but the old data stays recoverable. Without /q the drive is overwritten with zeros. Either way the drive letter is confirmed first.'),
     recall('l21-r-chkdsk-r', DSK, 'Which chkdsk switch looks for bad sectors, recovers what it can read, and includes the fixing that /f does? Type the switch.', ['[chkdsk] /r'],
       '/r locates bad sectors and recovers readable data. It includes /f and takes a long time, so a drive that may be failing is copied first.'),
-    chat('l21-r-diskpart-after', DSK, 'Una, Depot',
+    chat('l21-r-diskpart-after', DSK, 'Gavin, Depot',
       'I selected the right disk in diskpart and typed clean. Now Disk Management shows the disk as Not Initialized. I want it to be a usable E: drive again.',
       'What comes next in diskpart?', [
         ['create partition primary, format fs=ntfs quick, assign letter=E', true, 'A cleaned disk has no partition. It gets one, a file system, and a letter.'],
@@ -54,7 +54,7 @@
       'After clean, Windows sees no partitions (the data itself is not erased). create partition primary makes a partition across it, format puts a file system on it, and assign gives it a letter.'),
 
     // ----- cmd-files -----
-    chat('l21-r-md', FIL, 'Pat, Admin',
+    chat('l21-r-md', FIL, 'Darcy, Admin',
       'I need the folders C:\\Reports\\2026\\March made before a user arrives. None of the three exists yet.',
       'Which command makes all three?', [
         ['md C:\\Reports\\2026\\March, which also makes the missing folders', true, 'md makes the folder and any missing folders along the path.'],
@@ -74,17 +74,17 @@
       'robocopy, robust file copy, is built for folders: it retries, copies only the changes on a second run, and reports copied, skipped, failed and extra.'),
 
     // ----- cmd-admin -----
-    chat('l21-r-sfc-admin', ADMIN, 'Ben, Marketing',
+    chat('l21-r-sfc-admin', ADMIN, 'Lemuel, Marketing',
       'I typed sfc /scannow as you told me. It printed: You must be an administrator running a console session in order to use the sfc utility.',
-      'What does Ben do?', [
+      'What does Lemuel do?', [
         ['Open Command Prompt with Run as administrator and retype it', true, 'sfc changes protected files, so it needs an administrator window.'],
         ['Type SFC /SCANNOW in capital letters instead', MIS, 'The message is about rights, not capital letters.'],
-        ['Run chkdsk C: /f first, which gives Ben the rights', ADM, 'chkdsk needs the same administrator window. It gives no rights.'],
+        ['Run chkdsk C: /f first, which gives Lemuel the rights', ADM, 'chkdsk needs the same administrator window. It gives no rights.'],
         ['Add sfc through Windows Features, as it is not installed', CAUSE, 'sfc is part of Windows. The message says the rights are the problem.']],
       'An ordinary window cannot run commands that change system files or disks. The title bar of an administrator window says Administrator: Command Prompt.'),
     recall('l21-r-whoami', ADMIN, 'Which command prints the account you are signed in as, such as corp\\dana?', ['whoami'],
       'whoami prints the signed-in account, with its domain or computer name first. whoami /groups lists the groups it belongs to.'),
-    chat('l21-r-winver', ADMIN, 'Kim, Reception',
+    chat('l21-r-winver', ADMIN, 'Talia, Reception',
       'The software installer says it needs Windows version 24H2 or newer. I do not know which one my computer has.',
       'Which command shows the version?', [
         ['winver, which opens a window with the version and build', true, 'winver shows the version number the installer needs.'],

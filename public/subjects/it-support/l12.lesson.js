@@ -4,10 +4,10 @@
 // whole; IT4, IT8: cut with the cheapest check, a part known to work; one fault at a time). Plan: docs/subjects/it-support/plan.md, lesson 12.
 // One worked ticket (Dina's projector: the cheapest cut first, a favorite ruled out by a swap, then the next link); four groups; and the check: eight new questions, no help, 7 of 8 to pass.
 FC.lesson('it-support', {
-  id: 'l12', part: 'cables', title: 'Cables, connectors and screens', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (cable and connector for the job; display kinds and numbers; display and projector symptoms with the first check).' }],
+  id: 'l12', part: 'cables', title: 'Cables, connectors and screens', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (cable and connector for the job; display kinds and numbers; display and projector symptoms with the first check).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Dina has ten minutes before class. The projector in room 4 says No signal. She has a cable, an adapter and a laptop with only USB-C ports, and no idea which part is wrong.',
+    'Dina has ten minutes before class. The projector in room 4 says No signal. They have a cable, an adapter and a laptop with only USB-C ports, and no idea which part is wrong.',
     'A picture travels a path: the computer’s port, the cable and any adapter, the screen’s input, the panel. You learn what each cable and plug carries, how to choose one, and where on that path each screen problem sits, with its cheap check.'],
   flow: [
     { title: 'Start from the job',

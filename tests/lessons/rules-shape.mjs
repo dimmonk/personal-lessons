@@ -432,11 +432,19 @@ function lessonProblems(lesson, ctx) {
   problems.push(...ownAnswersProblems(lesson, where, ctx));
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
-  else if ('gen' in check.items.draw) problems.push(...drawGroupProblems(check.items.draw, `${where}.check`, ctx));
-  else check.items.draw.strands.filter(s => !subject.meta.strands.some(x => x.id === s)).forEach(s => problems.push(`${where}.check: "${s}" is not a strand of the subject`));
+  else if (Array.isArray(check.items.draw)) problems.push(...drawListProblems(check.items.draw, `${where}.check`, subject));
+  else problems.push(...drawGroupProblems(check.items.draw, `${where}.check`, ctx));
   if (check.seconds !== undefined && !subject.meta.timed) problems.push(`${where}.check has seconds in a subject that does not time its items`);
   if (check.recall && !Array.isArray(check.items)) problems.push(`${where}.check asks its questions again, and a check that is drawn at random has no questions to ask again`);
   return problems;
+}
+// A check drawn from groups of topics: each group holds at least one question, names strands the subject has, and no strand is in two groups
+function drawListProblems(draw, where, subject) {
+  const named = draw.flatMap(g => g.strands);
+  return [...draw.flatMap((g, i) => [
+    ...(g.n < 1 ? [`${where}: draw group ${i + 1} draws ${g.n}, and a group draws at least 1`] : []),
+    ...g.strands.filter(id => !subject.meta.strands.some(x => x.id === id)).map(id => `${where}: "${id}" is not a strand of the subject`)]),
+  ...duplicatesOf(named).map(id => `${where}: the strand "${id}" is in more than one draw group`)];
 }
 // A check drawn from a place group: the group is one of the subject's, and the split and the places it keeps to a form are the group's to ask
 function drawGroupProblems(draw, where, ctx) {

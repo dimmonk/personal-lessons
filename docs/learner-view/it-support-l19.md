@@ -1,6 +1,6 @@
 # IT Help Desk: Mobile problems
 
-Revision 1, draft (the screen carries the draft line). Part: Mobile problems. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, draft (the screen carries the draft line). Part: Mobile problems. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -138,7 +138,7 @@ Help on screen: the words that decide it are marked.
 
 **What do you tell Finn first?**
 (the options come in an order that depends on the seed of the question)
-- Unplug it and stop using it; do not charge it until it is checked (right)
+- Unplug it and stop using it, and do not charge it until it is checked (right)
 - Leave it on the charger until it is full, then bring it to the desk — if chosen: Charging a swollen battery adds heat and pressure. It is the one thing to stop at once.
 - Press the screen back down gently so that it sits flat on the frame — if chosen: Pushing on a swollen battery can puncture it. The screen is lifting because of the battery under it.
 - Restart the tablet to see whether the screen settles down again — if chosen: A restart cannot shrink a swollen battery, and it keeps the tablet running while it is unsafe.
@@ -147,9 +147,9 @@ After the answer: the deciding words are marked. Reason: A lifting screen or puf
 
 #### Item 2
 
-A chat, with its history: "Ben, Warehouse", Chat with the help desk.
+A chat, with its history: "Astrid, Warehouse", Chat with the help desk.
 
-> (Ben, Warehouse, at the left) **Since I dropped the phone, the picture is perfect but the screen answers touches in the wrong place. Tapping the top of the screen opens things near the middle.**
+> (Astrid, Warehouse, at the left) **Since I dropped the phone, the picture is perfect but the screen answers touches in the wrong place. Tapping the top of the screen opens things near the middle.**
 
 The five links: the body, the connections, the system, the app, what was installed.
 
@@ -158,7 +158,7 @@ Help on screen: the words that decide it are marked.
 **Which link and which cheap test?**
 (the options come in an order that depends on the seed of the question)
 - The body: the touch layer. Try the home screen and two other apps (right)
-- The app: delete the app Ben was using and install it again from the store — if chosen: It happens everywhere on the screen, not in one app, so one app is not the place to look.
+- The app: delete the app Astrid was using and install it again from the store — if chosen: It happens everywhere on the screen, not in one app, so one app is not the place to look.
 - What was installed: run a malware scan on the phone, then check its apps — if chosen: Nothing is installed that is odd, and a drop followed by bad touches is physical.
 - The system: install every waiting update, then restart the phone — if chosen: An update does not mend a damaged touch layer, and it changes the phone before the test is done.
 
@@ -190,9 +190,9 @@ After the answer: the deciding words are marked. Reason: Wi-Fi against cellular 
 
 #### Item 4
 
-A chat, with its history: "Sam, Delivery", Chat with the help desk.
+A chat, with its history: "Hyun, Delivery", Chat with the help desk.
 
-> (Sam, Delivery, at the left) **Since I got a free game last week, ads cover my screen even outside the game, and a box says my phone has a virus and I must tap to clean it. My data runs out in ten days now.**
+> (Hyun, Delivery, at the left) **Since I got a free game last week, ads cover my screen even outside the game, and a box says my phone has a virus and I must tap to clean it. My data runs out in ten days now.**
 
 The game did not come from the phone’s official store. A friend sent a link.
 
@@ -200,10 +200,10 @@ Help on screen: the words that decide it are marked.
 
 **Which link, and what first?**
 (the options come in an order that depends on the seed of the question)
-- An app from outside the store: save Sam’s files, switch on airplane mode, then remove the game (right)
-- The system: install the waiting update and the next one, and see if the ads stop — if chosen: An update will not remove an app Sam installed, and the phone stays online and leaking in the meantime.
-- The connections: forget the Wi-Fi network, rejoin it and test the ads — if chosen: Ads that appear on every screen and a fast data use come from something on the phone, not from the way it joined the Wi-Fi.
-- The body: have the battery checked — if chosen: Nothing about the hardware has been shown. The signs are a malicious app’s.
+- An app from outside the store: save Hyun’s files, switch on airplane mode, then remove the game (right)
+- The system: save Hyun’s files, install the waiting update and the next one, and see if the ads stop — if chosen: An update will not remove an app Hyun installed, and the phone stays online and leaking in the meantime.
+- The connections: note Hyun’s Wi-Fi name, forget the network, rejoin it and test the ads — if chosen: Ads that appear on every screen and a fast data use come from something on the phone, not from the way it joined the Wi-Fi.
+- The body: have Hyun’s battery checked, then charge it to full and watch the ads — if chosen: Nothing about the hardware has been shown. The signs are a malicious app’s.
 
 After the answer: the deciding words are marked. Reason: Many ads, a fake security warning and fast data use after installing an app from outside the store are the signs of a malicious app. Cut the phone off the network first, remove the app, then scan, change passwords from another device and report it.
 
@@ -252,9 +252,9 @@ After the answer: the deciding words are marked. Reason: Liquid damage is handle
 
 #### Item 7
 
-A chat, with its history: "Rae, Dispatch", Chat with the help desk.
+A chat, with its history: "Kyle, Dispatch", Chat with the help desk.
 
-> (Rae, Dispatch, at the left) My phone drops from 100% to dead in about two hours and shuts off at 30%. I turned off everything I could.
+> (Kyle, Dispatch, at the left) My phone drops from 100% to dead in about two hours and shuts off at 30%. I turned off everything I could.
 
 A plain table, "Settings, Battery":
 
@@ -311,11 +311,11 @@ After the answer: the deciding words are marked. Reason: No autorotate in every 
 
 #### Item 10
 
-A chat, with its history: "Dee, Service", Chat with the help desk.
+A chat, with its history: "Craig, Service", Chat with the help desk.
 
-> (Dee, Service, at the left) My Bluetooth headset worked fine until this morning. Now the phone says it is connected, but no sound plays through it.
+> (Craig, Service, at the left) My Bluetooth headset worked fine until this morning. Now the phone says it is connected, but no sound plays through it.
 
-A plain table, "Dee’s tests":
+A plain table, "Craig’s tests":
 
 > Test  |  Result  (the column heads)
 > Headset with a laptop  |  Works
@@ -334,11 +334,11 @@ After the answer: the deciding words are marked. Reason: The headset works with 
 
 #### Item 11
 
-A chat, with its history: "Cy, Plant", Chat with the help desk.
+A chat, with its history: "Martina, Plant", Chat with the help desk.
 
-> (Cy, Plant, at the left) My Android phone restarts by itself three or four times a day, with no warning. It started about two weeks ago.
+> (Martina, Plant, at the left) My Android phone restarts by itself three or four times a day, with no warning. It started about two weeks ago.
 
-A plain table, "What Cy has tried":
+A plain table, "What Martina has tried":
 
 > Test  |  Result  (the column heads)
 > Normal use  |  Restarts about 4 times a day
@@ -356,9 +356,9 @@ After the answer: the deciding words are marked. Reason: Safe mode on Android ru
 
 #### Item 12
 
-A chat, with its history: "Lou, Sales", Chat with the help desk.
+A chat, with its history: "Gordon, Sales", Chat with the help desk.
 
-> (Lou, Sales, at the left) I got a text that I have used 90% of my data for the month, and it is only the 8th. I only use email and maps.
+> (Gordon, Sales, at the left) I got a text that I have used 90% of my data for the month, and it is only the 8th. I only use email and maps.
 
 A plain table, "Settings, Mobile data (this month)":
 
@@ -378,9 +378,9 @@ After the answer: the deciding words are marked. Reason: High network traffic, a
 
 #### Item 13
 
-A chat, with its history: "Pam, IT", Chat with the help desk.
+A chat, with its history: "Esther, IT", Chat with the help desk.
 
-> (Pam, IT, at the left) A user in Sales wants a paid app for free. A website sells a file that the user installs by turning on “allow installs from unknown sources”. The user says it is just one app.
+> (Esther, IT, at the left) A user in Sales wants a paid app for free. A website sells a file that the user installs by turning on “allow installs from unknown sources”. The user says it is just one app.
 
 **What do you tell the user?**
 (the options come in an order that depends on the seed of the question)
@@ -447,29 +447,29 @@ After the answer: the deciding words are marked. Reason: Ghost touches are a dig
 
 #### Item 17
 
-A chat, with its history: "Hana, Sales", Chat with the help desk.
+A chat, with its history: "Sonia, Sales", Chat with the help desk.
 
-> (Hana, Sales, at the left) Pop-up ads keep appearing in my phone’s browser with a message about winning a prize. Nothing has changed with my apps, and the data use is normal. It began after I visited a coupon site and tapped “Allow notifications”.
+> (Sonia, Sales, at the left) Pop-up ads keep appearing in my phone’s browser with a message about winning a prize. Nothing has changed with my apps, and the data use is normal. It began after I visited a coupon site and tapped “Allow notifications”.
 
 **What is the likely cause, and the first change?**
 (the options come in an order that depends on the seed of the question)
 - The coupon site now sends notifications. Remove its permission (right)
 - A malicious app is hiding on the phone, so wipe the phone at once — if chosen: No new app, no data spike and nothing outside the browser. A wipe is far more than the signs show.
 - The phone was rooted by the site, so take the phone off the network — if chosen: Nothing shows the phone was rooted. The only sign is the browser’s ads.
-- The data plan is too small, so move Hana to a bigger plan — if chosen: Data use is normal. A bigger plan changes nothing about what the site can send.
+- The data plan is too small, so move Sonia to a bigger plan — if chosen: Data use is normal. A bigger plan changes nothing about what the site can send.
 
 After the answer: the deciding words are marked. Reason: Many ads can be a malicious app, but here the signs are only in the browser and a site was allowed to send notifications. Remove that permission, then clear the browser’s data as the next change, and watch; if ads appear elsewhere, think of an app.
 
 #### Item 18
 
-A chat, with its history: "Ian, Operations", Chat with the help desk.
+A chat, with its history: "Tabitha, Operations", Chat with the help desk.
 
-> (Ian, Operations, at the left) The store will not let me install the new work app. It says “This app requires Android 14 or later”. My phone is four years old.
+> (Tabitha, Operations, at the left) The store will not let me install the new work app. It says “This app requires Android 14 or later”. My phone is four years old.
 
 A plain table, "What the phone shows":
 
 > Line  |  Value  (the column heads)
-> Operating system  |  Version 11, with 14 offered as an update
+> Operating system  |  Version 13, with 14 offered as an update
 > Storage  |  71 GB free
 > Wi-Fi  |  Fine
 
@@ -587,9 +587,9 @@ To pass:
 
 #### Check question 24
 
-A chat, with its history: "Uma, Legal", Chat with the help desk.
+A chat, with its history: "Niamh, Legal", Chat with the help desk.
 
-> (Uma, Legal, at the left) I dropped my phone and the glass is cracked across the middle. The picture is fine at the top, but the bottom third does not answer touches at all, and I have two weeks of site photos on it that are not saved anywhere.
+> (Niamh, Legal, at the left) I dropped my phone and the glass is cracked across the middle. The picture is fine at the top, but the bottom third does not answer touches at all, and I have two weeks of site photos on it that are not saved anywhere.
 
 **What is the order of the work?**
 (the options come in an order that depends on the seed of the question)
@@ -602,9 +602,9 @@ After the answer: the deciding words are marked. Reason: A cracked screen with a
 
 #### Check question 25
 
-A chat, with its history: "Vic, Surveyor", Chat with the help desk.
+A chat, with its history: "Samir, Surveyor", Chat with the help desk.
 
-> (Vic, Surveyor, at the left) My phone keeps warning “too hot, cooling down” when I use it for navigation in the truck. It sits in the cradle on the dashboard, in the sun, plugged in. It cools off when I get inside the office.
+> (Samir, Surveyor, at the left) My phone keeps warning “too hot, cooling down” when I use it for navigation in the truck. It sits in the cradle on the dashboard, in the sun, plugged in. It cools off when I get inside the office.
 
 A plain table, "Settings, Battery":
 
@@ -624,9 +624,9 @@ After the answer: the deciding words are marked. Reason: Overheating from heat i
 
 #### Check question 26
 
-A chat, with its history: "Wes, Sales", Chat with the help desk.
+A chat, with its history: "Shona, Sales", Chat with the help desk.
 
-> (Wes, Sales, at the left) I just landed. My phone shows no bars and nothing loads, not on the airport Wi-Fi either. Other people around me have signal.
+> (Shona, Sales, at the left) I just landed. My phone shows no bars and nothing loads, not on the airport Wi-Fi either. Other people around me have signal.
 
 A plain table, "What the phone shows":
 
@@ -683,9 +683,9 @@ A plain table, "Settings, Mobile data (this month)":
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
 - Back up Yun’s files, go offline, remove the app, take root off, then run the company scan (right)
-- Run the scan and report the phone clean if it finds nothing — if chosen: The 14 GB app is still there and root is still on. The signs are already enough.
-- Remove only the app, and leave the phone rooted for Yun’s other apps — if chosen: The app is removed, but the lowered protections stay, and the next unofficial app can do the same.
-- Factory reset the phone at once without saving anything — if chosen: It erases Yun’s files. Back up what is needed first.
+- Run the scan, then report Yun’s phone clean if it finds nothing — if chosen: The 14 GB app is still there and root is still on. The signs are already enough.
+- Remove only the app, run the scan, and leave the phone rooted for Yun’s other apps — if chosen: The app is removed, but the lowered protections stay, and the next unofficial app can do the same.
+- Factory reset the phone at once, without saving Yun’s files first — if chosen: It erases Yun’s files. Back up what is needed first.
 
 After the answer: the deciding words are marked. Reason: A rooted phone with ads, slowness and a data warning and an app from outside the store is a malicious app on a phone with the protections removed. The app goes, root goes too, Yun’s files are saved first, and passwords are changed from another device.
 
@@ -698,9 +698,9 @@ A chat, with its history: "Stan, Finance", Chat with the help desk.
 **Which first move fits?**
 (the options come in an order that depends on the seed of the question)
 - Save Stan’s files, go offline, remove the PDF reader, then change passwords from another device (right)
-- Change the passwords from the same phone — if chosen: The app may read what is typed on that phone. The new passwords would reach it too.
-- Reply to the clients and tell them to ignore the texts Stan never sent — if chosen: Nothing has stopped them. The app is still running and can send more.
-- Update the PDF reader — if chosen: The reader came from a pop-up and is the likely source. An update from the same source is no fix.
+- Save Stan’s files, then change the passwords from the same phone and update the PDF reader — if chosen: The app may read what is typed on that phone, so the new passwords would reach it too, and an update from the same source is no fix.
+- Go offline, then reply to the clients and tell them to ignore the texts Stan never sent — if chosen: Nothing has stopped them. The app is still running and can send more.
+- Update the PDF reader, then restart Stan’s phone and watch whether the texts stop — if chosen: The reader came from a pop-up and is the likely source. An update from the same source is no fix.
 
 After the answer: the deciding words are marked. Reason: Leaked personal data and messages the user did not send after an app from a pop-up are signs of a malicious app. Airplane mode and removing the app come first, then passwords change from another device, the clients are warned and the desk is told.
 

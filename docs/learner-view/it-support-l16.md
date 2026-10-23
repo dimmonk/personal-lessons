@@ -1,10 +1,10 @@
 # IT Help Desk: Network hardware, connections and tools
 
-Revision 1, live. Part: Network hardware, connections and tools. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Network hardware, connections and tools. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Ravi in Sales moved to desk 14. He plugged his laptop into the wall jack and the light by its network port stays off. Between his laptop and the internet are seven or eight parts in a row, and any one could be the fault.
+Heath in Sales moved to desk 14. They plugged their laptop into the wall jack and the light by its network port stays off. Between their laptop and the internet are seven or eight parts in a row, and any one could be the fault.
 A good technician knows what each part does, so a missing light points at one stretch of the path. Here you learn the devices, the kinds of line and network, the servers, and the cable tools.
 
 ## Step 1: The path from a desk to the internet
@@ -116,9 +116,9 @@ The right line: Walk the path and find the first part that is not doing its job:
 
 ## Step 8: A worked example
 
-A chat, with its history: "Ravi, Sales", Chat with the help desk.
+A chat, with its history: "Heath, Sales", Chat with the help desk.
 
-> (Ravi, Sales, at the left) I moved to desk 14. I plugged my laptop into the wall jack and I have no network. The little light by the laptop’s network port is off. My first week, please help.
+> (Heath, Sales, at the left) I moved to desk 14. I plugged my laptop into the wall jack and I have no network. The little light by the laptop’s network port is off. My first week, please help.
 
 A plain table, "The path from desk 14":
 
@@ -130,7 +130,7 @@ A plain table, "The path from desk 14":
 > This desk’s rule  |  Changes to switch settings belong to the network team. Hand on what you found.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**You plug Ravi’s laptop into the working jack at desk 15 and the light comes on. What does that show?**
+**You plug Heath’s laptop into the working jack at desk 15 and the light comes on. What does that show?**
 (the options come in an order that depends on the seed of the question)
 - The laptop’s network card is not the cause.
 - The wall jack at desk 14 is the broken part.
@@ -153,9 +153,9 @@ Then the answer: The laptop’s network card is not the cause. The light is off 
 
 #### Item 1
 
-A chat, with its history: "Mei, Office manager", Chat with the help desk.
+A chat, with its history: "Harold, Office manager", Chat with the help desk.
 
-> (Mei, Office manager, at the left) **At 9:10 all twelve computers and the printer on the third floor lost the network at the same moment. The second and fourth floors are fine. Every cable on the third floor ends in one box in the closet, and its lights are all dark. Where do you look first?**
+> (Harold, Office manager, at the left) **At 9:10 all twelve computers and the printer on the third floor lost the network at the same moment. The second and fourth floors are fine. Every cable on the third floor ends in one box in the closet, and its lights are all dark. Where do you look first?**
 
 Help on screen: the words that decide it are marked.
 
@@ -187,9 +187,9 @@ After the answer: the deciding words are marked. Reason: The wired side works, a
 
 #### Item 3
 
-A chat, with its history: "Ola, Facilities", Chat with the help desk.
+A chat, with its history: "Maureen, Facilities", Chat with the help desk.
 
-> (Ola, Facilities, at the left) **We want a Wi-Fi access point on the ceiling of the hall. A network cable runs up there, but there is no power outlet. The closet switch is a managed one with no PoE. Can that one cable bring the power too?**
+> (Maureen, Facilities, at the left) **We want a Wi-Fi access point on the ceiling of the hall. A network cable runs up there, but there is no power outlet. The closet switch is a managed one with no PoE. Can that one cable bring the power too?**
 
 Help on screen: the words that decide it are marked.
 
@@ -204,9 +204,9 @@ After the answer: the deciding words are marked. Reason: The ceiling has a netwo
 
 #### Item 4
 
-A chat, with its history: "Cal, Farm office", Chat with the help desk.
+A chat, with its history: "Elif, Farm office", Chat with the help desk.
 
-> (Cal, Farm office, at the left) **Our farm office is far out of town. There is no cable TV line and no phone line, and there is no cell signal at the house. We tried satellite, but the delay made video calls unusable. A provider’s tower 5 miles off has a clear view of our roof. What internet can we get?**
+> (Elif, Farm office, at the left) **Our farm office is far out of town. There is no cable TV line and no phone line, and there is no cell signal at the house. We tried satellite, but the delay made video calls unusable. A provider’s tower 5 miles off has a clear view of our roof. What internet can we get?**
 
 Help on screen: the words that decide it are marked.
 
@@ -221,9 +221,9 @@ After the answer: the deciding words are marked. Reason: Each fact removes a kin
 
 #### Item 5
 
-A chat, with its history: "Dee, New hire", Chat with the help desk.
+A chat, with its history: "Clark, New hire", Chat with the help desk.
 
-> (Dee, New hire, at the left) **The plastic clip on the end of a 20-foot network cable snapped off, so the cable falls out of the port. The cable and its wires look fine. What is the cheapest fix that keeps this cable?**
+> (Clark, New hire, at the left) **The plastic clip on the end of a 20-foot network cable snapped off, so the cable falls out of the port. The cable and its wires look fine. What is the cheapest fix that keeps this cable?**
 
 Help on screen: the words that decide it are marked.
 
@@ -238,9 +238,9 @@ After the answer: the deciding words are marked. Reason: Only the plug is broken
 
 #### Item 6
 
-A chat, with its history: "Wes, Operations", Chat with the help desk.
+A chat, with its history: "Annette, Operations", Chat with the help desk.
 
-> (Wes, Operations, at the left) **A new hire plugs in his laptop. The link light is on, but ipconfig shows an address starting 169.254. The computers already at their desks keep working. Which server role is not answering new devices?**
+> (Annette, Operations, at the left) **A new hire plugs in their laptop. The link light is on, but ipconfig shows an address starting 169.254. The computers already at their desks keep working. Which server role is not answering new devices?**
 
 Help on screen: the words that decide it are marked.
 
@@ -261,9 +261,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 7
 
-A chat, with its history: "Ned, Intern", Chat with the help desk.
+A chat, with its history: "Maeve, Intern", Chat with the help desk.
 
-> (Ned, Intern, at the left) Jack B-22 is dead. In the closet, its patch cable lights no port on the switch. When I move the same patch cable to another switch port, the light comes on at once. Where is the fault?
+> (Maeve, Intern, at the left) Jack B-22 is dead. In the closet, its patch cable lights no port on the switch. When I move the same patch cable to another switch port, the light comes on at once. Where is the fault?
 
 **Where is the fault?**
 (the options come in an order that depends on the seed of the question)
@@ -276,9 +276,9 @@ After the answer: the deciding words are marked. Reason: A light in the second p
 
 #### Item 8
 
-A chat, with its history: "Pia, Security", Chat with the help desk.
+A chat, with its history: "Dmitri, Security", Chat with the help desk.
 
-> (Pia, Security, at the left) A parking-lot camera lists its power need as PoE+ (802.3at). The closet switch ports are basic PoE (802.3af) and we do not want to replace the switch. What do you add?
+> (Dmitri, Security, at the left) A parking-lot camera lists its power need as PoE+ (802.3at). The closet switch ports are basic PoE (802.3af) and we do not want to replace the switch. What do you add?
 
 **What do you add?**
 (the options come in an order that depends on the seed of the question)
@@ -291,9 +291,9 @@ After the answer: the deciding words are marked. Reason: The switch has no PoE+ 
 
 #### Item 9
 
-A chat, with its history: "Bo, Dock office", Chat with the help desk.
+A chat, with its history: "Nathaniel, Dock office", Chat with the help desk.
 
-> (Bo, Dock office, at the left) Our dock office uses a satellite dish. A speed test shows 90 Mbps down, which is good, but video calls lag and echo. The same test shows a delay of 600 milliseconds. Why?
+> (Nathaniel, Dock office, at the left) Our dock office uses a satellite dish. A speed test shows 90 Mbps down, which is good, but video calls lag and echo. The same test shows a delay of 600 milliseconds. Why?
 
 **Why would that happen?**
 (the options come in an order that depends on the seed of the question)
@@ -321,9 +321,9 @@ After the answer: the deciding words are marked. Reason: Nine buildings across o
 
 #### Item 11
 
-A chat, with its history: "Gus, Cabling crew", Chat with the help desk.
+A chat, with its history: "Kamal, Cabling crew", Chat with the help desk.
 
-> (Gus, Cabling crew, at the left) Twenty-four unlabeled cables come out of the wall to the patch panel. All of them are fine. I need to know which one goes to jack B-22. What do I use?
+> (Kamal, Cabling crew, at the left) Twenty-four unlabeled cables come out of the wall to the patch panel. All of them are fine. I need to know which one goes to jack B-22. What do I use?
 
 **Which tool?**
 (the options come in an order that depends on the seed of the question)
@@ -336,9 +336,9 @@ After the answer: the deciding words are marked. Reason: The cables are all good
 
 #### Item 12
 
-A chat, with its history: "Una, Desktop team", Chat with the help desk.
+A chat, with its history: "Nkosana, Desktop team", Chat with the help desk.
 
-> (Una, Desktop team, at the left) I made a patch cable myself. It shows a link, but copies keep dropping. I think two wires are in the wrong order or one is not touching its pin. Which tool shows that?
+> (Nkosana, Desktop team, at the left) I made a patch cable myself. It shows a link, but copies keep dropping. I think two wires are in the wrong order or one is not touching its pin. Which tool shows that?
 
 **Which tool?**
 (the options come in an order that depends on the seed of the question)
@@ -366,9 +366,9 @@ After the answer: the deciding words are marked. Reason: Copies of popular pages
 
 #### Item 14
 
-A chat, with its history: "Abe, Facilities", Chat with the help desk.
+A chat, with its history: "Herbert, Facilities", Chat with the help desk.
 
-> (Abe, Facilities, at the left) A new camera needs 20 watts at the camera. The closet has two ports: basic PoE, up to 15.4 watts at the port, and PoE+, up to 30 watts at the port. Which port do you use?
+> (Herbert, Facilities, at the left) A new camera needs 20 watts at the camera. The closet has two ports: basic PoE, up to 15.4 watts at the port, and PoE+, up to 30 watts at the port. Which port do you use?
 
 **Which port?**
 (the options come in an order that depends on the seed of the question)
@@ -381,9 +381,9 @@ After the answer: the deciding words are marked. Reason: The camera needs 20 wat
 
 #### Item 15
 
-A chat, with its history: "Zed, Security", Chat with the help desk.
+A chat, with its history: "Colin, Security", Chat with the help desk.
 
-> (Zed, Security, at the left) Our new in-house app on port 8443 does not open from the other building, but ping to its server works. The app is running. Which part on the path checks traffic by port number against rules?
+> (Colin, Security, at the left) Our new in-house app on port 8443 does not open from the other building, but ping to its server works. The app is running. Which part on the path checks traffic by port number against rules?
 
 **Which part do you check?**
 (the options come in an order that depends on the seed of the question)
@@ -396,9 +396,9 @@ After the answer: the deciding words are marked. Reason: Ping works, so the path
 
 #### Item 16
 
-A chat, with its history: "Joy, Cabling crew", Chat with the help desk.
+A chat, with its history: "Verna, Cabling crew", Chat with the help desk.
 
-> (Joy, Cabling crew, at the left) Jack B-40 is dead. A cable tester shows wire 3 open between the jack and the panel. I have not touched either end yet. What is the cheapest next step?
+> (Verna, Cabling crew, at the left) Jack B-40 is dead. A cable tester shows wire 3 open between the jack and the panel. I have not touched either end yet. What is the cheapest next step?
 
 **What do you do?**
 (the options come in an order that depends on the seed of the question)
@@ -447,9 +447,9 @@ After the answer: the deciding words are marked. Reason: The question is about t
 
 #### Item 19
 
-A chat, with its history: "Hal, Server room", Chat with the help desk.
+A chat, with its history: "Aileen, Server room", Chat with the help desk.
 
-> (Hal, Server room, at the left) The network port on a server may be dead. Before we order a new card, I want to test the port by itself, with no cable and no switch in the way. What do I use?
+> (Aileen, Server room, at the left) The network port on a server may be dead. Before we order a new card, I want to test the port by itself, with no cable and no switch in the way. What do I use?
 
 **Which tool?**
 (the options come in an order that depends on the seed of the question)
@@ -477,9 +477,9 @@ After the answer: the deciding words are marked. Reason: Watching a copy of the 
 
 #### Item 21
 
-A chat, with its history: "Kim, Security", Chat with the help desk.
+A chat, with its history: "Malcolm, Security", Chat with the help desk.
 
-> (Kim, Security, at the left) The VPN, the office Wi-Fi and the switches each keep their own list of accounts. When someone leaves we remove them in three places, and after last night’s break-in we could not tell who had signed in. One server should do all of it. Which role?
+> (Malcolm, Security, at the left) The VPN, the office Wi-Fi and the switches each keep their own list of accounts. When someone leaves we remove them in three places, and after last night’s break-in we could not tell who had signed in. One server should do all of it. Which role?
 
 **Which role?**
 (the options come in an order that depends on the seed of the question)
@@ -492,9 +492,9 @@ After the answer: the deciding words are marked. Reason: One place to check who 
 
 #### Item 22
 
-A chat, with its history: "Lia, Network team", Chat with the help desk.
+A chat, with its history: "Zainab, Network team", Chat with the help desk.
 
-> (Lia, Network team, at the left) We have to turn off the unused ports and put the guest computers on a separate group of ports from the accounting computers. Which of these can do that?
+> (Zainab, Network team, at the left) We have to turn off the unused ports and put the guest computers on a separate group of ports from the accounting computers. Which of these can do that?
 
 **Which switch?**
 (the options come in an order that depends on the seed of the question)
@@ -507,9 +507,9 @@ After the answer: the deciding words are marked. Reason: Turning off ports and s
 
 #### Item 23
 
-A chat, with its history: "Ruth, Network team", Chat with the help desk.
+A chat, with its history: "Stella, Network team", Chat with the help desk.
 
-> (Ruth, Network team, at the left) The office printer gets a different IP address now and then. We want to recognize it by something that stays fixed on the printer’s own network card, and that the switch also learns. What is that?
+> (Stella, Network team, at the left) The office printer gets a different IP address now and then. We want to recognize it by something that stays fixed on the printer’s own network card, and that the switch also learns. What is that?
 
 **What is it?**
 (the options come in an order that depends on the seed of the question)
@@ -522,9 +522,9 @@ After the answer: the deciding words are marked. Reason: The thing that stays wh
 
 #### Item 24
 
-A chat, with its history: "Ben, Cabling crew", Chat with the help desk.
+A chat, with its history: "Cedric, Cabling crew", Chat with the help desk.
 
-> (Ben, Cabling crew, at the left) Jack B-31 is dead. I swapped the patch cable at the panel and then moved the laptop to another jack, and only B-31 fails. A cable tester found wire 6 open in the wall cable. I punched wire 6 down again at the panel and at a new jack, and tested again: wire 6 is still open.
+> (Cedric, Cabling crew, at the left) Jack B-31 is dead. I swapped the patch cable at the panel and then moved the laptop to another jack, and only B-31 fails. A cable tester found wire 6 open in the wall cable. I punched wire 6 down again at the panel and at a new jack, and tested again: wire 6 is still open.
 
 **What do you do next?**
 (the options come in an order that depends on the seed of the question)
@@ -537,9 +537,9 @@ After the answer: the deciding words are marked. Reason: Every cheaper step has 
 
 #### Item 25
 
-A chat, with its history: "Quin, Data center", Chat with the help desk.
+A chat, with its history: "Vernon, Data center", Chat with the help desk.
 
-> (Quin, Data center, at the left) We have six servers that share one big pool of disks over a separate fast network of their own. Nobody’s desk computer is on it. What kind of network is that?
+> (Vernon, Data center, at the left) We have six servers that share one big pool of disks over a separate fast network of their own. Nobody’s desk computer is on it. What kind of network is that?
 
 **Which kind?**
 (the options come in an order that depends on the seed of the question)
@@ -552,9 +552,9 @@ After the answer: the deciding words are marked. Reason: A separate fast network
 
 #### Item 26
 
-A chat, with its history: "Rae, Accounting", Chat with the help desk.
+A chat, with its history: "Alan, Accounting", Chat with the help desk.
 
-> (Rae, Accounting, at the left) This morning the shared drive S: is gone from every computer in accounting. Web pages open, email arrives, printing works, and nobody has trouble signing in. Which of our server roles is down?
+> (Alan, Accounting, at the left) This morning the shared drive S: is gone from every computer in accounting. Web pages open, email arrives, printing works, and nobody has trouble signing in. Which of our server roles is down?
 
 **Which role is down?**
 (the options come in an order that depends on the seed of the question)
@@ -567,9 +567,9 @@ After the answer: the deciding words are marked. Reason: Everything works except
 
 #### Item 27
 
-A chat, with its history: "Lou, Marketing", Chat with the help desk.
+A chat, with its history: "Zara, Marketing", Chat with the help desk.
 
-> (Lou, Marketing, at the left) Customers say our company website will not load. Our staff can browse other sites and email works. The site runs on one of our own servers. Which role is down?
+> (Zara, Marketing, at the left) Customers say our company website will not load. Our staff can browse other sites and email works. The site runs on one of our own servers. Which role is down?
 
 **Which role?**
 (the options come in an order that depends on the seed of the question)
@@ -637,9 +637,9 @@ After the answer: Reason: The MAC address is burned into the network card and is
 
 #### Check question 31
 
-A chat, with its history: "Carl, Home office", Chat with the help desk.
+A chat, with its history: "Casper, Home office", Chat with the help desk.
 
-> (Carl, Home office, at the left) My internet comes in on the telephone line through a box with an RJ11 cable. When I moved farther from town, it got slower. Which connection is it?
+> (Casper, Home office, at the left) My internet comes in on the telephone line through a box with an RJ11 cable. When I moved farther from town, it got slower. Which connection is it?
 
 **Which connection?**
 (the options come in an order that depends on the seed of the question)
@@ -664,9 +664,9 @@ After the answer: Reason: A metropolitan area network, a MAN, covers a city or a
 
 #### Check question 33
 
-A chat, with its history: "Pat, Cabling crew", Chat with the help desk.
+A chat, with its history: "Margot, Cabling crew", Chat with the help desk.
 
-> (Pat, Cabling crew, at the left) Twelve new jack cables have been pulled into the closet, and their loose wire ends hang at the back of the patch panel. Which tool seats them in the slots and trims them?
+> (Margot, Cabling crew, at the left) Twelve new jack cables have been pulled into the closet, and their loose wire ends hang at the back of the patch panel. Which tool seats them in the slots and trims them?
 
 **Which tool?**
 (the options come in an order that depends on the seed of the question)
@@ -679,9 +679,9 @@ After the answer: the deciding words are marked. Reason: Wire ends going into th
 
 #### Check question 34
 
-A chat, with its history: "Dot, Cabling crew", Chat with the help desk.
+A chat, with its history: "Claudia, Cabling crew", Chat with the help desk.
 
-> (Dot, Cabling crew, at the left) Before I crimp a plug on a new cable I have to take the outer jacket off without nicking the wires inside. Which tool?
+> (Claudia, Cabling crew, at the left) Before I crimp a plug on a new cable I have to take the outer jacket off without nicking the wires inside. Which tool?
 
 **Which tool?**
 (the options come in an order that depends on the seed of the question)
@@ -694,9 +694,9 @@ After the answer: the deciding words are marked. Reason: Removing the jacket wit
 
 #### Check question 35
 
-A chat, with its history: "Eli, Security", Chat with the help desk.
+A chat, with its history: "Oscar, Security", Chat with the help desk.
 
-> (Eli, Security, at the left) The logs from the file server and the firewall show times five minutes apart, and some sign-ins fail. Which server role, when it is missing or broken, lets the clocks drift like this?
+> (Oscar, Security, at the left) The logs from the file server and the firewall show times five minutes apart, and some sign-ins fail. Which server role, when it is missing or broken, lets the clocks drift like this?
 
 **Which role?**
 (the options come in an order that depends on the seed of the question)

@@ -153,8 +153,8 @@ const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, esti
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool, guess: bool, feedback: en('at-end') });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
-// a check drawn at random: n questions of the named strands, or from one place group as many of each form as the split says (3.4)
-const DRAW = obj({ draw: either(obj({ strands: arr(str), n: int }), obj({ gen: str, split: map(int) }, { only: map(arr(str)) })) });
+// a check drawn at random: n questions from each group of named strands, or from one place group as many of each form as the split says (3.4)
+const DRAW = obj({ draw: either(arr(obj({ strands: arr(str), n: int })), obj({ gen: str, split: map(int) }, { only: map(arr(str)) })) });
 const CHECK = obj({ items: either(arr(REF), DRAW), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
   { spoken: bool, recall: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds

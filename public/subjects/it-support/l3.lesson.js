@@ -8,10 +8,10 @@
 // One worked ticket (a first guess, a Windows update, that the records rule out); a first group of four with the deciding words marked; a second group
 // of eight with no help; a third group of five mixed; and the check: six new questions, no help, 5 of 6 and no ticket that loses the user's files.
 FC.lesson('it-support', {
-  id: 'l3', part: 'changed', title: 'What changed, and protect the data', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: find out what changed (the user’s, the computer’s, the company’s), and copy the files before anything that could lose them; a fault that comes and goes is worked from the records, the logs and the user’s notes.' }],
+  id: 'l3', part: 'changed', title: 'What changed, and protect the data', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: find out what changed (the user’s, the computer’s, the company’s), and copy the files before anything that could lose them; a fault that comes and goes is worked from the records, the logs and the user’s notes.' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Petra’s email says her laptop is slow, Excel crashes, and she says she changed nothing. She wants you to wipe it, and the file she must send on Friday is on it.',
+    'Petra’s email says their laptop is slow, Excel crashes, and they say they changed nothing. They want you to wipe it, and the file they must send on Friday is on it.',
     'A computer that worked and now does not has something different about it. Here you learn to find the difference, and to copy the user’s files before you touch anything that could lose them.'
   ],
   flow: [
@@ -23,8 +23,8 @@ FC.lesson('it-support', {
           'Users often say “nothing changed”. That means nothing they noticed. When the records show no change either, you have found nothing yet; you put particulars to the user (“a new program, an update message, a new password?”) and find out when it last worked. Check what the desk’s records show too.',
           'A rule of thumb, not a law: when several people have the same fault from the same day, look at the company’s side first. When only one person has it, look at that person’s side first. In this course, a change made to one person’s account, such as a password reset or a new device handed to them, counts as that person’s side, even when the desk made it. And a change many people made themselves, such as the same program they all installed, is still the users’ side.'] },
         { kind: 'prose', tone: 'wrong', text: [
-          '“She says nothing changed, so I will start fixing.”',
-          '“Nothing” means nothing she noticed. Look at the records and put particulars to her first: the change is often there.'] }
+          '“They say nothing changed, so I will start fixing.”',
+          '“Nothing” means nothing they noticed. Look at the records and put particulars to them first: the change is often there.'] }
       ] },
     { title: 'Copy the files before you touch anything',
       show: [
@@ -35,8 +35,8 @@ FC.lesson('it-support', {
           'CompTIA’s older exam wording said to back up “if applicable”: only when the step could lose something. (The current exams keep its six steps as a recommended method, not as an objective.) This course’s reading: if the records already show a recent backup, you do not make another; you open one file from it to check that it works, and then go on.',
           'Words these tickets use. Office is Microsoft’s group of programs, such as Word, Excel and Outlook; Outlook is its email program. A shared drive is a folder on a company server that many people open from their own computers.'] },
         { kind: 'prose', tone: 'wrong', text: [
-          '“She asked for a wipe, so I will wipe it.”',
-          'A wipe cannot be undone. Copy her files first, and check the copy opens.'] }
+          '“They asked for a wipe, so I will wipe it.”',
+          'A wipe cannot be undone. Copy their files first, and check the copy opens.'] }
       ] },
     { title: 'When it comes and goes',
       show: [

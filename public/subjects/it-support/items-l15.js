@@ -25,9 +25,9 @@
           ['t1', '53', 'Allow'], ['t2', '80', 'Allow'], ['t3', '443', 'Allow'], ['t4', '25', 'Allow'], ['t6', '23', 'Block'], ['t5', '3389', 'Block']])],
       asks: [ask('Web pages and email work for Anita. What does that show?', [
         ['The link to head office works, so only one service is stuck.', true, 'Pages and mail pass through the same link, so the link and the name lookup are fine. What is left is the door for Remote Desktop.'],
-        ['Remote Desktop must be working too, so she mistyped.', DA, 'Each service has its own door. Web and mail working says nothing about the door for Remote Desktop.'],
-        ['Her computer at head office must be switched off.', CAUSE, 'Nothing so far says the computer is off, and the link to head office is clearly up.'],
-        ['Restart her computer and try Remote Desktop again.', 'no-split', 'A restart is cheap but cuts nothing in half: web and mail working already show the link is fine, and a blocked door stays blocked.']])],
+        ['Remote Desktop must be working too, so they mistyped.', DA, 'Each service has its own door. Web and mail working says nothing about the door for Remote Desktop.'],
+        ['Their computer at head office must be switched off.', CAUSE, 'Nothing so far says the computer is off, and the link to head office is clearly up.'],
+        ['Restart their computer and try Remote Desktop again.', 'no-split', 'A restart is cheap but cuts nothing in half: web and mail working already show the link is fine, and a blocked door stays blocked.']])],
       steps: [
         { id: 'causes', does: 'Write down every cause that fits “Remote Desktop cannot connect”.', working: 'The link between the branch and head office is down; the computer at head office is off; the password is wrong; the door for Remote Desktop is closed somewhere on the way.' },
         { id: 'favorite', does: 'Name your favorite cause and test it with the cheapest check.', working: 'The link to head office: it dropped last month. Open a web page and send an email. Both work, so the link is up and the name lookup works.', ask: 'a' },
@@ -40,7 +40,7 @@
     // ----- group 1: with the deciding words marked; the job first, then the number -----
     item({
       id: 'l15-p-ssh', strand: ADMIN,
-      blocks: [msg('chat', 'Dev, Network team', 'Chat with the help desk', [['d1', 'I need to type commands on the new Linux server (a company computer that runs Linux, an operating system like Windows, and serves others) from my desk. The security rule says nothing typed, passwords included, may travel as readable text. Which service do I allow through the firewall?']])],
+      blocks: [msg('chat', 'Gaspard, Network team', 'Chat with the help desk', [['d1', 'I need to type commands on the new Linux server (a company computer that runs Linux, an operating system like Windows, and serves others) from my desk. The security rule says nothing typed, passwords included, may travel as readable text. Which service do I allow through the firewall?']])],
       asks: [ask('Which service?', [
         ['SSH, port 22', true, 'SSH carries typed commands over an encrypted link, so nobody on the way can read the password.'],
         ['Telnet, port 23', PT, 'Telnet does the same job but sends everything, passwords too, as readable text. SSH replaced it.'],
@@ -50,7 +50,7 @@
       reason: 'The job is typing commands on another computer, with nothing readable on the way. That is SSH on port 22. Telnet on 23 does the job in plain text.' }),
     item({
       id: 'l15-p-imap', strand: MAIL,
-      blocks: [msg('chat', 'Lena, Sales', 'Chat with the help desk', [['l1', 'I read a message on my phone, but my laptop still shows it as new. A message I deleted on the laptop is still on the phone. How do I get them to agree?']])],
+      blocks: [msg('chat', 'Anika, Sales', 'Chat with the help desk', [['l1', 'I read a message on my phone, but my laptop still shows it as new. A message I deleted on the laptop is still on the phone. How do I get them to agree?']])],
       asks: [ask('Which mail service should both be using to receive mail?', [
         ['IMAP, port 143', true, 'IMAP leaves the mail on the server and shows it, so every device shows the same mailbox.'],
         ['POP3, port 110', MIX, 'POP3 downloads mail to one device and usually removes it from the server, so each device ends with its own copy.'],
@@ -60,17 +60,17 @@
       reason: 'Two devices that must agree on what is read and deleted need the mail kept on the server: IMAP, port 143. POP3 on 110 downloads it to one device, and SMTP on 25 only sends.' }),
     item({
       id: 'l15-p-dns', strand: WEB,
-      blocks: [msg('chat', 'Sam, Purchasing', 'Chat with the help desk', [['s1', 'I can open the supplier’s site by typing its address, 203.0.113.20, but not by typing its name. Other sites fail by name too.']])],
+      blocks: [msg('chat', 'Eileen, Purchasing', 'Chat with the help desk', [['s1', 'I can open the supplier’s site by typing its address, 203.0.113.20, but not by typing its name. Other sites fail by name too.']])],
       asks: [ask('Which service is not doing its job?', [
         ['DNS, port 53', true, 'DNS turns a name into the number address. The number works and the names do not, so the lookup is what fails.'],
         ['DHCP, ports 67 and 68', WS, 'DHCP hands out addresses. The computer has one, since the number address works.'],
-        ['HTTP, port 80', WS, 'HTTP loaded the page when Sam typed the number, so it works.'],
+        ['HTTP, port 80', WS, 'HTTP loaded the page when Eileen typed the number, so it works.'],
         ['LDAP, port 389', WS, 'LDAP looks up accounts in the company directory. It has nothing to do with website names.']])],
       deciding: ['s1'],
       reason: 'The page loads by number and fails by name. Turning a name into a number is DNS, port 53.' }),
     item({
       id: 'l15-p-share', strand: FILES,
-      blocks: [msg('chat', 'Ola, Branch office', 'Chat with the help desk', [['o1', 'The new branch firewall lets web and mail through, but I cannot open the team folder on the head office file server. It is a Windows shared folder. Which port must it allow?']])],
+      blocks: [msg('chat', 'Philip, Branch office', 'Chat with the help desk', [['o1', 'The new branch firewall lets web and mail through, but I cannot open the team folder on the head office file server. It is a Windows shared folder. Which port must it allow?']])],
       asks: [ask('Which port?', [
         ['445, SMB', true, 'Shared folders and shared printers on a Windows network use SMB, port 445.'],
         ['21, FTP', WS, 'FTP moves files to a server as a transfer. A Windows shared folder opens through SMB instead.'],
@@ -99,7 +99,7 @@
       'FTP uses 21 for the commands and 20 for the file data. The password travels as readable text.'),
     item({
       id: 'l15-q-telnet', strand: ADMIN,
-      blocks: [msg('chat', 'Una, Security', 'Chat with the help desk', [['u1', 'Our audit found an old switch (a box that joins office network cables) managed from a desk over port 23. The auditor says to stop. Why, and what do we use?']])],
+      blocks: [msg('chat', 'August, Security', 'Chat with the help desk', [['u1', 'Our audit found an old switch (a box that joins office network cables) managed from a desk over port 23. The auditor says to stop. Why, and what do we use?']])],
       asks: [ask('Which is right?', [
         ['Port 23 is Telnet, which sends passwords as readable text. Use SSH.', true, 'Telnet shows everything it sends to anyone on the way. SSH, port 22, does the same job encrypted.'],
         ['Port 23 is Telnet, which is too slow. Use RDP.', PT, 'Speed is not the problem, and RDP shows a Windows screen. The fault is the readable password.'],
@@ -113,7 +113,7 @@
     // ----- group 3: the port is the clue -----
     item({
       id: 'l15-t-who', strand: ADMIN,
-      blocks: [msg('chat', 'Wes, Security', 'Chat with the help desk', [['w1', 'Our firewall log shows hundreds of connection attempts from outside, all to port 3389 on our computers. What is someone trying to reach?']])],
+      blocks: [msg('chat', 'Madhav, Security', 'Chat with the help desk', [['w1', 'Our firewall log shows hundreds of connection attempts from outside, all to port 3389 on our computers. What is someone trying to reach?']])],
       asks: [ask('What is on port 3389?', [
         ['Remote Desktop, the screens of our computers', true, 'Port 3389 is RDP. Someone is trying to see and use our computers from outside.'],
         ['Mail, our mail server', WS, 'Mail uses 25, 110 and 143.'],
@@ -124,7 +124,7 @@
     item({
       id: 'l15-t-web', strand: WEB,
       blocks: [
-        msg('chat', 'Kai, Finance', 'Chat with the help desk', [['k1', 'Since this morning nobody can open our bank’s login page, which starts with https://. Plain http:// pages and everything else work.']]),
+        msg('chat', 'Shira, Finance', 'Chat with the help desk', [['k1', 'Since this morning nobody can open our bank’s login page, which starts with https://. Plain http:// pages and everything else work.']]),
         table('The office firewall (changed this morning)', ['Port', 'Rule'], [
           ['f1', '53', 'Allow'], ['f2', '80', 'Allow'], ['f3', '443', 'Block'], ['f4', '25', 'Block'], ['f5', '23', 'Block']])],
       asks: [ask('Which blocked port explains it?', [
@@ -138,7 +138,7 @@
     item({
       id: 'l15-t-send', strand: MAIL,
       blocks: [
-        msg('chat', 'Ruth, Accounts', 'Chat with the help desk', [['r1', 'My mail program, set to send on SMTP’s own port, receives mail, but every message I send sits in the Outbox.']]),
+        msg('chat', 'Marianne, Accounts', 'Chat with the help desk', [['r1', 'My mail program, set to send on SMTP’s own port, receives mail, but every message I send sits in the Outbox.']]),
         table('The office firewall (changed this morning)', ['Port', 'Rule'], [
           ['m1', '25', 'Block'], ['m2', '110', 'Allow'], ['m3', '143', 'Allow'], ['m4', '80', 'Allow'], ['m5', '3389', 'Block'], ['m6', '22', 'Block']])],
       asks: [ask('What is the likely cause?', [
@@ -152,7 +152,7 @@
     item({
       id: 'l15-t-name', strand: FILES,
       blocks: [
-        msg('chat', 'Bo, Lab', 'Chat with the help desk', [['b1', 'The old lab scanner saves scans to a shared folder it finds by the computer’s NetBIOS name. After this morning’s firewall change it says it cannot find the computer.']]),
+        msg('chat', 'Alec, Lab', 'Chat with the help desk', [['b1', 'The old lab scanner saves scans to a shared folder it finds by the computer’s NetBIOS name. After this morning’s firewall change it says it cannot find the computer.']]),
         table('The lab firewall (changed this morning)', ['Port', 'Rule'], [
           ['n1', '137, 138, 139', 'Block'], ['n2', '445', 'Allow'], ['n3', '389', 'Allow'], ['n4', '3389', 'Block']])],
       asks: [ask('Which ports must be allowed again?', [
@@ -169,7 +169,7 @@
     // ----- added after review: TCP or UDP for more than DHCP, and a table where no blocked line fits -----
     item({
       id: 'l15-q-dns', strand: WEB,
-      blocks: [msg('chat', 'Fay, Network team', 'Chat with the help desk', [['f1', 'I am writing the firewall rule for name lookups on port 53. Most answers are short, and a few are too big for one short message. How does DNS deliver?']])],
+      blocks: [msg('chat', 'Robin, Network team', 'Chat with the help desk', [['f1', 'I am writing the firewall rule for name lookups on port 53. Most answers are short, and a few are too big for one short message. How does DNS deliver?']])],
       asks: [ask('Which is right?', [
         ['By UDP for short answers and by TCP for big ones', true, 'DNS uses UDP for the usual short question and answer, and TCP when the answer is too big for one short message.'],
         ['By UDP only, because every answer is short', TU, 'Some answers are too big for one short message, and those go by TCP.'],
@@ -179,7 +179,7 @@
       reason: 'Port 53 is used both ways: UDP for the short answers, TCP for the big ones.' }),
     item({
       id: 'l15-t-tcp', strand: MAIL,
-      blocks: [msg('chat', 'Gus, Network team', 'Chat with the help desk', [['g1', 'I am writing a firewall rule that only needs TCP. Which of these lists has services that all deliver by TCP?']])],
+      blocks: [msg('chat', 'Jaime, Network team', 'Chat with the help desk', [['g1', 'I am writing a firewall rule that only needs TCP. Which of these lists has services that all deliver by TCP?']])],
       asks: [ask('Which list is all TCP?', [
         ['SMTP, POP3, IMAP and HTTPS', true, 'Mail and secure web pages must arrive whole, so all four deliver by TCP.'],
         ['SMTP, POP3, IMAP and DHCP', TU, 'DHCP delivers by UDP; the other three are TCP.'],
@@ -190,7 +190,7 @@
     item({
       id: 'l15-t-none', strand: WEB,
       blocks: [
-        msg('chat', 'Zed, Reception', 'Chat with the help desk', [['z1', 'Nothing opens by name on the front desk computer, but typing the address 203.0.113.20 loads the supplier’s site. The firewall was changed this morning.']]),
+        msg('chat', 'Dylan, Reception', 'Chat with the help desk', [['z1', 'Nothing opens by name on the front desk computer, but typing the address 203.0.113.20 loads the supplier’s site. The firewall was changed this morning.']]),
         table('The office firewall (changed this morning)', ['Port', 'Rule'], [
           ['z2', '53', 'Allow'], ['z3', '80', 'Allow'], ['z4', '443', 'Allow'], ['z5', '3389', 'Block'], ['z6', '23', 'Block'], ['z7', '137, 138, 139', 'Block']])],
       asks: [ask('Which blocked line explains it?', [

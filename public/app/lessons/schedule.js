@@ -137,19 +137,24 @@ function strandInstance(data, subjectId, strandId, run, k, taken, facets, drawn 
   const again = [...leastSeen(subjectId, fixed.filter(d => seenBefore(subjectId, d.id))), ...fixed.filter(d => !seenBefore(subjectId, d.id))];
   return again.length ? { inst: instanceOf(data, near(again)[0].id), repeat: true } : null;
 }
-// The instances of a drawn check (the mock interview, 10.3 step 9): n questions of the listed topics drawn at random, the same run drawing the same.
-// What an earlier check or retest (of this lesson, when it is named) already asked comes last, so a second draw is a different set where it can be.
-// A question that needs the learner's own answers is left out until they are entered.
+// The instances of a drawn check (the mock interview, 10.3 step 9): from each group of topics the check lists, exactly that group's n questions drawn
+// at random, the same run drawing the same. What an earlier check or retest (of this lesson, when it is named) already asked comes last within its
+// group, so a second draw is a different set where it can be. A question that needs the learner's own answers is left out until they are entered.
 function drawInstances(data, subjectId, draw, run, taken, lessonId){
-  if('gen' in draw) return placeDrawInstances(data, subjectId, draw, run);
+  if(!Array.isArray(draw)) return placeDrawInstances(data, subjectId, draw, run);
   const answers = notesOf(subjectId).answers;
-  const defs = draw.strands.flatMap(s => strandDefs(data, s)).filter(d => !taken.includes(d.id) && recallDefReady(d, answers));
-  const gens = defs.filter(isMade), fixed = defs.filter(d => !isMade(d));
   const earlier = new Set(allTries(subjectId).filter(({ t }) => ['check', 'retest'].includes(t.context) && (lessonId === undefined || t.lesson === lessonId)).map(({ key }) => key));
-  const mixedUp = (list, label) => shuffled(list, hashSeed(`${run}|draw|${label}`));
-  const picks = [...mixedUp(fixed.filter(d => !earlier.has(d.id)), 'new'), ...mixedUp(fixed.filter(d => earlier.has(d.id)), 'again')].slice(0, draw.n);
-  for(let k = 0; picks.length < draw.n && gens.length; k++) picks.push(gens[k % gens.length]);
+  const picks = draw.flatMap((group, g) => drawFromGroup(data, group, `${run}|draw|${g}`, taken, answers, earlier));
   return shuffled(picks, hashSeed(`${run}|draw`)).map((d, k) => freshInstance(data, subjectId, d, run, k));
+}
+// the group's n questions: items not asked before first, then those asked, then made ones for what is short
+function drawFromGroup(data, group, seed, taken, answers, earlier){
+  const defs = group.strands.flatMap(s => strandDefs(data, s)).filter(d => !taken.includes(d.id) && recallDefReady(d, answers));
+  const gens = defs.filter(isMade), fixed = defs.filter(d => !isMade(d));
+  const mixedUp = (list, label) => shuffled(list, hashSeed(`${seed}|${label}`));
+  const picks = [...mixedUp(fixed.filter(d => !earlier.has(d.id)), 'new'), ...mixedUp(fixed.filter(d => earlier.has(d.id)), 'again')].slice(0, group.n);
+  for(let k = 0; picks.length < group.n && gens.length; k++) picks.push(gens[k % gens.length]);
+  return picks;
 }
 // A check's items on new questions: one new instance of the strand (and the facets) of each original, or a new draw. A sung question (3.8)
 // is made again from its own task with a seed no try of that task has used, so a retest of a check with sung tries sings new targets.

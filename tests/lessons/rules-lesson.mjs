@@ -49,9 +49,21 @@ function passProblems(s, lv) {
       const gen = s.gens[draw.gen], asked = Object.entries(draw.split).filter(([form]) => s.placeMadeOf(draw.gen).some(x => x.form === form
         && s.engine.whereMatches(rule.where, x.item.facets) && (!rule.ask || x.item.asks.some(a => a.id === rule.ask)))).reduce((n, [, k]) => n + k, 0);
       if (rule.right && rule.right.min > asked) problems.push(`${where} needs ${rule.right.min} right and the check draws only ${asked} that it counts`);
-    } else if (rule.right && rule.right.min > check.items.draw.n) problems.push(`${where} needs ${rule.right.min} right and the check draws only ${check.items.draw.n}`);
+    } else if (rule.right && rule.right.min > s.engine.drawSize(draw)) problems.push(`${where} needs ${rule.right.min} right and the check draws only ${s.engine.drawSize(draw)}`);
   });
   return problems;
+}
+// A check drawn from groups of topics holds exactly n from each group, so a group cannot draw more than its topics can supply: the questions
+// they hold that the lesson's own groups did not ask, or without end where a topic has a generator
+function drawSupplyProblems(s, lv) {
+  const draw = lv.lesson.check.items.draw;
+  if (!Array.isArray(draw)) return [];
+  const inFlow = new Set(lv.setRefs.flat().map(r => r.id));
+  return draw.flatMap((group, i) => {
+    if (Object.values(s.gens).some(g => group.strands.includes(g.strand))) return [];
+    const supply = Object.values(s.items).filter(d => group.strands.includes(d.strand) && !inFlow.has(d.id)).length;
+    return group.n > supply ? [`draw group ${i + 1} draws ${group.n} and its topics hold only ${supply} question${supply === 1 ? '' : 's'} the lesson's own groups did not ask`] : [];
+  });
 }
 // A check that asks a part's questions again (`recall`: the questions of a published list are recalled, not found anew; Civics) holds only questions the
 // lesson's own groups asked, each once. Any other check holds none of them. A spoken check is read aloud, so each question it can ask has a spoken block.
@@ -72,7 +84,7 @@ function recallCheckProblems(s, lv) {
 }
 export const V72 = subjectRule('V72', (s, check) => {
   for (const lv of s.lessons) {
-    const problems = [...recallCheckProblems(s, lv), ...passProblems(s, lv)];
+    const problems = [...recallCheckProblems(s, lv), ...passProblems(s, lv), ...(s.engine.checkIsDrawn(lv.lesson.check) ? drawSupplyProblems(s, lv) : [])];
     checkEach(check, lv.label, problems);
   }
 });
@@ -326,7 +338,7 @@ export const V76 = subjectRule('V76', (s, check) => {
 // retest. A strand with a generator always has one. A strand of a single question comes back as itself.
 export const V77 = subjectRule('V77', (s, check) => {
   const used = new Set(s.lessons.flatMap(l => l.usedIds));
-  const scheduled = unique(s.lessons.flatMap(lv => s.engine.checkIsDrawn(lv.lesson.check) ? lv.lesson.check.items.draw.strands : strandsOfRefs(s, lv.checkRefs)));
+  const scheduled = unique(s.lessons.flatMap(lv => s.engine.checkIsDrawn(lv.lesson.check) ? s.engine.drawStrands(s.subject, lv.lesson.check.items.draw) : strandsOfRefs(s, lv.checkRefs)));
   const problems = [];
   scheduled.forEach(strand => {
     const fixed = Object.values(s.items).filter(i => i.strand === strand);

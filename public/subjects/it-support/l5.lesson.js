@@ -6,16 +6,16 @@
 // a second group of six; a third of four mixed with lessons 3 and 4; and the check: six new questions, no help, 5 of 6 to pass. Comparing with a working machine
 // beyond the person and computer swaps (IT5 functional levels) is left to units 2 to 7. Every test here assumes one fault at a time (IT4); a question shows two faults.
 FC.lesson('it-support', {
-  id: 'l5', part: 'half', title: 'Cut it in half', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (list more than one cause; the cheapest test that splits what works from what does not; keep cutting; the error of working on whatever is nearest).' }],
+  id: 'l5', part: 'half', title: 'Cut it in half', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (list more than one cause; the cheapest test that splits what works from what does not; keep cutting; the error of working on whatever is nearest).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Dana from Sales says the price list on the shared drive will not open, and she has a call at 2. The list of things it could be is long: her laptop, the Wi-Fi, her account, the server that holds the file, the file itself.',
-    'A new technician picks the one nearest, usually her laptop, and starts fixing. A good one tries one cheap test that cuts the list: can the person next to her open the same file? Here you learn to find that test, again and again, until one cause is left.'],
+    'Dana from Sales says the price list on the shared drive will not open, and they have a call at 2. The list of things it could be is long: their laptop, the Wi-Fi, their account, the server that holds the file, the file itself.',
+    'A new technician picks the one nearest, usually their laptop, and starts fixing. A good one tries one cheap test that cuts the list: can the person next to them open the same file? Here you learn to find that test, again and again, until one cause is left.'],
   flow: [
     { title: 'More than one cause',
       show: [{ kind: 'prose', text: [
         'When the known fix has not worked, stop guessing and write down every cause that could produce what the user sees. Write at least two. Then pick the test, not the fix.',
-        'Dana’s price list: her laptop and its connection to the network, her account (it may not be allowed into that folder), the server that holds the shared drive (a company computer many people open files from), the file itself.',
+        'Dana’s price list: their laptop and its connection to the network, their account (it may not be allowed into that folder), the server that holds the shared drive (a company computer many people open files from), the file itself.',
         'Your favorite cause goes on the list too, and it is often not the answer. A written list is what keeps the favorite from being the only thing you test. A restart or a reinstall of Windows (wiping the computer and putting the system back from scratch) is a fix, not a test.',
         'A quick known fix, such as checking that Caps Lock is off before you call a password wrong, comes before the list, as a known fix does. The list is for when that did not work.'] }] },
     { title: 'The cheapest test that splits',
@@ -36,7 +36,7 @@ FC.lesson('it-support', {
         'A test only splits if its two results mean different things. A restart, or pressing Print once more, gives the same answer whichever cause is real. It is a fix or a repeat, not a test.'] }] },
     { title: 'Whatever is nearest',
       show: [{ kind: 'prose', tone: 'wrong', text: [
-        '“The ticket says the printer, so I will reinstall the printer on her laptop. If that fails I will reinstall it again, then the printing program, then Windows.”',
+        '“The ticket says the printer, so I will reinstall the printer on their laptop. If that fails I will reinstall it again, then the printing program, then Windows.”',
         'Work on whatever is nearest and each failed fix tells you nothing. A test that tells you which side to look on is worth more than a fix that may be on the wrong side. List the causes, run the cheapest test, which may or may not be the favorite’s, and fix only what is left.'] }] },
     { worked: 'l5-w-price' },
     { set: { items: ['l5-p-print', 'l5-p-monitor', 'l5-p-mail', 'l5-p-nadia'], order: 'listed', support: { shown: true } } },

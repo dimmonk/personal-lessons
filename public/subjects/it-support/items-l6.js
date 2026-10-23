@@ -108,7 +108,7 @@
         causes([['c1', 'The Wi-Fi'], ['c2', 'The server that holds the news page'], ['c3', 'The settings of the first browser Ken uses'], ['c4', 'Ken’s account'], ['c5', 'Ken’s laptop’s own network settings']]),
         table('Tests so far', ['Test', 'Result'], [
           ['t1', 'A co-worker’s phone on the office Wi-Fi opens the news page', 'Opens'],
-          ['t2', 'Ken tries a second browser on his laptop', 'Will not open']])],
+          ['t2', 'Ken tries a second browser on their laptop', 'Will not open']])],
       asks: [ask('Which causes are still on the list? Pick every one.', [
         ['Ken’s account', true],
         ['Ken’s laptop’s own network settings', true],
@@ -116,13 +116,13 @@
         ['The server that holds the news page', KEPT, 'The co-worker’s phone opened the page from that server, so it is crossed off.'],
         ['The settings of the first browser Ken uses', KEPT, 'A second browser fails the same way, so the first browser’s own settings are crossed off.']], { many: true })],
       deciding: ['t1', 't2'],
-      reason: 'The phone opened the page, which rules out the Wi-Fi and the server. A second browser failed the same way, which rules out the first browser’s own settings. Ken’s account and his laptop’s own network settings are the causes no test has touched.' }),
+      reason: 'The phone opened the page, which rules out the Wi-Fi and the server. A second browser failed the same way, which rules out the first browser’s own settings. Ken’s account and their laptop’s own network settings are the causes no test has touched.' }),
     item({
       id: 'l6-s-dock',
       blocks: [
-        msg('chat', 'Mo, Finance', 'Chat with the help desk', [['m1', 'My laptop does not charge when it sits in its docking station.']]),
+        msg('chat', 'Reza, Finance', 'Chat with the help desk', [['m1', 'My laptop does not charge when it sits in its docking station.']]),
         note('A docking station is a stand the laptop sits in. It gives the laptop power and connects it to screens and cables.'),
-        causes([['c1', 'The docking station’s power adapter'], ['c2', 'The docking station itself'], ['c3', 'Mo’s laptop']]),
+        causes([['c1', 'The docking station’s power adapter'], ['c2', 'The docking station itself'], ['c3', 'Reza’s laptop']]),
         table('Test', ['Test', 'Result'], [['t1', 'The tech puts a power adapter known to work on the docking station', 'The laptop still does not charge']]),
         note('The tech says: “I was sure it was the adapter. I will try a third adapter.”')],
       asks: [ask('What should the tech do?', [
@@ -134,14 +134,14 @@
     item({
       id: 'l6-s-hana',
       blocks: [note('Hana in Operations calls the help desk about a slow computer. You answer. On this desk, one change and a look at the speed takes about five minutes.')],
-      asks: [{ id: 'a', kind: 'exchange', prompt: 'Hana calls about her slow computer. What do you say?', form: 'call', from: 'Hana, Operations', detail: 'Incoming call · 1:40 PM', start: 'one',
+      asks: [{ id: 'a', kind: 'exchange', prompt: 'Hana calls about their slow computer. What do you say?', form: 'call', from: 'Hana, Operations', detail: 'Incoming call · 1:40 PM', start: 'one',
         turns: {
-          one: { lines: [L('h1', 'My computer is crawling. Just do everything: updates, cleanup, restart, all of it, at once. I have a deadline at 4.')], push: 'She wants every fix at once.',
+          one: { lines: [L('h1', 'My computer is crawling. Just do everything: updates, cleanup, restart, all of it, at once. I have a deadline at 4.')], push: 'They want every fix at once.',
             options: [{ id: 'two', text: 'I can do the updates and the cleanup together and leave the restart for later.', end: 'two' },
               { id: 'call', text: 'Please call back tomorrow when it is quiet.', end: 'later' },
               { id: 'all', text: 'All right, I will do them all together now.', end: 'all' },
               { id: 'one', text: 'I will make one change, then check whether it is faster, then the next.', goto: 'two' }] },
-          two: { lines: [L('h2', 'One at a time sounds slow. I do not have time.')], push: 'She pushes again for the fast way.',
+          two: { lines: [L('h2', 'One at a time sounds slow. I do not have time.')], push: 'They push again for the fast way.',
             options: [{ id: 'three', text: 'Fine, I will do three together.', end: 'three' },
               { id: 'quick', text: 'One change takes about five minutes, then we look, so we know what helped and what to leave out.', end: 'one' }] }
         },
@@ -166,7 +166,7 @@
         ['The mail app on Marcus’s phone', SIDE, 'The laptop does not use the phone’s mail app, so the result says nothing about it.'],
         ['The phone’s connection to the internet', SIDE, 'The laptop does not use the phone’s connection, so the result says nothing about it.']], { many: true })],
       deciding: ['t1'],
-      reason: 'The laptop gets Marcus’s email, so his account and the mail service work and are crossed off. The mail app and the phone’s connection never took part in that test, so both stay on the list.' }),
+      reason: 'The laptop gets Marcus’s email, so their account and the mail service work and are crossed off. The mail app and the phone’s connection never took part in that test, so both stay on the list.' }),
     item({
       id: 'l6-g-quinn',
       blocks: [
@@ -180,8 +180,8 @@
     item({
       id: 'l6-g-jun',
       blocks: [
-        msg('chat', 'Jun, Design', 'Chat with the help desk', [['j1', 'My screen flickers.']]),
-        causes([['c1', 'The cable to the monitor'], ['c2', 'The monitor'], ['c3', 'Jun’s computer']]),
+        msg('chat', 'Emma, Design', 'Chat with the help desk', [['j1', 'My screen flickers.']]),
+        causes([['c1', 'The cable to the monitor'], ['c2', 'The monitor'], ['c3', 'Emma’s computer']]),
         table('Test', ['Test', 'Result'], [['t1', 'The tech puts in a cable known to work', 'The screen still flickers']]),
         note('The tech says: “I was sure it was the cable. Let me try one more cable.”')],
       asks: [ask('What should the tech do?', [
@@ -200,18 +200,18 @@
         causes([['c1', 'The Wi-Fi'], ['c2', 'The server that holds the shared folder'], ['c3', 'Lila’s account'], ['c4', 'Lila’s laptop’s setup for the folder']]),
         table('Tests so far', ['Test', 'Result'], [
           ['t1', 'A co-worker opens the shared folder on their laptop', 'Opens'],
-          ['t2', 'Lila opens a web page on her laptop', 'Opens']])],
+          ['t2', 'Lila opens a web page on their laptop', 'Opens']])],
       asks: [ask('Which causes do these two results rule out? Pick every one.', [
         ['The Wi-Fi', true],
         ['The server that holds the shared folder', true],
         ['Lila’s account', SIDE, 'The co-worker opened the folder as themselves, not as Lila, so Lila’s account is untested.'],
         ['Lila’s laptop’s setup for the folder', SIDE, 'The web page tests the connection only, not how the laptop reaches the folder.']], { many: true })],
       deciding: ['t1', 't2'],
-      reason: 'The web page opening rules out the Wi-Fi. The co-worker opening the folder rules out the server. Neither test used Lila’s account or the way her laptop reaches the folder, so both stay on the list.' }),
+      reason: 'The web page opening rules out the Wi-Fi. The co-worker opening the folder rules out the server. Neither test used Lila’s account or the way their laptop reaches the folder, so both stay on the list.' }),
     item({
       id: 'l6-k-pat',
       blocks: [
-        msg('chat', 'Pat, Front desk', 'Chat with the help desk', [['p1', 'My desk phone is blank and gives no dial tone.']]),
+        msg('chat', 'Lewis, Front desk', 'Chat with the help desk', [['p1', 'My desk phone is blank and gives no dial tone.']]),
         note('The desk phone gets its power and its calls through one network cable that runs to a network port in the wall.'),
         causes([['c1', 'The cable from the phone to the wall'], ['c2', 'The network port in the wall'], ['c3', 'The phone']]),
         table('Test', ['Test', 'Result'], [['t1', 'The tech puts a cable known to work between the phone and the wall', 'The screen lights up and there is a dial tone']])],
@@ -225,7 +225,7 @@
     item({
       id: 'l6-k-scan',
       blocks: [
-        msg('chat', 'Dee, Front desk', 'Chat with the help desk', [['d1', 'The scanner will not send scans to my email. It worked last week, until I typed a new email address into the scanner on Monday.']]),
+        msg('chat', 'Cordelia, Front desk', 'Chat with the help desk', [['d1', 'The scanner will not send scans to my email. It worked last week, until I typed a new email address into the scanner on Monday.']]),
         costed([['c1', 'The email address saved on the scanner', 'Retype the address', 'One minute'], ['c2', 'The scanner’s network cable', 'Look at the scanner’s network screen', 'One minute'], ['c3', 'The scanner’s software', 'Update it', '30 minutes']]),
         table('Test', ['Test', 'Result'], [['t1', 'The scanner’s screen shows its network connection', 'Connected']])],
       asks: [ask('What is your next move?', [
@@ -239,7 +239,7 @@
       id: 'l6-k-uma',
       blocks: [
         note('Toner is the powder a laser printer prints with; the cartridge holds it.'),
-        msg('chat', 'Uma, Technician', 'Note in the ticket', [['u1', 'Printer printed gray streaks. I ran the printer’s cleaning routine and put in a new toner cartridge in the same visit. It prints clean now.']])],
+        msg('chat', 'Thomas, Technician', 'Note in the ticket', [['u1', 'Printer printed gray streaks. I ran the printer’s cleaning routine and put in a new toner cartridge in the same visit. It prints clean now.']])],
       asks: [ask('What can the ticket note say about the cause?', [
         ['The cleaning and the new toner both went in; the toner is the likely cause, because the old cartridge had run low.', CRED, 'The cleaning happened at the same time, so the toner is a guess.'],
         ['Cleaning run and toner cartridge replaced in the same visit; either could be the cause, and it is not known which.', true, 'Two things changed at once, so either could be the cause. The note lists both and says so.'],
@@ -285,7 +285,7 @@
       asks: [ask('What do the three results show?', [
         ['The keyboard is fine, because the keyboard known to work did not help in Ned’s port.', FAULT2, 'The second test shows Ned’s keyboard is bad as well. In the first test the port was bad too, so the new keyboard could not type.'],
         ['Only the port is faulty, because nothing typed in it.', FAULT2, 'Ned’s keyboard also fails in a port that works, so it is faulty too.'],
-        ['Both Ned’s keyboard and the port on his computer are faulty.', true, 'A good keyboard fails in Ned’s port, and Ned’s keyboard fails in a good port. Two faults hid each other in the first test.'],
+        ['Both Ned’s keyboard and the port on their computer are faulty.', true, 'A good keyboard fails in Ned’s port, and Ned’s keyboard fails in a good port. Two faults hid each other in the first test.'],
         ['Ned’s keyboard is the only fault, so cross off the port.', FAULT2, 'A keyboard known to work also failed in Ned’s port, so the port is not cleared.']])],
       deciding: ['t1', 't2', 't3'],
       reason: 'Crossing a cause off on one result assumes one fault. Here the results contradict each other: the keyboard known to work fails in Ned’s port, and Ned’s keyboard fails in a working port. When results contradict, suspect a second fault and keep both causes on the list.' }),
@@ -302,14 +302,14 @@
       reason: 'One change on one cause, then a test page. The result shows what that change did, and the other causes stay on the list untouched.' }),
     item({
       id: 'l6-r-ravi',
-      blocks: [note('Ravi in Sales calls the help desk. His printer prints blank pages. You answer. On this desk, a first change and a test page takes about two minutes.')],
-      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ravi calls about his printer. What do you say?', form: 'call', from: 'Ravi, Sales', detail: 'Incoming call · 11:15 AM', start: 'one',
+      blocks: [note('Ravi in Sales calls the help desk. Their printer prints blank pages. You answer. On this desk, a first change and a test page takes about two minutes.')],
+      asks: [{ id: 'a', kind: 'exchange', prompt: 'Ravi calls about their printer. What do you say?', form: 'call', from: 'Ravi, Sales', detail: 'Incoming call · 11:15 AM', start: 'one',
         turns: {
-          one: { lines: [L('r1', 'My printer prints blank pages. Just do every fix on your list together so we can be done.')], push: 'He wants every fix at once.',
+          one: { lines: [L('r1', 'My printer prints blank pages. Just do every fix on your list together so we can be done.')], push: 'They want every fix at once.',
             options: [{ id: 'all', text: 'All right, I will do every fix at once.', end: 'all' },
               { id: 'one', text: 'I will make one change, print a test page, then the next.', goto: 'two' },
               { id: 'later', text: 'Call back tomorrow, please.', end: 'later' }] },
-          two: { lines: [L('r2', 'One at a time? I need this printed in ten minutes.')], push: 'He pushes again for the fast way.',
+          two: { lines: [L('r2', 'One at a time? I need this printed in ten minutes.')], push: 'They push again for the fast way.',
             options: [{ id: 'quick', text: 'The first change takes two minutes, and the test page shows right away whether it helped or not.', end: 'one' },
               { id: 'three', text: 'Fine, I will do three together.', end: 'three' }] }
         },
@@ -317,7 +317,7 @@
           one: { ok: true, then: 'One change then a test page: if the page prints, you know what did it; if not, that change is crossed off and the next is tried, and the first one takes two minutes.' },
           all: { ok: false, slip: TWO, then: 'If the page prints, nobody will know which change did it, and fixes it did not need stay in. If it does not, nothing is crossed off.' },
           three: { ok: false, slip: TWO, then: 'Three changes at once cannot be told apart if it works, and none is crossed off if it does not.' },
-          later: { ok: false, slip: 'no-next', then: 'Ravi needs his page in ten minutes and gets no help. One change then a test page would have started right away.' } } }],
+          later: { ok: false, slip: 'no-next', then: 'Ravi needs their page in ten minutes and gets no help. One change then a test page would have started right away.' } } }],
       reason: 'Ravi is pressed for time, but one change and a test page takes about two minutes and shows what worked. Doing every fix at once leaves it unknown which did it and keeps fixes that were not needed; if nothing helps, nothing is crossed off.' })
   ]);
 })();

@@ -19,7 +19,7 @@
     item({
       id: 'l19-k-crack', strand: HW,
       blocks: [
-        chat('Uma, Legal', 'u1', 'I dropped my phone and the glass is cracked across the middle. The picture is fine at the top, but the bottom third does not answer touches at all, and I have two weeks of site photos on it that are not saved anywhere.')],
+        chat('Niamh, Legal', 'u1', 'I dropped my phone and the glass is cracked across the middle. The picture is fine at the top, but the bottom third does not answer touches at all, and I have two weeks of site photos on it that are not saved anywhere.')],
       asks: [ask('What is the order of the work?', [
         ['Save the photos with a cable to a computer first, then repair the screen', true, 'The data comes first because the screen could fail further. The dead touch strip is the touch layer under the glass, so the screen is repaired.'],
         ['Replace the screen at once', NOBACK, 'Repairs can go wrong, and two weeks of photos exist nowhere else. Protect the data before touching the phone.'],
@@ -30,7 +30,7 @@
     item({
       id: 'l19-k-hot', strand: HW,
       blocks: [
-        chat('Vic, Surveyor', 'v1', 'My phone keeps warning “too hot, cooling down” when I use it for navigation in the truck. It sits in the cradle on the dashboard, in the sun, plugged in. It cools off when I get inside the office.'),
+        chat('Samir, Surveyor', 'v1', 'My phone keeps warning “too hot, cooling down” when I use it for navigation in the truck. It sits in the cradle on the dashboard, in the sun, plugged in. It cools off when I get inside the office.'),
         list('b', 'Settings, Battery', ['Line', 'Value'], [['Battery health', 'Maximum capacity 93%'], ['Back of the phone, when it is cool', 'Flat, no bulge'], ['Top user', 'Navigation, screen on']])],
       asks: [ask('What fits?', [
         ['Sun, charging and navigation together: get it out of the sun', true, 'The battery is healthy, the back is flat and the heat goes away indoors. Three heat sources at once are the cause, and none is a fault.'],
@@ -42,7 +42,7 @@
     item({
       id: 'l19-k-air', strand: AP,
       blocks: [
-        chat('Wes, Sales', 'w1', 'I just landed. My phone shows no bars and nothing loads, not on the airport Wi-Fi either. Other people around me have signal.'),
+        chat('Shona, Sales', 'w1', 'I just landed. My phone shows no bars and nothing loads, not on the airport Wi-Fi either. Other people around me have signal.'),
         list('b', 'What the phone shows', ['Line', 'Value'], [['Top of the screen', 'A small airplane picture'], ['Wi-Fi', 'Off'], ['Bluetooth', 'Off']])],
       asks: [ask('What is the first change?', [
         ['Turn airplane mode off, then check Wi-Fi and cellular again', true, 'Airplane mode turns off all the radios, which fits no bars, no Wi-Fi and the airplane at the top of the screen.'],
@@ -70,9 +70,9 @@
         list('b', 'Settings, Mobile data (this month)', ['App', 'Data used'], [['Browser', '1.1 GB'], ['Navigator', '0.9 GB'], ['Free VPN Pro (from a link, outside the store)', '14.2 GB']])],
       asks: [ask('What do you do?', [
         ['Back up Yun’s files, go offline, remove the app, take root off, then run the company scan', true, 'Root removed the phone’s protections, so one bad app can reach everything. The app and root go, and the company scan checks what is left; a reset follows only if the scan is not clean.'],
-        ['Run the scan and report the phone clean if it finds nothing', KEEP, 'The 14 GB app is still there and root is still on. The signs are already enough.'],
-        ['Remove only the app, and leave the phone rooted for Yun’s other apps', KEEP, 'The app is removed, but the lowered protections stay, and the next unofficial app can do the same.'],
-        ['Factory reset the phone at once without saving anything', NOBACK, 'It erases Yun’s files. Back up what is needed first.']])],
+        ['Run the scan, then report Yun’s phone clean if it finds nothing', KEEP, 'The 14 GB app is still there and root is still on. The signs are already enough.'],
+        ['Remove only the app, run the scan, and leave the phone rooted for Yun’s other apps', KEEP, 'The app is removed, but the lowered protections stay, and the next unofficial app can do the same.'],
+        ['Factory reset the phone at once, without saving Yun’s files first', NOBACK, 'It erases Yun’s files. Back up what is needed first.']])],
       deciding: ['y1', 'b3'],
       reason: 'A rooted phone with ads, slowness and a data warning and an app from outside the store is a malicious app on a phone with the protections removed. The app goes, root goes too, Yun’s files are saved first, and passwords are changed from another device.' }),
     item({
@@ -81,9 +81,9 @@
         chat('Stan, Finance', 'z1', 'Two clients texted me about odd messages I never sent, with a link. Yesterday I put a free PDF reader on from a pop-up on a website. Last night my work photos showed up in a group chat I am not in.')],
       asks: [ask('Which first move fits?', [
         ['Save Stan’s files, go offline, remove the PDF reader, then change passwords from another device', true, 'Messages Stan never sent and photos posted without Stan are leaked data from a malicious app. The app is cut off first, then the passwords change from a device that is clean.'],
-        ['Change the passwords from the same phone', ONE, 'The app may read what is typed on that phone. The new passwords would reach it too.'],
-        ['Reply to the clients and tell them to ignore the texts Stan never sent', GUESS, 'Nothing has stopped them. The app is still running and can send more.'],
-        ['Update the PDF reader', CAUSE, 'The reader came from a pop-up and is the likely source. An update from the same source is no fix.']])],
+        ['Save Stan’s files, then change the passwords from the same phone and update the PDF reader', ONE, 'The app may read what is typed on that phone, so the new passwords would reach it too, and an update from the same source is no fix.'],
+        ['Go offline, then reply to the clients and tell them to ignore the texts Stan never sent', GUESS, 'Nothing has stopped them. The app is still running and can send more.'],
+        ['Update the PDF reader, then restart Stan’s phone and watch whether the texts stop', CAUSE, 'The reader came from a pop-up and is the likely source. An update from the same source is no fix.']])],
       deciding: ['z1'],
       reason: 'Leaked personal data and messages the user did not send after an app from a pop-up are signs of a malicious app. Airplane mode and removing the app come first, then passwords change from another device, the clients are warned and the desk is told.' }),
 
@@ -91,7 +91,7 @@
     item({
       id: 'l19-r-stylus', strand: HW,
       blocks: [
-        chat('Abe, Design', 'a1', 'The stylus for my tablet has stopped drawing. The screen answers my finger fine. The stylus is two years old, and the light on it is off.')],
+        chat('Rowan, Design', 'a1', 'The stylus for my tablet has stopped drawing. The screen answers my finger fine. The stylus is two years old, and the light on it is off.')],
       asks: [ask('What do you try first?', [
         ['Charge the stylus or replace its battery, then pair it again', true, 'The finger works, so the screen and touch layer are fine. A stylus with its light off has an empty battery.'],
         ['Replace the tablet screen', PART, 'It answers a finger, so the screen works.'],
@@ -152,8 +152,8 @@
     item({
       id: 'l19-r-launch', strand: AP,
       blocks: [
-        chat('Fay, Maintenance', 'f1', 'My work-order app on my Android phone will not open. It sits on a white screen. Everything else works. It worked yesterday.'),
-        list('b', 'What Fay has done', ['Step', 'Result'], [['Closed the app and reopened it', 'White screen'], ['Restarted the phone', 'White screen'], ['App store', 'No update waiting'], ['Storage', '41 GB free']])],
+        chat('Victoria, Maintenance', 'f1', 'My work-order app on my Android phone will not open. It sits on a white screen. Everything else works. It worked yesterday.'),
+        list('b', 'What Victoria has done', ['Step', 'Result'], [['Closed the app and reopened it', 'White screen'], ['Restarted the phone', 'White screen'], ['App store', 'No update waiting'], ['Storage', '41 GB free']])],
       asks: [ask('What do you try next?', [
         ['Clear the app’s cache, then reinstall it after saving its data', true, 'The cheaper steps are done: reopen, restart, update, storage. Clearing the cache is the next cheapest, and reinstalling is the last for one app.'],
         ['Factory reset the phone', WIPE, 'Everything else works. A reset is for after everything cheaper has failed, and it wipes the phone.'],
@@ -166,10 +166,10 @@
     item({
       id: 'l19-r-warning', strand: SE,
       blocks: [
-        chat('Gus, Reception', 'g1', 'While reading the news on my phone, a red box filled the screen: “Your phone is infected! Tap here to clean it now.” It has a countdown and a security logo. I have not tapped it.')],
-      asks: [ask('What do you tell Gus?', [
+        chat('Clifford, Reception', 'g1', 'While reading the news on my phone, a red box filled the screen: “Your phone is infected! Tap here to clean it now.” It has a countdown and a security logo. I have not tapped it.')],
+      asks: [ask('What do you tell Clifford?', [
         ['Do not tap it. Close the page or the browser tab', true, 'It is a fake security warning on a web page: it wants a tap on its button.'],
-        ['Tap the button to clean the phone', POPUP, 'The button is how the page gets Gus to install something bad.'],
+        ['Tap the button to clean the phone', POPUP, 'The button is how the page gets Clifford to install something bad.'],
         ['Do not tap it. Switch the phone off and leave it off all day', CAUSE, 'Switching off does not remove the page that showed the box. Closing the page does.'],
         ['Factory reset the phone at once', WIPE, 'Nothing has been installed. Closing the page is enough, and a reset wipes the phone for a web page.']])],
       deciding: ['g1'],

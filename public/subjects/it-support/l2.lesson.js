@@ -10,8 +10,8 @@
 // (starting with the fix), one worked ticket whose first guess the user's answer rules out, a first group with the deciding words marked, a second
 // with none, a third mixed with lesson 1, and a check of five new questions with two calls.
 FC.lesson("it-support", {
-  id: "l2", part: "story", title: "Getting the story", rev: 1, status: "live",
-  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the user's words first, open questions, saying the story back, plain words, and searching the desk's knowledge base with the fault's own words. Calls are practised as exchanges." }],
+  id: "l2", part: "story", title: "Getting the story", rev: 2, status: "live",
+  history: [{ rev: 1, date: "2026-10-23", change: "First version, built to the plan: the user's words first, open questions, saying the story back, plain words, and searching the desk's knowledge base with the fault's own words. Calls are practised as exchanges." }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
     "The email says: \"The printer is broken. Nothing comes out. Fix please.\" Four words about the fault, and a dozen faults they could mean.",
     "Here you learn to get the story before you touch anything: let them tell it, narrow it with an open question, say it back, and search what the desk already knows."

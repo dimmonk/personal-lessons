@@ -118,8 +118,8 @@
         msg('chat', 'Wilma, Billing', 'Chat with the help desk', [['h1', 'My computer has 8 GB of memory but Windows only shows 3.5 GB usable. All my files are on this computer.']]),
         table('About this computer', ['Detail', 'Value'], [['s1', 'Installed memory', '8 GB'], ['s2', 'System type', '32-bit operating system'], ['s3', 'Processor', 'Can run 64-bit']])],
       asks: [ask('What fixes it?', [
-        ['Copy his files off first, then put on 64-bit Windows', true, 'A 32-bit system can use only about 4 GB. A 64-bit system uses all of the 8 GB, and this processor can run it. Putting on a new system can wipe the drive, so the files are copied first.'],
-        ['Put on 64-bit Windows over the old system now', 'no-backup', 'This is the right fix, but a new system can wipe the drive. His files are protected first.'],
+        ['Copy their files off first, then put on 64-bit Windows', true, 'A 32-bit system can use only about 4 GB. A 64-bit system uses all of the 8 GB, and this processor can run it. Putting on a new system can wipe the drive, so the files are copied first.'],
+        ['Put on 64-bit Windows over the old system now', 'no-backup', 'This is the right fix, but a new system can wipe the drive. Their files are protected first.'],
         ['Buy more memory sticks and fit them in the computer', PART, 'The memory is already there. The 32-bit system cannot use more than about 4 GB.'],
         ['Turn on dual channel in the firmware to free the memory', SETT, 'Dual channel makes memory faster. It does not lift a 32-bit system’s limit.']])],
       deciding: ['h1', 's2', 's3'],

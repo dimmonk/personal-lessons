@@ -1,10 +1,10 @@
 # IT Help Desk: Ports and protocols
 
-Revision 1, live. Part: Ports and protocols. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Ports and protocols. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Anita works at the branch office. Since this morning Remote Desktop, the program that shows her the screen of her computer at head office, says it cannot connect. Web pages and email work fine. The firewall list shows one line changed: a number, 3389, is blocked.
+Anita works at the branch office. Since this morning Remote Desktop, the program that shows them the screen of their computer at head office, says it cannot connect. Web pages and email work fine. The firewall list shows one line changed: a number, 3389, is blocked.
 A technician who knows what 3389 is for finds the fault in a minute. One who does not, reinstalls things. Here you learn the numbers on the A+ exam by the job each one does, so you remember them by meaning, and you practice them from memory the way the exam tests them.
 
 ## Step 1: A port is a numbered door
@@ -113,9 +113,9 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 **Web pages and email work for Anita. What does that show?**
 (the options come in an order that depends on the seed of the question)
 - The link to head office works, so only one service is stuck.
-- Remote Desktop must be working too, so she mistyped.
-- Her computer at head office must be switched off.
-- Restart her computer and try Remote Desktop again.
+- Remote Desktop must be working too, so they mistyped.
+- Their computer at head office must be switched off.
+- Restart their computer and try Remote Desktop again.
 
 The working, one step at a time:
 1. Write down every cause that fits “Remote Desktop cannot connect”.: The link between the branch and head office is down; the computer at head office is off; the password is wrong; the door for Remote Desktop is closed somewhere on the way.
@@ -132,9 +132,9 @@ Then the answer: The link to head office works, so only one service is stuck. We
 
 #### Item 1
 
-A chat, with its history: "Dev, Network team", Chat with the help desk.
+A chat, with its history: "Gaspard, Network team", Chat with the help desk.
 
-> (Dev, Network team, at the left) **I need to type commands on the new Linux server (a company computer that runs Linux, an operating system like Windows, and serves others) from my desk. The security rule says nothing typed, passwords included, may travel as readable text. Which service do I allow through the firewall?**
+> (Gaspard, Network team, at the left) **I need to type commands on the new Linux server (a company computer that runs Linux, an operating system like Windows, and serves others) from my desk. The security rule says nothing typed, passwords included, may travel as readable text. Which service do I allow through the firewall?**
 
 Help on screen: the words that decide it are marked.
 
@@ -149,9 +149,9 @@ After the answer: the deciding words are marked. Reason: The job is typing comma
 
 #### Item 2
 
-A chat, with its history: "Lena, Sales", Chat with the help desk.
+A chat, with its history: "Anika, Sales", Chat with the help desk.
 
-> (Lena, Sales, at the left) **I read a message on my phone, but my laptop still shows it as new. A message I deleted on the laptop is still on the phone. How do I get them to agree?**
+> (Anika, Sales, at the left) **I read a message on my phone, but my laptop still shows it as new. A message I deleted on the laptop is still on the phone. How do I get them to agree?**
 
 Help on screen: the words that decide it are marked.
 
@@ -166,9 +166,9 @@ After the answer: the deciding words are marked. Reason: Two devices that must a
 
 #### Item 3
 
-A chat, with its history: "Sam, Purchasing", Chat with the help desk.
+A chat, with its history: "Eileen, Purchasing", Chat with the help desk.
 
-> (Sam, Purchasing, at the left) **I can open the supplier’s site by typing its address, 203.0.113.20, but not by typing its name. Other sites fail by name too.**
+> (Eileen, Purchasing, at the left) **I can open the supplier’s site by typing its address, 203.0.113.20, but not by typing its name. Other sites fail by name too.**
 
 Help on screen: the words that decide it are marked.
 
@@ -176,16 +176,16 @@ Help on screen: the words that decide it are marked.
 (the options come in an order that depends on the seed of the question)
 - DNS, port 53 (right)
 - DHCP, ports 67 and 68 — if chosen: DHCP hands out addresses. The computer has one, since the number address works.
-- HTTP, port 80 — if chosen: HTTP loaded the page when Sam typed the number, so it works.
+- HTTP, port 80 — if chosen: HTTP loaded the page when Eileen typed the number, so it works.
 - LDAP, port 389 — if chosen: LDAP looks up accounts in the company directory. It has nothing to do with website names.
 
 After the answer: the deciding words are marked. Reason: The page loads by number and fails by name. Turning a name into a number is DNS, port 53.
 
 #### Item 4
 
-A chat, with its history: "Ola, Branch office", Chat with the help desk.
+A chat, with its history: "Philip, Branch office", Chat with the help desk.
 
-> (Ola, Branch office, at the left) **The new branch firewall lets web and mail through, but I cannot open the team folder on the head office file server. It is a Windows shared folder. Which port must it allow?**
+> (Philip, Branch office, at the left) **The new branch firewall lets web and mail through, but I cannot open the team folder on the head office file server. It is a Windows shared folder. Which port must it allow?**
 
 Help on screen: the words that decide it are marked.
 
@@ -259,9 +259,9 @@ After the answer: Reason: FTP uses 21 for the commands and 20 for the file data.
 
 #### Item 9
 
-A chat, with its history: "Una, Security", Chat with the help desk.
+A chat, with its history: "August, Security", Chat with the help desk.
 
-> (Una, Security, at the left) Our audit found an old switch (a box that joins office network cables) managed from a desk over port 23. The auditor says to stop. Why, and what do we use?
+> (August, Security, at the left) Our audit found an old switch (a box that joins office network cables) managed from a desk over port 23. The auditor says to stop. Why, and what do we use?
 
 **Which is right?**
 (the options come in an order that depends on the seed of the question)
@@ -285,9 +285,9 @@ After the answer: Reason: LDAP, port 389, looks up accounts, passwords and compu
 
 #### Item 11
 
-A chat, with its history: "Fay, Network team", Chat with the help desk.
+A chat, with its history: "Robin, Network team", Chat with the help desk.
 
-> (Fay, Network team, at the left) I am writing the firewall rule for name lookups on port 53. Most answers are short, and a few are too big for one short message. How does DNS deliver?
+> (Robin, Network team, at the left) I am writing the firewall rule for name lookups on port 53. Most answers are short, and a few are too big for one short message. How does DNS deliver?
 
 **Which is right?**
 (the options come in an order that depends on the seed of the question)
@@ -306,9 +306,9 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 12
 
-A chat, with its history: "Wes, Security", Chat with the help desk.
+A chat, with its history: "Madhav, Security", Chat with the help desk.
 
-> (Wes, Security, at the left) Our firewall log shows hundreds of connection attempts from outside, all to port 3389 on our computers. What is someone trying to reach?
+> (Madhav, Security, at the left) Our firewall log shows hundreds of connection attempts from outside, all to port 3389 on our computers. What is someone trying to reach?
 
 **What is on port 3389?**
 (the options come in an order that depends on the seed of the question)
@@ -321,9 +321,9 @@ After the answer: the deciding words are marked. Reason: Port 3389 is Remote Des
 
 #### Item 13
 
-A chat, with its history: "Kai, Finance", Chat with the help desk.
+A chat, with its history: "Shira, Finance", Chat with the help desk.
 
-> (Kai, Finance, at the left) Since this morning nobody can open our bank’s login page, which starts with https://. Plain http:// pages and everything else work.
+> (Shira, Finance, at the left) Since this morning nobody can open our bank’s login page, which starts with https://. Plain http:// pages and everything else work.
 
 A plain table, "The office firewall (changed this morning)":
 
@@ -346,9 +346,9 @@ After the answer: the deciding words are marked. Reason: Pages that start with h
 
 #### Item 14
 
-A chat, with its history: "Ruth, Accounts", Chat with the help desk.
+A chat, with its history: "Marianne, Accounts", Chat with the help desk.
 
-> (Ruth, Accounts, at the left) My mail program, set to send on SMTP’s own port, receives mail, but every message I send sits in the Outbox.
+> (Marianne, Accounts, at the left) My mail program, set to send on SMTP’s own port, receives mail, but every message I send sits in the Outbox.
 
 A plain table, "The office firewall (changed this morning)":
 
@@ -372,9 +372,9 @@ After the answer: the deciding words are marked. Reason: Receiving works and sen
 
 #### Item 15
 
-A chat, with its history: "Bo, Lab", Chat with the help desk.
+A chat, with its history: "Alec, Lab", Chat with the help desk.
 
-> (Bo, Lab, at the left) The old lab scanner saves scans to a shared folder it finds by the computer’s NetBIOS name. After this morning’s firewall change it says it cannot find the computer.
+> (Alec, Lab, at the left) The old lab scanner saves scans to a shared folder it finds by the computer’s NetBIOS name. After this morning’s firewall change it says it cannot find the computer.
 
 A plain table, "The lab firewall (changed this morning)":
 
@@ -420,9 +420,9 @@ After the answer: Reason: RDP, Remote Desktop Protocol, is port 3389. It shows y
 
 #### Item 18
 
-A chat, with its history: "Gus, Network team", Chat with the help desk.
+A chat, with its history: "Jaime, Network team", Chat with the help desk.
 
-> (Gus, Network team, at the left) I am writing a firewall rule that only needs TCP. Which of these lists has services that all deliver by TCP?
+> (Jaime, Network team, at the left) I am writing a firewall rule that only needs TCP. Which of these lists has services that all deliver by TCP?
 
 **Which list is all TCP?**
 (the options come in an order that depends on the seed of the question)
@@ -435,9 +435,9 @@ After the answer: the deciding words are marked. Reason: Of these services, only
 
 #### Item 19
 
-A chat, with its history: "Zed, Reception", Chat with the help desk.
+A chat, with its history: "Dylan, Reception", Chat with the help desk.
 
-> (Zed, Reception, at the left) Nothing opens by name on the front desk computer, but typing the address 203.0.113.20 loads the supplier’s site. The firewall was changed this morning.
+> (Dylan, Reception, at the left) Nothing opens by name on the front desk computer, but typing the address 203.0.113.20 loads the supplier’s site. The firewall was changed this morning.
 
 A plain table, "The office firewall (changed this morning)":
 
@@ -494,9 +494,9 @@ After the answer: Reason: DHCP, which hands out addresses, uses 67 for the serve
 
 #### Check question 22
 
-A chat, with its history: "Mo, Network team", Chat with the help desk.
+A chat, with its history: "Lisbeth, Network team", Chat with the help desk.
 
-> (Mo, Network team, at the left) Our monitoring tool lists the services that deliver by UDP, the quick way with no connection. Which one of these should be on its list?
+> (Lisbeth, Network team, at the left) Our monitoring tool lists the services that deliver by UDP, the quick way with no connection. Which one of these should be on its list?
 
 **Which service uses UDP?**
 (the options come in an order that depends on the seed of the question)
@@ -520,9 +520,9 @@ After the answer: Reason: POP3 is port 110. It receives mail by downloading it t
 
 #### Check question 24
 
-A chat, with its history: "Nia, Sales", Chat with the help desk.
+A chat, with its history: "Josef, Sales", Chat with the help desk.
 
-> (Nia, Sales, at the left) My mail program asks for an outgoing mail server. Which service is that, and which port does the exam give for it?
+> (Josef, Sales, at the left) My mail program asks for an outgoing mail server. Which service is that, and which port does the exam give for it?
 
 **Which is it?**
 (the options come in an order that depends on the seed of the question)
@@ -601,9 +601,9 @@ After the answer: Reason: SSH, Secure Shell, replaced Telnet. It does the same j
 
 #### Check question 30
 
-A chat, with its history: "Hal, Network team", Chat with the help desk.
+A chat, with its history: "Debra, Network team", Chat with the help desk.
 
-> (Hal, Network team, at the left) The new firewall allows port 53 only for UDP. Short name lookups work, but a few lookups with big answers fail. What do we change?
+> (Debra, Network team, at the left) The new firewall allows port 53 only for UDP. Short name lookups work, but a few lookups with big answers fail. What do we change?
 
 **What do we change?**
 (the options come in an order that depends on the seed of the question)
@@ -616,9 +616,9 @@ After the answer: the deciding words are marked. Reason: Short DNS answers go by
 
 #### Check question 31
 
-A chat, with its history: "Joy, Lab", Chat with the help desk.
+A chat, with its history: "Pablo, Lab", Chat with the help desk.
 
-> (Joy, Lab, at the left) Our old NetBIOS rule says 137, 138 and 139 all use TCP. Is that right?
+> (Pablo, Lab, at the left) Our old NetBIOS rule says 137, 138 and 139 all use TCP. Is that right?
 
 **Which is right?**
 (the options come in an order that depends on the seed of the question)

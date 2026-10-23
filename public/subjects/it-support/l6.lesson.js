@@ -7,10 +7,10 @@
 // give the written list and the dropping of a ruled-out cause, not the single change. The lesson says so. One round, in one order everywhere:
 // list, test, cross off, change one thing, look, write it down. Tests assume one fault at a time (IT4).
 FC.lesson('it-support', {
-  id: 'l6', part: 'one', title: 'One change at a time', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (one change then a look; dropping a cause its test rules out; the first idea that will not let go).' }],
+  id: 'l6', part: 'one', title: 'One change at a time', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (one change then a look; dropping a cause its test rules out; the first idea that will not let go).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Joy’s laptop will not join the office Wi-Fi. The Wi-Fi was down last week, so you are sure it is the router (the box that connects the office to the internet). You restart the router, update her Wi-Fi software and clear her saved networks (the Wi-Fi names and passwords her laptop remembers). The laptop joins. What fixed it? Nobody knows, and if it breaks again nobody knows what to do.',
+    'Joy’s laptop will not join the office Wi-Fi. The Wi-Fi was down last week, so you are sure it is the router (the box that connects the office to the internet). You restart the router, update their Wi-Fi software and clear their saved networks (the Wi-Fi names and passwords their laptop remembers). The laptop joins. What fixed it? Nobody knows, and if it breaks again nobody knows what to do.',
     'You can cut a problem in half and still lose the answer by changing too much at once, or by staying with an idea the test already ruled out. Here you learn to change one thing, look, and cross off what the test rules out.'],
   flow: [
     { title: 'One change, then look',
@@ -22,7 +22,7 @@ FC.lesson('it-support', {
       show: [{ kind: 'prose', text: [
         'A test rules a cause out when its result could not happen if that cause were the one. Joy’s phone joins the office Wi-Fi, so the office Wi-Fi is working: that cause is ruled out. Cross it off and take the next cause on the list.',
         'Which cause is next? Look at the causes still on the list and take the one with the cheapest test, as when you cut a list in half: the fewest minutes, and the easiest to put back. Ten seconds of looking at a switch comes before an hour of replacing a part.',
-        'A cause stays on the list when no test has touched it. The phone never used Joy’s laptop, so her laptop and its own Wi-Fi settings stay. Cross off only what a result rules out. As with the splitting tests before it, this assumes one fault at a time: if two parts are bad, a part that did not help can still be bad.',
+        'A cause stays on the list when no test has touched it. The phone never used Joy’s laptop, so their laptop and its own Wi-Fi settings stay. Cross off only what a result rules out. As with the splitting tests before it, this assumes one fault at a time: if two parts are bad, a part that did not help can still be bad.',
         'A part known to work is the clearest test, and a swap can be put back, so it is a test. Put it where the doubtful one was. If the problem stays, the old part is not the cause, even if you were sure it was: put the old part back and cross it off. If the problem goes, keep the new part: that swap is now your one change.'] }] },
     { title: 'The idea that will not let go',
       show: [{ kind: 'prose', tone: 'wrong', text: [

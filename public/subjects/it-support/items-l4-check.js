@@ -11,16 +11,16 @@ const table = (title, head, rows) => ({ kind: 'document', form: 'table', title, 
 FC.items('it-support', [
   { id: 'l4-k-video', strand: 'known', facets: {},
     blocks: [
-      { kind: 'message', form: 'chat', from: 'Zed Ames', detail: 'Chat · Monday 10:30 AM', lines: [L('m1', 'My camera shows a black picture in Teams. I’m on a Windows 11 laptop.')] },
-      { kind: 'prose', text: ['You have his story and what changed, and no step here can lose files.'] },
+      { kind: 'message', form: 'chat', from: 'Regina Ames', detail: 'Chat · Monday 10:30 AM', lines: [L('m1', 'My camera shows a black picture in Teams. I’m on a Windows 11 laptop.')] },
+      { kind: 'prose', text: ['You have their story and what changed, and no step here can lose files.'] },
       table('Knowledge base search: “teams camera”', ['Article', 'Applies to', 'What it says'], [
         ['k1', 'Camera not found in Teams', 'Mac', 'Open System Settings, allow Teams to use the camera, and restart Teams.'],
         ['k2', 'Teams video is black', 'Windows 11 laptop', 'Close every other program using the camera, then pick the camera again in the Teams device settings.'],
         ['k3', 'Teams has no sound', 'Windows 11 laptop', 'Open the audio settings in Teams and choose the speaker again.']])],
     asks: [pick('article', 'Which article is the known fix?', [
-      ok('k2', 'Teams video is black, Windows 11 laptop', 'It matches the symptom (a black picture) and Zed’s setup.'),
+      ok('k2', 'Teams video is black, Windows 11 laptop', 'It matches the symptom (a black picture) and Regina’s setup.'),
       no('k1', 'Teams cannot find the camera, Mac laptop', 'It is for a Mac, and it is for a camera that is not found rather than a black picture.', 'wrong-article'),
-      no('k3', 'Teams has no sound in calls, Windows 11 laptop', 'It is his setup, but a different symptom: sound, not video.', 'wrong-article')])],
+      no('k3', 'Teams has no sound in calls, Windows 11 laptop', 'It is their setup, but a different symptom: sound, not video.', 'wrong-article')])],
     deciding: ['m1', 'k2'], reason: 'The symptom and the setup both have to match. Only the second article is about a black picture on a Windows 11 laptop.' },
   { id: 'l4-k-limit', strand: 'known', facets: {},
     blocks: [{ kind: 'prose', text: ['Shirin cannot open a shared spreadsheet. The knowledge base has an article for it. You are about to follow it. This desk has no rule about handing on.'] }],
@@ -51,11 +51,11 @@ FC.items('it-support', [
       no('hand', 'Pass it to the next level now, since the article did not work out', 'A failed article does not by itself hand the ticket on. You narrow it down, and you hand on when the desk’s rule says so.', 'handed-on-early')])],
     deciding: ['t1', 't2', 'clock'], reason: 'The limit was tries or minutes, whichever came first. The minutes are used, so you stop, whatever tries are left.' },
   { id: 'l4-k-cost', strand: 'known', facets: {},
-    blocks: [{ kind: 'prose', text: ['Jun’s printer shows “offline”. You restarted her PC, and the printer still shows “offline”.'] }],
+    blocks: [{ kind: 'prose', text: ['Vivian’s printer shows “offline”. You restarted their PC, and the printer still shows “offline”.'] }],
     asks: [pick('learned', 'What does the failed restart tell you about the cause?', [
       ok('little', 'Very little: only that a restart is not the fix', 'A guess that fails brings you no closer to the cause.'),
-      no('pc', 'That the problem is inside the printer itself', 'A restart of her PC does not test the printer, so it shows nothing about it.', 'guess-again'),
-      no('user', 'That she did something wrong before it went offline', 'Nothing in the restart points at anything she did.', 'blamed')])],
+      no('pc', 'That the problem is inside the printer itself', 'A restart of their PC does not test the printer, so it shows nothing about it.', 'guess-again'),
+      no('user', 'That they did something wrong before it went offline', 'Nothing in the restart points at anything they did.', 'blamed')])],
     deciding: [], reason: 'A failed quick fix rules out only itself. To learn the cause you need a test that splits the possibilities, which is the next step after the limit.' },
   { id: 'l4-k-reset', strand: 'known', facets: {},
     blocks: [

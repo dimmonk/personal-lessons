@@ -11,8 +11,9 @@
     WARN = 'trusted-warning', BSET = 'wrong-browser-setting', CAUSE = 'wrong-cause', PART = 'part-first', OPEN = 'open-up', SKIP = 'skipped-step', WIPED = 'windows-wipe', CLOSED = 'closed-early', KEPT = 'kept-app';
 
   FC.items('it-support', [
+    // Pronouns: named ticket people are named or "they" (ruling 22); quick format and full format as in lesson 21 and Microsoft KB 941961.
     // ----- malware-kinds, with the signs and the tools -----
-    chat('l26-r-virus', 'malware-kinds', 'Ken, Print shop', 'A coworker gave me a spreadsheet on a USB stick. Now other spreadsheets on my PC will not open, and the same thing has started on hers.',
+    chat('l26-r-virus', 'malware-kinds', 'Xander, Print shop', 'A coworker gave me a spreadsheet on a USB stick. Now other spreadsheets on my PC will not open, and the same thing has started on theirs.',
       'Which kind of malware fits?', [
         ['A virus, which attaches itself to files and spreads when they are shared', true, 'Trouble that follows a shared file and spreads from one PC to the next is how a virus behaves.'],
         ['A Trojan, which looks like useful software the user installs', KIND, 'Nothing was installed as software. The trouble came with a shared file.'],
@@ -26,7 +27,7 @@
         ['Adware, which shows ads in the browser', KIND, 'Adware shows in the browser. This message comes before Windows even starts.'],
         ['A keylogger, which records the letters and numbers that are typed', KIND, 'A keylogger records typing. It does not put a message on the screen at start-up.']],
       'A sign that comes before Windows loads and survives a scan inside Windows points to a boot sector virus.'),
-    chat('l26-r-pup', 'malware-kinds', 'Cy, Intake', 'After installing a free zip tool, my browser has a new toolbar and a “PC speed booster” program I never picked. They were on the install screens, but I clicked Next quickly.',
+    chat('l26-r-pup', 'malware-kinds', 'Diana, Intake', 'After installing a free zip tool, my browser has a new toolbar and a “PC speed booster” program I never picked. They were on the install screens, but I clicked Next quickly.',
       'What are the extras called?', [
         ['PUPs, potentially unwanted programs bundled with a download', true, 'Extra programs that ride along with a download, and are agreed to on its install screens, are PUPs.'],
         ['A rootkit, which hides other malware deep in the system', KIND, 'The extras are in plain sight, in the browser and in the program list.'],
@@ -40,7 +41,7 @@
         ['A message from Windows Update about a new patch', CAUSE, 'Windows Update does not tell anyone to download a cleaning program.'],
         ['A sign the drive is failing, so back it up and replace the drive soon', CAUSE, 'A failing drive does not show a red page offering a download.']],
       'An alert in a browser that offers a download of a program the desk never installed is a false antivirus alert. Close the browser and scan with the real security program.'),
-    chat('l26-r-update', 'malware-kinds', 'Moe, Front desk', 'Windows Update fails with an error on my PC every day. Four other PCs in the office updated fine last night. I also noticed that the antivirus is switched off and will not turn on.',
+    chat('l26-r-update', 'malware-kinds', 'Dolores, Front desk', 'Windows Update fails with an error on my PC every day. Four other PCs in the office updated fine last night. I also noticed that the antivirus is switched off and will not turn on.',
       'What is the worry, and what is the first step?', [
         ['Malware may be blocking updates and security tools, so verify the symptoms first', true, 'Updates failing on one PC only, plus a security tool that will not turn on, are signs of malware blocking them. Verify, then contain.'],
         ['Windows Update is broken, so reinstall Windows today and start again from the beginning', KIND, 'Four other PCs updated fine. Reinstalling is a big step before the symptoms are verified.'],
@@ -49,21 +50,21 @@
       'Updates that fail on one PC while others work, together with a security tool that cannot be turned on, suggest malware. The first of the ten steps is to verify.'),
 
     // ----- attacks -----
-    chat('l26-r-ddos', 'attacks', 'Tia, IT', 'Our web shop went down at 2 PM. The logs show thousands of requests a second from computers all over the world.',
+    chat('l26-r-ddos', 'attacks', 'Basil, IT', 'Our web shop went down at 2 PM. The logs show thousands of requests a second from computers all over the world.',
       'What is this attack?', [
         ['A DDoS attack, a flood of requests from many computers at once', true, 'Requests from thousands of computers in many places, until the shop cannot answer, is a distributed denial of service.'],
         ['A DoS attack, a flood of requests that comes from one single source', ATK, 'A DoS comes from one source. Here the requests came from computers all over the world.'],
         ['SQL injection, database commands typed into a web form', ATK, 'Nothing was typed into a form. The shop was flooded.'],
         ['Brute force, trying every possible password', ATK, 'Nobody was trying passwords. The shop was flooded with requests.']],
       'A flood from many computers at once is a DDoS. The same flood from one source is a DoS.'),
-    chat('l26-r-sqli', 'attacks', 'Gil, Web team', 'Someone typed a long line of database commands into the search box of our shop, and the page showed every customer’s name and card details.',
+    chat('l26-r-sqli', 'attacks', 'Jabari, Web team', 'Someone typed a long line of database commands into the search box of our shop, and the page showed every customer’s name and card details.',
       'What is this attack?', [
         ['SQL injection, database commands typed into a web form', true, 'Commands typed into a form that run against the database, so the page shows what it should not, is SQL injection.'],
         ['XSS, a script placed on a page to run in other visitors’ browsers', ATK, 'XSS runs a script in visitors’ browsers. Here the database itself answered.'],
         ['On-path, an attacker between two sides reading what passes', ATK, 'Nobody sat between two sides. The attacker typed into the shop’s own search box.'],
         ['A zero-day, an attack on a flaw nobody has a fix for yet', ATK, 'A zero-day is about a flaw with no fix. This one is about typing commands into a form.']],
       'Database commands typed into a web form that the database then runs is SQL injection.'),
-    chat('l26-r-dict', 'attacks', 'Uri, Admin', 'The log shows four thousand failed sign-in tries on the account “admin” in one hour. Each used a common password such as “Password1” or “letmein”.',
+    chat('l26-r-dict', 'attacks', 'Warren, Admin', 'The log shows four thousand failed sign-in tries on the account “admin” in one hour. Each used a common password such as “Password1” or “letmein”.',
       'What is this attack?', [
         ['A dictionary attack, trying common passwords from a list', true, 'Tries made with common passwords from a list are a dictionary attack.'],
         ['A brute-force attack, trying every possible password', ATK, 'Brute force tries every possible combination. These tries were common passwords from a list.'],
@@ -79,14 +80,14 @@
       'An attack that arrives through a trusted supplier or its software update is a supply chain attack.'),
 
     // ----- malware-removal -----
-    chat('l26-r-quar', 'malware-removal', 'Vic, Tech', 'You verified that Jo’s PC has malware. A colleague wants to start the scan right away while the PC stays on the office network.',
+    chat('l26-r-quar', 'malware-removal', 'Alfie, Tech', 'You verified that Oliver’s PC has malware. A colleague wants to start the scan right away while the PC stays on the office network.',
       'What comes first, and why?', [
         ['Quarantine it: take it off the network so it cannot spread or send data out', true, 'Step 2 comes before any cleaning. A connected infected PC can spread malware and send data out while you work on it.'],
         ['Update the scanner first, because the update needs the network', ORD, 'Updating is step 5. If the PC is cut off, fetch the update on a clean computer.'],
         ['Start the scan now, since removing the malware is the fastest cure for the PC', CONN, 'The scan takes time, and the PC stays connected the whole while.'],
         ['Reinstall Windows now, since any infection means a reinstall', ORD, 'Reinstalling is step 7, and only when the scan cannot clean the PC.']],
       'After verifying comes quarantine: cut the infected computer off from the network and drives before any cleaning begins.'),
-    chat('l26-r-why-update', 'malware-removal', 'Ned, New tech', 'My lead says to update the anti-malware first, even though the scanner was updated last month. Why?',
+    chat('l26-r-why-update', 'malware-removal', 'Cecilia, New tech', 'My lead says to update the anti-malware first, even though the scanner was updated last month. Why?',
       'What is the reason?', [
         ['A scanner only knows the malware it has been taught, and new kinds appear often', true, 'The update teaches the scanner about newer malware. A month-old scanner can miss it.'],
         ['The update makes the scan run faster, so the cleanup ends sooner', CAUSE, 'Speed is not the reason. The reason is what the scanner can recognize.'],
@@ -95,12 +96,12 @@
       'Step 5 comes before the scan because a scanner only finds what it has been taught to recognize.'),
     chat('l26-r-reimage', 'malware-removal', 'Eve, Legal', 'Three scans in safe mode removed what they found, but the same program is back after every restart. The tech cannot trust the system any more.',
       'Which step comes now?', [
-        ['Reimage or reinstall: erase the system and put back a clean copy', true, 'When scans cannot clear the malware, step 7 erases the system and puts back a clean copy.'],
+        ['Reimage or reinstall: erase the system and put back a clean copy, once Eve’s files are saved', true, 'When scans cannot clear the malware, step 7 erases the system and puts back a clean copy, after the user’s files are saved or confirmed backed up.'],
         ['Schedule scans and run updates, so that it is found sooner next time', ORD, 'Scheduling scans comes after the computer is clean. It is not clean yet.'],
         ['Educate the user, then close the ticket', CLOSED, 'Education is the last step, and closing waits for the user to confirm that it works.'],
         ['Enable System Restore and create a restore point', ORD, 'The restore point is made after the cleanup, so it saves a clean state. Not yet.']],
       'When scans keep failing to clear the malware, the system cannot be trusted, and step 7 reimages or reinstalls it.'),
-    chat('l26-r-point', 'malware-removal', 'Ned, New tech', 'After the cleanup, why do we turn System Restore on and make a new restore point?',
+    chat('l26-r-point', 'malware-removal', 'Cecilia, New tech', 'After the cleanup, why do we turn System Restore on and make a new restore point?',
       'What is the reason?', [
         ['So the saved state is a clean one that a later rollback can return to', true, 'A restore point made after the cleanup saves a clean computer, which is a safe place to roll back to.'],
         ['So the restore point can scan the system for leftover malware', CAUSE, 'A restore point does not scan anything. It saves the state of the system.'],
@@ -109,21 +110,21 @@
       'Step 9 comes after the cleanup, so the new restore point holds a clean system.'),
 
     // ----- destruction -----
-    chat('l26-r-dead', 'destruction', 'Kai, Accounts', 'A hard drive with payroll files died. It will not power on, so nothing can be wiped. The company will not reuse it.',
+    chat('l26-r-dead', 'destruction', 'Cynthia, Accounts', 'A hard drive with payroll files died. It will not power on, so nothing can be wiped. The company will not reuse it.',
       'What now?', [
         ['Destroy it physically, for example by shredding or drilling', true, 'A drive that cannot be wiped and will not be reused is destroyed physically.'],
         ['Wipe it with a utility when it next powers up', WEAK, 'It will not power on, and waiting leaves the payroll data on it.'],
-        ['Standard-format it and send it for recycling with the other old drives', WEAK, 'A standard format cannot run on a dead drive, and it would leave the data in place if it could.'],
+        ['Quick-format it and send it for recycling with the other old drives', WEAK, 'A quick format cannot run on a dead drive, and it would leave the data in place if it could.'],
         ['Put it in a drawer, since a dead drive cannot be read', OPEN, 'A drive that will not power on still holds its data on the platters, so it is not safe.']],
       'A dead drive cannot be wiped, so its data is protected by destroying it: shredding, drilling, degaussing or incineration.'),
-    chat('l26-r-format', 'destruction', 'Ben, Intern', 'I formatted the drive in Windows with the quick option before selling the laptop. Is the old data gone?',
-      'What do you tell him?', [
-        ['No: a standard format only clears the list of files, so wipe the drive', true, 'A standard format leaves the data on the drive. A wipe overwrites it.'],
-        ['Yes: a format erases every file and all the data from the drive for good', WEAK, 'A standard format only clears the list of files. The data stays on the drive.'],
+    chat('l26-r-format', 'destruction', 'Elijah, Intern', 'I formatted the drive in Windows with the quick option before selling the laptop. Is the old data gone?',
+      'What do you tell Elijah?', [
+        ['No: a quick format only clears the list of files, so wipe the drive', true, 'A quick (standard) format leaves the data on the drive. A wipe overwrites it, and so does a full format, which writes zeros.'],
+        ['Yes: a format erases every file and all the data from the drive for good', WEAK, 'A quick format only clears the list of files. The data stays on the drive.'],
         ['Yes, as soon as the laptop has been restarted', WEAK, 'A restart changes nothing on the drive.'],
         ['Yes, if the Recycle Bin is emptied too', WEAK, 'The Recycle Bin holds deleted files. Emptying it does not overwrite the drive.']],
-      'A standard format only clears the list of files. Overwrite the whole drive with a wipe before it leaves the company.'),
-    chat('l26-r-trash', 'destruction', 'Joy, Office', 'Our old monitors, batteries and drives are going out with the ordinary trash on Friday.',
+      'A quick (standard) format only clears the list of files. Overwrite the whole drive, with a wipe tool or a full format that writes zeros, before it leaves the company.'),
+    chat('l26-r-trash', 'destruction', 'Marshall, Office', 'Our old monitors, batteries and drives are going out with the ordinary trash on Friday.',
       'What is the problem?', [
         ['Rules cover the data and how electronics are thrown out, so use a recycler with a certificate', true, 'Laws cover how data must be destroyed, and environmental rules cover how electronics are thrown out.'],
         ['Nothing, since a drive in a bin cannot be read by anyone', OPEN, 'A drive in a bin can be taken out and read, and the data is still on it.'],
@@ -132,21 +133,21 @@
       'Two groups of rules apply: how the data must be destroyed, and how electronics are thrown out. A recycler that gives a certificate covers both.'),
 
     // ----- browser-security -----
-    chat('l26-r-ext', 'browser-security', 'Gus, Marketing', 'A coupon extension I installed asks to “read and change all data on all websites”. Do I need it?',
+    chat('l26-r-ext', 'browser-security', 'Ethan, Marketing', 'A coupon extension I installed asks to “read and change all data on all websites”. Do I need it?',
       'What do you advise?', [
-        ['Remove it, since an extension that can read every site can see what he types', true, 'Extensions add features but can see what happens on pages. One that wants access to every site is not worth the risk for coupons.'],
-        ['Keep it, because every extension wants that much access to every website he visits', KEPT, 'Extensions differ. A coupon tool that wants every site’s data is asking for far more than it needs.'],
+        ['Remove it, since an extension that can read every site can see what Ethan types', true, 'Extensions add features but can see what happens on pages. One that wants access to every site is not worth the risk for coupons.'],
+        ['Keep it, because every extension wants that much access to every website Ethan visits', KEPT, 'Extensions differ. A coupon tool that wants every site’s data is asking for far more than it needs.'],
         ['Keep it, and use private browsing so it cannot see anything', BSET, 'Private browsing does not stop an extension from seeing a page.'],
         ['Keep it, and clear the cache every day', BSET, 'Clearing the cache does not change what the extension can see.']],
       'An extension can see and change what happens on pages. Keep few, from the official store, and remove ones that want more than they need.'),
     chat('l26-r-sync', 'browser-security', 'Mina, Volunteer', 'I signed in to my browser on the library’s shared PC to get my bookmarks. Is that a problem?',
-      'What do you tell her?', [
-        ['Yes: sync copies passwords and history there, so sign out and clear the data', true, 'Sign-in and sync put her bookmarks and passwords on a computer anyone can use afterwards.'],
+      'What do you tell Mina?', [
+        ['Yes: sync copies passwords and history there, so sign out and clear the data', true, 'Sign-in and sync put Mina’s bookmarks and passwords on a computer anyone can use afterwards.'],
         ['No: sync only copies bookmarks, so nothing private is shared with the next person', BSET, 'Sync can also copy passwords and history.'],
-        ['No, as long as she closes the window when she leaves', BSET, 'Closing the window does not remove what sync copied.'],
-        ['Yes, and she should turn on the pop-up blocker', BSET, 'The pop-up blocker does not affect what sync copied.']],
+        ['No, as long as Mina closes the window when leaving', BSET, 'Closing the window does not remove what sync copied.'],
+        ['Yes, and Mina should turn on the pop-up blocker', BSET, 'The pop-up blocker does not affect what sync copied.']],
       'Sign-in and sync copy bookmarks, passwords and history. On a shared computer, sign out and clear the browsing data afterwards.'),
-    chat('l26-r-dns', 'browser-security', 'Pat, IT', 'On café Wi-Fi, a customer’s lookups for the bank’s site went to a fake page. We want the browser to protect the lookups themselves.',
+    chat('l26-r-dns', 'browser-security', 'Louisa, IT', 'On café Wi-Fi, a customer’s lookups for the bank’s site went to a fake page. We want the browser to protect the lookups themselves.',
       'Which setting does that?', [
         ['Secure DNS, which encrypts the lookup so the network cannot change it', true, 'Secure DNS encrypts the lookup of a site’s name, so the network cannot send the browser somewhere else.'],
         ['The pop-up blocker, which stops extra windows from opening on the page', BSET, 'The pop-up blocker has nothing to do with lookups.'],

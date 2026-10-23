@@ -64,7 +64,7 @@
       reason: 'A projector that shuts off after a while, with a loud fan first, is overheating. Dust and blocked vents are the cheap thing to check.' }),
     item({
       id: 'l12-k-native', strand: 'display',
-      blocks: [msg('chat', 'Lou, HR', 'Chat with the help desk', [['l1', 'My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.']])],
+      blocks: [msg('chat', 'Henry, HR', 'Chat with the help desk', [['l1', 'My new 4K monitor (3840 by 2160 pixels) has fuzzy text. Windows says the resolution is 1280 by 720.']])],
       asks: [ask('What do you check first?', [
         ['Switch Windows to native resolution', true, 'A picture not at the panel’s native resolution is stretched, which makes it fuzzy.'],
         ['Replace the cable with a brand new one', PART, 'The picture shows, and the setting is plainly wrong. Fix the setting first.'],

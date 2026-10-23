@@ -9,10 +9,10 @@
 // second group of six with no help; a third group of four mixed with lessons 2 and 3; and the check: six new questions, no help, 5 of 6 and no guess
 // past the limit.
 FC.lesson('it-support', {
-  id: 'l4', part: 'known', title: 'The known fix, and when to stop', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: the known fix (from memory or the desk’s article), a limit of your own decided before trying, and narrowing it down when the limit is reached.' }],
+  id: 'l4', part: 'known', title: 'The known fix, and when to stop', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan: the known fix (from memory or the desk’s article), a limit of your own decided before trying, and narrowing it down when the limit is reached.' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Jo’s printer says offline. A technician who has seen this before tries the fix at once. A beginner tries things until one works, and an hour later still does not know why.',
+    'Mildred’s printer says offline. A technician who has seen this before tries the fix at once. A beginner tries things until one works, and an hour later still does not know why.',
     'Here you learn what the experts do: try the fix that is already known, decide beforehand how long you will try, and stop guessing when the limit is reached.'
   ],
   flow: [

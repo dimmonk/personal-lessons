@@ -1,6 +1,6 @@
 # IT Help Desk: What kind of ticket, and how soon
 
-Revision 1, live. Part: What kind of ticket, and how soon. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: What kind of ticket, and how soon. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
@@ -85,7 +85,7 @@ Then the answer: Broken now: get them working again / Low: one person who still 
 
 #### Item 1
 
-An email: "Dana Ortiz", Billing · Tuesday 8:20 AM.
+An email: "Winston Ortiz", Billing · Tuesday 8:20 AM.
 
 > Subject: **Claims program is blank**
 >
@@ -129,11 +129,11 @@ After the answer: the deciding words are marked. Reason: The claims program work
 
 #### Item 2
 
-An email: "Marcus Webb", Intake · Tuesday 9:05 AM.
+An email: "Anaya Webb", Intake · Tuesday 9:05 AM.
 
 > Subject: **New hire next Monday**
 >
-> **Jun Park starts next Monday in intake.**
+> **Leona Park starts next Monday in intake.**
 > **Please get a laptop and a login ready, with email and the intake shared folder.**
 
 A plain table, "Alderwick Health help desk: priority table":
@@ -149,9 +149,9 @@ Help on screen: the words that decide it are marked.
 
 **What kind of ticket is this?**
 (the options come in an order that depends on the seed of the question)
-- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Marcus is asking for what the desk already prepares for every new hire. A routine job with fixed steps is a request, and the desk follows its steps.
+- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Anaya is asking for what the desk already prepares for every new hire. A routine job with fixed steps is a request, and the desk follows its steps.
 - Asked for: follow the steps set for it (right)
-- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Marcus is asking for what the desk already prepares for every new hire. A routine job with fixed steps is a request.
+- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Anaya is asking for what the desk already prepares for every new hire. A routine job with fixed steps is a request.
 
 **How big is the impact?**
 - High: more than ten people, or the task for patients — if chosen: Impact is low here, not high: one person, and nothing of theirs is stopped yet.
@@ -169,7 +169,7 @@ Help on screen: the words that decide it are marked.
 - Moderate — if chosen: The table gives Moderate only for impact high with urgency low, or impact medium with urgency medium, or impact low with urgency high. This ticket is impact low with urgency low, which is Low.
 - Low (right)
 
-After the answer: the deciding words are marked. Reason: Marcus is asking for what the desk already prepares for every new hire. That makes it a request. Impact is low: one person, and nothing of theirs is stopped yet. Urgency is low: it is needed next Monday, days away. The table gives Low for impact low with urgency low.
+After the answer: the deciding words are marked. Reason: Anaya is asking for what the desk already prepares for every new hire. That makes it a request. Impact is low: one person, and nothing of theirs is stopped yet. Urgency is low: it is needed next Monday, days away. The table gives Low for impact low with urgency low.
 
 #### Item 3
 
@@ -225,10 +225,10 @@ After the answer: the deciding words are marked. Reason: The record shows four e
 
 #### Item 4
 
-A chat, with its history: "Wen Zhao", Finance · Tuesday 10:15 AM.
+A chat, with its history: "Gerard Zhao", Finance · Tuesday 10:15 AM.
 
-> (Wen Zhao, at the left) **My slide deck says the file is damaged. It opened fine yesterday.**
-> (Wen Zhao, at the left) **I present it in 20 minutes. Everything else on my laptop works.**
+> (Gerard Zhao, at the left) **My slide deck says the file is damaged. It opened fine yesterday.**
+> (Gerard Zhao, at the left) **I present it in 20 minutes. Everything else on my laptop works.**
 
 A plain table, "Alderwick Health help desk: priority table":
 
@@ -248,14 +248,14 @@ Help on screen: the words that decide it are marked.
 - Keeps happening: hand on the pattern with the evidence — if chosen: The deck opened yesterday and is damaged today, so something that worked has stopped. The desk sorts a ticket as a problem only when two or more earlier reports show the same fault.
 
 **How big is the impact?**
-- High: more than ten people, or the task for patients — if chosen: Impact is low here, not high: one person is affected, and the rest of Wen's work still runs.
-- Medium: two to ten people, or one who can do no work — if chosen: Impact is low here, not medium: one person is affected, and the rest of Wen's work still runs.
+- High: more than ten people, or the task for patients — if chosen: Impact is low here, not high: one person is affected, and the rest of Gerard's work still runs.
+- Medium: two to ten people, or one who can do no work — if chosen: Impact is low here, not medium: one person is affected, and the rest of Gerard's work still runs.
 - Low: one person who still has other work to do (right)
 
 **How urgent is it?**
 - High: a deadline within 3 hours, or work stopped with no workaround (right)
-- Medium: needed by the end of today, or work stopped with a workaround — if chosen: Urgency is high here, not medium: Wen presents in 20 minutes, a deadline within a few hours.
-- Low: can wait several days, with no deadline coming up soon — if chosen: Urgency is high here, not low: Wen presents in 20 minutes, a deadline within a few hours.
+- Medium: needed by the end of today, or work stopped with a workaround — if chosen: Urgency is high here, not medium: Gerard presents in 20 minutes, a deadline within a few hours.
+- Low: can wait several days, with no deadline coming up soon — if chosen: Urgency is high here, not low: Gerard presents in 20 minutes, a deadline within a few hours.
 
 **What priority does the table give it?**
 - Critical — if chosen: The table gives Critical only for impact high with urgency high. This ticket is impact low with urgency high, which is Moderate.
@@ -263,7 +263,7 @@ Help on screen: the words that decide it are marked.
 - Moderate (right)
 - Low — if chosen: The table gives Low only for impact medium with urgency low, or impact low with urgency medium, or impact low with urgency low. This ticket is impact low with urgency high, which is Moderate.
 
-After the answer: the deciding words are marked. Reason: The deck opened yesterday and is damaged today, so something that worked has stopped. That makes it an incident. Impact is low: one person is affected, and the rest of Wen's work still runs. Urgency is high: Wen presents in 20 minutes, a deadline within a few hours. The table gives Moderate for impact low with urgency high.
+After the answer: the deciding words are marked. Reason: The deck opened yesterday and is damaged today, so something that worked has stopped. That makes it an incident. Impact is low: one person is affected, and the rest of Gerard's work still runs. Urgency is high: Gerard presents in 20 minutes, a deadline within a few hours. The table gives Moderate for impact low with urgency high.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -273,7 +273,7 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 5
 
-An email: "Sofia Reyes", Marketing · Wednesday 9:55 AM.
+An email: "Lowell Reyes", Marketing · Wednesday 9:55 AM.
 
 > Subject: **Access to the Campaign folder**
 >
@@ -291,9 +291,9 @@ A plain table, "Alderwick Health help desk: priority table":
 
 **What kind of ticket is this?**
 (the options come in an order that depends on the seed of the question)
-- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Sofia wants access that has never been given, a routine job the desk has fixed steps for. A routine job with fixed steps is a request, and the desk follows its steps.
+- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Lowell wants access that has never been given, a routine job the desk has fixed steps for. A routine job with fixed steps is a request, and the desk follows its steps.
 - Asked for: follow the steps set for it (right)
-- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Sofia wants access that has never been given, a routine job the desk has fixed steps for. A routine job with fixed steps is a request.
+- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Lowell wants access that has never been given, a routine job the desk has fixed steps for. A routine job with fixed steps is a request.
 
 **How big is the impact?**
 - High: more than ten people, or the task for patients — if chosen: Impact is low here, not high: one person, who has other work to do.
@@ -311,14 +311,14 @@ A plain table, "Alderwick Health help desk: priority table":
 - Moderate (right)
 - Low — if chosen: The table gives Low only for impact medium with urgency low, or impact low with urgency medium, or impact low with urgency low. This ticket is impact low with urgency high, which is Moderate.
 
-After the answer: the deciding words are marked. Reason: Sofia wants access that has never been given, a routine job the desk has fixed steps for. That makes it a request. Impact is low: one person, who has other work to do. Urgency is high: the meeting is in 35 minutes. The table gives Moderate for impact low with urgency high.
+After the answer: the deciding words are marked. Reason: Lowell wants access that has never been given, a routine job the desk has fixed steps for. That makes it a request. Impact is low: one person, who has other work to do. Urgency is high: the meeting is in 35 minutes. The table gives Moderate for impact low with urgency high.
 
 #### Item 6
 
-A chat, with its history: "Tomas Reid", North clinic front desk · Wednesday 8:30 AM.
+A chat, with its history: "Ingrid Reid", North clinic front desk · Wednesday 8:30 AM.
 
-> (Tomas Reid, at the left) The three check-in screens in the lobby say Cannot reach server (the server is the central computer that holds the patient records). They worked when we locked up last night.
-> (Tomas Reid, at the left) We are checking patients in on paper, which is slow. Please have them back by 1 PM.
+> (Ingrid Reid, at the left) The three check-in screens in the lobby say Cannot reach server (the server is the central computer that holds the patient records). They worked when we locked up last night.
+> (Ingrid Reid, at the left) We are checking patients in on paper, which is slow. Please have them back by 1 PM.
 
 A plain table, "Alderwick Health help desk: priority table":
 
@@ -355,7 +355,7 @@ After the answer: the deciding words are marked. Reason: The check-in screens wo
 
 #### Item 7
 
-An email: "Lena Brandt", HR · Wednesday 11:10 AM.
+An email: "Mehmet Brandt", HR · Wednesday 11:10 AM.
 
 > Subject: **Disk almost full**
 >
@@ -383,8 +383,8 @@ A plain table, "Alderwick Health help desk: priority table":
 - Low: one person who still has other work to do — if chosen: Impact is medium here, not low: three people are affected, and none is stopped.
 
 **How urgent is it?**
-- High: a deadline within 3 hours, or work stopped with no workaround — if chosen: Urgency is low here, not high: Lena says this week is fine.
-- Medium: needed by the end of today, or work stopped with a workaround — if chosen: Urgency is low here, not medium: Lena says this week is fine.
+- High: a deadline within 3 hours, or work stopped with no workaround — if chosen: Urgency is low here, not high: Mehmet says this week is fine.
+- Medium: needed by the end of today, or work stopped with a workaround — if chosen: Urgency is low here, not medium: Mehmet says this week is fine.
 - Low: can wait several days, with no deadline coming up soon (right)
 
 **What priority does the table give it?**
@@ -393,7 +393,7 @@ A plain table, "Alderwick Health help desk: priority table":
 - Moderate — if chosen: The table gives Moderate only for impact high with urgency low, or impact medium with urgency medium, or impact low with urgency high. This ticket is impact medium with urgency low, which is Low.
 - Low (right)
 
-After the answer: the deciding words are marked. Reason: The laptops showed no such message yesterday and show it today, so something that worked has got worse. That makes it an incident. Impact is medium: three people are affected, and none is stopped. Urgency is low: Lena says this week is fine. The table gives Low for impact medium with urgency low.
+After the answer: the deciding words are marked. Reason: The laptops showed no such message yesterday and show it today, so something that worked has got worse. That makes it an incident. Impact is medium: three people are affected, and none is stopped. Urgency is low: Mehmet says this week is fine. The table gives Low for impact medium with urgency low.
 
 #### Item 8
 
@@ -531,10 +531,10 @@ After the answer: the deciding words are marked. Reason: The scanner worked unti
 
 #### Item 11
 
-A chat, with its history: "Gus Lindholm", Warehouse office · Tuesday 1:20 PM.
+A chat, with its history: "Wayne Lindholm", Warehouse office · Tuesday 1:20 PM.
 
-> (Gus Lindholm, at the left) The label printer jammed again. That is the third time: Oct 6, Oct 13 and today. Each time we pulled the paper out and it worked for a week.
-> (Gus Lindholm, at the left) Two of us print the labels, and we need them for the 4 PM truck.
+> (Wayne Lindholm, at the left) The label printer jammed again. That is the third time: Oct 6, Oct 13 and today. Each time we pulled the paper out and it worked for a week.
+> (Wayne Lindholm, at the left) Two of us print the labels, and we need them for the 4 PM truck.
 
 A plain table, "Alderwick Health help desk: priority table":
 
@@ -547,8 +547,8 @@ A plain table, "Alderwick Health help desk: priority table":
 
 **What kind of ticket is this?**
 (the options come in an order that depends on the seed of the question)
-- Broken now: get them working again — if chosen: Getting this person working is only part of it. Gus lists two earlier jams himself, with dates, each ended by pulling out the paper, and the jam is back today. The cause behind the repeats is what is left, and it goes on to be found.
-- Asked for: follow the steps set for it — if chosen: Gus lists two earlier jams himself, with dates, each ended by pulling out the paper, and the jam is back today. The same fault keeps coming back, so it is a problem.
+- Broken now: get them working again — if chosen: Getting this person working is only part of it. Wayne lists two earlier jams themself, with dates, each ended by pulling out the paper, and the jam is back today. The cause behind the repeats is what is left, and it goes on to be found.
+- Asked for: follow the steps set for it — if chosen: Wayne lists two earlier jams themself, with dates, each ended by pulling out the paper, and the jam is back today. The same fault keeps coming back, so it is a problem.
 - Keeps happening: hand on the pattern with the evidence (right)
 
 **How big is the impact?**
@@ -567,7 +567,7 @@ A plain table, "Alderwick Health help desk: priority table":
 - Moderate — if chosen: The table gives Moderate only for impact high with urgency low, or impact medium with urgency medium, or impact low with urgency high. This ticket is impact medium with urgency high, which is High.
 - Low — if chosen: The table gives Low only for impact medium with urgency low, or impact low with urgency medium, or impact low with urgency low. This ticket is impact medium with urgency high, which is High.
 
-After the answer: the deciding words are marked. Reason: Gus lists two earlier jams himself, with dates, each ended by pulling out the paper, and the jam is back today. That makes it a problem. Impact is medium: two people use the printer. Urgency is high: the labels are needed for the 4 PM truck, under 3 hours away. The table gives High for impact medium with urgency high.
+After the answer: the deciding words are marked. Reason: Wayne lists two earlier jams themself, with dates, each ended by pulling out the paper, and the jam is back today. That makes it a problem. Impact is medium: two people use the printer. Urgency is high: the labels are needed for the 4 PM truck, under 3 hours away. The table gives High for impact medium with urgency high.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -674,10 +674,10 @@ After the answer: the deciding words are marked. Reason: The Wi-Fi worked until 
 
 #### Item 15
 
-A chat, with its history: "Omar Haddad", Lab · Thursday 10:20 AM.
+A chat, with its history: "Roberta Haddad", Lab · Thursday 10:20 AM.
 
-> (Omar Haddad, at the left) The Wi-Fi in the lab dropped again at 10. Same as the other times.
-> (Omar Haddad, at the left) Four of us need it to send results by 4 PM.
+> (Roberta Haddad, at the left) The Wi-Fi in the lab dropped again at 10. Same as the other times.
+> (Roberta Haddad, at the left) Four of us need it to send results by 4 PM.
 
 A plain table, "Tickets from the lab in the last five weeks":
 
@@ -751,7 +751,7 @@ After the answer: the deciding words are marked. Reason: The records system work
 
 #### Check question 17
 
-An email: "Ben Okafor", Accounting · Monday 9:10 AM.
+An email: "Joanna Okafor", Accounting · Monday 9:10 AM.
 
 > Subject: **Second monitor**
 >
@@ -769,9 +769,9 @@ A plain table, "Alderwick Health help desk: priority table":
 
 **What kind of ticket is this?**
 (the options come in an order that depends on the seed of the question)
-- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Ben is asking the desk to order equipment, which it does by its steps. A routine job with fixed steps is a request, and the desk follows its steps.
+- Broken now: get them working again — if chosen: The user wants a service, not a fault repaired. Joanna is asking the desk to order equipment, which it does by its steps. A routine job with fixed steps is a request, and the desk follows its steps.
 - Asked for: follow the steps set for it (right)
-- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Ben is asking the desk to order equipment, which it does by its steps. A routine job with fixed steps is a request.
+- Keeps happening: hand on the pattern with the evidence — if chosen: The user wants a service, not a fault repaired. Joanna is asking the desk to order equipment, which it does by its steps. A routine job with fixed steps is a request.
 
 **What priority does the table give it?**
 - Critical — if chosen: The table gives Critical only for impact high with urgency high. This ticket is impact low with urgency low, which is Low.
@@ -779,11 +779,11 @@ A plain table, "Alderwick Health help desk: priority table":
 - Moderate — if chosen: The table gives Moderate only for impact high with urgency low, or impact medium with urgency medium, or impact low with urgency high. This ticket is impact low with urgency low, which is Low.
 - Low (right)
 
-After the answer: the deciding words are marked. Reason: Ben is asking the desk to order equipment, which it does by its steps. That makes it a request. Impact is low: one person, who has a working screen. Urgency is low: Ben says sometime this month. The table gives Low for impact low with urgency low.
+After the answer: the deciding words are marked. Reason: Joanna is asking the desk to order equipment, which it does by its steps. That makes it a request. Impact is low: one person, who has a working screen. Urgency is low: Joanna says sometime this month. The table gives Low for impact low with urgency low.
 
 #### Check question 18
 
-An email: "Carla Mendes", Floor 2 admin · Monday 8:50 AM.
+An email: "Anthony Mendes", Floor 2 admin · Monday 8:50 AM.
 
 > Subject: **Floor 2 printer jammed again**
 >
@@ -886,7 +886,7 @@ After the answer: the deciding words are marked. Reason: Helen wants logins crea
 
 #### Check question 21
 
-An email: "Rosa Silva", Scheduling · Monday 10:00 AM.
+An email: "Lawrence Silva", Scheduling · Monday 10:00 AM.
 
 > Subject: **Shared calendar times are off**
 >

@@ -1,4 +1,4 @@
-// IT Help Desk, lesson 25 "Accounts and access": the eight questions of the check, all new, no help. Facts as in items-l25.js (A+ map Core 2 2.1, 2.2 and 2.7). Invented people.
+// IT Help Desk, lesson 25 "Accounts and access": the eight questions of the check, all new, no help. Facts as in items-l25.js (A+ map Core 2 2.1, 2.2 and 2.7). Invented people. Pronouns: named ticket people are named or "they" (ruling 22).
 // Rulings: identity of a caller is checked by something the caller did not supply (rulings-l1-8.md, 11).
 (() => {
   const msg = (form, from, detail, lines) => ({ kind: 'message', form, from, detail, lines: lines.map(([id, text]) => ({ id, text })) });
@@ -16,7 +16,7 @@
   const PHYS = 'access-physical', LOGI = 'access-logical', WIN = 'win-security', AD = 'ad-policy', HARD = 'hardening';
 
   FC.items('it-support', [
-    talk('l25-k-bio', PHYS, 'Ines, Pharmacy', 'The door to our drug store room opens with a card. Staff lend their cards to each other, and we cannot tell who went in. We want the door to open only for the person themselves.',
+    talk('l25-k-bio', PHYS, 'Kathleen, Pharmacy', 'The door to our drug store room opens with a card. Staff lend their cards to each other, and we cannot tell who went in. We want the door to open only for the person themselves.',
       'Which way of opening the door fits?', [
         ['A fingerprint reader, since the body cannot be lent', true, 'A fingerprint is biometrics: the proof is the person, and it cannot be handed to a colleague.'],
         ['A fob held near the reader, since each one is numbered', GUARD, 'A fob is carried, like a card. It can be lent in the same way.'],
@@ -25,15 +25,15 @@
       'Cards, fobs and phones are things a person has, so they can be lent. Biometrics, such as a fingerprint, is who the person is, so only they can open the door.'),
     item({
       id: 'l25-k-id', strand: LOGI,
-      blocks: [chat('Caller, by chat', 'm1', 'I am Chris Bell, the CFO’s assistant. The CFO is traveling and needs the password reset now. My employee number is 40718 and my manager is Lee Ward, who will confirm it.')],
+      blocks: [chat('Caller, by chat', 'm1', 'I am Chris Bell, the CFO’s assistant. The CFO is traveling and needs the password reset now. My employee number is 40718 and my manager is Olga Ward, who will confirm it.')],
       asks: [ask('What do you do first?', [
-        ['Look Chris up in the directory and call the number on that record', true, 'The record and the number on it are held by the company. The caller did not supply them, so they can check who he is.'],
-        ['Check the employee number he gave against the directory', ID, 'He read out the number himself. Matching it proves he knows a number, not who he is.'],
-        ['Call Lee Ward on the number Chris gave you', ID, 'Anyone can give the number of a friend. The manager has to be looked up in the directory.'],
+        ['Look Chris up in the directory and call the number on that record', true, 'The record and the number on it are held by the company. The caller did not supply them, so they can check who Chris is.'],
+        ['Check the employee number Chris gave against the directory records', ID, 'Chris read out the number personally. Matching it proves Chris knows a number, not who Chris is.'],
+        ['Call Olga Ward on the number Chris gave you and check whether Chris is genuine', ID, 'Anyone can give the number of a friend. The manager has to be looked up in the directory.'],
         ['Reset it and force a new password at the next sign-in', ID, 'The reset still hands the account to whoever is typing. The check comes before it.']])],
       deciding: ['m1'],
       reason: 'Before a reset the desk checks the caller by something the caller did not supply: the directory record and the number on it. A number, a name or a manager the caller gives proves nothing.' }),
-    talk('l25-k-dlp', LOGI, 'Pia, Compliance', 'Staff keep emailing spreadsheets with customer card numbers to their personal addresses. I want the system to spot the card numbers and stop the email leaving.',
+    talk('l25-k-dlp', LOGI, 'Ismael, Compliance', 'Staff keep emailing spreadsheets with customer card numbers to their personal addresses. I want the system to spot the card numbers and stop the email leaving.',
       'Which control is that?', [
         ['DLP, which spots sensitive data and blocks it from leaving', true, 'Data loss prevention looks inside what is sent and stops sensitive data from leaving by email, USB or upload.'],
         ['MDM, which enforces rules such as screen locks and remote wipe on phones and tablets', LOOK, 'MDM manages mobile devices: screen lock, encryption, remote wipe. It does not read email contents.'],
@@ -42,26 +42,27 @@
       'Spotting sensitive data in what is sent and blocking it is DLP, data loss prevention.'),
     item({
       id: 'l25-k-inherit', strand: WIN,
-      blocks: [chat('Ana, Planning', 'm1', 'I have Modify on the Projects folder, but in its subfolder Budget I can only read. My manager says it should be the same.'),
-        table('Security of the Budget subfolder', ['Check', 'Value'], [['b1', 'Inheritance from Projects', 'Turned off'], ['b2', 'Ana', 'Read']])],
-      asks: [ask('Why can she only read in Budget?', [
+      blocks: [chat('Steven, Planning', 'm1', 'I have Modify on the Projects folder, but in its subfolder Budget I can only read. My manager says it should be the same.'),
+        table('Security of the Budget subfolder', ['Check', 'Value'], [['b1', 'Inheritance from Projects', 'Turned off'], ['b2', 'Steven', 'Read']])],
+      asks: [ask('Why can Steven only read in Budget?', [
         ['Inheritance is off on Budget, so it keeps its own level and no longer takes Projects’ Modify', true, 'A subfolder normally takes its parent’s permissions. With inheritance off it keeps its own, here Read.'],
-        ['Her sign-in works only on the Projects folder and is not accepted on its subfolder called Budget', LINK, 'A sign-in belongs to the account and works for every folder she can reach.'],
+        ['Steven’s sign-in works only on the Projects folder and is not accepted on its subfolder called Budget', LINK, 'A sign-in belongs to the account and works for every folder Steven can reach.'],
         ['The share permission on Projects is lower than the NTFS level', LAYER, 'The ticket shows no share permission at all. The difference is inside the folder: Projects against Budget.'],
         ['User Account Control is blocking the change in Budget', CAUSE, 'UAC prompts for administrator rights on a change. It does not lower a permission.']])],
       deciding: ['b1', 'b2'],
-      reason: 'Permissions flow down from a folder to what is inside it, unless inheritance is turned off on the subfolder. Budget has it off and its own level for Ana is Read.' }),
+      reason: 'Permissions flow down from a folder to what is inside it, unless inheritance is turned off on the subfolder. Budget has it off and its own level for Steven is Read.' }),
     item({
       id: 'l25-k-bitlocker', strand: WIN,
       blocks: [chat('Gus, Field team', 'm1', 'The company replaced my laptop’s motherboard. Now it stops before Windows loads and shows a strange screen.'),
-        table('What the screen says', ['Line'], [['s1', 'BitLocker recovery'], ['s2', 'Enter the recovery key to unlock this drive.'], ['s3', 'Recovery key ID: 4F2A-9C10']])],
+        table('What the screen says', ['Line'], [['s1', 'BitLocker recovery'], ['s2', 'Enter the recovery password to unlock this drive.'], ['s3', 'Recovery password ID: 4F2A-9C10']]),
+        table('From the desk’s records', ['Laptop', 'Recovery password stored'], [['k1', 'Gus’s laptop', 'Yes, in the directory under ID 4F2A-9C10']])],
       asks: [ask('What gets Gus in?', [
-        ['The recovery code saved when BitLocker was turned on, found with the ID on the screen', true, 'A changed board makes BitLocker want its recovery code. The code was saved when it was turned on, and the ID on the screen finds it.'],
-        ['His Windows sign-in password, typed in at that screen, since it is the same account as before', AUTH, 'BitLocker unlocks the drive before Windows loads. Windows’ own password is not what it wants.'],
-        ['A new PIN made in Windows Hello', AUTH, 'Windows Hello is for signing in once Windows runs. The drive is still locked.'],
-        ['A fresh install of Windows on the drive', WIPE, 'A reinstall wipes the data on the drive. The recovery code opens it with the data kept.']])],
-      deciding: ['s2', 's3'],
-      reason: 'BitLocker locks the drive and, after a hardware change, wants its recovery code. The code was saved when BitLocker was turned on, and the ID on the screen finds it. Without it the data stays locked.' }),
+        ['The recovery password stored in the directory, found by the ID on the screen', true, 'A changed board makes BitLocker want its recovery password. The desk’s records say the password is stored in the directory, and the ID on the screen finds it.'],
+        ['Gus’s Windows sign-in password, typed in at that screen, since it is the same account as before', AUTH, 'BitLocker unlocks the drive before Windows loads. Windows’ own password is not what it wants.'],
+        ['A new PIN made in Windows Hello and typed in at that screen', AUTH, 'Windows Hello is for signing in once Windows runs. The drive is still locked.'],
+        ['Clear the TPM in the firmware settings to remove the lock', LOST, 'Clearing the TPM removes the code it holds, and the drive then opens only with the recovery password. The stored password opens it with the data kept.']])],
+      deciding: ['s2', 's3', 'k1'],
+      reason: 'BitLocker locks the drive and, after a hardware change, wants its recovery password. The desk’s records show the password is stored in the directory, and the ID on the screen finds it. Without it the data stays locked.' }),
     recall('l25-k-gpo', AD, 'In a company domain, rules are applied to the accounts and computers in an OU: password rules, blocked USB drives, locked settings.',
       'Type the two-word name of the feature.', ['group policy', 'group policies'],
       'Group Policy applies rules to the accounts and computers in an OU. Security groups hold permissions and a login script only runs a program at sign-in.'),
@@ -72,7 +73,7 @@
         ['Failed-attempt lockout on the accounts', SET, 'Lockout limits password tries inside Windows. The change was made before Windows started.'],
         ['Disabling the Guest account', SET, 'Guest is a Windows account. The boot order is not in Windows.']],
       'Start-up settings and the boot order live in the BIOS or UEFI. A password on them is the step that stops people changing them.'),
-    talk('l25-k-default', HARD, 'Vera, Imaging', 'The new PC image still has the standard Administrator account with the password it came with. Everyone who builds PCs knows that name and password.',
+    talk('l25-k-default', HARD, 'Sophie, Imaging', 'The new PC image still has the standard Administrator account with the password it came with. Everyone who builds PCs knows that name and password.',
       'What do you do?', [
         ['Change the default administrator name and password', true, 'An attacker knows the standard name and the factory password. Changing both removes that way in.'],
         ['Leave it, because nobody outside the building knows about it', DEF, 'The standard name and password are public knowledge. Leaving them is leaving the door open.'],

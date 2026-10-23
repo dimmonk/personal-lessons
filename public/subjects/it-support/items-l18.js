@@ -48,7 +48,7 @@
       reason: 'Ana blamed the earbuds. Pairing them to a second phone was the cheapest cut: they worked, so they were ruled out. The chain then showed Bluetooth on and pairing mode on, with a stale saved entry in the way, fixed by one change.' }),
 
     // ----- group 1: with the deciding words marked -----
-    chat('l18-p-ram', P, 'Dev, Finance',
+    chat('l18-p-ram', P, 'Delia, Finance',
       'You are adding memory to a laptop. It is switched off, the charger is in the wall and the battery is inside the laptop. The memory sticks are small ones that sit under a cover on the bottom.',
       'What do you do before you touch the memory?', [
         ['Unplug the charger and battery, then ground yourself against static', true, 'Power must be off at every source, and static from your hands can destroy a memory chip. Taking out the screws in order comes after.'],
@@ -56,9 +56,9 @@
         ['Put on rubber gloves so that nothing on your hands touches the board', SAFE, 'Gloves do nothing against static. A strap or touching bare metal lets the charge leave your body.'],
         ['Shut down in Windows and open the cover', SAFE, 'Shut down is not the same as unplugged. The battery and charger still feed the board.']],
       'The deciding words are the charger in the wall and the battery inside. Disconnect every power source, then ground yourself against static, before any part is touched.'),
-    chat('l18-p-usbc', Q, 'Gina, Marketing',
+    chat('l18-p-usbc', Q, 'Yaw, Marketing',
       'I need a charging cable for my new Android phone. The port is a small oval, and the plug goes in whichever way up I hold it. It is not an Apple phone.',
-      'Which cable do you tell Gina to buy?', [
+      'Which cable do you tell Yaw to buy?', [
         ['USB-C', true, 'A small oval plug that goes in either way up is USB-C. It carries power and data, and on many devices video.'],
         ['Micro-USB', PORT, 'Micro-USB is a flat, wider shape and goes in one way only. It is on older phones.'],
         ['Mini-USB', PORT, 'Mini-USB is bigger and older still, found on cameras and old gear, and it goes in one way only.'],
@@ -72,9 +72,9 @@
         ['Restore the phone to factory settings and pair again from the beginning', SWITCH, 'That erases the phone to fix a link that has not been checked yet.'],
         ['Return the speaker', PART, 'A new speaker may be fine. Nobody has tried its pairing mode.']],
       'The deciding words are no light, no button pressed, and other devices found by the phone. The phone side works, so the next link is the speaker being discoverable.'),
-    chat('l18-p-lock', S, 'Hal, Service manager',
+    chat('l18-p-lock', S, 'Leonard, Service manager',
       'My phone holds customer lists and my work email. Right now it unlocks with a swipe. A technician told me to pick a better screen lock.',
-      'Which screen lock do you tell Hal to choose?', [
+      'Which screen lock do you tell Leonard to choose?', [
         ['A six-digit PIN, with a fingerprint as a shortcut', true, 'A swipe is no lock at all. A PIN guards the phone, and the fingerprint is a shortcut with the PIN behind it.'],
         ['Keep the swipe, but add a picture as the lock screen so it is yours', LOCK, 'A picture changes how the screen looks, not who can open it.'],
         ['A pattern drawn on the screen', LOCK, 'A pattern is weaker than a PIN: a thief can see the smudges or watch it being drawn.'],
@@ -94,7 +94,7 @@
         ['Reinstall the Wi-Fi driver', NOSPLIT, 'A driver does not become weak after a screen job. A wire that came loose does.']])],
       deciding: ['u1', 'n1'],
       reason: 'It worked before the screen job, a coworker on the same router is fine, and the antenna wires run through the lid that was opened. That points at a wire left off, not at the card, the driver or the router.' }),
-    chat('l18-s-board', P, 'Fran, Support',
+    chat('l18-s-board', P, 'Charlie, Support',
       'Four letters on my laptop’s keyboard have stopped working since I spilled coffee on it. I shut it down and unplugged it at once and left it to dry overnight. It starts today and everything else works.',
       'What is the cheapest test to see whether the keyboard itself is the fault?', [
         ['Plug in an external USB keyboard and type the same letters', true, 'If the outside keyboard types them, the laptop is fine and the built-in keyboard is the part to replace.'],
@@ -110,7 +110,7 @@
         ['Pair the phone to the laptop as a Bluetooth headset', LOOK, 'A headset link carries sound, not the internet connection.'],
         ['Plug the laptop into a docking station', PORT, 'A docking station adds ports and power to a laptop. The internet connection still has to come from somewhere.']],
       'The deciding words are no guest Wi-Fi and a laptop without cellular. Hotspot and tethering both share the phone’s cellular data, and they use the plan’s data and the phone’s battery.'),
-    chat('l18-s-dock', Q, 'Dana, Design',
+    chat('l18-s-dock', Q, 'Camilo, Design',
       'I come in with my laptop and want one connection to give it power, two monitors, a wired network, and a slot for an extra drive. A friend said to get a port replicator.',
       'What do you recommend, and why?', [
         ['A docking station', true, 'A docking station can add extras such as a drive slot. A port replicator only repeats the laptop’s ports onto the desk.'],
@@ -118,15 +118,15 @@
         ['A drawing pad', LOOK, 'A drawing pad is a pen tablet for a computer. It does not connect monitors.'],
         ['A stylus', LOOK, 'A stylus is a pen for touch screens and has no part in connecting monitors or networks.']],
       'The slot for an extra drive is the deciding wish: it goes beyond repeating ports. A docking station can add it; a port replicator only copies the laptop’s own ports.'),
-    chat('l18-s-signin', C, 'Ines, HR',
+    chat('l18-s-signin', C, 'Dawn, HR',
       'I changed my company password on Monday. Since then my phone shows no new mail, and the calendar is stuck. A banner says I must sign in again. The phone has full signal and Wi-Fi.',
       'What do you do?', [
-        ['Have Ines sign in again with the new password in the phone’s mail account', true, 'The phone still holds the old password, so sync stops. The network is fine; the account link fails, and the banner says so.'],
+        ['Have Dawn sign in again with the new password in the phone’s mail account', true, 'The phone still holds the old password, so sync stops. The network is fine; the account link fails, and the banner says so.'],
         ['Turn on airplane mode for a minute, and then turn it off again', SWITCH, 'Airplane mode restarts the radios. The radios work: signal and Wi-Fi are full.'],
         ['Erase the phone and configure the work account again from the start', WIPE, 'That is the heaviest step and loses the local data. The banner points at one password.'],
         ['Put the SIM card into a different phone to see if mail arrives there', LINK, 'The mail does not depend on the SIM. It depends on the account being signed in.']],
       'The deciding words are changed my password and a banner asking to sign in. The network is fine, so the fault is the account link, and the cheapest change is to enter the new password.'),
-    chat('l18-s-cap', C, 'Tom, Sales rep',
+    chat('l18-s-cap', C, 'Jolene, Sales rep',
       'My phone plan has a 10 GB limit. By the 12th I have used 9 GB. The data list says 7 GB of it is my photos syncing to cloud storage.',
       'What do you change?', [
         ['Switch photo sync to Wi-Fi only', true, 'The usage list names photo sync as the big user. Large transfers belong on Wi-Fi.'],
@@ -161,7 +161,7 @@
       reason: 'The desk’s rule gives the order: confirm who is calling, mark the phone lost (it locks and shows its place), and wipe only when the owner says it is not coming back.' }),
 
     // ----- group 3: look-alikes and the harder cases -----
-    chat('l18-g-byod', S, 'Pete, Operations',
+    chat('l18-g-byod', S, 'Giulia, Operations',
       'Marco is leaving the company today. Marco reads work mail on a personal phone, which the company manages only for the work apps; the company can remove those apps and their data and nothing else. Family photos are on it too.',
       'What do you do to the phone?', [
         ['Remove the work apps and their data only, with a selective wipe', true, 'On a personal phone the company manages only the work part. A selective wipe takes out the work data and leaves Marco’s photos.'],
@@ -180,10 +180,10 @@
     chat('l18-g-tries', S, 'Cleo, Front desk',
       'My little girl tapped my phone and now it says it is locked and to try again in one hour. I know my PIN. I am afraid that it will erase itself.',
       'What do you tell Cleo?', [
-        ['Wait for the timer, then enter the right PIN; more guesses add time', true, 'Failed log-in limits make each wrong try cost more time, and some policies erase the phone at a fixed count. Waiting and then using the right PIN is safe.'],
-        ['Keep entering PINs until the timer clears', CAUSE, 'A wrong try adds to the count and lengthens the wait. A policy may even erase the phone at a fixed limit.'],
-        ['Restart the phone to clear the lock', CAUSE, 'A restart does not clear a log-in lock. The timer and the count stay.'],
-        ['Hand the phone to the desk to be wiped', WIPE, 'A wipe erases the phone. The lock clears by itself in an hour, and Cleo knows the PIN.']],
+        ['Wait for the timer, then enter the right PIN', true, 'Failed log-in limits make each wrong try cost more time, and some policies erase the phone at a fixed count. Waiting and then using the right PIN is safe.'],
+        ['Keep entering PINs until the timer clears and the phone opens', CAUSE, 'A wrong try adds to the count and lengthens the wait. A policy may even erase the phone at a fixed limit.'],
+        ['Restart the phone to clear the lock and the timer', CAUSE, 'A restart does not clear a log-in lock. The timer and the count stay.'],
+        ['Hand the phone to the desk to be wiped and configured again', WIPE, 'A wipe erases the phone. The lock clears by itself in an hour, and Cleo knows the PIN.']],
       'The deciding words are try again in one hour and I know my PIN. A failed-log-in limit slows or erases after too many wrong tries, so waiting and entering the right PIN is the cheap, safe step.'),
     item({
       id: 'l18-g-policy', strand: S,
@@ -205,12 +205,12 @@
       asks: [{ id: 'tap', kind: 'tap', prompt: 'Tap the three settings that break the policy.', pick: 3, right: ['s1', 's3', 's4'] }],
       deciding: ['p1', 'p3', 'p4', 's1', 's3', 's4'],
       reason: 'Three settings fall short of the policy: a four-digit PIN where six is needed, an update still not installed three weeks after it came out where two weeks is the limit, and a locator that is off. Encryption and the remote backup are on, and the fingerprint shortcut is allowed beside a PIN.' }),
-    chat('l18-g-memory', P, 'Jo, Facilities',
+    chat('l18-g-memory', P, 'Gerald, Facilities',
       'I bought memory for my laptop from the computer shop, and the sticks were long, like the ones in the office tower computers. I opened the laptop cover and the slot is much shorter.',
-      'What did Jo buy, and what does the laptop need?', [
+      'What did Gerald buy, and what does the laptop need?', [
         ['Tower memory (DIMM); a laptop needs the shorter SODIMM kind instead', true, 'Laptops use SODIMM, small outline memory. The long DIMM sticks from a tower will not fit the short slot.'],
         ['The right memory, but the laptop slot is faulty and must be replaced', WTOOL, 'The slot is made short on purpose. The sticks are the wrong shape.'],
-        ['Laptop memory sticks (SODIMM); the tower needs the longer DIMM kind', LOOK, 'It is the other way round. The long sticks Jo holds are DIMM, for towers.'],
+        ['Laptop memory sticks (SODIMM); the tower needs the longer DIMM kind', LOOK, 'It is the other way round. The long sticks Gerald holds are DIMM, for towers.'],
         ['Memory sticks that need only a firmware update before they will fit', PLUGS, 'Firmware settings cannot change a stick’s length. The shape decides whether it fits.']],
       'Long sticks like those in a tower are DIMM. A laptop takes the shorter SODIMM. The shape of the part decides what fits, whatever the settings.'),
 

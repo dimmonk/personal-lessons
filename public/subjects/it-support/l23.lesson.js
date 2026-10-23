@@ -4,13 +4,13 @@
 // from the machine; one program or all; one user or all) and the right tool (Event Viewer, Task Manager, Device Manager, the Services console, msconfig, sfc: named, taught in the Windows tools parts).
 // Research: docs/research/it-support.md IT4, IT5, IT8 (cut the problem space), IT9 (one change at a time, drop a ruled-out cause), IT2 (protect the data); docs/research/it-support-aplus.md
 // Core 2 3.1 (BSOD, degraded performance, boot issues, frequent shutdowns, services not starting, applications crashing, low memory warnings, USB controller resource warnings, system instability,
-// no OS found, slow profile load, time drift), 1.4 and 1.5 (the tools and sfc), Core 1 5.1/5.2 (boot symptoms). Plan: lesson 23. One worked ticket (Dara: the memory she blames, ruled out by the stop code;
+// no OS found, slow profile load, time drift), 1.4 and 1.5 (the tools and sfc), Core 1 5.1/5.2 (boot symptoms). Plan: lesson 23. One worked ticket (Dara: the memory Dara blames, ruled out by the stop code;
 // the driver found in the log); a first group of four with the deciding words marked; a second of twelve; a third of three mixed with lessons 9 and 5; the check: six new tickets, no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l23', part: 'windows-fix', title: 'Windows problems', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the twelve Windows signs placed on the boot chain or the running system; the ways back; the cuts safe mode, clean boot and a test profile; the right tool for each).' }],
+  id: 'l23', part: 'windows-fix', title: 'Windows problems', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the twelve Windows signs placed on the boot chain or the running system; the ways back; the cuts safe mode, clean boot and a test profile; the right tool for each).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
-    'Dara says her computer blue-screens and restarts, and she is sure the memory is going. But the blue screen names what failed, and the log shows what was installed the evening before.',
+    'Dara says their computer blue-screens and restarts, and they are sure the memory is going. But the blue screen names what failed, and the log shows what was installed the evening before.',
     'Windows fails on the way up or after sign-in. Here you place each sign, then work it with what changed, a cut in half, and the tool that shows it.'],
   flow: [
     { title: 'Two places a Windows fault can sit',
@@ -64,7 +64,7 @@ FC.lesson('it-support', {
         { id: 't6', cells: ['Are Windows’s own files damaged?', 'sfc /scannow, in a command prompt opened as administrator'] }] }] },
     { title: 'Blue screens and slowness mean reinstall',
       show: [{ kind: 'prose', tone: 'wrong', text: [
-        '“It blue-screens and is slow, so I will back up her files and reinstall Windows, and if that fails, order a new computer.”',
+        '“It blue-screens and is slow, so I will back up the files and reinstall Windows, and if that fails, order a new computer.”',
         'A reinstall costs a day and every program, and hides the cause: if a bad driver did it, the fault comes back. The stop code, the log and the cuts take minutes and change nothing. The ways back come first, smallest first.'] }] },
     { worked: 'l23-w-dara' },
     { set: { items: ['l23-p-blue', 'l23-p-noos', 'l23-p-profile', 'l23-p-service'], order: 'listed', support: { shown: true } } },

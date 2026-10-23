@@ -1,16 +1,16 @@
 # IT Help Desk: Cut it in half
 
-Revision 1, live. Part: Cut it in half. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
+Revision 2, live. Part: Cut it in half. Where the subject ends up: Take a ticket you have never seen (a user's email, chat or call about a computer, phone, printer, network, account or security problem) and work it the way a help desk technician does: sort it and set its priority, get the user's story and what changed, try the known fix with a limit, then narrow it down with the cheapest test that splits what works from what does not, fix one thing at a time, confirm with the user and write it up, or hand it on with everything you found; and know every fact and scenario on both CompTIA A+ exams well enough to pass them.
 
 ## The why
 
-Dana from Sales says the price list on the shared drive will not open, and she has a call at 2. The list of things it could be is long: her laptop, the Wi-Fi, her account, the server that holds the file, the file itself.
-A new technician picks the one nearest, usually her laptop, and starts fixing. A good one tries one cheap test that cuts the list: can the person next to her open the same file? Here you learn to find that test, again and again, until one cause is left.
+Dana from Sales says the price list on the shared drive will not open, and they have a call at 2. The list of things it could be is long: their laptop, the Wi-Fi, their account, the server that holds the file, the file itself.
+A new technician picks the one nearest, usually their laptop, and starts fixing. A good one tries one cheap test that cuts the list: can the person next to them open the same file? Here you learn to find that test, again and again, until one cause is left.
 
 ## Step 1: More than one cause
 
 When the known fix has not worked, stop guessing and write down every cause that could produce what the user sees. Write at least two. Then pick the test, not the fix.
-Dana’s price list: her laptop and its connection to the network, her account (it may not be allowed into that folder), the server that holds the shared drive (a company computer many people open files from), the file itself.
+Dana’s price list: their laptop and its connection to the network, their account (it may not be allowed into that folder), the server that holds the shared drive (a company computer many people open files from), the file itself.
 Your favorite cause goes on the list too, and it is often not the answer. A written list is what keeps the favorite from being the only thing you test. A restart or a reinstall of Windows (wiping the computer and putting the system back from scratch) is a fix, not a test.
 A quick known fix, such as checking that Caps Lock is off before you call a password wrong, comes before the list, as a known fix does. The list is for when that did not work.
 
@@ -37,7 +37,7 @@ A test only splits if its two results mean different things. A restart, or press
 
 ## Step 4: Whatever is nearest
 
-A wrong idea, marked wrong: “The ticket says the printer, so I will reinstall the printer on her laptop. If that fails I will reinstall it again, then the printing program, then Windows.”
+A wrong idea, marked wrong: “The ticket says the printer, so I will reinstall the printer on their laptop. If that fails I will reinstall it again, then the printing program, then Windows.”
 The right line: Work on whatever is nearest and each failed fix tells you nothing. A test that tells you which side to look on is worth more than a fix that may be on the wrong side. List the causes, run the cheapest test, which may or may not be the favorite’s, and fix only what is left.
 
 ## Step 5: A worked example
@@ -49,21 +49,21 @@ A chat, with its history: "Dana, Sales", Chat with the help desk.
 The shared drive is a folder on a company computer (a server) that many people open. The causes you can list: Dana’s laptop and its connection to the network, Dana’s account (it may not be allowed into that folder), the server that holds the folder, the file itself.
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**Dana signs in on her neighbor Tom’s computer and tries the price list. It fails there too. What does that show?**
+**Dana signs in on their neighbor Tom’s computer and tries the price list. It fails there too. What does that show?**
 (the options come in an order that depends on the seed of the question)
-- The fault follows Dana’s account, not her laptop.
+- The fault follows Dana’s account, not their laptop.
 - The fault is Dana’s laptop.
 - The fault is the server that holds the folder.
 
 The working, one step at a time:
 1. Write down every cause that fits, before testing any.: Dana’s laptop and its connection; Dana’s account and the folder it may not be allowed into; the server that holds the shared drive; the file itself.
 1. Name your favorite, and keep it as the first thing to test, not the answer.: The Wi-Fi: three people on that floor complained about it last week.
-1. Run the cheapest test of the favorite.: Dana opens a web page on her laptop. It opens. The laptop reaches the internet, so the Wi-Fi is working and is not the cause. One cause is gone.
-1. Cut what is left with another person.: Tom, next to her, opens the price list on his computer. It opens. The server and the file are fine. Left: Dana’s laptop, or Dana’s account.
-1. Cut again: the person or the computer?: Dana signs in on Tom’s computer. It fails there too. The fault goes with Dana, not her laptop.
-1. Look at the one cause left.: Dana joined the sales team last week and the folder’s list of people does not have her yet. Have the folder’s owner add her.
+1. Run the cheapest test of the favorite.: Dana opens a web page on their laptop. It opens. The laptop reaches the internet, so the Wi-Fi is working and is not the cause. One cause is gone.
+1. Cut what is left with another person.: Tom, next to Dana, opens the price list on Tom’s computer. It opens. The server and the file are fine. Left: Dana’s laptop, or Dana’s account.
+1. Cut again: the person or the computer?: Dana signs in on Tom’s computer. It fails there too. The fault goes with Dana, not their laptop.
+1. Look at the one cause left.: Dana joined the sales team last week and the folder’s list of people does not have them yet. Have the folder’s owner add them.
 
-Then the answer: The fault follows Dana’s account, not her laptop. Dana’s laptop reached a web page, so the Wi-Fi was ruled out. Tom opened the file, so the server and the file were ruled out. The same failure on Tom’s computer put the fault with Dana’s account. Three cheap tests, each cutting the list, instead of a fix on whatever was nearest.
+Then the answer: The fault follows Dana’s account, not their laptop. Dana’s laptop reached a web page, so the Wi-Fi was ruled out. Tom opened the file, so the server and the file were ruled out. The same failure on Tom’s computer put the fault with Dana’s account. Three cheap tests, each cutting the list, instead of a fix on whatever was nearest.
 
 ## Step 6: Questions
 
@@ -71,28 +71,28 @@ Then the answer: The fault follows Dana’s account, not her laptop. Dana’s la
 
 #### Item 1
 
-A chat, with its history: "Lena, Marketing", Chat with the help desk.
+A chat, with its history: "Gilbert, Marketing", Chat with the help desk.
 
-> (Lena, Marketing, at the left) **My report will not print on the second-floor printer. I pressed Print three times. The page never comes out.**
+> (Gilbert, Marketing, at the left) **My report will not print on the second-floor printer. I pressed Print three times. The page never comes out.**
 
-Causes you can list: Lena’s laptop, Lena’s connection to that printer, the printer itself.
+Causes you can list: Gilbert’s laptop, Gilbert’s connection to that printer, the printer itself.
 
 Help on screen: the words that decide it are marked.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
-- Have Lena print the same report to the printer by the front desk. (right)
-- Have a co-worker print their own report to the printer by the front desk. — if chosen: It tests the front-desk printer and the co-worker’s laptop. Whichever way it comes out, Lena’s laptop, her connection and the second-floor printer are all still in question.
-- Have Lena print a one-line test page to the second-floor printer. — if chosen: It is the same laptop to the same printer, so a failure rules nothing out.
-- Reinstall the printer’s software on Lena’s laptop and print the report again. — if chosen: That is a fix on the nearest cause. If it fails, you still do not know which side to look on.
+- Have Gilbert print the same report to the printer by the front desk. (right)
+- Have a co-worker print their own report to the printer by the front desk. — if chosen: It tests the front-desk printer and the co-worker’s laptop. Whichever way it comes out, Gilbert’s laptop, their connection and the second-floor printer are all still in question.
+- Have Gilbert print a one-line test page to the second-floor printer. — if chosen: It is the same laptop to the same printer, so a failure rules nothing out.
+- Reinstall the printer’s software on Gilbert’s laptop and print the report again. — if chosen: That is a fix on the nearest cause. If it fails, you still do not know which side to look on.
 
-After the answer: the deciding words are marked. Reason: Lena’s page leaves her laptop and never comes out of that printer, so the fault is on one side or the other. Printing the same report to a different printer is cheap, changes nothing, and its two results lead to different causes. The other choices test something else, repeat the same path, or fix one cause first.
+After the answer: the deciding words are marked. Reason: Gilbert’s page leaves their laptop and never comes out of that printer, so the fault is on one side or the other. Printing the same report to a different printer is cheap, changes nothing, and its two results lead to different causes. The other choices test something else, repeat the same path, or fix one cause first.
 
 #### Item 2
 
-A chat, with its history: "Raj, Accounting", Chat with the help desk.
+A chat, with its history: "Simone, Accounting", Chat with the help desk.
 
-> (Raj, Accounting, at the left) **My second monitor has been black since I got in. The power light on it is on.**
+> (Simone, Accounting, at the left) **My second monitor has been black since I got in. The power light on it is on.**
 
 Causes you can list: the monitor, the cable between them, the computer’s video connection.
 
@@ -102,45 +102,45 @@ Help on screen: the words that decide it are marked.
 (the options come in an order that depends on the seed of the question)
 - Plug that monitor and its cable into a co-worker’s computer. (right)
 - Have a co-worker look at the black monitor and say whether it is black for them too. — if chosen: Another person looking at the same black screen tells you nothing new. The monitor, the cable and the computer are all still in question.
-- Turn Raj’s computer off and on with the monitor still plugged in. — if chosen: It is a fix, not a test: if the screen stays black, no cause is ruled out.
+- Turn Simone’s computer off and on with the monitor still plugged in. — if chosen: It is a fix, not a test: if the screen stays black, no cause is ruled out.
 - Order a new monitor and swap it in when it arrives. — if chosen: That jumps to one cause before any test, and it costs money if the monitor was fine.
 
 After the answer: the deciding words are marked. Reason: Moving the monitor and its cable to a computer that works cuts the list between the computer on one side and the monitor and cable on the other. It is cheap, and everything can be moved back. The other choices look at the same screen again, restart, or fix one cause before the list is cut.
 
 #### Item 3
 
-A chat, with its history: "Priya, Legal", Chat with the help desk.
+A chat, with its history: "Sheila, Legal", Chat with the help desk.
 
-> (Priya, Legal, at the left) **My email program says it cannot connect. It worked on Friday.**
+> (Sheila, Legal, at the left) **My email program says it cannot connect. It worked on Friday.**
 
-Causes you can list: Priya’s laptop cannot reach the internet at all, the company’s mail service is down or refusing her, the mail program on her laptop.
+Causes you can list: Sheila’s laptop cannot reach the internet at all, the company’s mail service is down or refusing them, the mail program on their laptop.
 
 Help on screen: the words that decide it are marked.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
-- Have Priya send herself a short message from the mail program again. — if chosen: The program already says it cannot connect, so this repeats the failure and rules nothing out.
-- Have Priya check that the date and time on her laptop are right. — if chosen: It checks something that is not on the list. Whichever way it comes out, the three causes are all still open.
-- Have Priya open a web page on the same laptop. (right)
-- Delete her mail account from the program and add it again. — if chosen: That is a fix on the nearest cause, and it can lose what was stored in the program. If it fails, nothing is ruled out.
+- Have Sheila send themself a short message from the mail program again. — if chosen: The program already says it cannot connect, so this repeats the failure and rules nothing out.
+- Have Sheila check that the date and time on their laptop are right. — if chosen: It checks something that is not on the list. Whichever way it comes out, the three causes are all still open.
+- Have Sheila open a web page on the same laptop. (right)
+- Delete their mail account from the program and add it again. — if chosen: That is a fix on the nearest cause, and it can lose what was stored in the program. If it fails, nothing is ruled out.
 
 After the answer: the deciding words are marked. Reason: “Cannot connect” has two sides: the laptop does not reach the internet, or it does and something beyond it is wrong. A web page is the cheapest way to tell, and it changes nothing. The other choices repeat the failure, check something off the list, or work on the mail program, which is only one of the causes.
 
 #### Item 4
 
-A chat, with its history: "Nadia, HR", Chat with the help desk.
+A chat, with its history: "Arman, HR", Chat with the help desk.
 
-> (Nadia, HR, at the left) **My laptop says my password is wrong. I have not changed it. I checked that Caps Lock is off and typed it three times.**
+> (Arman, HR, at the left) **My laptop says my password is wrong. I have not changed it. I checked that Caps Lock is off and typed it three times.**
 
-Causes you can list: Nadia’s account or password, Nadia’s laptop. A company account works on any company computer.
+Causes you can list: Arman’s account or password, Arman’s laptop. A company account works on any company computer.
 
 Help on screen: the words that decide it are marked.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
-- Reset Nadia’s password, then have her sign in on her laptop again. — if chosen: That is a fix on the nearest cause, and it changes the password she knows. If the laptop was the problem, nothing is solved.
-- Have Nadia try the same sign-in on a co-worker’s computer. (right)
-- Have Nadia type her password once more, slowly, on the same laptop. — if chosen: She has already typed it three times with Caps Lock off. A fourth try gives the same answer and rules no cause out.
+- Reset Arman’s password, then have them sign in on their laptop again. — if chosen: That is a fix on the nearest cause, and it changes the password they know. If the laptop was the problem, nothing is solved.
+- Have Arman try the same sign-in on a co-worker’s computer. (right)
+- Have Arman type their password once more, slowly, on the same laptop. — if chosen: They have already typed it three times with Caps Lock off. A fourth try gives the same answer and rules no cause out.
 - Reinstall Windows (wipe the laptop and put the system back from scratch) and try again. — if chosen: That is a very large fix on one cause, and it is not shown to be the right one.
 
 After the answer: the deciding words are marked. Reason: The same person on a second computer is a split between the person and the computer. It is cheap and changes nothing. The other choices change the password or the laptop before anyone knows which of the two is at fault, or repeat the try.
@@ -167,11 +167,11 @@ A plain table, "What you tried":
 **Where does this point?**
 (the options come in an order that depends on the seed of the question)
 - Eli’s account (right)
-- Eli’s laptop — if chosen: Eli is on Maya’s laptop in the last test, and it still fails. Maya’s laptop works for her.
+- Eli’s laptop — if chosen: Eli is on Maya’s laptop in the last test, and it still fails. Maya’s laptop works for them.
 - The timesheet website — if chosen: The page opens for Maya, so the website is fine.
 - The office network — if chosen: Other websites open on Eli’s laptop and the page opens on Maya’s, so the network is fine.
 
-After the answer: the deciding words are marked. Reason: The page opens for Maya (the website and the network work) and fails for Eli on Maya’s computer as well (it is not his laptop). The only cause left that goes with Eli is his account.
+After the answer: the deciding words are marked. Reason: The page opens for Maya (the website and the network work) and fails for Eli on Maya’s computer as well (it is not Eli’s laptop). The only cause left that goes with Eli is their account.
 
 #### Item 6
 
@@ -197,32 +197,32 @@ After the answer: Reason: A part known to work, put where the doubtful one was, 
 
 #### Item 7
 
-A chat, with its history: "Gwen, Front desk", Chat with the help desk.
+A chat, with its history: "Hamza, Front desk", Chat with the help desk.
 
-> (Gwen, Front desk, at the left) Only my report prints blank on the shared printer. Everybody else printed fine on it this morning.
+> (Hamza, Front desk, at the left) Only my report prints blank on the shared printer. Everybody else printed fine on it this morning.
 
 **Which causes are still worth listing? Pick every one that fits.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
 - The report file itself (right)
-- The way Gwen’s laptop is configured to print to that printer (right)
+- The way Hamza’s laptop is configured to print to that printer (right)
 - The printer is out of toner — if chosen: Everyone else printed fine on that printer this morning, so it has toner.
 - The printer has lost its connection to the network — if chosen: Other people’s pages got to it this morning, so it is connected.
 
-After the answer: the deciding words are marked. Reason: Everyone else printed fine on that printer, so the printer and its connection are cleared by what is already known. What is left is on Gwen’s side: her file, or how her laptop prints. List those two, then cut between them with a test.
+After the answer: the deciding words are marked. Reason: Everyone else printed fine on that printer, so the printer and its connection are cleared by what is already known. What is left is on Hamza’s side: their file, or how their laptop prints. List those two, then cut between them with a test.
 
 #### Item 8
 
-A chat, with its history: "Vera, Sales", Chat with the help desk.
+A chat, with its history: "Behrouz, Sales", Chat with the help desk.
 
-> (Vera, Sales, at the left) The web page for our order system will not load for me. It is the Wi-Fi, I am sure, it is always the Wi-Fi.
+> (Behrouz, Sales, at the left) The web page for our order system will not load for me. It is the Wi-Fi, I am sure, it is always the Wi-Fi.
 
 You think it may be the Wi-Fi too.
 
 **What do you do before you test it?**
 (the options come in an order that depends on the seed of the question)
 - Write down the Wi-Fi as the cause and test it first, because two of you already think so. — if chosen: If the Wi-Fi test comes back clean, you have no list and no next test.
-- Add her laptop, her account and the order system to the list too, then run the cheapest test. (right)
-- Replace the Wi-Fi card (the part inside her laptop that connects to Wi-Fi), then try the page again. — if chosen: That is a fix on one cause nobody has tested.
+- Add their laptop, their account and the order system to the list too, then run the cheapest test. (right)
+- Replace the Wi-Fi card (the part inside their laptop that connects to Wi-Fi), then try the page again. — if chosen: That is a fix on one cause nobody has tested.
 
 After the answer: the deciding words are marked. Reason: A favorite cause is the first thing to test, not the answer. Writing the other causes down first keeps one idea from being the only one, and the cheapest test is not always the favorite’s.
 
@@ -230,14 +230,14 @@ After the answer: the deciding words are marked. Reason: A favorite cause is the
 
 Frank in Sales calls the help desk. You answer.
 
-**Frank calls about the price list. You have his story. What do you say to cut the causes?**
+**Frank calls about the price list. You have their story. What do you say to cut the causes?**
 - An incoming call from "Frank, Sales" (Incoming call · 10:05 AM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My computer will not open the shared price list. It is old and it is broken. Just send me a new one." [pushes: He wants a replacement before anything has been tested.]
+- turn 1, the other side says: "My computer will not open the shared price list. It is old and it is broken. Just send me a new one." [pushes: They want a replacement before anything has been tested.]
   - reply "Can you restart your computer and tell me if it opens then?": the call ends (not this one): A restart is a fix, not a test. If it fails, you still do not know which side the fault is on. [slip: ran a test that does not split what works from what does not]
-  - reply "I will put in the order for a new computer today.": the call ends (not this one): A new computer costs days and money, and nothing showed the old one was the cause. One person next to him trying the file would have shown whether it was. [slip: worked on whatever was nearest instead of testing to split the causes]
+  - reply "I will put in the order for a new computer today.": the call ends (not this one): A new computer costs days and money, and nothing showed the old one was the cause. One person next to them trying the file would have shown whether it was. [slip: worked on whatever was nearest instead of testing to split the causes]
   - reply "Have the person next to you open the price list on their computer.": goes on to turn 2, where the pressure comes back
-  - reply "How old is the computer, and which Windows does it have?": the call ends (not this one): Good to know later, but you already have his story, and the age and the system do not decide between his computer and what it reaches. Another computer trying the file would. [slip: ran a test that does not split what works from what does not]
-- turn 2, the other side says: "Kim says it will not open on hers either. Still, mine is old. Replace it anyway." [pushes: He still wants the replacement, even though another computer fails the same way.]
+  - reply "How old is the computer, and which Windows does it have?": the call ends (not this one): Good to know later, but you already have their story, and the age and the system do not decide between their computer and what it reaches. Another computer trying the file would. [slip: ran a test that does not split what works from what does not]
+- turn 2, the other side says: "Kim says it will not open on theirs either. Still, mine is old. Replace it anyway." [pushes: They still want the replacement, even though another computer fails the same way.]
   - reply "All right, I will order the new computer.": the call ends (not this one): Kim’s computer fails the same way, so a new computer for Frank would not fix it. [slip: worked on whatever was nearest instead of testing to split the causes]
   - reply "Could Kim try it once more, to be sure?": the call ends (not this one): Kim already tried and it failed. Trying it once more gives the same answer and rules nothing out. [slip: ran a test that does not split what works from what does not]
   - reply "Then it is not only your computer. I will check the shared folder itself.": the call ends (right): Two computers fail the same way, so the cause is something both share: the folder, the server or the network. One request cut the list without touching Frank’s computer.
@@ -251,13 +251,13 @@ A chat, with its history: "Sia, Records", Chat with the help desk.
 
 > (Sia, Records, at the left) My laptop is very slow to be usable in the morning. Once I am in, programs open slowly for the first ten minutes.
 
-Causes you can list: the laptop’s own start-up before anyone signs in, the programs that start for Sia’s account after she signs in.
+Causes you can list: the laptop’s own start-up before anyone signs in, the programs that start for Sia’s account after they sign in.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
-- Have a co-worker time how long their own laptop takes to be usable in the morning. — if chosen: It times a different laptop. Sia’s start-up and her account’s programs are both still in question.
+- Have a co-worker time how long their own laptop takes to be usable in the morning. — if chosen: It times a different laptop. Sia’s start-up and their account’s programs are both still in question.
 - Have Sia restart and watch whether the wait comes before the sign-in screen or after it. (right)
-- Have Sia close every program she has open and sign in again. — if chosen: It is the same sign-in on the same laptop. The wait looks the same whichever cause is real.
+- Have Sia close every program they have open and sign in again. — if chosen: It is the same sign-in on the same laptop. The wait looks the same whichever cause is real.
 - Add memory (the part a laptop holds its open programs in) to the laptop and check the morning again. — if chosen: That is a guess at one cause, and it costs money if the cause is elsewhere.
 
 After the answer: the deciding words are marked. Reason: Failing or waiting before sign-in points at the laptop; only after sign-in points at the account and what starts for it. Watching where the wait comes is free and changes nothing. The other choices time another laptop, repeat the sign-in, or fix one cause first.
@@ -270,24 +270,24 @@ Then a screen: you can stop here, your place is kept.
 
 #### Item 11
 
-A chat, with its history: "Ana, Design", Chat with the help desk.
+A chat, with its history: "Adaeze, Design", Chat with the help desk.
 
-> (Ana, Design, at the left) My mouse pointer jumps all over the screen.
+> (Adaeze, Design, at the left) My mouse pointer jumps all over the screen.
 
 A plain table, "What you tried":
 
 > Test  |  Result  (the column heads)
-> Ana’s mouse on Ben’s computer  |  The pointer jumps
-> Ben’s mouse on Ana’s computer  |  Works fine
+> Adaeze’s mouse on Ben’s computer  |  The pointer jumps
+> Ben’s mouse on Adaeze’s computer  |  Works fine
 
 **What does swapping the mouse show?**
 (the options come in an order that depends on the seed of the question)
 - The mouse: the trouble moved with it. (right)
-- Ana’s computer is the fault. — if chosen: Ben’s mouse works fine on Ana’s computer. If her computer were the cause, any mouse would jump.
-- Ben’s computer is the fault. — if chosen: Ben’s own mouse works on his computer, so his computer is fine. The jumping followed Ana’s mouse there.
+- Adaeze’s computer is the fault. — if chosen: Ben’s mouse works fine on Adaeze’s computer. If their computer were the cause, any mouse would jump.
+- Ben’s computer is the fault. — if chosen: Ben’s own mouse works on their computer, so their computer is fine. The jumping followed Adaeze’s mouse there.
 - The swaps cannot tell you anything. — if chosen: The trouble stayed in one place when the mice changed computers and followed the other mouse. That tells you a lot.
 
-After the answer: the deciding words are marked. Reason: Ana’s mouse jumps on a computer where it was fine before, and Ben’s mouse is fine on the computer where Ana’s jumped. The problem moves with the mouse, so the mouse is the cause. If a problem stays in place when the part moves, the part is not the cause.
+After the answer: the deciding words are marked. Reason: Adaeze’s mouse jumps on a computer where it was fine before, and Ben’s mouse is fine on the computer where Adaeze’s jumped. The problem moves with the mouse, so the mouse is the cause. If a problem stays in place when the part moves, the part is not the cause.
 
 #### Item 12
 
@@ -313,19 +313,19 @@ After the answer: the deciding words are marked. Reason: The cheapest test is th
 
 #### Item 13
 
-A chat, with its history: "Marco, Purchasing", Chat with the help desk.
+A chat, with its history: "Adrian, Purchasing", Chat with the help desk.
 
-> (Marco, Purchasing, at the left) My laptop will not start. I see the maker’s logo, then a black screen. I never get to the sign-in screen.
+> (Adrian, Purchasing, at the left) My laptop will not start. I see the maker’s logo, then a black screen. I never get to the sign-in screen.
 
-Causes you can list: Marco’s account, the office network, Marco’s laptop itself.
+Causes you can list: Adrian’s account, the office network, Adrian’s laptop itself.
 
 **Where does this point?**
 (the options come in an order that depends on the seed of the question)
-- Marco’s laptop itself (right)
-- Marco’s account — if chosen: No account is used before the sign-in screen appears, so the account cannot be what stops it.
+- Adrian’s laptop itself (right)
+- Adrian’s account — if chosen: No account is used before the sign-in screen appears, so the account cannot be what stops it.
 - The office network — if chosen: Nothing about the office network can matter before the sign-in screen even appears.
 
-After the answer: the deciding words are marked. Reason: Failing before sign-in cuts out the account and the office network, which only come in afterward. The fault is on Marco’s laptop.
+After the answer: the deciding words are marked. Reason: Failing before sign-in cuts out the account and the office network, which only come in afterward. The fault is on Adrian’s laptop.
 
 #### Item 14
 
@@ -368,7 +368,7 @@ A plain table, "What you tried (Dee’s monitor and Dee’s computer work)":
 - The cable is fine, because swapping it did not help in the first test. — if chosen: The third test shows Nina’s cable is bad as well. In the first test the monitor was bad too, so the new cable could not show a picture.
 - Both Nina’s monitor and Nina’s cable are faulty. (right)
 - Only Nina’s monitor is faulty, because it is black on Dee’s computer. — if chosen: The cable is black on Dee’s monitor, so it is faulty too.
-- Nina’s computer is the fault. — if chosen: Nina’s monitor is black on Dee’s computer as well, and her computer was not in the second and third tests.
+- Nina’s computer is the fault. — if chosen: Nina’s monitor is black on Dee’s computer as well, and Nina’s computer was not in the second and third tests.
 
 After the answer: the deciding words are marked. Reason: A swap that does not help clears the part only if there is one fault. Here the second and third tests move each part to a working setup, and both stay black, so two parts are faulty. When results contradict each other, suspect a second fault.
 
@@ -383,18 +383,18 @@ To pass:
 
 #### Check question 16
 
-A chat, with its history: "Zoe, Finance", Chat with the help desk.
+A chat, with its history: "Sherman, Finance", Chat with the help desk.
 
-> (Zoe, Finance, at the left) My laptop says Connected to Wi-Fi but no website will open.
+> (Sherman, Finance, at the left) My laptop says Connected to Wi-Fi but no website will open.
 
-Causes you can list: Zoe’s laptop, or the office Wi-Fi and its link to the internet together.
+Causes you can list: Sherman’s laptop, or the office Wi-Fi and its link to the internet together.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
-- Have Zoe try the same website once more in a second browser on her laptop. — if chosen: It tests the browser, which is not on the list. Whichever way it comes out, the laptop and the Wi-Fi are both still in question.
+- Have Sherman try the same website once more in a second browser on their laptop. — if chosen: It tests the browser, which is not on the list. Whichever way it comes out, the laptop and the Wi-Fi are both still in question.
 - Restart the office router (the box that connects the office to the internet). — if chosen: That cuts everyone in the office off, and it is a fix, not a test.
-- Have Zoe forget the Wi-Fi network on her laptop and join it again. — if chosen: That is a fix on the nearest cause. If it fails, nothing is ruled out.
-- Have Zoe open a web page on her phone, on the same Wi-Fi. (right)
+- Have Sherman forget the Wi-Fi network on their laptop and join it again. — if chosen: That is a fix on the nearest cause. If it fails, nothing is ruled out.
+- Have Sherman open a web page on their phone, on the same Wi-Fi. (right)
 
 After the answer: the deciding words are marked. Reason: A second device on the same Wi-Fi cuts the laptop from the Wi-Fi and the internet link. It is cheap and changes nothing. The other choices test the browser, or fix one cause.
 
@@ -425,12 +425,12 @@ A chat, with its history: "Lin, Planning", Chat with the help desk.
 
 > (Lin, Planning, at the left) My laptop freezes for about five minutes after I sign in. The sign-in screen itself is fast.
 
-Causes you can list: the laptop, Lin’s account and what starts for her when she signs in. The desk keeps a test account, a made-up account for checks like this.
+Causes you can list: the laptop, Lin’s account and what starts for them when they sign in. The desk keeps a test account, a made-up account for checks like this.
 
 **Which test cuts the causes?**
 (the options come in an order that depends on the seed of the question)
 - Reinstall Windows (wipe the laptop and put the system back from scratch) on Lin’s laptop. — if chosen: That is a very large fix on one cause, and it is not shown to be the right one.
-- Have Lin sign in on her own laptop again and watch the freeze for the full five minutes. — if chosen: The same sign-in on the same laptop gives the same answer and rules nothing out.
+- Have Lin sign in on their own laptop again and watch the freeze for the full five minutes. — if chosen: The same sign-in on the same laptop gives the same answer and rules nothing out.
 - Sign in on Lin’s laptop with the desk’s test account and see whether it freezes. (right)
 - Add memory (the part a laptop holds its open programs in) to Lin’s laptop and sign in again. — if chosen: That is a guess at one cause, and it costs money if the cause is elsewhere.
 
@@ -438,33 +438,33 @@ After the answer: the deciding words are marked. Reason: A different account on 
 
 #### Check question 19
 
-A chat, with its history: "Tess, Records", Chat with the help desk.
+A chat, with its history: "Curtis, Records", Chat with the help desk.
 
-> (Tess, Records, at the left) The company website opens fine on my laptop, but the shared drive will not open. My neighbor can open both.
+> (Curtis, Records, at the left) The company website opens fine on my laptop, but the shared drive will not open. My neighbor can open both.
 
 **Which causes are still worth listing? Pick every one that fits.** (choose every one that fits)
 (the options come in an order that depends on the seed of the question)
-- Tess’s account is not allowed into the shared drive (right)
-- The way Tess’s laptop is configured to reach the shared drive (right)
-- The server that holds the shared drive is down — if chosen: Her neighbor opens the shared drive, so the server is up.
-- The office network is down — if chosen: The company website opens on Tess’s laptop, and her neighbor opens both, so the network is up.
+- Curtis’s account is not allowed into the shared drive (right)
+- The way Curtis’s laptop is configured to reach the shared drive (right)
+- The server that holds the shared drive is down — if chosen: Their neighbor opens the shared drive, so the server is up.
+- The office network is down — if chosen: The company website opens on Curtis’s laptop, and their neighbor opens both, so the network is up.
 
-After the answer: the deciding words are marked. Reason: Her neighbor opens the shared drive and her website opens, so the server and the network are cleared by what you already know. What is left is on Tess’s side: her account, or how her laptop reaches the drive. List those two, then cut between them.
+After the answer: the deciding words are marked. Reason: Their neighbor opens the shared drive and their website opens, so the server and the network are cleared by what you already know. What is left is on Curtis’s side: their account, or how their laptop reaches the drive. List those two, then cut between them.
 
 #### Check question 20
 
 Carla in Accounting calls the help desk. You answer.
 
-**Carla calls about her internet. You have her story. What do you say to cut the causes?**
+**Carla calls about their internet. You have their story. What do you say to cut the causes?**
 - An incoming call from "Carla, Accounting" (Incoming call · 3:20 PM). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. Pick what you say. The call goes on from there. Nothing is marked until it ends, and a call is not on a clock.
-- turn 1, the other side says: "My internet is down. The whole building must be down. Please fix the building." [pushes: She wants the whole building treated as the cause before any test.]
+- turn 1, the other side says: "My internet is down. The whole building must be down. Please fix the building." [pushes: They want the whole building treated as the cause before any test.]
   - reply "Can you tell me whether anyone near you is online right now?": goes on to turn 2, where the pressure comes back
-  - reply "I will check the building’s network right now.": the call ends (not this one): Nothing showed the building was the cause. Someone near her being online would have shown it was not. [slip: worked on whatever was nearest instead of testing to split the causes]
-  - reply "When did it last work, and what were you doing then?": the call ends (not this one): You already have her story, and more of it does not tell the laptop from the building. Someone near her being online would. [slip: ran a test that does not split what works from what does not]
+  - reply "I will check the building’s network right now.": the call ends (not this one): Nothing showed the building was the cause. Someone near them being online would have shown it was not. [slip: worked on whatever was nearest instead of testing to split the causes]
+  - reply "When did it last work, and what were you doing then?": the call ends (not this one): You already have their story, and more of it does not tell the laptop from the building. Someone near them being online would. [slip: ran a test that does not split what works from what does not]
   - reply "Restart your laptop and call back if it is still down.": the call ends (not this one): A restart is a fix, not a test. If it fails, you still do not know which side the fault is on. [slip: ran a test that does not split what works from what does not]
-- turn 2, the other side says: "Marcus is on a video call right now. But I am sure it is the building." [pushes: She still blames the building, though someone near her is online.]
-  - reply "I will restart the building’s router anyway.": the call ends (not this one): Marcus is online, so the building is fine. Restarting the router would cut off the people who are working. [slip: stayed with a cause the test had ruled out]
-  - reply "Then the building is up. Let us look at your laptop and its connection.": the call ends (right): Marcus’s video call shows the building’s connection works, so the fault is on Carla’s laptop or her connection to the network. One question cut the list.
+- turn 2, the other side says: "Blair is on a video call right now. But I am sure it is the building." [pushes: They still blame the building, though someone near them is online.]
+  - reply "I will restart the building’s router anyway.": the call ends (not this one): Blair is online, so the building is fine. Restarting the router would cut off the people who are working. [slip: stayed with a cause the test had ruled out]
+  - reply "Then the building is up. Let us look at your laptop and its connection.": the call ends (right): Blair’s video call shows the building’s connection works, so the fault is on Carla’s laptop or their connection to the network. One question cut the list.
   - reply "Please try opening a page again, and tell me what it says.": the call ends (not this one): The same try gives the same answer and rules nothing out. [slip: ran a test that does not split what works from what does not]
 - After it ends: the lines of every turn that pushed are marked and named ("It pushes:"), and the reply where it could have ended the right way is named ("You could have ended it at your first reply: “the reply”." or "You ended it as soon as you could.").
 

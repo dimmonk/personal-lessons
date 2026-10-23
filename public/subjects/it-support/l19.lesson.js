@@ -5,8 +5,8 @@
 // (Tess: the old battery that the phone’s own report rules out); a first group of four with the deciding words marked; a second of sixteen; a third of three mixed with
 // lessons 5 and 18; the check: six new tickets, no help, 5 of 6 to pass.
 FC.lesson('it-support', {
-  id: 'l19', part: 'mobile-fix', title: 'Mobile problems', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the five links of a phone or tablet; hardware, system, app and security symptoms on their links; the swollen battery as a safety stop; the cuts one app or all apps, Wi-Fi and cellular, after a restart, in safe mode).' }],
+  id: 'l19', part: 'mobile-fix', title: 'Mobile problems', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (the five links of a phone or tablet; hardware, system, app and security symptoms on their links; the swollen battery as a safety stop; the cuts one app or all apps, Wi-Fi and cellular, after a restart, in safe mode).' }, { rev: 2, date: "2026-10-23", change: "Fixes from the learner and research reviews; names made unique across the subject and people called by name or they." }],
   why: [
     'Tess says the phone is slow and the battery is dead by lunch. Tess is sure it needs a new battery. The phone itself will say in a minute.',
     'A phone fails in five places, each with its own signs. Here you learn the five, the symptoms on each, the questions that cut them in half, and the one sign that means stop at once.'],

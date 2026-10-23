@@ -18,7 +18,7 @@
       'DHCP, which hands out addresses, uses 67 for the server and 68 for the device.'),
     item({
       id: 'l15-k-udp', strand: WEB,
-      blocks: [msg('chat', 'Mo, Network team', 'Chat with the help desk', [['m1', 'Our monitoring tool lists the services that deliver by UDP, the quick way with no connection. Which one of these should be on its list?']])],
+      blocks: [msg('chat', 'Lisbeth, Network team', 'Chat with the help desk', [['m1', 'Our monitoring tool lists the services that deliver by UDP, the quick way with no connection. Which one of these should be on its list?']])],
       asks: [ask('Which service uses UDP?', [
         ['DHCP, handing out addresses', true, 'DHCP is a device with no address yet sending one short message, so it uses UDP.'],
         ['SMTP, sending mail', TU, 'Mail must arrive whole, so SMTP uses TCP, which confirms each piece.'],
@@ -30,7 +30,7 @@
       'POP3 is port 110. It receives mail by downloading it to one device and usually removing it from the server.'),
     item({
       id: 'l15-k-smtp', strand: MAIL,
-      blocks: [msg('chat', 'Nia, Sales', 'Chat with the help desk', [['n1', 'My mail program asks for an outgoing mail server. Which service is that, and which port does the exam give for it?']])],
+      blocks: [msg('chat', 'Josef, Sales', 'Chat with the help desk', [['n1', 'My mail program asks for an outgoing mail server. Which service is that, and which port does the exam give for it?']])],
       asks: [ask('Which is it?', [
         ['SMTP, port 25', true, 'SMTP sends mail out, so the outgoing server speaks SMTP.'],
         ['POP3, port 110', MIX, 'POP3 receives mail. The outgoing server is the one that sends.'],
@@ -63,7 +63,7 @@
       'Port 53 is DNS, the phone book that turns a name into the number address.'),
     item({
       id: 'l15-r-lock', strand: WEB,
-      blocks: [msg('chat', 'Quin, Web team', 'Chat with the help desk', [['q1', 'The staff portal opens as http:// and the browser warns Not secure. The company wants it reached with the padlock. Which port must the firewall allow for that?']])],
+      blocks: [msg('chat', 'Jackson, Web team', 'Chat with the help desk', [['q1', 'The staff portal opens as http:// and the browser warns Not secure. The company wants it reached with the padlock. Which port must the firewall allow for that?']])],
       asks: [ask('Which port?', [
         ['443, for HTTPS', true, 'The padlock version of the web is HTTPS, port 443.'],
         ['80, for HTTP', MIX, 'Port 80 is the plain version, the one that gave the warning.'],
@@ -77,7 +77,7 @@
       'SMTP, the service that sends mail, is port 25.'),
     item({
       id: 'l15-r-pop',  strand: MAIL,
-      blocks: [msg('chat', 'Gil, Support', 'Chat with the help desk', [['g1', 'My old mail program downloads my mail to my PC and removes it from the server, so my phone shows an empty mailbox. Which service is the program using?']])],
+      blocks: [msg('chat', 'Connor, Support', 'Chat with the help desk', [['g1', 'My old mail program downloads my mail to my PC and removes it from the server, so my phone shows an empty mailbox. Which service is the program using?']])],
       asks: [ask('Which service is it?', [
         ['POP3, port 110', true, 'POP3 downloads mail to one device and usually removes it from the server.'],
         ['IMAP, port 143', MIX, 'IMAP leaves the mail on the server, so the phone would see it.'],
@@ -93,7 +93,7 @@
       'CIFS, Common Internet File System, is the older name for SMB, port 445.'),
     item({
       id: 'l15-r-printer', strand: FILES,
-      blocks: [msg('chat', 'Ray, Branch office', 'Chat with the help desk', [['r1', 'Nobody at the branch can reach the shared printer on the head office print server, a Windows shared printer. Web pages and mail work. Which port is blocked?']])],
+      blocks: [msg('chat', 'Irene, Branch office', 'Chat with the help desk', [['r1', 'Nobody at the branch can reach the shared printer on the head office print server, a Windows shared printer. Web pages and mail work. Which port is blocked?']])],
       asks: [ask('Which port?', [
         ['445, SMB', true, 'Shared printers on a Windows network use SMB, port 445, the same as shared folders.'],
         ['3389, RDP', WS, 'RDP shows another computer’s screen. It does not share a printer.'],
@@ -107,7 +107,7 @@
       'Port 389 is LDAP, which looks up accounts and computers in the company directory.'),
     item({
       id: 'l15-r-vendor', strand: ADMIN,
-      blocks: [msg('chat', 'Sol, Facilities', 'Chat with the help desk', [['s1', 'The vendor of our door-lock controller says its tool connects with Telnet on port 23. Our rule is encrypted remote typing only. What do we tell them?']])],
+      blocks: [msg('chat', 'Marlene, Facilities', 'Chat with the help desk', [['s1', 'The vendor of our door-lock controller says its tool connects with Telnet on port 23. Our rule is encrypted remote typing only. What do we tell them?']])],
       asks: [ask('What do you tell them?', [
         ['Use SSH on port 22 instead.', true, 'SSH does the same job as Telnet, encrypted.'],
         ['Port 23 is fine inside the office.', PT, 'Readable text can be read by anyone who can see the traffic, inside the office too.'],
@@ -118,7 +118,7 @@
     // ----- two more check questions: how a port delivers -----
     item({
       id: 'l15-k-dns', strand: WEB,
-      blocks: [msg('chat', 'Hal, Network team', 'Chat with the help desk', [['h1', 'The new firewall allows port 53 only for UDP. Short name lookups work, but a few lookups with big answers fail. What do we change?']])],
+      blocks: [msg('chat', 'Debra, Network team', 'Chat with the help desk', [['h1', 'The new firewall allows port 53 only for UDP. Short name lookups work, but a few lookups with big answers fail. What do we change?']])],
       asks: [ask('What do we change?', [
         ['Also allow port 53 for TCP', true, 'DNS uses TCP when an answer is too big for one short message, so port 53 needs both ways.'],
         ['Also allow ports 67 and 68', WS, 'Those are DHCP, which hands out addresses. They do not carry lookups.'],
@@ -128,7 +128,7 @@
       reason: 'Short DNS answers go by UDP and big ones by TCP, both on port 53. Allowing only one way breaks the other.' }),
     item({
       id: 'l15-k-split', strand: FILES,
-      blocks: [msg('chat', 'Joy, Lab', 'Chat with the help desk', [['j1', 'Our old NetBIOS rule says 137, 138 and 139 all use TCP. Is that right?']])],
+      blocks: [msg('chat', 'Pablo, Lab', 'Chat with the help desk', [['j1', 'Our old NetBIOS rule says 137, 138 and 139 all use TCP. Is that right?']])],
       asks: [ask('Which is right?', [
         ['No: 137 and 138 use UDP, and 139 uses TCP', true, 'Names and short messages are quick questions, so UDP. The sharing session carries files, so TCP.'],
         ['Yes: all three use TCP', TU, 'Only the sharing session on 139 uses TCP. Names and short messages use UDP.'],
@@ -138,7 +138,7 @@
       reason: 'NetBIOS names (137) and short messages (138) are UDP. The sharing session (139) is TCP.' }),
     item({
       id: 'l15-r-ldaptcp', strand: ADMIN,
-      blocks: [msg('chat', 'Kit, Network team', 'Chat with the help desk', [['k1', 'We are writing rules for the directory (LDAP, 389) and for Remote Desktop (3389). Which delivery is the usual one for both?']])],
+      blocks: [msg('chat', 'Katherine, Network team', 'Chat with the help desk', [['k1', 'We are writing rules for the directory (LDAP, 389) and for Remote Desktop (3389). Which delivery is the usual one for both?']])],
       asks: [ask('Which delivery?', [
         ['TCP for both', true, 'LDAP and RDP are normally TCP, though each also has a rarer UDP form.'],
         ['UDP for both', TU, 'UDP is for DHCP, short DNS answers and NetBIOS names and messages.'],

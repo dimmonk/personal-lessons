@@ -2,13 +2,13 @@
 // on the path from a desk to the internet, the kinds of internet connection and network, the server roles and network appliances, and the technician's network tools.
 // Each device is taught by the job it does on the path (IT5: a few levels of "what does this part do for the whole"); a fault is cut by finding the first part on the
 // path that does not do its job (IT4 follow-the-path, IT8 check the connections before poking at devices). Plan: docs/subjects/it-support/plan.md, lesson 16.
-// One worked ticket (Ravi's desk: a favorite cause ruled out by the jack next door); three groups of questions, the first with the deciding words marked; the check:
+// One worked ticket (Heath's desk: a favorite cause ruled out by the jack next door); three groups of questions, the first with the deciding words marked; the check:
 // eight new questions with no help, 7 of 8 to pass. Round 2 fixes: docs/subjects/it-support/fixes-l14-17.md. Topics (one for each group of objectives): net-devices, net-types, net-tools, servers.
 FC.lesson('it-support', {
-  id: 'l16', part: 'gear', title: 'Network hardware, connections and tools', rev: 1, status: "live",
-  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (each network device by its job on the path from a desk to the internet; internet connections and kinds of network; server roles and appliances; the technician’s network tools).' }],
+  id: 'l16', part: 'gear', title: 'Network hardware, connections and tools', rev: 2, status: "live",
+  history: [{ rev: 1, date: '2026-10-23', change: 'First version, built to the plan (each network device by its job on the path from a desk to the internet; internet connections and kinds of network; server roles and appliances; the technician’s network tools).' }, { rev: 2, date: "2026-10-23", change: "Names made unique across the subject and people called by name or they; wording kept to the plain-words list." }],
   why: [
-    'Ravi in Sales moved to desk 14. He plugged his laptop into the wall jack and the light by its network port stays off. Between his laptop and the internet are seven or eight parts in a row, and any one could be the fault.',
+    'Heath in Sales moved to desk 14. They plugged their laptop into the wall jack and the light by its network port stays off. Between their laptop and the internet are seven or eight parts in a row, and any one could be the fault.',
     'A good technician knows what each part does, so a missing light points at one stretch of the path. Here you learn the devices, the kinds of line and network, the servers, and the cable tools.'],
   flow: [
     { title: 'The path from a desk to the internet',
