@@ -4,8 +4,13 @@ import { worldCitySpecs } from './cities.mjs';
 import { limited } from './limits.mjs';
 
 const CONTINENTS = { Africa: 'Africa', Antarctica: 'Antarctica', Asia: 'Asia', Europe: 'Europe', 'North America': 'North America', Oceania: 'Oceania', 'South America': 'South America' };
-const OCEANS = [['pacific', 'Pacific Ocean', ['North Pacific Ocean', 'South Pacific Ocean']], ['atlantic', 'Atlantic Ocean', ['North Atlantic Ocean', 'South Atlantic Ocean']],
-  ['indian', 'Indian Ocean', ['INDIAN OCEAN']], ['southern', 'Southern Ocean', ['SOUTHERN OCEAN']], ['arctic', 'Arctic Ocean', ['Arctic Ocean']]];
+// An ocean on the world map is its water with the seas of it that Natural Earth's 110m layer cuts out as polygons of their own, which would otherwise be water
+// of no ocean: the Beaufort Sea is the Arctic's (S-23, limits.mjs), the Weddell and Ross seas the Southern Ocean's (the IHO's 2000 draft of S-23, which
+// gives the Southern Ocean its limit at 60°S), the Labrador Sea the Atlantic's, the Gulf of Alaska and the Sea of Okhotsk the Pacific's. Hudson Bay and
+// Baffin Bay are left as water of no ocean: S-23 gives them limits of their own and they are not asked.
+const OCEANS = [['pacific', 'Pacific Ocean', ['North Pacific Ocean', 'South Pacific Ocean', 'Gulf of Alaska', 'Sea of Okhotsk']],
+  ['atlantic', 'Atlantic Ocean', ['North Atlantic Ocean', 'South Atlantic Ocean', 'Labrador Sea']],
+  ['indian', 'Indian Ocean', ['INDIAN OCEAN']], ['southern', 'Southern Ocean', ['SOUTHERN OCEAN', 'Weddell Sea', 'Ross Sea']], ['arctic', 'Arctic Ocean', ['Arctic Ocean', 'Beaufort Sea']]];
 // the big regions are the United Nations' (Natural Earth's SUBREGION), with Russia's part east of the Urals as Northern Asia; South America is a
 // continent and its own region, so it is only the continent
 const REGION_NAMES = { 'Northern America': 'Northern America', 'Central America': 'Central America', Caribbean: 'The Caribbean',

@@ -1,7 +1,7 @@
 // The world map of part 30: the continents and oceans of the world map as the base, and over them the seas, straits, canals, rivers, ranges and deserts of the world.
 // Every one the regional maps (parts 12 to 29) place is here under the same id (gathered from their lists, so a name is written once), so a part 30 question
 // can be about one placed earlier; the ones part 30 adds are listed below.
-import { equalEarth } from './geo.mjs';
+import { winkelTripel } from './geo.mjs';
 import { singlePart, WORLD_VIEW } from './fit.mjs';
 import { worldBaseSpecs } from './world-specs.mjs';
 import { waterSpecs, featureSpecs } from './window.mjs';
@@ -25,7 +25,7 @@ const gathered = key => [...ADDED[key] || [], ...WINDOWS.flatMap(w => w[key] || 
 // the one lake part 30 asks is Lake Victoria; the regions' lakes are the big lakes with ground in their frames (lakes.mjs), not a list
 const cfg = { seas: gathered('seas'), straits: gathered('straits'), rivers: gathered('rivers'), canals: gathered('canals'), ranges: gathered('ranges'),
   lakes: [['lake-victoria', 'Lake Victoria', 'Lake Victoria']] };
-const world = singlePart(equalEarth(), WORLD_VIEW);
+const world = singlePart(winkelTripel(), WORLD_VIEW);
 const LAYERS = ['countries110', 'marine110', 'marine50', 'marine10', 'rivers50', 'lakes50', 'regions50'];
 
 export const WORLD_FEATURES = {

@@ -4,11 +4,15 @@
 const RAD = Math.PI / 180;
 
 /* ---------- projections: (lon, lat) in degrees to [x, y] with y up, in the projection's own units ---------- */
-export function equalEarth() {
-  const A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796, M = Math.sqrt(3) / 2;
+// Winkel tripel: the mean of the equirectangular (standard parallel arccos 2/π) and Aitoff. A compromise projection, neither equal-area nor
+// conformal, chosen for the world: National Geographic's world reference map since 1998, and the least overall distortion of the common world
+// projections (Goldberg & Gott 2007). An equal-area world (Equal Earth) must squeeze the polar latitudes north to south as it widens them, so the
+// Arctic Ocean and Antarctica come out as thin strips too thin to tap; Winkel tripel gives them about three times the height.
+export function winkelTripel() {
+  const sinci = x => x ? x / Math.sin(x) : 1;
   return (lon, lat) => {
-    const l = lon * RAD, t = Math.asin(M * Math.sin(lat * RAD)), t2 = t * t, t6 = t2 * t2 * t2;
-    return [l * Math.cos(t) / (M * (A1 + 3 * A2 * t2 + t6 * (7 * A3 + 9 * A4 * t2))), t * (A1 + A2 * t2 + t6 * (A3 + A4 * t2))];
+    const l = lon * RAD, p = lat * RAD, c = Math.cos(p), a = sinci(Math.acos(c * Math.cos(l / 2)));
+    return [(2 * c * Math.sin(l / 2) * a + l * 2 / Math.PI) / 2, (Math.sin(p) * a + p) / 2];
   };
 }
 export function laea(lon0, lat0) {

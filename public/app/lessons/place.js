@@ -46,6 +46,11 @@ function placeDecodeRing(steps, q){
   }
   return { pts, box: [x0, y0, x1, y1] };
 }
+const placeRingLength = pts => {
+  let n = 0;
+  for(let i = 0; i < pts.length; i += 2){ const j = (i + 2) % pts.length; n += Math.hypot(pts[j] - pts[i], pts[j + 1] - pts[i + 1]); }
+  return n;
+};
 const placeRingArea = pts => {
   let a = 0;
   for(let i = 0, n = pts.length; i < n; i += 2){ const j = (i + 2) % n; a += pts[i] * pts[j + 1] - pts[j] * pts[i + 1]; }
@@ -56,7 +61,10 @@ function placeGeom(map){
   if(geom) return geom;
   const rings = map.rings.map(r => placeDecodeRing(r, map.q));
   const boxOf = p => p.rings.reduce((b, i) => { const r = rings[i].box; return [Math.min(b[0], r[0]), Math.min(b[1], r[1]), Math.max(b[2], r[2]), Math.max(b[3], r[3])]; }, [Infinity, Infinity, -Infinity, -Infinity]);
-  const byId = Object.fromEntries(map.places.map(p => [p.id, { ...p, area: p.line ? 0 : p.rings.reduce((n, i) => n + placeRingArea(rings[i].pts), 0), box: p.rings.length ? boxOf(p) : null }]));
+  // a place's breadth: twice its area over its outline's length, the width of a band (the Southern Ocean's, from the 60th parallel to Antarctica) and about half the width of a round place
+  const withSize = p => { const area = p.line ? 0 : p.rings.reduce((n, i) => n + placeRingArea(rings[i].pts), 0), edge = p.rings.reduce((n, i) => n + placeRingLength(rings[i].pts), 0);
+    return { ...p, area, breadth: edge ? 2 * area / edge : 0, box: p.rings.length ? boxOf(p) : null }; };
+  const byId = Object.fromEntries(map.places.map(p => [p.id, withSize(p)]));
   geom = { rings, byId, places: map.places.map(p => byId[p.id]) };
   PLACE_GEOM.set(map, geom);
   return geom;
@@ -146,8 +154,17 @@ function placeShoreAt(map, x, y, k, kind){
   }
   return best ? best.id : null;
 }
+// Water no broader than a fingertip (PLACE_SMALL_TAP of the map's width, divided by the zoom) holds a tap on water within a fingertip of its outline:
+// the Southern Ocean, a strip between Antarctica and the oceans to its north, is a few pixels tall on a world map on a phone, as the Red Sea or the Channel is on
+// a map of their region. Touch targets are made larger than what they draw, as a microstate's dot is; a tap on land is still never on water.
+function placeThinWaterNear(map, place, x, y, k){
+  const geom = placeGeom(map), reach = map.size[0] * PLACE_SMALL_TAP / k, box = place.box;
+  if(!PLACE_WATER_KINDS.includes(place.kind) || !box || place.line || place.dot || place.breadth > reach) return false;
+  if(x < box[0] - reach || x > box[2] + reach || y < box[1] - reach || y > box[3] + reach || placeOnLand(map, geom, x, y)) return false;
+  return Math.min(...place.rings.map(i => placeRingDistance(geom.rings[i], x, y))) <= reach;
+}
 const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k) || placeSmallAt(map, x, y, k) === place.id
-  || placeShoreAt(map, x, y, k, place.kind) === place.id;
+  || placeShoreAt(map, x, y, k, place.kind) === place.id || placeThinWaterNear(map, place, x, y, k);
 // The place a tap is on, as the app names it after a miss: a microstate's circle if the tap is on one (it is drawn over the land it lies in, so a tap on
 // it is the microstate, not the country under it; so is the dot of the kind asked for), else a place no bigger than a fingertip beside it (placeSmallAt), else
 // the land of the kind asked for whose shore a tap at sea is within a fingertip of (placeShoreAt), else the smallest in the kind asked for if there is one,

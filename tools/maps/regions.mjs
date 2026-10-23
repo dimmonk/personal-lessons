@@ -5,7 +5,7 @@
 //   draw      the kinds drawn on a blank map, in this order (the others show only when lit)
 //   labelled  the kinds named on the labelled map
 //   borders   which kinds have neighbours and water computed
-import { equalEarth, laea, albers } from './geo.mjs';
+import { winkelTripel, laea, albers } from './geo.mjs';
 import { citySpecs } from './cities.mjs';
 import { WIDTH, WORLD_VIEW, singlePart } from './fit.mjs';
 import { worldSpecs } from './world-specs.mjs';
@@ -109,7 +109,7 @@ async function europeSpecs(load) {
 
 /* ---------- the list ---------- */
 const frame = (fitted, extra) => ({ size: fitted.size, parts: fitted.parts, frames: fitted.frames, ...extra });
-const world = singlePart(equalEarth(), WORLD_VIEW);
+const world = singlePart(winkelTripel(), WORLD_VIEW);
 const europe = singlePart(laea(10, 50), EUROPE_VIEW);
 const usa = albersUsa();
 

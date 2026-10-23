@@ -169,6 +169,12 @@ async function suite(app) {
   check(inWd('asia', 90, 60) && !inWd('europe', 90, 60) && inWd('europe', 40, 56), 'Siberia is Asia and Moscow is Europe: Russia is cut at the Urals');
   check(inWd('atlantic', -60, 30) && inWd('pacific', -150, 0) && inWd('indian', 80, -20) && !inWd('atlantic', 20, 5), 'the oceans, the Sargasso Sea inside the Atlantic, and no ocean on land');
   check(inWd('west-africa', -2, 12) && inWd('southeast-asia', 105, 15) && !inWd('west-africa', 30, 5), 'a tap in the middle of two big regions');
+  check(inWd('southern', -45, -73) && inWd('southern', -175, -76) && inWd('arctic', -140, 72) && inWd('atlantic', -55, 58) && inWd('pacific', 150, 55) && inWd('pacific', -145, 57),
+    'the seas Natural Earth cuts out of the oceans are their ocean\'s on the world map: the Weddell and Ross seas, the Beaufort Sea, the Labrador Sea, the Sea of Okhotsk, the Gulf of Alaska');
+  // the Southern Ocean, a band no broader than a fingertip from the 60th parallel to Antarctica, holds a tap on water within a fingertip of it (less when zoomed in); a broad ocean does not, nor does land
+  const wdAt = (id, lon, lat, k) => { const p = at('world', null, lon, lat); return placeContains(wd, mapPlace(wd, id), p[0], p[1], k); };
+  same([wdAt('southern', 0, -65, 1), wdAt('southern', 0, -58, 1), wdAt('southern', 0, -58, 8), wdAt('southern', 0, -80, 1), wdAt('atlantic', 0, -63, 1)], [true, true, false, false, false],
+    'the Southern Ocean is found a fingertip north of its edge, not when zoomed in 8 times, never on Antarctica; the Atlantic is not found south of its edge');
 
   /* ---------- the borders and water the build stored ---------- */
   const near = (map, id) => mapPlace(map, id).neighbors, wet = (map, id) => mapPlace(map, id).water;
@@ -333,8 +339,10 @@ const FAULTS = [
   ['a tap on a microstate\'s circle named for the country under it', s => s.replace('const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')],
   ['a small place found only inside its outline', s => s.replace('const PLACE_SMALL_TAP = 0.03;', 'const PLACE_SMALL_TAP = 0;')],
   ['a tap beside a small place that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_SMALL_TAP / k;', 'map.size[0] * PLACE_SMALL_TAP;')],
+  ['thin water found only inside its outline', s => s.replace('place.dot || place.breadth > reach) return false;', 'true) return false;')],
+  ['a broad ocean found a fingertip off its outline', s => s.replace('place.dot || place.breadth > reach) return false;', 'place.dot) return false;')],
   ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
-  ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
+  ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\n// Water no broader', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\n// Water no broader')],
   ['Undo never offered', s => s.replace('const undo = open && (pins.t || pins.n) ?', 'const undo = false ?'), 'app/lessons/place-view.js'],
   ['Answer offered before anything is pinned', s => s.replace("data-place-answer ${whole ? '' : 'disabled'}", 'data-place-answer'), 'app/lessons/place-view.js'],
   ['a lit place with no name after its tap', s => s.replace('...placeWaterLit(map, ask, answer)] : placeRightIds(ask);', '...placeWaterLit(map, ask, answer)] : [];'), 'app/lessons/place-view.js'],

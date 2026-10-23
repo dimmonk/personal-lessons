@@ -22,8 +22,8 @@
     ...stories('mixed-check-'), ...pairs('mixed-check-')];
 
   FC.lesson('geography', {
-    id: 'l33', part: '33', title: 'The whole world, mixed', rev: 1, status: 'live',
-    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }],
+    id: 'l33', part: '33', title: 'The whole world, mixed', rev: 2, status: 'live',
+    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }, { rev: 2, date: '2026-10-23', change: 'The world map is drawn in Winkel tripel, so the views of it are placed again on the new map.' }],
     why: 'In real life a place is never named next to its neighbors: a story jumps from Ohio to Senegal to Vietnam, and you have to find each one at once. In about sixteen minutes you will see each kind of question done once more, answer a mixed run of questions, and then take a check of 30 questions on places from every part: names tapped, lit places named, flags, neighbors and water, towns you have never met, and pairs of cities.',
     flow: [
       { title: 'Every kind of question once more', show: [{ kind: 'prose', text: 'No new rule. Every question is the same one: find the bigger area first, then what touches the place, then its water, and for a pair of cities, measure it against pairs you know. Here is each kind done once for you.' }] },

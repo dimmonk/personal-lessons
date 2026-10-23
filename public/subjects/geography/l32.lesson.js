@@ -9,8 +9,8 @@
   const MIX = { from: ['l1', 'l1b', 'l1c'], share: 0.2 };
 
   FC.lesson('geography', {
-    id: 'l32', part: '32', title: 'Placing a place you have never heard of', rev: 1, status: 'live',
-    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }],
+    id: 'l32', part: '32', title: 'Placing a place you have never heard of', rev: 2, status: 'live',
+    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }, { rev: 2, date: '2026-10-23', change: 'The world map is drawn in Winkel tripel, so the views of it are placed again on the new map.' }],
     why: 'A story names a town you have never heard of, and the story means nothing until you know where it is. In about twelve minutes you will place ten towns, ports and regions you have never met by the part of the world they sit in, from the clue the story gives, and then work out which way two places lie from each other without a map, where the states and continents that hold them mislead.',
     flow: [
       { title: 'How to place a place you have never met', show: [{ kind: 'prose', text: 'A story rarely gives a map. It gives a clue: a country, a state, a coast, a neighbor. Use the same three questions. Area: which country, state or coast do the words name? Those are the deciding words; the name of the place itself tells you nothing. Touches: where is that, and what is it next to? Water: which ocean or sea does it face? Then tap the part of the world that holds it, one of the parts you placed in parts 1b and 1c. North America has three: Northern America (Canada, the United States, Greenland), Central America (Mexico down to Panama) and the Caribbean. South America stands on its own. Europe has four: Northern, Western, Southern and Eastern. Africa has five: Northern, West, Central, East and Southern. Asia has six: Western, Central, South, East, Southeast and Northern (Russia east of the Urals). Oceania here has two: Australia and New Zealand, and Melanesia. Mexico is in Central America on this map. After every answer the feedback gives the deciding words and the part.' }] },

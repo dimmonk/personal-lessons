@@ -4,7 +4,8 @@
 // on a map gives the map a large part of the screen, with the map, the question and Next all on the screen at once and no scrolling: opened out, the
 // map of western Europe (about as tall as wide) stands beside the question and the map of the United States (twice as wide as tall) goes across the
 // screen under it; a tap on the place still answers it; folded, the map goes back under the question; the pages of the app widen past a phone's column, a subject's lessons run in two
-// columns, and on a desktop (1440 x 900) a list screen's side stands beside its list and a screen of two maps shows them side by side. tests/e2e-controls.mjs seeds a fault.
+// columns, and on a desktop (1440 x 900) a list screen's side stands beside its list and a screen of two maps shows them side by side; opened out, the world map of lesson 1
+// gives the Arctic Ocean, Antarctica and the Southern Ocean each a finger's height, and a tap on each answers it. tests/e2e-controls.mjs seeds a fault.
 
 const OPEN = { width: 752, height: 835 };
 const BARS = { width: 752, height: 700 };
@@ -50,6 +51,57 @@ const placeOnScreen = (page, selector) => page.evaluate(s => {
   const at = p.matrixTransform(svg.getScreenCTM());
   return [at.x, at.y];
 }, selector);
+
+// the world map's polar places, and the least height in CSS px a tap on each scores right across its tallest column on the opened-out screen: about a
+// fingertip (WCAG 2.5.5 asks 44 px of a target, 2.5.8 at least 24), along a band that runs a third of the map's width
+const POLAR = ['arctic', 'antarctica', 'southern'];
+const POLAR_MIN_PX = 40;
+// a place on the map asked on: its tallest run of screen pixels, over the columns across it, where a tap scores that place right, the way the app takes a
+// tap (map-run.js mapUp: the water round the map counts as its edge; place.js placeContains at the map's zoom now), and the middle of that run
+const polarRun = (page, id) => page.evaluate(id => {
+  const fig = document.querySelector('[data-map-ask]'), svg = fig.querySelector('.mapsvg'), map = FC.maps[fig.dataset.map], place = mapPlace(map, id), view = mapViewNow(fig);
+  const screen = mapScreen(svg, fig, view), [w, h] = mapDims(fig), box = screen.box, toX = ux => box.left + screen.ox + (ux - screen.vx) * screen.s;
+  const scores = (sx, sy) => { const [ux, uy] = mapUnitAt(screen, sx, sy); return placeContains(map, place, Math.max(MAP_EDGE_IN, Math.min(w - MAP_EDGE_IN, ux)), Math.max(MAP_EDGE_IN, Math.min(h - MAP_EDGE_IN, uy)), view.k); };
+  let best = { len: 0, x: 0, y: 0 };
+  for (let sx = Math.max(box.left, toX(place.box[0])); sx <= Math.min(box.right, toX(place.box[2])); sx += 8) {
+    let start = null;
+    for (let sy = Math.ceil(box.top); sy <= Math.floor(box.bottom) + 1; sy++) {
+      const hit = sy <= box.bottom && scores(sx, sy);
+      if (hit && start === null) start = sy;
+      if (!hit && start !== null) { if (sy - start > best.len) best = { len: sy - start, x: sx, y: (start + sy) / 2 }; start = null; }
+    }
+  }
+  return best;
+}, id);
+
+// opened out: Geography's first lesson asks every continent and ocean on the world map; the Arctic Ocean, Antarctica and the Southern Ocean are each
+// a finger tall (the world is drawn in Winkel tripel, not an equal-area projection that flattens the poles: tools/maps/geo.mjs), and a tap on each answers it
+async function polarChecks(c, env) {
+  const { context, page } = await env.freshPage(c, OPEN.width);
+  await resize(page, OPEN);
+  await env.openSubject(page, 'geography');
+  await env.clickVisible(page, '#screen [data-l="l1"]');
+  c.check(await goToTap(page) > 0, 'no question tapped on the map in Geography\'s lesson 1');
+  const seen = new Set();
+  for (let n = 0; n < 12 && seen.size < POLAR.length; n++) {
+    const asked = await page.evaluate(() => Q.list[Q.at].item.values.place);
+    if (POLAR.includes(asked) && !seen.has(asked)) {
+      seen.add(asked);
+      const run = await polarRun(page, asked);
+      c.check(run.len >= POLAR_MIN_PX, `${OPEN.width}x${OPEN.height}: ${asked} is ${run.len} px tall on the world map, under ${POLAR_MIN_PX}`);
+      await page.mouse.click(run.x, run.y);
+      await page.locator('[data-place-answer]').click();
+      c.check(await page.evaluate(() => Q.cur.done) && await page.locator('.mark:not(.no)').count() > 0, `${OPEN.width}x${OPEN.height}: a tap in the middle of ${asked} was not marked right`);
+    } else {
+      const run = await polarRun(page, asked);
+      await page.mouse.click(run.x, run.y);
+      await page.locator('[data-place-answer]').click();
+    }
+    await page.locator('#qNext').click();
+  }
+  c.check(seen.size === POLAR.length, `Geography's lesson 1 did not ask all of ${POLAR.join(', ')} (${[...seen].join(', ')})`);
+  await context.close();
+}
 
 // opened out or turned: the map large, the map and Next on the screen, nothing to scroll; `beside`: the map to the right of the question, or else under it
 async function bigMapChecks(c, page, size, beside) {
@@ -123,6 +175,8 @@ export async function X48(env) {
   c.check(await goToTap(wide.page) > 0, 'no question tapped on the map in Geography\'s lesson 10');
   await bigMapChecks(c, wide.page, OPEN, false);
   await wide.context.close();
+
+  await polarChecks(c, env);
   return c;
 }
 

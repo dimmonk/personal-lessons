@@ -364,6 +364,10 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   within the same fingertip (3% of the map's width, divided by the zoom), because a coast at a phone's size is thinner than a finger (Portugal's west
   coast). It is named that place after a miss, and it is right when that place is. When water is asked (the second tap of a neighbor and its water), the
   same tap is the sea (`placeShoreAt` in place.js).
+  **Water no broader than a fingertip** (an ocean, sea or strait with no dot whose breadth, twice its area over its outline's length, is at most 3% of
+  the map's width, divided by the zoom) holds a tap on water within that fingertip of its outline: the Southern Ocean, a band from the 60th parallel to
+  Antarctica, and the Arctic Ocean on the world map, the Red Sea or the Channel on a regional one. It is only one more way to be right; a tap on land is
+  never on water, and a broad ocean gets no such reach (`placeThinWaterNear` in place.js).
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
 - *A neighbor and its water*: its question block reads "What borders <place>?" (a place group's border question is made with
   `SAY.placeBorderAsk`), never the bare name, so it never reads as a name to tap. Two pins in order, kept in `Q.cur.many[askId]` until Answer sends them; a further tap moves the water's pin, and Undo (beside Landlocked
@@ -559,7 +563,7 @@ no name, for a view with no pictures.
 `npm run maps` (`tools/maps/build-maps.mjs`) turns Natural Earth (public domain; version 5.1.2, fetched once into the ignored
 `tools/maps/.cache/`) into one script per region, `public/maps/<region>.js`, registered with `FC.map(id, region)` in the frozen
 `FC.maps`. Nothing is fetched when the app runs. A region is a list in `tools/maps/regions.mjs`: a projection fitted to a frame
-(Equal Earth for `world`; Albers USA, d3's layout, with Alaska and Hawaii on insets for `us`; Lambert equal-area for
+(Winkel tripel for `world` and `world-features`, the compromise projection of world reference maps, which keeps the polar oceans and Antarctica tall enough to tap; Albers USA, d3's layout, with Alaska and Hawaii on insets for `us`; Lambert equal-area for
 `europe-west`), and the places taken from Natural Earth by name. To add a region, add a list and run the build. Eighteen regions are made by one factory
 (`tools/maps/window.mjs`, lists in `regions-americas.mjs`, `regions-eurasia.mjs`, `regions-africa.mjs`): a window of the world laid out 1000 units across by a
 Lambert equal-area (an Albers conic for Canada), the countries that have ground in the frame (the ones the part asks must show, the rest are neighbors and are left

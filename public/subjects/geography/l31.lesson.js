@@ -11,8 +11,8 @@
   const MIX_WORLD = { from: ['l1', 'l1b', 'l1c'], share: 0.2 };
 
   FC.lesson('geography', {
-    id: 'l31', part: '31', title: 'How far', rev: 1, status: 'live',
-    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }],
+    id: 'l31', part: '31', title: 'How far', rev: 2, status: 'live',
+    history: [{ rev: 1, date: '2026-10-18', change: 'First version.' }, { rev: 2, date: '2026-10-23', change: 'The world map is drawn in Winkel tripel, so the views of it are placed again on the new map.' }],
     why: 'A friend says a city is "only a few hours away", or a story says a town is far from the capital. Without a number, "near" and "far" tell you nothing. In about sixteen minutes you will judge how far apart 26 pairs of cities are, in a straight line and as a trip, by measuring each pair against pairs you know.',
     flow: [
       { title: 'How to judge how far', show: [{ kind: 'prose', text: `Two questions for every pair. First, how far apart are they in a straight line? That is the number a map gives and a story leaves out. Second, how would you get from one to the other, and how long would it take? That is what changes a plan: a short drive is an errand, a flight over an ocean is a day. Both are answered in bands, not exact miles, because a band is what you can hold in your head and check. The six bands: ${BANDS}. For the time, use a rule of thumb, not a timetable: a drive is about 60 miles an hour, and a flight is about 500 miles an hour plus an hour on the ground and in the climb. A map misleads the eye, so never judge a pair by how far apart the dots look: measure it against pairs you know. After every answer the feedback gives the straight-line miles, worked out by the app from the two cities' latitude and longitude, with the working for the trip.` }] },
