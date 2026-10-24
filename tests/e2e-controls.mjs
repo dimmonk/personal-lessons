@@ -478,6 +478,10 @@ export const FAULTS = [
     edits: [replace('app/lessons/map-run.js', 'const MAP_BESIDE_MIN = { width: 720, height: 480 };', 'const MAP_BESIDE_MIN = { width: 7200, height: 480 };')] },
   { check: 'X48', name: 'a wide map squeezed beside its question instead of across the screen', only: ['X48'],
     edits: [replace('app/lessons/map-run.js', 'return beside.s > across.s * MAP_BESIDE_GAIN ? beside : across;', 'return beside;')] },
+  { check: 'X48', name: 'a map of a part of the world no taller than the whole map at its width', only: ['X48'],
+    edits: [replace('app/lessons/map-run.js', 'full = across * h * (1 + 2 * MAP_MARGIN / k);', 'full = width * h / w;')] },
+  { check: 'X48', name: 'thin water found only inside its outline', only: ['X48'],
+    edits: [replace('app/lessons/place.js', 'place.dot || place.breadth > reach) return false;', 'true) return false;')] },
   // the light theme (X51): readable on every screen, and the learner's choice kept
   { check: 'X51', name: 'the light theme\'s small labels too faint to read', only: ['X51'],
     edits: [replace('app.css', '--label:#6C6250;', '--label:#B8AE9C;')] },

@@ -33,15 +33,20 @@ function mapClamp(view, [w, h]){
   const k = Math.max(1, Math.min(PLACE_ZOOM_MAX, view.k)), vw = w / k, vh = h / k;
   return { k, cx: Math.max(vw / 2, Math.min(w - vw / 2, view.cx)), cy: Math.max(vh / 2, Math.min(h - vh / 2, view.cy)) };
 }
-// the pixels the svg's box gives each unit of the map, and where the picture starts inside the box (the map is centred when the box is wider or taller).
-// What is shown is the part of the map the view holds with a margin of water round it (MAP_MARGIN of that part on each side), so a place on the map's
-// edge (the Arctic Ocean, Antarctica) stands off the frame with room to tap it, at every zoom.
+// the pixels the svg's box gives each unit of the map, and the part of the map the box shows. The part the view holds, with a margin of water round it
+// (MAP_MARGIN of that part on each side, so a place on the map's edge, the Arctic Ocean or Antarctica, stands off the frame with room to tap it), is drawn
+// as large as the box takes; where the box is wider or taller than that part, it shows more of the map round it, kept inside the map and its margin (and the
+// map centred in the box where the box holds the whole of it with room over).
 function mapScreen(svg, el, view){
   const [w, h] = mapDims(el), box = svg.getBoundingClientRect(), grow = 1 + 2 * MAP_MARGIN, vw = w / view.k * grow, vh = h / view.k * grow;
-  const s = Math.min(box.width / vw, box.height / vh) || 1;
-  return { box, s, ox: (box.width - s * vw) / 2, oy: (box.height - s * vh) / 2, vx: view.cx - vw / 2, vy: view.cy - vh / 2, vw, vh };
+  const s = Math.min(box.width / vw, box.height / vh) || 1, sw = box.width ? box.width / s : vw, sh = box.height ? box.height / s : vh;
+  const along = (middle, shown, size) => {
+    const lo = -size / view.k * MAP_MARGIN, hi = size + size / view.k * MAP_MARGIN;
+    return shown >= hi - lo ? (lo + hi - shown) / 2 : Math.max(lo, Math.min(hi - shown, middle - shown / 2));
+  };
+  return { box, s, vx: along(view.cx, sw, w), vy: along(view.cy, sh, h), vw: sw, vh: sh };
 }
-const mapUnitAt = (screen, px, py) => [screen.vx + (px - screen.box.left - screen.ox) / screen.s, screen.vy + (py - screen.box.top - screen.oy) / screen.s];
+const mapUnitAt = (screen, px, py) => [screen.vx + (px - screen.box.left) / screen.s, screen.vy + (py - screen.box.top) / screen.s];
 
 // put a view on a map: the viewBox, and the marks and dots at the same size on the screen whatever the zoom
 function mapApply(el, view){
@@ -59,7 +64,7 @@ function mapApply(el, view){
 // the elements of the map (the observer of wireMaps would take that for a new screen).
 function mapSeparateNames(svg, screen, px){
   const texts = [...svg.querySelectorAll('text[data-fpx][data-name]')], lines = new Map([...svg.querySelectorAll('line.ml-auto, line.ml-lead')].map(l => [l.dataset.name, l]));
-  const names = texts.map(t => ({ id: t.dataset.name, x: (Number(t.dataset.x) - screen.vx) * screen.s + screen.ox, y: (Number(t.dataset.y) - screen.vy) * screen.s + screen.oy,
+  const names = texts.map(t => ({ id: t.dataset.name, x: (Number(t.dataset.x) - screen.vx) * screen.s, y: (Number(t.dataset.y) - screen.vy) * screen.s,
     chars: t.textContent.length, lead: [Number(t.dataset.dx), Number(t.dataset.dy)], fixed: t.hasAttribute('data-fixed') }));
   const moved = placeNameLeads(names, [screen.box.width, screen.box.height]);
   lines.forEach(l => { if(l.classList.contains('ml-auto')){ l.setAttribute('display', 'none'); l.removeAttribute('data-gap'); } });
@@ -93,8 +98,10 @@ function mapPlaceLead(l, px){
   l.setAttribute('x2', String(Number(l.dataset.x) + px(dx)));
   l.setAttribute('y2', String(Number(l.dataset.y) + px(dy)));
 }
+// a view is kept with its middle where the box shows it: a box that shows more than the view, held inside the map, does not let a drag run on past the edge unseen
 function mapSetView(el, view){
-  const next = mapClamp(view, mapDims(el));
+  const clamped = mapClamp(view, mapDims(el)), svg = el.querySelector('.mapsvg'), shown = svg && mapScreen(svg, el, clamped);
+  const next = shown ? { ...clamped, cx: shown.vx + shown.vw / 2, cy: shown.vy + shown.vh / 2 } : clamped;
   MAP_VIEW = { ...MAP_VIEW, [el.dataset.scope]: next };
   mapApply(el, next);
 }
@@ -129,10 +136,13 @@ function mapFitMeasure(pane, el){
 }
 function mapFitTry(pane, el, beside, screenH){
   mapFitShow(pane, el, beside ? { beside: true } : null);
-  const frame = el.querySelector('.mapframe'), [w, h] = mapDims(el), width = frame.clientWidth, full = width * h / w;
+  const frame = el.querySelector('.mapframe'), [w, h] = mapDims(el), width = frame.clientWidth, k = mapViewHome(el).k, grow = 1 + 2 * MAP_MARGIN;
+  // the tallest the map can use: the whole of it, top to bottom with its margin, at the scale that puts the part it opens on across the width. A map that
+  // opens on its whole self is no taller than it is; one that opens on a part (a panel) shows more of the map above and below that part as it grows.
+  const across = width / (w / k * grow), full = across * h * (1 + 2 * MAP_MARGIN / k);
   // a map that asks something always leaves its question, its row and Next on the screen; a map that only shows keeps a floor and lets the page scroll
   const fits = Math.min(full, mapFitRoom(pane, el, frame, beside, screenH)), tall = el.dataset.mapAsk ? Math.max(fits, Math.min(full, MAP_MIN)) : Math.max(fits, Math.min(full, screenH * MAP_FLOOR));
-  return { beside, h: Math.round(tall), s: fits / h };
+  return { beside, h: Math.round(tall), s: Math.min(across, fits / (h / k * grow)) };
 }
 // the height the map's screen can take: from its top to the bar at the foot (and the tab bar, where there is one), less what has to stand under it,
 // which beside is the row under it (Undo and Landlocked) and across is everything after it in the page
@@ -150,7 +160,7 @@ function mapFitRoom(pane, el, frame, beside, screenH){
 function mapZoomAbout(svg, el, view, k, px, py){
   const before = mapScreen(svg, el, view), anchor = mapUnitAt(before, px, py), moved = { ...view, k: Math.max(1, Math.min(PLACE_ZOOM_MAX, k)) };
   const after = mapScreen(svg, el, moved);
-  return { k: moved.k, cx: anchor[0] - (px - after.box.left - after.ox) / after.s + after.vw / 2, cy: anchor[1] - (py - after.box.top - after.oy) / after.s + after.vh / 2 };
+  return { k: moved.k, cx: anchor[0] - (px - after.box.left) / after.s + after.vw / 2, cy: anchor[1] - (py - after.box.top) / after.s + after.vh / 2 };
 }
 function mapZoomButton(button){
   const el = button.closest('[data-map]'), svg = el && el.querySelector('.mapsvg');

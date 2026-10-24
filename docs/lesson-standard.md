@@ -537,7 +537,9 @@ no name, for a view with no pictures.
   kept across a screen painted again and reset when the question or step changes. An item's `figure` may be a map (a picture added to
   the feedback: the true map after a trap item).
   A screen of one map gives the map all the room it can: the map is as tall as the screen leaves once what goes with it and the bar of Next are on it, with no scroll
-  (X47 at 390 x 844 and 360 x 800; a map that only shows is never under 35% of the screen's height, and the page may scroll), worked out once per question so it does not move when the screen is painted for the answer. On a screen
+  (X47 at 390 x 844 and 360 x 800; a map that only shows is never under 35% of the screen's height, and the page may scroll), worked out once per question so it does not move when the screen is painted for the answer. A map that opens on a part of itself (a `view`) grows into that room
+  however wide or tall the part is, and the box shows more of the map round the part (kept inside the map and its margin); a map that opens whole is no taller than the whole map at the
+  width it has (X48 on the Fold's cover screen, open and turned). On a screen
   720 px wide or more (a Fold opened out, a tablet, a laptop) the map stands beside the question instead when that draws it larger: a map about as tall as wide, or
   taller, goes beside; a wide one (the world, the United States) goes across, under the question (X48, the map drawn on a fifth of the screen or more, the bar of Next and the browser's bars counted in the screen). The zoom buttons
   stand on the map's top right corner, and a margin of water (4% of what is shown, on each side) stands round the map at every zoom. A place asked on the map holds room for its line of help (two lines on a phone, one on a wider screen) and the row

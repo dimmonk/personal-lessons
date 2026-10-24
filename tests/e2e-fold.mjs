@@ -5,7 +5,8 @@
 // map of western Europe (about as tall as wide) stands beside the question and the map of the United States (twice as wide as tall) goes across the
 // screen under it; a tap on the place still answers it; folded, the map goes back under the question; the pages of the app widen past a phone's column, a subject's lessons run in two
 // columns, and on a desktop (1440 x 900) a list screen's side stands beside its list and a screen of two maps shows them side by side; opened out, the world map of lesson 1
-// gives the Arctic Ocean, Antarctica and the Southern Ocean each a finger's height, and a tap on each answers it. tests/e2e-controls.mjs seeds a fault.
+// gives the Arctic Ocean, Antarctica and the Southern Ocean each a finger's height, and a tap on each answers it; folded, opened out and turned, a map of a part of
+// the world (lesson 1b) fills the room down to Go on. tests/e2e-controls.mjs seeds a fault.
 
 const OPEN = { width: 752, height: 835 };
 const BARS = { width: 752, height: 700 };
@@ -60,7 +61,7 @@ const POLAR_MIN_PX = 40;
 // tap (map-run.js mapUp: the water round the map counts as its edge; place.js placeContains at the map's zoom now), and the middle of that run
 const polarRun = (page, id) => page.evaluate(id => {
   const fig = document.querySelector('[data-map-ask]'), svg = fig.querySelector('.mapsvg'), map = FC.maps[fig.dataset.map], place = mapPlace(map, id), view = mapViewNow(fig);
-  const screen = mapScreen(svg, fig, view), [w, h] = mapDims(fig), box = screen.box, toX = ux => box.left + screen.ox + (ux - screen.vx) * screen.s;
+  const screen = mapScreen(svg, fig, view), [w, h] = mapDims(fig), box = screen.box, toX = ux => box.left + (ux - screen.vx) * screen.s;
   const scores = (sx, sy) => { const [ux, uy] = mapUnitAt(screen, sx, sy); return placeContains(map, place, Math.max(MAP_EDGE_IN, Math.min(w - MAP_EDGE_IN, ux)), Math.max(MAP_EDGE_IN, Math.min(h - MAP_EDGE_IN, uy)), view.k); };
   let best = { len: 0, x: 0, y: 0 };
   for (let sx = Math.max(box.left, toX(place.box[0])); sx <= Math.min(box.right, toX(place.box[2])); sx += 8) {
@@ -100,6 +101,26 @@ async function polarChecks(c, env) {
     await page.locator('#qNext').click();
   }
   c.check(seen.size === POLAR.length, `Geography's lesson 1 did not ask all of ${POLAR.join(', ')} (${[...seen].join(', ')})`);
+  await context.close();
+}
+
+// a map that opens on a part of itself (lesson 1b's North America, `view`) fills the room down to the bar of Go on, folded, opened out and turned,
+// showing more of the map round the part: no more than this many pixels between the map and the bar (map-run.js MAP_ROOM_GAP is 24)
+const VIEW_GAP_MAX = 40;
+async function viewChecks(c, env) {
+  const { context, page } = await env.freshPage(c, FOLDED.width);
+  for (const size of [FOLDED, OPEN, TURNED]) {
+    await resize(page, size);
+    await env.openSubject(page, 'geography');
+    await env.clickVisible(page, '#screen [data-l="l1b"]');
+    const step = await page.evaluate(() => { for (let at = 0; at < 10; at++) { moveLesson(at); if (document.querySelector('#screen .block-map[data-view]')) return at; } return -1; });
+    c.check(step >= 0, `${size.width}x${size.height}: no map opening on a part of itself in Geography's lesson 1b`);
+    if (step < 0) continue;
+    await page.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
+    const map = await rectOf(page, '#screen .block-map[data-view] .mapframe'), bar = await rectOf(page, '.actbar'), room = await pageSize(page);
+    c.check(map && bar && bar.top - map.bottom <= VIEW_GAP_MAX && bar.top - map.bottom >= 0, `${size.width}x${size.height}: the map of a part of the world leaves ${map && bar && Math.round(bar.top - map.bottom)} px empty above Go on`);
+    c.check(room.w <= size.width && room.h <= size.height, `${size.width}x${size.height}: the screen of a map of a part scrolls (${room.w} x ${room.h} px)`);
+  }
   await context.close();
 }
 
@@ -177,6 +198,7 @@ export async function X48(env) {
   await wide.context.close();
 
   await polarChecks(c, env);
+  await viewChecks(c, env);
   return c;
 }
 

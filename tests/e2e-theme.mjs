@@ -52,7 +52,10 @@ const pageColours = page => page.evaluate(() => ({
   water: getComputedStyle(document.querySelector('.map-water') || document.body).fill,
   land: getComputedStyle(document.querySelector('.mp:not(.lit):not(.focus)') || document.body).fill
 }));
-const light = rgb => { const [r, g, b] = rgb.match(/\d+/g).map(Number); return (r + g + b) / 3 > 200; };
+const brightness = rgb => { const [r, g, b] = rgb.match(/\d+/g).map(Number); return (r + g + b) / 3; };
+const light = rgb => brightness(rgb) > 200;
+// the sea of a light map is a reference map's blue, darker than its land (app.css --map-water), but still a light colour, not the dark theme's
+const lightSea = rgb => brightness(rgb) > 160;
 const hexToRgb = hex => `rgb(${[1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16)).join(', ')})`;
 
 // the screens, in turn: each one read for contrast under its label
@@ -86,7 +89,7 @@ async function screens(env, c, page, label) {
   c.check(mapped, `${label}: no map in Geography's lesson 16`);
   if (mapped) {
     const colours = await pageColours(page);
-    c.check(colours.water !== colours.land && light(colours.water) && light(colours.land), `${label}: the map is not drawn light (water ${colours.water}, land ${colours.land})`);
+    c.check(colours.water !== colours.land && lightSea(colours.water) && light(colours.land), `${label}: the map is not drawn light (water ${colours.water}, land ${colours.land})`);
     await read('a map');
   }
   await env.toLibrary(page);
